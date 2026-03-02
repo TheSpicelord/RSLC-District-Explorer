@@ -1,0 +1,5249 @@
+[
+  {
+    "state_fips": "55",
+    "district_id": "001",
+    "district_name": "Assembly District 1",
+    "incumbent": {
+      "name": "Joel Kitchens",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 54692,
+      "rural_pct": 75.1,
+      "town_pct": 22.5,
+      "suburban_pct": 2.4,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 17.7,
+        "between_50_100k": 33.5,
+        "gt_150k": 35.6,
+        "unknown_pct": 13.3
+      },
+      "college_pct": 22.9,
+      "post_grad_pct": 10.6,
+      "education_unknown_pct": 22.0,
+      "white_pct": 93.2,
+      "hispanic_pct": 1.9,
+      "black_pct": 1.0,
+      "asian_pct": 0.8,
+      "other_pct": 3.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 38.0,
+        "rep_pct": 61.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -23.9,
+      "latest_leg": -23.9,
+      "pres_2024": -14.9
+    },
+    "pres_2024_margin": -14.9,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 39188,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "002",
+    "district_name": "Assembly District 2",
+    "incumbent": {
+      "name": "Shae Sortwell",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 51442,
+      "rural_pct": 48.4,
+      "town_pct": 3.4,
+      "suburban_pct": 48.2,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 14.7,
+        "between_50_100k": 30.2,
+        "gt_150k": 40.0,
+        "unknown_pct": 15.2
+      },
+      "college_pct": 24.5,
+      "post_grad_pct": 9.1,
+      "education_unknown_pct": 22.6,
+      "white_pct": 93.1,
+      "hispanic_pct": 2.1,
+      "black_pct": 0.9,
+      "asian_pct": 1.2,
+      "other_pct": 2.6
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 36.7,
+        "rep_pct": 63.2,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -26.5,
+      "latest_leg": -26.5,
+      "pres_2024": -23.7
+    },
+    "pres_2024_margin": -23.7,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 37615,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "003",
+    "district_name": "Assembly District 3",
+    "incumbent": {
+      "name": "Ron Tusler",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 48069,
+      "rural_pct": 37.2,
+      "town_pct": 14.1,
+      "suburban_pct": 30.4,
+      "urban_pct": 18.3,
+      "income_brackets": {
+        "lt_50k": 15.0,
+        "between_50_100k": 29.7,
+        "gt_150k": 40.3,
+        "unknown_pct": 14.9
+      },
+      "college_pct": 25.1,
+      "post_grad_pct": 9.6,
+      "education_unknown_pct": 22.3,
+      "white_pct": 91.9,
+      "hispanic_pct": 2.7,
+      "black_pct": 1.2,
+      "asian_pct": 2.0,
+      "other_pct": 2.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 35.5,
+        "rep_pct": 64.5,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -29.0,
+      "latest_leg": -29.0,
+      "pres_2024": -23.1
+    },
+    "pres_2024_margin": -23.1,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36890,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "004",
+    "district_name": "Assembly District 4",
+    "incumbent": {
+      "name": "David Steffen",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 51733,
+      "rural_pct": 42.6,
+      "town_pct": 9.1,
+      "suburban_pct": 43.1,
+      "urban_pct": 5.1,
+      "income_brackets": {
+        "lt_50k": 16.8,
+        "between_50_100k": 30.1,
+        "gt_150k": 38.2,
+        "unknown_pct": 14.9
+      },
+      "college_pct": 24.3,
+      "post_grad_pct": 9.5,
+      "education_unknown_pct": 22.3,
+      "white_pct": 92.5,
+      "hispanic_pct": 2.1,
+      "black_pct": 1.1,
+      "asian_pct": 1.0,
+      "other_pct": 3.2
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 33.8,
+        "rep_pct": 66.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -32.4,
+      "latest_leg": -32.4,
+      "pres_2024": -29.3
+    },
+    "pres_2024_margin": -29.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 38073,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "005",
+    "district_name": "Assembly District 5",
+    "incumbent": {
+      "name": "Joy Goeben",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 50205,
+      "rural_pct": 47.9,
+      "town_pct": 5.5,
+      "suburban_pct": 46.4,
+      "urban_pct": 0.3,
+      "income_brackets": {
+        "lt_50k": 15.7,
+        "between_50_100k": 28.2,
+        "gt_150k": 38.1,
+        "unknown_pct": 18.1
+      },
+      "college_pct": 22.9,
+      "post_grad_pct": 7.9,
+      "education_unknown_pct": 26.2,
+      "white_pct": 89.8,
+      "hispanic_pct": 2.4,
+      "black_pct": 1.2,
+      "asian_pct": 1.3,
+      "other_pct": 5.4
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 37.2,
+        "rep_pct": 62.8,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -25.6,
+      "latest_leg": -25.6,
+      "pres_2024": -21.3
+    },
+    "pres_2024_margin": -21.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36059,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "006",
+    "district_name": "Assembly District 6",
+    "incumbent": {
+      "name": "Elijah Behnke",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 46632,
+      "rural_pct": 71.1,
+      "town_pct": 28.6,
+      "suburban_pct": 0.3,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 25.9,
+        "between_50_100k": 33.3,
+        "gt_150k": 23.6,
+        "unknown_pct": 17.2
+      },
+      "college_pct": 20.5,
+      "post_grad_pct": 7.3,
+      "education_unknown_pct": 26.2,
+      "white_pct": 87.8,
+      "hispanic_pct": 1.9,
+      "black_pct": 1.2,
+      "asian_pct": 0.4,
+      "other_pct": 8.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 32.5,
+        "rep_pct": 67.4,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -34.8,
+      "latest_leg": -34.8,
+      "pres_2024": -32.5
+    },
+    "pres_2024_margin": -32.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 33353,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "007",
+    "district_name": "Assembly District 7",
+    "incumbent": {
+      "name": "Karen Kirsch",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 57789,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 43.4,
+      "urban_pct": 56.6,
+      "income_brackets": {
+        "lt_50k": 24.0,
+        "between_50_100k": 31.1,
+        "gt_150k": 24.5,
+        "unknown_pct": 20.3
+      },
+      "college_pct": 21.3,
+      "post_grad_pct": 8.6,
+      "education_unknown_pct": 31.5,
+      "white_pct": 75.6,
+      "hispanic_pct": 14.9,
+      "black_pct": 3.0,
+      "asian_pct": 3.4,
+      "other_pct": 3.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 58.5,
+        "rep_pct": 41.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 17.3,
+      "latest_leg": 17.3,
+      "pres_2024": 14.7
+    },
+    "pres_2024_margin": 14.7,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 28680,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "008",
+    "district_name": "Assembly District 8",
+    "incumbent": {
+      "name": "Sylvia Ortiz-Velez",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 45179,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 99.5,
+      "income_brackets": {
+        "lt_50k": 46.4,
+        "between_50_100k": 15.9,
+        "gt_150k": 10.6,
+        "unknown_pct": 27.1
+      },
+      "college_pct": 16.4,
+      "post_grad_pct": 3.9,
+      "education_unknown_pct": 42.6,
+      "white_pct": 42.0,
+      "hispanic_pct": 47.8,
+      "black_pct": 5.5,
+      "asian_pct": 2.6,
+      "other_pct": 2.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 98.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 98.0,
+      "latest_leg": 98.0,
+      "pres_2024": 46.9
+    },
+    "pres_2024_margin": 46.9,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 13551,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "009",
+    "district_name": "Assembly District 9",
+    "incumbent": {
+      "name": "Priscilla Prado",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 49973,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 6.2,
+      "urban_pct": 93.8,
+      "income_brackets": {
+        "lt_50k": 37.3,
+        "between_50_100k": 24.3,
+        "gt_150k": 15.0,
+        "unknown_pct": 23.4
+      },
+      "college_pct": 18.3,
+      "post_grad_pct": 6.6,
+      "education_unknown_pct": 37.6,
+      "white_pct": 53.6,
+      "hispanic_pct": 33.9,
+      "black_pct": 6.2,
+      "asian_pct": 3.8,
+      "other_pct": 2.5
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 70.2,
+        "rep_pct": 29.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 40.7,
+      "latest_leg": 40.7,
+      "pres_2024": 34.1
+    },
+    "pres_2024_margin": 34.1,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 18753,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "010",
+    "district_name": "Assembly District 10",
+    "incumbent": {
+      "name": "Darrin Madison Jr.",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 70765,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 40.8,
+      "urban_pct": 59.2,
+      "income_brackets": {
+        "lt_50k": 36.2,
+        "between_50_100k": 17.8,
+        "gt_150k": 25.5,
+        "unknown_pct": 20.5
+      },
+      "college_pct": 19.9,
+      "post_grad_pct": 10.0,
+      "education_unknown_pct": 32.4,
+      "white_pct": 40.4,
+      "hispanic_pct": 4.2,
+      "black_pct": 51.1,
+      "asian_pct": 2.2,
+      "other_pct": 2.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 98.7,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 98.7,
+      "latest_leg": 98.7,
+      "pres_2024": 70.2
+    },
+    "pres_2024_margin": 70.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 30659,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "011",
+    "district_name": "Assembly District 11",
+    "incumbent": {
+      "name": "Sequanna Taylor",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 67961,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 100.0,
+      "income_brackets": {
+        "lt_50k": 44.8,
+        "between_50_100k": 23.5,
+        "gt_150k": 11.2,
+        "unknown_pct": 20.6
+      },
+      "college_pct": 17.3,
+      "post_grad_pct": 5.4,
+      "education_unknown_pct": 32.8,
+      "white_pct": 16.6,
+      "hispanic_pct": 3.3,
+      "black_pct": 75.5,
+      "asian_pct": 4.0,
+      "other_pct": 0.6
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 98.8,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 98.8,
+      "latest_leg": 98.8,
+      "pres_2024": 76.1
+    },
+    "pres_2024_margin": 76.1,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 23954,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "012",
+    "district_name": "Assembly District 12",
+    "incumbent": {
+      "name": "Russell Goodwin",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 67250,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 5.5,
+      "urban_pct": 94.5,
+      "income_brackets": {
+        "lt_50k": 34.2,
+        "between_50_100k": 26.1,
+        "gt_150k": 19.3,
+        "unknown_pct": 20.3
+      },
+      "college_pct": 19.7,
+      "post_grad_pct": 8.3,
+      "education_unknown_pct": 31.3,
+      "white_pct": 30.0,
+      "hispanic_pct": 3.4,
+      "black_pct": 61.3,
+      "asian_pct": 4.2,
+      "other_pct": 1.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 80.5,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 80.5,
+      "latest_leg": 80.5,
+      "pres_2024": 60.3
+    },
+    "pres_2024_margin": 60.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 25275,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "013",
+    "district_name": "Assembly District 13",
+    "incumbent": {
+      "name": "Robyn Vining",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 57609,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 100.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 8.9,
+        "between_50_100k": 19.1,
+        "gt_150k": 57.6,
+        "unknown_pct": 14.4
+      },
+      "college_pct": 27.8,
+      "post_grad_pct": 16.8,
+      "education_unknown_pct": 22.7,
+      "white_pct": 85.9,
+      "hispanic_pct": 3.3,
+      "black_pct": 3.0,
+      "asian_pct": 4.1,
+      "other_pct": 3.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 57.2,
+        "rep_pct": 42.6,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 14.6,
+      "latest_leg": 14.6,
+      "pres_2024": 20.7
+    },
+    "pres_2024_margin": 20.7,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 39790,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "014",
+    "district_name": "Assembly District 14",
+    "incumbent": {
+      "name": "Angelito Tenorio",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 63257,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 81.8,
+      "urban_pct": 18.2,
+      "income_brackets": {
+        "lt_50k": 22.7,
+        "between_50_100k": 29.9,
+        "gt_150k": 27.4,
+        "unknown_pct": 20.1
+      },
+      "college_pct": 22.5,
+      "post_grad_pct": 9.1,
+      "education_unknown_pct": 29.6,
+      "white_pct": 83.7,
+      "hispanic_pct": 8.1,
+      "black_pct": 2.7,
+      "asian_pct": 2.1,
+      "other_pct": 3.4
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 52.7,
+        "rep_pct": 43.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 9.2,
+      "latest_leg": 9.2,
+      "pres_2024": 10.3
+    },
+    "pres_2024_margin": 10.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 30643,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "015",
+    "district_name": "Assembly District 15",
+    "incumbent": {
+      "name": "Adam Neylon",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 62231,
+      "rural_pct": 2.0,
+      "town_pct": 0.0,
+      "suburban_pct": 89.0,
+      "urban_pct": 9.0,
+      "income_brackets": {
+        "lt_50k": 10.0,
+        "between_50_100k": 21.7,
+        "gt_150k": 53.9,
+        "unknown_pct": 14.5
+      },
+      "college_pct": 28.0,
+      "post_grad_pct": 15.3,
+      "education_unknown_pct": 22.9,
+      "white_pct": 85.9,
+      "hispanic_pct": 3.8,
+      "black_pct": 1.1,
+      "asian_pct": 5.5,
+      "other_pct": 3.6
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 40.8,
+        "rep_pct": 59.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -18.3,
+      "latest_leg": -18.3,
+      "pres_2024": -12.6
+    },
+    "pres_2024_margin": -12.6,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 38971,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "016",
+    "district_name": "Assembly District 16",
+    "incumbent": {
+      "name": "Kalan Haywood",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 88086,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 100.0,
+      "income_brackets": {
+        "lt_50k": 37.6,
+        "between_50_100k": 13.1,
+        "gt_150k": 20.8,
+        "unknown_pct": 28.5
+      },
+      "college_pct": 15.4,
+      "post_grad_pct": 5.5,
+      "education_unknown_pct": 39.9,
+      "white_pct": 37.9,
+      "hispanic_pct": 5.5,
+      "black_pct": 51.5,
+      "asian_pct": 3.1,
+      "other_pct": 2.0
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 98.7,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 98.7,
+      "latest_leg": 98.7,
+      "pres_2024": 72.4
+    },
+    "pres_2024_margin": 72.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 23541,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "017",
+    "district_name": "Assembly District 17",
+    "incumbent": {
+      "name": "Supreme Moore Omokunde",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 75294,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 100.0,
+      "income_brackets": {
+        "lt_50k": 34.3,
+        "between_50_100k": 27.2,
+        "gt_150k": 19.2,
+        "unknown_pct": 19.4
+      },
+      "college_pct": 19.8,
+      "post_grad_pct": 8.2,
+      "education_unknown_pct": 30.9,
+      "white_pct": 32.6,
+      "hispanic_pct": 3.5,
+      "black_pct": 60.2,
+      "asian_pct": 2.6,
+      "other_pct": 1.2
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 98.5,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 98.5,
+      "latest_leg": 98.5,
+      "pres_2024": 68.4
+    },
+    "pres_2024_margin": 68.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 29315,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "018",
+    "district_name": "Assembly District 18",
+    "incumbent": {
+      "name": "Margaret Arney",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 68539,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 15.5,
+      "urban_pct": 84.4,
+      "income_brackets": {
+        "lt_50k": 39.0,
+        "between_50_100k": 18.7,
+        "gt_150k": 20.8,
+        "unknown_pct": 21.6
+      },
+      "college_pct": 18.3,
+      "post_grad_pct": 7.9,
+      "education_unknown_pct": 33.5,
+      "white_pct": 34.8,
+      "hispanic_pct": 4.4,
+      "black_pct": 56.7,
+      "asian_pct": 2.5,
+      "other_pct": 1.6
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 82.2,
+        "rep_pct": 17.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 64.7,
+      "latest_leg": 64.7,
+      "pres_2024": 67.2
+    },
+    "pres_2024_margin": 67.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 26555,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "019",
+    "district_name": "Assembly District 19",
+    "incumbent": {
+      "name": "Ryan Clancy",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 104642,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 99.9,
+      "income_brackets": {
+        "lt_50k": 15.3,
+        "between_50_100k": 19.6,
+        "gt_150k": 41.0,
+        "unknown_pct": 24.1
+      },
+      "college_pct": 24.0,
+      "post_grad_pct": 13.3,
+      "education_unknown_pct": 32.2,
+      "white_pct": 83.4,
+      "hispanic_pct": 5.0,
+      "black_pct": 4.8,
+      "asian_pct": 2.9,
+      "other_pct": 3.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 97.6,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 97.6,
+      "latest_leg": 97.6,
+      "pres_2024": 60.6
+    },
+    "pres_2024_margin": 60.6,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36173,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "020",
+    "district_name": "Assembly District 20",
+    "incumbent": {
+      "name": "Christine Sinicki",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 58643,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 72.7,
+      "urban_pct": 27.3,
+      "income_brackets": {
+        "lt_50k": 22.4,
+        "between_50_100k": 32.3,
+        "gt_150k": 29.1,
+        "unknown_pct": 16.2
+      },
+      "college_pct": 22.5,
+      "post_grad_pct": 9.5,
+      "education_unknown_pct": 25.8,
+      "white_pct": 83.4,
+      "hispanic_pct": 9.4,
+      "black_pct": 2.1,
+      "asian_pct": 1.8,
+      "other_pct": 3.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 61.0,
+        "rep_pct": 38.8,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 22.2,
+      "latest_leg": 22.2,
+      "pres_2024": 19.0
+    },
+    "pres_2024_margin": 19.0,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 33705,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "021",
+    "district_name": "Assembly District 21",
+    "incumbent": {
+      "name": "Jessie Rodriguez",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 56356,
+      "rural_pct": 0.5,
+      "town_pct": 0.0,
+      "suburban_pct": 60.3,
+      "urban_pct": 39.2,
+      "income_brackets": {
+        "lt_50k": 17.5,
+        "between_50_100k": 28.3,
+        "gt_150k": 36.4,
+        "unknown_pct": 17.8
+      },
+      "college_pct": 24.0,
+      "post_grad_pct": 10.1,
+      "education_unknown_pct": 27.2,
+      "white_pct": 81.0,
+      "hispanic_pct": 9.9,
+      "black_pct": 2.1,
+      "asian_pct": 3.8,
+      "other_pct": 3.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 48.5,
+        "rep_pct": 51.3,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -2.8,
+      "latest_leg": -2.8,
+      "pres_2024": 4.1
+    },
+    "pres_2024_margin": 4.1,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 33903,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "022",
+    "district_name": "Assembly District 22",
+    "incumbent": {
+      "name": "Paul Melotik",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 59818,
+      "rural_pct": 27.3,
+      "town_pct": 0.0,
+      "suburban_pct": 72.7,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 10.6,
+        "between_50_100k": 22.1,
+        "gt_150k": 54.3,
+        "unknown_pct": 13.0
+      },
+      "college_pct": 27.4,
+      "post_grad_pct": 14.3,
+      "education_unknown_pct": 21.4,
+      "white_pct": 91.2,
+      "hispanic_pct": 2.4,
+      "black_pct": 1.0,
+      "asian_pct": 2.2,
+      "other_pct": 3.2
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 41.9,
+        "rep_pct": 58.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -16.1,
+      "latest_leg": -16.1,
+      "pres_2024": -9.9
+    },
+    "pres_2024_margin": -9.9,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 41614,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "023",
+    "district_name": "Assembly District 23",
+    "incumbent": {
+      "name": "Deb Andraca",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 62577,
+      "rural_pct": 0.9,
+      "town_pct": 0.0,
+      "suburban_pct": 99.1,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 8.5,
+        "between_50_100k": 16.5,
+        "gt_150k": 61.1,
+        "unknown_pct": 13.9
+      },
+      "college_pct": 26.3,
+      "post_grad_pct": 19.5,
+      "education_unknown_pct": 23.1,
+      "white_pct": 80.2,
+      "hispanic_pct": 3.1,
+      "black_pct": 8.9,
+      "asian_pct": 4.4,
+      "other_pct": 3.4
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 62.6,
+        "rep_pct": 37.3,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 25.2,
+      "latest_leg": 25.2,
+      "pres_2024": 29.5
+    },
+    "pres_2024_margin": 29.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 37513,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "024",
+    "district_name": "Assembly District 24",
+    "incumbent": {
+      "name": "Daniel Knodl",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 56711,
+      "rural_pct": 8.4,
+      "town_pct": 0.0,
+      "suburban_pct": 91.6,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 12.8,
+        "between_50_100k": 24.7,
+        "gt_150k": 49.1,
+        "unknown_pct": 13.4
+      },
+      "college_pct": 27.0,
+      "post_grad_pct": 11.7,
+      "education_unknown_pct": 22.3,
+      "white_pct": 87.6,
+      "hispanic_pct": 2.8,
+      "black_pct": 2.1,
+      "asian_pct": 4.0,
+      "other_pct": 3.4
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 39.9,
+        "rep_pct": 59.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -20.0,
+      "latest_leg": -20.0,
+      "pres_2024": -10.0
+    },
+    "pres_2024_margin": -10.0,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 40385,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "025",
+    "district_name": "Assembly District 25",
+    "incumbent": {
+      "name": "Paul Tittl",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 66103,
+      "rural_pct": 15.5,
+      "town_pct": 82.1,
+      "suburban_pct": 2.4,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 24.9,
+        "between_50_100k": 29.7,
+        "gt_150k": 24.9,
+        "unknown_pct": 20.4
+      },
+      "college_pct": 22.7,
+      "post_grad_pct": 9.9,
+      "education_unknown_pct": 28.7,
+      "white_pct": 91.4,
+      "hispanic_pct": 2.6,
+      "black_pct": 1.2,
+      "asian_pct": 2.0,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 38.2,
+        "rep_pct": 61.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -23.5,
+      "latest_leg": -23.5,
+      "pres_2024": -15.5
+    },
+    "pres_2024_margin": -15.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 32275,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "026",
+    "district_name": "Assembly District 26",
+    "incumbent": {
+      "name": "Joe Sheehan",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 44128,
+      "rural_pct": 2.8,
+      "town_pct": 0.0,
+      "suburban_pct": 17.4,
+      "urban_pct": 79.8,
+      "income_brackets": {
+        "lt_50k": 25.3,
+        "between_50_100k": 32.0,
+        "gt_150k": 26.6,
+        "unknown_pct": 16.1
+      },
+      "college_pct": 22.9,
+      "post_grad_pct": 9.0,
+      "education_unknown_pct": 24.6,
+      "white_pct": 82.0,
+      "hispanic_pct": 7.1,
+      "black_pct": 1.8,
+      "asian_pct": 6.0,
+      "other_pct": 2.9
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 51.3,
+        "rep_pct": 48.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 2.9,
+      "latest_leg": 2.9,
+      "pres_2024": 2.7
+    },
+    "pres_2024_margin": 2.7,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 29409,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "027",
+    "district_name": "Assembly District 27",
+    "incumbent": {
+      "name": "Lindee Brill",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 50426,
+      "rural_pct": 47.8,
+      "town_pct": 26.1,
+      "suburban_pct": 26.1,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 15.7,
+        "between_50_100k": 32.0,
+        "gt_150k": 39.1,
+        "unknown_pct": 13.3
+      },
+      "college_pct": 23.9,
+      "post_grad_pct": 9.3,
+      "education_unknown_pct": 21.1,
+      "white_pct": 93.3,
+      "hispanic_pct": 2.0,
+      "black_pct": 1.0,
+      "asian_pct": 1.0,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 32.2,
+        "rep_pct": 67.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -35.4,
+      "latest_leg": -35.4,
+      "pres_2024": -30.3
+    },
+    "pres_2024_margin": -30.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 38385,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "028",
+    "district_name": "Assembly District 28",
+    "incumbent": {
+      "name": "Rob Kreibich",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 52679,
+      "rural_pct": 70.8,
+      "town_pct": 29.2,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 14.5,
+        "between_50_100k": 28.2,
+        "gt_150k": 40.1,
+        "unknown_pct": 17.2
+      },
+      "college_pct": 21.9,
+      "post_grad_pct": 7.4,
+      "education_unknown_pct": 25.9,
+      "white_pct": 93.2,
+      "hispanic_pct": 2.0,
+      "black_pct": 1.4,
+      "asian_pct": 1.0,
+      "other_pct": 2.5
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 33.8,
+        "rep_pct": 66.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -32.4,
+      "latest_leg": -32.4,
+      "pres_2024": -30.8
+    },
+    "pres_2024_margin": -30.8,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36892,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "029",
+    "district_name": "Assembly District 29",
+    "incumbent": {
+      "name": "Treig Pronschinske",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 48801,
+      "rural_pct": 83.6,
+      "town_pct": 16.4,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 19.4,
+        "between_50_100k": 33.4,
+        "gt_150k": 33.0,
+        "unknown_pct": 14.1
+      },
+      "college_pct": 21.5,
+      "post_grad_pct": 7.7,
+      "education_unknown_pct": 23.6,
+      "white_pct": 93.8,
+      "hispanic_pct": 2.2,
+      "black_pct": 1.4,
+      "asian_pct": 0.6,
+      "other_pct": 2.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 35.0,
+        "rep_pct": 64.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -29.8,
+      "latest_leg": -29.8,
+      "pres_2024": -28.2
+    },
+    "pres_2024_margin": -28.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 33680,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "030",
+    "district_name": "Assembly District 30",
+    "incumbent": {
+      "name": "Shannon Zimmerman",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 63372,
+      "rural_pct": 35.7,
+      "town_pct": 63.9,
+      "suburban_pct": 0.4,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 9.8,
+        "between_50_100k": 20.7,
+        "gt_150k": 52.4,
+        "unknown_pct": 17.1
+      },
+      "college_pct": 26.5,
+      "post_grad_pct": 10.9,
+      "education_unknown_pct": 25.5,
+      "white_pct": 92.4,
+      "hispanic_pct": 2.0,
+      "black_pct": 1.3,
+      "asian_pct": 1.5,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 45.7,
+        "rep_pct": 54.2,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -8.5,
+      "latest_leg": -8.5,
+      "pres_2024": -4.5
+    },
+    "pres_2024_margin": -4.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 37750,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "031",
+    "district_name": "Assembly District 31",
+    "incumbent": {
+      "name": "Tyler August",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 53875,
+      "rural_pct": 40.8,
+      "town_pct": 59.2,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 17.7,
+        "between_50_100k": 29.6,
+        "gt_150k": 36.2,
+        "unknown_pct": 16.5
+      },
+      "college_pct": 23.1,
+      "post_grad_pct": 10.2,
+      "education_unknown_pct": 26.3,
+      "white_pct": 88.4,
+      "hispanic_pct": 6.9,
+      "black_pct": 1.0,
+      "asian_pct": 0.8,
+      "other_pct": 2.9
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 36.5,
+        "rep_pct": 63.3,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -26.8,
+      "latest_leg": -26.8,
+      "pres_2024": -22.8
+    },
+    "pres_2024_margin": -22.8,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 33538,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "032",
+    "district_name": "Assembly District 32",
+    "incumbent": {
+      "name": "Amanda Nedweski",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 58070,
+      "rural_pct": 34.8,
+      "town_pct": 1.1,
+      "suburban_pct": 64.1,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 14.7,
+        "between_50_100k": 28.5,
+        "gt_150k": 40.6,
+        "unknown_pct": 16.1
+      },
+      "college_pct": 22.2,
+      "post_grad_pct": 9.0,
+      "education_unknown_pct": 25.5,
+      "white_pct": 89.8,
+      "hispanic_pct": 4.4,
+      "black_pct": 1.3,
+      "asian_pct": 1.1,
+      "other_pct": 3.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 31.9,
+        "rep_pct": 67.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -36.0,
+      "latest_leg": -36.0,
+      "pres_2024": -31.5
+    },
+    "pres_2024_margin": -31.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36629,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "033",
+    "district_name": "Assembly District 33",
+    "incumbent": {
+      "name": "Robin Vos",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 52559,
+      "rural_pct": 40.1,
+      "town_pct": 59.1,
+      "suburban_pct": 0.7,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 15.6,
+        "between_50_100k": 29.3,
+        "gt_150k": 39.4,
+        "unknown_pct": 15.7
+      },
+      "college_pct": 23.4,
+      "post_grad_pct": 10.3,
+      "education_unknown_pct": 24.7,
+      "white_pct": 91.0,
+      "hispanic_pct": 3.7,
+      "black_pct": 1.1,
+      "asian_pct": 1.0,
+      "other_pct": 3.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 29.8,
+        "rep_pct": 57.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -27.2,
+      "latest_leg": -27.2,
+      "pres_2024": -29.8
+    },
+    "pres_2024_margin": -29.8,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36510,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "034",
+    "district_name": "Assembly District 34",
+    "incumbent": {
+      "name": "Rob Swearingen",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 61548,
+      "rural_pct": 85.7,
+      "town_pct": 14.3,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 22.3,
+        "between_50_100k": 32.5,
+        "gt_150k": 26.4,
+        "unknown_pct": 18.9
+      },
+      "college_pct": 22.5,
+      "post_grad_pct": 10.9,
+      "education_unknown_pct": 28.2,
+      "white_pct": 92.7,
+      "hispanic_pct": 1.3,
+      "black_pct": 0.8,
+      "asian_pct": 0.6,
+      "other_pct": 4.5
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 35.9,
+        "rep_pct": 64.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -28.2,
+      "latest_leg": -28.2,
+      "pres_2024": -19.9
+    },
+    "pres_2024_margin": -19.9,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 39604,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "035",
+    "district_name": "Assembly District 35",
+    "incumbent": {
+      "name": "Calvin Callahan",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 50088,
+      "rural_pct": 69.2,
+      "town_pct": 30.0,
+      "suburban_pct": 0.8,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 26.8,
+        "between_50_100k": 35.1,
+        "gt_150k": 24.6,
+        "unknown_pct": 13.5
+      },
+      "college_pct": 22.2,
+      "post_grad_pct": 8.1,
+      "education_unknown_pct": 21.7,
+      "white_pct": 94.2,
+      "hispanic_pct": 1.3,
+      "black_pct": 1.1,
+      "asian_pct": 0.7,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 32.2,
+        "rep_pct": 67.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -35.5,
+      "latest_leg": -35.5,
+      "pres_2024": -30.7
+    },
+    "pres_2024_margin": -30.7,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36905,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "036",
+    "district_name": "Assembly District 36",
+    "incumbent": {
+      "name": "Jeffrey Mursau",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 54278,
+      "rural_pct": 76.5,
+      "town_pct": 23.5,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 31.8,
+        "between_50_100k": 34.4,
+        "gt_150k": 18.4,
+        "unknown_pct": 15.4
+      },
+      "college_pct": 20.5,
+      "post_grad_pct": 7.8,
+      "education_unknown_pct": 24.3,
+      "white_pct": 92.6,
+      "hispanic_pct": 1.8,
+      "black_pct": 1.0,
+      "asian_pct": 0.6,
+      "other_pct": 4.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 28.9,
+        "rep_pct": 70.8,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -41.8,
+      "latest_leg": -41.8,
+      "pres_2024": -38.5
+    },
+    "pres_2024_margin": -38.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 35791,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "037",
+    "district_name": "Assembly District 37",
+    "incumbent": {
+      "name": "Mark Born",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 43440,
+      "rural_pct": 44.1,
+      "town_pct": 55.9,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 21.2,
+        "between_50_100k": 34.0,
+        "gt_150k": 29.8,
+        "unknown_pct": 15.0
+      },
+      "college_pct": 21.5,
+      "post_grad_pct": 8.2,
+      "education_unknown_pct": 23.0,
+      "white_pct": 91.7,
+      "hispanic_pct": 3.6,
+      "black_pct": 1.3,
+      "asian_pct": 0.7,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 31.4,
+        "rep_pct": 68.6,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -37.2,
+      "latest_leg": -37.2,
+      "pres_2024": -28.7
+    },
+    "pres_2024_margin": -28.7,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 31389,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "038",
+    "district_name": "Assembly District 38",
+    "incumbent": {
+      "name": "William Penterman",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 49806,
+      "rural_pct": 36.1,
+      "town_pct": 63.9,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 18.9,
+        "between_50_100k": 31.6,
+        "gt_150k": 32.0,
+        "unknown_pct": 17.5
+      },
+      "college_pct": 21.8,
+      "post_grad_pct": 7.7,
+      "education_unknown_pct": 25.7,
+      "white_pct": 91.7,
+      "hispanic_pct": 4.0,
+      "black_pct": 1.1,
+      "asian_pct": 0.7,
+      "other_pct": 2.5
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 32.6,
+        "rep_pct": 67.3,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -34.7,
+      "latest_leg": -34.7,
+      "pres_2024": -30.8
+    },
+    "pres_2024_margin": -30.8,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 34079,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "039",
+    "district_name": "Assembly District 39",
+    "incumbent": {
+      "name": "Alex Dallman",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 47373,
+      "rural_pct": 79.0,
+      "town_pct": 21.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 23.5,
+        "between_50_100k": 35.4,
+        "gt_150k": 25.9,
+        "unknown_pct": 15.2
+      },
+      "college_pct": 21.4,
+      "post_grad_pct": 7.9,
+      "education_unknown_pct": 24.1,
+      "white_pct": 92.7,
+      "hispanic_pct": 2.8,
+      "black_pct": 1.1,
+      "asian_pct": 0.7,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 30.4,
+        "rep_pct": 69.5,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -39.1,
+      "latest_leg": -39.1,
+      "pres_2024": -33.6
+    },
+    "pres_2024_margin": -33.6,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 34241,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "040",
+    "district_name": "Assembly District 40",
+    "incumbent": {
+      "name": "Karen DeSanto",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 48593,
+      "rural_pct": 47.5,
+      "town_pct": 52.5,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 19.6,
+        "between_50_100k": 31.1,
+        "gt_150k": 33.0,
+        "unknown_pct": 16.3
+      },
+      "college_pct": 22.9,
+      "post_grad_pct": 9.0,
+      "education_unknown_pct": 25.9,
+      "white_pct": 92.4,
+      "hispanic_pct": 2.9,
+      "black_pct": 1.2,
+      "asian_pct": 0.7,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 54.1,
+        "rep_pct": 45.9,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 8.2,
+      "latest_leg": 8.2,
+      "pres_2024": 4.9
+    },
+    "pres_2024_margin": 4.9,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 33895,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "041",
+    "district_name": "Assembly District 41",
+    "incumbent": {
+      "name": "Tony Kurtz",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 46870,
+      "rural_pct": 66.7,
+      "town_pct": 33.3,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 26.0,
+        "between_50_100k": 33.4,
+        "gt_150k": 23.9,
+        "unknown_pct": 16.7
+      },
+      "college_pct": 20.9,
+      "post_grad_pct": 7.7,
+      "education_unknown_pct": 26.7,
+      "white_pct": 92.4,
+      "hispanic_pct": 2.5,
+      "black_pct": 1.4,
+      "asian_pct": 0.7,
+      "other_pct": 3.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 36.8,
+        "rep_pct": 63.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -26.2,
+      "latest_leg": -26.2,
+      "pres_2024": -17.6
+    },
+    "pres_2024_margin": -17.6,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 32310,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "042",
+    "district_name": "Assembly District 42",
+    "incumbent": {
+      "name": "Maureen McCarville",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 53907,
+      "rural_pct": 47.7,
+      "town_pct": 14.4,
+      "suburban_pct": 22.3,
+      "urban_pct": 15.6,
+      "income_brackets": {
+        "lt_50k": 14.1,
+        "between_50_100k": 27.0,
+        "gt_150k": 43.1,
+        "unknown_pct": 15.8
+      },
+      "college_pct": 24.6,
+      "post_grad_pct": 10.0,
+      "education_unknown_pct": 24.5,
+      "white_pct": 89.7,
+      "hispanic_pct": 3.2,
+      "black_pct": 2.0,
+      "asian_pct": 2.1,
+      "other_pct": 2.9
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 55.0,
+        "rep_pct": 44.9,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 10.1,
+      "latest_leg": 10.1,
+      "pres_2024": 15.0
+    },
+    "pres_2024_margin": 15.0,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 38250,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "043",
+    "district_name": "Assembly District 43",
+    "incumbent": {
+      "name": "Brienne Brown",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 53707,
+      "rural_pct": 26.0,
+      "town_pct": 35.6,
+      "suburban_pct": 10.0,
+      "urban_pct": 28.4,
+      "income_brackets": {
+        "lt_50k": 15.7,
+        "between_50_100k": 27.4,
+        "gt_150k": 35.8,
+        "unknown_pct": 21.1
+      },
+      "college_pct": 24.0,
+      "post_grad_pct": 10.9,
+      "education_unknown_pct": 28.5,
+      "white_pct": 89.9,
+      "hispanic_pct": 4.1,
+      "black_pct": 1.7,
+      "asian_pct": 1.5,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 51.2,
+        "rep_pct": 48.6,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 2.6,
+      "latest_leg": 2.6,
+      "pres_2024": 5.3
+    },
+    "pres_2024_margin": 5.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 33550,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "044",
+    "district_name": "Assembly District 44",
+    "incumbent": {
+      "name": "Ann Roe",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 50240,
+      "rural_pct": 19.8,
+      "town_pct": 0.0,
+      "suburban_pct": 2.9,
+      "urban_pct": 77.3,
+      "income_brackets": {
+        "lt_50k": 25.2,
+        "between_50_100k": 30.9,
+        "gt_150k": 26.1,
+        "unknown_pct": 17.8
+      },
+      "college_pct": 21.4,
+      "post_grad_pct": 9.0,
+      "education_unknown_pct": 26.4,
+      "white_pct": 90.2,
+      "hispanic_pct": 3.8,
+      "black_pct": 2.4,
+      "asian_pct": 1.3,
+      "other_pct": 2.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 56.4,
+        "rep_pct": 43.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 12.9,
+      "latest_leg": 12.9,
+      "pres_2024": 10.9
+    },
+    "pres_2024_margin": 10.9,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 31380,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "045",
+    "district_name": "Assembly District 45",
+    "incumbent": {
+      "name": "Clinton Anderson",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 53377,
+      "rural_pct": 16.9,
+      "town_pct": 10.1,
+      "suburban_pct": 12.0,
+      "urban_pct": 61.1,
+      "income_brackets": {
+        "lt_50k": 28.9,
+        "between_50_100k": 28.2,
+        "gt_150k": 23.9,
+        "unknown_pct": 19.1
+      },
+      "college_pct": 19.8,
+      "post_grad_pct": 7.8,
+      "education_unknown_pct": 28.2,
+      "white_pct": 79.9,
+      "hispanic_pct": 7.6,
+      "black_pct": 9.3,
+      "asian_pct": 1.3,
+      "other_pct": 1.9
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 95.9,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 95.9,
+      "latest_leg": 95.9,
+      "pres_2024": 7.3
+    },
+    "pres_2024_margin": 7.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 28478,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "046",
+    "district_name": "Assembly District 46",
+    "incumbent": {
+      "name": "Joan Fitzgerald",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 51204,
+      "rural_pct": 38.9,
+      "town_pct": 46.8,
+      "suburban_pct": 14.3,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 14.6,
+        "between_50_100k": 27.4,
+        "gt_150k": 42.0,
+        "unknown_pct": 16.0
+      },
+      "college_pct": 24.7,
+      "post_grad_pct": 10.3,
+      "education_unknown_pct": 24.0,
+      "white_pct": 90.6,
+      "hispanic_pct": 4.0,
+      "black_pct": 1.4,
+      "asian_pct": 1.3,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 52.4,
+        "rep_pct": 47.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 4.9,
+      "latest_leg": 4.9,
+      "pres_2024": 8.1
+    },
+    "pres_2024_margin": 8.1,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 37295,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "047",
+    "district_name": "Assembly District 47",
+    "incumbent": {
+      "name": "Randy Udell",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 56578,
+      "rural_pct": 27.2,
+      "town_pct": 0.5,
+      "suburban_pct": 72.2,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 12.8,
+        "between_50_100k": 21.7,
+        "gt_150k": 47.5,
+        "unknown_pct": 18.1
+      },
+      "college_pct": 24.7,
+      "post_grad_pct": 13.8,
+      "education_unknown_pct": 26.8,
+      "white_pct": 84.2,
+      "hispanic_pct": 4.3,
+      "black_pct": 4.5,
+      "asian_pct": 3.7,
+      "other_pct": 3.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 98.2,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 98.2,
+      "latest_leg": 98.2,
+      "pres_2024": 43.6
+    },
+    "pres_2024_margin": 43.6,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 38194,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "048",
+    "district_name": "Assembly District 48",
+    "incumbent": {
+      "name": "Andrew Hysell",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 57356,
+      "rural_pct": 15.5,
+      "town_pct": 0.2,
+      "suburban_pct": 66.1,
+      "urban_pct": 18.1,
+      "income_brackets": {
+        "lt_50k": 13.1,
+        "between_50_100k": 23.8,
+        "gt_150k": 44.7,
+        "unknown_pct": 18.4
+      },
+      "college_pct": 25.7,
+      "post_grad_pct": 10.9,
+      "education_unknown_pct": 27.1,
+      "white_pct": 82.0,
+      "hispanic_pct": 4.3,
+      "black_pct": 6.1,
+      "asian_pct": 4.5,
+      "other_pct": 3.0
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 67.3,
+        "rep_pct": 32.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 34.8,
+      "latest_leg": 34.8,
+      "pres_2024": 37.4
+    },
+    "pres_2024_margin": 37.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36829,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "049",
+    "district_name": "Assembly District 49",
+    "incumbent": {
+      "name": "Travis Tranel",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 48458,
+      "rural_pct": 57.3,
+      "town_pct": 42.7,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 23.9,
+        "between_50_100k": 32.3,
+        "gt_150k": 23.7,
+        "unknown_pct": 20.1
+      },
+      "college_pct": 21.5,
+      "post_grad_pct": 8.2,
+      "education_unknown_pct": 28.1,
+      "white_pct": 94.1,
+      "hispanic_pct": 1.6,
+      "black_pct": 1.3,
+      "asian_pct": 0.9,
+      "other_pct": 2.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 36.9,
+        "rep_pct": 63.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -26.1,
+      "latest_leg": -26.1,
+      "pres_2024": -17.3
+    },
+    "pres_2024_margin": -17.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 31798,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "050",
+    "district_name": "Assembly District 50",
+    "incumbent": {
+      "name": "Jenna Jacobson",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 49702,
+      "rural_pct": 57.7,
+      "town_pct": 42.2,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 15.0,
+        "between_50_100k": 28.3,
+        "gt_150k": 42.7,
+        "unknown_pct": 13.9
+      },
+      "college_pct": 24.2,
+      "post_grad_pct": 10.9,
+      "education_unknown_pct": 22.3,
+      "white_pct": 93.3,
+      "hispanic_pct": 2.0,
+      "black_pct": 1.2,
+      "asian_pct": 1.1,
+      "other_pct": 2.4
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 56.3,
+        "rep_pct": 43.7,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 12.6,
+      "latest_leg": 12.6,
+      "pres_2024": 14.5
+    },
+    "pres_2024_margin": 14.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 37174,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "051",
+    "district_name": "Assembly District 51",
+    "incumbent": {
+      "name": "Todd Novak",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 45698,
+      "rural_pct": 77.1,
+      "town_pct": 22.9,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 18.8,
+        "between_50_100k": 32.9,
+        "gt_150k": 33.6,
+        "unknown_pct": 14.7
+      },
+      "college_pct": 22.7,
+      "post_grad_pct": 8.9,
+      "education_unknown_pct": 23.5,
+      "white_pct": 94.3,
+      "hispanic_pct": 1.4,
+      "black_pct": 1.2,
+      "asian_pct": 0.9,
+      "other_pct": 2.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 48.3,
+        "rep_pct": 51.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -3.4,
+      "latest_leg": -3.4,
+      "pres_2024": 3.5
+    },
+    "pres_2024_margin": 3.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 34619,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "052",
+    "district_name": "Assembly District 52",
+    "incumbent": {
+      "name": "Lee Snodgrass",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 50233,
+      "rural_pct": 2.5,
+      "town_pct": 0.0,
+      "suburban_pct": 11.0,
+      "urban_pct": 86.5,
+      "income_brackets": {
+        "lt_50k": 19.7,
+        "between_50_100k": 29.1,
+        "gt_150k": 30.7,
+        "unknown_pct": 20.5
+      },
+      "college_pct": 23.5,
+      "post_grad_pct": 9.9,
+      "education_unknown_pct": 28.7,
+      "white_pct": 86.9,
+      "hispanic_pct": 4.3,
+      "black_pct": 1.8,
+      "asian_pct": 4.1,
+      "other_pct": 2.9
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 57.2,
+        "rep_pct": 42.8,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 14.5,
+      "latest_leg": 14.5,
+      "pres_2024": 14.8
+    },
+    "pres_2024_margin": 14.8,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 31615,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "053",
+    "district_name": "Assembly District 53",
+    "incumbent": {
+      "name": "Dean Kaufert",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 52083,
+      "rural_pct": 2.2,
+      "town_pct": 0.1,
+      "suburban_pct": 40.6,
+      "urban_pct": 57.1,
+      "income_brackets": {
+        "lt_50k": 21.7,
+        "between_50_100k": 30.0,
+        "gt_150k": 31.0,
+        "unknown_pct": 17.3
+      },
+      "college_pct": 24.4,
+      "post_grad_pct": 9.8,
+      "education_unknown_pct": 25.2,
+      "white_pct": 89.7,
+      "hispanic_pct": 3.9,
+      "black_pct": 1.5,
+      "asian_pct": 2.2,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 49.4,
+        "rep_pct": 50.5,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -1.2,
+      "latest_leg": -1.2,
+      "pres_2024": 4.4
+    },
+    "pres_2024_margin": 4.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 31882,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "054",
+    "district_name": "Assembly District 54",
+    "incumbent": {
+      "name": "Lori Palmeri",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 46352,
+      "rural_pct": 5.3,
+      "town_pct": 0.2,
+      "suburban_pct": 1.7,
+      "urban_pct": 92.8,
+      "income_brackets": {
+        "lt_50k": 24.2,
+        "between_50_100k": 27.7,
+        "gt_150k": 25.0,
+        "unknown_pct": 23.1
+      },
+      "college_pct": 24.0,
+      "post_grad_pct": 9.1,
+      "education_unknown_pct": 30.0,
+      "white_pct": 88.9,
+      "hispanic_pct": 3.1,
+      "black_pct": 2.0,
+      "asian_pct": 3.2,
+      "other_pct": 2.9
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 52.6,
+        "rep_pct": 47.3,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 5.3,
+      "latest_leg": 5.3,
+      "pres_2024": 7.0
+    },
+    "pres_2024_margin": 7.0,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 26978,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "055",
+    "district_name": "Assembly District 55",
+    "incumbent": {
+      "name": "Nate Gustafson",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 53552,
+      "rural_pct": 31.2,
+      "town_pct": 11.0,
+      "suburban_pct": 40.6,
+      "urban_pct": 17.1,
+      "income_brackets": {
+        "lt_50k": 15.1,
+        "between_50_100k": 28.4,
+        "gt_150k": 40.7,
+        "unknown_pct": 15.9
+      },
+      "college_pct": 26.0,
+      "post_grad_pct": 11.4,
+      "education_unknown_pct": 23.0,
+      "white_pct": 91.7,
+      "hispanic_pct": 2.2,
+      "black_pct": 1.0,
+      "asian_pct": 2.1,
+      "other_pct": 3.0
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 39.5,
+        "rep_pct": 60.4,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -20.8,
+      "latest_leg": -20.8,
+      "pres_2024": -16.7
+    },
+    "pres_2024_margin": -16.7,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 38559,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "056",
+    "district_name": "Assembly District 56",
+    "incumbent": {
+      "name": "Dave Murphy",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 50561,
+      "rural_pct": 51.6,
+      "town_pct": 10.6,
+      "suburban_pct": 28.2,
+      "urban_pct": 9.6,
+      "income_brackets": {
+        "lt_50k": 13.7,
+        "between_50_100k": 26.8,
+        "gt_150k": 44.7,
+        "unknown_pct": 14.9
+      },
+      "college_pct": 25.1,
+      "post_grad_pct": 9.6,
+      "education_unknown_pct": 22.2,
+      "white_pct": 92.2,
+      "hispanic_pct": 2.6,
+      "black_pct": 1.0,
+      "asian_pct": 1.8,
+      "other_pct": 2.4
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 35.2,
+        "rep_pct": 64.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -29.5,
+      "latest_leg": -29.5,
+      "pres_2024": -27.4
+    },
+    "pres_2024_margin": -27.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 37366,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "057",
+    "district_name": "Assembly District 57",
+    "incumbent": {
+      "name": "Kevin Petersen",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 47865,
+      "rural_pct": 84.8,
+      "town_pct": 15.2,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 22.5,
+        "between_50_100k": 34.1,
+        "gt_150k": 28.9,
+        "unknown_pct": 14.5
+      },
+      "college_pct": 22.3,
+      "post_grad_pct": 8.7,
+      "education_unknown_pct": 22.7,
+      "white_pct": 92.9,
+      "hispanic_pct": 2.8,
+      "black_pct": 1.1,
+      "asian_pct": 0.5,
+      "other_pct": 2.6
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 28.4,
+        "rep_pct": 62.3,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -33.9,
+      "latest_leg": -33.9,
+      "pres_2024": -34.5
+    },
+    "pres_2024_margin": -34.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 35869,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "058",
+    "district_name": "Assembly District 58",
+    "incumbent": {
+      "name": "Rick Gundrum",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 51914,
+      "rural_pct": 27.2,
+      "town_pct": 0.0,
+      "suburban_pct": 72.8,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 14.6,
+        "between_50_100k": 30.0,
+        "gt_150k": 38.9,
+        "unknown_pct": 16.4
+      },
+      "college_pct": 24.6,
+      "post_grad_pct": 9.6,
+      "education_unknown_pct": 24.3,
+      "white_pct": 92.2,
+      "hispanic_pct": 2.4,
+      "black_pct": 1.0,
+      "asian_pct": 1.1,
+      "other_pct": 3.2
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 28.6,
+        "rep_pct": 71.3,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -42.6,
+      "latest_leg": -42.6,
+      "pres_2024": -36.8
+    },
+    "pres_2024_margin": -36.8,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 38327,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "059",
+    "district_name": "Assembly District 59",
+    "incumbent": {
+      "name": "Robert Brooks",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 51822,
+      "rural_pct": 74.1,
+      "town_pct": 0.0,
+      "suburban_pct": 25.9,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 14.7,
+        "between_50_100k": 32.9,
+        "gt_150k": 39.2,
+        "unknown_pct": 13.3
+      },
+      "college_pct": 22.7,
+      "post_grad_pct": 8.6,
+      "education_unknown_pct": 21.9,
+      "white_pct": 93.3,
+      "hispanic_pct": 2.2,
+      "black_pct": 0.9,
+      "asian_pct": 0.8,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 24.2,
+        "rep_pct": 75.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -51.5,
+      "latest_leg": -51.5,
+      "pres_2024": -48.2
+    },
+    "pres_2024_margin": -48.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 39808,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "060",
+    "district_name": "Assembly District 60",
+    "incumbent": {
+      "name": "Jerry O\u2019Connor",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 40560,
+      "rural_pct": 12.1,
+      "town_pct": 0.0,
+      "suburban_pct": 17.9,
+      "urban_pct": 70.0,
+      "income_brackets": {
+        "lt_50k": 24.5,
+        "between_50_100k": 31.5,
+        "gt_150k": 27.8,
+        "unknown_pct": 16.3
+      },
+      "college_pct": 23.0,
+      "post_grad_pct": 9.3,
+      "education_unknown_pct": 24.1,
+      "white_pct": 90.0,
+      "hispanic_pct": 4.2,
+      "black_pct": 1.7,
+      "asian_pct": 1.4,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 39.8,
+        "rep_pct": 60.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -20.3,
+      "latest_leg": -20.3,
+      "pres_2024": -14.5
+    },
+    "pres_2024_margin": -14.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 29651,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "061",
+    "district_name": "Assembly District 61",
+    "incumbent": {
+      "name": "Robert Donovan",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 55801,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 67.9,
+      "urban_pct": 32.1,
+      "income_brackets": {
+        "lt_50k": 18.8,
+        "between_50_100k": 27.6,
+        "gt_150k": 36.4,
+        "unknown_pct": 17.2
+      },
+      "college_pct": 24.3,
+      "post_grad_pct": 11.7,
+      "education_unknown_pct": 26.7,
+      "white_pct": 83.1,
+      "hispanic_pct": 8.2,
+      "black_pct": 1.9,
+      "asian_pct": 3.4,
+      "other_pct": 3.4
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 48.3,
+        "rep_pct": 51.5,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -3.2,
+      "latest_leg": -3.2,
+      "pres_2024": 2.2
+    },
+    "pres_2024_margin": 2.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 34622,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "062",
+    "district_name": "Assembly District 62",
+    "incumbent": {
+      "name": "Angelina Cruz",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 55242,
+      "rural_pct": 1.6,
+      "town_pct": 0.0,
+      "suburban_pct": 17.7,
+      "urban_pct": 80.8,
+      "income_brackets": {
+        "lt_50k": 29.6,
+        "between_50_100k": 27.2,
+        "gt_150k": 24.0,
+        "unknown_pct": 19.1
+      },
+      "college_pct": 21.3,
+      "post_grad_pct": 9.1,
+      "education_unknown_pct": 29.3,
+      "white_pct": 61.7,
+      "hispanic_pct": 13.2,
+      "black_pct": 21.5,
+      "asian_pct": 1.7,
+      "other_pct": 2.0
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 95.2,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 95.2,
+      "latest_leg": 95.2,
+      "pres_2024": 22.3
+    },
+    "pres_2024_margin": 22.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 26439,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "063",
+    "district_name": "Assembly District 63",
+    "incumbent": {
+      "name": "Robert Wittke",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 55388,
+      "rural_pct": 17.4,
+      "town_pct": 0.0,
+      "suburban_pct": 82.6,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 12.5,
+        "between_50_100k": 25.3,
+        "gt_150k": 47.0,
+        "unknown_pct": 15.3
+      },
+      "college_pct": 25.2,
+      "post_grad_pct": 12.8,
+      "education_unknown_pct": 23.6,
+      "white_pct": 85.0,
+      "hispanic_pct": 5.8,
+      "black_pct": 1.6,
+      "asian_pct": 4.3,
+      "other_pct": 3.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 0.0,
+        "rep_pct": 96.8,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -93.6,
+      "latest_leg": -93.6,
+      "pres_2024": -14.3
+    },
+    "pres_2024_margin": -14.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 37979,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "064",
+    "district_name": "Assembly District 64",
+    "incumbent": {
+      "name": "Tip McGuire",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 53206,
+      "rural_pct": 6.5,
+      "town_pct": 0.0,
+      "suburban_pct": 93.5,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 21.5,
+        "between_50_100k": 26.5,
+        "gt_150k": 32.4,
+        "unknown_pct": 19.6
+      },
+      "college_pct": 21.3,
+      "post_grad_pct": 9.0,
+      "education_unknown_pct": 28.9,
+      "white_pct": 77.3,
+      "hispanic_pct": 10.6,
+      "black_pct": 6.7,
+      "asian_pct": 2.6,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 55.6,
+        "rep_pct": 44.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 11.4,
+      "latest_leg": 11.4,
+      "pres_2024": 6.4
+    },
+    "pres_2024_margin": 6.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 29408,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "065",
+    "district_name": "Assembly District 65",
+    "incumbent": {
+      "name": "Ben DeSmidt",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 49368,
+      "rural_pct": 0.7,
+      "town_pct": 0.0,
+      "suburban_pct": 99.3,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 23.4,
+        "between_50_100k": 29.8,
+        "gt_150k": 29.8,
+        "unknown_pct": 17.0
+      },
+      "college_pct": 21.6,
+      "post_grad_pct": 9.3,
+      "education_unknown_pct": 26.6,
+      "white_pct": 78.5,
+      "hispanic_pct": 10.7,
+      "black_pct": 6.8,
+      "asian_pct": 1.3,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 53.3,
+        "rep_pct": 46.6,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 6.7,
+      "latest_leg": 6.7,
+      "pres_2024": 7.1
+    },
+    "pres_2024_margin": 7.1,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 29315,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "066",
+    "district_name": "Assembly District 66",
+    "incumbent": {
+      "name": "Greta Neubauer",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 53027,
+      "rural_pct": 3.0,
+      "town_pct": 0.0,
+      "suburban_pct": 48.1,
+      "urban_pct": 48.9,
+      "income_brackets": {
+        "lt_50k": 24.7,
+        "between_50_100k": 29.3,
+        "gt_150k": 27.5,
+        "unknown_pct": 18.5
+      },
+      "college_pct": 21.9,
+      "post_grad_pct": 9.5,
+      "education_unknown_pct": 28.1,
+      "white_pct": 69.2,
+      "hispanic_pct": 11.2,
+      "black_pct": 15.1,
+      "asian_pct": 2.0,
+      "other_pct": 2.5
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 53.9,
+        "rep_pct": 45.9,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 8.0,
+      "latest_leg": 8.0,
+      "pres_2024": 9.5
+    },
+    "pres_2024_margin": 9.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 30200,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "067",
+    "district_name": "Assembly District 67",
+    "incumbent": {
+      "name": "David Armstrong",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 49129,
+      "rural_pct": 73.5,
+      "town_pct": 26.5,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 24.2,
+        "between_50_100k": 33.6,
+        "gt_150k": 25.9,
+        "unknown_pct": 16.3
+      },
+      "college_pct": 21.5,
+      "post_grad_pct": 8.1,
+      "education_unknown_pct": 25.7,
+      "white_pct": 92.6,
+      "hispanic_pct": 1.5,
+      "black_pct": 2.2,
+      "asian_pct": 0.8,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 32.3,
+        "rep_pct": 67.6,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -35.3,
+      "latest_leg": -35.3,
+      "pres_2024": -30.2
+    },
+    "pres_2024_margin": -30.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 34004,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "068",
+    "district_name": "Assembly District 68",
+    "incumbent": {
+      "name": "Rob Summerfield",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 48246,
+      "rural_pct": 87.3,
+      "town_pct": 10.4,
+      "suburban_pct": 2.2,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 28.3,
+        "between_50_100k": 35.1,
+        "gt_150k": 23.6,
+        "unknown_pct": 13.0
+      },
+      "college_pct": 22.0,
+      "post_grad_pct": 7.6,
+      "education_unknown_pct": 21.6,
+      "white_pct": 94.5,
+      "hispanic_pct": 1.0,
+      "black_pct": 1.2,
+      "asian_pct": 0.5,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 27.1,
+        "rep_pct": 72.8,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -45.7,
+      "latest_leg": -45.7,
+      "pres_2024": -37.9
+    },
+    "pres_2024_margin": -37.9,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36142,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "069",
+    "district_name": "Assembly District 69",
+    "incumbent": {
+      "name": "Karen Hurd",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 37214,
+      "rural_pct": 84.0,
+      "town_pct": 15.9,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 28.7,
+        "between_50_100k": 37.3,
+        "gt_150k": 19.9,
+        "unknown_pct": 14.1
+      },
+      "college_pct": 21.5,
+      "post_grad_pct": 6.6,
+      "education_unknown_pct": 22.7,
+      "white_pct": 93.8,
+      "hispanic_pct": 2.0,
+      "black_pct": 1.3,
+      "asian_pct": 0.6,
+      "other_pct": 2.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 24.2,
+        "rep_pct": 71.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -47.7,
+      "latest_leg": -47.7,
+      "pres_2024": -41.8
+    },
+    "pres_2024_margin": -41.8,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 27553,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "070",
+    "district_name": "Assembly District 70",
+    "incumbent": {
+      "name": "Nancy VanderMeer",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 42230,
+      "rural_pct": 69.3,
+      "town_pct": 30.7,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 27.4,
+        "between_50_100k": 34.7,
+        "gt_150k": 21.1,
+        "unknown_pct": 16.7
+      },
+      "college_pct": 19.8,
+      "post_grad_pct": 7.1,
+      "education_unknown_pct": 26.4,
+      "white_pct": 91.2,
+      "hispanic_pct": 2.2,
+      "black_pct": 1.6,
+      "asian_pct": 0.7,
+      "other_pct": 4.2
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 33.2,
+        "rep_pct": 66.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -33.5,
+      "latest_leg": -33.5,
+      "pres_2024": -26.1
+    },
+    "pres_2024_margin": -26.1,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 29457,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "071",
+    "district_name": "Assembly District 71",
+    "incumbent": {
+      "name": "Vinnie Miresse",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 64034,
+      "rural_pct": 21.7,
+      "town_pct": 78.3,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 18.4,
+        "between_50_100k": 27.1,
+        "gt_150k": 34.0,
+        "unknown_pct": 20.5
+      },
+      "college_pct": 26.5,
+      "post_grad_pct": 10.2,
+      "education_unknown_pct": 26.4,
+      "white_pct": 91.3,
+      "hispanic_pct": 2.4,
+      "black_pct": 1.5,
+      "asian_pct": 2.1,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 53.1,
+        "rep_pct": 46.8,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 6.3,
+      "latest_leg": 6.3,
+      "pres_2024": 6.8
+    },
+    "pres_2024_margin": 6.8,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 35579,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "072",
+    "district_name": "Assembly District 72",
+    "incumbent": {
+      "name": "Scott Krug",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 50792,
+      "rural_pct": 56.6,
+      "town_pct": 43.4,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 28.3,
+        "between_50_100k": 33.8,
+        "gt_150k": 23.3,
+        "unknown_pct": 14.6
+      },
+      "college_pct": 22.2,
+      "post_grad_pct": 8.6,
+      "education_unknown_pct": 22.9,
+      "white_pct": 92.1,
+      "hispanic_pct": 2.3,
+      "black_pct": 1.1,
+      "asian_pct": 1.3,
+      "other_pct": 3.2
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 36.0,
+        "rep_pct": 63.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -27.8,
+      "latest_leg": -27.8,
+      "pres_2024": -23.2
+    },
+    "pres_2024_margin": -23.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 34776,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "073",
+    "district_name": "Assembly District 73",
+    "incumbent": {
+      "name": "Angela Stroud",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 56134,
+      "rural_pct": 43.6,
+      "town_pct": 12.4,
+      "suburban_pct": 44.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 26.3,
+        "between_50_100k": 31.6,
+        "gt_150k": 23.7,
+        "unknown_pct": 18.4
+      },
+      "college_pct": 22.0,
+      "post_grad_pct": 8.6,
+      "education_unknown_pct": 27.9,
+      "white_pct": 89.8,
+      "hispanic_pct": 1.7,
+      "black_pct": 1.6,
+      "asian_pct": 0.9,
+      "other_pct": 6.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 58.3,
+        "rep_pct": 41.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 16.8,
+      "latest_leg": 16.8,
+      "pres_2024": 15.7
+    },
+    "pres_2024_margin": 15.7,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 33555,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "074",
+    "district_name": "Assembly District 74",
+    "incumbent": {
+      "name": "Chanz Green",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 56222,
+      "rural_pct": 89.0,
+      "town_pct": 11.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 28.8,
+        "between_50_100k": 34.5,
+        "gt_150k": 21.6,
+        "unknown_pct": 15.1
+      },
+      "college_pct": 21.4,
+      "post_grad_pct": 8.9,
+      "education_unknown_pct": 25.6,
+      "white_pct": 91.0,
+      "hispanic_pct": 1.4,
+      "black_pct": 1.2,
+      "asian_pct": 0.5,
+      "other_pct": 5.9
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 37.5,
+        "rep_pct": 62.4,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -24.9,
+      "latest_leg": -24.9,
+      "pres_2024": -22.1
+    },
+    "pres_2024_margin": -22.1,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 38435,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "075",
+    "district_name": "Assembly District 75",
+    "incumbent": {
+      "name": "Duke Tucker",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 54463,
+      "rural_pct": 89.8,
+      "town_pct": 10.2,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 23.2,
+        "between_50_100k": 34.8,
+        "gt_150k": 26.4,
+        "unknown_pct": 15.6
+      },
+      "college_pct": 21.0,
+      "post_grad_pct": 8.2,
+      "education_unknown_pct": 25.6,
+      "white_pct": 93.6,
+      "hispanic_pct": 1.5,
+      "black_pct": 1.4,
+      "asian_pct": 0.6,
+      "other_pct": 2.9
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 33.3,
+        "rep_pct": 66.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -33.4,
+      "latest_leg": -33.4,
+      "pres_2024": -31.4
+    },
+    "pres_2024_margin": -31.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 37663,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "076",
+    "district_name": "Assembly District 76",
+    "incumbent": {
+      "name": "Francesca Hong",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 91816,
+      "rural_pct": 0.1,
+      "town_pct": 0.0,
+      "suburban_pct": 3.5,
+      "urban_pct": 96.4,
+      "income_brackets": {
+        "lt_50k": 16.2,
+        "between_50_100k": 21.5,
+        "gt_150k": 41.6,
+        "unknown_pct": 20.7
+      },
+      "college_pct": 21.4,
+      "post_grad_pct": 14.3,
+      "education_unknown_pct": 29.6,
+      "white_pct": 82.1,
+      "hispanic_pct": 4.6,
+      "black_pct": 5.4,
+      "asian_pct": 4.2,
+      "other_pct": 3.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 98.9,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 98.9,
+      "latest_leg": 98.9,
+      "pres_2024": 79.8
+    },
+    "pres_2024_margin": 79.8,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 39025,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "077",
+    "district_name": "Assembly District 77",
+    "incumbent": {
+      "name": "Renuka Mayadev",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 116288,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 3.0,
+      "urban_pct": 97.0,
+      "income_brackets": {
+        "lt_50k": 8.9,
+        "between_50_100k": 10.8,
+        "gt_150k": 44.8,
+        "unknown_pct": 35.5
+      },
+      "college_pct": 24.0,
+      "post_grad_pct": 12.0,
+      "education_unknown_pct": 40.5,
+      "white_pct": 81.6,
+      "hispanic_pct": 4.5,
+      "black_pct": 2.4,
+      "asian_pct": 7.3,
+      "other_pct": 4.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 98.4,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 98.4,
+      "latest_leg": 98.4,
+      "pres_2024": 65.5
+    },
+    "pres_2024_margin": 65.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 35073,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "078",
+    "district_name": "Assembly District 78",
+    "incumbent": {
+      "name": "Shelia Stubbs",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 61908,
+      "rural_pct": 1.3,
+      "town_pct": 0.0,
+      "suburban_pct": 29.4,
+      "urban_pct": 69.3,
+      "income_brackets": {
+        "lt_50k": 18.4,
+        "between_50_100k": 24.1,
+        "gt_150k": 40.4,
+        "unknown_pct": 17.0
+      },
+      "college_pct": 23.8,
+      "post_grad_pct": 12.1,
+      "education_unknown_pct": 27.2,
+      "white_pct": 80.9,
+      "hispanic_pct": 5.9,
+      "black_pct": 6.1,
+      "asian_pct": 4.1,
+      "other_pct": 3.0
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 98.1,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 98.1,
+      "latest_leg": 98.1,
+      "pres_2024": 62.3
+    },
+    "pres_2024_margin": 62.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36151,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "079",
+    "district_name": "Assembly District 79",
+    "incumbent": {
+      "name": "Lisa Subeck",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 74822,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.1,
+      "urban_pct": 99.9,
+      "income_brackets": {
+        "lt_50k": 12.4,
+        "between_50_100k": 20.9,
+        "gt_150k": 51.5,
+        "unknown_pct": 15.2
+      },
+      "college_pct": 23.7,
+      "post_grad_pct": 20.0,
+      "education_unknown_pct": 25.4,
+      "white_pct": 80.8,
+      "hispanic_pct": 4.7,
+      "black_pct": 5.0,
+      "asian_pct": 6.2,
+      "other_pct": 3.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 98.6,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 98.6,
+      "latest_leg": 98.6,
+      "pres_2024": 72.5
+    },
+    "pres_2024_margin": 72.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 37410,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "080",
+    "district_name": "Assembly District 80",
+    "incumbent": {
+      "name": "Mike Bare",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 64930,
+      "rural_pct": 17.8,
+      "town_pct": 0.0,
+      "suburban_pct": 31.9,
+      "urban_pct": 50.3,
+      "income_brackets": {
+        "lt_50k": 7.7,
+        "between_50_100k": 17.5,
+        "gt_150k": 57.1,
+        "unknown_pct": 17.7
+      },
+      "college_pct": 26.0,
+      "post_grad_pct": 15.4,
+      "education_unknown_pct": 25.9,
+      "white_pct": 82.9,
+      "hispanic_pct": 3.7,
+      "black_pct": 2.0,
+      "asian_pct": 7.8,
+      "other_pct": 3.6
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 73.4,
+        "rep_pct": 26.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 46.9,
+      "latest_leg": 46.9,
+      "pres_2024": 48.8
+    },
+    "pres_2024_margin": 48.8,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 42541,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "081",
+    "district_name": "Assembly District 81",
+    "incumbent": {
+      "name": "Alex Joers",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 60349,
+      "rural_pct": 22.3,
+      "town_pct": 5.2,
+      "suburban_pct": 62.9,
+      "urban_pct": 9.6,
+      "income_brackets": {
+        "lt_50k": 10.7,
+        "between_50_100k": 21.5,
+        "gt_150k": 51.5,
+        "unknown_pct": 16.3
+      },
+      "college_pct": 25.3,
+      "post_grad_pct": 15.4,
+      "education_unknown_pct": 25.1,
+      "white_pct": 88.2,
+      "hispanic_pct": 3.4,
+      "black_pct": 1.9,
+      "asian_pct": 3.3,
+      "other_pct": 3.2
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 97.7,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 97.7,
+      "latest_leg": 97.7,
+      "pres_2024": 39.2
+    },
+    "pres_2024_margin": 39.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 40609,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "082",
+    "district_name": "Assembly District 82",
+    "incumbent": {
+      "name": "Scott Allen",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 52231,
+      "rural_pct": 3.7,
+      "town_pct": 0.0,
+      "suburban_pct": 6.1,
+      "urban_pct": 90.2,
+      "income_brackets": {
+        "lt_50k": 16.1,
+        "between_50_100k": 26.2,
+        "gt_150k": 40.9,
+        "unknown_pct": 16.8
+      },
+      "college_pct": 24.9,
+      "post_grad_pct": 11.2,
+      "education_unknown_pct": 25.2,
+      "white_pct": 84.7,
+      "hispanic_pct": 7.8,
+      "black_pct": 1.9,
+      "asian_pct": 2.2,
+      "other_pct": 3.4
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 42.7,
+        "rep_pct": 57.2,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -14.5,
+      "latest_leg": -14.5,
+      "pres_2024": -8.1
+    },
+    "pres_2024_margin": -8.1,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 33384,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "083",
+    "district_name": "Assembly District 83",
+    "incumbent": {
+      "name": "Dave Maxey",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 55687,
+      "rural_pct": 5.4,
+      "town_pct": 0.0,
+      "suburban_pct": 80.3,
+      "urban_pct": 14.3,
+      "income_brackets": {
+        "lt_50k": 10.9,
+        "between_50_100k": 25.4,
+        "gt_150k": 50.9,
+        "unknown_pct": 12.8
+      },
+      "college_pct": 27.9,
+      "post_grad_pct": 14.2,
+      "education_unknown_pct": 20.4,
+      "white_pct": 88.2,
+      "hispanic_pct": 4.1,
+      "black_pct": 1.0,
+      "asian_pct": 3.1,
+      "other_pct": 3.5
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 38.9,
+        "rep_pct": 60.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -22.0,
+      "latest_leg": -22.0,
+      "pres_2024": -17.5
+    },
+    "pres_2024_margin": -17.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 40221,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "084",
+    "district_name": "Assembly District 84",
+    "incumbent": {
+      "name": "Chuck Wichgers",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 53982,
+      "rural_pct": 23.8,
+      "town_pct": 29.0,
+      "suburban_pct": 47.2,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 10.4,
+        "between_50_100k": 24.3,
+        "gt_150k": 52.3,
+        "unknown_pct": 13.1
+      },
+      "college_pct": 25.1,
+      "post_grad_pct": 11.6,
+      "education_unknown_pct": 21.1,
+      "white_pct": 91.9,
+      "hispanic_pct": 2.8,
+      "black_pct": 0.7,
+      "asian_pct": 1.2,
+      "other_pct": 3.4
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 28.0,
+        "rep_pct": 71.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -43.9,
+      "latest_leg": -43.9,
+      "pres_2024": -38.4
+    },
+    "pres_2024_margin": -38.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 40963,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "085",
+    "district_name": "Assembly District 85",
+    "incumbent": {
+      "name": "Patrick Snyder",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 49216,
+      "rural_pct": 10.4,
+      "town_pct": 0.0,
+      "suburban_pct": 1.3,
+      "urban_pct": 88.4,
+      "income_brackets": {
+        "lt_50k": 23.9,
+        "between_50_100k": 30.4,
+        "gt_150k": 28.1,
+        "unknown_pct": 17.5
+      },
+      "college_pct": 24.0,
+      "post_grad_pct": 9.7,
+      "education_unknown_pct": 26.0,
+      "white_pct": 86.5,
+      "hispanic_pct": 2.3,
+      "black_pct": 1.4,
+      "asian_pct": 6.8,
+      "other_pct": 3.0
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 46.7,
+        "rep_pct": 53.2,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -6.5,
+      "latest_leg": -6.5,
+      "pres_2024": -0.6
+    },
+    "pres_2024_margin": -0.6,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 29686,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "086",
+    "district_name": "Assembly District 86",
+    "incumbent": {
+      "name": "John Spiros",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 47195,
+      "rural_pct": 68.5,
+      "town_pct": 31.5,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 20.8,
+        "between_50_100k": 34.4,
+        "gt_150k": 32.1,
+        "unknown_pct": 12.7
+      },
+      "college_pct": 23.9,
+      "post_grad_pct": 9.4,
+      "education_unknown_pct": 20.7,
+      "white_pct": 93.7,
+      "hispanic_pct": 1.5,
+      "black_pct": 1.2,
+      "asian_pct": 1.3,
+      "other_pct": 2.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 33.0,
+        "rep_pct": 66.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -33.9,
+      "latest_leg": -33.9,
+      "pres_2024": -28.0
+    },
+    "pres_2024_margin": -28.0,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 35433,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "087",
+    "district_name": "Assembly District 87",
+    "incumbent": {
+      "name": "Brent Jacobson",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 51365,
+      "rural_pct": 59.8,
+      "town_pct": 0.0,
+      "suburban_pct": 40.2,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 20.0,
+        "between_50_100k": 34.6,
+        "gt_150k": 31.9,
+        "unknown_pct": 13.5
+      },
+      "college_pct": 24.4,
+      "post_grad_pct": 9.0,
+      "education_unknown_pct": 21.0,
+      "white_pct": 92.6,
+      "hispanic_pct": 1.3,
+      "black_pct": 1.2,
+      "asian_pct": 1.9,
+      "other_pct": 3.0
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 33.9,
+        "rep_pct": 66.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -32.1,
+      "latest_leg": -32.1,
+      "pres_2024": -26.3
+    },
+    "pres_2024_margin": -26.3,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36883,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "088",
+    "district_name": "Assembly District 88",
+    "incumbent": {
+      "name": "Benjamin Franklin",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 51928,
+      "rural_pct": 6.1,
+      "town_pct": 0.0,
+      "suburban_pct": 91.1,
+      "urban_pct": 2.8,
+      "income_brackets": {
+        "lt_50k": 15.8,
+        "between_50_100k": 27.5,
+        "gt_150k": 40.0,
+        "unknown_pct": 16.7
+      },
+      "college_pct": 25.3,
+      "post_grad_pct": 11.0,
+      "education_unknown_pct": 24.9,
+      "white_pct": 89.5,
+      "hispanic_pct": 4.2,
+      "black_pct": 1.3,
+      "asian_pct": 2.1,
+      "other_pct": 3.0
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 49.6,
+        "rep_pct": 50.3,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -0.7,
+      "latest_leg": -0.7,
+      "pres_2024": 0.4
+    },
+    "pres_2024_margin": 0.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 34509,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "089",
+    "district_name": "Assembly District 89",
+    "incumbent": {
+      "name": "Ryan Spaude",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 52456,
+      "rural_pct": 0.7,
+      "town_pct": 0.0,
+      "suburban_pct": 28.0,
+      "urban_pct": 71.3,
+      "income_brackets": {
+        "lt_50k": 25.3,
+        "between_50_100k": 31.6,
+        "gt_150k": 27.5,
+        "unknown_pct": 15.7
+      },
+      "college_pct": 23.8,
+      "post_grad_pct": 8.5,
+      "education_unknown_pct": 24.4,
+      "white_pct": 86.4,
+      "hispanic_pct": 4.8,
+      "black_pct": 2.6,
+      "asian_pct": 2.7,
+      "other_pct": 3.5
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 51.3,
+        "rep_pct": 48.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 2.8,
+      "latest_leg": 2.8,
+      "pres_2024": 2.0
+    },
+    "pres_2024_margin": 2.0,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 30207,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "090",
+    "district_name": "Assembly District 90",
+    "incumbent": {
+      "name": "Amaad Rivera-Wagner",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 48899,
+      "rural_pct": 2.4,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 97.5,
+      "income_brackets": {
+        "lt_50k": 25.4,
+        "between_50_100k": 26.4,
+        "gt_150k": 29.2,
+        "unknown_pct": 18.9
+      },
+      "college_pct": 22.8,
+      "post_grad_pct": 8.8,
+      "education_unknown_pct": 28.6,
+      "white_pct": 80.1,
+      "hispanic_pct": 10.1,
+      "black_pct": 3.5,
+      "asian_pct": 3.2,
+      "other_pct": 3.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 52.5,
+        "rep_pct": 47.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 5.2,
+      "latest_leg": 5.2,
+      "pres_2024": 10.1
+    },
+    "pres_2024_margin": 10.1,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 24707,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "091",
+    "district_name": "Assembly District 91",
+    "incumbent": {
+      "name": "Jodi Emerson",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 52904,
+      "rural_pct": 23.7,
+      "town_pct": 0.0,
+      "suburban_pct": 21.0,
+      "urban_pct": 55.2,
+      "income_brackets": {
+        "lt_50k": 21.5,
+        "between_50_100k": 29.8,
+        "gt_150k": 32.2,
+        "unknown_pct": 16.5
+      },
+      "college_pct": 25.7,
+      "post_grad_pct": 10.0,
+      "education_unknown_pct": 24.4,
+      "white_pct": 90.9,
+      "hispanic_pct": 1.8,
+      "black_pct": 1.7,
+      "asian_pct": 2.8,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 51.5,
+        "rep_pct": 48.3,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 3.2,
+      "latest_leg": 3.2,
+      "pres_2024": 4.6
+    },
+    "pres_2024_margin": 4.6,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 34816,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "092",
+    "district_name": "Assembly District 92",
+    "incumbent": {
+      "name": "Clint Moses",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 55668,
+      "rural_pct": 22.7,
+      "town_pct": 36.3,
+      "suburban_pct": 37.8,
+      "urban_pct": 3.2,
+      "income_brackets": {
+        "lt_50k": 19.2,
+        "between_50_100k": 26.3,
+        "gt_150k": 31.2,
+        "unknown_pct": 23.3
+      },
+      "college_pct": 22.5,
+      "post_grad_pct": 8.5,
+      "education_unknown_pct": 30.8,
+      "white_pct": 91.9,
+      "hispanic_pct": 1.6,
+      "black_pct": 1.5,
+      "asian_pct": 2.5,
+      "other_pct": 2.6
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 46.7,
+        "rep_pct": 53.3,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -6.6,
+      "latest_leg": -6.6,
+      "pres_2024": -7.0
+    },
+    "pres_2024_margin": -7.0,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 32781,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "093",
+    "district_name": "Assembly District 93",
+    "incumbent": {
+      "name": "Christian Phelps",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 61876,
+      "rural_pct": 32.6,
+      "town_pct": 0.0,
+      "suburban_pct": 2.9,
+      "urban_pct": 64.5,
+      "income_brackets": {
+        "lt_50k": 15.3,
+        "between_50_100k": 24.6,
+        "gt_150k": 38.7,
+        "unknown_pct": 21.5
+      },
+      "college_pct": 26.2,
+      "post_grad_pct": 9.4,
+      "education_unknown_pct": 27.8,
+      "white_pct": 90.7,
+      "hispanic_pct": 1.9,
+      "black_pct": 1.4,
+      "asian_pct": 3.1,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 52.7,
+        "rep_pct": 47.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 5.6,
+      "latest_leg": 5.6,
+      "pres_2024": 8.4
+    },
+    "pres_2024_margin": 8.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 35669,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "094",
+    "district_name": "Assembly District 94",
+    "incumbent": {
+      "name": "Steve Doyle",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 55165,
+      "rural_pct": 30.7,
+      "town_pct": 0.0,
+      "suburban_pct": 32.7,
+      "urban_pct": 36.7,
+      "income_brackets": {
+        "lt_50k": 16.2,
+        "between_50_100k": 28.7,
+        "gt_150k": 39.2,
+        "unknown_pct": 15.9
+      },
+      "college_pct": 24.5,
+      "post_grad_pct": 11.0,
+      "education_unknown_pct": 24.4,
+      "white_pct": 90.9,
+      "hispanic_pct": 1.5,
+      "black_pct": 1.3,
+      "asian_pct": 3.6,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 50.3,
+        "rep_pct": 49.7,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 0.6,
+      "latest_leg": 0.6,
+      "pres_2024": -2.2
+    },
+    "pres_2024_margin": -2.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 36761,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "095",
+    "district_name": "Assembly District 95",
+    "incumbent": {
+      "name": "Jill Billings",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 78044,
+      "rural_pct": 17.4,
+      "town_pct": 11.3,
+      "suburban_pct": 5.6,
+      "urban_pct": 65.7,
+      "income_brackets": {
+        "lt_50k": 17.5,
+        "between_50_100k": 23.5,
+        "gt_150k": 29.4,
+        "unknown_pct": 29.6
+      },
+      "college_pct": 21.7,
+      "post_grad_pct": 8.8,
+      "education_unknown_pct": 36.2,
+      "white_pct": 92.4,
+      "hispanic_pct": 2.1,
+      "black_pct": 1.4,
+      "asian_pct": 1.8,
+      "other_pct": 2.4
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 52.0,
+        "rep_pct": 48.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 4.0,
+      "latest_leg": 4.0,
+      "pres_2024": 2.2
+    },
+    "pres_2024_margin": 2.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 32450,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "096",
+    "district_name": "Assembly District 96",
+    "incumbent": {
+      "name": "Tara Johnson",
+      "party": "D"
+    },
+    "demographics": {
+      "population": 60561,
+      "rural_pct": 37.3,
+      "town_pct": 5.4,
+      "suburban_pct": 4.9,
+      "urban_pct": 52.5,
+      "income_brackets": {
+        "lt_50k": 22.3,
+        "between_50_100k": 28.3,
+        "gt_150k": 27.6,
+        "unknown_pct": 21.8
+      },
+      "college_pct": 21.3,
+      "post_grad_pct": 10.1,
+      "education_unknown_pct": 31.2,
+      "white_pct": 92.3,
+      "hispanic_pct": 1.6,
+      "black_pct": 1.5,
+      "asian_pct": 2.0,
+      "other_pct": 2.6
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 51.0,
+        "rep_pct": 49.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": 2.0,
+      "latest_leg": 2.0,
+      "pres_2024": 8.4
+    },
+    "pres_2024_margin": 8.4,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 32807,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "097",
+    "district_name": "Assembly District 97",
+    "incumbent": {
+      "name": "Cindi Duchow",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 60994,
+      "rural_pct": 45.8,
+      "town_pct": 13.5,
+      "suburban_pct": 40.7,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 9.1,
+        "between_50_100k": 21.3,
+        "gt_150k": 57.3,
+        "unknown_pct": 12.3
+      },
+      "college_pct": 26.4,
+      "post_grad_pct": 13.7,
+      "education_unknown_pct": 20.8,
+      "white_pct": 92.2,
+      "hispanic_pct": 2.6,
+      "black_pct": 0.8,
+      "asian_pct": 1.1,
+      "other_pct": 3.2
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 28.9,
+        "rep_pct": 70.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -42.0,
+      "latest_leg": -42.0,
+      "pres_2024": -34.0
+    },
+    "pres_2024_margin": -34.0,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 42495,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "098",
+    "district_name": "Assembly District 98",
+    "incumbent": {
+      "name": "Jim Piwowarczyk",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 55004,
+      "rural_pct": 28.3,
+      "town_pct": 0.0,
+      "suburban_pct": 71.7,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 11.0,
+        "between_50_100k": 24.3,
+        "gt_150k": 50.9,
+        "unknown_pct": 13.7
+      },
+      "college_pct": 26.5,
+      "post_grad_pct": 10.9,
+      "education_unknown_pct": 21.5,
+      "white_pct": 92.0,
+      "hispanic_pct": 2.4,
+      "black_pct": 0.9,
+      "asian_pct": 1.5,
+      "other_pct": 3.1
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 28.8,
+        "rep_pct": 71.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -42.2,
+      "latest_leg": -42.2,
+      "pres_2024": -35.5
+    },
+    "pres_2024_margin": -35.5,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 41572,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "55",
+    "district_id": "099",
+    "district_name": "Assembly District 99",
+    "incumbent": {
+      "name": "Barbara Dittrich",
+      "party": "R"
+    },
+    "demographics": {
+      "population": 56752,
+      "rural_pct": 27.9,
+      "town_pct": 0.0,
+      "suburban_pct": 72.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 10.5,
+        "between_50_100k": 21.7,
+        "gt_150k": 54.7,
+        "unknown_pct": 13.1
+      },
+      "college_pct": 27.1,
+      "post_grad_pct": 12.3,
+      "education_unknown_pct": 21.7,
+      "white_pct": 92.3,
+      "hispanic_pct": 2.2,
+      "black_pct": 0.9,
+      "asian_pct": 1.3,
+      "other_pct": 3.3
+    },
+    "elections": [
+      {
+        "year": 2024,
+        "dem_pct": 0.0,
+        "rep_pct": 97.5,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2024": -95.0,
+      "latest_leg": -95.0,
+      "pres_2024": -32.2
+    },
+    "pres_2024_margin": -32.2,
+    "gov_2022_margin": 0.0,
+    "top_ticket_totals": {
+      "pres_2024": 41224,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  }
+]

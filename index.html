@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legislative District Map</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="style.css?v=20260226b" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>State Legislative District Explorer</h1>
+    <div class="controls-row controls-row-primary">
+      <span class="control-label-inline">State</span>
+      <select id="stateSelect">
+        <option value="">Select State...</option>
+      </select>
+      <button id="exitStateBtn" type="button" hidden>Exit State</button>
+      <div class="chamber-buttons">
+        <button id="houseChamberBtn" type="button">House</button>
+        <button id="senateChamberBtn" type="button">Senate</button>
+      </div>
+    </div>
+    <div class="controls-row controls-row-secondary">
+      <div id="mapViewButtons" class="mapview-buttons"></div>
+      <div class="overlay-toggles">
+        <label class="county-overlay-label">
+          <input id="countyOverlayToggle" type="checkbox" />
+          County Overlay
+        </label>
+        <label class="county-overlay-label">
+          <input id="targetDistrictsToggle" type="checkbox" />
+          Target Districts
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section id="map"></section>
+    <aside class="sidebar">
+      <h2 id="detailsTitle">District Details</h2>
+      <div id="details">Click a district for details.</div>
+    </aside>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"></script>
+  <script src="app.js?v=20260226c"></script>
+</body>
+</html>

@@ -1,0 +1,1041 @@
+:root {
+  --bg: #0f1318;
+  --panel: #171d24;
+  --text: #e7edf5;
+  --muted: #9ba9b9;
+  --border: #2a3440;
+  --accent: #257bf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top left, #1a232f, #111820 35%, #0f1318 100%);
+}
+
+.topbar {
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  padding: 0.8rem 1rem;
+}
+
+.topbar h1 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.25rem;
+}
+
+.controls-row {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 0.4rem;
+}
+
+.controls-row-secondary {
+  margin-bottom: 0;
+}
+
+label {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.control-label-inline {
+  font-size: 0.92rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+select,
+input[type="text"],
+input[type="file"],
+button {
+  margin-left: 0.35rem;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #1d2630;
+  color: var(--text);
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+button:disabled,
+select:disabled,
+input:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+#statusText {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.mapview-stack {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.chamber-buttons {
+  display: inline-flex;
+  gap: 0.35rem;
+  margin-left: 0;
+}
+
+.chamber-buttons button {
+  margin-left: 0;
+  min-width: 110px;
+  min-height: 42px;
+  padding: 0.52rem 0.84rem;
+  background: #5f6a77;
+  border-color: #5f6a77;
+  color: #fff;
+  font-weight: 700;
+}
+
+.chamber-buttons button.active-chamber {
+  background: #0a477f;
+  border-color: #0a477f;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.mapview-buttons {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mapview-button {
+  margin-left: 0;
+  min-width: 108px;
+  min-height: 42px;
+  padding: 0.52rem 0.84rem;
+  background: #545f6c;
+  border-color: #545f6c;
+  color: #fff;
+  font-weight: 700;
+}
+
+.mapview-button.active-mapview {
+  background: #0a477f;
+  border-color: #0a477f;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+#exitStateBtn {
+  background: #545f6c;
+  border-color: #545f6c;
+  color: #fff;
+}
+
+#senateChamberBtn:not(.active-chamber) {
+  background: #545f6c;
+  border-color: #545f6c;
+}
+
+#stateSelect {
+  margin-left: 0;
+}
+
+.county-overlay-label {
+  margin-left: 0.5rem;
+}
+
+.overlay-toggles {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.overlay-toggles .county-overlay-label {
+  margin-left: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1.8fr 1.2fr;
+  gap: 0.8rem;
+  padding: 0.8rem;
+  height: calc(100vh - 140px);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  background: #10161d;
+}
+
+.leaflet-container:focus {
+  outline: none;
+}
+
+.leaflet-interactive:focus {
+  outline: none;
+}
+
+.leaflet-overlay-pane path.leaflet-interactive {
+  transition: fill 220ms ease, fill-opacity 220ms ease, opacity 220ms ease, stroke-opacity 220ms ease;
+}
+
+.sidebar {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3a4654 #1a222b;
+}
+
+.sidebar h2 {
+  margin: 0 0 0.6rem 0;
+}
+
+#details {
+  font-size: 0.93rem;
+  line-height: 1.45;
+}
+
+.detail-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.detail-meta {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.detail-meta-muted {
+  color: #8e98a5;
+}
+
+.detail-section {
+  border-top: 1px solid var(--border);
+  padding-top: 0.55rem;
+  margin-top: 0.55rem;
+}
+
+.detail-section-title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.centered-section-title {
+  text-align: center;
+}
+
+.large-section-title {
+  font-size: 1.08rem;
+}
+
+.detail-subtitle {
+  margin-top: 0.45rem;
+  font-weight: 600;
+  color: #c8d4e2;
+}
+
+.candidates-title {
+  font-size: 1.06rem;
+  font-weight: 700;
+}
+
+.candidates-row {
+  font-size: 1.03rem;
+  line-height: 1.35;
+}
+
+.chart-header {
+  font-size: 1.04rem;
+}
+
+.centered-subtitle {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.detail-row {
+  margin: 0.08rem 0;
+}
+
+.margin-r,
+.margin-d {
+  font-weight: 700 !important;
+}
+
+.margin-r {
+  color: #f82644;
+}
+
+.margin-d {
+  color: #257bf8;
+}
+
+.detail-indent {
+  margin-left: 0.85rem;
+}
+
+.stacked-chart {
+  margin-top: 0.45rem;
+  height: 33px;
+  border-radius: 7px;
+  overflow: hidden;
+  display: flex;
+  background: #2b3642;
+}
+
+.stacked-segment {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.stacked-segment-label {
+  color: #fff;
+  font-size: 1.12rem;
+  font-weight: 700;
+  font-family: "Bahnschrift SemiCondensed", "Bahnschrift", "Segoe UI", sans-serif;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  transform: translateY(2px);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+  white-space: nowrap;
+}
+
+.district-number-label-wrap {
+  background: transparent;
+  border: none;
+}
+
+.district-number-label {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.88);
+  font-family: "Bahnschrift Condensed", "Bahnschrift", "Segoe UI", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.stacked-legend {
+  margin-top: 0.45rem;
+  display: grid;
+  gap: 0.2rem 0.08rem;
+}
+
+.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(var(--legend-rows, 1), auto);
+  grid-auto-flow: column;
+}
+
+.stacked-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.stacked-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.detail-break {
+  height: 0.55rem;
+}
+
+.color-metro-rural {
+  background: #8c1024;
+}
+
+.color-metro-town {
+  background: #c84c5f;
+}
+
+.color-metro-suburban {
+  background: #9c8fbf;
+}
+
+.color-metro-urban {
+  background: #0f6d76;
+}
+
+.color-income-lt50k {
+  background: #a4aea3;
+}
+
+.color-income-50to100k {
+  background: #69966a;
+}
+
+.color-income-gt150k {
+  background: #2e7d32;
+}
+
+.color-unknown {
+  background: #8e97a1;
+}
+
+.color-party-r {
+  background: #f82644;
+}
+
+.color-party-d {
+  background: #257bf8;
+}
+
+.color-party-other {
+  background: #8e97a1;
+}
+
+.color-edu-noncollege {
+  background: #153a6b;
+}
+
+.color-edu-college {
+  background: #6a4ca6;
+}
+
+.color-edu-postgrad {
+  background: #b8860b;
+}
+
+.color-race-white {
+  background: #6e7f91;
+}
+
+.color-race-black {
+  background: #2e3a46;
+}
+
+.color-race-hispanic {
+  background: #0f6d76;
+}
+
+.color-race-asian {
+  background: #4f8f3d;
+}
+
+.color-race-other {
+  background: #a8762c;
+}
+
+.county-label {
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.county-label-text {
+  display: inline-block;
+  color: #a9b8c8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  transform-origin: center center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+
+.district-hover-info {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+  min-width: 215px;
+  max-width: 340px;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid #2f3c4b;
+  border-radius: 8px;
+  background: rgba(20, 28, 36, 0.96);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  color: #e5edf6;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.district-hover-info * {
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.map-overview-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1002;
+  margin: 0;
+  background: #545f6c;
+  border-color: #545f6c;
+  color: #fff;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 180ms ease, visibility 180ms ease;
+}
+
+.map-overview-button.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.election-chart-block .detail-break {
+  height: 0.9rem;
+}
+
+.past-election-grid {
+  display: block;
+}
+
+.past-election-year-row {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  column-gap: 0.85rem;
+  align-items: start;
+  padding: 0.1rem 0;
+}
+
+.past-election-year-right {
+  border-left: 1px solid var(--border);
+  padding-left: 0.85rem;
+}
+
+.with-year-divider {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.6rem;
+}
+
+.past-election-year-left .election-chart-block:last-child,
+.past-election-year-right .election-chart-block:last-child {
+  margin-bottom: 0;
+}
+
+.turnout-registered {
+  margin-top: 0.1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.past-election-registered-row {
+  padding-top: 0.05rem;
+}
+
+.turnout-segment {
+  background: #4e89e8;
+}
+
+.turnout-remainder {
+  background: #2b3642;
+}
+
+.turnout-chart-block .stacked-chart {
+  height: 16px;
+}
+
+.turnout-detail {
+  margin-top: 0.25rem;
+  text-align: center;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #d1deec;
+}
+
+.split-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.85rem;
+  align-items: start;
+}
+
+.split-col-right {
+  border-left: 1px solid var(--border);
+  padding-left: 0.85rem;
+}
+
+.chamber-composition-layout {
+  margin-top: 0.45rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(168px, 0.95fr);
+  gap: 0.8rem;
+  align-items: start;
+}
+
+.chamber-dotmap-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chamber-dotmap {
+  --dot-rows: 10;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot-group-left,
+.dot-group-right {
+  display: flex;
+  align-items: flex-start;
+}
+
+.dot-group-right {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dot-major-row,
+.dot-minor-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.dot-minor-row {
+  gap: 0.65rem;
+  min-height: 14px;
+}
+
+.dot-matrix {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(var(--dot-rows), 13px);
+  grid-auto-columns: 13px;
+  gap: 3px;
+}
+
+.dot-seat {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-rep {
+  background: #f82644;
+}
+
+.dot-dem {
+  background: #257bf8;
+}
+
+.dot-other {
+  background: #8e97a1;
+}
+
+.dot-vacant {
+  background: transparent;
+  border: 2px solid #8e97a1;
+}
+
+.majority-summary {
+  margin-top: 0.42rem;
+  text-align: center;
+  font-size: 1.08rem;
+  font-weight: 500;
+}
+
+.majority-party-r {
+  color: #f82644;
+}
+
+.majority-party-d {
+  color: #257bf8;
+}
+
+.chamber-composition-table {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #121a22;
+  justify-self: stretch;
+  width: 100%;
+  min-width: 240px;
+  max-width: 320px;
+}
+
+.composition-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.8rem;
+  color: #b4c0ce;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.composition-row,
+.composition-total-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.42rem 0.55rem;
+}
+
+.composition-row {
+  border-bottom: 1px solid var(--border);
+}
+
+.composition-party {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  font-size: 0.89rem;
+}
+
+.composition-value {
+  font-weight: 700;
+  justify-self: end;
+}
+
+.composition-total-row {
+  font-size: 0.9rem;
+}
+
+.target-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+
+.target-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.target-column .target-table {
+  width: auto;
+}
+
+.target-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #344354;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #121a22;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.target-table th,
+.target-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.32rem 0.35rem;
+  font-size: 0.82rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.target-row {
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease;
+}
+
+.target-row:hover,
+.target-row.is-hovered {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.target-table th {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color: #b4c0ce;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.target-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.target-district-cell {
+  text-align: center !important;
+}
+
+.inc-cell {
+  text-align: center !important;
+  width: 30px;
+  color: #0f1318;
+}
+
+.inc-r {
+  background: #FF9F9F;
+}
+
+.inc-d {
+  background: #A6E1F8;
+}
+
+.inc-u {
+  background: #d5dae0;
+}
+
+.margin-cell {
+  color: #0f1318;
+  font-weight: 700;
+  text-align: center !important;
+}
+
+.target-col-district {
+  width: 34px;
+}
+
+.target-col-inc {
+  width: 34px;
+}
+
+.target-col-candidate {
+  width: 108px;
+}
+
+.target-col-margin {
+  width: 56px;
+}
+
+.target-gap-col,
+.target-gap-cell {
+  width: 8px;
+  min-width: 8px;
+  padding: 0 !important;
+  background: transparent;
+  border-bottom: 1px solid transparent !important;
+}
+
+.target-gap-col {
+  border-bottom: 1px solid transparent !important;
+}
+
+.twoline-head {
+  display: inline-block;
+  line-height: 1.05;
+}
+
+.target-table th.target-col-margin,
+.target-table td.margin-cell {
+  border: 1px solid #000 !important;
+}
+
+.target-empty {
+  color: #9ba9b9;
+  text-align: center;
+}
+
+.target-mode-header {
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 0.18rem 0.3rem;
+  transition: background 140ms ease, box-shadow 140ms ease;
+}
+
+.target-mode-header:hover {
+  background: rgba(148, 171, 194, 0.14);
+}
+
+.target-mode-header.active-target-mode {
+  background: rgba(148, 171, 194, 0.28);
+  box-shadow: inset 0 0 0 1px rgba(171, 193, 216, 0.35);
+}
+
+.all-districts-header {
+  margin-bottom: 0.55rem;
+}
+
+.all-districts-table-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.all-districts-table-wrap .target-table {
+  width: auto;
+}
+
+#details > .detail-section + .detail-section {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #1a222b;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #3a4654;
+  border-radius: 8px;
+  border: 2px solid #1a222b;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #4b5a6a;
+}
+
+.leaflet-control-zoom a,
+.leaflet-bar a {
+  background: #1d2630;
+  color: #e7edf5;
+  border-color: #2f3c4b;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leaflet-control-zoom a:hover,
+.leaflet-bar a:hover {
+  background: #263240;
+  color: #ffffff;
+}
+
+.leaflet-control-zoom a.leaflet-disabled {
+  background: #171e26;
+  color: #7f8a98;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #1d2630;
+  color: #e7edf5;
+  border: 1px solid #2f3c4b;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px;
+  line-height: 1.35;
+  font-family: "Bahnschrift", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  color: #c7d2de;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #ffffff;
+}
+
+.leaflet-control-attribution {
+  background: rgba(20, 28, 36, 0.92) !important;
+  color: #b8c5d3 !important;
+  border: 1px solid #2f3c4b;
+  border-bottom: none;
+  border-right: none;
+}
+
+.leaflet-control-attribution a {
+  color: #dbe7f4 !important;
+}
+
+.leaflet-control-attribution a:hover {
+  color: #ffffff !important;
+}
+
+@media (max-width: 1200px) {
+  .target-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  #map {
+    min-height: 460px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .past-election-grid {
+    display: block;
+  }
+
+  .past-election-year-row {
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+  }
+
+  .past-election-year-right {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: 0.65rem;
+  }
+
+  .split-two-col {
+    grid-template-columns: 1fr;
+    row-gap: 0.6rem;
+  }
+
+  .split-col-right {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: 0.65rem;
+  }
+
+  .chamber-composition-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .chamber-dotmap {
+    justify-content: center;
+  }
+
+  .controls-row {
+    flex-wrap: wrap;
+  }
+
+  .chamber-buttons {
+    margin-left: 0;
+  }
+}
