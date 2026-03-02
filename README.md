@@ -1,31 +1,4 @@
-# State Legislative District Map Starter
-
-This starter app gives you:
-- An interactive map for district boundaries
-- A `House` / `Senate` chamber switch
-- Popups for incumbent, demographics, and election history
-- Mock Michigan test data so you can develop before loading real data
-- Automatic shapefile loading from local project files
-
-## What This Version Does
-
-- Auto-loads shapefiles from:
-  - `data/shapes/house.zip`
-  - `data/shapes/senate.zip`
-- Optional county overlay from:
-  - `data/shapes/counties.zip`
-- Lets you switch between House and Senate layers
-- Joins each district feature to data by `State FIPS + chamber district code`
-  - House district field is auto-read from `SLDLST`
-  - Senate district field is auto-read from `SLDUST`
-- Supports alphanumeric district codes (for states that use lettered districts)
-- Map View options:
-  - Latest State Leg Margin
-  - 2022 State Leg Elections
-  - 2023 State Leg Elections
-  - 2024 State Leg Election
-  - 2025 State Leg Election
-  - 2024 Presidential Election
+# State Legislative District Map
 
 ## Project Structure
 
