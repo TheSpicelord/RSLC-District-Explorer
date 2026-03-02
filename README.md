@@ -35,31 +35,6 @@ This starter app gives you:
 - `data/mock_michigan_house.json` - fake House records
 - `data/mock_michigan_senate.json` - fake Senate records
 
-## Run Locally
-
-Because browsers block `fetch()` from local files, run a tiny local server in this folder.
-
-### Option A (Python, usually easiest)
-
-```powershell
-python -m http.server 8000
-```
-
-Then open: `http://localhost:8000`
-
-### Option B (VS Code Live Server extension)
-
-Right-click `index.html` and choose "Open with Live Server".
-
-## How To Use
-
-1. Put your nationwide House ZIP at `data/shapes/house.zip`.
-2. Put your nationwide Senate ZIP at `data/shapes/senate.zip`.
-3. Optional: put county ZIP at `data/shapes/counties.zip`.
-4. Refresh the app.
-5. Use `Switch Chamber` and `Map View`.
-6. Turn on `County Overlay` when needed.
-
 ## Data Format Expected
 
 Each record in data files should look like this:
@@ -103,43 +78,3 @@ Each record in data files should look like this:
 }
 ```
 
-
-## GitHub Basics (Beginner Workflow)
-
-1. Create a GitHub repository (empty repo, no files).
-2. In this folder:
-
-```powershell
-git init
-git add .
-git commit -m "Initial map prototype"
-git branch -M main
-git remote add origin <your-repo-url>
-git push -u origin main
-```
-
-3. Every time you make progress:
-
-```powershell
-git add .
-git commit -m "Describe what changed"
-git push
-```
-
-## Sharing with Other Computers
-
-Short-term (prototype):
-- Push to GitHub.
-- Others clone and run a local server.
-
-Production path:
-- Frontend: host on GitHub Pages, Netlify, or Vercel.
-- Data/API: move data to a shared database + API service (later step).
-- Keep a stable district ID key so map shapes always join to data correctly.
-
-## Next Build Steps
-
-- Add charts in side panel (vote trend, demographic bars)
-- Add filters (year, party, competitiveness)
-- Add statewide model outputs (probability, expected margin)
-- Add district search and click-to-zoom list
