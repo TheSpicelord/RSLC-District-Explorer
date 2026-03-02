@@ -172,7 +172,7 @@ input:disabled {
 
 .layout {
   display: grid;
-  grid-template-columns: 1.8fr 1.2fr;
+  grid-template-columns: 2.1fr 0.9fr;
   gap: 0.8rem;
   padding: 0.8rem;
   height: calc(100vh - 140px);
@@ -735,7 +735,7 @@ input:disabled {
 
 .target-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0.7rem;
 }
 
@@ -973,12 +973,6 @@ input:disabled {
 
 .leaflet-control-attribution a:hover {
   color: #ffffff !important;
-}
-
-@media (max-width: 1200px) {
-  .target-columns {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 900px) {
