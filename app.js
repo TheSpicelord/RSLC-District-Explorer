@@ -660,8 +660,17 @@ async function ensureCountyShapeLoaded() {
 }
 
 function indexDistrictFeaturesByState(chamber, geojson) {
-  const byState = indexFeaturesByStateFips(geojson?.features || []);
+  const filteredFeatures = (geojson?.features || []).filter((feature) => !isPlaceholderDistrictFeature(feature, chamber));
+  const byState = indexFeaturesByStateFips(filteredFeatures);
   state.districtFeaturesByChamberState[chamber] = byState;
+}
+
+function isPlaceholderDistrictFeature(feature, chamber = state.chamber) {
+  const props = feature?.properties || {};
+  const districtField = chamber === "house" ? "SLDLST" : "SLDUST";
+  const rawDistrict = String(readProperty(props, districtField) || "").trim().toUpperCase();
+  // TIGER legislative shapefiles include non-district placeholders like ZZZ.
+  return rawDistrict === "ZZZ";
 }
 
 function indexFeaturesByStateFips(features) {
@@ -685,7 +694,9 @@ function districtFeaturesForSelectedState(chamber = state.chamber) {
   // Fallback path when index is unavailable.
   const geojson = state.geojsonByChamber[chamber];
   if (!geojson) return [];
-  return (geojson.features || []).filter((feature) => featureMatchesSelectedState(feature.properties));
+  return (geojson.features || []).filter(
+    (feature) => featureMatchesSelectedState(feature.properties) && !isPlaceholderDistrictFeature(feature, chamber)
+  );
 }
 
 function renderDistrictLayerForSelectedState() {
@@ -1027,8 +1038,8 @@ function targetDistrictRowsForSelectedState() {
       joinKey: key,
       districtLabel: displayDistrictId(target.rawDistrict, target.districtId),
       incParty,
-      gopCandidate: gopCandidateShort(rec),
-      demCandidate: demCandidateShort(rec),
+      gopCandidate: gopCandidateFull(rec),
+      demCandidate: demCandidateFull(rec),
       legMarginDem,
       presMarginDem,
       gov2022MarginDem,
