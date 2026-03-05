@@ -1,13 +1,5 @@
 # State Legislative District Map
 
-## Project Structure
-
-- `index.html` - app UI
-- `style.css` - page + map styling
-- `app.js` - map logic, shapefile loading, data joins, popups
-- `data/mock_michigan_house.json` - fake House records
-- `data/mock_michigan_senate.json` - fake Senate records
-
 ## Data Format Expected
 
 Each record in data files should look like this:
