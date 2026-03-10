@@ -1,9 +1,16 @@
 const NATIONAL_CENTER = [39.5, -98.35];
 const NATIONAL_ZOOM = 4;
 const COUNTY_LABEL_MIN_ZOOM = 8;
+const BASE_WHEEL_PX_PER_ZOOM_LEVEL = 60;
+const CTRL_WHEEL_ZOOM_SLOW_FACTOR = 5;
+const BASE_ZOOM_SNAP = 1;
+const CTRL_FINE_ZOOM_SNAP = 0.2;
 
 const map = L.map("map").setView(NATIONAL_CENTER, NATIONAL_ZOOM);
 map.boxZoom.disable();
+map.options.wheelPxPerZoomLevel = BASE_WHEEL_PX_PER_ZOOM_LEVEL;
+map.options.zoomSnap = BASE_ZOOM_SNAP;
+map.options.zoomDelta = BASE_ZOOM_SNAP;
 
 map.createPane("statePane");
 map.getPane("statePane").style.zIndex = 330;
@@ -43,6 +50,7 @@ const AUTO_SHAPE_URLS = {
   counties: "data/shapes/counties.zip",
 };
 const TARGET_DISTRICTS_JSON_URLS = ["data/target_districts.json"];
+const CHAMBER_INDEX_URLS = ["data/chamber_files.json"];
 const WORKBOOK_URLS = [
   "data/State Legislative Election History - Copy.xlsx",
   "data/State Legislative Election History.xlsx",
@@ -194,6 +202,18 @@ async function init() {
 }
 
 async function loadAllChamberData() {
+  const index = await loadChamberIndex();
+  if (index) {
+    const [houseRows, senateRows] = await Promise.all([
+      Promise.all(index.house.map((url) => fetchJsonArray(url))),
+      Promise.all(index.senate.map((url) => fetchJsonArray(url))),
+    ]);
+    state.dataByChamber.house = buildDataMap(houseRows.flat());
+    state.dataByChamber.senate = buildDataMap(senateRows.flat());
+    buildAvailableMapViewsIndex();
+    return;
+  }
+
   const [miHouseData, miSenateData, mnHouseData, mnSenateData, wiHouseData, wiSenateData, paHouseData, paSenateData] = await Promise.all([
     fetchJsonArray("data/michigan_house.json"),
     fetchJsonArray("data/michigan_senate.json"),
@@ -207,6 +227,47 @@ async function loadAllChamberData() {
   state.dataByChamber.house = buildDataMap([...(miHouseData || []), ...(mnHouseData || []), ...(wiHouseData || []), ...(paHouseData || [])]);
   state.dataByChamber.senate = buildDataMap([...(miSenateData || []), ...(mnSenateData || []), ...(wiSenateData || []), ...(paSenateData || [])]);
   buildAvailableMapViewsIndex();
+}
+
+async function loadChamberIndex() {
+  for (const url of CHAMBER_INDEX_URLS) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) continue;
+      const parsed = await response.json();
+      const normalized = normalizeChamberIndex(parsed);
+      if (normalized) return normalized;
+    } catch (_err) {
+      // Try next source.
+    }
+  }
+  return null;
+}
+
+function normalizeChamberIndex(parsed) {
+  if (!parsed || typeof parsed !== "object") return null;
+
+  const normalizeSide = (value) => {
+    if (!Array.isArray(value)) return [];
+    const urls = [];
+    for (const item of value) {
+      if (typeof item === "string") {
+        const trimmed = item.trim();
+        if (trimmed) urls.push(trimmed);
+        continue;
+      }
+      if (item && typeof item === "object") {
+        const url = String(item.url || item.file || "").trim();
+        if (url) urls.push(url);
+      }
+    }
+    return Array.from(new Set(urls));
+  };
+
+  const house = normalizeSide(parsed.house);
+  const senate = normalizeSide(parsed.senate);
+  if (!house.length && !senate.length) return null;
+  return { house, senate };
 }
 
 async function fetchJsonArray(url) {
@@ -248,23 +309,61 @@ function wireEvents() {
     enterNationalView();
   });
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key !== "Escape") return;
+  document.addEventListener("keydown", async (e) => {
+    if (isEditableTarget(e.target)) return;
+    if (e.key === "Control") {
+      applyFineZoomMode(true);
+    }
     if (state.mode !== "state") return;
 
-    if (state.hasOpenPopup) {
-      map.closePopup();
+    if (e.key === "Escape") {
+      if (state.hasOpenPopup) {
+        map.closePopup();
+        return;
+      }
+
+      if (state.selectedDistrictLayer) {
+        clearSelectedDistrict();
+        showStateChamberOverview();
+        return;
+      }
+
+      enterNationalView();
       return;
     }
 
-    if (state.selectedDistrictLayer) {
-      clearSelectedDistrict();
-      showStateChamberOverview();
+    if (e.key === "Shift" && e.location === 1 && !e.repeat) {
+      const nextChamber = state.chamber === "house" ? "senate" : "house";
+      await setChamber(nextChamber);
       return;
     }
 
-    enterNationalView();
+    if (!/^[1-9]$/.test(e.key)) return;
+    const idx = Number(e.key) - 1;
+    const views = displayedMapViews();
+    if (idx < 0 || idx >= views.length) return;
+    e.preventDefault();
+    await setMapView(views[idx]);
   });
+
+  document.addEventListener("keyup", (e) => {
+    if (e.key === "Control") {
+      applyFineZoomMode(false);
+    }
+  });
+
+  window.addEventListener("blur", () => {
+    applyFineZoomMode(false);
+  });
+
+  map.getContainer().addEventListener(
+    "wheel",
+    (e) => {
+      // Apply before Leaflet's wheel handler runs so ctrl+wheel uses finer zoom increments.
+      applyFineZoomMode(e.ctrlKey);
+    },
+    { capture: true, passive: true }
+  );
 
   map.on("zoomend", () => {
     refreshCountyLabels();
@@ -283,6 +382,25 @@ function wireEvents() {
       showStateChamberOverview();
     }
   });
+}
+
+function isEditableTarget(target) {
+  if (!(target instanceof Element)) return false;
+  const tag = String(target.tagName || "").toLowerCase();
+  if (tag === "input" || tag === "textarea" || tag === "select") return true;
+  return target.closest("[contenteditable='true']") !== null;
+}
+
+function applyFineZoomMode(enabled) {
+  if (enabled) {
+    map.options.wheelPxPerZoomLevel = BASE_WHEEL_PX_PER_ZOOM_LEVEL * CTRL_WHEEL_ZOOM_SLOW_FACTOR;
+    map.options.zoomSnap = CTRL_FINE_ZOOM_SNAP;
+    map.options.zoomDelta = CTRL_FINE_ZOOM_SNAP;
+    return;
+  }
+  map.options.wheelPxPerZoomLevel = BASE_WHEEL_PX_PER_ZOOM_LEVEL;
+  map.options.zoomSnap = BASE_ZOOM_SNAP;
+  map.options.zoomDelta = BASE_ZOOM_SNAP;
 }
 
 async function autoLoadStateShapes() {
@@ -362,7 +480,7 @@ function populateStateSelect(geojson) {
 
 function stateMetaFromFeature(feature) {
   const properties = feature?.properties || {};
-  const fips = normalizeStateFips(readProperty(properties, "STATEFP") || readProperty(properties, "STATE_FIPS"));
+  const fips = stateFipsFromProperties(properties);
   const abbr = normalizeStateAbbr(readProperty(properties, "STUSPS") || readProperty(properties, "USPS") || readProperty(properties, "STATE_ABBR"));
   const name = String(readProperty(properties, "NAME") || readProperty(properties, "STATE_NAME") || readProperty(properties, "NAMELSAD") || "").trim();
   const key = fips || abbr || normalizeTextKey(name);
@@ -381,6 +499,16 @@ function normalizeTextKey(value) {
 
 function normalizeStateAbbr(value) {
   return String(value || "").trim().toUpperCase().replace(/[^A-Z]/g, "");
+}
+
+function stateFipsFromProperties(properties = {}) {
+  return normalizeStateFips(
+    readProperty(properties, "STATEFP")
+      || readProperty(properties, "STATE_FIPS")
+      || readProperty(properties, "GEOID")
+      || readProperty(properties, "FIPS")
+      || readProperty(properties, "STATE")
+  );
 }
 
 async function selectStateByKey(key) {
@@ -701,6 +829,12 @@ function districtFeaturesForSelectedState(chamber = state.chamber) {
 
 function renderDistrictLayerForSelectedState() {
   clearDistrictLayer();
+  const selectedAbbrForChamber = normalizeStateAbbr(state.selectedState?.abbr || "");
+  if (state.chamber === "house" && selectedAbbrForChamber === "NE") {
+    details.innerHTML = "Switch to Senate to view Nebraska's unicameral legislature.";
+    return;
+  }
+
   if (!state.selectedState) return;
 
   const geojson = state.geojsonByChamber[state.chamber];
@@ -712,7 +846,12 @@ function renderDistrictLayerForSelectedState() {
   const dataMap = state.dataByChamber[state.chamber];
   const selectedFeatures = districtFeaturesForSelectedState(state.chamber);
   if (!selectedFeatures.length) {
-    details.innerHTML = "No districts found for selected state/chamber.";
+    const selectedAbbr = normalizeStateAbbr(state.selectedState?.abbr || "");
+    if (state.chamber === "house" && selectedAbbr === "NE") {
+      details.innerHTML = "Switch to Senate to view Nebraska's unicameral legislature.";
+    } else {
+      details.innerHTML = "No districts found for selected state/chamber.";
+    }
     return;
   }
   state.currentDistrictFeatures = selectedFeatures;
@@ -809,13 +948,19 @@ function stateChamberOverviewHtml(composition) {
 
 function chamberCompositionStatsForSelectedState() {
   if (!state.selectedState) return null;
-  const geojson = state.geojsonByChamber[state.chamber];
-  if (!geojson) return null;
-
-  const features = districtFeaturesForSelectedState(state.chamber);
-  if (!features.length) return null;
 
   const dataMap = state.dataByChamber[state.chamber];
+  const stateFips = normalizeStateFips(state.selectedState.fips);
+  const records = [];
+
+  for (const [key, rec] of dataMap.entries()) {
+    if (!key || !stateFips) continue;
+    if (!String(key).startsWith(`${stateFips}|`)) continue;
+    records.push(rec);
+  }
+
+  if (!records.length) return null;
+
   const counts = {
     rep: 0,
     dem: 0,
@@ -823,22 +968,28 @@ function chamberCompositionStatsForSelectedState() {
     vacant: 0,
   };
 
-  for (const feature of features) {
-    const joinInfo = extractJoinIds(feature.properties);
-    const rec = dataMap.get(joinInfo.key);
-    const category = incumbentSeatCategory(rec);
-    counts[category] += 1;
+  for (const rec of records) {
+    const members = recordMembers(rec);
+    if (!members.length) {
+      counts.vacant += 1;
+      continue;
+    }
+    for (const member of members) {
+      const category = memberSeatCategory(member);
+      counts[category] += 1;
+    }
   }
 
   return {
     ...counts,
-    total: features.length,
+    total: counts.rep + counts.dem + counts.other + counts.vacant,
   };
 }
 
-function incumbentSeatCategory(rec) {
-  if (!rec || !hasIncumbent(rec)) return "vacant";
-  const party = String(rec?.incumbent?.party || "").trim().toUpperCase();
+function memberSeatCategory(member) {
+  const name = String(member?.incumbent?.name || "").trim().toUpperCase();
+  if (!name || name === "VACANT" || name === "UNKNOWN" || name === "OPEN") return "vacant";
+  const party = String(member?.incumbent?.party || "").trim().toUpperCase();
   if (party === "R") return "rep";
   if (party === "D") return "dem";
   return "other";
@@ -848,32 +999,34 @@ function chamberCompositionHtml(composition) {
   const rows = compositionDotRows(composition.total);
   const majority = chamberMajoritySummary(composition);
   return `
-    <div class="chamber-composition-layout">
-      <div class="chamber-dotmap-wrap">
-        <div class="chamber-dotmap" style="--dot-rows:${rows}">
-          <div class="dot-group-left">${dotMatrixHtml(composition.rep, "dot-seat dot-rep")}</div>
-          <div class="dot-group-right">
-            <div class="dot-major-row">${dotMatrixHtml(composition.dem, "dot-seat dot-dem")}</div>
-            <div class="dot-minor-row">
-              ${dotMatrixHtml(composition.other, "dot-seat dot-other")}
-              ${dotMatrixHtml(composition.vacant, "dot-seat dot-vacant")}
+    <div class="chamber-composition-scroll">
+      <div class="chamber-composition-layout">
+        <div class="chamber-dotmap-wrap">
+          <div class="chamber-dotmap" style="--dot-rows:${rows}">
+            <div class="dot-group-left">${dotMatrixHtml(composition.rep, "dot-seat dot-rep", rows)}</div>
+            <div class="dot-group-right">
+              <div class="dot-major-row">${dotMatrixHtml(composition.dem, "dot-seat dot-dem", rows)}</div>
+              <div class="dot-minor-row">
+                ${dotMatrixHtml(composition.other, "dot-seat dot-other", Math.max(1, Math.min(rows, composition.other || 1)))}
+                ${dotMatrixHtml(composition.vacant, "dot-seat dot-vacant", Math.max(1, Math.min(rows, composition.vacant || 1)))}
+              </div>
             </div>
           </div>
+          ${majoritySummaryHtml(majority)}
         </div>
-        ${majoritySummaryHtml(majority)}
-      </div>
-      <div class="chamber-composition-table">
-        <div class="composition-head">
-          <span>Party</span>
-          <span>Seats</span>
-        </div>
-        ${compositionRowHtml("Republican", composition.rep, "dot-seat dot-rep")}
-        ${compositionRowHtml("Democrat", composition.dem, "dot-seat dot-dem")}
-        ${compositionRowHtml("Independent/Other", composition.other, "dot-seat dot-other")}
-        ${compositionRowHtml("Vacant", composition.vacant, "dot-seat dot-vacant")}
-        <div class="composition-total-row">
-          <span>Total Seats</span>
-          <strong>${composition.total}</strong>
+        <div class="chamber-composition-table">
+          <div class="composition-head">
+            <span>Party</span>
+            <span>Seats</span>
+          </div>
+          ${compositionRowHtml("Republican", composition.rep, "dot-seat dot-rep")}
+          ${compositionRowHtml("Democrat", composition.dem, "dot-seat dot-dem")}
+          ${compositionRowHtml("Independent/Other", composition.other, "dot-seat dot-other")}
+          ${compositionRowHtml("Vacant", composition.vacant, "dot-seat dot-vacant")}
+          <div class="composition-total-row">
+            <span>Total Seats</span>
+            <strong>${composition.total}</strong>
+          </div>
         </div>
       </div>
     </div>
@@ -926,11 +1079,12 @@ function compositionDotRows(totalSeats) {
   return 6;
 }
 
-function dotMatrixHtml(count, dotClass) {
+function dotMatrixHtml(count, dotClass, rowsOverride = null) {
   const safeCount = Math.max(0, Number(count) || 0);
   if (!safeCount) return "";
+  const dotRows = Number.isFinite(Number(rowsOverride)) && Number(rowsOverride) > 0 ? Number(rowsOverride) : compositionDotRows(safeCount);
   return `
-    <div class="dot-matrix">
+    <div class="dot-matrix" style="--dot-rows:${dotRows}">
       ${Array.from({ length: safeCount }, () => `<span class="${dotClass}"></span>`).join("")}
     </div>
   `;
@@ -946,24 +1100,70 @@ function compositionRowHtml(label, value, dotClass) {
 }
 
 function targetDistrictsSectionHtml(targets) {
-  const defenseRows = targets.defense.map((row) => targetDistrictRowHtml(row)).join("");
-  const offenseRows = targets.offense.map((row) => targetDistrictRowHtml(row)).join("");
+  const defenseCols = districtElectionColumns(targets.defense);
+  const offenseCols = districtElectionColumns(targets.offense);
+  const defenseRows = targets.defense.map((row) => targetDistrictRowHtml(row, defenseCols)).join("");
+  const offenseRows = targets.offense.map((row) => targetDistrictRowHtml(row, offenseCols)).join("");
   return `
     <div id="targetModeHeader" class="detail-section-title centered-section-title large-section-title target-mode-header ${state.targetDistrictsMode ? "active-target-mode" : ""}">Target Districts</div>
     <div class="target-columns">
       <div class="target-column">
         <div class="detail-subtitle centered-subtitle chart-header">Defense</div>
-        ${targetDistrictTableHtml(defenseRows)}
+        ${targetDistrictTableHtml(defenseRows, targets.defense)}
       </div>
       <div class="target-column">
         <div class="detail-subtitle centered-subtitle chart-header">Offense</div>
-        ${targetDistrictTableHtml(offenseRows)}
+        ${targetDistrictTableHtml(offenseRows, targets.offense)}
       </div>
     </div>
   `;
 }
 
-function targetDistrictTableHtml(rowsHtml) {
+function districtElectionColumns(rows = []) {
+  const include = (view) => rows.some((row) => typeof row?.marginsByView?.[view] === "number");
+
+  const groups = [
+    {
+      key: "g2025",
+      columns: include("leg_2025") ? [{ view: "leg_2025", year: 2025, type: "Leg" }] : [],
+    },
+    {
+      key: "g2024",
+      columns: [
+        ...(include("leg_2024") ? [{ view: "leg_2024", year: 2024, type: "Leg" }] : []),
+        ...(include("pres_2024") ? [{ view: "pres_2024", year: 2024, type: "Pres" }] : []),
+      ],
+    },
+    {
+      key: "g2023",
+      columns: include("leg_2023") ? [{ view: "leg_2023", year: 2023, type: "Leg" }] : [],
+    },
+    {
+      key: "g2022",
+      columns: [
+        ...(include("leg_2022") ? [{ view: "leg_2022", year: 2022, type: "Leg" }] : []),
+        ...(include("gov_2022") ? [{ view: "gov_2022", year: 2022, type: "Gov" }] : []),
+      ],
+    },
+  ].filter((group) => group.columns.length);
+
+  const columns = [];
+  groups.forEach((group, idx) => {
+    if (idx > 0) columns.push({ type: "gap" });
+    for (const col of group.columns) columns.push({ type: "margin", ...col });
+  });
+  return columns;
+}
+
+function targetDistrictTableHtml(rowsHtml, rows = []) {
+  const electionCols = districtElectionColumns(rows);
+  const headCols = electionCols
+    .map((col) => {
+      if (col.type === "gap") return '<th class="target-gap-col"></th>';
+      return `<th class="target-col-margin"><span class="twoline-head">${col.year}<br/>${col.type}</span></th>`;
+    })
+    .join("");
+
   return `
     <table class="target-table">
       <thead>
@@ -972,38 +1172,38 @@ function targetDistrictTableHtml(rowsHtml) {
           <th class="target-col-inc">Inc</th>
           <th class="target-col-candidate">2026 GOP</th>
           <th class="target-col-candidate">2026 DEM</th>
-          <th class="target-col-margin"><span class="twoline-head">2024<br/>Leg</span></th>
-          <th class="target-col-margin"><span class="twoline-head">2024<br/>Pres</span></th>
-          <th class="target-gap-col"></th>
-          <th class="target-col-margin"><span class="twoline-head">2022<br/>Leg</span></th>
-          <th class="target-col-margin"><span class="twoline-head">2022<br/>Gov</span></th>
+          ${headCols}
         </tr>
       </thead>
       <tbody>
-        ${rowsHtml || '<tr><td colspan="9" class="target-empty">None</td></tr>'}
+        ${rowsHtml || `<tr><td colspan="${4 + electionCols.length}" class="target-empty">None</td></tr>`}
       </tbody>
     </table>
   `;
 }
 
-function targetDistrictRowHtml(row) {
+function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row])) {
   const incClass = row.incParty === "R" ? "inc-r" : row.incParty === "D" ? "inc-d" : "inc-u";
+  const marginCells = electionCols
+    .map((col) => {
+      if (col.type === "gap") return '<td class="target-gap-cell"></td>';
+      const margin = row?.marginsByView?.[col.view];
+      return `<td class="margin-cell" style="background:${targetMarginCellColor(margin)}">${escapeHtml(formatSignedRMargin(margin))}</td>`;
+    })
+    .join("");
   return `
-    <tr class="target-row district-select-row" data-join-key="${escapeHtml(row.joinKey)}">
+    <tr class="target-row district-select-row ${rowNeedsExpandedCandidateCells(row.rec) ? "target-row-multi" : ""}" data-join-key="${escapeHtml(row.joinKey)}">
       <td class="target-district-cell">${escapeHtml(row.districtLabel)}</td>
       <td class="inc-cell ${incClass}"><strong>${escapeHtml(row.incParty || "?")}</strong></td>
-      <td>${escapeHtml(row.gopCandidate)}</td>
-      <td>${escapeHtml(row.demCandidate)}</td>
-      <td class="margin-cell" style="background:${targetMarginCellColor(row.legMarginDem)}">${escapeHtml(formatSignedRMargin(row.legMarginDem))}</td>
-      <td class="margin-cell" style="background:${targetMarginCellColor(row.presMarginDem)}">${escapeHtml(formatSignedRMargin(row.presMarginDem))}</td>
-      <td class="target-gap-cell"></td>
-      <td class="margin-cell" style="background:${targetMarginCellColor(row.leg2022MarginDem)}">${escapeHtml(formatSignedRMargin(row.leg2022MarginDem))}</td>
-      <td class="margin-cell" style="background:${targetMarginCellColor(row.gov2022MarginDem)}">${escapeHtml(formatSignedRMargin(row.gov2022MarginDem))}</td>
+      <td class="candidate-cell">${candidateCellHtml(row.rec, "R", { short: false })}</td>
+      <td class="candidate-cell">${candidateCellHtml(row.rec, "D", { short: false })}</td>
+      ${marginCells}
     </tr>
   `;
 }
 
 function targetTablesForSelectedState() {
+
   const rows = targetDistrictRowsForSelectedState();
   const defense = rows
     .filter((row) => row.incParty === "R")
@@ -1030,20 +1230,20 @@ function targetDistrictRowsForSelectedState() {
     if (!rec) continue;
     const incParty = String(rec.incumbent?.party || "").trim().toUpperCase();
     if (incParty !== "R" && incParty !== "D") continue;
-    const legMarginDem = getMarginForView(rec, "leg_2024");
-    const presMarginDem = getMarginForView(rec, "pres_2024");
-    const gov2022MarginDem = getMarginForView(rec, "gov_2022");
-    const leg2022MarginDem = getMarginForView(rec, "leg_2022");
+    const marginsByView = {
+      leg_2025: getMarginForView(rec, "leg_2025"),
+      leg_2024: getMarginForView(rec, "leg_2024"),
+      pres_2024: getMarginForView(rec, "pres_2024"),
+      leg_2023: getMarginForView(rec, "leg_2023"),
+      leg_2022: getMarginForView(rec, "leg_2022"),
+      gov_2022: getMarginForView(rec, "gov_2022"),
+    };
     rows.push({
       joinKey: key,
       districtLabel: displayDistrictId(target.rawDistrict, target.districtId),
       incParty,
-      gopCandidate: gopCandidateFull(rec),
-      demCandidate: demCandidateFull(rec),
-      legMarginDem,
-      presMarginDem,
-      gov2022MarginDem,
-      leg2022MarginDem,
+      rec,
+      marginsByView,
     });
   }
 
@@ -1052,11 +1252,12 @@ function targetDistrictRowsForSelectedState() {
 
 function allDistrictsSectionHtml(rows) {
   const chamberLabel = capitalize(state.chamber);
-  const bodyRows = rows.map((row) => targetDistrictRowHtml(row)).join("");
+  const allCols = districtElectionColumns(rows);
+  const bodyRows = rows.map((row) => targetDistrictRowHtml(row, allCols)).join("");
   return `
     <div class="detail-section-title centered-section-title large-section-title all-districts-header">All ${escapeHtml(chamberLabel)} Districts</div>
     <div class="all-districts-table-wrap">
-      ${targetDistrictTableHtml(bodyRows)}
+      ${targetDistrictTableHtml(bodyRows, rows)}
     </div>
   `;
 }
@@ -1078,12 +1279,15 @@ function allDistrictRowsForSelectedState() {
       joinKey: joinInfo.key,
       districtLabel: displayDistrictId(joinInfo.rawDistrict, joinInfo.districtId),
       incParty: incParty === "R" || incParty === "D" ? incParty : "O",
-      gopCandidate: gopCandidateFull(rec),
-      demCandidate: demCandidateFull(rec),
-      legMarginDem: getMarginForView(rec, "leg_2024"),
-      presMarginDem: getMarginForView(rec, "pres_2024"),
-      gov2022MarginDem: getMarginForView(rec, "gov_2022"),
-      leg2022MarginDem: getMarginForView(rec, "leg_2022"),
+      rec,
+      marginsByView: {
+        leg_2025: getMarginForView(rec, "leg_2025"),
+        leg_2024: getMarginForView(rec, "leg_2024"),
+        pres_2024: getMarginForView(rec, "pres_2024"),
+        leg_2023: getMarginForView(rec, "leg_2023"),
+        leg_2022: getMarginForView(rec, "leg_2022"),
+        gov_2022: getMarginForView(rec, "gov_2022"),
+      },
     });
   }
 
@@ -1104,34 +1308,156 @@ function districtLabelSortValue(label) {
   return numPart + suffixScore;
 }
 
+function recordMembers(rec) {
+  const members = Array.isArray(rec?.members) ? rec.members : [];
+  if (members.length) {
+    return members
+      .map((member, idx) => normalizeMemberEntry(member, idx))
+      .filter((member) => !!member);
+  }
+
+  const incumbent = rec?.incumbent || {};
+  const candidates = rec?.candidates_2026 || {};
+  return [
+    normalizeMemberEntry(
+      {
+        seat: 1,
+        seat_label: "",
+        incumbent: {
+          name: incumbent.name,
+          party: incumbent.party,
+        },
+        candidates: {
+          rep: candidates.rep,
+          dem: candidates.dem,
+        },
+      },
+      0
+    ),
+  ].filter((member) => !!member);
+}
+
+function normalizeMemberEntry(member, idx = 0) {
+  if (!member || typeof member !== "object") return null;
+  const incumbent = member.incumbent || {};
+  const candidates = member.candidates || {};
+  const seat = Number.isFinite(Number(member.seat)) ? Number(member.seat) : idx + 1;
+  const incumbentName = String(incumbent.name || "").trim() || "Vacant";
+  const incumbentParty = String(incumbent.party || "").trim().toUpperCase() || "O";
+  return {
+    seat,
+    seat_label: String(member.seat_label || "").trim(),
+    incumbent: {
+      name: incumbentName,
+      party: incumbentParty,
+    },
+    candidates: {
+      rep: normalizeCandidateName(candidates.rep),
+      dem: normalizeCandidateName(candidates.dem),
+    },
+  };
+}
+
+function normalizeCandidateName(value) {
+  const text = String(value || "").trim();
+  if (!text || /^tbd$/i.test(text) || /^unknown$/i.test(text) || /^no candidate$/i.test(text)) return "No candidate";
+  return text;
+}
+
+function hasNamedCandidate(name) {
+  const text = String(name || "").trim();
+  return !!text && !/^no candidate$/i.test(text);
+}
+
+function memberIsIncumbentNominee(member, party) {
+  if (!member || !party) return false;
+  const incumbentParty = String(member.incumbent?.party || "").toUpperCase();
+  if (incumbentParty !== party) return false;
+  const incumbentName = String(member.incumbent?.name || "").trim().toUpperCase();
+  if (!incumbentName || incumbentName === "VACANT") return false;
+  const key = party === "R" ? "rep" : "dem";
+  const candidateName = String(member.candidates?.[key] || "").trim().toUpperCase();
+  return !!candidateName && candidateName === incumbentName;
+}
+
+function candidateSeatCount(rec) {
+  const seatsUp = Number(rec?.candidate_seats_up);
+  if (Number.isFinite(seatsUp) && seatsUp > 0) return Math.max(1, Math.floor(seatsUp));
+  return recordMembers(rec).length;
+}
+
+function membersForCandidateDisplay(rec) {
+  const members = recordMembers(rec).sort((a, b) => Number(a.seat || 0) - Number(b.seat || 0));
+  if (!members.length) return [];
+  const seatsUp = Math.min(candidateSeatCount(rec), members.length);
+  return members.slice(0, seatsUp);
+}
+
+function candidateDisplayLines(rec, party, options = {}) {
+  const { short = false, includeParty = false, includeSeatLabel = false } = options;
+  const key = party === "R" ? "rep" : "dem";
+  const members = membersForCandidateDisplay(rec);
+  if (!members.length) return [includeParty ? `No candidate (${party})` : "No candidate"];
+
+  const raw = members.map((member) => {
+    const baseName = normalizeCandidateName(member.candidates?.[key]);
+    const name = short && hasNamedCandidate(baseName) ? shortPersonName(baseName) : baseName;
+    const withInc = `${name}${memberIsIncumbentNominee(member, party) && hasNamedCandidate(baseName) ? "*" : ""}`;
+    const seatPrefix = includeSeatLabel && member.seat_label ? `${member.seat_label}: ` : "";
+    const suffix = includeParty ? ` (${party})` : "";
+    return `${seatPrefix}${withInc}${suffix}`;
+  });
+
+  const anyNamed = raw.some((line) => !/^((Seat\s+\d+:\s+)?)?No candidate(\s*\([RD]\))?$/i.test(line));
+  if (!anyNamed) return raw;
+  return raw.filter((line) => !/^((Seat\s+\d+:\s+)?)?No candidate(\s*\([RD]\))?$/i.test(line));
+}
+
+function seatOrderedCandidateLines(rec) {
+  const members = membersForCandidateDisplay(rec);
+  if (!members.length) return [];
+  const hasSeatLabels = members.some((member) => !!member?.seat_label);
+  if (!hasSeatLabels) return [];
+
+  const lines = [];
+  members.forEach((member, idx) => {
+    const seatLabel = member.seat_label ? `${member.seat_label}: ` : "";
+    const repName = normalizeCandidateName(member.candidates?.rep);
+    const demName = normalizeCandidateName(member.candidates?.dem);
+    const repInc = memberIsIncumbentNominee(member, "R") && hasNamedCandidate(repName) ? "*" : "";
+    const demInc = memberIsIncumbentNominee(member, "D") && hasNamedCandidate(demName) ? "*" : "";
+    lines.push(`${seatLabel}${repName}${repInc} (R)`);
+    lines.push(`${seatLabel}${demName}${demInc} (D)`);
+    if (idx < members.length - 1) lines.push("");
+  });
+  return lines;
+}
+
+function candidateCellHtml(rec, party, options = {}) {
+  const lines = candidateDisplayLines(rec, party, options);
+  return lines.map((line) => `<div class="candidate-line">${escapeHtml(line)}</div>`).join("");
+}
+
+function rowNeedsExpandedCandidateCells(rec) {
+  const repCount = candidateDisplayLines(rec, "R", { short: false, includeParty: false }).length;
+  const demCount = candidateDisplayLines(rec, "D", { short: false, includeParty: false }).length;
+  return Math.max(repCount, demCount) > 1;
+}
+
 function gopCandidateShort(rec) {
-  const candidate = String(rec?.candidates_2026?.rep || "TBD").trim();
-  if (!candidate || /^no candidate$/i.test(candidate)) return "No candidate";
-  const compact = shortPersonName(candidate);
-  const isInc = String(rec?.incumbent?.party || "").toUpperCase() === "R" && isIncumbentNominee(rec);
-  return `${compact}${isInc ? "*" : ""}`;
+  return candidateDisplayLines(rec, "R", { short: true, includeParty: false }).join(" / ");
 }
 
 function demCandidateShort(rec) {
-  const candidate = String(rec?.candidates_2026?.dem || "TBD").trim();
-  if (!candidate || /^no candidate$/i.test(candidate)) return "No candidate";
-  const compact = shortPersonName(candidate);
-  const isInc = String(rec?.incumbent?.party || "").toUpperCase() === "D" && isIncumbentNominee(rec);
-  return `${compact}${isInc ? "*" : ""}`;
+  return candidateDisplayLines(rec, "D", { short: true, includeParty: false }).join(" / ");
 }
 
 function gopCandidateFull(rec) {
-  const candidate = String(rec?.candidates_2026?.rep || "TBD").trim();
-  if (!candidate || /^no candidate$/i.test(candidate)) return "No candidate";
-  const isInc = String(rec?.incumbent?.party || "").toUpperCase() === "R" && isIncumbentNominee(rec);
-  return `${candidate}${isInc ? "*" : ""}`;
+  return candidateDisplayLines(rec, "R", { short: false, includeParty: false }).join(" / ");
 }
 
 function demCandidateFull(rec) {
-  const candidate = String(rec?.candidates_2026?.dem || "TBD").trim();
-  if (!candidate || /^no candidate$/i.test(candidate)) return "No candidate";
-  const isInc = String(rec?.incumbent?.party || "").toUpperCase() === "D" && isIncumbentNominee(rec);
-  return `${candidate}${isInc ? "*" : ""}`;
+  return candidateDisplayLines(rec, "D", { short: false, includeParty: false }).join(" / ");
 }
 
 function shortPersonName(name) {
@@ -1157,8 +1483,11 @@ function targetMarginCellColor(demMargin) {
 }
 
 function targetSortValue(row) {
-  if (typeof row?.legMarginDem === "number") return Math.abs(row.legMarginDem);
-  if (typeof row?.leg2022MarginDem === "number") return Math.abs(row.leg2022MarginDem);
+  const views = ["leg_2025", "leg_2024", "leg_2023", "leg_2022"];
+  for (const view of views) {
+    const margin = row?.marginsByView?.[view];
+    if (typeof margin === "number") return Math.abs(margin);
+  }
   return Number.POSITIVE_INFINITY;
 }
 
@@ -2269,8 +2598,12 @@ function popupHtml(properties, joinInfo, rec) {
   const latestText = formatMarginHtml(latestMargin);
   const latestLegLabel = latestLegDisplayLabel(rec);
   const pres2024Text = formatMarginHtml(getMarginForView(rec, "pres_2024"));
-  const repCandidate = candidateDisplay(rec, "R");
-  const demCandidate = candidateDisplay(rec, "D");
+  const seatOrderedCandidates = seatOrderedCandidateLines(rec);
+  const fallbackRep = candidateDisplayLines(rec, "R", { includeParty: true, includeSeatLabel: true });
+  const fallbackDem = candidateDisplayLines(rec, "D", { includeParty: true, includeSeatLabel: true });
+  const candidateLines = (seatOrderedCandidates.length ? seatOrderedCandidates : [...fallbackRep, ...fallbackDem]).map((line) =>
+    line ? `&nbsp;&nbsp;${escapeHtml(line)}` : ""
+  );
 
   return [
     `<strong>${escapeHtml(title)}</strong>`,
@@ -2278,16 +2611,16 @@ function popupHtml(properties, joinInfo, rec) {
     `&nbsp;&nbsp;2024 Pres: ${pres2024Text}`,
     "",
     "2026 Candidates",
-    `&nbsp;&nbsp;${escapeHtml(repCandidate)}`,
-    `&nbsp;&nbsp;${escapeHtml(demCandidate)}`,
+    ...candidateLines,
   ].join("<br/>");
 }
 
 function latestLegDisplayLabel(rec) {
-  const m2024 = marginForYear(rec, 2024);
-  if (typeof m2024 === "number") return "2024 Leg";
-  const m2022 = marginForYear(rec, 2022);
-  if (typeof m2022 === "number") return "2022 Leg";
+  const years = [2025, 2024, 2023, 2022];
+  for (const year of years) {
+    const margin = marginForYear(rec, year);
+    if (typeof margin === "number") return `${year} Leg`;
+  }
   return "Latest Leg";
 }
 
@@ -2304,11 +2637,8 @@ function detailHtml(properties, joinInfo, rec) {
   const educationPostGrad = safePct(rec.demographics.post_grad_pct);
   const educationCollegeOnly = safePct(rec.demographics.college_pct);
   const educationNonCollege = clampPct(100 - educationCollegeOnly - educationPostGrad - educationUnknown);
-  const repCandidate = candidateDisplay(rec, "R");
-  const demCandidate = candidateDisplay(rec, "D");
-  const hasNamedIncumbent = hasIncumbent(rec);
-  const incumbentNominee = hasNamedIncumbent && isIncumbentNominee(rec);
-  const incumbentLabel = incumbentDisplay(rec);
+  const incumbentRowsHtml = incumbentRowsForDetail(rec);
+  const candidateRowsHtml = candidateRowsForDetail(rec);
   const pastElectionRows = pastElectionRowsHtml(rec);
   const metroChart = stackedBreakdownHtml("Metro Type", [
     { label: "Rural", value: metro.rural_pct, colorClass: "color-metro-rural" },
@@ -2348,10 +2678,9 @@ function detailHtml(properties, joinInfo, rec) {
   `;
 
   return `
-    <div class="detail-meta ${incumbentNominee || !hasNamedIncumbent ? "" : "detail-meta-muted"}">Incumbent: ${escapeHtml(incumbentLabel)}</div>
+    ${incumbentRowsHtml}
     <div class="detail-subtitle candidates-title">2026 Candidates</div>
-    <div class="detail-row detail-indent candidates-row">${escapeHtml(repCandidate)}</div>
-    <div class="detail-row detail-indent candidates-row">${escapeHtml(demCandidate)}</div>
+    ${candidateRowsHtml}
     <div class="detail-break"></div>
 
     <div class="detail-section">
@@ -2386,36 +2715,74 @@ function displayDistrictId(rawDistrict, fallbackDistrictId) {
   return raw;
 }
 
-function candidateDisplay(rec, party) {
-  const isIncumbent = String(rec.incumbent?.party || "").toUpperCase() === party && isIncumbentNominee(rec);
-  const key = party === "R" ? "rep" : "dem";
-  const candidateName = rec.candidates_2026?.[key] || "TBD";
-  return `${candidateName}${isIncumbent ? "*" : ""} (${party})`;
+function incumbentRowsForDetail(rec) {
+  const members = recordMembers(rec);
+  if (!members.length) {
+    return `<div class="detail-meta">Incumbent: Vacant</div>`;
+  }
+  return members
+    .map((member) => {
+      const label = member.seat_label ? `${member.seat_label} Incumbent` : "Incumbent";
+      const text = incumbentDisplayForMember(member);
+      const muted = !hasIncumbentForMember(member) ? " detail-meta-muted" : "";
+      return `<div class="detail-meta${muted}">${escapeHtml(label)}: ${escapeHtml(text)}</div>`;
+    })
+    .join("");
 }
 
-function hasIncumbent(rec) {
-  const name = String(rec?.incumbent?.name || "").trim();
-  if (!name) return false;
-  const upper = name.toUpperCase();
-  return upper !== "UNKNOWN" && upper !== "VACANT";
+function candidateRowsForDetail(rec) {
+  const seatOrdered = seatOrderedCandidateLines(rec);
+  if (seatOrdered.length) {
+    return seatOrdered
+      .map((line) =>
+        line
+          ? `<div class="detail-row detail-indent candidates-row">${escapeHtml(line)}</div>`
+          : '<div class="detail-row detail-indent candidates-separator"></div>'
+      )
+      .join("");
+  }
+
+  const repRows = candidateDisplayLines(rec, "R", { includeParty: true, includeSeatLabel: true });
+  const demRows = candidateDisplayLines(rec, "D", { includeParty: true, includeSeatLabel: true });
+  return [...repRows, ...demRows]
+    .map((line) => `<div class="detail-row detail-indent candidates-row">${escapeHtml(line)}</div>`)
+    .join("");
 }
 
-function incumbentDisplay(rec) {
-  if (!hasIncumbent(rec)) return "Vacant";
-  const name = String(rec.incumbent?.name || "").trim();
-  const party = String(rec.incumbent?.party || "").trim().toUpperCase();
+function incumbentDisplayForMember(member) {
+  if (!hasIncumbentForMember(member)) return "Vacant";
+  const name = String(member?.incumbent?.name || "").trim();
+  const party = String(member?.incumbent?.party || "").trim().toUpperCase();
   if (party === "R" || party === "D") return `${name} (${party})`;
   return name;
 }
 
+function candidateDisplay(rec, party) {
+  const lines = candidateDisplayLines(rec, party, { includeParty: true, includeSeatLabel: true });
+  return lines[0] || `No candidate (${party})`;
+}
+
+function hasIncumbentForMember(member) {
+  const name = String(member?.incumbent?.name || "").trim();
+  if (!name) return false;
+  const upper = name.toUpperCase();
+  return upper !== "UNKNOWN" && upper !== "VACANT" && upper !== "OPEN";
+}
+
+function hasIncumbent(rec) {
+  return recordMembers(rec).some((member) => hasIncumbentForMember(member));
+}
+
+function incumbentDisplay(rec) {
+  const members = recordMembers(rec);
+  if (!members.length) return "Vacant";
+  const firstNamed = members.find((member) => hasIncumbentForMember(member));
+  return incumbentDisplayForMember(firstNamed || members[0]);
+}
+
 function isIncumbentNominee(rec) {
-  const party = String(rec.incumbent?.party || "").toUpperCase();
-  const incumbentName = String(rec.incumbent?.name || "").trim().toUpperCase();
-  if (!party || !incumbentName) return false;
-  const key = party === "R" ? "rep" : party === "D" ? "dem" : "";
-  if (!key) return false;
-  const nomineeName = String(rec.candidates_2026?.[key] || "").trim().toUpperCase();
-  return nomineeName && nomineeName === incumbentName;
+  const members = recordMembers(rec);
+  return members.some((member) => memberIsIncumbentNominee(member, "R") || memberIsIncumbentNominee(member, "D"));
 }
 
 function turnoutByYear(rec) {
@@ -2650,10 +3017,10 @@ function getMarginForView(rec, view) {
 }
 
 function latestMargin(rec) {
-  const m2024 = marginForYear(rec, 2024);
-  if (typeof m2024 === "number") return m2024;
-  const m2022 = marginForYear(rec, 2022);
-  if (typeof m2022 === "number") return m2022;
+  for (const year of [2025, 2024, 2023, 2022]) {
+    const margin = marginForYear(rec, year);
+    if (typeof margin === "number") return margin;
+  }
   return null;
 }
 
@@ -2857,3 +3224,8 @@ function escapeHtml(text) {
 function setStatus(msg) {
   if (statusText) statusText.textContent = msg;
 }
+
+
+
+
+

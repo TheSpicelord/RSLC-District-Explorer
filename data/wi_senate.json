@@ -7,29 +7,52 @@
       "name": "Andr\u00e9 Jacque",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Andr\u00e9 Jacque",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 13.5,
-      "town_pct": 26.4,
-      "suburban_pct": 5.7,
-      "urban_pct": 92.8,
+      "population": 154203,
+      "rural_pct": 54.4,
+      "town_pct": 13.5,
+      "suburban_pct": 26.4,
+      "urban_pct": 5.7,
       "income_brackets": {
-        "lt_50k": 31.2,
-        "between_50_100k": 38.5,
-        "gt_150k": 14.4,
-        "unknown_pct": 43.9
+        "lt_50k": 15.8,
+        "between_50_100k": 31.2,
+        "gt_150k": 38.5,
+        "unknown_pct": 14.4
       },
-      "college_pct": 9.8,
-      "post_grad_pct": 22.3,
-      "education_unknown_pct": 15420300.0,
-      "white_pct": 2.2,
-      "hispanic_pct": 1.0,
-      "black_pct": 1.3,
-      "asian_pct": 2.7,
-      "other_pct": 15.8
+      "college_pct": 24.1,
+      "post_grad_pct": 9.8,
+      "education_unknown_pct": 22.3,
+      "white_pct": 92.8,
+      "hispanic_pct": 2.2,
+      "black_pct": 1.0,
+      "asian_pct": 1.3,
+      "other_pct": 2.7
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 40.5,
+        "rep_pct": 59.5,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -19.0,
+      "latest_leg": -19.0,
       "gov_2022": -17.6,
       "pres_2024": -20.3
     },
@@ -52,26 +75,40 @@
       "name": "Eric Wimberger",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Eric Wimberger",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 14.0,
-      "town_pct": 30.8,
-      "suburban_pct": 1.9,
-      "urban_pct": 90.1,
+      "population": 148570,
+      "rural_pct": 53.3,
+      "town_pct": 14.0,
+      "suburban_pct": 30.8,
+      "urban_pct": 1.9,
       "income_brackets": {
-        "lt_50k": 30.4,
-        "between_50_100k": 33.6,
-        "gt_150k": 16.7,
-        "unknown_pct": 44.2
+        "lt_50k": 19.3,
+        "between_50_100k": 30.4,
+        "gt_150k": 33.6,
+        "unknown_pct": 16.7
       },
-      "college_pct": 8.3,
-      "post_grad_pct": 24.8,
-      "education_unknown_pct": 14857000.0,
-      "white_pct": 2.1,
-      "hispanic_pct": 1.2,
-      "black_pct": 0.9,
-      "asian_pct": 5.7,
-      "other_pct": 19.3
+      "college_pct": 22.7,
+      "post_grad_pct": 8.3,
+      "education_unknown_pct": 24.8,
+      "white_pct": 90.1,
+      "hispanic_pct": 2.1,
+      "black_pct": 1.2,
+      "asian_pct": 0.9,
+      "other_pct": 5.7
     },
     "elections": [
       {
@@ -106,29 +143,52 @@
       "name": "Tim Carpenter",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Tim Carpenter",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
+      "population": 152941,
       "rural_pct": 0.0,
-      "town_pct": 18.4,
-      "suburban_pct": 81.4,
-      "urban_pct": 58.5,
+      "town_pct": 0.0,
+      "suburban_pct": 18.4,
+      "urban_pct": 81.4,
       "income_brackets": {
-        "lt_50k": 24.4,
-        "between_50_100k": 17.3,
-        "gt_150k": 23.3,
-        "unknown_pct": 37.8
+        "lt_50k": 35.0,
+        "between_50_100k": 24.4,
+        "gt_150k": 17.3,
+        "unknown_pct": 23.3
       },
-      "college_pct": 6.6,
-      "post_grad_pct": 36.8,
-      "education_unknown_pct": 15294100.0,
-      "white_pct": 30.9,
-      "hispanic_pct": 4.8,
-      "black_pct": 3.3,
-      "asian_pct": 2.6,
-      "other_pct": 35.0
+      "college_pct": 18.9,
+      "post_grad_pct": 6.6,
+      "education_unknown_pct": 36.8,
+      "white_pct": 58.5,
+      "hispanic_pct": 30.9,
+      "black_pct": 4.8,
+      "asian_pct": 3.3,
+      "other_pct": 2.6
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 69.0,
+        "rep_pct": 30.9,
+        "winner": "D"
+      }
+    ],
     "view_margins": {
+      "leg_2022": 38.0,
+      "latest_leg": 38.0,
       "gov_2022": 37.5,
       "pres_2024": 27.5
     },
@@ -151,26 +211,40 @@
       "name": "Dora Drake",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Dora Drake",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
+      "population": 205976,
       "rural_pct": 0.0,
-      "town_pct": 15.8,
-      "suburban_pct": 84.2,
-      "urban_pct": 29.1,
+      "town_pct": 0.0,
+      "suburban_pct": 15.8,
+      "urban_pct": 84.2,
       "income_brackets": {
-        "lt_50k": 22.4,
-        "between_50_100k": 18.7,
-        "gt_150k": 20.5,
-        "unknown_pct": 40.9
+        "lt_50k": 38.4,
+        "between_50_100k": 22.4,
+        "gt_150k": 18.7,
+        "unknown_pct": 20.5
       },
-      "college_pct": 7.9,
-      "post_grad_pct": 32.2,
-      "education_unknown_pct": 20597600.0,
-      "white_pct": 3.7,
-      "hispanic_pct": 62.5,
-      "black_pct": 3.5,
-      "asian_pct": 1.3,
-      "other_pct": 38.4
+      "college_pct": 19.0,
+      "post_grad_pct": 7.9,
+      "education_unknown_pct": 32.2,
+      "white_pct": 29.1,
+      "hispanic_pct": 3.7,
+      "black_pct": 62.5,
+      "asian_pct": 3.5,
+      "other_pct": 1.3
     },
     "elections": [
       {
@@ -205,29 +279,52 @@
       "name": "Rob Hutton",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Rob Hutton",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 0.0,
-      "town_pct": 90.0,
-      "suburban_pct": 9.3,
-      "urban_pct": 85.1,
+      "population": 183097,
+      "rural_pct": 0.7,
+      "town_pct": 0.0,
+      "suburban_pct": 90.0,
+      "urban_pct": 9.3,
       "income_brackets": {
-        "lt_50k": 23.7,
-        "between_50_100k": 45.9,
-        "gt_150k": 16.4,
-        "unknown_pct": 35.2
+        "lt_50k": 14.0,
+        "between_50_100k": 23.7,
+        "gt_150k": 45.9,
+        "unknown_pct": 16.4
       },
-      "college_pct": 13.6,
-      "post_grad_pct": 25.2,
-      "education_unknown_pct": 18309700.0,
-      "white_pct": 5.1,
-      "hispanic_pct": 2.3,
-      "black_pct": 3.9,
-      "asian_pct": 3.5,
-      "other_pct": 14.0
+      "college_pct": 26.0,
+      "post_grad_pct": 13.6,
+      "education_unknown_pct": 25.2,
+      "white_pct": 85.1,
+      "hispanic_pct": 5.1,
+      "black_pct": 2.3,
+      "asian_pct": 3.9,
+      "other_pct": 3.5
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 46.7,
+        "rep_pct": 53.2,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -6.6,
+      "latest_leg": -6.6,
       "gov_2022": 6.0,
       "pres_2024": 5.9
     },
@@ -250,26 +347,40 @@
       "name": "LaTonya Johnson",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "LaTonya Johnson",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
+      "population": 231919,
       "rural_pct": 0.0,
-      "town_pct": 4.6,
-      "suburban_pct": 95.4,
-      "urban_pct": 35.3,
+      "town_pct": 0.0,
+      "suburban_pct": 4.6,
+      "urban_pct": 95.4,
       "income_brackets": {
-        "lt_50k": 19.3,
-        "between_50_100k": 20.3,
-        "gt_150k": 23.5,
-        "unknown_pct": 40.2
+        "lt_50k": 36.9,
+        "between_50_100k": 19.3,
+        "gt_150k": 20.3,
+        "unknown_pct": 23.5
       },
-      "college_pct": 7.1,
-      "post_grad_pct": 35.1,
-      "education_unknown_pct": 23191900.0,
-      "white_pct": 4.5,
-      "hispanic_pct": 55.9,
-      "black_pct": 2.8,
-      "asian_pct": 1.6,
-      "other_pct": 36.9
+      "college_pct": 17.7,
+      "post_grad_pct": 7.1,
+      "education_unknown_pct": 35.1,
+      "white_pct": 35.3,
+      "hispanic_pct": 4.5,
+      "black_pct": 55.9,
+      "asian_pct": 2.8,
+      "other_pct": 1.6
     },
     "elections": [
       {
@@ -304,29 +415,52 @@
       "name": "Chris Larson",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Chris Larson",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 0.0,
-      "town_pct": 34.9,
-      "suburban_pct": 64.9,
-      "urban_pct": 82.8,
+      "population": 219641,
+      "rural_pct": 0.1,
+      "town_pct": 0.0,
+      "suburban_pct": 34.9,
+      "urban_pct": 64.9,
       "income_brackets": {
-        "lt_50k": 25.2,
-        "between_50_100k": 36.7,
-        "gt_150k": 20.4,
-        "unknown_pct": 35.8
+        "lt_50k": 17.8,
+        "between_50_100k": 25.2,
+        "gt_150k": 36.7,
+        "unknown_pct": 20.4
       },
-      "college_pct": 11.5,
-      "post_grad_pct": 29.2,
-      "education_unknown_pct": 21964100.0,
-      "white_pct": 7.4,
-      "hispanic_pct": 3.4,
-      "black_pct": 2.9,
-      "asian_pct": 3.5,
-      "other_pct": 17.8
+      "college_pct": 23.6,
+      "post_grad_pct": 11.5,
+      "education_unknown_pct": 29.2,
+      "white_pct": 82.8,
+      "hispanic_pct": 7.4,
+      "black_pct": 3.4,
+      "asian_pct": 2.9,
+      "other_pct": 3.5
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 67.3,
+        "rep_pct": 32.6,
+        "winner": "D"
+      }
+    ],
     "view_margins": {
+      "leg_2022": 34.6,
+      "latest_leg": 34.6,
       "gov_2022": 35.8,
       "pres_2024": 28.3
     },
@@ -349,26 +483,40 @@
       "name": "Jodi Habush Sinykin",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Jodi Habush Sinykin",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 0.0,
-      "town_pct": 87.9,
-      "suburban_pct": 0.0,
-      "urban_pct": 86.2,
+      "population": 179106,
+      "rural_pct": 12.1,
+      "town_pct": 0.0,
+      "suburban_pct": 87.9,
+      "urban_pct": 0.0,
       "income_brackets": {
-        "lt_50k": 21.0,
-        "between_50_100k": 55.0,
-        "gt_150k": 13.4,
-        "unknown_pct": 35.5
+        "lt_50k": 10.6,
+        "between_50_100k": 21.0,
+        "gt_150k": 55.0,
+        "unknown_pct": 13.4
       },
-      "college_pct": 15.3,
-      "post_grad_pct": 22.3,
-      "education_unknown_pct": 17910600.0,
-      "white_pct": 2.8,
-      "hispanic_pct": 4.1,
-      "black_pct": 3.5,
-      "asian_pct": 3.4,
-      "other_pct": 10.6
+      "college_pct": 26.9,
+      "post_grad_pct": 15.3,
+      "education_unknown_pct": 22.3,
+      "white_pct": 86.2,
+      "hispanic_pct": 2.8,
+      "black_pct": 4.1,
+      "asian_pct": 3.5,
+      "other_pct": 3.4
     },
     "elections": [
       {
@@ -403,29 +551,52 @@
       "name": "Devin LeMahieu",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Devin LeMahieu",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 42.0,
-      "town_pct": 13.9,
-      "suburban_pct": 21.9,
-      "urban_pct": 89.4,
+      "population": 160657,
+      "rural_pct": 22.1,
+      "town_pct": 42.0,
+      "suburban_pct": 13.9,
+      "urban_pct": 21.9,
       "income_brackets": {
-        "lt_50k": 31.0,
-        "between_50_100k": 29.8,
-        "gt_150k": 17.0,
-        "unknown_pct": 42.2
+        "lt_50k": 22.1,
+        "between_50_100k": 31.0,
+        "gt_150k": 29.8,
+        "unknown_pct": 17.0
       },
-      "college_pct": 9.5,
-      "post_grad_pct": 25.2,
-      "education_unknown_pct": 16065700.0,
-      "white_pct": 3.6,
-      "hispanic_pct": 1.3,
-      "black_pct": 2.8,
+      "college_pct": 23.1,
+      "post_grad_pct": 9.5,
+      "education_unknown_pct": 25.2,
+      "white_pct": 89.4,
+      "hispanic_pct": 3.6,
+      "black_pct": 1.3,
       "asian_pct": 2.8,
-      "other_pct": 22.1
+      "other_pct": 2.8
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 2.0,
+        "rep_pct": 93.6,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -89.3,
+      "latest_leg": -89.3,
       "gov_2022": -14.2,
       "pres_2024": -15.7
     },
@@ -448,26 +619,40 @@
       "name": "Rob Stafsholt",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Rob Stafsholt",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 38.8,
-      "town_pct": 0.1,
-      "suburban_pct": 0.0,
-      "urban_pct": 93.0,
+      "population": 164852,
+      "rural_pct": 61.1,
+      "town_pct": 38.8,
+      "suburban_pct": 0.1,
+      "urban_pct": 0.0,
       "income_brackets": {
-        "lt_50k": 26.8,
-        "between_50_100k": 42.7,
-        "gt_150k": 16.3,
-        "unknown_pct": 42.5
+        "lt_50k": 14.2,
+        "between_50_100k": 26.8,
+        "gt_150k": 42.7,
+        "unknown_pct": 16.3
       },
-      "college_pct": 8.8,
-      "post_grad_pct": 25.1,
-      "education_unknown_pct": 16485200.0,
-      "white_pct": 2.1,
-      "hispanic_pct": 1.3,
-      "black_pct": 1.1,
-      "asian_pct": 2.5,
-      "other_pct": 14.2
+      "college_pct": 23.6,
+      "post_grad_pct": 8.8,
+      "education_unknown_pct": 25.1,
+      "white_pct": 93.0,
+      "hispanic_pct": 2.1,
+      "black_pct": 1.3,
+      "asian_pct": 1.1,
+      "other_pct": 2.5
     },
     "elections": [
       {
@@ -502,29 +687,52 @@
       "name": "Stephen Nass",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Stephen Nass",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 38.7,
-      "town_pct": 22.9,
-      "suburban_pct": 0.0,
-      "urban_pct": 89.7,
+      "population": 164504,
+      "rural_pct": 38.5,
+      "town_pct": 38.7,
+      "suburban_pct": 22.9,
+      "urban_pct": 0.0,
       "income_brackets": {
-        "lt_50k": 29.1,
-        "between_50_100k": 38.8,
-        "gt_150k": 16.1,
-        "unknown_pct": 41.7
+        "lt_50k": 16.0,
+        "between_50_100k": 29.1,
+        "gt_150k": 38.8,
+        "unknown_pct": 16.1
       },
-      "college_pct": 9.9,
-      "post_grad_pct": 25.5,
-      "education_unknown_pct": 16450400.0,
-      "white_pct": 5.0,
-      "hispanic_pct": 1.1,
-      "black_pct": 1.0,
-      "asian_pct": 3.1,
-      "other_pct": 16.0
+      "college_pct": 22.9,
+      "post_grad_pct": 9.9,
+      "education_unknown_pct": 25.5,
+      "white_pct": 89.7,
+      "hispanic_pct": 5.0,
+      "black_pct": 1.1,
+      "asian_pct": 1.0,
+      "other_pct": 3.1
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 41.6,
+        "rep_pct": 58.3,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -16.7,
+      "latest_leg": -16.7,
       "gov_2022": -24.2,
       "pres_2024": -27.9
     },
@@ -547,26 +755,40 @@
       "name": "Mary Felzkowski",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Mary Felzkowski",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 22.1,
-      "town_pct": 0.2,
-      "suburban_pct": 0.0,
-      "urban_pct": 93.1,
+      "population": 165914,
+      "rural_pct": 77.7,
+      "town_pct": 22.1,
+      "suburban_pct": 0.2,
+      "urban_pct": 0.0,
       "income_brackets": {
-        "lt_50k": 33.9,
-        "between_50_100k": 23.2,
-        "gt_150k": 16.1,
-        "unknown_pct": 44.2
+        "lt_50k": 26.8,
+        "between_50_100k": 33.9,
+        "gt_150k": 23.2,
+        "unknown_pct": 16.1
       },
-      "college_pct": 9.0,
-      "post_grad_pct": 25.0,
-      "education_unknown_pct": 16591400.0,
-      "white_pct": 1.5,
-      "hispanic_pct": 0.9,
-      "black_pct": 0.6,
-      "asian_pct": 3.8,
-      "other_pct": 26.8
+      "college_pct": 21.8,
+      "post_grad_pct": 9.0,
+      "education_unknown_pct": 25.0,
+      "white_pct": 93.1,
+      "hispanic_pct": 1.5,
+      "black_pct": 0.9,
+      "asian_pct": 0.6,
+      "other_pct": 3.8
     },
     "elections": [
       {
@@ -601,29 +823,52 @@
       "name": "John Jagler",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "John Jagler",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 47.0,
-      "town_pct": 0.0,
+      "population": 140619,
+      "rural_pct": 53.0,
+      "town_pct": 47.0,
       "suburban_pct": 0.0,
-      "urban_pct": 92.1,
+      "urban_pct": 0.0,
       "income_brackets": {
-        "lt_50k": 33.6,
-        "between_50_100k": 29.3,
-        "gt_150k": 15.9,
-        "unknown_pct": 46.2
+        "lt_50k": 21.2,
+        "between_50_100k": 33.6,
+        "gt_150k": 29.3,
+        "unknown_pct": 15.9
       },
-      "college_pct": 7.9,
-      "post_grad_pct": 24.4,
-      "education_unknown_pct": 14061900.0,
-      "white_pct": 3.5,
-      "hispanic_pct": 1.1,
-      "black_pct": 0.7,
-      "asian_pct": 2.6,
-      "other_pct": 21.2
+      "college_pct": 21.6,
+      "post_grad_pct": 7.9,
+      "education_unknown_pct": 24.4,
+      "white_pct": 92.1,
+      "hispanic_pct": 3.5,
+      "black_pct": 1.1,
+      "asian_pct": 0.7,
+      "other_pct": 2.6
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 96.7,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -93.4,
+      "latest_leg": -93.4,
       "gov_2022": -28.5,
       "pres_2024": -30.8
     },
@@ -646,26 +891,40 @@
       "name": "Sarah Keyeski",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Sarah Keyeski",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 32.7,
-      "town_pct": 8.0,
-      "suburban_pct": 5.7,
-      "urban_pct": 91.4,
+      "population": 149370,
+      "rural_pct": 53.6,
+      "town_pct": 32.7,
+      "suburban_pct": 8.0,
+      "urban_pct": 5.7,
       "income_brackets": {
-        "lt_50k": 30.4,
-        "between_50_100k": 33.8,
-        "gt_150k": 16.2,
-        "unknown_pct": 42.6
+        "lt_50k": 19.6,
+        "between_50_100k": 30.4,
+        "gt_150k": 33.8,
+        "unknown_pct": 16.2
       },
-      "college_pct": 8.9,
-      "post_grad_pct": 25.6,
-      "education_unknown_pct": 14937000.0,
-      "white_pct": 2.9,
-      "hispanic_pct": 1.6,
-      "black_pct": 1.2,
-      "asian_pct": 2.9,
-      "other_pct": 19.6
+      "college_pct": 22.8,
+      "post_grad_pct": 8.9,
+      "education_unknown_pct": 25.6,
+      "white_pct": 91.4,
+      "hispanic_pct": 2.9,
+      "black_pct": 1.6,
+      "asian_pct": 1.2,
+      "other_pct": 2.9
     },
     "elections": [
       {
@@ -700,29 +959,52 @@
       "name": "Mark Spreitzer",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Mark Spreitzer",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 15.6,
-      "town_pct": 8.4,
-      "suburban_pct": 55.1,
-      "urban_pct": 86.6,
+      "population": 157324,
+      "rural_pct": 20.9,
+      "town_pct": 15.6,
+      "suburban_pct": 8.4,
+      "urban_pct": 55.1,
       "income_brackets": {
-        "lt_50k": 28.8,
-        "between_50_100k": 28.7,
-        "gt_150k": 19.3,
-        "unknown_pct": 41.3
+        "lt_50k": 23.2,
+        "between_50_100k": 28.8,
+        "gt_150k": 28.7,
+        "unknown_pct": 19.3
       },
-      "college_pct": 9.2,
-      "post_grad_pct": 27.7,
-      "education_unknown_pct": 15732400.0,
-      "white_pct": 5.2,
-      "hispanic_pct": 4.5,
-      "black_pct": 1.4,
-      "asian_pct": 2.3,
-      "other_pct": 23.2
+      "college_pct": 21.7,
+      "post_grad_pct": 9.2,
+      "education_unknown_pct": 27.7,
+      "white_pct": 86.6,
+      "hispanic_pct": 5.2,
+      "black_pct": 4.5,
+      "asian_pct": 1.4,
+      "other_pct": 2.3
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 38.5,
+        "rep_pct": 61.4,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -22.8,
+      "latest_leg": -22.8,
       "gov_2022": 17.5,
       "pres_2024": 7.7
     },
@@ -745,26 +1027,40 @@
       "name": "Melissa Ratcliff",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Melissa Ratcliff",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 14.7,
-      "town_pct": 52.1,
-      "suburban_pct": 6.3,
-      "urban_pct": 85.4,
+      "population": 165138,
+      "rural_pct": 26.8,
+      "town_pct": 14.7,
+      "suburban_pct": 52.1,
+      "urban_pct": 6.3,
       "income_brackets": {
-        "lt_50k": 24.2,
-        "between_50_100k": 44.8,
-        "gt_150k": 17.5,
-        "unknown_pct": 37.2
+        "lt_50k": 13.5,
+        "between_50_100k": 24.2,
+        "gt_150k": 44.8,
+        "unknown_pct": 17.5
       },
-      "college_pct": 11.7,
-      "post_grad_pct": 26.1,
-      "education_unknown_pct": 16513800.0,
-      "white_pct": 4.2,
-      "hispanic_pct": 4.1,
-      "black_pct": 3.3,
-      "asian_pct": 3.0,
-      "other_pct": 13.5
+      "college_pct": 25.1,
+      "post_grad_pct": 11.7,
+      "education_unknown_pct": 26.1,
+      "white_pct": 85.4,
+      "hispanic_pct": 4.2,
+      "black_pct": 4.1,
+      "asian_pct": 3.3,
+      "other_pct": 3.0
     },
     "elections": [
       {
@@ -799,29 +1095,52 @@
       "name": "Howard Marklein",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Howard Marklein",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 36.3,
-      "town_pct": 0.0,
+      "population": 143858,
+      "rural_pct": 63.7,
+      "town_pct": 36.3,
       "suburban_pct": 0.0,
-      "urban_pct": 93.9,
+      "urban_pct": 0.0,
       "income_brackets": {
-        "lt_50k": 31.1,
-        "between_50_100k": 33.4,
-        "gt_150k": 16.3,
-        "unknown_pct": 43.2
+        "lt_50k": 19.2,
+        "between_50_100k": 31.1,
+        "gt_150k": 33.4,
+        "unknown_pct": 16.3
       },
-      "college_pct": 9.4,
-      "post_grad_pct": 24.6,
-      "education_unknown_pct": 14385800.0,
-      "white_pct": 1.7,
-      "hispanic_pct": 1.2,
-      "black_pct": 1.0,
-      "asian_pct": 2.3,
-      "other_pct": 19.2
+      "college_pct": 22.8,
+      "post_grad_pct": 9.4,
+      "education_unknown_pct": 24.6,
+      "white_pct": 93.9,
+      "hispanic_pct": 1.7,
+      "black_pct": 1.2,
+      "asian_pct": 1.0,
+      "other_pct": 2.3
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 39.8,
+        "rep_pct": 60.1,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -20.3,
+      "latest_leg": -20.3,
       "gov_2022": 11.8,
       "pres_2024": 1.0
     },
@@ -844,26 +1163,40 @@
       "name": "Kristin Alfheim",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Kristin Alfheim",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 0.1,
-      "town_pct": 18.5,
-      "suburban_pct": 78.1,
-      "urban_pct": 88.5,
+      "population": 148668,
+      "rural_pct": 3.3,
+      "town_pct": 0.1,
+      "suburban_pct": 18.5,
+      "urban_pct": 78.1,
       "income_brackets": {
-        "lt_50k": 29.0,
+        "lt_50k": 21.8,
         "between_50_100k": 29.0,
-        "gt_150k": 20.2,
-        "unknown_pct": 38.5
+        "gt_150k": 29.0,
+        "unknown_pct": 20.2
       },
-      "college_pct": 9.6,
-      "post_grad_pct": 27.9,
-      "education_unknown_pct": 14866800.0,
-      "white_pct": 3.8,
-      "hispanic_pct": 1.8,
-      "black_pct": 3.1,
-      "asian_pct": 2.8,
-      "other_pct": 21.8
+      "college_pct": 24.0,
+      "post_grad_pct": 9.6,
+      "education_unknown_pct": 27.9,
+      "white_pct": 88.5,
+      "hispanic_pct": 3.8,
+      "black_pct": 1.8,
+      "asian_pct": 3.1,
+      "other_pct": 2.8
     },
     "elections": [
       {
@@ -898,29 +1231,52 @@
       "name": "Rachael Cabral-Guevara",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Rachael Cabral-Guevara",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 12.2,
-      "town_pct": 23.7,
-      "suburban_pct": 9.2,
-      "urban_pct": 92.3,
+      "population": 151978,
+      "rural_pct": 54.9,
+      "town_pct": 12.2,
+      "suburban_pct": 23.7,
+      "urban_pct": 9.2,
       "income_brackets": {
-        "lt_50k": 29.7,
-        "between_50_100k": 38.3,
-        "gt_150k": 15.1,
-        "unknown_pct": 42.9
+        "lt_50k": 16.9,
+        "between_50_100k": 29.7,
+        "gt_150k": 38.3,
+        "unknown_pct": 15.1
       },
-      "college_pct": 9.9,
-      "post_grad_pct": 22.7,
-      "education_unknown_pct": 15197800.0,
-      "white_pct": 2.5,
-      "hispanic_pct": 1.0,
-      "black_pct": 1.5,
-      "asian_pct": 2.7,
-      "other_pct": 16.9
+      "college_pct": 24.5,
+      "post_grad_pct": 9.9,
+      "education_unknown_pct": 22.7,
+      "white_pct": 92.3,
+      "hispanic_pct": 2.5,
+      "black_pct": 1.0,
+      "asian_pct": 1.5,
+      "other_pct": 2.7
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 45.9,
+        "rep_pct": 54.0,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -8.1,
+      "latest_leg": -8.1,
       "gov_2022": -23.4,
       "pres_2024": -25.8
     },
@@ -943,26 +1299,40 @@
       "name": "Dan Feyen",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Dan Feyen",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 0.0,
-      "town_pct": 40.5,
-      "suburban_pct": 19.7,
-      "urban_pct": 92.0,
+      "population": 144296,
+      "rural_pct": 39.8,
+      "town_pct": 0.0,
+      "suburban_pct": 40.5,
+      "urban_pct": 19.7,
       "income_brackets": {
-        "lt_50k": 31.5,
-        "between_50_100k": 35.9,
-        "gt_150k": 15.3,
-        "unknown_pct": 44.0
+        "lt_50k": 17.4,
+        "between_50_100k": 31.5,
+        "gt_150k": 35.9,
+        "unknown_pct": 15.3
       },
-      "college_pct": 9.1,
-      "post_grad_pct": 23.4,
-      "education_unknown_pct": 14429600.0,
-      "white_pct": 2.8,
-      "hispanic_pct": 1.2,
-      "black_pct": 1.1,
-      "asian_pct": 2.9,
-      "other_pct": 17.4
+      "college_pct": 23.5,
+      "post_grad_pct": 9.1,
+      "education_unknown_pct": 23.4,
+      "white_pct": 92.0,
+      "hispanic_pct": 2.8,
+      "black_pct": 1.2,
+      "asian_pct": 1.1,
+      "other_pct": 2.9
     },
     "elections": [
       {
@@ -997,29 +1367,52 @@
       "name": "Van Wanggaard",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Van Wanggaard",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 0.0,
-      "town_pct": 56.1,
-      "suburban_pct": 37.6,
-      "urban_pct": 76.6,
+      "population": 166431,
+      "rural_pct": 6.3,
+      "town_pct": 0.0,
+      "suburban_pct": 56.1,
+      "urban_pct": 37.6,
       "income_brackets": {
-        "lt_50k": 26.7,
-        "between_50_100k": 35.8,
-        "gt_150k": 17.2,
-        "unknown_pct": 38.7
+        "lt_50k": 20.3,
+        "between_50_100k": 26.7,
+        "gt_150k": 35.8,
+        "unknown_pct": 17.2
       },
-      "college_pct": 11.2,
-      "post_grad_pct": 26.5,
-      "education_unknown_pct": 16643100.0,
-      "white_pct": 9.0,
-      "hispanic_pct": 8.3,
-      "black_pct": 3.2,
-      "asian_pct": 2.9,
-      "other_pct": 20.3
+      "college_pct": 23.6,
+      "post_grad_pct": 11.2,
+      "education_unknown_pct": 26.5,
+      "white_pct": 76.6,
+      "hispanic_pct": 9.0,
+      "black_pct": 8.3,
+      "asian_pct": 3.2,
+      "other_pct": 2.9
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 94.1,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -88.3,
+      "latest_leg": -88.3,
       "gov_2022": 3.4,
       "pres_2024": 1.2
     },
@@ -1042,26 +1435,40 @@
       "name": "Robert Wirch",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Robert Wirch",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 0.0,
-      "town_pct": 79.9,
-      "suburban_pct": 16.7,
-      "urban_pct": 74.9,
+      "population": 155601,
+      "rural_pct": 3.5,
+      "town_pct": 0.0,
+      "suburban_pct": 79.9,
+      "urban_pct": 16.7,
       "income_brackets": {
-        "lt_50k": 28.5,
-        "between_50_100k": 29.9,
-        "gt_150k": 18.4,
-        "unknown_pct": 41.2
+        "lt_50k": 23.2,
+        "between_50_100k": 28.5,
+        "gt_150k": 29.9,
+        "unknown_pct": 18.4
       },
-      "college_pct": 9.3,
-      "post_grad_pct": 27.9,
-      "education_unknown_pct": 15560100.0,
-      "white_pct": 10.8,
-      "hispanic_pct": 9.6,
-      "black_pct": 2.0,
-      "asian_pct": 2.7,
-      "other_pct": 23.2
+      "college_pct": 21.6,
+      "post_grad_pct": 9.3,
+      "education_unknown_pct": 27.9,
+      "white_pct": 74.9,
+      "hispanic_pct": 10.8,
+      "black_pct": 9.6,
+      "asian_pct": 2.0,
+      "other_pct": 2.7
     },
     "elections": [
       {
@@ -1096,29 +1503,52 @@
       "name": "Jesse James",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Jesse James",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 17.8,
-      "town_pct": 0.8,
-      "suburban_pct": 0.0,
-      "urban_pct": 93.6,
+      "population": 134589,
+      "rural_pct": 81.4,
+      "town_pct": 17.8,
+      "suburban_pct": 0.8,
+      "urban_pct": 0.0,
       "income_brackets": {
-        "lt_50k": 35.1,
-        "between_50_100k": 23.4,
-        "gt_150k": 14.5,
-        "unknown_pct": 47.4
+        "lt_50k": 26.9,
+        "between_50_100k": 35.1,
+        "gt_150k": 23.4,
+        "unknown_pct": 14.5
       },
-      "college_pct": 7.5,
-      "post_grad_pct": 23.4,
-      "education_unknown_pct": 13458900.0,
-      "white_pct": 1.5,
-      "hispanic_pct": 1.6,
-      "black_pct": 0.7,
-      "asian_pct": 2.7,
-      "other_pct": 26.9
+      "college_pct": 21.7,
+      "post_grad_pct": 7.5,
+      "education_unknown_pct": 23.4,
+      "white_pct": 93.6,
+      "hispanic_pct": 1.5,
+      "black_pct": 1.6,
+      "asian_pct": 0.7,
+      "other_pct": 2.7
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 94.7,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -89.5,
+      "latest_leg": -89.5,
       "gov_2022": -30.4,
       "pres_2024": -35.8
     },
@@ -1141,26 +1571,40 @@
       "name": "Patrick Testin",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Patrick Testin",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 54.2,
-      "town_pct": 0.0,
+      "population": 157056,
+      "rural_pct": 45.8,
+      "town_pct": 54.2,
       "suburban_pct": 0.0,
-      "urban_pct": 91.5,
+      "urban_pct": 0.0,
       "income_brackets": {
-        "lt_50k": 31.3,
-        "between_50_100k": 27.1,
-        "gt_150k": 17.6,
-        "unknown_pct": 42.5
+        "lt_50k": 24.0,
+        "between_50_100k": 31.3,
+        "gt_150k": 27.1,
+        "unknown_pct": 17.6
       },
-      "college_pct": 8.9,
-      "post_grad_pct": 25.3,
-      "education_unknown_pct": 15705600.0,
-      "white_pct": 2.3,
-      "hispanic_pct": 1.4,
-      "black_pct": 1.5,
-      "asian_pct": 3.3,
-      "other_pct": 24.0
+      "college_pct": 23.3,
+      "post_grad_pct": 8.9,
+      "education_unknown_pct": 25.3,
+      "white_pct": 91.5,
+      "hispanic_pct": 2.3,
+      "black_pct": 1.4,
+      "asian_pct": 1.5,
+      "other_pct": 3.3
     },
     "elections": [
       {
@@ -1195,29 +1639,52 @@
       "name": "Romaine Quinn",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Romaine Quinn",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 11.2,
-      "town_pct": 14.8,
-      "suburban_pct": 0.0,
-      "urban_pct": 91.5,
+      "population": 166819,
+      "rural_pct": 74.0,
+      "town_pct": 11.2,
+      "suburban_pct": 14.8,
+      "urban_pct": 0.0,
       "income_brackets": {
-        "lt_50k": 33.6,
-        "between_50_100k": 23.9,
-        "gt_150k": 16.4,
-        "unknown_pct": 43.6
+        "lt_50k": 26.1,
+        "between_50_100k": 33.6,
+        "gt_150k": 23.9,
+        "unknown_pct": 16.4
       },
-      "college_pct": 8.6,
-      "post_grad_pct": 26.4,
-      "education_unknown_pct": 16681900.0,
-      "white_pct": 1.5,
-      "hispanic_pct": 1.4,
-      "black_pct": 0.7,
-      "asian_pct": 5.0,
-      "other_pct": 26.1
+      "college_pct": 21.5,
+      "post_grad_pct": 8.6,
+      "education_unknown_pct": 26.4,
+      "white_pct": 91.5,
+      "hispanic_pct": 1.5,
+      "black_pct": 1.4,
+      "asian_pct": 0.7,
+      "other_pct": 5.0
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 99.8,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
     "view_margins": {
+      "leg_2022": 99.8,
+      "latest_leg": 99.8,
       "gov_2022": -6.3,
       "pres_2024": -13.6
     },
@@ -1240,26 +1707,40 @@
       "name": "Kelda Roys",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Kelda Roys",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 0.0,
-      "town_pct": 9.2,
-      "suburban_pct": 90.4,
-      "urban_pct": 81.6,
+      "population": 270012,
+      "rural_pct": 0.3,
+      "town_pct": 0.0,
+      "suburban_pct": 9.2,
+      "urban_pct": 90.4,
       "income_brackets": {
-        "lt_50k": 17.5,
-        "between_50_100k": 42.7,
-        "gt_150k": 26.2,
-        "unknown_pct": 30.3
+        "lt_50k": 13.6,
+        "between_50_100k": 17.5,
+        "gt_150k": 42.7,
+        "unknown_pct": 26.2
       },
-      "college_pct": 12.8,
-      "post_grad_pct": 33.8,
-      "education_unknown_pct": 27001200.0,
-      "white_pct": 4.9,
-      "hispanic_pct": 4.3,
-      "black_pct": 5.5,
-      "asian_pct": 3.8,
-      "other_pct": 13.6
+      "college_pct": 23.1,
+      "post_grad_pct": 12.8,
+      "education_unknown_pct": 33.8,
+      "white_pct": 81.6,
+      "hispanic_pct": 4.9,
+      "black_pct": 4.3,
+      "asian_pct": 5.5,
+      "other_pct": 3.8
     },
     "elections": [
       {
@@ -1294,29 +1775,52 @@
       "name": "Dianne Hesselbein",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Dianne Hesselbein",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 1.6,
-      "town_pct": 29.4,
-      "suburban_pct": 56.6,
-      "urban_pct": 83.7,
+      "population": 200101,
+      "rural_pct": 12.5,
+      "town_pct": 1.6,
+      "suburban_pct": 29.4,
+      "urban_pct": 56.6,
       "income_brackets": {
-        "lt_50k": 20.0,
-        "between_50_100k": 53.3,
-        "gt_150k": 16.4,
-        "unknown_pct": 32.5
+        "lt_50k": 10.3,
+        "between_50_100k": 20.0,
+        "gt_150k": 53.3,
+        "unknown_pct": 16.4
       },
-      "college_pct": 17.1,
-      "post_grad_pct": 25.4,
-      "education_unknown_pct": 20010100.0,
-      "white_pct": 4.0,
-      "hispanic_pct": 3.1,
-      "black_pct": 5.9,
-      "asian_pct": 3.4,
-      "other_pct": 10.3
+      "college_pct": 24.9,
+      "post_grad_pct": 17.1,
+      "education_unknown_pct": 25.4,
+      "white_pct": 83.7,
+      "hispanic_pct": 4.0,
+      "black_pct": 3.1,
+      "asian_pct": 5.9,
+      "other_pct": 3.4
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 68.0,
+        "rep_pct": 32.0,
+        "winner": "D"
+      }
+    ],
     "view_margins": {
+      "leg_2022": 36.0,
+      "latest_leg": 36.0,
       "gov_2022": 57.7,
       "pres_2024": 52.3
     },
@@ -1339,26 +1843,40 @@
       "name": "Julian Bradley",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Julian Bradley",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 9.7,
-      "town_pct": 45.3,
-      "suburban_pct": 34.0,
-      "urban_pct": 88.3,
+      "population": 161900,
+      "rural_pct": 11.0,
+      "town_pct": 9.7,
+      "suburban_pct": 45.3,
+      "urban_pct": 34.0,
       "income_brackets": {
-        "lt_50k": 25.3,
-        "between_50_100k": 48.1,
-        "gt_150k": 14.2,
-        "unknown_pct": 39.5
+        "lt_50k": 12.4,
+        "between_50_100k": 25.3,
+        "gt_150k": 48.1,
+        "unknown_pct": 14.2
       },
-      "college_pct": 12.3,
-      "post_grad_pct": 22.2,
-      "education_unknown_pct": 16190000.0,
-      "white_pct": 4.9,
-      "hispanic_pct": 1.2,
-      "black_pct": 2.2,
-      "asian_pct": 3.4,
-      "other_pct": 12.4
+      "college_pct": 26.0,
+      "post_grad_pct": 12.3,
+      "education_unknown_pct": 22.2,
+      "white_pct": 88.3,
+      "hispanic_pct": 4.9,
+      "black_pct": 1.2,
+      "asian_pct": 2.2,
+      "other_pct": 3.4
     },
     "elections": [
       {
@@ -1393,29 +1911,52 @@
       "name": "Cory Tomczyk",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Cory Tomczyk",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 10.1,
-      "town_pct": 14.4,
-      "suburban_pct": 29.4,
-      "urban_pct": 90.9,
+      "population": 147776,
+      "rural_pct": 46.1,
+      "town_pct": 10.1,
+      "suburban_pct": 14.4,
+      "urban_pct": 29.4,
       "income_brackets": {
-        "lt_50k": 33.2,
-        "between_50_100k": 30.7,
-        "gt_150k": 14.6,
-        "unknown_pct": 44.0
+        "lt_50k": 21.6,
+        "between_50_100k": 33.2,
+        "gt_150k": 30.7,
+        "unknown_pct": 14.6
       },
-      "college_pct": 9.4,
-      "post_grad_pct": 22.6,
-      "education_unknown_pct": 14777600.0,
-      "white_pct": 1.7,
-      "hispanic_pct": 1.2,
-      "black_pct": 3.3,
-      "asian_pct": 2.8,
-      "other_pct": 21.6
+      "college_pct": 24.1,
+      "post_grad_pct": 9.4,
+      "education_unknown_pct": 22.6,
+      "white_pct": 90.9,
+      "hispanic_pct": 1.7,
+      "black_pct": 1.2,
+      "asian_pct": 3.3,
+      "other_pct": 2.8
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 37.5,
+        "rep_pct": 62.4,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -24.9,
+      "latest_leg": -24.9,
       "gov_2022": -16.7,
       "pres_2024": -19.3
     },
@@ -1438,26 +1979,40 @@
       "name": "Jamie Wall",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Jamie Wall",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 0.0,
-      "town_pct": 40.5,
-      "suburban_pct": 56.5,
-      "urban_pct": 85.5,
+      "population": 153283,
+      "rural_pct": 3.1,
+      "town_pct": 0.0,
+      "suburban_pct": 40.5,
+      "urban_pct": 56.5,
       "income_brackets": {
-        "lt_50k": 28.6,
-        "between_50_100k": 32.3,
-        "gt_150k": 17.0,
-        "unknown_pct": 40.7
+        "lt_50k": 22.1,
+        "between_50_100k": 28.6,
+        "gt_150k": 32.3,
+        "unknown_pct": 17.0
       },
-      "college_pct": 9.4,
-      "post_grad_pct": 25.9,
-      "education_unknown_pct": 15328300.0,
-      "white_pct": 6.3,
-      "hispanic_pct": 2.4,
-      "black_pct": 2.6,
-      "asian_pct": 3.2,
-      "other_pct": 22.1
+      "college_pct": 24.0,
+      "post_grad_pct": 9.4,
+      "education_unknown_pct": 25.9,
+      "white_pct": 85.5,
+      "hispanic_pct": 6.3,
+      "black_pct": 2.4,
+      "asian_pct": 2.6,
+      "other_pct": 3.2
     },
     "elections": [
       {
@@ -1492,29 +2047,52 @@
       "name": "Jeff Smith",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Jeff Smith",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 11.9,
-      "town_pct": 19.9,
-      "suburban_pct": 41.6,
-      "urban_pct": 91.2,
+      "population": 170448,
+      "rural_pct": 26.6,
+      "town_pct": 11.9,
+      "suburban_pct": 19.9,
+      "urban_pct": 41.6,
       "income_brackets": {
-        "lt_50k": 26.8,
-        "between_50_100k": 34.2,
-        "gt_150k": 20.5,
-        "unknown_pct": 38.2
+        "lt_50k": 18.5,
+        "between_50_100k": 26.8,
+        "gt_150k": 34.2,
+        "unknown_pct": 20.5
       },
-      "college_pct": 9.3,
-      "post_grad_pct": 27.7,
-      "education_unknown_pct": 17044800.0,
-      "white_pct": 1.8,
-      "hispanic_pct": 1.5,
-      "black_pct": 2.8,
-      "asian_pct": 2.7,
-      "other_pct": 18.5
+      "college_pct": 24.8,
+      "post_grad_pct": 9.3,
+      "education_unknown_pct": 27.7,
+      "white_pct": 91.2,
+      "hispanic_pct": 1.8,
+      "black_pct": 1.5,
+      "asian_pct": 2.8,
+      "other_pct": 2.7
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 50.4,
+        "rep_pct": 49.5,
+        "winner": "D"
+      }
+    ],
     "view_margins": {
+      "leg_2022": 0.9,
+      "latest_leg": 0.9,
       "gov_2022": 9.1,
       "pres_2024": 2.2
     },
@@ -1537,26 +2115,40 @@
       "name": "Brad Pfaff",
       "party": "D"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Brad Pfaff",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 6.2,
-      "town_pct": 13.1,
-      "suburban_pct": 53.3,
-      "urban_pct": 91.9,
+      "population": 193770,
+      "rural_pct": 27.4,
+      "town_pct": 6.2,
+      "suburban_pct": 13.1,
+      "urban_pct": 53.3,
       "income_brackets": {
-        "lt_50k": 26.5,
-        "between_50_100k": 31.6,
-        "gt_150k": 23.3,
-        "unknown_pct": 36.5
+        "lt_50k": 18.6,
+        "between_50_100k": 26.5,
+        "gt_150k": 31.6,
+        "unknown_pct": 23.3
       },
-      "college_pct": 9.8,
-      "post_grad_pct": 31.3,
-      "education_unknown_pct": 19377000.0,
-      "white_pct": 1.8,
-      "hispanic_pct": 1.4,
-      "black_pct": 2.4,
-      "asian_pct": 2.5,
-      "other_pct": 18.6
+      "college_pct": 22.4,
+      "post_grad_pct": 9.8,
+      "education_unknown_pct": 31.3,
+      "white_pct": 91.9,
+      "hispanic_pct": 1.8,
+      "black_pct": 1.4,
+      "asian_pct": 2.4,
+      "other_pct": 2.5
     },
     "elections": [
       {
@@ -1591,29 +2183,52 @@
       "name": "Chris Kapenga",
       "party": "R"
     },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Chris Kapenga",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
     "demographics": {
-      "population": 0,
-      "rural_pct": 4.8,
-      "town_pct": 60.9,
-      "suburban_pct": 0.0,
-      "urban_pct": 92.2,
+      "population": 172750,
+      "rural_pct": 34.4,
+      "town_pct": 4.8,
+      "suburban_pct": 60.9,
+      "urban_pct": 0.0,
       "income_brackets": {
-        "lt_50k": 22.4,
-        "between_50_100k": 54.4,
-        "gt_150k": 13.0,
-        "unknown_pct": 39.6
+        "lt_50k": 10.2,
+        "between_50_100k": 22.4,
+        "gt_150k": 54.4,
+        "unknown_pct": 13.0
       },
-      "college_pct": 12.4,
-      "post_grad_pct": 21.3,
-      "education_unknown_pct": 17275000.0,
-      "white_pct": 2.4,
-      "hispanic_pct": 0.9,
-      "black_pct": 1.3,
-      "asian_pct": 3.2,
-      "other_pct": 10.2
+      "college_pct": 26.7,
+      "post_grad_pct": 12.4,
+      "education_unknown_pct": 21.3,
+      "white_pct": 92.2,
+      "hispanic_pct": 2.4,
+      "black_pct": 0.9,
+      "asian_pct": 1.3,
+      "other_pct": 3.2
     },
-    "elections": [],
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 96.4,
+        "winner": "R"
+      }
+    ],
     "view_margins": {
+      "leg_2022": -92.8,
+      "latest_leg": -92.8,
       "gov_2022": -34.2,
       "pres_2024": -33.6
     },

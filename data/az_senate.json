@@ -1,0 +1,2222 @@
+[
+  {
+    "state_fips": "04",
+    "district_id": "001",
+    "district_name": "",
+    "incumbent": {
+      "name": "Mark Finchem",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Mark Finchem",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 194176,
+      "rural_pct": 38.2,
+      "town_pct": 23.0,
+      "suburban_pct": 5.1,
+      "urban_pct": 33.7,
+      "income_brackets": {
+        "lt_50k": 21.2,
+        "between_50_100k": 27.1,
+        "gt_150k": 30.0,
+        "unknown_pct": 21.8
+      },
+      "college_pct": 17.8,
+      "post_grad_pct": 10.7,
+      "education_unknown_pct": 35.5,
+      "white_pct": 83.3,
+      "hispanic_pct": 10.4,
+      "black_pct": 1.7,
+      "asian_pct": 1.7,
+      "other_pct": 2.9
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 32.8,
+        "rep_pct": 67.2,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 34.1,
+        "rep_pct": 65.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -34.5,
+      "leg_2024": -31.8,
+      "latest_leg": -31.8,
+      "pres_2024": -33.5
+    },
+    "pres_2024_margin": -33.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 152378,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "002",
+    "district_name": "",
+    "incumbent": {
+      "name": "Shawnna Bolick",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Shawnna Bolick",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 154199,
+      "rural_pct": 3.2,
+      "town_pct": 0.0,
+      "suburban_pct": 0.4,
+      "urban_pct": 96.4,
+      "income_brackets": {
+        "lt_50k": 19.5,
+        "between_50_100k": 28.6,
+        "gt_150k": 34.2,
+        "unknown_pct": 17.7
+      },
+      "college_pct": 16.6,
+      "post_grad_pct": 7.6,
+      "education_unknown_pct": 32.3,
+      "white_pct": 71.8,
+      "hispanic_pct": 17.2,
+      "black_pct": 3.8,
+      "asian_pct": 4.5,
+      "other_pct": 2.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 48.2,
+        "rep_pct": 51.8,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 48.1,
+        "rep_pct": 51.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -3.7,
+      "leg_2024": -3.8,
+      "latest_leg": -3.8,
+      "pres_2024": -5.5
+    },
+    "pres_2024_margin": -5.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 107688,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "003",
+    "district_name": "",
+    "incumbent": {
+      "name": "John Kavanagh",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "John Kavanagh",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 198980,
+      "rural_pct": 16.8,
+      "town_pct": 0.0,
+      "suburban_pct": 27.8,
+      "urban_pct": 55.4,
+      "income_brackets": {
+        "lt_50k": 6.5,
+        "between_50_100k": 14.8,
+        "gt_150k": 65.3,
+        "unknown_pct": 13.4
+      },
+      "college_pct": 23.2,
+      "post_grad_pct": 15.3,
+      "education_unknown_pct": 26.8,
+      "white_pct": 84.8,
+      "hispanic_pct": 6.0,
+      "black_pct": 1.7,
+      "asian_pct": 4.2,
+      "other_pct": 3.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 36.8,
+        "rep_pct": 63.2,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -26.4,
+      "leg_2024": -100.0,
+      "latest_leg": -100.0,
+      "pres_2024": -24.4
+    },
+    "pres_2024_margin": -24.4,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 163741,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "004",
+    "district_name": "",
+    "incumbent": {
+      "name": "Carine Werner",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Carine Werner",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 194173,
+      "rural_pct": 2.2,
+      "town_pct": 0.0,
+      "suburban_pct": 6.2,
+      "urban_pct": 91.7,
+      "income_brackets": {
+        "lt_50k": 8.6,
+        "between_50_100k": 18.7,
+        "gt_150k": 57.9,
+        "unknown_pct": 14.8
+      },
+      "college_pct": 20.5,
+      "post_grad_pct": 13.6,
+      "education_unknown_pct": 28.2,
+      "white_pct": 81.3,
+      "hispanic_pct": 8.4,
+      "black_pct": 2.1,
+      "asian_pct": 5.2,
+      "other_pct": 3.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 50.5,
+        "rep_pct": 49.5,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 48.1,
+        "rep_pct": 51.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 1.0,
+      "leg_2024": -3.7,
+      "latest_leg": -3.7,
+      "pres_2024": -3.5
+    },
+    "pres_2024_margin": -3.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 153323,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "005",
+    "district_name": "",
+    "incumbent": {
+      "name": "Lela Alston",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Lela Alston",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 154466,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.1,
+      "urban_pct": 99.9,
+      "income_brackets": {
+        "lt_50k": 25.2,
+        "between_50_100k": 21.6,
+        "gt_150k": 30.9,
+        "unknown_pct": 22.2
+      },
+      "college_pct": 15.0,
+      "post_grad_pct": 8.1,
+      "education_unknown_pct": 35.9,
+      "white_pct": 63.6,
+      "hispanic_pct": 24.9,
+      "black_pct": 5.2,
+      "asian_pct": 3.4,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 70.7,
+        "rep_pct": 29.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 68.3,
+        "rep_pct": 31.7,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 41.5,
+      "leg_2024": 36.6,
+      "latest_leg": 36.6,
+      "pres_2024": 36.3
+    },
+    "pres_2024_margin": 36.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 104713,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "006",
+    "district_name": "",
+    "incumbent": {
+      "name": "Theresa Hatathlie",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Theresa Hatathlie",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 166133,
+      "rural_pct": 54.3,
+      "town_pct": 29.0,
+      "suburban_pct": 2.4,
+      "urban_pct": 14.3,
+      "income_brackets": {
+        "lt_50k": 16.5,
+        "between_50_100k": 9.8,
+        "gt_150k": 10.1,
+        "unknown_pct": 63.7
+      },
+      "college_pct": 6.3,
+      "post_grad_pct": 3.2,
+      "education_unknown_pct": 75.1,
+      "white_pct": 35.9,
+      "hispanic_pct": 6.5,
+      "black_pct": 2.0,
+      "asian_pct": 0.9,
+      "other_pct": 54.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 100.0,
+      "leg_2024": 100.0,
+      "latest_leg": 100.0,
+      "pres_2024": 27.1
+    },
+    "pres_2024_margin": 27.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 98644,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "007",
+    "district_name": "",
+    "incumbent": {
+      "name": "Wendy Rogers",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Wendy Rogers",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 181459,
+      "rural_pct": 42.3,
+      "town_pct": 23.9,
+      "suburban_pct": 20.5,
+      "urban_pct": 13.2,
+      "income_brackets": {
+        "lt_50k": 23.4,
+        "between_50_100k": 27.1,
+        "gt_150k": 24.2,
+        "unknown_pct": 25.2
+      },
+      "college_pct": 16.3,
+      "post_grad_pct": 8.3,
+      "education_unknown_pct": 38.5,
+      "white_pct": 78.9,
+      "hispanic_pct": 13.9,
+      "black_pct": 2.5,
+      "asian_pct": 1.6,
+      "other_pct": 3.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 36.4,
+        "rep_pct": 63.6,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 35.0,
+        "rep_pct": 65.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -27.2,
+      "leg_2024": -30.1,
+      "latest_leg": -30.1,
+      "pres_2024": -29.6
+    },
+    "pres_2024_margin": -29.6,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 128606,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "008",
+    "district_name": "",
+    "incumbent": {
+      "name": "Lauren Kuby",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Lauren Kuby",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 149021,
+      "rural_pct": 1.5,
+      "town_pct": 0.0,
+      "suburban_pct": 1.2,
+      "urban_pct": 97.3,
+      "income_brackets": {
+        "lt_50k": 22.8,
+        "between_50_100k": 22.7,
+        "gt_150k": 27.6,
+        "unknown_pct": 26.8
+      },
+      "college_pct": 13.3,
+      "post_grad_pct": 6.3,
+      "education_unknown_pct": 40.3,
+      "white_pct": 66.6,
+      "hispanic_pct": 18.8,
+      "black_pct": 5.3,
+      "asian_pct": 4.4,
+      "other_pct": 4.9
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 62.7,
+        "rep_pct": 37.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 60.6,
+        "rep_pct": 39.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 25.4,
+      "leg_2024": 21.2,
+      "latest_leg": 21.2,
+      "pres_2024": 19.6
+    },
+    "pres_2024_margin": 19.6,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 94447,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "009",
+    "district_name": "",
+    "incumbent": {
+      "name": "Kiana Sears",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Kiana Sears",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 133418,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 100.0,
+      "income_brackets": {
+        "lt_50k": 28.2,
+        "between_50_100k": 26.6,
+        "gt_150k": 24.1,
+        "unknown_pct": 21.1
+      },
+      "college_pct": 13.7,
+      "post_grad_pct": 5.9,
+      "education_unknown_pct": 36.6,
+      "white_pct": 62.8,
+      "hispanic_pct": 27.1,
+      "black_pct": 4.3,
+      "asian_pct": 3.3,
+      "other_pct": 2.5
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 52.5,
+        "rep_pct": 47.5,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 51.7,
+        "rep_pct": 48.3,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 4.9,
+      "leg_2024": 3.5,
+      "latest_leg": 3.5,
+      "pres_2024": 3.0
+    },
+    "pres_2024_margin": 3.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 85734,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "010",
+    "district_name": "",
+    "incumbent": {
+      "name": "Dave Farnsworth",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Dave Farnsworth",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 164940,
+      "rural_pct": 2.0,
+      "town_pct": 0.0,
+      "suburban_pct": 23.1,
+      "urban_pct": 74.8,
+      "income_brackets": {
+        "lt_50k": 22.2,
+        "between_50_100k": 28.1,
+        "gt_150k": 33.5,
+        "unknown_pct": 16.1
+      },
+      "college_pct": 17.7,
+      "post_grad_pct": 8.5,
+      "education_unknown_pct": 30.6,
+      "white_pct": 77.8,
+      "hispanic_pct": 14.5,
+      "black_pct": 2.8,
+      "asian_pct": 2.6,
+      "other_pct": 2.3
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 61.1,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 38.5,
+        "rep_pct": 61.5,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -22.1,
+      "leg_2024": -23.0,
+      "latest_leg": -23.0,
+      "pres_2024": -20.8
+    },
+    "pres_2024_margin": -20.8,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 120748,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "011",
+    "district_name": "",
+    "incumbent": {
+      "name": "Catherine Miranda",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Catherine Miranda",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 137335,
+      "rural_pct": 0.9,
+      "town_pct": 0.0,
+      "suburban_pct": 5.2,
+      "urban_pct": 93.9,
+      "income_brackets": {
+        "lt_50k": 33.6,
+        "between_50_100k": 24.5,
+        "gt_150k": 17.0,
+        "unknown_pct": 24.9
+      },
+      "college_pct": 13.1,
+      "post_grad_pct": 3.6,
+      "education_unknown_pct": 41.2,
+      "white_pct": 31.9,
+      "hispanic_pct": 47.2,
+      "black_pct": 14.5,
+      "asian_pct": 3.8,
+      "other_pct": 2.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 75.2,
+        "rep_pct": 24.8,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 72.2,
+        "rep_pct": 27.8,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 50.4,
+      "leg_2024": 44.3,
+      "latest_leg": 44.3,
+      "pres_2024": 39.7
+    },
+    "pres_2024_margin": 39.7,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 76088,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "012",
+    "district_name": "",
+    "incumbent": {
+      "name": "Mitzi Epstein",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Mitzi Epstein",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 170355,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.3,
+      "urban_pct": 99.7,
+      "income_brackets": {
+        "lt_50k": 12.7,
+        "between_50_100k": 24.0,
+        "gt_150k": 47.5,
+        "unknown_pct": 15.8
+      },
+      "college_pct": 18.2,
+      "post_grad_pct": 10.4,
+      "education_unknown_pct": 29.5,
+      "white_pct": 70.2,
+      "hispanic_pct": 16.1,
+      "black_pct": 4.3,
+      "asian_pct": 6.6,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 58.1,
+        "rep_pct": 41.9,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 58.1,
+        "rep_pct": 41.9,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 16.3,
+      "leg_2024": 16.2,
+      "latest_leg": 16.2,
+      "pres_2024": 15.8
+    },
+    "pres_2024_margin": 15.8,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 128036,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "013",
+    "district_name": "",
+    "incumbent": {
+      "name": "J. D. Mesnard",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "J. D. Mesnard",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 165046,
+      "rural_pct": 1.5,
+      "town_pct": 0.0,
+      "suburban_pct": 27.5,
+      "urban_pct": 71.0,
+      "income_brackets": {
+        "lt_50k": 12.2,
+        "between_50_100k": 21.2,
+        "gt_150k": 50.4,
+        "unknown_pct": 16.2
+      },
+      "college_pct": 19.0,
+      "post_grad_pct": 10.3,
+      "education_unknown_pct": 30.1,
+      "white_pct": 67.8,
+      "hispanic_pct": 16.3,
+      "black_pct": 3.7,
+      "asian_pct": 9.7,
+      "other_pct": 2.5
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 48.3,
+        "rep_pct": 51.7,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 46.9,
+        "rep_pct": 53.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -3.5,
+      "leg_2024": -6.3,
+      "latest_leg": -6.3,
+      "pres_2024": -1.2
+    },
+    "pres_2024_margin": -1.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 123351,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "014",
+    "district_name": "",
+    "incumbent": {
+      "name": "Warren Petersen",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Warren Petersen",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 174874,
+      "rural_pct": 3.4,
+      "town_pct": 0.0,
+      "suburban_pct": 93.0,
+      "urban_pct": 3.5,
+      "income_brackets": {
+        "lt_50k": 8.1,
+        "between_50_100k": 18.7,
+        "gt_150k": 57.2,
+        "unknown_pct": 16.0
+      },
+      "college_pct": 18.4,
+      "post_grad_pct": 8.7,
+      "education_unknown_pct": 29.5,
+      "white_pct": 73.7,
+      "hispanic_pct": 13.8,
+      "black_pct": 3.5,
+      "asian_pct": 6.5,
+      "other_pct": 2.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 39.9,
+        "rep_pct": 60.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -100.0,
+      "leg_2024": -20.3,
+      "latest_leg": -20.3,
+      "pres_2024": -18.2
+    },
+    "pres_2024_margin": -18.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 134468,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "015",
+    "district_name": "",
+    "incumbent": {
+      "name": "Jake Hoffman",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Jake Hoffman",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 200317,
+      "rural_pct": 24.6,
+      "town_pct": 0.0,
+      "suburban_pct": 54.5,
+      "urban_pct": 20.9,
+      "income_brackets": {
+        "lt_50k": 11.6,
+        "between_50_100k": 26.9,
+        "gt_150k": 42.1,
+        "unknown_pct": 19.4
+      },
+      "college_pct": 16.5,
+      "post_grad_pct": 7.0,
+      "education_unknown_pct": 32.8,
+      "white_pct": 73.6,
+      "hispanic_pct": 16.6,
+      "black_pct": 4.0,
+      "asian_pct": 3.4,
+      "other_pct": 2.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 35.2,
+        "rep_pct": 64.8,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 31.9,
+        "rep_pct": 63.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -29.5,
+      "leg_2024": -31.9,
+      "latest_leg": -31.9,
+      "pres_2024": -30.4
+    },
+    "pres_2024_margin": -30.4,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 143744,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "016",
+    "district_name": "",
+    "incumbent": {
+      "name": "T. J. Shope",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "T. J. Shope",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 173569,
+      "rural_pct": 29.4,
+      "town_pct": 39.5,
+      "suburban_pct": 8.9,
+      "urban_pct": 22.2,
+      "income_brackets": {
+        "lt_50k": 24.9,
+        "between_50_100k": 29.4,
+        "gt_150k": 19.5,
+        "unknown_pct": 26.2
+      },
+      "college_pct": 14.7,
+      "post_grad_pct": 6.2,
+      "education_unknown_pct": 40.1,
+      "white_pct": 58.7,
+      "hispanic_pct": 28.7,
+      "black_pct": 5.8,
+      "asian_pct": 2.2,
+      "other_pct": 4.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 44.3,
+        "rep_pct": 55.7,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 44.0,
+        "rep_pct": 56.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -11.4,
+      "leg_2024": -12.0,
+      "latest_leg": -12.0,
+      "pres_2024": -9.4
+    },
+    "pres_2024_margin": -9.4,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 108304,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "017",
+    "district_name": "",
+    "incumbent": {
+      "name": "Vince Leach",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Vince Leach",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 200942,
+      "rural_pct": 23.0,
+      "town_pct": 6.2,
+      "suburban_pct": 45.8,
+      "urban_pct": 25.0,
+      "income_brackets": {
+        "lt_50k": 12.6,
+        "between_50_100k": 25.8,
+        "gt_150k": 46.7,
+        "unknown_pct": 14.9
+      },
+      "college_pct": 19.5,
+      "post_grad_pct": 13.4,
+      "education_unknown_pct": 28.3,
+      "white_pct": 75.8,
+      "hispanic_pct": 15.9,
+      "black_pct": 2.5,
+      "asian_pct": 3.3,
+      "other_pct": 2.5
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 48.8,
+        "rep_pct": 51.2,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 49.0,
+        "rep_pct": 51.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -2.5,
+      "leg_2024": -2.0,
+      "latest_leg": -2.0,
+      "pres_2024": -3.9
+    },
+    "pres_2024_margin": -3.9,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 157760,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "018",
+    "district_name": "",
+    "incumbent": {
+      "name": "Priya Sundareshan",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Priya Sundareshan",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 178782,
+      "rural_pct": 0.5,
+      "town_pct": 0.0,
+      "suburban_pct": 53.6,
+      "urban_pct": 45.8,
+      "income_brackets": {
+        "lt_50k": 20.4,
+        "between_50_100k": 25.2,
+        "gt_150k": 36.9,
+        "unknown_pct": 17.4
+      },
+      "college_pct": 17.2,
+      "post_grad_pct": 13.6,
+      "education_unknown_pct": 31.7,
+      "white_pct": 71.9,
+      "hispanic_pct": 18.3,
+      "black_pct": 2.9,
+      "asian_pct": 4.3,
+      "other_pct": 2.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 62.2,
+        "rep_pct": 37.8,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 24.4,
+      "leg_2024": 100.0,
+      "latest_leg": 100.0,
+      "pres_2024": 23.9
+    },
+    "pres_2024_margin": 23.9,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 133455,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "019",
+    "district_name": "",
+    "incumbent": {
+      "name": "David Gowan",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "David Gowan",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 166361,
+      "rural_pct": 38.8,
+      "town_pct": 37.2,
+      "suburban_pct": 4.8,
+      "urban_pct": 19.2,
+      "income_brackets": {
+        "lt_50k": 25.1,
+        "between_50_100k": 29.0,
+        "gt_150k": 24.8,
+        "unknown_pct": 21.1
+      },
+      "college_pct": 17.0,
+      "post_grad_pct": 8.9,
+      "education_unknown_pct": 35.4,
+      "white_pct": 70.6,
+      "hispanic_pct": 22.8,
+      "black_pct": 2.7,
+      "asian_pct": 1.7,
+      "other_pct": 2.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 37.4,
+        "rep_pct": 62.6,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -100.0,
+      "leg_2024": -25.2,
+      "latest_leg": -25.2,
+      "pres_2024": -22.9
+    },
+    "pres_2024_margin": -22.9,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 117693,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "020",
+    "district_name": "",
+    "incumbent": {
+      "name": "Sally Ann Gonzales",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Sally Ann Gonzales",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 141627,
+      "rural_pct": 1.4,
+      "town_pct": 0.0,
+      "suburban_pct": 18.1,
+      "urban_pct": 80.4,
+      "income_brackets": {
+        "lt_50k": 39.4,
+        "between_50_100k": 20.1,
+        "gt_150k": 14.3,
+        "unknown_pct": 26.2
+      },
+      "college_pct": 12.8,
+      "post_grad_pct": 6.0,
+      "education_unknown_pct": 42.2,
+      "white_pct": 42.6,
+      "hispanic_pct": 47.8,
+      "black_pct": 3.1,
+      "asian_pct": 2.7,
+      "other_pct": 3.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 100.0,
+      "leg_2024": 100.0,
+      "latest_leg": 100.0,
+      "pres_2024": 43.0
+    },
+    "pres_2024_margin": 43.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 84687,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "021",
+    "district_name": "",
+    "incumbent": {
+      "name": "Rosanna Gabald\u00f3n",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Rosanna Gabald\u00f3n",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 151532,
+      "rural_pct": 14.0,
+      "town_pct": 29.4,
+      "suburban_pct": 4.3,
+      "urban_pct": 52.3,
+      "income_brackets": {
+        "lt_50k": 35.0,
+        "between_50_100k": 26.1,
+        "gt_150k": 15.2,
+        "unknown_pct": 23.6
+      },
+      "college_pct": 13.9,
+      "post_grad_pct": 5.1,
+      "education_unknown_pct": 40.6,
+      "white_pct": 40.5,
+      "hispanic_pct": 52.1,
+      "black_pct": 3.3,
+      "asian_pct": 2.3,
+      "other_pct": 1.8
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 64.1,
+        "rep_pct": 35.9,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 28.1,
+      "leg_2024": 100.0,
+      "latest_leg": 100.0,
+      "pres_2024": 18.2
+    },
+    "pres_2024_margin": 18.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 92104,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "022",
+    "district_name": "",
+    "incumbent": {
+      "name": "Eva Diaz",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Eva Diaz",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 133662,
+      "rural_pct": 2.3,
+      "town_pct": 0.0,
+      "suburban_pct": 47.8,
+      "urban_pct": 49.9,
+      "income_brackets": {
+        "lt_50k": 29.3,
+        "between_50_100k": 31.1,
+        "gt_150k": 15.4,
+        "unknown_pct": 24.2
+      },
+      "college_pct": 12.2,
+      "post_grad_pct": 3.3,
+      "education_unknown_pct": 40.2,
+      "white_pct": 31.2,
+      "hispanic_pct": 55.9,
+      "black_pct": 7.5,
+      "asian_pct": 3.7,
+      "other_pct": 1.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 63.8,
+        "rep_pct": 33.1,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 64.6,
+        "rep_pct": 35.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 30.7,
+      "leg_2024": 29.2,
+      "latest_leg": 29.2,
+      "pres_2024": 21.1
+    },
+    "pres_2024_margin": 21.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 74186,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "023",
+    "district_name": "",
+    "incumbent": {
+      "name": "Brian Fernandez",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Brian Fernandez",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 146675,
+      "rural_pct": 19.7,
+      "town_pct": 22.5,
+      "suburban_pct": 35.6,
+      "urban_pct": 22.2,
+      "income_brackets": {
+        "lt_50k": 28.5,
+        "between_50_100k": 23.7,
+        "gt_150k": 17.0,
+        "unknown_pct": 30.8
+      },
+      "college_pct": 13.3,
+      "post_grad_pct": 4.4,
+      "education_unknown_pct": 47.0,
+      "white_pct": 34.7,
+      "hispanic_pct": 56.0,
+      "black_pct": 3.2,
+      "asian_pct": 1.9,
+      "other_pct": 4.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 53.7,
+        "rep_pct": 46.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 53.8,
+        "rep_pct": 46.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 7.3,
+      "leg_2024": 7.6,
+      "latest_leg": 7.6,
+      "pres_2024": 1.8
+    },
+    "pres_2024_margin": 1.8,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 83307,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "024",
+    "district_name": "",
+    "incumbent": {
+      "name": "Analise Ortiz",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Analise Ortiz",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 104857,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 59.4,
+      "urban_pct": 40.6,
+      "income_brackets": {
+        "lt_50k": 42.0,
+        "between_50_100k": 23.6,
+        "gt_150k": 10.0,
+        "unknown_pct": 24.4
+      },
+      "college_pct": 11.6,
+      "post_grad_pct": 3.3,
+      "education_unknown_pct": 41.3,
+      "white_pct": 32.9,
+      "hispanic_pct": 56.2,
+      "black_pct": 5.6,
+      "asian_pct": 3.4,
+      "other_pct": 1.8
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 100.0,
+      "leg_2024": 100.0,
+      "latest_leg": 100.0,
+      "pres_2024": 20.4
+    },
+    "pres_2024_margin": 20.4,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 55646,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "025",
+    "district_name": "",
+    "incumbent": {
+      "name": "Tim Dunn",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Tim Dunn",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 187780,
+      "rural_pct": 35.4,
+      "town_pct": 8.7,
+      "suburban_pct": 43.8,
+      "urban_pct": 12.1,
+      "income_brackets": {
+        "lt_50k": 19.3,
+        "between_50_100k": 30.1,
+        "gt_150k": 29.7,
+        "unknown_pct": 20.9
+      },
+      "college_pct": 15.8,
+      "post_grad_pct": 6.2,
+      "education_unknown_pct": 35.4,
+      "white_pct": 60.1,
+      "hispanic_pct": 31.7,
+      "black_pct": 4.0,
+      "asian_pct": 2.2,
+      "other_pct": 2.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -100.0,
+      "leg_2024": -100.0,
+      "latest_leg": -100.0,
+      "pres_2024": -29.3
+    },
+    "pres_2024_margin": -29.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 124577,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "026",
+    "district_name": "",
+    "incumbent": {
+      "name": "Flavio Bravo",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Flavio Bravo",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 97675,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 5.2,
+      "urban_pct": 94.7,
+      "income_brackets": {
+        "lt_50k": 43.9,
+        "between_50_100k": 19.8,
+        "gt_150k": 9.1,
+        "unknown_pct": 27.2
+      },
+      "college_pct": 11.3,
+      "post_grad_pct": 3.3,
+      "education_unknown_pct": 43.7,
+      "white_pct": 34.8,
+      "hispanic_pct": 52.0,
+      "black_pct": 7.2,
+      "asian_pct": 3.8,
+      "other_pct": 2.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 66.3,
+        "rep_pct": 33.7,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 100.0,
+      "leg_2024": 32.7,
+      "latest_leg": 32.7,
+      "pres_2024": 28.7
+    },
+    "pres_2024_margin": 28.7,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 50260,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "027",
+    "district_name": "",
+    "incumbent": {
+      "name": "Kevin Payne",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Kevin Payne",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 157255,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 73.9,
+      "urban_pct": 26.0,
+      "income_brackets": {
+        "lt_50k": 20.1,
+        "between_50_100k": 31.0,
+        "gt_150k": 31.8,
+        "unknown_pct": 17.2
+      },
+      "college_pct": 16.0,
+      "post_grad_pct": 7.2,
+      "education_unknown_pct": 31.7,
+      "white_pct": 67.1,
+      "hispanic_pct": 22.1,
+      "black_pct": 3.8,
+      "asian_pct": 4.5,
+      "other_pct": 2.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 44.9,
+        "rep_pct": 55.1,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -10.3,
+      "leg_2024": -100.0,
+      "latest_leg": -100.0,
+      "pres_2024": -11.3
+    },
+    "pres_2024_margin": -11.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 108083,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "028",
+    "district_name": "",
+    "incumbent": {
+      "name": "Frank Carroll",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Frank Carroll",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 178373,
+      "rural_pct": 9.4,
+      "town_pct": 3.4,
+      "suburban_pct": 73.4,
+      "urban_pct": 13.8,
+      "income_brackets": {
+        "lt_50k": 14.4,
+        "between_50_100k": 26.9,
+        "gt_150k": 46.4,
+        "unknown_pct": 12.3
+      },
+      "college_pct": 21.9,
+      "post_grad_pct": 12.2,
+      "education_unknown_pct": 25.5,
+      "white_pct": 82.4,
+      "hispanic_pct": 8.6,
+      "black_pct": 2.4,
+      "asian_pct": 4.0,
+      "other_pct": 2.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 38.2,
+        "rep_pct": 61.8,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 1.1,
+        "rep_pct": 98.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -23.7,
+      "leg_2024": -97.7,
+      "latest_leg": -97.7,
+      "pres_2024": -23.1
+    },
+    "pres_2024_margin": -23.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 145755,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "029",
+    "district_name": "",
+    "incumbent": {
+      "name": "Janae Shamp",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Janae Shamp",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 179187,
+      "rural_pct": 21.8,
+      "town_pct": 0.0,
+      "suburban_pct": 78.2,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 17.5,
+        "between_50_100k": 30.1,
+        "gt_150k": 34.3,
+        "unknown_pct": 18.1
+      },
+      "college_pct": 16.9,
+      "post_grad_pct": 7.8,
+      "education_unknown_pct": 32.2,
+      "white_pct": 67.1,
+      "hispanic_pct": 22.6,
+      "black_pct": 4.7,
+      "asian_pct": 3.2,
+      "other_pct": 2.3
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 41.0,
+        "rep_pct": 59.0,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 40.7,
+        "rep_pct": 59.3,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -17.9,
+      "leg_2024": -18.7,
+      "latest_leg": -18.7,
+      "pres_2024": -18.3
+    },
+    "pres_2024_margin": -18.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 126163,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "04",
+    "district_id": "030",
+    "district_name": "",
+    "incumbent": {
+      "name": "Hildy Angius",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Hildy Angius",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 197040,
+      "rural_pct": 31.4,
+      "town_pct": 44.1,
+      "suburban_pct": 1.1,
+      "urban_pct": 23.4,
+      "income_brackets": {
+        "lt_50k": 28.4,
+        "between_50_100k": 26.5,
+        "gt_150k": 19.3,
+        "unknown_pct": 25.8
+      },
+      "college_pct": 15.2,
+      "post_grad_pct": 6.4,
+      "education_unknown_pct": 39.4,
+      "white_pct": 80.3,
+      "hispanic_pct": 13.3,
+      "black_pct": 2.2,
+      "asian_pct": 1.5,
+      "other_pct": 2.8
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 21.5,
+        "rep_pct": 78.5,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -100.0,
+      "leg_2024": -56.9,
+      "latest_leg": -56.9,
+      "pres_2024": -55.1
+    },
+    "pres_2024_margin": -55.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 122889,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  }
+]

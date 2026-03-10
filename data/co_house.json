@@ -1,0 +1,4812 @@
+[
+  {
+    "state_fips": "08",
+    "district_id": "001",
+    "district_name": "State House District 1",
+    "incumbent": {
+      "name": "Javier Mabrey",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Javier Mabrey",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 57518,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.7,
+      "urban_pct": 99.3,
+      "income_brackets": {
+        "lt_50k": 22.6,
+        "between_50_100k": 27.9,
+        "gt_150k": 32.4,
+        "unknown_pct": 17.1
+      },
+      "college_pct": 17.2,
+      "post_grad_pct": 6.1,
+      "education_unknown_pct": 26.2,
+      "white_pct": 44.5,
+      "hispanic_pct": 28.9,
+      "black_pct": 2.4,
+      "asian_pct": 4.0,
+      "other_pct": 20.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 64.8,
+        "rep_pct": 32.5,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 64.8,
+        "rep_pct": 35.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 32.3,
+      "leg_2024": 29.5,
+      "latest_leg": 29.5,
+      "pres_2024": 29.4
+    },
+    "pres_2024_margin": 29.4,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 36885,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "002",
+    "district_name": "State House District 2",
+    "incumbent": {
+      "name": "Steven Woodrow",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Steven Woodrow",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 73057,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.2,
+      "urban_pct": 99.8,
+      "income_brackets": {
+        "lt_50k": 7.1,
+        "between_50_100k": 13.8,
+        "gt_150k": 61.3,
+        "unknown_pct": 17.8
+      },
+      "college_pct": 19.7,
+      "post_grad_pct": 13.3,
+      "education_unknown_pct": 25.5,
+      "white_pct": 67.1,
+      "hispanic_pct": 4.7,
+      "black_pct": 1.6,
+      "asian_pct": 2.6,
+      "other_pct": 24.0
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 75.4,
+        "rep_pct": 23.1,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 74.2,
+        "rep_pct": 25.8,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 52.3,
+      "leg_2024": 48.4,
+      "latest_leg": 48.4,
+      "pres_2024": 57.1
+    },
+    "pres_2024_margin": 57.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 56487,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "003",
+    "district_name": "State House District 3",
+    "incumbent": {
+      "name": "Meg Froelich",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Meg Froelich",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 62910,
+      "rural_pct": 0.1,
+      "town_pct": 0.0,
+      "suburban_pct": 57.3,
+      "urban_pct": 42.7,
+      "income_brackets": {
+        "lt_50k": 19.0,
+        "between_50_100k": 21.4,
+        "gt_150k": 42.0,
+        "unknown_pct": 17.6
+      },
+      "college_pct": 17.8,
+      "post_grad_pct": 9.1,
+      "education_unknown_pct": 26.1,
+      "white_pct": 61.8,
+      "hispanic_pct": 10.1,
+      "black_pct": 3.9,
+      "asian_pct": 2.6,
+      "other_pct": 21.5
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 66.0,
+        "rep_pct": 31.8,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 64.1,
+        "rep_pct": 35.9,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 34.2,
+      "leg_2024": 28.1,
+      "latest_leg": 28.1,
+      "pres_2024": 33.2
+    },
+    "pres_2024_margin": 33.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 42912,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "004",
+    "district_name": "State House District 4",
+    "incumbent": {
+      "name": "Cecelia Espenoza",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Cecelia Espenoza",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 66634,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.1,
+      "urban_pct": 99.9,
+      "income_brackets": {
+        "lt_50k": 19.8,
+        "between_50_100k": 19.7,
+        "gt_150k": 39.5,
+        "unknown_pct": 21.0
+      },
+      "college_pct": 16.9,
+      "post_grad_pct": 5.9,
+      "education_unknown_pct": 28.2,
+      "white_pct": 47.7,
+      "hispanic_pct": 21.7,
+      "black_pct": 2.4,
+      "asian_pct": 2.2,
+      "other_pct": 26.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 82.7,
+        "rep_pct": 17.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 78.9,
+        "rep_pct": 21.1,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 65.3,
+      "leg_2024": 57.9,
+      "latest_leg": 57.9,
+      "pres_2024": 58.1
+    },
+    "pres_2024_margin": 58.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 44844,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "005",
+    "district_name": "State House District 5",
+    "incumbent": {
+      "name": "Alex Valdez",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Alex Valdez",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 72986,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.1,
+      "urban_pct": 99.8,
+      "income_brackets": {
+        "lt_50k": 19.6,
+        "between_50_100k": 20.8,
+        "gt_150k": 32.2,
+        "unknown_pct": 27.3
+      },
+      "college_pct": 14.8,
+      "post_grad_pct": 4.6,
+      "education_unknown_pct": 34.4,
+      "white_pct": 41.8,
+      "hispanic_pct": 17.9,
+      "black_pct": 3.6,
+      "asian_pct": 2.3,
+      "other_pct": 34.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 82.8,
+        "rep_pct": 15.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 79.6,
+        "rep_pct": 20.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 67.5,
+      "leg_2024": 59.2,
+      "latest_leg": 59.2,
+      "pres_2024": 58.6
+    },
+    "pres_2024_margin": 58.6,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 44181,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "006",
+    "district_name": "State House District 6",
+    "incumbent": {
+      "name": "Sean Camacho",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Sean Camacho",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 69122,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 99.9,
+      "income_brackets": {
+        "lt_50k": 18.2,
+        "between_50_100k": 20.3,
+        "gt_150k": 40.0,
+        "unknown_pct": 21.5
+      },
+      "college_pct": 17.2,
+      "post_grad_pct": 9.0,
+      "education_unknown_pct": 29.6,
+      "white_pct": 57.0,
+      "hispanic_pct": 7.7,
+      "black_pct": 6.2,
+      "asian_pct": 2.5,
+      "other_pct": 26.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 85.8,
+        "rep_pct": 14.2,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 84.6,
+        "rep_pct": 15.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 71.6,
+      "leg_2024": 69.1,
+      "latest_leg": 69.1,
+      "pres_2024": 69.5
+    },
+    "pres_2024_margin": 69.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 48497,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "007",
+    "district_name": "State House District 7",
+    "incumbent": {
+      "name": "Jennifer Bacon",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Jennifer Bacon",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 58095,
+      "rural_pct": 17.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 82.7,
+      "income_brackets": {
+        "lt_50k": 20.0,
+        "between_50_100k": 27.7,
+        "gt_150k": 30.6,
+        "unknown_pct": 21.7
+      },
+      "college_pct": 13.8,
+      "post_grad_pct": 4.8,
+      "education_unknown_pct": 31.2,
+      "white_pct": 22.9,
+      "hispanic_pct": 25.7,
+      "black_pct": 21.7,
+      "asian_pct": 4.4,
+      "other_pct": 25.3
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 73.1,
+        "rep_pct": 23.9,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 100.0,
+      "leg_2024": 49.3,
+      "latest_leg": 49.3,
+      "pres_2024": 44.9
+    },
+    "pres_2024_margin": 44.9,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 32756,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "008",
+    "district_name": "State House District 8",
+    "incumbent": {
+      "name": "Lindsay Gilchrist",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Lindsay Gilchrist",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 73556,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.1,
+      "urban_pct": 99.9,
+      "income_brackets": {
+        "lt_50k": 17.0,
+        "between_50_100k": 18.9,
+        "gt_150k": 44.3,
+        "unknown_pct": 19.8
+      },
+      "college_pct": 17.6,
+      "post_grad_pct": 8.6,
+      "education_unknown_pct": 28.6,
+      "white_pct": 45.1,
+      "hispanic_pct": 9.9,
+      "black_pct": 18.6,
+      "asian_pct": 2.6,
+      "other_pct": 23.8
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 87.9,
+        "rep_pct": 12.1,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 85.2,
+        "rep_pct": 12.7,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 75.7,
+      "leg_2024": 72.6,
+      "latest_leg": 72.6,
+      "pres_2024": 74.2
+    },
+    "pres_2024_margin": 74.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 48765,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "009",
+    "district_name": "State House District 9",
+    "incumbent": {
+      "name": "Emily Sirota",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Emily Sirota",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 62221,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 28.6,
+      "urban_pct": 71.3,
+      "income_brackets": {
+        "lt_50k": 19.5,
+        "between_50_100k": 20.4,
+        "gt_150k": 41.5,
+        "unknown_pct": 18.6
+      },
+      "college_pct": 18.3,
+      "post_grad_pct": 10.2,
+      "education_unknown_pct": 27.5,
+      "white_pct": 59.3,
+      "hispanic_pct": 8.5,
+      "black_pct": 7.0,
+      "asian_pct": 3.4,
+      "other_pct": 21.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 76.9,
+        "rep_pct": 23.1,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 74.5,
+        "rep_pct": 25.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 53.7,
+      "leg_2024": 49.0,
+      "latest_leg": 49.0,
+      "pres_2024": 49.0
+    },
+    "pres_2024_margin": 49.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 44117,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "010",
+    "district_name": "State House District 10",
+    "incumbent": {
+      "name": "Junie Joseph",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Junie Joseph",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 59126,
+      "rural_pct": 2.1,
+      "town_pct": 0.0,
+      "suburban_pct": 3.1,
+      "urban_pct": 94.7,
+      "income_brackets": {
+        "lt_50k": 9.1,
+        "between_50_100k": 14.1,
+        "gt_150k": 49.7,
+        "unknown_pct": 27.1
+      },
+      "college_pct": 14.3,
+      "post_grad_pct": 11.7,
+      "education_unknown_pct": 35.1,
+      "white_pct": 59.7,
+      "hispanic_pct": 5.1,
+      "black_pct": 1.1,
+      "asian_pct": 3.2,
+      "other_pct": 30.9
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 88.1,
+        "rep_pct": 11.9,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 84.3,
+        "rep_pct": 15.7,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 76.2,
+      "leg_2024": 68.7,
+      "latest_leg": 68.7,
+      "pres_2024": 72.6
+    },
+    "pres_2024_margin": 72.6,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 44280,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "011",
+    "district_name": "State House District 11",
+    "incumbent": {
+      "name": "Karen McCormick",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Karen McCormick",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 66820,
+      "rural_pct": 6.4,
+      "town_pct": 0.0,
+      "suburban_pct": 93.5,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 15.2,
+        "between_50_100k": 23.0,
+        "gt_150k": 45.7,
+        "unknown_pct": 16.0
+      },
+      "college_pct": 18.1,
+      "post_grad_pct": 10.3,
+      "education_unknown_pct": 25.2,
+      "white_pct": 63.3,
+      "hispanic_pct": 12.8,
+      "black_pct": 1.6,
+      "asian_pct": 2.6,
+      "other_pct": 19.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 69.7,
+        "rep_pct": 30.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 69.3,
+        "rep_pct": 30.7,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 39.5,
+      "leg_2024": 38.6,
+      "latest_leg": 38.6,
+      "pres_2024": 40.5
+    },
+    "pres_2024_margin": 40.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 48349,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "012",
+    "district_name": "State House District 12",
+    "incumbent": {
+      "name": "Kyle Brown",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Kyle Brown",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 69799,
+      "rural_pct": 7.2,
+      "town_pct": 0.0,
+      "suburban_pct": 92.7,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 7.7,
+        "between_50_100k": 14.7,
+        "gt_150k": 63.7,
+        "unknown_pct": 13.9
+      },
+      "college_pct": 20.1,
+      "post_grad_pct": 14.6,
+      "education_unknown_pct": 23.1,
+      "white_pct": 69.3,
+      "hispanic_pct": 6.2,
+      "black_pct": 1.2,
+      "asian_pct": 4.1,
+      "other_pct": 19.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 77.2,
+        "rep_pct": 22.8,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 76.6,
+        "rep_pct": 23.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 54.5,
+      "leg_2024": 53.1,
+      "latest_leg": 53.1,
+      "pres_2024": 57.8
+    },
+    "pres_2024_margin": 57.8,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 55371,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "013",
+    "district_name": "State House District 13",
+    "incumbent": {
+      "name": "Julie McCluskie",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Julie McCluskie",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 79568,
+      "rural_pct": 59.0,
+      "town_pct": 40.8,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 13.2,
+        "between_50_100k": 20.9,
+        "gt_150k": 30.4,
+        "unknown_pct": 35.5
+      },
+      "college_pct": 15.1,
+      "post_grad_pct": 7.5,
+      "education_unknown_pct": 44.2,
+      "white_pct": 72.1,
+      "hispanic_pct": 5.8,
+      "black_pct": 1.4,
+      "asian_pct": 1.1,
+      "other_pct": 19.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 56.0,
+        "rep_pct": 44.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 55.2,
+        "rep_pct": 44.8,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 12.1,
+      "leg_2024": 10.3,
+      "latest_leg": 10.3,
+      "pres_2024": 11.2
+    },
+    "pres_2024_margin": 11.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 57544,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "014",
+    "district_name": "State House District 14",
+    "incumbent": {
+      "name": "Ava Flanell",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Ava Flanell",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 83980,
+      "rural_pct": 24.9,
+      "town_pct": 0.0,
+      "suburban_pct": 1.4,
+      "urban_pct": 73.6,
+      "income_brackets": {
+        "lt_50k": 9.3,
+        "between_50_100k": 17.0,
+        "gt_150k": 56.4,
+        "unknown_pct": 17.2
+      },
+      "college_pct": 19.1,
+      "post_grad_pct": 13.2,
+      "education_unknown_pct": 24.9,
+      "white_pct": 62.5,
+      "hispanic_pct": 6.1,
+      "black_pct": 2.2,
+      "asian_pct": 3.2,
+      "other_pct": 26.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 39.3,
+        "rep_pct": 60.7,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 39.3,
+        "rep_pct": 60.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -21.3,
+      "leg_2024": -21.4,
+      "latest_leg": -21.4,
+      "pres_2024": -10.5
+    },
+    "pres_2024_margin": -10.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 60274,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "015",
+    "district_name": "State House District 15",
+    "incumbent": {
+      "name": "Scott Bottoms",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Scott Bottoms",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 76911,
+      "rural_pct": 25.6,
+      "town_pct": 0.0,
+      "suburban_pct": 29.1,
+      "urban_pct": 45.3,
+      "income_brackets": {
+        "lt_50k": 13.7,
+        "between_50_100k": 24.0,
+        "gt_150k": 42.8,
+        "unknown_pct": 19.5
+      },
+      "college_pct": 15.6,
+      "post_grad_pct": 6.1,
+      "education_unknown_pct": 27.8,
+      "white_pct": 53.6,
+      "hispanic_pct": 11.2,
+      "black_pct": 4.0,
+      "asian_pct": 2.8,
+      "other_pct": 28.3
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 39.1,
+        "rep_pct": 56.8,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 42.0,
+        "rep_pct": 58.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -17.7,
+      "leg_2024": -16.0,
+      "latest_leg": -16.0,
+      "pres_2024": -13.3
+    },
+    "pres_2024_margin": -13.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 48653,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "016",
+    "district_name": "State House District 16",
+    "incumbent": {
+      "name": "Rebecca Keltie",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Rebecca Keltie",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 65720,
+      "rural_pct": 0.1,
+      "town_pct": 0.0,
+      "suburban_pct": 0.1,
+      "urban_pct": 99.8,
+      "income_brackets": {
+        "lt_50k": 25.7,
+        "between_50_100k": 28.2,
+        "gt_150k": 27.3,
+        "unknown_pct": 18.8
+      },
+      "college_pct": 15.7,
+      "post_grad_pct": 8.8,
+      "education_unknown_pct": 26.9,
+      "white_pct": 62.2,
+      "hispanic_pct": 10.1,
+      "black_pct": 3.4,
+      "asian_pct": 1.5,
+      "other_pct": 22.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 49.8,
+        "rep_pct": 47.6,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 50.0,
+        "rep_pct": 50.0,
+        "winner": "O"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 2.2,
+      "leg_2024": -0.0,
+      "latest_leg": -0.0,
+      "pres_2024": 6.9
+    },
+    "pres_2024_margin": 6.9,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 43558,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "017",
+    "district_name": "State House District 17",
+    "incumbent": {
+      "name": "Regina English",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Regina English",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 55789,
+      "rural_pct": 0.2,
+      "town_pct": 0.0,
+      "suburban_pct": 8.5,
+      "urban_pct": 91.3,
+      "income_brackets": {
+        "lt_50k": 36.1,
+        "between_50_100k": 26.0,
+        "gt_150k": 13.3,
+        "unknown_pct": 24.6
+      },
+      "college_pct": 11.5,
+      "post_grad_pct": 3.6,
+      "education_unknown_pct": 32.6,
+      "white_pct": 41.8,
+      "hispanic_pct": 17.8,
+      "black_pct": 9.0,
+      "asian_pct": 2.0,
+      "other_pct": 29.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 57.3,
+        "rep_pct": 42.7,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 55.9,
+        "rep_pct": 44.1,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 14.6,
+      "leg_2024": 11.7,
+      "latest_leg": 11.7,
+      "pres_2024": 11.0
+    },
+    "pres_2024_margin": 11.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 28083,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "018",
+    "district_name": "State House District 18",
+    "incumbent": {
+      "name": "Amy Paschal",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Amy Paschal",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 72159,
+      "rural_pct": 6.8,
+      "town_pct": 1.8,
+      "suburban_pct": 6.4,
+      "urban_pct": 84.9,
+      "income_brackets": {
+        "lt_50k": 18.7,
+        "between_50_100k": 22.3,
+        "gt_150k": 38.6,
+        "unknown_pct": 20.4
+      },
+      "college_pct": 16.9,
+      "post_grad_pct": 11.8,
+      "education_unknown_pct": 28.8,
+      "white_pct": 63.2,
+      "hispanic_pct": 7.1,
+      "black_pct": 2.2,
+      "asian_pct": 1.9,
+      "other_pct": 25.5
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 52.8,
+        "rep_pct": 44.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 53.5,
+        "rep_pct": 46.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 8.5,
+      "leg_2024": 7.1,
+      "latest_leg": 7.1,
+      "pres_2024": 11.5
+    },
+    "pres_2024_margin": 11.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 48907,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "019",
+    "district_name": "State House District 19",
+    "incumbent": {
+      "name": "Dan Woog",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Dan Woog",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 79131,
+      "rural_pct": 29.0,
+      "town_pct": 26.3,
+      "suburban_pct": 44.7,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 9.7,
+        "between_50_100k": 18.3,
+        "gt_150k": 58.3,
+        "unknown_pct": 13.7
+      },
+      "college_pct": 20.4,
+      "post_grad_pct": 9.7,
+      "education_unknown_pct": 22.5,
+      "white_pct": 65.3,
+      "hispanic_pct": 10.3,
+      "black_pct": 1.6,
+      "asian_pct": 3.3,
+      "other_pct": 19.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 50.3,
+        "rep_pct": 47.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 49.9,
+        "rep_pct": 50.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 3.4,
+      "leg_2024": -0.2,
+      "latest_leg": -0.2,
+      "pres_2024": 8.7
+    },
+    "pres_2024_margin": 8.7,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 59944,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "020",
+    "district_name": "State House District 20",
+    "incumbent": {
+      "name": "Jarvis Caldwell",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Jarvis Caldwell",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 78486,
+      "rural_pct": 52.0,
+      "town_pct": 1.6,
+      "suburban_pct": 46.2,
+      "urban_pct": 0.2,
+      "income_brackets": {
+        "lt_50k": 8.1,
+        "between_50_100k": 15.7,
+        "gt_150k": 61.3,
+        "unknown_pct": 14.9
+      },
+      "college_pct": 19.8,
+      "post_grad_pct": 13.1,
+      "education_unknown_pct": 22.8,
+      "white_pct": 67.9,
+      "hispanic_pct": 6.0,
+      "black_pct": 1.9,
+      "asian_pct": 2.0,
+      "other_pct": 22.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 28.1,
+        "rep_pct": 71.9,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -100.0,
+      "leg_2024": -43.9,
+      "latest_leg": -43.9,
+      "pres_2024": -32.9
+    },
+    "pres_2024_margin": -32.9,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 58494,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "021",
+    "district_name": "State House District 21",
+    "incumbent": {
+      "name": "Mary Bradfield",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Mary Bradfield",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 58796,
+      "rural_pct": 11.0,
+      "town_pct": 0.0,
+      "suburban_pct": 88.7,
+      "urban_pct": 0.2,
+      "income_brackets": {
+        "lt_50k": 18.6,
+        "between_50_100k": 29.7,
+        "gt_150k": 24.2,
+        "unknown_pct": 27.5
+      },
+      "college_pct": 12.0,
+      "post_grad_pct": 4.4,
+      "education_unknown_pct": 34.7,
+      "white_pct": 48.0,
+      "hispanic_pct": 13.1,
+      "black_pct": 5.7,
+      "asian_pct": 1.9,
+      "other_pct": 31.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 41.6,
+        "rep_pct": 58.4,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 41.8,
+        "rep_pct": 58.2,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -16.8,
+      "leg_2024": -16.5,
+      "latest_leg": -16.5,
+      "pres_2024": -15.0
+    },
+    "pres_2024_margin": -15.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 32218,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "022",
+    "district_name": "State House District 22",
+    "incumbent": {
+      "name": "Ken DeGraaf",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Ken DeGraaf",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 69373,
+      "rural_pct": 0.1,
+      "town_pct": 0.0,
+      "suburban_pct": 2.1,
+      "urban_pct": 97.9,
+      "income_brackets": {
+        "lt_50k": 15.3,
+        "between_50_100k": 27.4,
+        "gt_150k": 41.6,
+        "unknown_pct": 15.7
+      },
+      "college_pct": 17.8,
+      "post_grad_pct": 9.0,
+      "education_unknown_pct": 23.4,
+      "white_pct": 63.8,
+      "hispanic_pct": 9.1,
+      "black_pct": 2.9,
+      "asian_pct": 2.1,
+      "other_pct": 22.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 39.1,
+        "rep_pct": 57.7,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 38.6,
+        "rep_pct": 56.6,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -18.6,
+      "leg_2024": -18.0,
+      "latest_leg": -18.0,
+      "pres_2024": -10.4
+    },
+    "pres_2024_margin": -10.4,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 48458,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "023",
+    "district_name": "State House District 23",
+    "incumbent": {
+      "name": "Monica Duran",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Monica Duran",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 71520,
+      "rural_pct": 0.3,
+      "town_pct": 0.0,
+      "suburban_pct": 45.8,
+      "urban_pct": 54.0,
+      "income_brackets": {
+        "lt_50k": 16.5,
+        "between_50_100k": 23.7,
+        "gt_150k": 44.7,
+        "unknown_pct": 15.0
+      },
+      "college_pct": 19.5,
+      "post_grad_pct": 9.6,
+      "education_unknown_pct": 23.5,
+      "white_pct": 66.5,
+      "hispanic_pct": 11.1,
+      "black_pct": 2.0,
+      "asian_pct": 2.2,
+      "other_pct": 18.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 64.7,
+        "rep_pct": 35.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 63.8,
+        "rep_pct": 36.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 29.4,
+      "leg_2024": 27.6,
+      "latest_leg": 27.6,
+      "pres_2024": 30.0
+    },
+    "pres_2024_margin": 30.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 53511,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "024",
+    "district_name": "State House District 24",
+    "incumbent": {
+      "name": "Lisa Feret",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Lisa Feret",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 72691,
+      "rural_pct": 0.2,
+      "town_pct": 0.0,
+      "suburban_pct": 99.6,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 13.3,
+        "between_50_100k": 21.8,
+        "gt_150k": 52.2,
+        "unknown_pct": 12.6
+      },
+      "college_pct": 20.6,
+      "post_grad_pct": 9.8,
+      "education_unknown_pct": 20.7,
+      "white_pct": 69.9,
+      "hispanic_pct": 9.7,
+      "black_pct": 1.6,
+      "asian_pct": 2.2,
+      "other_pct": 16.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 57.5,
+        "rep_pct": 42.5,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 56.6,
+        "rep_pct": 43.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 15.0,
+      "leg_2024": 13.3,
+      "latest_leg": 13.3,
+      "pres_2024": 18.2
+    },
+    "pres_2024_margin": 18.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 56237,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "025",
+    "district_name": "State House District 25",
+    "incumbent": {
+      "name": "Tammy Story",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Tammy Story",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 76907,
+      "rural_pct": 38.1,
+      "town_pct": 15.0,
+      "suburban_pct": 46.8,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 6.9,
+        "between_50_100k": 15.8,
+        "gt_150k": 66.3,
+        "unknown_pct": 10.9
+      },
+      "college_pct": 23.6,
+      "post_grad_pct": 14.3,
+      "education_unknown_pct": 19.2,
+      "white_pct": 76.1,
+      "hispanic_pct": 5.0,
+      "black_pct": 1.2,
+      "asian_pct": 2.0,
+      "other_pct": 15.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 49.7,
+        "rep_pct": 48.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 52.1,
+        "rep_pct": 47.9,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 1.4,
+      "leg_2024": 4.2,
+      "latest_leg": 4.2,
+      "pres_2024": 10.4
+    },
+    "pres_2024_margin": 10.4,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 63946,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "026",
+    "district_name": "State House District 26",
+    "incumbent": {
+      "name": "Meghan Lukens",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Meghan Lukens",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 69479,
+      "rural_pct": 41.3,
+      "town_pct": 58.6,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 13.6,
+        "between_50_100k": 21.5,
+        "gt_150k": 33.9,
+        "unknown_pct": 31.0
+      },
+      "college_pct": 15.4,
+      "post_grad_pct": 8.0,
+      "education_unknown_pct": 40.5,
+      "white_pct": 68.5,
+      "hispanic_pct": 8.5,
+      "black_pct": 1.3,
+      "asian_pct": 1.1,
+      "other_pct": 20.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 53.6,
+        "rep_pct": 46.4,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 56.6,
+        "rep_pct": 43.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 7.2,
+      "leg_2024": 13.2,
+      "latest_leg": 13.2,
+      "pres_2024": 5.9
+    },
+    "pres_2024_margin": 5.9,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 50078,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "027",
+    "district_name": "State House District 27",
+    "incumbent": {
+      "name": "Brianna Titone",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Brianna Titone",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 70040,
+      "rural_pct": 20.9,
+      "town_pct": 1.1,
+      "suburban_pct": 77.9,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 9.7,
+        "between_50_100k": 17.6,
+        "gt_150k": 60.2,
+        "unknown_pct": 12.4
+      },
+      "college_pct": 21.8,
+      "post_grad_pct": 12.2,
+      "education_unknown_pct": 20.2,
+      "white_pct": 71.7,
+      "hispanic_pct": 6.9,
+      "black_pct": 1.6,
+      "asian_pct": 2.5,
+      "other_pct": 17.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 57.7,
+        "rep_pct": 39.8,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 56.8,
+        "rep_pct": 43.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 18.0,
+      "leg_2024": 13.6,
+      "latest_leg": 13.6,
+      "pres_2024": 22.4
+    },
+    "pres_2024_margin": 22.4,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 55708,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "028",
+    "district_name": "State House District 28",
+    "incumbent": {
+      "name": "Sheila Lieder",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Sheila Lieder",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 68937,
+      "rural_pct": 3.6,
+      "town_pct": 0.0,
+      "suburban_pct": 67.0,
+      "urban_pct": 29.4,
+      "income_brackets": {
+        "lt_50k": 9.9,
+        "between_50_100k": 20.4,
+        "gt_150k": 57.8,
+        "unknown_pct": 11.9
+      },
+      "college_pct": 22.1,
+      "post_grad_pct": 11.2,
+      "education_unknown_pct": 20.0,
+      "white_pct": 69.2,
+      "hispanic_pct": 9.2,
+      "black_pct": 1.6,
+      "asian_pct": 3.6,
+      "other_pct": 16.3
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 51.6,
+        "rep_pct": 46.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 52.8,
+        "rep_pct": 47.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 5.2,
+      "leg_2024": 5.7,
+      "latest_leg": 5.7,
+      "pres_2024": 11.0
+    },
+    "pres_2024_margin": 11.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 52258,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "029",
+    "district_name": "State House District 29",
+    "incumbent": {
+      "name": "Lori Goldstein",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Lori Goldstein",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 69977,
+      "rural_pct": 0.8,
+      "town_pct": 0.0,
+      "suburban_pct": 99.1,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 11.9,
+        "between_50_100k": 21.7,
+        "gt_150k": 52.5,
+        "unknown_pct": 13.9
+      },
+      "college_pct": 19.9,
+      "post_grad_pct": 9.9,
+      "education_unknown_pct": 21.8,
+      "white_pct": 63.9,
+      "hispanic_pct": 11.3,
+      "black_pct": 1.9,
+      "asian_pct": 4.3,
+      "other_pct": 18.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 60.9,
+        "rep_pct": 39.1,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 60.8,
+        "rep_pct": 39.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 21.9,
+      "leg_2024": 21.7,
+      "latest_leg": 21.7,
+      "pres_2024": 21.8
+    },
+    "pres_2024_margin": 21.8,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 53673,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "030",
+    "district_name": "State House District 30",
+    "incumbent": {
+      "name": "Rebekah Stewart",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Rebekah Stewart",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 64918,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 7.2,
+      "urban_pct": 92.8,
+      "income_brackets": {
+        "lt_50k": 19.7,
+        "between_50_100k": 26.2,
+        "gt_150k": 37.0,
+        "unknown_pct": 17.0
+      },
+      "college_pct": 18.0,
+      "post_grad_pct": 8.0,
+      "education_unknown_pct": 25.4,
+      "white_pct": 57.2,
+      "hispanic_pct": 17.8,
+      "black_pct": 2.3,
+      "asian_pct": 3.1,
+      "other_pct": 19.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 65.9,
+        "rep_pct": 34.1,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 62.2,
+        "rep_pct": 37.8,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 31.7,
+      "leg_2024": 24.5,
+      "latest_leg": 24.5,
+      "pres_2024": 29.2
+    },
+    "pres_2024_margin": 29.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 45444,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "031",
+    "district_name": "State House District 31",
+    "incumbent": {
+      "name": "Jacqueline Phillips",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Jacqueline Phillips",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 53053,
+      "rural_pct": 0.3,
+      "town_pct": 0.0,
+      "suburban_pct": 99.6,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 22.2,
+        "between_50_100k": 27.0,
+        "gt_150k": 33.5,
+        "unknown_pct": 17.4
+      },
+      "college_pct": 15.3,
+      "post_grad_pct": 4.8,
+      "education_unknown_pct": 26.2,
+      "white_pct": 43.6,
+      "hispanic_pct": 29.5,
+      "black_pct": 2.4,
+      "asian_pct": 3.8,
+      "other_pct": 20.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 58.6,
+        "rep_pct": 41.4,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 55.9,
+        "rep_pct": 44.1,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 17.2,
+      "leg_2024": 11.7,
+      "latest_leg": 11.7,
+      "pres_2024": 11.2
+    },
+    "pres_2024_margin": 11.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 33860,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "032",
+    "district_name": "State House District 32",
+    "incumbent": {
+      "name": "Manny Rutinel",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Manny Rutinel",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 59283,
+      "rural_pct": 19.8,
+      "town_pct": 0.0,
+      "suburban_pct": 24.0,
+      "urban_pct": 56.2,
+      "income_brackets": {
+        "lt_50k": 22.4,
+        "between_50_100k": 24.1,
+        "gt_150k": 35.6,
+        "unknown_pct": 17.9
+      },
+      "college_pct": 14.9,
+      "post_grad_pct": 4.1,
+      "education_unknown_pct": 26.9,
+      "white_pct": 38.5,
+      "hispanic_pct": 33.5,
+      "black_pct": 3.6,
+      "asian_pct": 2.7,
+      "other_pct": 21.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 56.1,
+        "rep_pct": 43.9,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 12.2,
+      "leg_2024": 100.0,
+      "latest_leg": 100.0,
+      "pres_2024": 7.1
+    },
+    "pres_2024_margin": 7.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 36631,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "033",
+    "district_name": "State House District 33",
+    "incumbent": {
+      "name": "Kenny Nguyen",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Kenny Nguyen",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 75930,
+      "rural_pct": 15.1,
+      "town_pct": 0.0,
+      "suburban_pct": 10.3,
+      "urban_pct": 74.5,
+      "income_brackets": {
+        "lt_50k": 9.9,
+        "between_50_100k": 18.2,
+        "gt_150k": 56.6,
+        "unknown_pct": 15.3
+      },
+      "college_pct": 20.3,
+      "post_grad_pct": 11.3,
+      "education_unknown_pct": 23.3,
+      "white_pct": 63.3,
+      "hispanic_pct": 9.1,
+      "black_pct": 1.7,
+      "asian_pct": 4.8,
+      "other_pct": 21.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 58.8,
+        "rep_pct": 41.2,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 58.6,
+        "rep_pct": 41.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 17.6,
+      "leg_2024": 17.2,
+      "latest_leg": 17.2,
+      "pres_2024": 23.3
+    },
+    "pres_2024_margin": 23.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 55699,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "034",
+    "district_name": "State House District 34",
+    "incumbent": {
+      "name": "Jenny Willford",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Jenny Willford",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 63057,
+      "rural_pct": 3.3,
+      "town_pct": 0.0,
+      "suburban_pct": 96.6,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 14.3,
+        "between_50_100k": 23.9,
+        "gt_150k": 47.6,
+        "unknown_pct": 14.2
+      },
+      "college_pct": 17.7,
+      "post_grad_pct": 6.8,
+      "education_unknown_pct": 23.0,
+      "white_pct": 55.0,
+      "hispanic_pct": 20.3,
+      "black_pct": 2.2,
+      "asian_pct": 4.0,
+      "other_pct": 18.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 54.1,
+        "rep_pct": 43.1,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 50.6,
+        "rep_pct": 44.8,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 11.0,
+      "leg_2024": 5.8,
+      "latest_leg": 5.8,
+      "pres_2024": 7.7
+    },
+    "pres_2024_margin": 7.7,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 44885,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "035",
+    "district_name": "State House District 35",
+    "incumbent": {
+      "name": "Lorena Garcia",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Lorena Garcia",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 52991,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 99.7,
+      "urban_pct": 0.2,
+      "income_brackets": {
+        "lt_50k": 27.1,
+        "between_50_100k": 31.0,
+        "gt_150k": 23.9,
+        "unknown_pct": 18.0
+      },
+      "college_pct": 15.3,
+      "post_grad_pct": 4.6,
+      "education_unknown_pct": 27.0,
+      "white_pct": 42.3,
+      "hispanic_pct": 31.9,
+      "black_pct": 2.3,
+      "asian_pct": 3.2,
+      "other_pct": 20.3
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 66.0,
+        "rep_pct": 34.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 64.6,
+        "rep_pct": 35.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 31.9,
+      "leg_2024": 29.2,
+      "latest_leg": 29.2,
+      "pres_2024": 25.0
+    },
+    "pres_2024_margin": 25.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 32854,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "036",
+    "district_name": "State House District 36",
+    "incumbent": {
+      "name": "Michael Carter",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Michael Carter",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 60634,
+      "rural_pct": 21.1,
+      "town_pct": 0.0,
+      "suburban_pct": 0.3,
+      "urban_pct": 78.6,
+      "income_brackets": {
+        "lt_50k": 21.0,
+        "between_50_100k": 25.2,
+        "gt_150k": 32.2,
+        "unknown_pct": 21.7
+      },
+      "college_pct": 14.8,
+      "post_grad_pct": 4.9,
+      "education_unknown_pct": 31.0,
+      "white_pct": 38.4,
+      "hispanic_pct": 20.6,
+      "black_pct": 11.6,
+      "asian_pct": 4.2,
+      "other_pct": 25.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 64.0,
+        "rep_pct": 32.9,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 71.5,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 31.1,
+      "leg_2024": 71.5,
+      "latest_leg": 71.5,
+      "pres_2024": 26.0
+    },
+    "pres_2024_margin": 26.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 36290,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "037",
+    "district_name": "State House District 37",
+    "incumbent": {
+      "name": "Chad Clifford",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Chad Clifford",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 68058,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 42.4,
+      "urban_pct": 57.6,
+      "income_brackets": {
+        "lt_50k": 7.5,
+        "between_50_100k": 14.8,
+        "gt_150k": 64.4,
+        "unknown_pct": 13.4
+      },
+      "college_pct": 21.7,
+      "post_grad_pct": 14.8,
+      "education_unknown_pct": 21.2,
+      "white_pct": 68.0,
+      "hispanic_pct": 5.5,
+      "black_pct": 2.2,
+      "asian_pct": 5.1,
+      "other_pct": 19.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 56.0,
+        "rep_pct": 44.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 12.0,
+      "leg_2024": 100.0,
+      "latest_leg": 100.0,
+      "pres_2024": 19.3
+    },
+    "pres_2024_margin": 19.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 51380,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "038",
+    "district_name": "State House District 38",
+    "incumbent": {
+      "name": "Gretchen Rydin",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Gretchen Rydin",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 71789,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 65.7,
+      "urban_pct": 34.3,
+      "income_brackets": {
+        "lt_50k": 10.4,
+        "between_50_100k": 18.6,
+        "gt_150k": 59.5,
+        "unknown_pct": 11.5
+      },
+      "college_pct": 23.3,
+      "post_grad_pct": 12.6,
+      "education_unknown_pct": 19.7,
+      "white_pct": 73.8,
+      "hispanic_pct": 6.6,
+      "black_pct": 1.6,
+      "asian_pct": 2.2,
+      "other_pct": 15.8
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 54.5,
+        "rep_pct": 43.2,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 54.6,
+        "rep_pct": 45.4,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 11.4,
+      "leg_2024": 9.1,
+      "latest_leg": 9.1,
+      "pres_2024": 16.0
+    },
+    "pres_2024_margin": 16.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 56620,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "039",
+    "district_name": "State House District 39",
+    "incumbent": {
+      "name": "Brandi Bradley",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Brandi Bradley",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 84306,
+      "rural_pct": 39.3,
+      "town_pct": 7.6,
+      "suburban_pct": 53.1,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 6.4,
+        "between_50_100k": 13.1,
+        "gt_150k": 67.1,
+        "unknown_pct": 13.5
+      },
+      "college_pct": 23.4,
+      "post_grad_pct": 12.8,
+      "education_unknown_pct": 21.3,
+      "white_pct": 68.4,
+      "hispanic_pct": 5.3,
+      "black_pct": 1.7,
+      "asian_pct": 3.9,
+      "other_pct": 20.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 41.9,
+        "rep_pct": 58.1,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 41.0,
+        "rep_pct": 59.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -16.1,
+      "leg_2024": -17.9,
+      "latest_leg": -17.9,
+      "pres_2024": -8.6
+    },
+    "pres_2024_margin": -8.6,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 65351,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "040",
+    "district_name": "State House District 40",
+    "incumbent": {
+      "name": "Naquetta Ricks",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Naquetta Ricks",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 66069,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 19.9,
+      "urban_pct": 80.1,
+      "income_brackets": {
+        "lt_50k": 12.9,
+        "between_50_100k": 26.3,
+        "gt_150k": 46.1,
+        "unknown_pct": 14.6
+      },
+      "college_pct": 18.4,
+      "post_grad_pct": 7.4,
+      "education_unknown_pct": 24.2,
+      "white_pct": 53.9,
+      "hispanic_pct": 12.6,
+      "black_pct": 9.2,
+      "asian_pct": 5.6,
+      "other_pct": 18.7
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 61.1,
+        "rep_pct": 38.9,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 56.6,
+        "rep_pct": 40.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 22.2,
+      "leg_2024": 16.6,
+      "latest_leg": 16.6,
+      "pres_2024": 19.0
+    },
+    "pres_2024_margin": 19.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 45229,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "041",
+    "district_name": "State House District 41",
+    "incumbent": {
+      "name": "Jamie Jackson",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Jamie Jackson",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 58463,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 99.9,
+      "income_brackets": {
+        "lt_50k": 20.1,
+        "between_50_100k": 30.8,
+        "gt_150k": 32.2,
+        "unknown_pct": 16.9
+      },
+      "college_pct": 17.4,
+      "post_grad_pct": 7.8,
+      "education_unknown_pct": 27.0,
+      "white_pct": 47.9,
+      "hispanic_pct": 14.1,
+      "black_pct": 14.5,
+      "asian_pct": 4.3,
+      "other_pct": 19.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 64.0,
+        "rep_pct": 36.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 61.3,
+        "rep_pct": 35.3,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 28.0,
+      "leg_2024": 26.0,
+      "latest_leg": 26.0,
+      "pres_2024": 29.0
+    },
+    "pres_2024_margin": 29.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 38465,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "042",
+    "district_name": "State House District 42",
+    "incumbent": {
+      "name": "Mandy Lindsay",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Mandy Lindsay",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 45419,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 0.0,
+      "urban_pct": 99.9,
+      "income_brackets": {
+        "lt_50k": 30.9,
+        "between_50_100k": 28.4,
+        "gt_150k": 17.5,
+        "unknown_pct": 23.1
+      },
+      "college_pct": 13.1,
+      "post_grad_pct": 4.3,
+      "education_unknown_pct": 33.0,
+      "white_pct": 33.0,
+      "hispanic_pct": 22.1,
+      "black_pct": 17.5,
+      "asian_pct": 3.4,
+      "other_pct": 24.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 72.6,
+        "rep_pct": 27.4,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 45.1,
+      "leg_2024": 100.0,
+      "latest_leg": 100.0,
+      "pres_2024": 34.9
+    },
+    "pres_2024_margin": 34.9,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 24883,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "043",
+    "district_name": "State House District 43",
+    "incumbent": {
+      "name": "Bob Marshall",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Bob Marshall",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 71661,
+      "rural_pct": 0.0,
+      "town_pct": 0.0,
+      "suburban_pct": 99.9,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 6.2,
+        "between_50_100k": 14.4,
+        "gt_150k": 67.9,
+        "unknown_pct": 11.5
+      },
+      "college_pct": 23.7,
+      "post_grad_pct": 12.8,
+      "education_unknown_pct": 19.5,
+      "white_pct": 69.7,
+      "hispanic_pct": 6.1,
+      "black_pct": 1.5,
+      "asian_pct": 4.1,
+      "other_pct": 18.5
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 50.4,
+        "rep_pct": 49.6,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 51.3,
+        "rep_pct": 48.7,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 0.9,
+      "leg_2024": 2.5,
+      "latest_leg": 2.5,
+      "pres_2024": 7.0
+    },
+    "pres_2024_margin": 7.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 57050,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "044",
+    "district_name": "State House District 44",
+    "incumbent": {
+      "name": "Anthony Hartsook",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Anthony Hartsook",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 74654,
+      "rural_pct": 18.6,
+      "town_pct": 0.0,
+      "suburban_pct": 81.4,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 7.6,
+        "between_50_100k": 15.6,
+        "gt_150k": 63.7,
+        "unknown_pct": 13.1
+      },
+      "college_pct": 22.2,
+      "post_grad_pct": 9.3,
+      "education_unknown_pct": 20.9,
+      "white_pct": 67.7,
+      "hispanic_pct": 6.9,
+      "black_pct": 2.1,
+      "asian_pct": 4.1,
+      "other_pct": 19.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 40.0,
+        "rep_pct": 57.2,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 41.4,
+        "rep_pct": 58.6,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -17.2,
+      "leg_2024": -17.3,
+      "latest_leg": -17.3,
+      "pres_2024": -9.7
+    },
+    "pres_2024_margin": -9.7,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 56460,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "045",
+    "district_name": "State House District 45",
+    "incumbent": {
+      "name": "Max Brooks",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Max Brooks",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 80403,
+      "rural_pct": 24.5,
+      "town_pct": 0.0,
+      "suburban_pct": 75.4,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 7.8,
+        "between_50_100k": 15.2,
+        "gt_150k": 64.1,
+        "unknown_pct": 12.8
+      },
+      "college_pct": 22.6,
+      "post_grad_pct": 10.1,
+      "education_unknown_pct": 20.6,
+      "white_pct": 69.1,
+      "hispanic_pct": 6.4,
+      "black_pct": 1.8,
+      "asian_pct": 2.1,
+      "other_pct": 20.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 38.1,
+        "rep_pct": 61.9,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 37.7,
+        "rep_pct": 62.3,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -23.8,
+      "leg_2024": -24.5,
+      "latest_leg": -24.5,
+      "pres_2024": -16.5
+    },
+    "pres_2024_margin": -16.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 61354,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "046",
+    "district_name": "State House District 46",
+    "incumbent": {
+      "name": "Tisha Mauro",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Tisha Mauro",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 68331,
+      "rural_pct": 17.0,
+      "town_pct": 0.1,
+      "suburban_pct": 9.8,
+      "urban_pct": 73.1,
+      "income_brackets": {
+        "lt_50k": 34.8,
+        "between_50_100k": 28.2,
+        "gt_150k": 21.6,
+        "unknown_pct": 15.4
+      },
+      "college_pct": 17.5,
+      "post_grad_pct": 9.1,
+      "education_unknown_pct": 23.8,
+      "white_pct": 48.8,
+      "hispanic_pct": 30.9,
+      "black_pct": 2.5,
+      "asian_pct": 1.0,
+      "other_pct": 16.8
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 54.0,
+        "rep_pct": 46.0,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 52.3,
+        "rep_pct": 47.7,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 8.0,
+      "leg_2024": 4.6,
+      "latest_leg": 4.6,
+      "pres_2024": -1.5
+    },
+    "pres_2024_margin": -1.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 48128,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "047",
+    "district_name": "State House District 47",
+    "incumbent": {
+      "name": "Ty Winter",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Ty Winter",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 67846,
+      "rural_pct": 50.7,
+      "town_pct": 33.9,
+      "suburban_pct": 15.3,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 37.2,
+        "between_50_100k": 27.7,
+        "gt_150k": 17.8,
+        "unknown_pct": 17.2
+      },
+      "college_pct": 17.2,
+      "post_grad_pct": 7.0,
+      "education_unknown_pct": 26.7,
+      "white_pct": 55.7,
+      "hispanic_pct": 23.1,
+      "black_pct": 2.2,
+      "asian_pct": 0.8,
+      "other_pct": 18.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 35.2,
+        "rep_pct": 64.8,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 32.8,
+        "rep_pct": 67.2,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -29.6,
+      "leg_2024": -34.4,
+      "latest_leg": -34.4,
+      "pres_2024": -30.4
+    },
+    "pres_2024_margin": -30.4,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 45339,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "048",
+    "district_name": "State House District 48",
+    "incumbent": {
+      "name": "Carlos Barron",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Carlos Barron",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 68470,
+      "rural_pct": 36.8,
+      "town_pct": 15.0,
+      "suburban_pct": 48.1,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 18.4,
+        "between_50_100k": 27.9,
+        "gt_150k": 37.7,
+        "unknown_pct": 16.0
+      },
+      "college_pct": 16.1,
+      "post_grad_pct": 5.7,
+      "education_unknown_pct": 24.7,
+      "white_pct": 52.0,
+      "hispanic_pct": 26.0,
+      "black_pct": 2.0,
+      "asian_pct": 1.6,
+      "other_pct": 18.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 33.9,
+        "rep_pct": 63.3,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -29.4,
+      "leg_2024": -100.0,
+      "latest_leg": -100.0,
+      "pres_2024": -26.0
+    },
+    "pres_2024_margin": -26.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 46815,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "049",
+    "district_name": "State House District 49",
+    "incumbent": {
+      "name": "Lesley Smith",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Lesley Smith",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 77105,
+      "rural_pct": 68.6,
+      "town_pct": 7.2,
+      "suburban_pct": 2.0,
+      "urban_pct": 22.2,
+      "income_brackets": {
+        "lt_50k": 9.0,
+        "between_50_100k": 17.3,
+        "gt_150k": 56.1,
+        "unknown_pct": 17.6
+      },
+      "college_pct": 19.2,
+      "post_grad_pct": 14.4,
+      "education_unknown_pct": 27.8,
+      "white_pct": 75.7,
+      "hispanic_pct": 3.7,
+      "black_pct": 1.3,
+      "asian_pct": 2.0,
+      "other_pct": 17.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 64.3,
+        "rep_pct": 33.2,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 63.8,
+        "rep_pct": 36.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 31.1,
+      "leg_2024": 27.6,
+      "latest_leg": 27.6,
+      "pres_2024": 33.3
+    },
+    "pres_2024_margin": 33.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 62515,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "050",
+    "district_name": "State House District 50",
+    "incumbent": {
+      "name": "Ryan Gonzalez",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Ryan Gonzalez",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 47885,
+      "rural_pct": 1.0,
+      "town_pct": 0.0,
+      "suburban_pct": 34.0,
+      "urban_pct": 65.0,
+      "income_brackets": {
+        "lt_50k": 33.3,
+        "between_50_100k": 26.6,
+        "gt_150k": 18.0,
+        "unknown_pct": 22.1
+      },
+      "college_pct": 12.8,
+      "post_grad_pct": 4.6,
+      "education_unknown_pct": 31.3,
+      "white_pct": 42.1,
+      "hispanic_pct": 30.6,
+      "black_pct": 2.6,
+      "asian_pct": 1.0,
+      "other_pct": 23.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 49.2,
+        "rep_pct": 47.3,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 48.9,
+        "rep_pct": 51.1,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 1.9,
+      "leg_2024": -2.2,
+      "latest_leg": -2.2,
+      "pres_2024": -3.2
+    },
+    "pres_2024_margin": -3.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 26535,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "051",
+    "district_name": "State House District 51",
+    "incumbent": {
+      "name": "Ron Weinberg",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Ron Weinberg",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 75283,
+      "rural_pct": 7.4,
+      "town_pct": 0.0,
+      "suburban_pct": 92.5,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 17.5,
+        "between_50_100k": 26.8,
+        "gt_150k": 41.8,
+        "unknown_pct": 13.9
+      },
+      "college_pct": 19.9,
+      "post_grad_pct": 10.4,
+      "education_unknown_pct": 22.1,
+      "white_pct": 71.1,
+      "hispanic_pct": 7.5,
+      "black_pct": 1.7,
+      "asian_pct": 1.2,
+      "other_pct": 18.5
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 47.4,
+        "rep_pct": 52.6,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -100.0,
+      "leg_2024": -5.2,
+      "latest_leg": -5.2,
+      "pres_2024": 0.8
+    },
+    "pres_2024_margin": 0.8,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 56768,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "052",
+    "district_name": "State House District 52",
+    "incumbent": {
+      "name": "Yara Zokaie",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Yara Zokaie",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 73041,
+      "rural_pct": 3.4,
+      "town_pct": 0.0,
+      "suburban_pct": 3.3,
+      "urban_pct": 93.3,
+      "income_brackets": {
+        "lt_50k": 11.8,
+        "between_50_100k": 19.5,
+        "gt_150k": 53.3,
+        "unknown_pct": 15.5
+      },
+      "college_pct": 20.5,
+      "post_grad_pct": 13.0,
+      "education_unknown_pct": 23.2,
+      "white_pct": 67.8,
+      "hispanic_pct": 6.5,
+      "black_pct": 1.7,
+      "asian_pct": 2.7,
+      "other_pct": 21.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 64.8,
+        "rep_pct": 35.2,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 63.3,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 29.7,
+      "leg_2024": 63.3,
+      "latest_leg": 63.3,
+      "pres_2024": 33.3
+    },
+    "pres_2024_margin": 33.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 55699,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "053",
+    "district_name": "State House District 53",
+    "incumbent": {
+      "name": "Andrew Boesenecker",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Andrew Boesenecker",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 65303,
+      "rural_pct": 0.8,
+      "town_pct": 0.1,
+      "suburban_pct": 8.2,
+      "urban_pct": 91.0,
+      "income_brackets": {
+        "lt_50k": 16.1,
+        "between_50_100k": 21.1,
+        "gt_150k": 39.6,
+        "unknown_pct": 23.2
+      },
+      "college_pct": 16.0,
+      "post_grad_pct": 9.9,
+      "education_unknown_pct": 29.9,
+      "white_pct": 62.5,
+      "hispanic_pct": 7.1,
+      "black_pct": 1.6,
+      "asian_pct": 1.7,
+      "other_pct": 27.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 75.9,
+        "rep_pct": 24.1,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 73.5,
+        "rep_pct": 26.5,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 51.8,
+      "leg_2024": 47.0,
+      "latest_leg": 47.0,
+      "pres_2024": 49.3
+    },
+    "pres_2024_margin": 49.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 46986,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "054",
+    "district_name": "State House District 54",
+    "incumbent": {
+      "name": "Matt Soper",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Matt Soper",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 73485,
+      "rural_pct": 36.2,
+      "town_pct": 11.6,
+      "suburban_pct": 47.9,
+      "urban_pct": 4.4,
+      "income_brackets": {
+        "lt_50k": 25.5,
+        "between_50_100k": 32.3,
+        "gt_150k": 27.2,
+        "unknown_pct": 15.0
+      },
+      "college_pct": 17.0,
+      "post_grad_pct": 7.6,
+      "education_unknown_pct": 24.4,
+      "white_pct": 70.9,
+      "hispanic_pct": 8.4,
+      "black_pct": 1.9,
+      "asian_pct": 0.7,
+      "other_pct": 18.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 26.2,
+        "rep_pct": 73.8,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -47.6,
+      "leg_2024": -100.0,
+      "latest_leg": -100.0,
+      "pres_2024": -39.1
+    },
+    "pres_2024_margin": -39.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 53926,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "055",
+    "district_name": "State House District 55",
+    "incumbent": {
+      "name": "Rick Taggart",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Rick Taggart",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 70499,
+      "rural_pct": 3.2,
+      "town_pct": 0.0,
+      "suburban_pct": 25.2,
+      "urban_pct": 71.6,
+      "income_brackets": {
+        "lt_50k": 22.4,
+        "between_50_100k": 27.0,
+        "gt_150k": 33.5,
+        "unknown_pct": 17.1
+      },
+      "college_pct": 17.5,
+      "post_grad_pct": 9.7,
+      "education_unknown_pct": 25.2,
+      "white_pct": 68.3,
+      "hispanic_pct": 8.1,
+      "black_pct": 1.7,
+      "asian_pct": 1.3,
+      "other_pct": 20.6
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 36.1,
+        "rep_pct": 63.9,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -27.8,
+      "leg_2024": -100.0,
+      "latest_leg": -100.0,
+      "pres_2024": -14.4
+    },
+    "pres_2024_margin": -14.4,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 51062,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "056",
+    "district_name": "State House District 56",
+    "incumbent": {
+      "name": "Chris Richardson",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Chris Richardson",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 79541,
+      "rural_pct": 92.5,
+      "town_pct": 2.7,
+      "suburban_pct": 0.2,
+      "urban_pct": 4.6,
+      "income_brackets": {
+        "lt_50k": 15.6,
+        "between_50_100k": 24.9,
+        "gt_150k": 44.8,
+        "unknown_pct": 14.7
+      },
+      "college_pct": 18.2,
+      "post_grad_pct": 7.5,
+      "education_unknown_pct": 23.0,
+      "white_pct": 70.4,
+      "hispanic_pct": 8.6,
+      "black_pct": 2.4,
+      "asian_pct": 1.7,
+      "other_pct": 17.0
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 21.4,
+        "rep_pct": 75.8,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 24.3,
+        "rep_pct": 75.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -54.4,
+      "leg_2024": -51.4,
+      "latest_leg": -51.4,
+      "pres_2024": -49.0
+    },
+    "pres_2024_margin": -49.0,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 58699,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "057",
+    "district_name": "State House District 57",
+    "incumbent": {
+      "name": "Elizabeth Velasco",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Elizabeth Velasco",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 64519,
+      "rural_pct": 36.8,
+      "town_pct": 63.2,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 12.6,
+        "between_50_100k": 21.8,
+        "gt_150k": 46.2,
+        "unknown_pct": 19.5
+      },
+      "college_pct": 17.9,
+      "post_grad_pct": 8.5,
+      "education_unknown_pct": 28.9,
+      "white_pct": 66.3,
+      "hispanic_pct": 11.7,
+      "black_pct": 1.3,
+      "asian_pct": 1.3,
+      "other_pct": 19.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 53.9,
+        "rep_pct": 46.1,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 55.8,
+        "rep_pct": 44.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 7.7,
+      "leg_2024": 11.6,
+      "latest_leg": 11.6,
+      "pres_2024": 16.1
+    },
+    "pres_2024_margin": 16.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 45970,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "058",
+    "district_name": "State House District 58",
+    "incumbent": {
+      "name": "Larry Don Suckla",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Larry Don Suckla",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 75744,
+      "rural_pct": 69.3,
+      "town_pct": 30.7,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 20.0,
+        "between_50_100k": 27.1,
+        "gt_150k": 30.2,
+        "unknown_pct": 22.6
+      },
+      "college_pct": 17.0,
+      "post_grad_pct": 8.6,
+      "education_unknown_pct": 32.5,
+      "white_pct": 71.9,
+      "hispanic_pct": 6.7,
+      "black_pct": 1.5,
+      "asian_pct": 0.9,
+      "other_pct": 19.0
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 43.2,
+        "rep_pct": 56.8,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 45.4,
+        "rep_pct": 54.6,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -13.6,
+      "leg_2024": -9.2,
+      "latest_leg": -9.2,
+      "pres_2024": -9.2
+    },
+    "pres_2024_margin": -9.2,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 57516,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "059",
+    "district_name": "State House District 59",
+    "incumbent": {
+      "name": "Katie Stewart",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Katie Stewart",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 79879,
+      "rural_pct": 65.2,
+      "town_pct": 34.7,
+      "suburban_pct": 0.0,
+      "urban_pct": 0.0,
+      "income_brackets": {
+        "lt_50k": 17.0,
+        "between_50_100k": 25.6,
+        "gt_150k": 35.4,
+        "unknown_pct": 21.9
+      },
+      "college_pct": 17.0,
+      "post_grad_pct": 9.7,
+      "education_unknown_pct": 32.0,
+      "white_pct": 66.9,
+      "hispanic_pct": 7.3,
+      "black_pct": 1.7,
+      "asian_pct": 1.0,
+      "other_pct": 23.1
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 56.8,
+        "rep_pct": 43.2,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 51.2,
+        "rep_pct": 48.8,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 13.5,
+      "leg_2024": 2.4,
+      "latest_leg": 2.4,
+      "pres_2024": 7.3
+    },
+    "pres_2024_margin": 7.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 56867,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "060",
+    "district_name": "State House District 60",
+    "incumbent": {
+      "name": "Stephanie Luck",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Stephanie Luck",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 73875,
+      "rural_pct": 47.0,
+      "town_pct": 40.9,
+      "suburban_pct": 12.0,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 23.2,
+        "between_50_100k": 29.2,
+        "gt_150k": 31.8,
+        "unknown_pct": 15.9
+      },
+      "college_pct": 18.4,
+      "post_grad_pct": 10.1,
+      "education_unknown_pct": 25.4,
+      "white_pct": 71.7,
+      "hispanic_pct": 6.9,
+      "black_pct": 1.6,
+      "asian_pct": 0.9,
+      "other_pct": 19.0
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 31.2,
+        "rep_pct": 68.8,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 30.2,
+        "rep_pct": 69.8,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -37.6,
+      "leg_2024": -39.5,
+      "latest_leg": -39.5,
+      "pres_2024": -35.5
+    },
+    "pres_2024_margin": -35.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 54803,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "061",
+    "district_name": "State House District 61",
+    "incumbent": {
+      "name": "Eliza Hamrick",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Eliza Hamrick",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 72096,
+      "rural_pct": 8.1,
+      "town_pct": 0.0,
+      "suburban_pct": 21.6,
+      "urban_pct": 70.3,
+      "income_brackets": {
+        "lt_50k": 6.8,
+        "between_50_100k": 14.0,
+        "gt_150k": 67.1,
+        "unknown_pct": 12.1
+      },
+      "college_pct": 23.6,
+      "post_grad_pct": 11.5,
+      "education_unknown_pct": 21.0,
+      "white_pct": 60.4,
+      "hispanic_pct": 8.1,
+      "black_pct": 5.7,
+      "asian_pct": 7.3,
+      "other_pct": 18.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 50.4,
+        "rep_pct": 47.5,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 2.8,
+      "leg_2024": 100.0,
+      "latest_leg": 100.0,
+      "pres_2024": 8.3
+    },
+    "pres_2024_margin": 8.3,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 53682,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "062",
+    "district_name": "State House District 62",
+    "incumbent": {
+      "name": "Matthew Martinez",
+      "party": "D"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Matthew Martinez",
+          "party": "D"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 65251,
+      "rural_pct": 43.1,
+      "town_pct": 14.9,
+      "suburban_pct": 0.8,
+      "urban_pct": 41.2,
+      "income_brackets": {
+        "lt_50k": 42.6,
+        "between_50_100k": 22.6,
+        "gt_150k": 12.3,
+        "unknown_pct": 22.5
+      },
+      "college_pct": 14.8,
+      "post_grad_pct": 5.7,
+      "education_unknown_pct": 32.2,
+      "white_pct": 41.4,
+      "hispanic_pct": 36.1,
+      "black_pct": 2.4,
+      "asian_pct": 0.7,
+      "other_pct": 19.4
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 55.6,
+        "rep_pct": 44.4,
+        "winner": "D"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 53.8,
+        "rep_pct": 46.2,
+        "winner": "D"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": 11.2,
+      "leg_2024": 7.5,
+      "latest_leg": 7.5,
+      "pres_2024": 0.1
+    },
+    "pres_2024_margin": 0.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 40745,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "063",
+    "district_name": "State House District 63",
+    "incumbent": {
+      "name": "Dusty A. Johnson",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Dusty A. Johnson",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 62986,
+      "rural_pct": 65.2,
+      "town_pct": 34.6,
+      "suburban_pct": 0.1,
+      "urban_pct": 0.1,
+      "income_brackets": {
+        "lt_50k": 27.1,
+        "between_50_100k": 31.3,
+        "gt_150k": 26.3,
+        "unknown_pct": 15.3
+      },
+      "college_pct": 17.1,
+      "post_grad_pct": 6.4,
+      "education_unknown_pct": 23.8,
+      "white_pct": 67.7,
+      "hispanic_pct": 13.0,
+      "black_pct": 2.2,
+      "asian_pct": 0.8,
+      "other_pct": 16.2
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -100.0,
+      "leg_2024": -100.0,
+      "latest_leg": -100.0,
+      "pres_2024": -57.6
+    },
+    "pres_2024_margin": -57.6,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 45355,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "064",
+    "district_name": "State House District 64",
+    "incumbent": {
+      "name": "Scott Slaugh",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Scott Slaugh",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 78812,
+      "rural_pct": 28.9,
+      "town_pct": 16.6,
+      "suburban_pct": 9.3,
+      "urban_pct": 45.2,
+      "income_brackets": {
+        "lt_50k": 14.3,
+        "between_50_100k": 24.0,
+        "gt_150k": 47.6,
+        "unknown_pct": 14.2
+      },
+      "college_pct": 18.4,
+      "post_grad_pct": 9.0,
+      "education_unknown_pct": 22.1,
+      "white_pct": 64.3,
+      "hispanic_pct": 14.4,
+      "black_pct": 1.9,
+      "asian_pct": 1.4,
+      "other_pct": 18.0
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 37.3,
+        "rep_pct": 62.7,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 36.5,
+        "rep_pct": 63.5,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -25.3,
+      "leg_2024": -27.0,
+      "latest_leg": -27.0,
+      "pres_2024": -20.5
+    },
+    "pres_2024_margin": -20.5,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 57994,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  },
+  {
+    "state_fips": "08",
+    "district_id": "065",
+    "district_name": "State House District 65",
+    "incumbent": {
+      "name": "Lori Garcia Sander",
+      "party": "R"
+    },
+    "members": [
+      {
+        "seat": 1,
+        "seat_label": "",
+        "incumbent": {
+          "name": "Lori Garcia Sander",
+          "party": "R"
+        },
+        "candidates": {
+          "rep": "No candidate",
+          "dem": "No candidate"
+        }
+      }
+    ],
+    "demographics": {
+      "population": 86609,
+      "rural_pct": 55.9,
+      "town_pct": 15.0,
+      "suburban_pct": 28.9,
+      "urban_pct": 0.2,
+      "income_brackets": {
+        "lt_50k": 10.6,
+        "between_50_100k": 19.4,
+        "gt_150k": 55.6,
+        "unknown_pct": 14.4
+      },
+      "college_pct": 20.5,
+      "post_grad_pct": 10.5,
+      "education_unknown_pct": 22.1,
+      "white_pct": 70.1,
+      "hispanic_pct": 7.5,
+      "black_pct": 1.6,
+      "asian_pct": 1.5,
+      "other_pct": 19.3
+    },
+    "elections": [
+      {
+        "year": 2022,
+        "dem_pct": 37.6,
+        "rep_pct": 62.4,
+        "winner": "R"
+      },
+      {
+        "year": 2024,
+        "dem_pct": 37.3,
+        "rep_pct": 62.7,
+        "winner": "R"
+      }
+    ],
+    "view_margins": {
+      "leg_2022": -24.8,
+      "leg_2024": -25.5,
+      "latest_leg": -25.5,
+      "pres_2024": -17.1
+    },
+    "pres_2024_margin": -17.1,
+    "gov_2022_margin": null,
+    "top_ticket_totals": {
+      "pres_2024": 65898,
+      "gov_2022": 0
+    },
+    "candidates_2026": {
+      "rep": "No candidate",
+      "dem": "No candidate"
+    }
+  }
+]

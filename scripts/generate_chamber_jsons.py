@@ -1,15 +1,16 @@
-#!/usr/bin/env python3
 """
 Generate chamber JSON files from the workbook without external dependencies.
 
-Usage:
+Usage examples:
   python scripts/generate_chamber_jsons.py --workbook "data/State Legislative Election History - Copy.xlsx" --states MI,MN
+  python scripts/generate_chamber_jsons.py --workbook "data/State Legislative Election History - Copy.xlsx" --states ALL
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import zipfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -27,11 +28,24 @@ SHEET_FOR_CHAMBER = {
     "senate": "SLDU",
 }
 
+# Keep existing legacy names where they already exist in the project.
 OUTPUT_NAME = {
     ("MI", "house"): "michigan_house.json",
     ("MI", "senate"): "michigan_senate.json",
     ("MN", "house"): "minnesota_house.json",
     ("MN", "senate"): "minnesota_senate.json",
+}
+
+SPECIAL_TAB_PATTERN = re.compile(r"^([A-Z]{2})\s+(SLDL|SLDU)$")
+SEAT_NUMBERED_TABS = {"ID SLDL", "WA SLDL", "WV SLDU"}
+
+NOISE_DISTRICT_WORDS = {
+    "STATE",
+    "LEGISLATIVE",
+    "HOUSE",
+    "SENATE",
+    "DISTRICT",
+    "SUBDISTRICT",
 }
 
 STATE_NAME_TO_ABBR = {
@@ -112,9 +126,9 @@ def normalize_district_id(value: str) -> str:
 
 def normalize_chamber_label(value: str) -> str:
     text = str(value or "").strip().lower()
-    if "house" in text:
+    if "house" in text or text == "sldl":
         return "house"
-    if "senate" in text:
+    if "senate" in text or text == "sldu":
         return "senate"
     return ""
 
@@ -153,6 +167,14 @@ def margin_dem_from_r_minus_d(value: str):
         return None
 
 
+def has_nonempty_candidate(value: str) -> bool:
+    text = str(value or "").strip()
+    if not text:
+        return False
+    upper = text.upper()
+    return upper not in {"NO CANDIDATE", "UNKNOWN", "TBD"}
+
+
 def party_norm(value: str) -> str:
     s = str(value or "").strip().upper()
     if s in ("", "VACANT", "OPEN"):
@@ -170,6 +192,74 @@ def winner_from_pcts(dem: float, rep: float) -> str:
     if rep > dem:
         return "R"
     return "O"
+
+
+def clean_header(value: str) -> str:
+    return re.sub(r"\s+", " ", str(value or "").strip().upper())
+
+
+def has_named_incumbent(name: str) -> bool:
+    text = str(name or "").strip().upper()
+    return bool(text and text not in {"VACANT", "UNKNOWN", "OPEN"})
+
+
+def canonical_district_id(value: str) -> str:
+    did = normalize_district_id(value)
+    if not did:
+        return ""
+    if did.isdigit():
+        return str(int(did))
+    m = re.match(r"^0*([0-9]+)([A-Z]+)$", did)
+    if m:
+        return f"{int(m.group(1))}{m.group(2)}"
+    return did
+
+
+def normalize_district_name_match(value: str) -> str:
+    text = str(value or "").strip().upper()
+    text = re.sub(r"[^A-Z0-9]+", " ", text)
+    parts = [p for p in text.split() if p and p not in NOISE_DISTRICT_WORDS]
+    return "".join(parts)
+
+
+def district_id_candidates(raw_value: str) -> List[str]:
+    text = str(raw_value or "").strip().upper()
+    if not text:
+        return []
+
+    candidates = set()
+
+    def add_candidate(v: str):
+        did = normalize_district_id(v)
+        if did:
+            candidates.add(did)
+
+    add_candidate(text)
+
+    # Common formats: "Belknap 01", "State Legislative Subdistrict 1A", "Addison-1".
+    parts = re.split(r"\s+", text)
+    if parts:
+        add_candidate(parts[-1])
+
+    m = re.search(r"SUBDISTRICT\s*([0-9]+[A-Z])", text)
+    if m:
+        add_candidate(m.group(1))
+
+    for pattern in [r"([0-9]+[A-Z])$", r"([0-9]+)$", r"([A-Z]+-[0-9A-Z]+)$", r"([A-Z]{3})$"]:
+        mm = re.search(pattern, text)
+        if mm:
+            add_candidate(mm.group(1))
+
+    return sorted(candidates)
+
+
+def parse_special_sheet_identity(name: str):
+    m = SPECIAL_TAB_PATTERN.match(str(name or "").strip().upper())
+    if not m:
+        return "", ""
+    state_abbr = m.group(1)
+    chamber = "house" if m.group(2) == "SLDL" else "senate"
+    return state_abbr, chamber
 
 
 def load_workbook_rows(path: Path) -> Dict[str, List[Tuple[int, Dict[int, str]]]]:
@@ -258,7 +348,10 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
         m23 = margin_dem_from_r_minus_d(val(row, "AC"))
         m24 = margin_dem_from_r_minus_d(val(row, "AK"))
         m25 = margin_dem_from_r_minus_d(val(row, "BA"))
-        mgov22 = margin_dem_from_r_minus_d(val(row, "U"))
+        gov22_total = num(val(row, "Q"))
+        gov22_rep = pct(val(row, "R"))
+        gov22_dem = pct(val(row, "S"))
+        mgov22 = margin_dem_from_r_minus_d(val(row, "U")) if (gov22_total > 0 and (gov22_rep > 0 or gov22_dem > 0)) else None
         mpres24 = margin_dem_from_r_minus_d(val(row, "AS"))
 
         latest_leg = None
@@ -283,12 +376,20 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
         if mpres24 is not None:
             view_margins["pres_2024"] = mpres24
 
+        member = {
+            "seat": 1,
+            "seat_label": "",
+            "incumbent": {"name": inc_name, "party": inc_party},
+            "candidates": {"rep": rep_name, "dem": dem_name},
+        }
+
         out.append(
             {
                 "state_fips": state_fips,
                 "district_id": district_id,
                 "district_name": district_name,
                 "incumbent": {"name": inc_name, "party": inc_party},
+                "members": [member],
                 "demographics": {
                     "population": num(val(row, "CH")),
                     "rural_pct": pct(val(row, "BQ")),
@@ -312,11 +413,11 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
                 },
                 "elections": elections,
                 "view_margins": view_margins,
-                "pres_2024_margin": mpres24 if mpres24 is not None else 0.0,
-                "gov_2022_margin": mgov22 if mgov22 is not None else 0.0,
+                "pres_2024_margin": mpres24 if mpres24 is not None else None,
+                "gov_2022_margin": mgov22 if mgov22 is not None else None,
                 "top_ticket_totals": {
                     "pres_2024": num(val(row, "AO")),
-                    "gov_2022": num(val(row, "Q")),
+                    "gov_2022": gov22_total if mgov22 is not None else 0,
                 },
                 "candidates_2026": {"rep": rep_name, "dem": dem_name},
             }
@@ -324,6 +425,203 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
 
     out.sort(key=lambda r: (r["state_fips"], r["district_id"]))
     return out
+
+
+def parse_candidate_header_seat(header: str, prefix: str):
+    m = re.match(rf"^{prefix}(?:\s+(\d+))?$", header)
+    if not m:
+        return None
+    return int(m.group(1) or 1)
+
+
+def build_special_overrides(sheet_rows: List[Tuple[int, Dict[int, str]]], tab_name: str):
+    state_abbr, chamber = parse_special_sheet_identity(tab_name)
+    if not state_abbr or not chamber:
+        return state_abbr, chamber, []
+
+    header_cells = {}
+    for rid, row in sheet_rows:
+        if rid == 2:
+            header_cells = row
+            break
+    if not header_cells:
+        return state_abbr, chamber, []
+
+    headers = {ci: clean_header(v) for ci, v in header_cells.items()}
+
+    party_cols: Dict[int, int] = {}
+    incumbent_cols: Dict[int, int] = {}
+    rep_candidate_cols: Dict[int, int] = {}
+    dem_candidate_cols: Dict[int, int] = {}
+
+    for ci, h in headers.items():
+        m_party = re.match(r"^PARTY(?:\s+(\d+))?$", h)
+        if m_party:
+            party_cols[int(m_party.group(1) or 1)] = ci
+            continue
+
+        m_inc = re.match(r"^INCUMBENT(?:\s+(\d+))?$", h)
+        if m_inc:
+            incumbent_cols[int(m_inc.group(1) or 1)] = ci
+            continue
+
+        seat_rep = parse_candidate_header_seat(h, "GOP CANDIDATE")
+        if seat_rep is not None:
+            rep_candidate_cols[seat_rep] = ci
+            continue
+
+        seat_dem = parse_candidate_header_seat(h, "DEM CANDIDATE")
+        if seat_dem is not None:
+            dem_candidate_cols[seat_dem] = ci
+            continue
+
+    def candidate_value(row: Dict[int, str], col_map: Dict[int, int], seat: int):
+        ci = col_map.get(seat)
+        if ci is None:
+            return ""
+        return str(row.get(ci, "") or "").strip()
+
+    overrides = []
+    for rid, row in sheet_rows:
+        if rid <= 2:
+            continue
+
+        raw_district = str(row.get(col_to_idx("A"), "") or "").strip()
+        if not raw_district:
+            continue
+
+        populated_seats = []
+        for seat in sorted(set(party_cols.keys()) | set(incumbent_cols.keys())):
+            party_text = str(row.get(party_cols.get(seat, -1), "") or "").strip()
+            inc_text = str(row.get(incumbent_cols.get(seat, -1), "") or "").strip()
+            if party_text or inc_text:
+                populated_seats.append(seat)
+
+        if not populated_seats:
+            populated_seats = [1]
+
+        members = []
+        for seat in populated_seats:
+            party_text = str(row.get(party_cols.get(seat, -1), "") or "").strip()
+            inc_name = str(row.get(incumbent_cols.get(seat, -1), "") or "").strip() or "Vacant"
+            inc_party = party_norm(party_text)
+            rep_name = candidate_value(row, rep_candidate_cols, seat) or "No candidate"
+            dem_name = candidate_value(row, dem_candidate_cols, seat) or "No candidate"
+
+            seat_label = f"Seat {seat}" if tab_name in SEAT_NUMBERED_TABS else ""
+            members.append(
+                {
+                    "seat": seat,
+                    "seat_label": seat_label,
+                    "incumbent": {
+                        "name": inc_name,
+                        "party": inc_party,
+                    },
+                    "candidates": {
+                        "rep": rep_name,
+                        "dem": dem_name,
+                    },
+                }
+            )
+
+        populated_candidate_seats = set()
+        for seat in sorted(set(rep_candidate_cols.keys()) | set(dem_candidate_cols.keys())):
+            rep_value = candidate_value(row, rep_candidate_cols, seat)
+            dem_value = candidate_value(row, dem_candidate_cols, seat)
+            if has_nonempty_candidate(rep_value) or has_nonempty_candidate(dem_value):
+                populated_candidate_seats.add(seat)
+
+        if tab_name == "WV SLDU":
+            candidate_seats_up = 1
+        elif populated_candidate_seats:
+            candidate_seats_up = len(populated_candidate_seats)
+        elif len(rep_candidate_cols) <= 1 and len(dem_candidate_cols) <= 1:
+            candidate_seats_up = 1
+        else:
+            candidate_seats_up = len(populated_seats)
+        overrides.append(
+            {
+                "raw_district": raw_district,
+                "district_ids": district_id_candidates(raw_district),
+                "district_name_norm": normalize_district_name_match(raw_district),
+                "members": members,
+                "candidate_seats_up": candidate_seats_up,
+            }
+        )
+
+    return state_abbr, chamber, overrides
+
+
+def apply_special_overrides(base_rows: List[dict], overrides: List[dict]):
+    if not base_rows or not overrides:
+        return 0
+
+    by_id: Dict[str, dict] = {}
+    by_canonical: Dict[str, List[dict]] = {}
+    for row in base_rows:
+        did = normalize_district_id(row.get("district_id"))
+        if not did:
+            continue
+        by_id[did] = row
+        canon = canonical_district_id(did)
+        by_canonical.setdefault(canon, []).append(row)
+
+    applied = 0
+    for ov in overrides:
+        target = None
+
+        for candidate_id in ov.get("district_ids", []):
+            did = normalize_district_id(candidate_id)
+            if did in by_id:
+                target = by_id[did]
+                break
+
+            canon = canonical_district_id(did)
+            matches = by_canonical.get(canon, [])
+            if len(matches) == 1:
+                target = matches[0]
+                break
+
+        if target is None:
+            ov_name = ov.get("district_name_norm", "")
+            if ov_name:
+                name_matches = []
+                for row in base_rows:
+                    dn = normalize_district_name_match(row.get("district_name", ""))
+                    if not dn:
+                        continue
+                    if ov_name in dn or dn in ov_name:
+                        name_matches.append(row)
+                if len(name_matches) == 1:
+                    target = name_matches[0]
+
+        if target is None:
+            continue
+
+        members = ov.get("members", []) or []
+        if not members:
+            continue
+
+        primary = None
+        for member in members:
+            if has_named_incumbent(member.get("incumbent", {}).get("name", "")):
+                primary = member
+                break
+        if primary is None:
+            primary = members[0]
+
+        rep_primary = str(primary.get("candidates", {}).get("rep", "") or "").strip() or "No candidate"
+        dem_primary = str(primary.get("candidates", {}).get("dem", "") or "").strip() or "No candidate"
+        inc_name = str(primary.get("incumbent", {}).get("name", "") or "").strip() or "Vacant"
+        inc_party = party_norm(primary.get("incumbent", {}).get("party", ""))
+
+        target["members"] = members
+        target["candidate_seats_up"] = int(ov.get("candidate_seats_up") or len(members) or 1)
+        target["incumbent"] = {"name": inc_name, "party": inc_party}
+        target["candidates_2026"] = {"rep": rep_primary, "dem": dem_primary}
+        applied += 1
+
+    return applied
 
 
 def rows_to_matrix(sheet_rows: List[Tuple[int, Dict[int, str]]]) -> List[List[str]]:
@@ -436,35 +734,92 @@ def build_target_rows(sheet_rows: List[Tuple[int, Dict[int, str]]]):
     return out
 
 
+def discover_states(sheets: Dict[str, List[Tuple[int, Dict[int, str]]]]) -> List[str]:
+    found = set()
+    for sheet_name in ("SLDL", "SLDU"):
+        for rid, row in sheets.get(sheet_name, []):
+            if rid <= 2:
+                continue
+            state_abbr = normalize_workbook_state(row.get(col_to_idx("B"), ""))
+            if state_abbr:
+                found.add(state_abbr)
+    return sorted(found)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--workbook", required=True, help="Path to workbook .xlsx")
-    parser.add_argument("--states", required=True, help="Comma-separated state abbreviations, e.g. MI,MN")
+    parser.add_argument("--states", required=True, help='Comma-separated state abbreviations (e.g. MI,MN) or "ALL"')
     parser.add_argument("--output-dir", default="data", help="Output directory")
     parser.add_argument(
         "--targets-out",
         default="data/target_districts.json",
         help="Output path for target districts JSON extracted from Overview tab",
     )
+    parser.add_argument(
+        "--index-out",
+        default="data/chamber_files.json",
+        help="Output path for chamber file index JSON",
+    )
     args = parser.parse_args()
 
     workbook = Path(args.workbook)
     out_dir = Path(args.output_dir)
     targets_out = Path(args.targets_out)
-    states = [s.strip().upper() for s in args.states.split(",") if s.strip()]
+    index_out = Path(args.index_out)
 
     sheets = load_workbook_rows(workbook)
+
+    if args.states.strip().upper() == "ALL":
+        states = discover_states(sheets)
+    else:
+        states = sorted({s.strip().upper() for s in args.states.split(",") if s.strip()})
+
+    special_overrides_map: Dict[Tuple[str, str], List[dict]] = {}
+    for sheet_name, sheet_rows in sheets.items():
+        state_abbr, chamber, overrides = build_special_overrides(sheet_rows, sheet_name)
+        if not state_abbr or not chamber or not overrides:
+            continue
+        special_overrides_map[(state_abbr, chamber)] = overrides
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    chamber_index = {"house": [], "senate": []}
 
     for state_abbr in states:
         for chamber in ("house", "senate"):
             sheet_name = SHEET_FOR_CHAMBER[chamber]
-            rows = build_rows(sheets[sheet_name], state_abbr)
+            rows = build_rows(sheets.get(sheet_name, []), state_abbr)
+            overrides = special_overrides_map.get((state_abbr, chamber), [])
+            applied = apply_special_overrides(rows, overrides)
+
+            if not rows:
+                print(f"Skip {state_abbr} {chamber}: no rows")
+                continue
+
             out_name = OUTPUT_NAME.get((state_abbr, chamber), f"{state_abbr.lower()}_{chamber}.json")
             out_path = out_dir / out_name
             with out_path.open("w", encoding="utf-8") as f:
                 json.dump(rows, f, indent=2)
                 f.write("\n")
-            print(f"Wrote {out_path} rows={len(rows)}")
+
+            chamber_index[chamber].append(
+                {
+                    "state": state_abbr,
+                    "url": f"{out_dir.as_posix().rstrip('/')}/{out_name}",
+                    "rows": len(rows),
+                    "specialOverridesApplied": applied,
+                }
+            )
+            print(f"Wrote {out_path} rows={len(rows)} overrides={applied}")
+
+    for chamber in ("house", "senate"):
+        chamber_index[chamber].sort(key=lambda x: (x.get("state", ""), x.get("url", "")))
+
+    index_out.parent.mkdir(parents=True, exist_ok=True)
+    with index_out.open("w", encoding="utf-8") as f:
+        json.dump(chamber_index, f, indent=2)
+        f.write("\n")
+    print(f"Wrote {index_out}")
 
     overview_rows = sheets.get("Overview")
     if overview_rows:
@@ -478,3 +833,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
