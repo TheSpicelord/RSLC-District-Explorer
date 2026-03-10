@@ -96,25 +96,41 @@ input:disabled {
 
 .chamber-buttons {
   display: inline-flex;
-  gap: 0.35rem;
+  gap: 0.42rem;
   margin-left: 0;
+  padding: 0.22rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #101820 0%, #0c1319 100%);
+  border: 1px solid #39495a;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 2px 10px rgba(0, 0, 0, 0.24);
 }
 
 .chamber-buttons button {
   margin-left: 0;
-  min-width: 110px;
-  min-height: 42px;
-  padding: 0.52rem 0.84rem;
-  background: #5f6a77;
-  border-color: #5f6a77;
-  color: #fff;
-  font-weight: 700;
+  min-width: 154px;
+  min-height: 44px;
+  padding: 0.56rem 0.9rem;
+  background: #2f3f51;
+  border: 1px solid #566b82;
+  color: #dce7f4;
+  font-weight: 800;
+  font-size: 1.12rem;
+  letter-spacing: 0.2px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  transition: transform 120ms ease, box-shadow 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+
+.chamber-buttons button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.24);
 }
 
 .chamber-buttons button.active-chamber {
-  background: #0a477f;
-  border-color: #0a477f;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  background: linear-gradient(180deg, #0f5ea9 0%, #0a477f 100%);
+  border-color: #76b2ff;
+  color: #ffffff;
+  box-shadow: 0 0 0 1px rgba(150, 205, 255, 0.32), 0 0 14px rgba(20, 112, 201, 0.35);
 }
 
 .mapview-buttons {
@@ -145,11 +161,6 @@ input:disabled {
   background: #545f6c;
   border-color: #545f6c;
   color: #fff;
-}
-
-#senateChamberBtn:not(.active-chamber) {
-  background: #545f6c;
-  border-color: #545f6c;
 }
 
 #stateSelect {
@@ -873,6 +884,19 @@ input:disabled {
   width: 34px;
 }
 
+.target-col-district-name {
+  width: 128px;
+  text-align: left !important;
+}
+
+.district-name-cell {
+  max-width: 128px;
+  text-align: left !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .target-col-inc {
   width: 34px;
 }
@@ -911,6 +935,108 @@ input:disabled {
 .target-empty {
   color: #9ba9b9;
   text-align: center;
+}
+
+.national-overview-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.national-overview-table {
+  width: 100%;
+}
+
+.national-overview-table th,
+.national-overview-table td {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.national-overview-table .national-state-head,
+.national-overview-table .national-state-cell {
+  text-align: left;
+}
+
+.national-overview-table .national-state-top,
+.national-overview-table .national-state-head {
+  min-width: 108px;
+}
+
+.national-overview-table .national-state-top {
+  padding: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.national-overview-table .national-state-head {
+  font-size: 1.02rem !important;
+  font-weight: 800;
+}
+
+.national-overview-table .national-state-cell {
+  font-weight: 700;
+  color: #d6e0ea;
+}
+
+.national-seat-value {
+  color: #d6e0ea;
+  font-weight: 700;
+  text-align: center;
+}
+
+.national-section-head {
+  font-size: 0.92rem !important;
+}
+
+.national-overview-table thead tr:nth-child(2) th {
+  line-height: 1.05;
+  vertical-align: middle;
+}
+
+.national-overview-table .national-seat-head {
+  white-space: normal;
+  width: 58px;
+  min-width: 58px;
+}
+
+.national-overview-table .national-margin-head {
+  white-space: nowrap;
+  width: 62px;
+  min-width: 62px;
+}
+
+.national-overview-table .national-sortable {
+  cursor: pointer;
+}
+
+.national-overview-table .national-sortable:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.national-overview-table td:nth-child(2),
+.national-overview-table td:nth-child(3),
+.national-overview-table td:nth-child(4),
+.national-overview-table td:nth-child(7),
+.national-overview-table td:nth-child(8),
+.national-overview-table td:nth-child(9) {
+  border-left: 1px solid #2f3a47;
+}
+
+.national-overview-table thead tr:nth-child(2) th:nth-child(2),
+.national-overview-table thead tr:nth-child(2) th:nth-child(3),
+.national-overview-table thead tr:nth-child(2) th:nth-child(4),
+.national-overview-table thead tr:nth-child(2) th:nth-child(6),
+.national-overview-table thead tr:nth-child(2) th:nth-child(7),
+.national-overview-table thead tr:nth-child(2) th:nth-child(8) {
+  border-left: 1px solid #2f3a47;
+}
+
+.national-gap-col,
+.national-gap-cell {
+  width: 12px;
+  min-width: 12px;
+  padding: 0 !important;
+  border-bottom: 1px solid transparent !important;
+  background: transparent;
 }
 
 .target-mode-header {
@@ -1073,6 +1199,7 @@ input:disabled {
     margin-left: 0;
   }
 }
+
 
 
 

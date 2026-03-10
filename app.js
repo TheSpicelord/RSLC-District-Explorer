@@ -116,6 +116,9 @@ const STATE_NAME_TO_ABBR = {
   "DISTRICT OF COLUMBIA": "DC",
 };
 
+const OVERSEAS_TERRITORY_FIPS = new Set(["60", "66", "69", "72", "78"]);
+const OVERSEAS_TERRITORY_ABBR = new Set(["AS", "GU", "MP", "PR", "VI"]);
+
 const state = {
   mode: "national",
   chamber: "house",
@@ -126,6 +129,7 @@ const state = {
   statesLayer: null,
   statesByKey: new Map(),
   stateBoundsByKey: new Map(),
+  stateLayerByKey: new Map(),
   geojsonByChamber: {
     house: null,
     senate: null,
@@ -159,8 +163,13 @@ const state = {
     house: new Map(),
     senate: new Map(),
   },
+  chamberNamesByState: new Map(),
   detailsInteractionsWired: false,
   hoveredTableRowEl: null,
+  hoveredStateRowEl: null,
+  hoveredStateKey: null,
+  hoveredStateLayer: null,
+  nationalSort: { key: null, direction: 0 },
 };
 
 const houseChamberBtn = document.getElementById("houseChamberBtn");
@@ -185,8 +194,22 @@ async function init() {
   initChamberOverviewButton();
 
   const targetsPromise = loadTargetDistricts();
+  const chamberNamesPromise = loadChamberNamesFromWorkbook();
   await Promise.all([loadAllChamberData(), autoLoadStateShapes()]);
   enterNationalView();
+
+  chamberNamesPromise
+    .then((nameMap) => {
+      if (nameMap instanceof Map) {
+        state.chamberNamesByState = nameMap;
+      }
+      if (state.mode === "state" && state.selectedState && !state.selectedDistrictLayer) {
+        showStateChamberOverview();
+      }
+    })
+    .catch((_err) => {
+      // Keep app responsive if chamber names fail.
+    });
 
   targetsPromise
     .then((targets) => {
@@ -415,7 +438,7 @@ async function autoLoadStateShapes() {
     type: "FeatureCollection",
     features: (statesGeojson.features || []).filter((feature) => {
       const meta = stateMetaFromFeature(feature);
-      return !isDistrictOfColumbia(meta);
+      return !isDistrictOfColumbia(meta) && !isOverseasTerritory(meta);
     }),
   };
 
@@ -430,6 +453,8 @@ function buildStateLayer(geojson) {
     map.removeLayer(state.statesLayer);
   }
   state.stateBoundsByKey = new Map();
+  state.stateLayerByKey = new Map();
+  state.hoveredStateLayer = null;
 
   state.statesLayer = L.geoJSON(geojson, {
     pane: "statePane",
@@ -437,11 +462,21 @@ function buildStateLayer(geojson) {
     onEachFeature: (feature, layer) => {
       const meta = stateMetaFromFeature(feature);
       if (!meta.key) return;
+      layer.__featureRef = feature;
+      state.stateLayerByKey.set(meta.key, layer);
       const bounds = layer.getBounds();
       if (bounds?.isValid?.()) {
         state.stateBoundsByKey.set(meta.key, bounds);
       }
 
+      layer.on("mouseover", () => {
+        setHoveredStateKey(meta.key);
+      });
+      layer.on("mouseout", () => {
+        if (state.hoveredStateKey === meta.key) {
+          setHoveredStateKey(null);
+        }
+      });
       layer.on("click", async () => {
         await selectStateByMeta(meta, feature, { shouldZoom: true, bounds });
       });
@@ -493,6 +528,13 @@ function isDistrictOfColumbia(meta) {
   return meta.fips === "11" || meta.abbr === "DC" || name === "DISTRICT OF COLUMBIA";
 }
 
+function isOverseasTerritory(meta) {
+  if (!meta) return false;
+  const fips = normalizeStateFips(meta.fips);
+  const abbr = normalizeStateAbbr(meta.abbr);
+  return OVERSEAS_TERRITORY_FIPS.has(fips) || OVERSEAS_TERRITORY_ABBR.has(abbr);
+}
+
 function normalizeTextKey(value) {
   return String(value || "").trim().toUpperCase().replace(/\s+/g, "_");
 }
@@ -525,6 +567,8 @@ async function selectStateByMeta(meta, feature, options = {}) {
   const { shouldZoom = state.mode === "national", bounds = null } = options;
   state.mode = "state";
   state.selectedState = meta;
+  setHoveredStateRow(null);
+  setHoveredStateKey(null);
   refreshTargetJoinKeySet();
   state.availableMapViews = availableMapViewsForState(meta);
   state.mapView = pickMapView(state.availableMapViews, state.mapView);
@@ -537,8 +581,8 @@ async function selectStateByMeta(meta, feature, options = {}) {
   }
 
   const featureBounds = bounds && bounds.isValid && bounds.isValid() ? bounds : geometryBounds(feature?.geometry);
-  if (shouldZoom && featureBounds.isValid()) {
-    map.fitBounds(featureBounds.pad(0.1), { animate: false });
+  if (shouldZoom) {
+    focusOnState(meta, featureBounds);
   }
 
   await ensureDistrictShapesLoaded();
@@ -547,6 +591,17 @@ async function selectStateByMeta(meta, feature, options = {}) {
   refreshStateBoundaryStyles();
   renderModeUi();
   setStatus(`Viewing ${meta.name || meta.abbr || meta.key} ${capitalize(state.chamber)} districts.`);
+}
+
+function focusOnState(meta, bounds) {
+  const abbr = normalizeStateAbbr(meta?.abbr || "");
+  if (abbr === "AK") {
+    map.setView([64.8, -150.0], 4, { animate: false });
+    return;
+  }
+  if (bounds && bounds.isValid && bounds.isValid()) {
+    map.fitBounds(bounds.pad(0.1), { animate: false });
+  }
 }
 
 function enterNationalView() {
@@ -564,10 +619,11 @@ function enterNationalView() {
   refreshStateBoundaryStyles();
 
   map.setView(NATIONAL_CENTER, NATIONAL_ZOOM);
-  detailsTitle.textContent = "National View";
-  details.innerHTML = "Select a state on the map or from the dropdown.";
+  detailsTitle.textContent = "National Overview";
+  details.innerHTML = nationalOverviewHtml();
+  wireDetailsInteractions();
   renderModeUi();
-  setStatus("National view. Select a state to view districts.");
+  setStatus("National overview. Select a state to view districts.");
 }
 
 function renderModeUi() {
@@ -731,14 +787,17 @@ async function setMapView(view) {
 function refreshStateBoundaryStyles() {
   if (state.statesLayer) {
     state.statesLayer.setStyle((feature) => stateBoundaryStyle(feature));
+    if (state.hoveredStateLayer && state.hoveredStateKey) {
+      const feature = state.hoveredStateLayer.__featureRef || state.hoveredStateLayer.feature;
+      state.hoveredStateLayer.setStyle(stateHoverBoundaryStyle(feature));
+      state.hoveredStateLayer.bringToFront();
+    }
   }
 }
 
 function stateBoundaryStyle(feature) {
-  const isSelected =
-    state.mode === "state" &&
-    state.selectedState &&
-    stateMetaFromFeature(feature).key === state.selectedState.key;
+  const meta = stateMetaFromFeature(feature);
+  const isSelected = state.mode === "state" && state.selectedState && meta.key === state.selectedState.key;
   if (isSelected) {
     return {
       color: "#2f3c4b",
@@ -748,12 +807,24 @@ function stateBoundaryStyle(feature) {
       opacity: 0,
     };
   }
+
   return {
     color: "#2f3c4b",
     weight: 1.5,
     opacity: 1,
     fillColor: "#b9c6d3",
     fillOpacity: 0.08,
+  };
+}
+
+function stateHoverBoundaryStyle(feature) {
+  const base = stateBoundaryStyle(feature);
+  return {
+    ...base,
+    color: "#9cb2c7",
+    weight: Math.max(3.2, Number(base.weight || 0)),
+    opacity: 1,
+    fillOpacity: Math.max(0.14, Number(base.fillOpacity || 0)),
   };
 }
 
@@ -913,9 +984,17 @@ function selectedStateHeader() {
 }
 
 function selectedStateChamberHeader() {
-  if (!state.selectedState) return "National View";
-  const stateName = state.selectedState.name || state.selectedState.abbr || state.selectedState.key || "State";
-  return `${stateName} ${capitalize(state.chamber)}`;
+  if (!state.selectedState) return "National Overview";
+  return chamberOverviewHeaderForState(state.selectedState, state.chamber);
+}
+
+function chamberOverviewHeaderForState(meta, chamber) {
+  const stateName = meta?.name || meta?.abbr || meta?.key || "State";
+  const stateAbbr = normalizeStateAbbr(meta?.abbr || "");
+  const key = `${stateAbbr}|${chamber}`;
+  const official = state.chamberNamesByState.get(key);
+  if (official) return official;
+  return `${stateName} ${capitalize(chamber)}`;
 }
 
 function showStateChamberOverview() {
@@ -932,18 +1011,180 @@ function stateChamberOverviewHtml(composition) {
     return "State chamber overview.";
   }
 
-  const titleState = state.selectedState?.name || state.selectedState?.abbr || "State";
-  const chamberLabel = capitalize(state.chamber);
+  const officialName = chamberOverviewHeaderForState(state.selectedState, state.chamber);
   const targets = targetTablesForSelectedState();
   const allDistrictRows = allDistrictRowsForSelectedState();
   return `
     <div class="detail-section">
-      <div class="detail-section-title centered-section-title large-section-title">${escapeHtml(titleState)} ${escapeHtml(chamberLabel)} Composition</div>
+      <div class="detail-section-title centered-section-title large-section-title">${escapeHtml(officialName)} Composition</div>
       ${chamberCompositionHtml(composition)}
     </div>
     <div class="detail-section">${targetDistrictsSectionHtml(targets)}</div>
     <div class="detail-section">${allDistrictsSectionHtml(allDistrictRows)}</div>
   `;
+}
+
+function nationalOverviewHtml() {
+  const rows = nationalOverviewRows();
+  const body = rows
+    .map((row) => {
+      const lower = row.lower;
+      const upper = row.upper;
+      const lowerMargin = typeof lower.marginDemPct === "number" ? lower.marginDemPct : null;
+      const upperMargin = typeof upper.marginDemPct === "number" ? upper.marginDemPct : null;
+      return `
+        <tr class="target-row state-select-row" data-state-key="${escapeHtml(row.stateKey)}">
+          <td class="national-state-cell">${escapeHtml(row.stateName)}</td>
+          <td class="national-seat-value national-seat-col">${lower.rep}</td>
+          <td class="national-seat-value national-seat-col">${lower.dem}</td>
+          <td class="national-seat-value national-seat-col">${lower.other}</td>
+          <td class="margin-cell" style="background:${targetMarginCellColor(lowerMargin)}">${escapeHtml(formatSignedRMargin(lowerMargin))}</td>
+          <td class="national-gap-cell"></td>
+          <td class="national-seat-value national-seat-col">${upper.rep}</td>
+          <td class="national-seat-value national-seat-col">${upper.dem}</td>
+          <td class="national-seat-value national-seat-col">${upper.other}</td>
+          <td class="margin-cell" style="background:${targetMarginCellColor(upperMargin)}">${escapeHtml(formatSignedRMargin(upperMargin))}</td>
+        </tr>
+      `;
+    })
+    .join("");
+
+  return `
+    <div class="national-overview-wrap">
+      <table class="target-table national-overview-table">
+        <thead>
+          <tr>
+            <th class="national-state-top"></th>
+            <th colspan="4" class="national-section-head">Lower Chamber</th>
+            <th class="national-gap-col" rowspan="2"></th>
+            <th colspan="4" class="national-section-head">Upper Chamber</th>
+          </tr>
+          <tr>
+            <th class="national-state-head">State</th>
+            <th class="national-sortable national-seat-head" data-sort-key="lower_rep">GOP<br/>Seats${nationalSortIndicator("lower_rep")}</th>
+            <th class="national-sortable national-seat-head" data-sort-key="lower_dem">Dem<br/>Seats${nationalSortIndicator("lower_dem")}</th>
+            <th class="national-sortable national-seat-head" data-sort-key="lower_other">Ind<br/>Seats${nationalSortIndicator("lower_other")}</th>
+            <th class="national-sortable national-margin-head" data-sort-key="lower_margin">MARGIN${nationalSortIndicator("lower_margin")}</th>
+            <th class="national-sortable national-seat-head" data-sort-key="upper_rep">GOP<br/>Seats${nationalSortIndicator("upper_rep")}</th>
+            <th class="national-sortable national-seat-head" data-sort-key="upper_dem">Dem<br/>Seats${nationalSortIndicator("upper_dem")}</th>
+            <th class="national-sortable national-seat-head" data-sort-key="upper_other">Ind<br/>Seats${nationalSortIndicator("upper_other")}</th>
+            <th class="national-sortable national-margin-head" data-sort-key="upper_margin">MARGIN${nationalSortIndicator("upper_margin")}</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${body}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function nationalOverviewRows() {
+  const rows = [];
+  const seen = new Set();
+
+  for (const { meta } of state.statesByKey.values()) {
+    if (!meta?.key || seen.has(meta.key)) continue;
+    const stateFips = normalizeStateFips(meta.fips);
+    if (!stateFips) continue;
+    seen.add(meta.key);
+
+    rows.push({
+      stateKey: meta.key,
+      stateAbbr: normalizeStateAbbr(meta.abbr || ""),
+      stateName: meta.name || meta.abbr || meta.key,
+      lower: chamberStatsForStateFips("house", stateFips),
+      upper: chamberStatsForStateFips("senate", stateFips),
+    });
+  }
+
+  rows.sort((a, b) => a.stateName.localeCompare(b.stateName));
+  return applyNationalSort(rows);
+}
+
+function applyNationalSort(rows) {
+  const key = state.nationalSort?.key || null;
+  const direction = Number(state.nationalSort?.direction || 0);
+  if (!key || direction === 0) return rows;
+
+  const valueFor = (row) => {
+    switch (key) {
+      case "lower_rep": return Number(row.lower.rep || 0);
+      case "lower_dem": return Number(row.lower.dem || 0);
+      case "lower_other": return Number(row.lower.other || 0);
+      case "lower_margin": return typeof row.lower.marginDemPct === "number" ? -row.lower.marginDemPct : Number.NEGATIVE_INFINITY;
+      case "upper_rep": return Number(row.upper.rep || 0);
+      case "upper_dem": return Number(row.upper.dem || 0);
+      case "upper_other": return Number(row.upper.other || 0);
+      case "upper_margin": return typeof row.upper.marginDemPct === "number" ? -row.upper.marginDemPct : Number.NEGATIVE_INFINITY;
+      default: return Number.NEGATIVE_INFINITY;
+    }
+  };
+
+  return [...rows].sort((a, b) => {
+    if (key === "lower_margin") {
+      const aNeb = a.stateAbbr === "NE";
+      const bNeb = b.stateAbbr === "NE";
+      if (aNeb && !bNeb) return 1;
+      if (!aNeb && bNeb) return -1;
+    }
+
+    const av = valueFor(a);
+    const bv = valueFor(b);
+    if (av === bv) return a.stateName.localeCompare(b.stateName);
+    return direction === -1 ? bv - av : av - bv;
+  });
+}
+
+function nationalSortIndicator(key) {
+  if (state.nationalSort?.key !== key || !state.nationalSort?.direction) return "";
+  return state.nationalSort.direction === -1 ? " (v)" : " (^)";
+}
+
+function toggleNationalSort(key) {
+  if (state.nationalSort?.key !== key) {
+    state.nationalSort = { key, direction: -1 };
+    return;
+  }
+  if (state.nationalSort.direction === -1) {
+    state.nationalSort = { key, direction: 1 };
+    return;
+  }
+  if (state.nationalSort.direction === 1) {
+    state.nationalSort = { key: null, direction: 0 };
+    return;
+  }
+  state.nationalSort = { key, direction: -1 };
+}
+
+function chamberStatsForStateFips(chamber, stateFips) {
+  const dataMap = state.dataByChamber[chamber];
+  const counts = { rep: 0, dem: 0, other: 0, vacant: 0 };
+
+  for (const [joinKey, rec] of dataMap.entries()) {
+    if (!String(joinKey || "").startsWith(`${stateFips}|`)) continue;
+    const members = recordMembers(rec);
+    if (!members.length) {
+      counts.vacant += 1;
+      continue;
+    }
+    for (const member of members) {
+      const category = memberSeatCategory(member);
+      counts[category] += 1;
+    }
+  }
+
+  const total = counts.rep + counts.dem + counts.other + counts.vacant;
+  const marginDemPct = total > 0 ? ((counts.dem - counts.rep) / total) * 100 : null;
+
+  return {
+    rep: counts.rep,
+    dem: counts.dem,
+    other: counts.other,
+    vacant: counts.vacant,
+    total,
+    marginDemPct,
+  };
 }
 
 function chamberCompositionStatsForSelectedState() {
@@ -1100,25 +1341,25 @@ function compositionRowHtml(label, value, dotClass) {
 }
 
 function targetDistrictsSectionHtml(targets) {
+  const showDistrictNameCol = shouldShowDistrictNameColumn();
   const defenseCols = districtElectionColumns(targets.defense);
   const offenseCols = districtElectionColumns(targets.offense);
-  const defenseRows = targets.defense.map((row) => targetDistrictRowHtml(row, defenseCols)).join("");
-  const offenseRows = targets.offense.map((row) => targetDistrictRowHtml(row, offenseCols)).join("");
+  const defenseRows = targets.defense.map((row) => targetDistrictRowHtml(row, defenseCols, showDistrictNameCol)).join("");
+  const offenseRows = targets.offense.map((row) => targetDistrictRowHtml(row, offenseCols, showDistrictNameCol)).join("");
   return `
     <div id="targetModeHeader" class="detail-section-title centered-section-title large-section-title target-mode-header ${state.targetDistrictsMode ? "active-target-mode" : ""}">Target Districts</div>
     <div class="target-columns">
       <div class="target-column">
         <div class="detail-subtitle centered-subtitle chart-header">Defense</div>
-        ${targetDistrictTableHtml(defenseRows, targets.defense)}
+        ${targetDistrictTableHtml(defenseRows, targets.defense, showDistrictNameCol)}
       </div>
       <div class="target-column">
         <div class="detail-subtitle centered-subtitle chart-header">Offense</div>
-        ${targetDistrictTableHtml(offenseRows, targets.offense)}
+        ${targetDistrictTableHtml(offenseRows, targets.offense, showDistrictNameCol)}
       </div>
     </div>
   `;
 }
-
 function districtElectionColumns(rows = []) {
   const include = (view) => rows.some((row) => typeof row?.marginsByView?.[view] === "number");
 
@@ -1155,7 +1396,26 @@ function districtElectionColumns(rows = []) {
   return columns;
 }
 
-function targetDistrictTableHtml(rowsHtml, rows = []) {
+function shouldShowDistrictNameColumn() {
+  if (state.chamber !== "house") return false;
+  const abbr = normalizeStateAbbr(state.selectedState?.abbr || "");
+  return abbr === "NH" || abbr === "MA";
+}
+
+function districtNameDisplayForRecord(rec) {
+  const rawName = String(rec?.district_name || "").trim();
+  if (!rawName) return "";
+  const abbr = normalizeStateAbbr(state.selectedState?.abbr || "");
+  if (abbr === "NH") {
+    return rawName.replace(/^State House District\s+/i, "").trim();
+  }
+  if (abbr === "MA") {
+    return rawName.replace(/\s+District$/i, "").trim();
+  }
+  return rawName;
+}
+
+function targetDistrictTableHtml(rowsHtml, rows = [], showDistrictNameCol = false) {
   const electionCols = districtElectionColumns(rows);
   const headCols = electionCols
     .map((col) => {
@@ -1163,12 +1423,15 @@ function targetDistrictTableHtml(rowsHtml, rows = []) {
       return `<th class="target-col-margin"><span class="twoline-head">${col.year}<br/>${col.type}</span></th>`;
     })
     .join("");
+  const districtNameHead = showDistrictNameCol ? '<th class="target-col-district-name">District</th>' : "";
+  const colCount = 4 + electionCols.length + (showDistrictNameCol ? 1 : 0);
 
   return `
     <table class="target-table">
       <thead>
         <tr>
           <th class="target-col-district">#</th>
+          ${districtNameHead}
           <th class="target-col-inc">Inc</th>
           <th class="target-col-candidate">2026 GOP</th>
           <th class="target-col-candidate">2026 DEM</th>
@@ -1176,14 +1439,16 @@ function targetDistrictTableHtml(rowsHtml, rows = []) {
         </tr>
       </thead>
       <tbody>
-        ${rowsHtml || `<tr><td colspan="${4 + electionCols.length}" class="target-empty">None</td></tr>`}
+        ${rowsHtml || `<tr><td colspan="${colCount}" class="target-empty">None</td></tr>`}
       </tbody>
     </table>
   `;
 }
-
-function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row])) {
+function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row]), showDistrictNameCol = false) {
   const incClass = row.incParty === "R" ? "inc-r" : row.incParty === "D" ? "inc-d" : "inc-u";
+  const districtNameCell = showDistrictNameCol
+    ? `<td class="district-name-cell" title="${escapeHtml(row.districtNameDisplay || "")}">${escapeHtml(row.districtNameDisplay || "-")}</td>`
+    : "";
   const marginCells = electionCols
     .map((col) => {
       if (col.type === "gap") return '<td class="target-gap-cell"></td>';
@@ -1194,6 +1459,7 @@ function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row]
   return `
     <tr class="target-row district-select-row ${rowNeedsExpandedCandidateCells(row.rec) ? "target-row-multi" : ""}" data-join-key="${escapeHtml(row.joinKey)}">
       <td class="target-district-cell">${escapeHtml(row.districtLabel)}</td>
+      ${districtNameCell}
       <td class="inc-cell ${incClass}"><strong>${escapeHtml(row.incParty || "?")}</strong></td>
       <td class="candidate-cell">${candidateCellHtml(row.rec, "R", { short: false })}</td>
       <td class="candidate-cell">${candidateCellHtml(row.rec, "D", { short: false })}</td>
@@ -1201,7 +1467,6 @@ function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row]
     </tr>
   `;
 }
-
 function targetTablesForSelectedState() {
 
   const rows = targetDistrictRowsForSelectedState();
@@ -1241,6 +1506,7 @@ function targetDistrictRowsForSelectedState() {
     rows.push({
       joinKey: key,
       districtLabel: displayDistrictId(target.rawDistrict, target.districtId),
+      districtNameDisplay: districtNameDisplayForRecord(rec),
       incParty,
       rec,
       marginsByView,
@@ -1249,19 +1515,18 @@ function targetDistrictRowsForSelectedState() {
 
   return rows;
 }
-
 function allDistrictsSectionHtml(rows) {
   const chamberLabel = capitalize(state.chamber);
+  const showDistrictNameCol = shouldShowDistrictNameColumn();
   const allCols = districtElectionColumns(rows);
-  const bodyRows = rows.map((row) => targetDistrictRowHtml(row, allCols)).join("");
+  const bodyRows = rows.map((row) => targetDistrictRowHtml(row, allCols, showDistrictNameCol)).join("");
   return `
     <div class="detail-section-title centered-section-title large-section-title all-districts-header">All ${escapeHtml(chamberLabel)} Districts</div>
     <div class="all-districts-table-wrap">
-      ${targetDistrictTableHtml(bodyRows, rows)}
+      ${targetDistrictTableHtml(bodyRows, rows, showDistrictNameCol)}
     </div>
   `;
 }
-
 function allDistrictRowsForSelectedState() {
   if (!state.selectedState) return [];
   const dataMap = state.dataByChamber[state.chamber];
@@ -1278,6 +1543,7 @@ function allDistrictRowsForSelectedState() {
     rows.push({
       joinKey: joinInfo.key,
       districtLabel: displayDistrictId(joinInfo.rawDistrict, joinInfo.districtId),
+      districtNameDisplay: districtNameDisplayForRecord(rec),
       incParty: incParty === "R" || incParty === "D" ? incParty : "O",
       rec,
       marginsByView: {
@@ -1294,7 +1560,6 @@ function allDistrictRowsForSelectedState() {
   rows.sort((a, b) => districtLabelSortValue(a.districtLabel) - districtLabelSortValue(b.districtLabel));
   return rows;
 }
-
 function districtLabelSortValue(label) {
   const text = String(label || "").trim().toUpperCase();
   const m = text.match(/^([0-9]+)([A-Z]*)$/);
@@ -1508,27 +1773,76 @@ function wireDetailsInteractions() {
   details.addEventListener("mouseover", (event) => {
     const targetEl = event.target instanceof Element ? event.target : null;
     if (!targetEl) return;
-    const row = targetEl.closest(".district-select-row[data-join-key]");
-    if (!row) return;
-    setHoveredTableRow(row);
+
+    const districtRow = targetEl.closest(".district-select-row[data-join-key]");
+    if (districtRow) {
+      setHoveredStateRow(null);
+      setHoveredTableRow(districtRow);
+      return;
+    }
+
+    const stateRow = targetEl.closest(".state-select-row[data-state-key]");
+    if (stateRow) {
+      setHoveredTableRow(null);
+      setHoveredStateRow(stateRow);
+    }
   });
 
   details.addEventListener("mouseout", (event) => {
     const targetEl = event.target instanceof Element ? event.target : null;
     if (!targetEl) return;
-    const row = targetEl.closest(".district-select-row[data-join-key]");
-    if (!row) return;
-    const related = event.relatedTarget;
-    if (related && row.contains(related)) return;
-    if (state.hoveredTableRowEl === row) setHoveredTableRow(null);
+
+    const districtRow = targetEl.closest(".district-select-row[data-join-key]");
+    if (districtRow) {
+      const related = event.relatedTarget;
+      if (related && districtRow.contains(related)) return;
+      if (state.hoveredTableRowEl === districtRow) setHoveredTableRow(null);
+      return;
+    }
+
+    const stateRow = targetEl.closest(".state-select-row[data-state-key]");
+    if (stateRow) {
+      const related = event.relatedTarget;
+      if (related && stateRow.contains(related)) return;
+      if (state.hoveredStateRowEl === stateRow) setHoveredStateRow(null);
+    }
   });
 
-  details.addEventListener("click", (event) => {
+  details.addEventListener("click", async (event) => {
     const targetEl = event.target instanceof Element ? event.target : null;
     if (!targetEl) return;
-    const row = targetEl.closest(".district-select-row[data-join-key]");
-    if (!row) return;
-    selectDistrictFromTargetRow(row.dataset.joinKey || "");
+
+    const sortHeader = targetEl.closest("th.national-sortable[data-sort-key]");
+    if (sortHeader && state.mode === "national") {
+      const key = String(sortHeader.dataset.sortKey || "").trim();
+      if (key) {
+        setHoveredStateRow(null);
+        toggleNationalSort(key);
+        details.innerHTML = nationalOverviewHtml();
+      }
+      return;
+    }
+
+    const districtRow = targetEl.closest(".district-select-row[data-join-key]");
+    if (districtRow) {
+      selectDistrictFromTargetRow(districtRow.dataset.joinKey || "");
+      return;
+    }
+
+    const stateRow = targetEl.closest(".state-select-row[data-state-key]");
+    if (stateRow) {
+      let chamberOverride = null;
+      const clickedCell = targetEl.closest("td");
+      if (clickedCell && clickedCell.parentElement === stateRow) {
+        const idx = Array.from(stateRow.children).indexOf(clickedCell);
+        if (idx >= 1 && idx <= 4) chamberOverride = "house";
+        if (idx >= 6 && idx <= 9) chamberOverride = "senate";
+      }
+      if (chamberOverride) {
+        await setChamber(chamberOverride);
+      }
+      await selectStateByKey(stateRow.dataset.stateKey || "");
+    }
   });
 }
 
@@ -1545,6 +1859,40 @@ function setHoveredTableRow(row) {
   const layer = districtLayerForJoinKey(row.dataset.joinKey || "");
   if (!layer?.__featureRef) return;
   showDistrictHoverOutline(layer.__featureRef);
+}
+
+function setHoveredStateKey(key) {
+  const nextKey = key ? String(key) : null;
+  if (state.hoveredStateKey === nextKey) return;
+
+  if (state.hoveredStateLayer) {
+    const prevFeature = state.hoveredStateLayer.__featureRef || state.hoveredStateLayer.feature;
+    state.hoveredStateLayer.setStyle(stateBoundaryStyle(prevFeature));
+  }
+  state.hoveredStateLayer = null;
+  state.hoveredStateKey = nextKey;
+
+  if (!nextKey) return;
+  const nextLayer = state.stateLayerByKey.get(nextKey);
+  if (!nextLayer) return;
+  const feature = nextLayer.__featureRef || nextLayer.feature;
+  nextLayer.setStyle(stateHoverBoundaryStyle(feature));
+  nextLayer.bringToFront();
+  state.hoveredStateLayer = nextLayer;
+}
+
+function setHoveredStateRow(row) {
+  if (state.hoveredStateRowEl && state.hoveredStateRowEl !== row) {
+    state.hoveredStateRowEl.classList.remove("is-hovered");
+  }
+
+  state.hoveredStateRowEl = row || null;
+  const key = row?.dataset?.stateKey ? String(row.dataset.stateKey) : null;
+
+  if (row) {
+    row.classList.add("is-hovered");
+  }
+  setHoveredStateKey(key);
 }
 
 function districtLayerForJoinKey(joinKey) {
@@ -1646,6 +1994,8 @@ function clearDistrictLayer() {
   state.currentDistrictFeatures = [];
   state.districtNumberBuildToken += 1;
   state.hoveredTableRowEl = null;
+  setHoveredStateRow(null);
+  setHoveredStateKey(null);
   if (state.districtLayer) {
     map.removeLayer(state.districtLayer);
     state.districtLayer = null;
@@ -2404,6 +2754,86 @@ function normalizeTargetDistrictRows(rows) {
     });
   }
   return out;
+}
+
+async function loadChamberNamesFromWorkbook() {
+  try {
+    if (!(await ensureXlsxLibraryLoaded())) return new Map();
+
+    let workbook = null;
+    for (const workbookUrl of WORKBOOK_URLS) {
+      try {
+        const response = await fetch(workbookUrl);
+        if (!response.ok) continue;
+        const bytes = await response.arrayBuffer();
+        workbook = window.XLSX.read(bytes, { type: "array" });
+        if (workbook) break;
+      } catch (_err) {
+        // Try next workbook path.
+      }
+    }
+    if (!workbook) return new Map();
+
+    const sheet = workbook.Sheets["Chamber Names"];
+    if (!sheet) return new Map();
+
+    const rows = window.XLSX.utils.sheet_to_json(sheet, {
+      header: 1,
+      raw: false,
+      defval: "",
+    });
+    if (!Array.isArray(rows) || !rows.length) return new Map();
+
+    const out = new Map();
+
+    // Expected shape: State | Lower | Upper
+    const header = (rows[0] || []).map((v) => cleanCell(v).toLowerCase());
+    const colState = header.findIndex((v) => v === "state");
+    const colLower = header.findIndex((v) => v === "lower");
+    const colUpper = header.findIndex((v) => v === "upper");
+
+    if (colState >= 0 && colLower >= 0 && colUpper >= 0) {
+      for (let i = 1; i < rows.length; i += 1) {
+        const row = rows[i] || [];
+        const stateAbbr = normalizeWorkbookState(cleanCell(row[colState]));
+        if (!stateAbbr) continue;
+
+        const lowerName = cleanCell(row[colLower]);
+        const upperName = cleanCell(row[colUpper]);
+        if (lowerName) out.set(`${stateAbbr}|house`, `${stateAbbr} ${lowerName}`);
+        if (upperName) out.set(`${stateAbbr}|senate`, `${stateAbbr} ${upperName}`);
+      }
+      return out;
+    }
+
+    // Fallback for alternative formats: State | Chamber | Name
+    const objects = window.XLSX.utils.sheet_to_json(sheet, { raw: false, defval: "" });
+    for (const row of objects || []) {
+      const stateRaw = cleanCell(
+        row?.State ?? row?.STATE ?? row?.state ?? row?.StateAbbr ?? row?.State_ABBR ?? row?.Abbr ?? row?.ABBR ?? row?.ST
+      );
+      const chamberRaw = cleanCell(row?.Chamber ?? row?.CHAMBER ?? row?.chamber);
+      const nameRaw = cleanCell(
+        row?.OfficialName
+          ?? row?.Official_Name
+          ?? row?.Official
+          ?? row?.Name
+          ?? row?.["Chamber Name"]
+          ?? row?.["Official Chamber Name"]
+          ?? row?.name
+      );
+
+      const stateAbbr = normalizeWorkbookState(stateRaw);
+      const chamber = normalizeChamberLabel(chamberRaw);
+      if (!stateAbbr || !chamber || !nameRaw) continue;
+      out.set(`${stateAbbr}|${chamber}`, nameRaw);
+    }
+
+    return out;
+  } catch (err) {
+    console.warn(`Could not load chamber names from workbook: ${err.message}`);
+    return new Map();
+  }
 }
 
 async function loadTargetDistrictsFromWorkbook() {
@@ -3224,6 +3654,18 @@ function escapeHtml(text) {
 function setStatus(msg) {
   if (statusText) statusText.textContent = msg;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
