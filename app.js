@@ -16,6 +16,8 @@ map.createPane("statePane");
 map.getPane("statePane").style.zIndex = 330;
 map.createPane("districtPane");
 map.getPane("districtPane").style.zIndex = 420;
+map.createPane("floterialPane");
+map.getPane("floterialPane").style.zIndex = 430;
 map.createPane("countyPane");
 map.getPane("countyPane").style.zIndex = 440;
 map.createPane("countyLabelPane");
@@ -25,6 +27,8 @@ map.getPane("placeLabelPane").style.zIndex = 460;
 map.getPane("placeLabelPane").style.pointerEvents = "none";
 map.createPane("districtHoverPane");
 map.getPane("districtHoverPane").style.zIndex = 455;
+map.createPane("stateHoverPane");
+map.getPane("stateHoverPane").style.zIndex = 454;
 map.createPane("districtNumberPane");
 map.getPane("districtNumberPane").style.zIndex = 452;
 
@@ -48,6 +52,7 @@ const AUTO_SHAPE_URLS = {
   house: "data/shapes/house.zip",
   senate: "data/shapes/senate.zip",
   counties: "data/shapes/counties.zip",
+  nh_house_floterial: "data/shapes/nh_house_floterial.zip",
 };
 const TARGET_DISTRICTS_JSON_URLS = ["data/target_districts.json"];
 const CHAMBER_INDEX_URLS = ["data/chamber_files.json"];
@@ -59,8 +64,9 @@ const XLSX_CDN_URL = "https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.mi
 
 const MAP_VIEW_TYPE_PRIORITY = {
   gov: 0,
-  pres: 1,
-  leg: 2,
+  ussen: 1,
+  pres: 2,
+  leg: 3,
 };
 const STATE_NAME_TO_ABBR = {
   ALABAMA: "AL",
@@ -140,13 +146,17 @@ const state = {
   },
   countyGeojson: null,
   countyFeaturesByState: new Map(),
+  nhFloterialGeojson: null,
   districtLayer: null,
   districtLayerIndex: new Map(),
+  floterialLayer: null,
+  floterialLayerByJoinKey: new Map(),
   currentDistrictFeatures: [],
   districtNumberLayer: null,
   districtNumberBuildToken: 0,
   districtLabelRefreshToken: 0,
   selectedDistrictLayer: null,
+  selectedDistrictOutlineLayer: null,
   hoverDistrictLayer: null,
   hoverInfoEl: null,
   chamberOverviewBtnEl: null,
@@ -156,7 +166,14 @@ const state = {
   countyVisible: false,
   suspendPopupCloseOverview: false,
   targetDistrictsMode: false,
+  upIn2026Mode: false,
+  projectionMode: false,
+  projectionBaseView: "latest_leg",
+  projectionShift: 0,
+  projectionPreviousUpIn2026Mode: false,
   targetJoinKeySet: new Set(),
+  upIn2026JoinKeySet: new Set(),
+  filteredDistrictJoinKeySet: null,
   targetDistricts: [],
   availableMapViewsByState: new Map(),
   dataByChamber: {
@@ -169,19 +186,29 @@ const state = {
   hoveredStateRowEl: null,
   hoveredStateKey: null,
   hoveredStateLayer: null,
+  hoveredStateOverlayLayer: null,
   nationalSort: { key: null, direction: 0 },
+  detailsRenderToken: 0,
 };
 
 const houseChamberBtn = document.getElementById("houseChamberBtn");
 const senateChamberBtn = document.getElementById("senateChamberBtn");
 const mapViewButtons = document.getElementById("mapViewButtons");
+const projectionControls = document.getElementById("projectionControls");
+const projectionToggleBtn = document.getElementById("projectionToggleBtn");
+const projectionBaseLegBtn = document.getElementById("projectionBaseLegBtn");
+const projectionBasePresBtn = document.getElementById("projectionBasePresBtn");
+const projectionShiftSlider = document.getElementById("projectionShiftSlider");
+const projectionShiftValue = document.getElementById("projectionShiftValue");
 const countyOverlayToggle = document.getElementById("countyOverlayToggle");
 const targetDistrictsToggle = document.getElementById("targetDistrictsToggle");
+const upIn2026Toggle = document.getElementById("upIn2026Toggle");
 const stateSelect = document.getElementById("stateSelect");
 const exitStateBtn = document.getElementById("exitStateBtn");
 const statusText = document.getElementById("statusText");
 const detailsTitle = document.getElementById("detailsTitle");
 const details = document.getElementById("details");
+const sidebarEl = details?.closest?.(".sidebar") || document.querySelector(".sidebar");
 
 init().catch((err) => {
   console.error(err);
@@ -192,6 +219,10 @@ async function init() {
   wireEvents();
   initHoverInfo();
   initChamberOverviewButton();
+
+  detailsTitle.textContent = "National Overview";
+  setDetailsLoading("Loading national overview table...");
+  resetSidebarScroll();
 
   const targetsPromise = loadTargetDistricts();
   const chamberNamesPromise = loadChamberNamesFromWorkbook();
@@ -223,7 +254,6 @@ async function init() {
       // Keep app responsive if target data fails.
     });
 }
-
 async function loadAllChamberData() {
   const index = await loadChamberIndex();
   if (index) {
@@ -321,6 +351,36 @@ function wireEvents() {
   targetDistrictsToggle.addEventListener("change", async (e) => {
     await setTargetDistrictsMode(e.target.checked);
   });
+
+  if (upIn2026Toggle) {
+    upIn2026Toggle.addEventListener("change", async (e) => {
+      await setUpIn2026Mode(e.target.checked);
+    });
+  }
+
+  if (projectionToggleBtn) {
+    projectionToggleBtn.addEventListener("click", async () => {
+      await setProjectionMode(!state.projectionMode);
+    });
+  }
+
+  if (projectionBaseLegBtn) {
+    projectionBaseLegBtn.addEventListener("click", async () => {
+      await setProjectionBaseView("latest_leg");
+    });
+  }
+
+  if (projectionBasePresBtn) {
+    projectionBasePresBtn.addEventListener("click", async () => {
+      await setProjectionBaseView("pres_2024");
+    });
+  }
+
+  if (projectionShiftSlider) {
+    projectionShiftSlider.addEventListener("input", async (e) => {
+      await setProjectionShift(e.target.value);
+    });
+  }
 
   stateSelect.addEventListener("change", async (e) => {
     const key = String(e.target.value || "").trim();
@@ -569,6 +629,7 @@ async function selectStateByMeta(meta, feature, options = {}) {
   state.selectedState = meta;
   setHoveredStateRow(null);
   setHoveredStateKey(null);
+  clearStateHoverOutline();
   refreshTargetJoinKeySet();
   state.availableMapViews = availableMapViewsForState(meta);
   state.mapView = pickMapView(state.availableMapViews, state.mapView);
@@ -619,13 +680,20 @@ function enterNationalView() {
   refreshStateBoundaryStyles();
 
   map.setView(NATIONAL_CENTER, NATIONAL_ZOOM);
+  state.detailsRenderToken += 1;
+  const renderToken = state.detailsRenderToken;
   detailsTitle.textContent = "National Overview";
-  details.innerHTML = nationalOverviewHtml();
-  wireDetailsInteractions();
+  setDetailsLoading("Loading national overview table...");
+  resetSidebarScroll();
+  requestAnimationFrame(() => {
+    if (state.mode !== "national" || renderToken !== state.detailsRenderToken) return;
+    details.innerHTML = nationalOverviewHtml();
+    wireDetailsInteractions();
+    resetSidebarScroll();
+  });
   renderModeUi();
   setStatus("National overview. Select a state to view districts.");
 }
-
 function renderModeUi() {
   const inState = state.mode === "state";
   houseChamberBtn.disabled = !inState;
@@ -633,6 +701,8 @@ function renderModeUi() {
   countyOverlayToggle.disabled = !inState;
   targetDistrictsToggle.disabled = !inState;
   syncTargetModeUi();
+  syncUpIn2026Ui();
+  renderProjectionUi();
   exitStateBtn.hidden = !inState;
   houseChamberBtn.classList.toggle("active-chamber", state.chamber === "house");
   senateChamberBtn.classList.toggle("active-chamber", state.chamber === "senate");
@@ -644,6 +714,175 @@ function setMapViewButtonsDisabled(disabled) {
   const buttons = mapViewButtons.querySelectorAll("button");
   for (const button of buttons) {
     button.disabled = disabled;
+  }
+}
+
+function renderProjectionUi() {
+  const inState = state.mode === "state";
+  const active = inState && !!state.projectionMode;
+  const accent = projectionShiftAccentColor(state.projectionShift);
+
+  document.body.classList.toggle("projection-active", active);
+  if (sidebarEl) {
+    sidebarEl.classList.toggle("projection-active-sidebar", active);
+    sidebarEl.style.setProperty("--projection-accent", accent);
+  }
+  if (detailsTitle) {
+    detailsTitle.classList.toggle("projection-active-title", active);
+  }
+
+  if (projectionControls) {
+    projectionControls.hidden = !inState;
+    projectionControls.style.setProperty("--projection-accent", accent);
+  }
+  if (projectionToggleBtn) {
+    projectionToggleBtn.disabled = !inState;
+    projectionToggleBtn.classList.toggle("active-projection", active);
+  }
+  if (projectionBaseLegBtn) {
+    projectionBaseLegBtn.disabled = !active;
+    projectionBaseLegBtn.classList.toggle("active-projection-base", state.projectionBaseView === "latest_leg");
+  }
+  if (projectionBasePresBtn) {
+    projectionBasePresBtn.disabled = !active;
+    projectionBasePresBtn.classList.toggle("active-projection-base", state.projectionBaseView === "pres_2024");
+  }
+  if (projectionShiftSlider) {
+    projectionShiftSlider.disabled = !active;
+    projectionShiftSlider.value = String(Number(state.projectionShift || 0));
+    projectionShiftSlider.style.setProperty("--projection-accent", accent);
+  }
+  if (projectionShiftValue) {
+    projectionShiftValue.textContent = projectionShiftLabel(state.projectionShift);
+    projectionShiftValue.style.color = accent;
+  }
+  if (upIn2026Toggle) {
+    upIn2026Toggle.checked = active ? true : !!state.upIn2026Mode;
+    upIn2026Toggle.disabled = !inState || active;
+  }
+}
+
+function projectionShiftAccentColor(shift) {
+  const amount = Number(shift || 0);
+  if (Math.abs(amount) < 0.0001) return "#d5dae0";
+  if (amount > 0) return interpolateHex("#cfe2ff", "#257BF8", Math.min(amount, 15) / 15);
+  return interpolateHex("#ffd4dc", "#F82644", Math.min(Math.abs(amount), 15) / 15);
+}
+
+function projectionShiftLabel(shift) {
+  const amount = Number(shift || 0);
+  if (Math.abs(amount) < 0.0001) return "EVEN";
+  if (amount > 0) return `D+${Math.abs(amount).toFixed(0)}`;
+  return `R+${Math.abs(amount).toFixed(0)}`;
+}
+
+function projectionBaseViewKey() {
+  return state.projectionBaseView === "pres_2024" ? "pres_2024" : "latest_leg";
+}
+
+function projectionBaseHeaderLines() {
+  if (projectionBaseViewKey() === "pres_2024") {
+    return { top: "2024", bottom: "Pres" };
+  }
+  return { top: "Latest", bottom: "Leg" };
+}
+
+function projectionBaseDisplayLabel(rec) {
+  if (projectionBaseViewKey() === "pres_2024") return "2024 Pres";
+  return latestLegDisplayLabel(rec);
+}
+
+function recordIsUpIn2026(rec) {
+  return Number(rec?.next_election) === 2026;
+}
+
+function projectionBaseMarginForRecord(rec) {
+  return getMarginForView(rec, projectionBaseViewKey());
+}
+
+function projectedMarginForRecord(rec) {
+  if (!recordIsUpIn2026(rec)) return null;
+  const base = projectionBaseMarginForRecord(rec);
+  if (typeof base !== "number") return null;
+  return base + Number(state.projectionShift || 0);
+}
+
+function projectedSeatCategory(rec, member) {
+  const projected = projectedMarginForRecord(rec);
+  if (typeof projected !== "number" || Math.abs(projected) < 0.0001) {
+    return memberSeatCategory(member);
+  }
+  return projected > 0 ? "dem" : "rep";
+}
+
+async function setProjectionMode(enabled) {
+  const next = !!enabled;
+  if (state.projectionMode === next) return;
+
+  if (next) {
+    state.projectionPreviousUpIn2026Mode = !!state.upIn2026Mode;
+    state.projectionMode = true;
+    state.upIn2026Mode = true;
+  } else {
+    state.projectionMode = false;
+    state.upIn2026Mode = !!state.projectionPreviousUpIn2026Mode;
+  }
+
+  renderModeUi();
+  await refreshProjectionPresentation({ rebuildLabels: true });
+}
+
+async function setProjectionBaseView(view) {
+  const nextView = view === "pres_2024" ? "pres_2024" : "latest_leg";
+  if (state.projectionBaseView === nextView) return;
+  state.projectionBaseView = nextView;
+  renderModeUi();
+  await refreshProjectionPresentation({ rebuildLabels: false });
+}
+
+async function setProjectionShift(value) {
+  const next = Math.max(-5, Math.min(15, Math.round(Number(value) || 0)));
+  if (Number(state.projectionShift || 0) === next) {
+    renderModeUi();
+    return;
+  }
+  state.projectionShift = next;
+  renderModeUi();
+  await refreshProjectionPresentation({ rebuildLabels: false });
+}
+
+function refreshLayerPopupContent(layer) {
+  if (!layer?.__featureRef || !layer.__dataMapRef || !layer.__joinKey) return;
+  const rec = layer.__dataMapRef.get(layer.__joinKey);
+  const html = popupHtml(layer.__featureRef.properties, extractJoinIds(layer.__featureRef.properties), rec);
+  if (typeof layer.setPopupContent === "function") {
+    layer.setPopupContent(html);
+  }
+  const popup = typeof layer.getPopup === "function" ? layer.getPopup() : null;
+  if (popup && typeof popup.setContent === "function") {
+    popup.setContent(html);
+  }
+}
+
+async function refreshProjectionPresentation(options = {}) {
+  const { rebuildLabels = false } = options;
+  if (state.mode !== "state") return;
+
+  if (state.districtLayer) {
+    refreshDistrictLayerForActiveFilters({ rebuildLabels });
+    state.districtLayer.eachLayer((layer) => {
+      refreshLayerPopupContent(layer);
+    });
+  } else {
+    await ensureDistrictShapesLoaded();
+    renderDistrictLayerForSelectedState();
+    return;
+  }
+
+  if (state.selectedDistrictLayer) {
+    refreshLayerPopupContent(state.selectedDistrictLayer);
+  } else {
+    showStateChamberOverview({ resetScroll: false });
   }
 }
 
@@ -674,7 +913,7 @@ function availableMapViewsForState(meta) {
     .filter(Boolean)
     .sort((a, b) => {
       if (a.year !== b.year) return a.year - b.year;
-      return MAP_VIEW_TYPE_PRIORITY[a.type] - MAP_VIEW_TYPE_PRIORITY[b.type];
+      return (MAP_VIEW_TYPE_PRIORITY[a.type] ?? 99) - (MAP_VIEW_TYPE_PRIORITY[b.type] ?? 99);
     })
     .map((item) => item.key);
 }
@@ -706,7 +945,7 @@ function mapViewsInRecord(rec) {
 
   for (const [key, value] of Object.entries(rec)) {
     if (typeof value !== "number") continue;
-    let match = key.match(/^(leg|gov|pres)_(\d{4})_margin$/);
+    let match = key.match(/^(leg|gov|pres|ussen)_(\d{4})_margin$/);
     if (match) {
       found.add(`${match[1]}_${match[2]}`);
       continue;
@@ -721,7 +960,7 @@ function mapViewsInRecord(rec) {
 }
 
 function parseMapViewKey(view) {
-  const match = String(view || "").match(/^(leg|gov|pres)_(\d{4})$/);
+  const match = String(view || "").match(/^(leg|gov|pres|ussen)_(\d{4})$/);
   if (!match) return null;
   return {
     key: `${match[1]}_${match[2]}`,
@@ -737,6 +976,7 @@ function mapViewButtonLabel(view) {
   if (parsed.type === "leg") return `${parsed.year} Leg`;
   if (parsed.type === "gov") return `${parsed.year} Gov`;
   if (parsed.type === "pres") return `${parsed.year} Pres`;
+  if (parsed.type === "ussen") return `${parsed.year} US Sen`;
   return `${parsed.year}`;
 }
 
@@ -787,11 +1027,7 @@ async function setMapView(view) {
 function refreshStateBoundaryStyles() {
   if (state.statesLayer) {
     state.statesLayer.setStyle((feature) => stateBoundaryStyle(feature));
-    if (state.hoveredStateLayer && state.hoveredStateKey) {
-      const feature = state.hoveredStateLayer.__featureRef || state.hoveredStateLayer.feature;
-      state.hoveredStateLayer.setStyle(stateHoverBoundaryStyle(feature));
-      state.hoveredStateLayer.bringToFront();
-    }
+    renderHoveredStateOverlay();
   }
 }
 
@@ -837,6 +1073,10 @@ async function ensureDistrictShapesLoaded() {
     indexDistrictFeaturesByState(chamber, state.geojsonByChamber[chamber]);
   }
 
+  if (chamber === "house" && !state.nhFloterialGeojson) {
+    state.nhFloterialGeojson = await loadUrlZipToGeojson(AUTO_SHAPE_URLS.nh_house_floterial);
+  }
+
   // Preload the other chamber in the background to reduce wait on chamber switch.
   const other = chamber === "house" ? "senate" : "house";
   if (!state.geojsonByChamber[other]) {
@@ -848,7 +1088,6 @@ async function ensureDistrictShapesLoaded() {
     });
   }
 }
-
 async function ensureCountyShapeLoaded() {
   if (state.countyGeojson) return;
   setStatus("Loading county boundaries...");
@@ -902,7 +1141,9 @@ function renderDistrictLayerForSelectedState() {
   clearDistrictLayer();
   const selectedAbbrForChamber = normalizeStateAbbr(state.selectedState?.abbr || "");
   if (state.chamber === "house" && selectedAbbrForChamber === "NE") {
+    state.detailsRenderToken += 1;
     details.innerHTML = "Switch to Senate to view Nebraska's unicameral legislature.";
+    resetSidebarScroll();
     return;
   }
 
@@ -910,19 +1151,24 @@ function renderDistrictLayerForSelectedState() {
 
   const geojson = state.geojsonByChamber[state.chamber];
   if (!geojson) {
+    state.detailsRenderToken += 1;
     details.innerHTML = "District shapefile missing for this chamber.";
+    resetSidebarScroll();
     return;
   }
 
   const dataMap = state.dataByChamber[state.chamber];
+  refreshFilteredDistrictJoinKeySet();
   const selectedFeatures = districtFeaturesForSelectedState(state.chamber);
   if (!selectedFeatures.length) {
     const selectedAbbr = normalizeStateAbbr(state.selectedState?.abbr || "");
+    state.detailsRenderToken += 1;
     if (state.chamber === "house" && selectedAbbr === "NE") {
       details.innerHTML = "Switch to Senate to view Nebraska's unicameral legislature.";
     } else {
       details.innerHTML = "No districts found for selected state/chamber.";
     }
+    resetSidebarScroll();
     return;
   }
   state.currentDistrictFeatures = selectedFeatures;
@@ -938,15 +1184,15 @@ function renderDistrictLayerForSelectedState() {
       onEachFeature: (feature, layer) => {
         const joinInfo = extractJoinIds(feature.properties);
         const rec = dataMap.get(joinInfo.key);
-        const hoverHtml = popupHtml(feature.properties, joinInfo, rec);
         layer.__featureRef = feature;
         layer.__dataMapRef = dataMap;
         layer.__joinKey = joinInfo.key;
+        layer.__isFloterial = false;
         state.districtLayerIndex.set(joinInfo.key, layer);
-        layer.bindPopup(hoverHtml);
+        layer.bindPopup(() => popupHtml(feature.properties, joinInfo, rec));
         layer.on("mouseover", (e) => {
           showDistrictHoverOutline(feature);
-          showDistrictHoverInfo(e.containerPoint, hoverHtml);
+          showDistrictHoverInfo(e.containerPoint, popupHtml(feature.properties, joinInfo, rec));
         });
         layer.on("mousemove", (e) => {
           moveDistrictHoverInfo(e.containerPoint);
@@ -959,14 +1205,71 @@ function renderDistrictLayerForSelectedState() {
           clearDistrictHoverOutline();
           hideDistrictHoverInfo();
           setSelectedDistrict(layer);
-          detailsTitle.textContent = districtTitle(feature.properties, joinInfo);
+          state.detailsRenderToken += 1;
+          detailsTitle.textContent = districtTitle(feature.properties, joinInfo, rec);
           details.innerHTML = detailHtml(feature.properties, joinInfo, rec);
+          resetSidebarScroll();
         });
       },
     }
   ).addTo(map);
+
+  renderNhFloterialLayer(dataMap);
   scheduleDistrictNumberLayerBuild(selectedFeatures);
   showStateChamberOverview();
+}
+function renderNhFloterialLayer(dataMap) {
+  clearNhFloterialLayer();
+  if (state.chamber !== "house") return;
+  const selectedAbbr = normalizeStateAbbr(state.selectedState?.abbr || "");
+  if (selectedAbbr !== "NH") return;
+  if (!state.nhFloterialGeojson?.features?.length) return;
+
+  const joinByCode = new Map();
+  for (const rec of dataMap.values()) {
+    if (normalizeStateFips(rec?.state_fips) !== "33") continue;
+    const code = nhFloterialCodeFromDistrictName(rec?.district_name);
+    if (!code) continue;
+    joinByCode.set(code, makeJoinKey("33", rec.district_id));
+  }
+
+  state.floterialLayer = L.geoJSON(state.nhFloterialGeojson, {
+    pane: "floterialPane",
+    interactive: false,
+    style: (feature) => districtBaseStyle(feature, dataMap),
+    onEachFeature: (feature, layer) => {
+      const code = normalizeNhFloterialCode(readProperty(feature?.properties || {}, "floathse22"));
+      const joinKey = joinByCode.get(code);
+      if (!joinKey) {
+        layer.setStyle({ opacity: 0, fillOpacity: 0, weight: 0 });
+        return;
+      }
+      layer.__featureRef = feature;
+      layer.__dataMapRef = dataMap;
+      layer.__joinKey = joinKey;
+      layer.__isFloterial = true;
+      state.floterialLayerByJoinKey.set(joinKey, layer);
+    },
+  }).addTo(map);
+}
+
+function clearNhFloterialLayer() {
+  if (state.floterialLayer && map.hasLayer(state.floterialLayer)) {
+    map.removeLayer(state.floterialLayer);
+  }
+  state.floterialLayer = null;
+  state.floterialLayerByJoinKey = new Map();
+}
+
+function normalizeNhFloterialCode(value) {
+  return String(value || "").trim().toUpperCase().replace(/\s+/g, "");
+}
+
+function nhFloterialCodeFromDistrictName(name) {
+  const text = String(name || "").trim();
+  const m = text.match(/^State House District\s+([A-Za-z]+)\s+0*([0-9]+)\s*$/i);
+  if (!m) return "";
+  return `${String(m[1]).slice(0, 2).toUpperCase()}${Number(m[2])}`;
 }
 
 function scheduleDistrictNumberLayerBuild(features) {
@@ -978,6 +1281,14 @@ function scheduleDistrictNumberLayerBuild(features) {
   });
 }
 
+function resetSidebarScroll() {
+  const sidebar = details?.closest?.(".sidebar");
+  if (sidebar) sidebar.scrollTop = 0;
+}
+
+function setDetailsLoading(message) {
+  details.innerHTML = `<div class="loading-indicator">${escapeHtml(message || "Loading...")}</div>`;
+}
 function selectedStateHeader() {
   if (!state.selectedState) return "National View";
   return state.selectedState.name || state.selectedState.abbr || state.selectedState.key || "State View";
@@ -993,19 +1304,30 @@ function chamberOverviewHeaderForState(meta, chamber) {
   const stateAbbr = normalizeStateAbbr(meta?.abbr || "");
   const key = `${stateAbbr}|${chamber}`;
   const official = state.chamberNamesByState.get(key);
-  if (official) return official;
+  if (official) {
+    const trimmed = String(official).trim();
+    if (stateAbbr && stateName) {
+      const abbrPattern = new RegExp(`^${stateAbbr}\\b\\s*`, "i");
+      if (abbrPattern.test(trimmed)) {
+        return trimmed.replace(abbrPattern, `${stateName} `).trim();
+      }
+    }
+    return trimmed;
+  }
   return `${stateName} ${capitalize(chamber)}`;
 }
 
-function showStateChamberOverview() {
+function showStateChamberOverview(options = {}) {
+  const { resetScroll = true } = options;
+  state.detailsRenderToken += 1;
   setHoveredTableRow(null);
   detailsTitle.textContent = selectedStateChamberHeader();
   const composition = chamberCompositionStatsForSelectedState();
   details.innerHTML = stateChamberOverviewHtml(composition);
+  if (resetScroll) resetSidebarScroll();
   syncTargetModeUi();
   wireTargetTableInteractions();
 }
-
 function stateChamberOverviewHtml(composition) {
   if (!composition) {
     return "State chamber overview.";
@@ -1014,9 +1336,10 @@ function stateChamberOverviewHtml(composition) {
   const officialName = chamberOverviewHeaderForState(state.selectedState, state.chamber);
   const targets = targetTablesForSelectedState();
   const allDistrictRows = allDistrictRowsForSelectedState();
+  const compositionTitle = state.projectionMode ? "Chamber Composition Projection" : "Chamber Composition";
   return `
     <div class="detail-section">
-      <div class="detail-section-title centered-section-title large-section-title">${escapeHtml(officialName)} Composition</div>
+      <div class="detail-section-title centered-section-title large-section-title">${compositionTitle}</div>
       ${chamberCompositionHtml(composition)}
     </div>
     <div class="detail-section">${targetDistrictsSectionHtml(targets)}</div>
@@ -1038,12 +1361,12 @@ function nationalOverviewHtml() {
           <td class="national-seat-value national-seat-col">${lower.rep}</td>
           <td class="national-seat-value national-seat-col">${lower.dem}</td>
           <td class="national-seat-value national-seat-col">${lower.other}</td>
-          <td class="margin-cell" style="background:${targetMarginCellColor(lowerMargin)}">${escapeHtml(formatSignedRMargin(lowerMargin))}</td>
+          <td class="margin-cell" style="background:${nationalOverviewMarginColor(lowerMargin)}">${escapeHtml(formatSignedRMargin(lowerMargin))}</td>
           <td class="national-gap-cell"></td>
           <td class="national-seat-value national-seat-col">${upper.rep}</td>
           <td class="national-seat-value national-seat-col">${upper.dem}</td>
           <td class="national-seat-value national-seat-col">${upper.other}</td>
-          <td class="margin-cell" style="background:${targetMarginCellColor(upperMargin)}">${escapeHtml(formatSignedRMargin(upperMargin))}</td>
+          <td class="margin-cell" style="background:${nationalOverviewMarginColor(upperMargin)}">${escapeHtml(formatSignedRMargin(upperMargin))}</td>
         </tr>
       `;
     })
@@ -1202,7 +1525,13 @@ function chamberCompositionStatsForSelectedState() {
 
   if (!records.length) return null;
 
-  const counts = {
+  const before = {
+    rep: 0,
+    dem: 0,
+    other: 0,
+    vacant: 0,
+  };
+  const after = {
     rep: 0,
     dem: 0,
     other: 0,
@@ -1211,19 +1540,32 @@ function chamberCompositionStatsForSelectedState() {
 
   for (const rec of records) {
     const members = recordMembers(rec);
+    const seatsUp = state.projectionMode && recordIsUpIn2026(rec)
+      ? Math.max(0, Math.min(candidateSeatCount(rec), members.length || 0))
+      : 0;
+
     if (!members.length) {
-      counts.vacant += 1;
+      before.vacant += 1;
+      after.vacant += 1;
       continue;
     }
-    for (const member of members) {
-      const category = memberSeatCategory(member);
-      counts[category] += 1;
-    }
+
+    members.forEach((member, idx) => {
+      const currentCategory = memberSeatCategory(member);
+      before[currentCategory] += 1;
+      if (state.projectionMode && idx < seatsUp) {
+        after[projectedSeatCategory(rec, member)] += 1;
+      } else {
+        after[currentCategory] += 1;
+      }
+    });
   }
 
   return {
-    ...counts,
-    total: counts.rep + counts.dem + counts.other + counts.vacant,
+    before,
+    after,
+    total: before.rep + before.dem + before.other + before.vacant,
+    projectionMode: !!state.projectionMode,
   };
 }
 
@@ -1237,36 +1579,40 @@ function memberSeatCategory(member) {
 }
 
 function chamberCompositionHtml(composition) {
+  const before = composition?.before || composition || { rep: 0, dem: 0, other: 0, vacant: 0 };
+  const after = composition?.after || before;
+  const projectionMode = !!composition?.projectionMode;
   const rows = compositionDotRows(composition.total);
-  const majority = chamberMajoritySummary(composition);
+  const majority = chamberMajoritySummary({ ...after, total: composition.total });
+  const gainSummary = projectionMode ? projectionGainSummary(before, after) : null;
   return `
     <div class="chamber-composition-scroll">
       <div class="chamber-composition-layout">
         <div class="chamber-dotmap-wrap">
           <div class="chamber-dotmap" style="--dot-rows:${rows}">
-            <div class="dot-group-left">${dotMatrixHtml(composition.rep, "dot-seat dot-rep", rows)}</div>
+            <div class="dot-group-left">${dotMatrixHtml(after.rep, "dot-seat dot-rep", rows)}</div>
             <div class="dot-group-right">
-              <div class="dot-major-row">${dotMatrixHtml(composition.dem, "dot-seat dot-dem", rows)}</div>
+              <div class="dot-major-row">${dotMatrixHtml(after.dem, "dot-seat dot-dem", rows)}</div>
               <div class="dot-minor-row">
-                ${dotMatrixHtml(composition.other, "dot-seat dot-other", Math.max(1, Math.min(rows, composition.other || 1)))}
-                ${dotMatrixHtml(composition.vacant, "dot-seat dot-vacant", Math.max(1, Math.min(rows, composition.vacant || 1)))}
+                ${dotMatrixHtml(after.other, "dot-seat dot-other", Math.max(1, Math.min(rows, after.other || 1)))}
+                ${dotMatrixHtml(after.vacant, "dot-seat dot-vacant", Math.max(1, Math.min(rows, after.vacant || 1)))}
               </div>
             </div>
           </div>
-          ${majoritySummaryHtml(majority)}
+          ${majoritySummaryHtml(majority, gainSummary)}
         </div>
-        <div class="chamber-composition-table">
+        <div class="chamber-composition-table ${projectionMode ? "projection-legend" : ""}">
           <div class="composition-head">
             <span>Party</span>
-            <span>Seats</span>
+            ${projectionMode ? '<span class="composition-head-value">Before</span><span class="composition-head-value">After</span>' : "<span>Seats</span>"}
           </div>
-          ${compositionRowHtml("Republican", composition.rep, "dot-seat dot-rep")}
-          ${compositionRowHtml("Democrat", composition.dem, "dot-seat dot-dem")}
-          ${compositionRowHtml("Independent/Other", composition.other, "dot-seat dot-other")}
-          ${compositionRowHtml("Vacant", composition.vacant, "dot-seat dot-vacant")}
+          ${compositionRowHtml("Republican", before.rep, after.rep, "dot-seat dot-rep", projectionMode)}
+          ${compositionRowHtml("Democrat", before.dem, after.dem, "dot-seat dot-dem", projectionMode)}
+          ${compositionRowHtml("Independent/Other", before.other, after.other, "dot-seat dot-other", projectionMode)}
+          ${compositionRowHtml("Vacant", before.vacant, after.vacant, "dot-seat dot-vacant", projectionMode)}
           <div class="composition-total-row">
             <span>Total Seats</span>
-            <strong>${composition.total}</strong>
+            ${projectionMode ? `<strong class="composition-value-before">${composition.total}</strong><strong>${composition.total}</strong>` : `<strong>${composition.total}</strong>`}
           </div>
         </div>
       </div>
@@ -1277,8 +1623,6 @@ function chamberCompositionHtml(composition) {
 function chamberMajoritySummary(composition) {
   const rep = Number(composition?.rep || 0);
   const dem = Number(composition?.dem || 0);
-  const other = Number(composition?.other || 0);
-  const vacant = Number(composition?.vacant || 0);
   const total = Number(composition?.total || 0);
 
   if (rep === dem && rep > 0 && rep + dem === total) {
@@ -1287,8 +1631,9 @@ function chamberMajoritySummary(composition) {
 
   const largestParty = rep >= dem ? "R" : "D";
   const largestSeats = largestParty === "R" ? rep : dem;
-  const everyoneElsePlusVacant = total - largestSeats;
-  const majoritySeats = largestSeats - everyoneElsePlusVacant;
+  const threshold = Math.floor(total / 2) + 1;
+  const majoritySeats = largestSeats - threshold + 1;
+
   if (majoritySeats > 0) {
     return { type: "majority", party: largestParty, seats: majoritySeats };
   }
@@ -1296,20 +1641,33 @@ function chamberMajoritySummary(composition) {
   return { type: "none" };
 }
 
-function majoritySummaryHtml(majority) {
+function projectionGainSummary(before, after) {
+  const repGain = Number(after?.rep || 0) - Number(before?.rep || 0);
+  const demGain = Number(after?.dem || 0) - Number(before?.dem || 0);
+  if (repGain > 0) return { party: "R", seats: repGain };
+  if (demGain > 0) return { party: "D", seats: demGain };
+  return null;
+}
+
+function majoritySummaryHtml(majority, gainSummary = null) {
+  let firstLine = '<div class="majority-summary">No majority</div>';
   if (majority?.type === "tie") {
-    return '<div class="majority-summary">Tied chamber</div>';
+    firstLine = '<div class="majority-summary">Tied chamber</div>';
+  } else if (majority?.type === "majority" && majority?.party && majority?.seats) {
+    const partyLabel = majority.party === "R" ? "GOP" : "Dem";
+    const partyClass = majority.party === "R" ? "majority-party-r" : "majority-party-d";
+    firstLine = `
+      <div class="majority-summary">
+        <strong>${majority.seats}</strong> seat <strong class="${partyClass}">${partyLabel}</strong> majority
+      </div>
+    `;
   }
-  if (majority?.type !== "majority" || !majority?.party || !majority?.seats) {
-    return '<div class="majority-summary">No majority</div>';
-  }
-  const partyLabel = majority.party === "R" ? "GOP" : "Dem";
-  const partyClass = majority.party === "R" ? "majority-party-r" : "majority-party-d";
-  return `
-    <div class="majority-summary">
-      <strong>${majority.seats}</strong> seat <strong class="${partyClass}">${partyLabel}</strong> majority
-    </div>
-  `;
+
+  if (!gainSummary?.party || !gainSummary?.seats) return firstLine;
+
+  const gainPartyLabel = gainSummary.party === "R" ? "GOP" : "Dem";
+  const gainPartyClass = gainSummary.party === "R" ? "majority-party-r" : "majority-party-d";
+  return `${firstLine}<div class="majority-gain-line"><strong>${gainSummary.seats}</strong> seat gain for <strong class="${gainPartyClass}">${gainPartyLabel}</strong></div>`;
 }
 
 function compositionDotRows(totalSeats) {
@@ -1331,11 +1689,13 @@ function dotMatrixHtml(count, dotClass, rowsOverride = null) {
   `;
 }
 
-function compositionRowHtml(label, value, dotClass) {
+function compositionRowHtml(label, beforeValue, afterValue, dotClass, projectionMode = false) {
   return `
     <div class="composition-row">
       <span class="composition-party"><span class="${dotClass}"></span>${escapeHtml(label)}</span>
-      <span class="composition-value">${Number(value) || 0}</span>
+      ${projectionMode
+        ? `<span class="composition-value composition-value-before">${Number(beforeValue) || 0}</span><span class="composition-value">${Number(afterValue) || 0}</span>`
+        : `<span class="composition-value">${Number(afterValue) || 0}</span>`}
     </div>
   `;
 }
@@ -1361,29 +1721,40 @@ function targetDistrictsSectionHtml(targets) {
   `;
 }
 function districtElectionColumns(rows = []) {
+  if (state.projectionMode) {
+    const baseHead = projectionBaseHeaderLines();
+    return [
+      { type: "margin", view: "projection_base", labelTop: baseHead.top, labelBottom: baseHead.bottom },
+      { type: "margin", view: "projection_2026", labelTop: "Proj", labelBottom: "2026" },
+    ];
+  }
+
   const include = (view) => rows.some((row) => typeof row?.marginsByView?.[view] === "number");
+  const includeGov2022 = include("gov_2022");
+  const includeUsSen2022 = include("ussen_2022");
 
   const groups = [
     {
       key: "g2025",
-      columns: include("leg_2025") ? [{ view: "leg_2025", year: 2025, type: "Leg" }] : [],
+      columns: include("leg_2025") ? [{ view: "leg_2025", year: 2025, type: "Leg", labelTop: "2025", labelBottom: "Leg" }] : [],
     },
     {
       key: "g2024",
       columns: [
-        ...(include("leg_2024") ? [{ view: "leg_2024", year: 2024, type: "Leg" }] : []),
-        ...(include("pres_2024") ? [{ view: "pres_2024", year: 2024, type: "Pres" }] : []),
+        ...(include("leg_2024") ? [{ view: "leg_2024", year: 2024, type: "Leg", labelTop: "2024", labelBottom: "Leg" }] : []),
+        ...(include("pres_2024") ? [{ view: "pres_2024", year: 2024, type: "Pres", labelTop: "2024", labelBottom: "Pres" }] : []),
       ],
     },
     {
       key: "g2023",
-      columns: include("leg_2023") ? [{ view: "leg_2023", year: 2023, type: "Leg" }] : [],
+      columns: include("leg_2023") ? [{ view: "leg_2023", year: 2023, type: "Leg", labelTop: "2023", labelBottom: "Leg" }] : [],
     },
     {
       key: "g2022",
       columns: [
-        ...(include("leg_2022") ? [{ view: "leg_2022", year: 2022, type: "Leg" }] : []),
-        ...(include("gov_2022") ? [{ view: "gov_2022", year: 2022, type: "Gov" }] : []),
+        ...(include("leg_2022") ? [{ view: "leg_2022", year: 2022, type: "Leg", labelTop: "2022", labelBottom: "Leg" }] : []),
+        ...(includeGov2022 ? [{ view: "gov_2022", year: 2022, type: "Gov", labelTop: "2022", labelBottom: "Gov" }] : []),
+        ...(!includeGov2022 && includeUsSen2022 ? [{ view: "ussen_2022", year: 2022, type: "US Sen", labelTop: "2022", labelBottom: "US Sen" }] : []),
       ],
     },
   ].filter((group) => group.columns.length);
@@ -1420,7 +1791,9 @@ function targetDistrictTableHtml(rowsHtml, rows = [], showDistrictNameCol = fals
   const headCols = electionCols
     .map((col) => {
       if (col.type === "gap") return '<th class="target-gap-col"></th>';
-      return `<th class="target-col-margin"><span class="twoline-head">${col.year}<br/>${col.type}</span></th>`;
+      const top = col.labelTop ?? col.year ?? "";
+      const bottom = col.labelBottom ?? col.type ?? "";
+      return `<th class="target-col-margin"><span class="twoline-head">${escapeHtml(String(top))}<br/>${escapeHtml(String(bottom))}</span></th>`;
     })
     .join("");
   const districtNameHead = showDistrictNameCol ? '<th class="target-col-district-name">District</th>' : "";
@@ -1444,6 +1817,13 @@ function targetDistrictTableHtml(rowsHtml, rows = [], showDistrictNameCol = fals
     </table>
   `;
 }
+function districtColumnMarginValue(row, col) {
+  if (!row || !col || col.type === "gap") return null;
+  if (col.view === "projection_base") return projectionBaseMarginForRecord(row.rec);
+  if (col.view === "projection_2026") return projectedMarginForRecord(row.rec);
+  return row?.marginsByView?.[col.view];
+}
+
 function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row]), showDistrictNameCol = false) {
   const incClass = row.incParty === "R" ? "inc-r" : row.incParty === "D" ? "inc-d" : "inc-u";
   const districtNameCell = showDistrictNameCol
@@ -1452,17 +1832,21 @@ function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row]
   const marginCells = electionCols
     .map((col) => {
       if (col.type === "gap") return '<td class="target-gap-cell"></td>';
-      const margin = row?.marginsByView?.[col.view];
-      return `<td class="margin-cell" style="background:${targetMarginCellColor(margin)}">${escapeHtml(formatSignedRMargin(margin))}</td>`;
+      const margin = districtColumnMarginValue(row, col);
+      const isNa = typeof margin !== "number";
+      const cellClass = isNa ? "margin-cell margin-cell-na" : "margin-cell";
+      return `<td class="${cellClass}" style="background:${targetMarginCellColor(margin)}">${escapeHtml(formatSignedRMargin(margin))}</td>`;
     })
     .join("");
+  const candidateCells = recordIsUpIn2026(row.rec)
+    ? `<td class="candidate-cell">${candidateCellHtml(row.rec, "R", { short: false })}</td><td class="candidate-cell">${candidateCellHtml(row.rec, "D", { short: false })}</td>`
+    : '<td class="candidate-cell candidate-cell-unavailable" colspan="2">Not up in 2026</td>';
   return `
     <tr class="target-row district-select-row ${rowNeedsExpandedCandidateCells(row.rec) ? "target-row-multi" : ""}" data-join-key="${escapeHtml(row.joinKey)}">
       <td class="target-district-cell">${escapeHtml(row.districtLabel)}</td>
       ${districtNameCell}
       <td class="inc-cell ${incClass}"><strong>${escapeHtml(row.incParty || "?")}</strong></td>
-      <td class="candidate-cell">${candidateCellHtml(row.rec, "R", { short: false })}</td>
-      <td class="candidate-cell">${candidateCellHtml(row.rec, "D", { short: false })}</td>
+      ${candidateCells}
       ${marginCells}
     </tr>
   `;
@@ -1502,6 +1886,7 @@ function targetDistrictRowsForSelectedState() {
       leg_2023: getMarginForView(rec, "leg_2023"),
       leg_2022: getMarginForView(rec, "leg_2022"),
       gov_2022: getMarginForView(rec, "gov_2022"),
+      ussen_2022: getMarginForView(rec, "ussen_2022"),
     };
     rows.push({
       joinKey: key,
@@ -1533,28 +1918,58 @@ function allDistrictRowsForSelectedState() {
   const rows = [];
   const seen = new Set();
 
-  for (const feature of state.currentDistrictFeatures || []) {
-    const joinInfo = extractJoinIds(feature.properties);
-    if (!joinInfo.key || seen.has(joinInfo.key)) continue;
-    seen.add(joinInfo.key);
-    const rec = dataMap.get(joinInfo.key);
-    if (!rec) continue;
-    const incParty = String(rec.incumbent?.party || "").trim().toUpperCase() || "O";
-    rows.push({
-      joinKey: joinInfo.key,
-      districtLabel: displayDistrictId(joinInfo.rawDistrict, joinInfo.districtId),
-      districtNameDisplay: districtNameDisplayForRecord(rec),
-      incParty: incParty === "R" || incParty === "D" ? incParty : "O",
-      rec,
-      marginsByView: {
-        leg_2025: getMarginForView(rec, "leg_2025"),
-        leg_2024: getMarginForView(rec, "leg_2024"),
-        pres_2024: getMarginForView(rec, "pres_2024"),
-        leg_2023: getMarginForView(rec, "leg_2023"),
-        leg_2022: getMarginForView(rec, "leg_2022"),
-        gov_2022: getMarginForView(rec, "gov_2022"),
-      },
-    });
+  const selectedFips = normalizeStateFips(state.selectedState.fips);
+  const isNhHouse = state.chamber === "house" && normalizeStateAbbr(state.selectedState?.abbr || "") === "NH";
+
+  if (isNhHouse) {
+    for (const rec of dataMap.values()) {
+      if (normalizeStateFips(rec?.state_fips) !== selectedFips) continue;
+      const joinKey = makeJoinKey(selectedFips, rec.district_id);
+      if (!joinKey || seen.has(joinKey)) continue;
+      seen.add(joinKey);
+      const incParty = String(rec.incumbent?.party || "").trim().toUpperCase() || "O";
+      rows.push({
+        joinKey,
+        districtLabel: displayDistrictId(rec.district_id, rec.district_id),
+        districtNameDisplay: districtNameDisplayForRecord(rec),
+        incParty: incParty === "R" || incParty === "D" ? incParty : "O",
+        rec,
+        marginsByView: {
+          leg_2025: getMarginForView(rec, "leg_2025"),
+          leg_2024: getMarginForView(rec, "leg_2024"),
+          pres_2024: getMarginForView(rec, "pres_2024"),
+          leg_2023: getMarginForView(rec, "leg_2023"),
+          leg_2022: getMarginForView(rec, "leg_2022"),
+          gov_2022: getMarginForView(rec, "gov_2022"),
+          ussen_2022: getMarginForView(rec, "ussen_2022"),
+        },
+      });
+    }
+  } else {
+    for (const feature of state.currentDistrictFeatures || []) {
+      const joinInfo = extractJoinIds(feature.properties);
+      if (!joinInfo.key || seen.has(joinInfo.key)) continue;
+      seen.add(joinInfo.key);
+      const rec = dataMap.get(joinInfo.key);
+      if (!rec) continue;
+      const incParty = String(rec.incumbent?.party || "").trim().toUpperCase() || "O";
+      rows.push({
+        joinKey: joinInfo.key,
+        districtLabel: displayDistrictId(joinInfo.rawDistrict, joinInfo.districtId),
+        districtNameDisplay: districtNameDisplayForRecord(rec),
+        incParty: incParty === "R" || incParty === "D" ? incParty : "O",
+        rec,
+        marginsByView: {
+          leg_2025: getMarginForView(rec, "leg_2025"),
+          leg_2024: getMarginForView(rec, "leg_2024"),
+          pres_2024: getMarginForView(rec, "pres_2024"),
+          leg_2023: getMarginForView(rec, "leg_2023"),
+          leg_2022: getMarginForView(rec, "leg_2022"),
+          gov_2022: getMarginForView(rec, "gov_2022"),
+          ussen_2022: getMarginForView(rec, "ussen_2022"),
+        },
+      });
+    }
   }
 
   rows.sort((a, b) => districtLabelSortValue(a.districtLabel) - districtLabelSortValue(b.districtLabel));
@@ -1698,9 +2113,22 @@ function seatOrderedCandidateLines(rec) {
   return lines;
 }
 
+function isNoCandidateLine(line) {
+  return /^((Seat\s+\d+:\s+)?)?No candidate(\s*\([RD]\))?$/i.test(String(line || "").trim());
+}
+
+function mutedCandidateLineHtml(line) {
+  return `<div class="candidate-line candidate-line-muted">${escapeHtml(line)}</div>`;
+}
+
 function candidateCellHtml(rec, party, options = {}) {
   const lines = candidateDisplayLines(rec, party, options);
-  return lines.map((line) => `<div class="candidate-line">${escapeHtml(line)}</div>`).join("");
+  return lines
+    .map((line) => {
+      if (isNoCandidateLine(line)) return mutedCandidateLineHtml(line);
+      return `<div class="candidate-line">${escapeHtml(line)}</div>`;
+    })
+    .join("");
 }
 
 function rowNeedsExpandedCandidateCells(rec) {
@@ -1735,19 +2163,31 @@ function shortPersonName(name) {
   return `${parts[0].charAt(0).toUpperCase()}. ${parts[parts.length - 1]}`;
 }
 
+function clampDisplayMarginValue(margin) {
+  if (typeof margin !== "number") return null;
+  return Math.max(-100, Math.min(100, margin));
+}
+
 function formatSignedRMargin(demMargin) {
-  if (typeof demMargin !== "number") return "N/A";
-  const rMargin = -demMargin;
+  const clampedMargin = clampDisplayMarginValue(demMargin);
+  if (typeof clampedMargin !== "number") return "N/A";
+  const rMargin = -clampedMargin;
   const sign = rMargin >= 0 ? "+" : "-";
   return `${sign}${Math.abs(rMargin).toFixed(1)}%`;
 }
 
 function targetMarginCellColor(demMargin) {
-  if (typeof demMargin !== "number") return "#d5dae0";
+  if (typeof demMargin !== "number") return "#1b232d";
   return marginColor(demMargin);
 }
 
 function targetSortValue(row) {
+  if (state.projectionMode) {
+    const base = projectionBaseMarginForRecord(row?.rec);
+    if (typeof base === "number") return Math.abs(base);
+    return Number.POSITIVE_INFINITY;
+  }
+
   const views = ["leg_2025", "leg_2024", "leg_2023", "leg_2022"];
   for (const view of views) {
     const margin = row?.marginsByView?.[view];
@@ -1864,21 +2304,27 @@ function setHoveredTableRow(row) {
 function setHoveredStateKey(key) {
   const nextKey = key ? String(key) : null;
   if (state.hoveredStateKey === nextKey) return;
-
-  if (state.hoveredStateLayer) {
-    const prevFeature = state.hoveredStateLayer.__featureRef || state.hoveredStateLayer.feature;
-    state.hoveredStateLayer.setStyle(stateBoundaryStyle(prevFeature));
-  }
-  state.hoveredStateLayer = null;
   state.hoveredStateKey = nextKey;
+  renderHoveredStateOverlay();
+}
 
-  if (!nextKey) return;
-  const nextLayer = state.stateLayerByKey.get(nextKey);
+function renderHoveredStateOverlay() {
+  clearStateHoverOutline();
+  if (!state.hoveredStateKey) return;
+  const nextLayer = state.stateLayerByKey.get(state.hoveredStateKey);
   if (!nextLayer) return;
   const feature = nextLayer.__featureRef || nextLayer.feature;
-  nextLayer.setStyle(stateHoverBoundaryStyle(feature));
-  nextLayer.bringToFront();
-  state.hoveredStateLayer = nextLayer;
+  state.hoveredStateOverlayLayer = L.geoJSON(feature, {
+    pane: "stateHoverPane",
+    interactive: false,
+    style: stateHoverBoundaryStyle(feature),
+  }).addTo(map);
+}
+
+function clearStateHoverOutline() {
+  if (!state.hoveredStateOverlayLayer) return;
+  if (map.hasLayer(state.hoveredStateOverlayLayer)) map.removeLayer(state.hoveredStateOverlayLayer);
+  state.hoveredStateOverlayLayer = null;
 }
 
 function setHoveredStateRow(row) {
@@ -1897,24 +2343,36 @@ function setHoveredStateRow(row) {
 
 function districtLayerForJoinKey(joinKey) {
   if (!joinKey || !state.districtLayerIndex) return null;
-  return state.districtLayerIndex.get(joinKey) || null;
+  if (state.districtLayerIndex.has(joinKey)) return state.districtLayerIndex.get(joinKey) || null;
+  if (state.floterialLayerByJoinKey?.has(joinKey)) return state.floterialLayerByJoinKey.get(joinKey) || null;
+  return null;
 }
 
 function selectDistrictFromTargetRow(joinKey) {
   const layer = districtLayerForJoinKey(joinKey);
   if (!layer?.__featureRef || !layer.__dataMapRef) return;
   clearDistrictHoverOutline();
+  clearSelectedDistrictOutline();
   hideDistrictHoverInfo();
   setSelectedDistrict(layer);
   const feature = layer.__featureRef;
   const joinInfo = extractJoinIds(feature.properties);
   const rec = layer.__dataMapRef.get(joinInfo.key);
-  detailsTitle.textContent = districtTitle(feature.properties, joinInfo);
+  state.detailsRenderToken += 1;
+  detailsTitle.textContent = districtTitle(feature.properties, joinInfo, rec);
   details.innerHTML = detailHtml(feature.properties, joinInfo, rec);
+  resetSidebarScroll();
 }
-
 function targetJoinKeySetForSelectedState() {
   return state.targetJoinKeySet || new Set();
+}
+
+function upIn2026JoinKeySetForSelectedState() {
+  return state.upIn2026JoinKeySet || new Set();
+}
+
+function filteredDistrictJoinKeySetForSelectedState() {
+  return state.filteredDistrictJoinKeySet || null;
 }
 
 function refreshTargetJoinKeySet() {
@@ -1939,12 +2397,55 @@ function refreshTargetJoinKeySet() {
   state.targetJoinKeySet = set;
 }
 
+function refreshUpIn2026JoinKeySet() {
+  const set = new Set();
+  if (!state.selectedState) {
+    state.upIn2026JoinKeySet = set;
+    return;
+  }
+  const stateFips = normalizeStateFips(state.selectedState.fips);
+  if (!stateFips) {
+    state.upIn2026JoinKeySet = set;
+    return;
+  }
+
+  const dataMap = state.dataByChamber[state.chamber];
+  for (const [joinKey, rec] of dataMap.entries()) {
+    if (!String(joinKey || "").startsWith(`${stateFips}|`)) continue;
+    if (Number(rec?.next_election) !== 2026) continue;
+    set.add(joinKey);
+  }
+  state.upIn2026JoinKeySet = set;
+}
+
+function refreshFilteredDistrictJoinKeySet() {
+  refreshTargetJoinKeySet();
+  refreshUpIn2026JoinKeySet();
+
+  const activeSets = [];
+  if (state.targetDistrictsMode) activeSets.push(targetJoinKeySetForSelectedState());
+  if (state.upIn2026Mode || state.projectionMode) activeSets.push(upIn2026JoinKeySetForSelectedState());
+
+  if (!activeSets.length) {
+    state.filteredDistrictJoinKeySet = null;
+    return;
+  }
+
+  const filtered = new Set(activeSets[0]);
+  for (const currentSet of activeSets.slice(1)) {
+    for (const key of [...filtered]) {
+      if (!currentSet.has(key)) filtered.delete(key);
+    }
+  }
+  state.filteredDistrictJoinKeySet = filtered;
+}
+
 async function setTargetDistrictsMode(enabled) {
   state.targetDistrictsMode = !!enabled;
   syncTargetModeUi();
   if (state.mode !== "state") return;
   if (state.districtLayer) {
-    refreshDistrictLayerForTargetMode();
+    refreshDistrictLayerForActiveFilters();
   } else {
     await ensureDistrictShapesLoaded();
     renderDistrictLayerForSelectedState();
@@ -1960,9 +2461,33 @@ function syncTargetModeUi() {
   }
 }
 
-function refreshDistrictLayerForTargetMode() {
+async function setUpIn2026Mode(enabled) {
+  if (state.projectionMode) {
+    state.upIn2026Mode = true;
+    syncUpIn2026Ui();
+    renderProjectionUi();
+    return;
+  }
+
+  state.upIn2026Mode = !!enabled;
+  syncUpIn2026Ui();
+  if (state.mode !== "state") return;
+  if (state.districtLayer) {
+    refreshDistrictLayerForActiveFilters();
+  } else {
+    await ensureDistrictShapesLoaded();
+    renderDistrictLayerForSelectedState();
+  }
+}
+
+function syncUpIn2026Ui() {
+  if (upIn2026Toggle) upIn2026Toggle.checked = !!state.upIn2026Mode;
+}
+
+function refreshDistrictLayerForActiveFilters(options = {}) {
+  const { rebuildLabels = true } = options;
   if (!state.districtLayer) return;
-  refreshTargetJoinKeySet();
+  refreshFilteredDistrictJoinKeySet();
   state.districtLayer.eachLayer((layer) => {
     if (state.selectedDistrictLayer && state.selectedDistrictLayer === layer) {
       layer.setStyle(districtSelectedStyle(layer.__featureRef, layer.__dataMapRef));
@@ -1970,7 +2495,9 @@ function refreshDistrictLayerForTargetMode() {
     }
     resetDistrictStyle(layer);
   });
-  scheduleDistrictNumberLayerBuild(state.currentDistrictFeatures || []);
+  if (rebuildLabels) {
+    scheduleDistrictNumberLayerBuild(state.currentDistrictFeatures || []);
+  }
 }
 
 function refreshDistrictLayerForMapView() {
@@ -1996,20 +2523,23 @@ function clearDistrictLayer() {
   state.hoveredTableRowEl = null;
   setHoveredStateRow(null);
   setHoveredStateKey(null);
+  clearStateHoverOutline();
   if (state.districtLayer) {
     map.removeLayer(state.districtLayer);
     state.districtLayer = null;
   }
+  clearNhFloterialLayer();
   clearDistrictNumberLayer();
   state.selectedDistrictLayer = null;
   hideChamberOverviewButton();
   clearDistrictHoverOutline();
+  clearSelectedDistrictOutline();
   hideDistrictHoverInfo();
 }
 
 function buildDistrictNumberLayer(features) {
   clearDistrictNumberLayer();
-  const targetKeySet = state.targetDistrictsMode ? targetJoinKeySetForSelectedState() : null;
+  const targetKeySet = filteredDistrictJoinKeySetForSelectedState();
   const group = L.layerGroup();
   for (const feature of features || []) {
     const joinInfo = extractJoinIds(feature.properties);
@@ -2389,10 +2919,20 @@ function pointInRing(pt, ring) {
 }
 
 function districtBaseStyle(feature, dataMap) {
-  if (state.targetDistrictsMode) {
+  if (isNhFloterialFeature(feature)) {
+    return {
+      weight: 2.8,
+      color: "#0d1218",
+      opacity: 0.98,
+      fillOpacity: 0,
+      fill: false,
+    };
+  }
+
+  const filteredKeySet = filteredDistrictJoinKeySetForSelectedState();
+  if (filteredKeySet) {
     const joinInfo = extractJoinIds(feature?.properties || {});
-    const targetKeySet = targetJoinKeySetForSelectedState();
-    if (!targetKeySet.has(joinInfo.key)) {
+    if (!filteredKeySet.has(joinInfo.key)) {
       return {
         weight: 1.2,
         color: "#2f3c4b",
@@ -2410,6 +2950,10 @@ function districtBaseStyle(feature, dataMap) {
   };
 }
 
+function isNhFloterialFeature(feature) {
+  const code = normalizeNhFloterialCode(readProperty(feature?.properties || {}, "floathse22"));
+  return !!code;
+}
 function districtHoverStyle(feature, dataMap) {
   return {
     ...districtBaseStyle(feature, dataMap),
@@ -2437,6 +2981,7 @@ function setSelectedDistrict(layer) {
   const dataMap = layer.__dataMapRef;
   layer.setStyle(districtSelectedStyle(feature, dataMap));
   layer.bringToFront();
+  showSelectedDistrictOutline(feature);
   showChamberOverviewButton();
 }
 
@@ -2449,10 +2994,34 @@ function resetDistrictStyle(layer) {
 }
 
 function clearSelectedDistrict() {
-  if (!state.selectedDistrictLayer) return;
-  resetDistrictStyle(state.selectedDistrictLayer);
-  state.selectedDistrictLayer = null;
+  if (state.selectedDistrictLayer) {
+    resetDistrictStyle(state.selectedDistrictLayer);
+    state.selectedDistrictLayer = null;
+  }
+  clearSelectedDistrictOutline();
   hideChamberOverviewButton();
+}
+
+function showSelectedDistrictOutline(feature) {
+  clearSelectedDistrictOutline();
+  if (!feature) return;
+
+  state.selectedDistrictOutlineLayer = L.geoJSON(feature, {
+    pane: "districtHoverPane",
+    interactive: false,
+    style: {
+      color: "#ffffff",
+      weight: 4.6,
+      opacity: 1,
+      fillOpacity: 0,
+    },
+  }).addTo(map);
+}
+
+function clearSelectedDistrictOutline() {
+  if (!state.selectedDistrictOutlineLayer) return;
+  if (map.hasLayer(state.selectedDistrictOutlineLayer)) map.removeLayer(state.selectedDistrictOutlineLayer);
+  state.selectedDistrictOutlineLayer = null;
 }
 
 function showDistrictHoverOutline(feature) {
@@ -3018,27 +3587,44 @@ function normalizeDistrictId(value) {
   return raw.replace(/\s+/g, "");
 }
 
+function popupDistrictTitle(properties, joinInfo) {
+  const abbr = String(readProperty(properties, "STUSPS") || readProperty(properties, "STATE_ABBR") || state.selectedState?.abbr || "US").trim().toUpperCase();
+  const district = displayDistrictId(joinInfo.rawDistrict, joinInfo.districtId);
+  const chamberCode = state.chamber === "house" ? "HD" : "SD";
+  return `${abbr} ${chamberCode}-${district}`;
+}
 function popupHtml(properties, joinInfo, rec) {
-  const title = districtTitle(properties, joinInfo);
+  const title = popupDistrictTitle(properties, joinInfo);
   if (!rec) {
     return `<strong>${escapeHtml(title)}</strong><br/>No joined data found.`;
   }
 
-  const latestMargin = getMarginForView(rec, "latest_leg");
-  const latestText = formatMarginHtml(latestMargin);
-  const latestLegLabel = latestLegDisplayLabel(rec);
-  const pres2024Text = formatMarginHtml(getMarginForView(rec, "pres_2024"));
-  const seatOrderedCandidates = seatOrderedCandidateLines(rec);
-  const fallbackRep = candidateDisplayLines(rec, "R", { includeParty: true, includeSeatLabel: true });
-  const fallbackDem = candidateDisplayLines(rec, "D", { includeParty: true, includeSeatLabel: true });
-  const candidateLines = (seatOrderedCandidates.length ? seatOrderedCandidates : [...fallbackRep, ...fallbackDem]).map((line) =>
-    line ? `&nbsp;&nbsp;${escapeHtml(line)}` : ""
-  );
+  const candidateLines = !recordIsUpIn2026(rec)
+    ? ['<div class="popup-muted-line" style="text-align:center;">Not up in 2026</div>']
+    : (() => {
+        const seatOrderedCandidates = seatOrderedCandidateLines(rec);
+        const fallbackRep = candidateDisplayLines(rec, "R", { includeParty: true, includeSeatLabel: true });
+        const fallbackDem = candidateDisplayLines(rec, "D", { includeParty: true, includeSeatLabel: true });
+        return (seatOrderedCandidates.length ? seatOrderedCandidates : [...fallbackRep, ...fallbackDem]).map((line) => {
+          if (!line) return "";
+          if (isNoCandidateLine(line)) return `&nbsp;&nbsp;<span class="muted-inline">${escapeHtml(line)}</span>`;
+          return `&nbsp;&nbsp;${escapeHtml(line)}`;
+        });
+      })();
+
+  const summaryLines = state.projectionMode
+    ? [
+        `&nbsp;&nbsp;${projectionBaseDisplayLabel(rec)}: ${formatMarginHtml(projectionBaseMarginForRecord(rec))}`,
+        `&nbsp;&nbsp;Proj 2026: ${formatMarginHtml(projectedMarginForRecord(rec))}`,
+      ]
+    : [
+        `&nbsp;&nbsp;${latestLegDisplayLabel(rec)}: ${formatMarginHtml(getMarginForView(rec, "latest_leg"))}`,
+        `&nbsp;&nbsp;2024 Pres: ${formatMarginHtml(getMarginForView(rec, "pres_2024"))}`,
+      ];
 
   return [
     `<strong>${escapeHtml(title)}</strong>`,
-    `&nbsp;&nbsp;${latestLegLabel}: ${latestText}`,
-    `&nbsp;&nbsp;2024 Pres: ${pres2024Text}`,
+    ...summaryLines,
     "",
     "2026 Candidates",
     ...candidateLines,
@@ -3109,7 +3695,7 @@ function detailHtml(properties, joinInfo, rec) {
 
   return `
     ${incumbentRowsHtml}
-    <div class="detail-subtitle candidates-title">2026 Candidates</div>
+    <div class="detail-section-title centered-section-title large-section-title candidates-title">2026 Candidates</div>
     ${candidateRowsHtml}
     <div class="detail-break"></div>
 
@@ -3127,12 +3713,18 @@ function detailHtml(properties, joinInfo, rec) {
   `;
 }
 
-function districtTitle(properties, joinInfo) {
-  const abbr = String(readProperty(properties, "STUSPS") || readProperty(properties, "STATE_ABBR") || joinInfo.stateFips || "US").trim().toUpperCase();
-  const district = displayDistrictId(joinInfo.rawDistrict, joinInfo.districtId);
-  return `${abbr} ${capitalize(state.chamber)} District ${district}`;
-}
+function districtTitle(properties, joinInfo, rec = null) {
+  const stateName = state.selectedState?.name || String(readProperty(properties, "STATE_NAME") || "").trim();
+  const stateAbbr = normalizeStateAbbr(state.selectedState?.abbr || readProperty(properties, "STUSPS") || readProperty(properties, "STATE_ABBR") || "");
+  const chamberLabel = chamberOverviewHeaderForState({ name: stateName, abbr: stateAbbr }, state.chamber);
 
+  let district = displayDistrictId(joinInfo.rawDistrict, joinInfo.districtId);
+  if (state.chamber === "house" && (stateAbbr === "NH" || stateAbbr === "MA")) {
+    const fullName = districtNameDisplayForRecord(rec || {});
+    if (fullName) district = fullName;
+  }
+  return `${chamberLabel} District ${district}`;
+}
 function displayDistrictId(rawDistrict, fallbackDistrictId) {
   const raw = String(rawDistrict || fallbackDistrictId || "").trim().toUpperCase();
   if (!raw) return "";
@@ -3151,34 +3743,62 @@ function incumbentRowsForDetail(rec) {
     return `<div class="detail-meta">Incumbent: Vacant</div>`;
   }
   return members
-    .map((member) => {
-      const label = member.seat_label ? `${member.seat_label} Incumbent` : "Incumbent";
-      const text = incumbentDisplayForMember(member);
-      const muted = !hasIncumbentForMember(member) ? " detail-meta-muted" : "";
-      return `<div class="detail-meta${muted}">${escapeHtml(label)}: ${escapeHtml(text)}</div>`;
+    .map((member, idx) => {
+      const fallbackSeat = members.length > 1 ? `Seat ${idx + 1}` : "";
+      const labelBase = member.seat_label || fallbackSeat;
+      const label = labelBase ? `${labelBase} Incumbent` : "Incumbent";
+      if (!hasIncumbentForMember(member)) {
+        return `<div class="detail-meta detail-meta-muted">${escapeHtml(label)}: Vacant</div>`;
+      }
+      const name = String(member?.incumbent?.name || "").trim();
+      const party = String(member?.incumbent?.party || "").trim().toUpperCase();
+      const partyHtml = party === "R"
+        ? '(<span class="party-letter-r">R</span>)'
+        : party === "D"
+          ? '(<span class="party-letter-d">D</span>)'
+          : "";
+      return `<div class="detail-meta">${escapeHtml(label)}: ${escapeHtml(name)} ${partyHtml}</div>`;
     })
     .join("");
 }
 
 function candidateRowsForDetail(rec) {
-  const seatOrdered = seatOrderedCandidateLines(rec);
-  if (seatOrdered.length) {
-    return seatOrdered
-      .map((line) =>
-        line
-          ? `<div class="detail-row detail-indent candidates-row">${escapeHtml(line)}</div>`
-          : '<div class="detail-row detail-indent candidates-separator"></div>'
-      )
-      .join("");
+  if (!recordIsUpIn2026(rec)) {
+    return '<div class="candidate-party-cell candidate-party-unavailable">Not up in 2026</div>';
   }
 
-  const repRows = candidateDisplayLines(rec, "R", { includeParty: true, includeSeatLabel: true });
-  const demRows = candidateDisplayLines(rec, "D", { includeParty: true, includeSeatLabel: true });
-  return [...repRows, ...demRows]
-    .map((line) => `<div class="detail-row detail-indent candidates-row">${escapeHtml(line)}</div>`)
-    .join("");
-}
+  const members = membersForCandidateDisplay(rec);
+  if (!members.length) {
+    return '<div class="candidate-party-cell candidate-party-unavailable">No candidate</div>';
+  }
 
+  const showSeatColumn = members.length > 1 || members.some((m) => !!m?.seat_label);
+  const gridClass = showSeatColumn ? "candidate-grid with-seat" : "candidate-grid";
+  const headerSeat = showSeatColumn ? '<div class="candidate-grid-head candidate-grid-seat-head">Seat</div>' : "";
+
+  const rows = members
+    .map((member, idx) => {
+      const seatLabel = member.seat_label || `Seat ${idx + 1}`;
+      const rep = normalizeCandidateName(member?.candidates?.rep);
+      const dem = normalizeCandidateName(member?.candidates?.dem);
+      const repInc = memberIsIncumbentNominee(member, "R") && hasNamedCandidate(rep) ? "*" : "";
+      const demInc = memberIsIncumbentNominee(member, "D") && hasNamedCandidate(dem) ? "*" : "";
+      const seatCell = showSeatColumn ? `<div class="candidate-seat-label">${escapeHtml(seatLabel)}</div>` : "";
+      const repClass = hasNamedCandidate(rep) ? "candidate-party-cell candidate-party-r" : "candidate-party-cell candidate-party-r candidate-party-muted";
+      const demClass = hasNamedCandidate(dem) ? "candidate-party-cell candidate-party-d" : "candidate-party-cell candidate-party-d candidate-party-muted";
+      return `${seatCell}<div class="${repClass}">${escapeHtml(rep + repInc)}</div><div class="${demClass}">${escapeHtml(dem + demInc)}</div>`;
+    })
+    .join("");
+
+  return `
+    <div class="${gridClass}">
+      ${headerSeat}
+      <div class="candidate-grid-head candidate-grid-head-r">Republican</div>
+      <div class="candidate-grid-head candidate-grid-head-d">Democrat</div>
+      ${rows}
+    </div>
+  `;
+}
 function incumbentDisplayForMember(member) {
   if (!hasIncumbentForMember(member)) return "Vacant";
   const name = String(member?.incumbent?.name || "").trim();
@@ -3226,9 +3846,11 @@ function turnoutByYear(rec) {
   }
 
   const gov22Total = Number(rec.top_ticket_totals?.gov_2022 || 0);
-  if (totalRegistered > 0 && gov22Total > 0) {
-    const turnout = clampPct((gov22Total / totalRegistered) * 100);
-    byYear.set(2022, turnoutChartBlock("2022 Midterm Turnout", turnout, gov22Total, totalRegistered));
+  const sen22Total = Number(rec.top_ticket_totals?.ussen_2022 || 0);
+  const midterm22Total = Math.max(gov22Total, sen22Total);
+  if (totalRegistered > 0 && midterm22Total > 0) {
+    const turnout = clampPct((midterm22Total / totalRegistered) * 100);
+    byYear.set(2022, turnoutChartBlock("2022 Midterm Turnout", turnout, midterm22Total, totalRegistered));
   }
 
   return {
@@ -3343,6 +3965,18 @@ function groupElectionRows(rec) {
     });
   }
 
+  const ussenMargin = getMarginForView(rec, "ussen_2022");
+  if (typeof ussenMargin === "number") {
+    const ussenDem = clampPct(50 + ussenMargin / 2);
+    const ussenRep = clampPct(50 - ussenMargin / 2);
+    const year = 2022;
+    if (!byYear.has(year)) byYear.set(year, []);
+    byYear.get(year).push({
+      priority: 2,
+      html: electionChartBlock("2022 US Senate", ussenRep, ussenDem),
+    });
+  }
+
   const years = [...byYear.keys()].sort((a, b) => b - a);
   const rowHtmlByYear = new Map();
   for (const year of years) {
@@ -3383,7 +4017,7 @@ function colorForFeature(feature, dataMap) {
   const rec = dataMap.get(extractJoinIds(feature.properties).key);
   if (!rec) return "#d5dae0";
 
-  const margin = getMarginForView(rec, state.mapView);
+  const margin = state.projectionMode ? projectedMarginForRecord(rec) : getMarginForView(rec, state.mapView);
   if (typeof margin !== "number") return "#d5dae0";
   return marginColor(margin);
 }
@@ -3491,9 +4125,10 @@ function latestElection(rec) {
 }
 
 function formatMargin(margin) {
-  if (typeof margin !== "number") return "N/A";
-  if (margin > 0) return `D+${Math.abs(margin).toFixed(1)}`;
-  if (margin < 0) return `R+${Math.abs(margin).toFixed(1)}`;
+  const clampedMargin = clampDisplayMarginValue(margin);
+  if (typeof clampedMargin !== "number") return "N/A";
+  if (clampedMargin > 0) return `D+${Math.abs(clampedMargin).toFixed(1)}`;
+  if (clampedMargin < 0) return `R+${Math.abs(clampedMargin).toFixed(1)}`;
   return "EVEN";
 }
 
@@ -3510,6 +4145,11 @@ function marginColor(margin) {
   return interpolateHex("#ffd4dc", "#F82644", Math.min(Math.abs(margin), 10) / 10);
 }
 
+function nationalOverviewMarginColor(margin) {
+  if (Math.abs(margin) < 0.0001) return "#f0f2f5";
+  if (margin > 0) return interpolateHex("#cfe2ff", "#257BF8", Math.min(margin, 20) / 20);
+  return interpolateHex("#ffd4dc", "#F82644", Math.min(Math.abs(margin), 20) / 20);
+}
 function widthPct(value) {
   if (typeof value !== "number") return "0%";
   const clamped = Math.max(0, Math.min(100, value));
@@ -3654,6 +4294,27 @@ function escapeHtml(text) {
 function setStatus(msg) {
   if (statusText) statusText.textContent = msg;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

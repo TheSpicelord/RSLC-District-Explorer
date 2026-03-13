@@ -308,8 +308,66 @@ def val(row: Dict[int, str], col: str):
     return row.get(col_to_idx(col), "")
 
 
+MAIN_SHEET_COLS = {
+    "district_name": "E",
+    "incumbent_party": "BJ",
+    "incumbent_name": "BK",
+    "rep_candidate": "BL",
+    "dem_candidate": "BM",
+    "next_election": "BN",
+    "demographics": {
+        "rural_pct": "BZ",
+        "town_pct": "CA",
+        "suburban_pct": "CB",
+        "urban_pct": "CC",
+        "white_pct": "CD",
+        "hispanic_pct": "CE",
+        "black_pct": "CF",
+        "asian_pct": "CG",
+        "other_pct": "CH",
+        "lt_50k": "CI",
+        "between_50_100k": "CJ",
+        "gt_150k": "CK",
+        "unknown_pct": "CL",
+        "non_college_pct": "CM",
+        "college_pct": "CN",
+        "post_grad_pct": "CO",
+        "education_unknown_pct": "CP",
+        "total_voters": "CQ",
+    },
+}
+
+LEG_ELECTION_COLS = {
+    2022: {"total": "I", "rep_pct": "J", "dem_pct": "K", "margin": "M"},
+    2023: {"total": "AG", "rep_pct": "AH", "dem_pct": "AI", "margin": "AK"},
+    2024: {"total": "AO", "rep_pct": "AP", "dem_pct": "AQ", "margin": "AS"},
+    2025: {"total": "BE", "rep_pct": "BF", "dem_pct": "BG", "margin": "BI"},
+}
+
+TOP_TICKET_COLS = {
+    "gov_2022": {"total": "Q", "rep_pct": "R", "dem_pct": "S", "margin": "U"},
+    "ussen_2022": {"total": "Y", "rep_pct": "Z", "dem_pct": "AA", "margin": "AC"},
+    "pres_2024": {"total": "AW", "rep_pct": "AX", "dem_pct": "AY", "margin": "BA"},
+}
+
+
+def parse_next_election(value: str):
+    text = str(value or "").strip()
+    if not text:
+        return None
+    match = re.search(r"(20\d{2})", text)
+    if not match:
+        return None
+    try:
+        return int(match.group(1))
+    except Exception:
+        return None
+
+
 def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
     out = []
+    demo_cols = MAIN_SHEET_COLS["demographics"]
+
     for rid, row in sheet_rows:
         if rid <= 2:
             continue
@@ -322,59 +380,48 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
         if not state_fips or not district_id:
             continue
 
-        district_name = str(val(row, "E") or "").strip()
-        inc_name = str(val(row, "BC") or "").strip() or "Vacant"
-        inc_party = party_norm(val(row, "BB"))
+        district_name = str(val(row, MAIN_SHEET_COLS["district_name"]) or "").strip()
+        inc_name = str(val(row, MAIN_SHEET_COLS["incumbent_name"]) or "").strip() or "Vacant"
+        inc_party = party_norm(val(row, MAIN_SHEET_COLS["incumbent_party"]))
 
-        rep_name = str(val(row, "BD") or "").strip() or "No candidate"
-        dem_name = str(val(row, "BE") or "").strip() or "No candidate"
+        rep_name = str(val(row, MAIN_SHEET_COLS["rep_candidate"]) or "").strip() or "No candidate"
+        dem_name = str(val(row, MAIN_SHEET_COLS["dem_candidate"]) or "").strip() or "No candidate"
+        next_election = parse_next_election(val(row, MAIN_SHEET_COLS["next_election"]))
 
         elections = []
-        for year, tot_col, rep_col, dem_col in [
-            (2022, "I", "J", "K"),
-            (2023, "Y", "Z", "AA"),
-            (2024, "AG", "AH", "AI"),
-            (2025, "AW", "AX", "AY"),
-        ]:
-            tot = num(val(row, tot_col))
-            rep = pct(val(row, rep_col))
-            dem = pct(val(row, dem_col))
+        view_margins = {}
+        leg_margins = {}
+        for year, cols in sorted(LEG_ELECTION_COLS.items()):
+            tot = num(val(row, cols["total"]))
+            rep = pct(val(row, cols["rep_pct"]))
+            dem = pct(val(row, cols["dem_pct"]))
             if tot > 0 and (rep > 0 or dem > 0):
                 elections.append({"year": year, "dem_pct": dem, "rep_pct": rep, "winner": winner_from_pcts(dem, rep)})
 
-        elections.sort(key=lambda e: e["year"])
-
-        m22 = margin_dem_from_r_minus_d(val(row, "M"))
-        m23 = margin_dem_from_r_minus_d(val(row, "AC"))
-        m24 = margin_dem_from_r_minus_d(val(row, "AK"))
-        m25 = margin_dem_from_r_minus_d(val(row, "BA"))
-        gov22_total = num(val(row, "Q"))
-        gov22_rep = pct(val(row, "R"))
-        gov22_dem = pct(val(row, "S"))
-        mgov22 = margin_dem_from_r_minus_d(val(row, "U")) if (gov22_total > 0 and (gov22_rep > 0 or gov22_dem > 0)) else None
-        mpres24 = margin_dem_from_r_minus_d(val(row, "AS"))
+            margin = margin_dem_from_r_minus_d(val(row, cols["margin"]))
+            if margin is not None:
+                leg_margins[year] = margin
+                view_margins[f"leg_{year}"] = margin
 
         latest_leg = None
-        for m in (m25, m24, m23, m22):
-            if m is not None:
-                latest_leg = m
+        for year in (2025, 2024, 2023, 2022):
+            if year in leg_margins:
+                latest_leg = leg_margins[year]
                 break
-
-        view_margins = {}
-        if m22 is not None:
-            view_margins["leg_2022"] = m22
-        if m23 is not None:
-            view_margins["leg_2023"] = m23
-        if m24 is not None:
-            view_margins["leg_2024"] = m24
-        if m25 is not None:
-            view_margins["leg_2025"] = m25
         if latest_leg is not None:
             view_margins["latest_leg"] = latest_leg
-        if mgov22 is not None:
-            view_margins["gov_2022"] = mgov22
-        if mpres24 is not None:
-            view_margins["pres_2024"] = mpres24
+
+        top_ticket_margins = {}
+        top_ticket_totals = {}
+        for key, cols in TOP_TICKET_COLS.items():
+            total = num(val(row, cols["total"]))
+            rep = pct(val(row, cols["rep_pct"]))
+            dem = pct(val(row, cols["dem_pct"]))
+            margin = margin_dem_from_r_minus_d(val(row, cols["margin"])) if (total > 0 and (rep > 0 or dem > 0)) else None
+            top_ticket_margins[key] = margin
+            top_ticket_totals[key] = total if margin is not None else 0
+            if margin is not None:
+                view_margins[key] = margin
 
         member = {
             "seat": 1,
@@ -390,34 +437,38 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
                 "district_name": district_name,
                 "incumbent": {"name": inc_name, "party": inc_party},
                 "members": [member],
+                "candidate_seats_up": 1,
+                "next_election": next_election,
                 "demographics": {
-                    "population": num(val(row, "CH")),
-                    "rural_pct": pct(val(row, "BQ")),
-                    "town_pct": pct(val(row, "BR")),
-                    "suburban_pct": pct(val(row, "BS")),
-                    "urban_pct": pct(val(row, "BT")),
+                    "population": num(val(row, demo_cols["total_voters"])),
+                    "rural_pct": pct(val(row, demo_cols["rural_pct"])),
+                    "town_pct": pct(val(row, demo_cols["town_pct"])),
+                    "suburban_pct": pct(val(row, demo_cols["suburban_pct"])),
+                    "urban_pct": pct(val(row, demo_cols["urban_pct"])),
                     "income_brackets": {
-                        "lt_50k": pct(val(row, "BZ")),
-                        "between_50_100k": pct(val(row, "CA")),
-                        "gt_150k": pct(val(row, "CB")),
-                        "unknown_pct": pct(val(row, "CC")),
+                        "lt_50k": pct(val(row, demo_cols["lt_50k"])),
+                        "between_50_100k": pct(val(row, demo_cols["between_50_100k"])),
+                        "gt_150k": pct(val(row, demo_cols["gt_150k"])),
+                        "unknown_pct": pct(val(row, demo_cols["unknown_pct"])),
                     },
-                    "college_pct": pct(val(row, "CE")),
-                    "post_grad_pct": pct(val(row, "CF")),
-                    "education_unknown_pct": pct(val(row, "CG")),
-                    "white_pct": pct(val(row, "BU")),
-                    "hispanic_pct": pct(val(row, "BV")),
-                    "black_pct": pct(val(row, "BW")),
-                    "asian_pct": pct(val(row, "BX")),
-                    "other_pct": pct(val(row, "BY")),
+                    "college_pct": pct(val(row, demo_cols["college_pct"])),
+                    "post_grad_pct": pct(val(row, demo_cols["post_grad_pct"])),
+                    "education_unknown_pct": pct(val(row, demo_cols["education_unknown_pct"])),
+                    "white_pct": pct(val(row, demo_cols["white_pct"])),
+                    "hispanic_pct": pct(val(row, demo_cols["hispanic_pct"])),
+                    "black_pct": pct(val(row, demo_cols["black_pct"])),
+                    "asian_pct": pct(val(row, demo_cols["asian_pct"])),
+                    "other_pct": pct(val(row, demo_cols["other_pct"])),
                 },
                 "elections": elections,
                 "view_margins": view_margins,
-                "pres_2024_margin": mpres24 if mpres24 is not None else None,
-                "gov_2022_margin": mgov22 if mgov22 is not None else None,
+                "pres_2024_margin": top_ticket_margins["pres_2024"],
+                "gov_2022_margin": top_ticket_margins["gov_2022"],
+                "ussen_2022_margin": top_ticket_margins["ussen_2022"],
                 "top_ticket_totals": {
-                    "pres_2024": num(val(row, "AO")),
-                    "gov_2022": gov22_total if mgov22 is not None else 0,
+                    "pres_2024": top_ticket_totals["pres_2024"],
+                    "gov_2022": top_ticket_totals["gov_2022"],
+                    "ussen_2022": top_ticket_totals["ussen_2022"],
                 },
                 "candidates_2026": {"rep": rep_name, "dem": dem_name},
             }
@@ -425,6 +476,7 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
 
     out.sort(key=lambda r: (r["state_fips"], r["district_id"]))
     return out
+
 
 
 def parse_candidate_header_seat(header: str, prefix: str):

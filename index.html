@@ -10,33 +10,69 @@
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   />
-  <link rel="stylesheet" href="style.css?v=20260310g" />
+  <link rel="stylesheet" href="style.css?v=20260313j" />
 </head>
 <body>
   <header class="topbar">
     <h1>State Legislative District Explorer</h1>
-    <div class="controls-row controls-row-primary">
-      <span class="control-label-inline">State</span>
-      <select id="stateSelect">
-        <option value="">Select State...</option>
-      </select>
-      <button id="exitStateBtn" type="button" hidden>Exit State</button>
-      <div class="chamber-buttons">
-        <button id="houseChamberBtn" type="button">Lower Chamber</button>
-        <button id="senateChamberBtn" type="button">Upper Chamber</button>
+    <div class="topbar-layout">
+      <div class="topbar-left">
+        <div class="controls-row controls-row-primary">
+          <span class="control-label-inline">State</span>
+          <select id="stateSelect">
+            <option value="">Select State...</option>
+          </select>
+          <button id="exitStateBtn" type="button" hidden>Exit State</button>
+          <div class="chamber-buttons">
+            <button id="houseChamberBtn" type="button">Lower Chamber</button>
+            <button id="senateChamberBtn" type="button">Upper Chamber</button>
+          </div>
+        </div>
+        <div class="controls-row controls-row-secondary">
+          <div id="mapViewButtons" class="mapview-buttons"></div>
+          <div class="overlay-toggles">
+            <label class="county-overlay-label" hidden>
+              <input id="countyOverlayToggle" type="checkbox" />
+              County Overlay
+            </label>
+            <label class="county-overlay-label">
+              <input id="upIn2026Toggle" type="checkbox" />
+              Up in 2026
+            </label>
+            <label class="county-overlay-label">
+              <input id="targetDistrictsToggle" type="checkbox" />
+              Target Districts
+            </label>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="controls-row controls-row-secondary">
-      <div id="mapViewButtons" class="mapview-buttons"></div>
-      <div class="overlay-toggles">
-        <label class="county-overlay-label">
-          <input id="countyOverlayToggle" type="checkbox" />
-          County Overlay
-        </label>
-        <label class="county-overlay-label">
-          <input id="targetDistrictsToggle" type="checkbox" />
-          Target Districts
-        </label>
+      <div id="projectionControls" class="projection-controls" hidden>
+        <div class="projection-top-row">
+          <button id="projectionToggleBtn" type="button" class="projection-toggle-btn">2026 Projection</button>
+          <div class="projection-base-buttons">
+            <button id="projectionBaseLegBtn" type="button" class="projection-base-btn">Latest Leg</button>
+            <button id="projectionBasePresBtn" type="button" class="projection-base-btn">2024 Pres</button>
+          </div>
+        </div>
+        <div class="projection-bottom-row">
+          <div class="projection-slider-shell">
+            <div class="projection-slider-labels">
+              <span class="projection-range-end projection-range-dem">D+15</span>
+              <span class="projection-zero-label">+/-0</span>
+              <span class="projection-range-end projection-range-rep">R+5</span>
+            </div>
+            <div class="projection-slider-track-wrap">
+              <input id="projectionShiftSlider" class="projection-shift-slider" type="range" min="-5" max="15" step="1" value="0" />
+              <div class="projection-slider-ticks" aria-hidden="true">
+                <span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick projection-tick-zero"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span>
+              </div>
+            </div>
+          </div>
+          <div class="projection-shift-box">
+            <span id="projectionShiftValue" class="projection-shift-value">EVEN</span>
+            <span class="projection-shift-caption">Shift</span>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -44,16 +80,18 @@
   <main class="layout">
     <section id="map"></section>
     <aside class="sidebar">
-      <h2 id="detailsTitle">District Details</h2>
-      <div id="details">Click a district for details.</div>
+      <h2 id="detailsTitle">National Overview</h2>
+      <div id="details"><div class="loading-indicator">Loading national overview table...</div></div>
     </aside>
   </main>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"></script>
-  <script src="app.js?v=20260310e"></script>
+  <script src="app.js?v=20260313j"></script>
 </body>
 </html>
+
+
 
 
 
