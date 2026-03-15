@@ -315,6 +315,8 @@ MAIN_SHEET_COLS = {
     "rep_candidate": "BL",
     "dem_candidate": "BM",
     "next_election": "BN",
+    "djt_tier": "CS",
+    "leg_tier": "CT",
     "demographics": {
         "rural_pct": "BZ",
         "town_pct": "CA",
@@ -364,7 +366,301 @@ def parse_next_election(value: str):
         return None
 
 
-def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
+VALID_TIER_VALUES = {1, 2, 3, 4}
+
+
+def parse_tier_value(value):
+    text = str(value or "").strip()
+    if not text:
+        return None
+    if re.fullmatch(r"[1-4](?:\.0+)?", text):
+        return int(float(text))
+    return None
+
+
+def resolve_district_tier(djt_raw, leg_raw, tier_audit=None, sheet_name="", state_abbr="", district_id=""):
+    djt_text = str(djt_raw or "").strip()
+    leg_text = str(leg_raw or "").strip()
+    djt_tier = parse_tier_value(djt_text)
+    leg_tier = parse_tier_value(leg_text)
+
+    if tier_audit is not None:
+        bucket = tier_audit.setdefault(
+            sheet_name or "UNKNOWN",
+            {
+                "invalid_djt": 0,
+                "invalid_leg": 0,
+                "both_valid": [],
+            },
+        )
+        if djt_text and djt_tier is None:
+            bucket["invalid_djt"] += 1
+        if leg_text and leg_tier is None:
+            bucket["invalid_leg"] += 1
+        if djt_tier in VALID_TIER_VALUES and leg_tier in VALID_TIER_VALUES:
+            bucket["both_valid"].append(
+                {
+                    "state": state_abbr,
+                    "district_id": district_id,
+                    "djt_tier": djt_tier,
+                    "leg_tier": leg_tier,
+                }
+            )
+
+    if djt_tier in VALID_TIER_VALUES:
+        return djt_tier
+    if leg_tier in VALID_TIER_VALUES:
+        return leg_tier
+    return None
+
+
+def normalize_modeling_chamber(value: str) -> str:
+    text = str(value or "").strip().lower()
+    if "lower" in text or "house" in text or text == "sldl":
+        return "house"
+    if "upper" in text or "senate" in text or text == "sldu":
+        return "senate"
+    return ""
+
+
+def parse_modeling_state_header(value: str):
+    text = re.sub(r"\s+", " ", str(value or "").strip())
+    if not text:
+        return "", "", ""
+
+    parts = re.split(r"\s*-\s*", text, maxsplit=1)
+    state_abbr = normalize_workbook_state(parts[0] if parts else text)
+    family_display = parts[1].strip() if len(parts) > 1 else "Model"
+    family_key = re.sub(r"[^a-z0-9]+", "_", family_display.lower()).strip("_") or "model"
+    return state_abbr, family_key, family_display
+
+
+def parse_modeling_section(value: str):
+    text = re.sub(r"\s+", " ", str(value or "").strip())
+    lower = text.lower()
+    if not text:
+        return None
+
+    kind = ""
+    if "partisan" in lower or "affinity" in lower:
+        kind = "affinity"
+    elif "college" in lower or "education" in lower:
+        kind = "education"
+    if not kind:
+        return None
+
+    variant_key = ""
+    variant_label = ""
+    if "high+mid" in lower or "high + mid" in lower or "h+m" in lower:
+        variant_key = "hm"
+        variant_label = "H+M"
+    elif "all" in lower:
+        variant_key = "all"
+        variant_label = "All"
+    if not variant_key:
+        return None
+
+    return {
+        "kind": kind,
+        "variant_key": variant_key,
+        "variant_label": variant_label,
+    }
+
+
+def modeling_view_key(family_key: str, variant_key: str) -> str:
+    return f"model_{family_key}_{variant_key}"
+
+
+def modeling_view_label(family_display: str, variant_label: str) -> str:
+    return f"{family_display} ({variant_label})"
+
+
+def discover_modeling_blocks(rows: List[List[str]]):
+    if len(rows) < 4:
+        return []
+
+    top_row = rows[0]
+    chamber_row = rows[1]
+    section_row = rows[2]
+    header_row = rows[3]
+    max_cols = max(len(top_row), len(chamber_row), len(section_row), len(header_row))
+
+    contexts = []
+    active_state = ""
+    active_chamber = ""
+    for ci in range(max_cols):
+        raw_state = str(top_row[ci] if ci < len(top_row) else "").strip()
+        raw_chamber = str(chamber_row[ci] if ci < len(chamber_row) else "").strip()
+        raw_section = str(section_row[ci] if ci < len(section_row) else "").strip()
+        header = str(header_row[ci] if ci < len(header_row) else "").strip()
+        if raw_state:
+            active_state = raw_state
+        if raw_chamber:
+            active_chamber = raw_chamber
+        contexts.append(
+            {
+                "state_label": active_state,
+                "chamber_label": active_chamber,
+                "section_label": raw_section,
+                "header_label": header,
+            }
+        )
+
+    def find_district_col(start_col: int, state_label: str, chamber_label: str):
+        for cj in range(start_col, -1, -1):
+            ctx = contexts[cj]
+            if ctx["state_label"] != state_label or ctx["chamber_label"] != chamber_label:
+                continue
+            if "district" in ctx["header_label"].lower():
+                return cj
+        return None
+
+    blocks = []
+    for ci in range(max_cols):
+        raw_section = contexts[ci]["section_label"]
+        if not raw_section:
+            continue
+
+        state_label = contexts[ci]["state_label"]
+        chamber_label = contexts[ci]["chamber_label"]
+        state_abbr, family_key, family_display = parse_modeling_state_header(state_label)
+        chamber = normalize_modeling_chamber(chamber_label)
+        section = parse_modeling_section(raw_section)
+        if not state_abbr or not chamber or not section:
+            continue
+
+        district_col = find_district_col(ci, state_label, chamber_label)
+        if district_col is None:
+            continue
+
+        end_col = ci
+        for cj in range(ci + 1, max_cols):
+            next_state = str(top_row[cj] if cj < len(top_row) else "").strip()
+            next_chamber = str(chamber_row[cj] if cj < len(chamber_row) else "").strip()
+            next_section = str(section_row[cj] if cj < len(section_row) else "").strip()
+            if next_state or next_chamber or next_section:
+                break
+            end_col = cj
+
+        headers = {}
+        for cj in range(ci, end_col + 1):
+            header = str(header_row[cj] if cj < len(header_row) else "").strip()
+            if header:
+                headers[cj] = header
+
+        blocks.append(
+            {
+                "state_abbr": state_abbr,
+                "chamber": chamber,
+                "district_col": district_col,
+                "start_col": ci,
+                "end_col": end_col,
+                "headers": headers,
+                "family_key": family_key,
+                "family_display": family_display,
+                "view_key": modeling_view_key(family_key, section["variant_key"]),
+                "view_label": modeling_view_label(family_display, section["variant_label"]),
+                "kind": section["kind"],
+                "variant_label": section["variant_label"],
+            }
+        )
+
+    return blocks
+
+
+def build_modeling_rows(sheet_rows: List[Tuple[int, Dict[int, str]]]):
+    rows = rows_to_matrix(sheet_rows)
+    blocks = discover_modeling_blocks(rows)
+    if not blocks:
+        return {}
+
+    out: Dict[Tuple[str, str, str], Dict[str, dict]] = {}
+
+    for block in blocks:
+        for rid in range(4, len(rows)):
+            row = rows[rid] if rid < len(rows) else []
+            district_raw = str(row[block["district_col"]] if block["district_col"] < len(row) else "").strip()
+            district_id = normalize_district_id(district_raw)
+            if not district_id:
+                continue
+
+            values_by_header = {}
+            for ci, header in block["headers"].items():
+                value = str(row[ci] if ci < len(row) else "").strip()
+                values_by_header[clean_header(header)] = value
+
+            join_key = (block["state_abbr"], block["chamber"], district_id)
+            row_models = out.setdefault(join_key, {})
+            model_entry = row_models.setdefault(
+                block["view_key"],
+                {
+                    "label": block["view_label"],
+                    "family": block["family_display"],
+                    "variant": block["variant_label"],
+                },
+            )
+
+            if block["kind"] == "affinity":
+                gop_base = pct(values_by_header.get("GOP BASE"))
+                gop_target = pct(values_by_header.get("GOP TARGET"))
+                swing = pct(values_by_header.get("SWING"))
+                dem_likely = pct(values_by_header.get("DEM LIKELY"))
+                dem_base = pct(values_by_header.get("DEM BASE"))
+                total_pct = gop_base + gop_target + swing + dem_likely + dem_base
+                if total_pct <= 0.01:
+                    continue
+
+                margin = round((dem_likely + dem_base) - (gop_base + gop_target), 1)
+                model_entry["affinity"] = {
+                    "gop_base": gop_base,
+                    "gop_target": gop_target,
+                    "swing": swing,
+                    "dem_likely": dem_likely,
+                    "dem_base": dem_base,
+                    "margin": margin,
+                }
+                continue
+
+            non_college = pct(values_by_header.get("NON-COLLEGE"))
+            college = pct(values_by_header.get("COLLEGE"))
+            total_pct = non_college + college
+            if total_pct <= 0.01:
+                continue
+
+            model_entry["education"] = {
+                "non_college": non_college,
+                "college": college,
+            }
+
+    return out
+
+
+def apply_modeling_rows(base_rows: List[dict], modeling_rows: Dict[Tuple[str, str, str], Dict[str, dict]], state_abbr: str, chamber: str):
+    if not base_rows or not modeling_rows:
+        return 0
+
+    applied = 0
+    for row in base_rows:
+        district_id = normalize_district_id(row.get("district_id"))
+        if not district_id:
+            continue
+        model_bundle = modeling_rows.get((state_abbr, chamber, district_id))
+        if not model_bundle:
+            continue
+
+        row["models"] = model_bundle
+        view_margins = row.setdefault("view_margins", {})
+        for view_key, model_entry in model_bundle.items():
+            affinity = model_entry.get("affinity") or {}
+            margin = affinity.get("margin")
+            if isinstance(margin, (int, float)):
+                view_margins[view_key] = round(float(margin), 1)
+        applied += 1
+
+    return applied
+
+
+def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str, tier_audit=None, sheet_name=""):
     out = []
     demo_cols = MAIN_SHEET_COLS["demographics"]
 
@@ -387,6 +683,14 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
         rep_name = str(val(row, MAIN_SHEET_COLS["rep_candidate"]) or "").strip() or "No candidate"
         dem_name = str(val(row, MAIN_SHEET_COLS["dem_candidate"]) or "").strip() or "No candidate"
         next_election = parse_next_election(val(row, MAIN_SHEET_COLS["next_election"]))
+        tier = resolve_district_tier(
+            val(row, MAIN_SHEET_COLS["djt_tier"]),
+            val(row, MAIN_SHEET_COLS["leg_tier"]),
+            tier_audit=tier_audit,
+            sheet_name=sheet_name,
+            state_abbr=state_abbr,
+            district_id=district_id,
+        )
 
         elections = []
         view_margins = {}
@@ -435,6 +739,7 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str):
                 "state_fips": state_fips,
                 "district_id": district_id,
                 "district_name": district_name,
+                "tier": tier,
                 "incumbent": {"name": inc_name, "party": inc_party},
                 "members": [member],
                 "candidate_seats_up": 1,
@@ -786,6 +1091,66 @@ def build_target_rows(sheet_rows: List[Tuple[int, Dict[int, str]]]):
     return out
 
 
+def build_chamber_name_map(sheet_rows: List[Tuple[int, Dict[int, str]]]):
+    rows = rows_to_matrix(sheet_rows)
+    if not rows:
+        return {}
+
+    out = {}
+    header = [str(value or "").strip().lower() for value in (rows[0] or [])]
+    col_state = header.index("state") if "state" in header else -1
+    col_lower = header.index("lower") if "lower" in header else -1
+    col_upper = header.index("upper") if "upper" in header else -1
+
+    if col_state >= 0 and col_lower >= 0 and col_upper >= 0:
+        for row in rows[1:]:
+            state_abbr = normalize_workbook_state(row[col_state] if col_state < len(row) else "")
+            if not state_abbr:
+                continue
+            lower_name = str(row[col_lower] if col_lower < len(row) else "").strip()
+            upper_name = str(row[col_upper] if col_upper < len(row) else "").strip()
+            if lower_name:
+                out[f"{state_abbr}|house"] = f"{state_abbr} {lower_name}"
+            if upper_name:
+                out[f"{state_abbr}|senate"] = f"{state_abbr} {upper_name}"
+            continue
+
+        return dict(sorted(out.items()))
+
+    normalized_header = {
+        str(value or "").strip().lower(): idx
+        for idx, value in enumerate(rows[0] or [])
+        if str(value or "").strip()
+    }
+    col_state = normalized_header.get("state")
+    col_chamber = normalized_header.get("chamber")
+    col_name = None
+    for key in (
+        "officialname",
+        "official_name",
+        "official",
+        "name",
+        "chamber name",
+        "official chamber name",
+    ):
+        if key in normalized_header:
+            col_name = normalized_header[key]
+            break
+
+    if col_state is None or col_chamber is None or col_name is None:
+        return {}
+
+    for row in rows[1:]:
+        state_abbr = normalize_workbook_state(row[col_state] if col_state < len(row) else "")
+        chamber = normalize_chamber_label(row[col_chamber] if col_chamber < len(row) else "")
+        name = str(row[col_name] if col_name < len(row) else "").strip()
+        if not state_abbr or not chamber or not name:
+            continue
+        out[f"{state_abbr}|{chamber}"] = name
+
+    return dict(sorted(out.items()))
+
+
 def discover_states(sheets: Dict[str, List[Tuple[int, Dict[int, str]]]]) -> List[str]:
     found = set()
     for sheet_name in ("SLDL", "SLDU"):
@@ -813,21 +1178,30 @@ def main():
         default="data/chamber_files.json",
         help="Output path for chamber file index JSON",
     )
+    parser.add_argument(
+        "--chamber-names-out",
+        default="data/state_chamber_names.json",
+        help="Output path for chamber name metadata JSON",
+    )
     args = parser.parse_args()
 
     workbook = Path(args.workbook)
     out_dir = Path(args.output_dir)
     targets_out = Path(args.targets_out)
     index_out = Path(args.index_out)
+    chamber_names_out = Path(args.chamber_names_out)
 
     sheets = load_workbook_rows(workbook)
+    modeling_rows = build_modeling_rows(sheets.get("Modeling", []))
 
-    if args.states.strip().upper() == "ALL":
+    full_run = args.states.strip().upper() == "ALL"
+    if full_run:
         states = discover_states(sheets)
     else:
         states = sorted({s.strip().upper() for s in args.states.split(",") if s.strip()})
 
     special_overrides_map: Dict[Tuple[str, str], List[dict]] = {}
+    tier_audit: Dict[str, dict] = {}
     for sheet_name, sheet_rows in sheets.items():
         state_abbr, chamber, overrides = build_special_overrides(sheet_rows, sheet_name)
         if not state_abbr or not chamber or not overrides:
@@ -840,7 +1214,8 @@ def main():
     for state_abbr in states:
         for chamber in ("house", "senate"):
             sheet_name = SHEET_FOR_CHAMBER[chamber]
-            rows = build_rows(sheets.get(sheet_name, []), state_abbr)
+            rows = build_rows(sheets.get(sheet_name, []), state_abbr, tier_audit=tier_audit, sheet_name=sheet_name)
+            modeling_applied = apply_modeling_rows(rows, modeling_rows, state_abbr, chamber)
             overrides = special_overrides_map.get((state_abbr, chamber), [])
             applied = apply_special_overrides(rows, overrides)
 
@@ -860,27 +1235,70 @@ def main():
                     "url": f"{out_dir.as_posix().rstrip('/')}/{out_name}",
                     "rows": len(rows),
                     "specialOverridesApplied": applied,
+                    "modelingApplied": modeling_applied,
                 }
             )
-            print(f"Wrote {out_path} rows={len(rows)} overrides={applied}")
+            print(f"Wrote {out_path} rows={len(rows)} overrides={applied} modeling={modeling_applied}")
 
     for chamber in ("house", "senate"):
         chamber_index[chamber].sort(key=lambda x: (x.get("state", ""), x.get("url", "")))
 
-    index_out.parent.mkdir(parents=True, exist_ok=True)
-    with index_out.open("w", encoding="utf-8") as f:
-        json.dump(chamber_index, f, indent=2)
-        f.write("\n")
-    print(f"Wrote {index_out}")
-
-    overview_rows = sheets.get("Overview")
-    if overview_rows:
-        targets = build_target_rows(overview_rows)
-        targets_out.parent.mkdir(parents=True, exist_ok=True)
-        with targets_out.open("w", encoding="utf-8") as f:
-            json.dump(targets, f, indent=2)
+    if full_run:
+        index_out.parent.mkdir(parents=True, exist_ok=True)
+        with index_out.open("w", encoding="utf-8") as f:
+            json.dump(chamber_index, f, indent=2)
             f.write("\n")
-        print(f"Wrote {targets_out} rows={len(targets)}")
+        print(f"Wrote {index_out}")
+
+        overview_rows = sheets.get("Overview")
+        if overview_rows:
+            targets = build_target_rows(overview_rows)
+            targets_out.parent.mkdir(parents=True, exist_ok=True)
+            with targets_out.open("w", encoding="utf-8") as f:
+                json.dump(targets, f, indent=2)
+                f.write("\n")
+            print(f"Wrote {targets_out} rows={len(targets)}")
+
+        chamber_name_rows = sheets.get("Chamber Names")
+        if chamber_name_rows:
+            chamber_name_map = build_chamber_name_map(chamber_name_rows)
+            chamber_names_out.parent.mkdir(parents=True, exist_ok=True)
+            with chamber_names_out.open("w", encoding="utf-8") as f:
+                json.dump(chamber_name_map, f, indent=2)
+                f.write("\n")
+            print(f"Wrote {chamber_names_out} rows={len(chamber_name_map)}")
+    else:
+        print(f"Preserved existing {index_out}, {targets_out}, and {chamber_names_out} for partial state regeneration.")
+
+    for sheet_name in ("SLDL", "SLDU"):
+        bucket = tier_audit.get(sheet_name) or {}
+        invalid_djt = int(bucket.get("invalid_djt") or 0)
+        invalid_leg = int(bucket.get("invalid_leg") or 0)
+        both_valid = list(bucket.get("both_valid") or [])
+        if invalid_djt:
+            print(f"WARNING: {sheet_name} ignored {invalid_djt} DJT Tier values outside 1-4.")
+        if invalid_leg:
+            print(f"WARNING: {sheet_name} ignored {invalid_leg} Leg Tier values outside 1-4.")
+        if both_valid:
+            examples = ", ".join(
+                f"{item['state']}-{item['district_id']} (DJT {item['djt_tier']}, Leg {item['leg_tier']})"
+                for item in both_valid[:8]
+            )
+            print(
+                f"WARNING: {sheet_name} has {len(both_valid)} rows with both DJT Tier and Leg Tier set; "
+                f"using DJT Tier. Examples: {examples}"
+            )
+
+    from validate_chamber_jsons import validate_generated_outputs
+
+    errors, warnings = validate_generated_outputs(out_dir, index_out)
+    for warning in warnings:
+        print(f"WARNING: {warning}")
+    if errors:
+        for error in errors:
+            print(f"ERROR: {error}")
+        raise SystemExit(1)
+    print("Validation passed.")
 
 
 if __name__ == "__main__":

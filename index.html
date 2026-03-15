@@ -10,7 +10,7 @@
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   />
-  <link rel="stylesheet" href="style.css?v=20260313j" />
+  <link rel="stylesheet" href="style.css?v=20260314t" />
 </head>
 <body>
   <header class="topbar">
@@ -57,14 +57,19 @@
         <div class="projection-bottom-row">
           <div class="projection-slider-shell">
             <div class="projection-slider-labels">
-              <span class="projection-range-end projection-range-dem">D+15</span>
-              <span class="projection-zero-label">+/-0</span>
-              <span class="projection-range-end projection-range-rep">R+5</span>
+              <span id="projectionRangeDem" class="projection-range-end projection-range-dem">D+25</span>
+              <span id="projectionZeroLabel" class="projection-zero-label">0</span>
+              <span id="projectionRangeRep" class="projection-range-end projection-range-rep">R+5</span>
             </div>
             <div class="projection-slider-track-wrap">
-              <input id="projectionShiftSlider" class="projection-shift-slider" type="range" min="-5" max="15" step="1" value="0" />
-              <div class="projection-slider-ticks" aria-hidden="true">
-                <span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick projection-tick-zero"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span><span class="projection-tick"></span>
+              <div id="projectionShiftSlider" class="projection-shift-slider" role="slider" tabindex="0" aria-valuemin="-5" aria-valuemax="25" aria-valuenow="0" aria-valuetext="EVEN" aria-orientation="horizontal">
+                <div id="projectionSliderAxis" class="projection-slider-axis">
+                  <div class="projection-slider-rail">
+                    <div id="projectionSliderFill" class="projection-slider-fill"></div>
+                  </div>
+                  <div id="projectionSliderTicks" class="projection-slider-ticks" aria-hidden="true"></div>
+                  <div id="projectionSliderThumb" class="projection-slider-thumb"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -87,7 +92,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"></script>
-  <script src="app.js?v=20260313j"></script>
+  <script type="module" src="app.js?v=20260314t"></script>
 </body>
 </html>
 

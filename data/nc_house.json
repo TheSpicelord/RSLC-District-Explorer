@@ -3,6 +3,7 @@
     "state_fips": "37",
     "district_id": "001",
     "district_name": "State House District 1",
+    "tier": null,
     "incumbent": {
       "name": "Ed Goodwin",
       "party": "R"
@@ -16,8 +17,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Ed Goodwin",
+          "dem": "Dorsey Harris"
         }
       }
     ],
@@ -46,6 +47,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 34.9,
         "rep_pct": 65.1,
@@ -53,6 +60,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -30.1,
       "latest_leg": -30.1,
       "ussen_2022": -38.8,
@@ -67,14 +75,15 @@
       "ussen_2022": 21662
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Ed Goodwin",
+      "dem": "Dorsey Harris"
     }
   },
   {
     "state_fips": "37",
     "district_id": "002",
     "district_name": "State House District 2",
+    "tier": null,
     "incumbent": {
       "name": "Ray Jeffers",
       "party": "D"
@@ -89,7 +98,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Ray Jeffers"
         }
       }
     ],
@@ -118,6 +127,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.6,
+        "rep_pct": 43.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 57.6,
         "rep_pct": 42.4,
@@ -125,6 +140,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 11.1,
       "leg_2024": 15.2,
       "latest_leg": 15.2,
       "ussen_2022": -9.6,
@@ -140,13 +156,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Ray Jeffers"
     }
   },
   {
     "state_fips": "37",
     "district_id": "003",
     "district_name": "State House District 3",
+    "tier": null,
     "incumbent": {
       "name": "Steve Tyson",
       "party": "R"
@@ -160,8 +177,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Steve Tyson",
+          "dem": "Diannia Bright"
         }
       }
     ],
@@ -190,6 +207,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 38.3,
         "rep_pct": 61.7,
@@ -197,6 +220,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -23.4,
       "latest_leg": -23.4,
       "ussen_2022": -21.9,
@@ -211,14 +235,15 @@
       "ussen_2022": 35320
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Steve Tyson",
+      "dem": "Diannia Bright"
     }
   },
   {
     "state_fips": "37",
     "district_id": "004",
     "district_name": "State House District 4",
+    "tier": null,
     "incumbent": {
       "name": "Jimmy Dixon",
       "party": "R"
@@ -232,8 +257,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "James Dixon",
+          "dem": "Vernon Moore"
         }
       }
     ],
@@ -262,6 +287,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 33.4,
+        "rep_pct": 66.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.0,
         "rep_pct": 63.0,
@@ -269,6 +300,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -33.2,
       "leg_2024": -26.1,
       "latest_leg": -26.1,
       "ussen_2022": -27.4,
@@ -283,14 +315,15 @@
       "ussen_2022": 24027
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "James Dixon",
+      "dem": "Vernon Moore"
     }
   },
   {
     "state_fips": "37",
     "district_id": "005",
     "district_name": "State House District 5",
+    "tier": 1,
     "incumbent": {
       "name": "Bill Ward",
       "party": "R"
@@ -304,8 +337,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Bill Ward",
+          "dem": "Sam Davis III"
         }
       }
     ],
@@ -334,6 +367,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 46.2,
+        "rep_pct": 53.8,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 45.8,
         "rep_pct": 54.2,
@@ -341,6 +380,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -7.7,
       "leg_2024": -8.3,
       "latest_leg": -8.3,
       "ussen_2022": -3.7,
@@ -355,14 +395,15 @@
       "ussen_2022": 27106
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Bill Ward",
+      "dem": "Sam Davis III"
     }
   },
   {
     "state_fips": "37",
     "district_id": "006",
     "district_name": "State House District 6",
+    "tier": null,
     "incumbent": {
       "name": "Joe Pike",
       "party": "R"
@@ -376,8 +417,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Joe Pike",
+          "dem": "Tony Spears"
         }
       }
     ],
@@ -406,6 +447,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.4,
+        "rep_pct": 60.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 39.4,
         "rep_pct": 60.6,
@@ -413,6 +460,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -21.3,
       "leg_2024": -21.3,
       "latest_leg": -21.3,
       "ussen_2022": -22.8,
@@ -427,14 +475,15 @@
       "ussen_2022": 23164
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Joe Pike",
+      "dem": "Tony Spears"
     }
   },
   {
     "state_fips": "37",
     "district_id": "007",
     "district_name": "State House District 7",
+    "tier": 2,
     "incumbent": {
       "name": "Matthew Winslow",
       "party": "R"
@@ -448,8 +497,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Cory Thornton",
+          "dem": "Mark Speed"
         }
       }
     ],
@@ -478,6 +527,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.2,
         "rep_pct": 55.3,
@@ -485,6 +540,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -13.2,
       "latest_leg": -13.2,
       "ussen_2022": -12.4,
@@ -499,14 +555,15 @@
       "ussen_2022": 32594
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Cory Thornton",
+      "dem": "Mark Speed"
     }
   },
   {
     "state_fips": "37",
     "district_id": "008",
     "district_name": "State House District 8",
+    "tier": null,
     "incumbent": {
       "name": "Gloristine Brown",
       "party": "D"
@@ -520,8 +577,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Cathy Bynum",
+          "dem": "Gloristine Brown"
         }
       }
     ],
@@ -550,6 +607,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.6,
+        "rep_pct": 46.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 64.0,
         "rep_pct": 36.0,
@@ -557,6 +620,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 7.1,
       "leg_2024": 28.1,
       "latest_leg": 28.1,
       "ussen_2022": 7.1,
@@ -571,14 +635,15 @@
       "ussen_2022": 9633
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Cathy Bynum",
+      "dem": "Gloristine Brown"
     }
   },
   {
     "state_fips": "37",
     "district_id": "009",
     "district_name": "State House District 9",
+    "tier": 2,
     "incumbent": {
       "name": "Tim Reeder",
       "party": "R"
@@ -592,8 +657,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Timothy Reeder",
+          "dem": "Claire Kempner"
         }
       }
     ],
@@ -622,6 +687,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 49.4,
+        "rep_pct": 50.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 44.1,
         "rep_pct": 55.9,
@@ -629,6 +700,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -1.2,
       "leg_2024": -11.9,
       "latest_leg": -11.9,
       "ussen_2022": -28.5,
@@ -643,14 +715,15 @@
       "ussen_2022": 12480
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Timothy Reeder",
+      "dem": "Claire Kempner"
     }
   },
   {
     "state_fips": "37",
     "district_id": "010",
     "district_name": "State House District 10",
+    "tier": null,
     "incumbent": {
       "name": "John Bell",
       "party": "R"
@@ -664,8 +737,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "John Bell",
+          "dem": "Zyaire Webb"
         }
       }
     ],
@@ -694,6 +767,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 39.2,
         "rep_pct": 60.8,
@@ -701,6 +780,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -21.6,
       "latest_leg": -21.6,
       "ussen_2022": -18.6,
@@ -715,14 +795,15 @@
       "ussen_2022": 26511
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "John Bell",
+      "dem": "Zyaire Webb"
     }
   },
   {
     "state_fips": "37",
     "district_id": "011",
     "district_name": "State House District 11",
+    "tier": null,
     "incumbent": {
       "name": "Allison Dahle",
       "party": "D"
@@ -737,7 +818,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Allison Dahle"
         }
       }
     ],
@@ -766,6 +847,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 64.7,
         "rep_pct": 32.5,
@@ -773,6 +860,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 32.2,
       "latest_leg": 32.2,
       "ussen_2022": 16.6,
@@ -788,13 +876,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Allison Dahle"
     }
   },
   {
     "state_fips": "37",
     "district_id": "012",
     "district_name": "State House District 12",
+    "tier": 3,
     "incumbent": {
       "name": "Chris Humphrey",
       "party": "R"
@@ -808,8 +897,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Chris Humphrey",
+          "dem": "Don Hardy"
         }
       }
     ],
@@ -838,6 +927,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 38.6,
+        "rep_pct": 61.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.4,
         "rep_pct": 57.3,
@@ -845,6 +940,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -22.8,
       "leg_2024": -15.9,
       "latest_leg": -15.9,
       "ussen_2022": -16.6,
@@ -859,14 +955,15 @@
       "ussen_2022": 26960
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Chris Humphrey",
+      "dem": "Don Hardy"
     }
   },
   {
     "state_fips": "37",
     "district_id": "013",
     "district_name": "State House District 13",
+    "tier": null,
     "incumbent": {
       "name": "Celeste Cairns",
       "party": "R"
@@ -880,8 +977,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Celeste Cairns",
+          "dem": "Jason Moore"
         }
       }
     ],
@@ -910,6 +1007,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 28.7,
+        "rep_pct": 71.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 30.1,
         "rep_pct": 69.9,
@@ -917,6 +1020,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -42.6,
       "leg_2024": -39.8,
       "latest_leg": -39.8,
       "ussen_2022": -41.4,
@@ -931,14 +1035,15 @@
       "ussen_2022": 33905
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Celeste Cairns",
+      "dem": "Jason Moore"
     }
   },
   {
     "state_fips": "37",
     "district_id": "014",
     "district_name": "State House District 14",
+    "tier": null,
     "incumbent": {
       "name": "Wyatt Gable",
       "party": "R"
@@ -952,7 +1057,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Wyatt Gable",
           "dem": "No candidate"
         }
       }
@@ -982,6 +1087,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 33.8,
+        "rep_pct": 66.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 33.9,
         "rep_pct": 66.1,
@@ -989,6 +1100,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -32.4,
       "leg_2024": -32.2,
       "latest_leg": -32.2,
       "ussen_2022": -30.3,
@@ -1003,7 +1115,7 @@
       "ussen_2022": 14000
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Wyatt Gable",
       "dem": "No candidate"
     }
   },
@@ -1011,6 +1123,7 @@
     "state_fips": "37",
     "district_id": "015",
     "district_name": "State House District 15",
+    "tier": null,
     "incumbent": {
       "name": "Phil Shepard",
       "party": "R"
@@ -1024,8 +1137,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Phil Shepard",
+          "dem": "Christopher Schulte"
         }
       }
     ],
@@ -1054,6 +1167,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 31.9,
+        "rep_pct": 68.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 31.2,
         "rep_pct": 63.8,
@@ -1061,6 +1180,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -36.1,
       "leg_2024": -32.7,
       "latest_leg": -32.7,
       "ussen_2022": -33.2,
@@ -1075,16 +1195,17 @@
       "ussen_2022": 21856
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Phil Shepard",
+      "dem": "Christopher Schulte"
     }
   },
   {
     "state_fips": "37",
     "district_id": "016",
     "district_name": "State House District 16",
+    "tier": null,
     "incumbent": {
-      "name": "Carson Smith",
+      "name": "Carson Smith Jr.",
       "party": "R"
     },
     "members": [
@@ -1092,12 +1213,12 @@
         "seat": 1,
         "seat_label": "",
         "incumbent": {
-          "name": "Carson Smith",
+          "name": "Carson Smith Jr.",
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Carson Smith Jr.",
+          "dem": "Jim Harris"
         }
       }
     ],
@@ -1126,6 +1247,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 29.2,
         "rep_pct": 70.8,
@@ -1133,6 +1260,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -41.7,
       "latest_leg": -41.7,
       "ussen_2022": -37.8,
@@ -1147,14 +1275,15 @@
       "ussen_2022": 31682
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Carson Smith Jr.",
+      "dem": "Jim Harris"
     }
   },
   {
     "state_fips": "37",
     "district_id": "017",
     "district_name": "State House District 17",
+    "tier": null,
     "incumbent": {
       "name": "Frank Iler",
       "party": "R"
@@ -1168,8 +1297,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Frank Iler",
+          "dem": "Dennis Breen"
         }
       }
     ],
@@ -1198,6 +1327,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 37.7,
+        "rep_pct": 62.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.7,
         "rep_pct": 62.3,
@@ -1205,6 +1340,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -24.6,
       "leg_2024": -24.5,
       "latest_leg": -24.5,
       "ussen_2022": -24.0,
@@ -1219,14 +1355,15 @@
       "ussen_2022": 47029
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Frank Iler",
+      "dem": "Dennis Breen"
     }
   },
   {
     "state_fips": "37",
     "district_id": "018",
     "district_name": "State House District 18",
+    "tier": null,
     "incumbent": {
       "name": "Deb Butler",
       "party": "D"
@@ -1240,8 +1377,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Latisha Grady",
+          "dem": "Deb Butler"
         }
       }
     ],
@@ -1270,6 +1407,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.3,
+        "rep_pct": 46.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 82.7,
         "rep_pct": 0.0,
@@ -1277,6 +1420,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 6.6,
       "leg_2024": 82.7,
       "latest_leg": 82.7,
       "ussen_2022": 16.7,
@@ -1291,14 +1435,15 @@
       "ussen_2022": 15082
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Latisha Grady",
+      "dem": "Deb Butler"
     }
   },
   {
     "state_fips": "37",
     "district_id": "019",
     "district_name": "State House District 19",
+    "tier": null,
     "incumbent": {
       "name": "Charlie Miller",
       "party": "R"
@@ -1312,8 +1457,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Charlie Miller",
+          "dem": "Scott Nasiff"
         }
       }
     ],
@@ -1342,6 +1487,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 38.5,
         "rep_pct": 61.5,
@@ -1349,6 +1500,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -22.9,
       "latest_leg": -22.9,
       "ussen_2022": -24.4,
@@ -1363,14 +1515,15 @@
       "ussen_2022": 34795
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Charlie Miller",
+      "dem": "Scott Nasiff"
     }
   },
   {
     "state_fips": "37",
     "district_id": "020",
     "district_name": "State House District 20",
+    "tier": 2,
     "incumbent": {
       "name": "Ted Davis Jr.",
       "party": "R"
@@ -1384,8 +1537,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Dane Scalise",
+          "dem": "Tim Merrick"
         }
       }
     ],
@@ -1414,6 +1567,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 48.9,
+        "rep_pct": 51.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 44.2,
         "rep_pct": 55.8,
@@ -1421,6 +1580,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -2.3,
       "leg_2024": -11.6,
       "latest_leg": -11.6,
       "ussen_2022": -15.8,
@@ -1435,14 +1595,15 @@
       "ussen_2022": 18300
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Dane Scalise",
+      "dem": "Tim Merrick"
     }
   },
   {
     "state_fips": "37",
     "district_id": "021",
     "district_name": "State House District 21",
+    "tier": null,
     "incumbent": {
       "name": "Ya Liu",
       "party": "D"
@@ -1456,8 +1617,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Bryson Johnson",
+          "dem": "Ya Liu"
         }
       }
     ],
@@ -1486,6 +1647,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 67.7,
+        "rep_pct": 29.9,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 62.8,
         "rep_pct": 37.2,
@@ -1493,6 +1660,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 37.7,
       "leg_2024": 25.5,
       "latest_leg": 25.5,
       "ussen_2022": 12.6,
@@ -1507,14 +1675,15 @@
       "ussen_2022": 13954
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Bryson Johnson",
+      "dem": "Ya Liu"
     }
   },
   {
     "state_fips": "37",
     "district_id": "022",
     "district_name": "State House District 22",
+    "tier": null,
     "incumbent": {
       "name": "William Brisson",
       "party": "R"
@@ -1528,8 +1697,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Wellie Jackson",
+          "dem": "Jimmy Melvin"
         }
       }
     ],
@@ -1558,6 +1727,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 39.0,
         "rep_pct": 61.0,
@@ -1565,6 +1740,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -22.0,
       "latest_leg": -22.0,
       "ussen_2022": -31.8,
@@ -1579,14 +1755,15 @@
       "ussen_2022": 22809
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Wellie Jackson",
+      "dem": "Jimmy Melvin"
     }
   },
   {
     "state_fips": "37",
     "district_id": "023",
     "district_name": "State House District 23",
+    "tier": null,
     "incumbent": {
       "name": "Shelly Willingham",
       "party": "D"
@@ -1600,8 +1777,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Brent Roberson",
+          "dem": "Patricia Smith"
         }
       }
     ],
@@ -1630,6 +1807,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.4,
+        "rep_pct": 45.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 56.5,
         "rep_pct": 43.5,
@@ -1637,6 +1820,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 8.8,
       "leg_2024": 12.9,
       "latest_leg": 12.9,
       "ussen_2022": -13.6,
@@ -1651,14 +1835,15 @@
       "ussen_2022": 13974
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Brent Roberson",
+      "dem": "Patricia Smith"
     }
   },
   {
     "state_fips": "37",
     "district_id": "024",
     "district_name": "State House District 24",
+    "tier": 2,
     "incumbent": {
       "name": "Dante Pittman",
       "party": "D"
@@ -1672,8 +1857,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Blake Boykin",
+          "dem": "Dante Pittman"
         }
       }
     ],
@@ -1702,6 +1887,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 45.8,
+        "rep_pct": 54.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 51.1,
         "rep_pct": 48.9,
@@ -1709,6 +1900,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -8.4,
       "leg_2024": 2.2,
       "latest_leg": 2.2,
       "ussen_2022": -4.0,
@@ -1723,16 +1915,17 @@
       "ussen_2022": 26920
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Blake Boykin",
+      "dem": "Dante Pittman"
     }
   },
   {
     "state_fips": "37",
     "district_id": "025",
     "district_name": "State House District 25",
+    "tier": 1,
     "incumbent": {
-      "name": "Allen Chesser",
+      "name": "Allen Chesser II",
       "party": "R"
     },
     "members": [
@@ -1740,12 +1933,12 @@
         "seat": 1,
         "seat_label": "",
         "incumbent": {
-          "name": "Allen Chesser",
+          "name": "Allen Chesser II",
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Allen Chesser II",
+          "dem": "Lorenza M. Wilkins"
         }
       }
     ],
@@ -1774,6 +1967,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 44.7,
+        "rep_pct": 52.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 47.9,
         "rep_pct": 48.8,
@@ -1781,6 +1980,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -8.2,
       "leg_2024": -0.9,
       "latest_leg": -0.9,
       "ussen_2022": -20.4,
@@ -1795,14 +1995,15 @@
       "ussen_2022": 13024
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Allen Chesser II",
+      "dem": "Lorenza M. Wilkins"
     }
   },
   {
     "state_fips": "37",
     "district_id": "026",
     "district_name": "State House District 26",
+    "tier": 2,
     "incumbent": {
       "name": "Donna McDowell White",
       "party": "R"
@@ -1816,8 +2017,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Donna McDowell White",
+          "dem": "L'Bertrice Solomon"
         }
       }
     ],
@@ -1846,6 +2047,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 40.8,
+        "rep_pct": 59.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.7,
         "rep_pct": 55.1,
@@ -1853,6 +2060,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -18.4,
       "leg_2024": -13.4,
       "latest_leg": -13.4,
       "ussen_2022": -32.2,
@@ -1867,14 +2075,15 @@
       "ussen_2022": 12975
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Donna McDowell White",
+      "dem": "L'Bertrice Solomon"
     }
   },
   {
     "state_fips": "37",
     "district_id": "027",
     "district_name": "State House District 27",
+    "tier": null,
     "incumbent": {
       "name": "Rodney Pierce",
       "party": "D"
@@ -1888,8 +2097,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Kenneth Bentley Jr.",
+          "dem": "Rodney Pierce"
         }
       }
     ],
@@ -1918,6 +2127,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 61.4,
+        "rep_pct": 38.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -1925,6 +2140,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 22.9,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 4.9,
@@ -1939,14 +2155,15 @@
       "ussen_2022": 18082
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Kenneth Bentley Jr.",
+      "dem": "Rodney Pierce"
     }
   },
   {
     "state_fips": "37",
     "district_id": "028",
     "district_name": "State House District 28",
+    "tier": null,
     "incumbent": {
       "name": "Larry Strickland",
       "party": "R"
@@ -1960,8 +2177,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Larry Strickland",
+          "dem": "D. Matthew Bailey"
         }
       }
     ],
@@ -1990,6 +2207,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 28.1,
+        "rep_pct": 71.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 31.1,
         "rep_pct": 68.9,
@@ -1997,6 +2220,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -43.9,
       "leg_2024": -37.8,
       "latest_leg": -37.8,
       "ussen_2022": -51.4,
@@ -2011,14 +2235,15 @@
       "ussen_2022": 13598
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Larry Strickland",
+      "dem": "D. Matthew Bailey"
     }
   },
   {
     "state_fips": "37",
     "district_id": "029",
     "district_name": "State House District 29",
+    "tier": null,
     "incumbent": {
       "name": "Vernetta Alston",
       "party": "D"
@@ -2033,7 +2258,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Vernetta Alston"
         }
       }
     ],
@@ -2062,6 +2287,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2069,6 +2300,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 57.4,
@@ -2084,13 +2316,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Vernetta Alston"
     }
   },
   {
     "state_fips": "37",
     "district_id": "030",
     "district_name": "State House District 30",
+    "tier": null,
     "incumbent": {
       "name": "Marcia Morey",
       "party": "D"
@@ -2105,7 +2338,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Marcia Morey"
         }
       }
     ],
@@ -2134,6 +2367,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 86.4,
+        "rep_pct": 11.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2141,6 +2380,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 74.6,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 66.5,
@@ -2156,15 +2396,16 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Marcia Morey"
     }
   },
   {
     "state_fips": "37",
     "district_id": "031",
     "district_name": "State House District 31",
+    "tier": null,
     "incumbent": {
-      "name": "Zack Forde-Hawkins",
+      "name": "Zack Hawkins",
       "party": "D"
     },
     "members": [
@@ -2172,12 +2413,12 @@
         "seat": 1,
         "seat_label": "",
         "incumbent": {
-          "name": "Zack Forde-Hawkins",
+          "name": "Zack Hawkins",
           "party": "D"
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Zack Hawkins"
         }
       }
     ],
@@ -2206,6 +2447,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 84.2,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2213,6 +2460,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 84.2,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 54.3,
@@ -2228,13 +2476,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Zack Hawkins"
     }
   },
   {
     "state_fips": "37",
     "district_id": "032",
     "district_name": "State House District 32",
+    "tier": 1,
     "incumbent": {
       "name": "Bryan Cohn",
       "party": "D"
@@ -2248,8 +2497,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Frank Sossamon",
+          "dem": "Curtis McRae"
         }
       }
     ],
@@ -2278,6 +2527,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 48.7,
+        "rep_pct": 51.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 48.9,
         "rep_pct": 48.4,
@@ -2285,6 +2540,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -2.7,
       "leg_2024": 0.5,
       "latest_leg": 0.5,
       "ussen_2022": 0.3,
@@ -2299,14 +2555,15 @@
       "ussen_2022": 30244
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Frank Sossamon",
+      "dem": "Curtis McRae"
     }
   },
   {
     "state_fips": "37",
     "district_id": "033",
     "district_name": "State House District 33",
+    "tier": null,
     "incumbent": {
       "name": "Monika Johnson-Hostler",
       "party": "D"
@@ -2320,8 +2577,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Matthew Orr",
+          "dem": "Monika Johnson-Hostler"
         }
       }
     ],
@@ -2350,6 +2607,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 59.6,
+        "rep_pct": 37.3,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 80.2,
         "rep_pct": 0.0,
@@ -2357,6 +2620,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 22.3,
       "leg_2024": 80.2,
       "latest_leg": 80.2,
       "ussen_2022": 25.6,
@@ -2371,14 +2635,15 @@
       "ussen_2022": 12177
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Matthew Orr",
+      "dem": "Monika Johnson-Hostler"
     }
   },
   {
     "state_fips": "37",
     "district_id": "034",
     "district_name": "State House District 34",
+    "tier": null,
     "incumbent": {
       "name": "Tim Longest",
       "party": "D"
@@ -2393,7 +2658,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Tim Longest"
         }
       }
     ],
@@ -2422,6 +2687,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 60.3,
+        "rep_pct": 36.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 75.8,
         "rep_pct": 0.0,
@@ -2429,6 +2700,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 23.6,
       "leg_2024": 75.8,
       "latest_leg": 75.8,
       "ussen_2022": 18.9,
@@ -2444,13 +2716,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Tim Longest"
     }
   },
   {
     "state_fips": "37",
     "district_id": "035",
     "district_name": "State House District 35",
+    "tier": 1,
     "incumbent": {
       "name": "Mike Schietzelt",
       "party": "R"
@@ -2464,8 +2737,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Mike Schietzelt",
+          "dem": "Evonne S. Hopkins"
         }
       }
     ],
@@ -2494,6 +2767,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 52.0,
+        "rep_pct": 46.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 47.1,
         "rep_pct": 50.3,
@@ -2501,6 +2780,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 5.9,
       "leg_2024": -3.2,
       "latest_leg": -3.2,
       "ussen_2022": -21.5,
@@ -2515,14 +2795,15 @@
       "ussen_2022": 19319
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Mike Schietzelt",
+      "dem": "Evonne S. Hopkins"
     }
   },
   {
     "state_fips": "37",
     "district_id": "036",
     "district_name": "State House District 36",
+    "tier": null,
     "incumbent": {
       "name": "Julie von Haefen",
       "party": "D"
@@ -2536,8 +2817,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Mary Insprucker",
+          "dem": "Julie von Haefen"
         }
       }
     ],
@@ -2566,6 +2847,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 56.1,
+        "rep_pct": 41.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 54.5,
         "rep_pct": 42.6,
@@ -2573,6 +2860,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 14.7,
       "leg_2024": 11.9,
       "latest_leg": 11.9,
       "ussen_2022": -7.0,
@@ -2587,14 +2875,15 @@
       "ussen_2022": 15238
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Mary Insprucker",
+      "dem": "Julie von Haefen"
     }
   },
   {
     "state_fips": "37",
     "district_id": "037",
     "district_name": "State House District 37",
+    "tier": 1,
     "incumbent": {
       "name": "Erin Par\u00e9",
       "party": "R"
@@ -2608,8 +2897,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Erin Par\u00e9",
+          "dem": "Winn Decker"
         }
       }
     ],
@@ -2638,6 +2927,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 45.0,
+        "rep_pct": 52.8,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 45.3,
         "rep_pct": 51.4,
@@ -2645,6 +2940,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -7.8,
       "leg_2024": -6.1,
       "latest_leg": -6.1,
       "ussen_2022": -21.3,
@@ -2659,14 +2955,15 @@
       "ussen_2022": 17328
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Erin Par\u00e9",
+      "dem": "Winn Decker"
     }
   },
   {
     "state_fips": "37",
     "district_id": "038",
     "district_name": "State House District 38",
+    "tier": null,
     "incumbent": {
       "name": "Abe Jones",
       "party": "D"
@@ -2681,7 +2978,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Abe Jones"
         }
       }
     ],
@@ -2710,6 +3007,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 87.4,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2717,6 +3020,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 87.4,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 58.5,
@@ -2732,13 +3036,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Abe Jones"
     }
   },
   {
     "state_fips": "37",
     "district_id": "039",
     "district_name": "State House District 39",
+    "tier": null,
     "incumbent": {
       "name": "James Roberson",
       "party": "D"
@@ -2752,8 +3057,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jorge Cordova",
+          "dem": "James Roberson"
         }
       }
     ],
@@ -2782,6 +3087,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 60.2,
+        "rep_pct": 39.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2789,6 +3100,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 20.4,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 10.0,
@@ -2803,14 +3115,15 @@
       "ussen_2022": 12663
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jorge Cordova",
+      "dem": "James Roberson"
     }
   },
   {
     "state_fips": "37",
     "district_id": "040",
     "district_name": "State House District 40",
+    "tier": null,
     "incumbent": {
       "name": "Phil Rubin",
       "party": "D"
@@ -2825,7 +3138,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Phil Rubin"
         }
       }
     ],
@@ -2854,6 +3167,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.8,
+        "rep_pct": 42.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 62.3,
         "rep_pct": 34.6,
@@ -2861,6 +3180,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 12.0,
       "leg_2024": 27.7,
       "latest_leg": 27.7,
       "ussen_2022": 12.1,
@@ -2876,13 +3196,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Phil Rubin"
     }
   },
   {
     "state_fips": "37",
     "district_id": "041",
     "district_name": "State House District 41",
+    "tier": null,
     "incumbent": {
       "name": "Maria Cervania",
       "party": "D"
@@ -2896,8 +3217,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Bruce Forster",
+          "dem": "Maria Cervania"
         }
       }
     ],
@@ -2926,6 +3247,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 63.9,
+        "rep_pct": 33.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 76.6,
         "rep_pct": 0.0,
@@ -2933,6 +3260,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 30.4,
       "leg_2024": 76.6,
       "latest_leg": 76.6,
       "ussen_2022": 22.9,
@@ -2947,14 +3275,15 @@
       "ussen_2022": 12879
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Bruce Forster",
+      "dem": "Maria Cervania"
     }
   },
   {
     "state_fips": "37",
     "district_id": "042",
     "district_name": "State House District 42",
+    "tier": null,
     "incumbent": {
       "name": "Mike Colvin",
       "party": "D"
@@ -2969,7 +3298,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Mike Colvin"
         }
       }
     ],
@@ -2998,6 +3327,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 71.3,
+        "rep_pct": 28.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 74.3,
         "rep_pct": 25.7,
@@ -3005,6 +3340,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 42.5,
       "leg_2024": 48.6,
       "latest_leg": 48.6,
       "ussen_2022": 54.6,
@@ -3020,13 +3356,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Mike Colvin"
     }
   },
   {
     "state_fips": "37",
     "district_id": "043",
     "district_name": "State House District 43",
+    "tier": 2,
     "incumbent": {
       "name": "Diane Wheatley",
       "party": "R"
@@ -3040,8 +3377,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Diane Wheatley",
+          "dem": "Janene Ackles"
         }
       }
     ],
@@ -3070,6 +3407,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 45.0,
+        "rep_pct": 55.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.7,
         "rep_pct": 57.3,
@@ -3077,6 +3420,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -10.0,
       "leg_2024": -14.7,
       "latest_leg": -14.7,
       "ussen_2022": -13.5,
@@ -3091,14 +3435,15 @@
       "ussen_2022": 27441
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Diane Wheatley",
+      "dem": "Janene Ackles"
     }
   },
   {
     "state_fips": "37",
     "district_id": "044",
     "district_name": "State House District 44",
+    "tier": null,
     "incumbent": {
       "name": "Charles Smith",
       "party": "D"
@@ -3112,8 +3457,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jackie Weyhenmeyer",
+          "dem": "Charles Smith"
         }
       }
     ],
@@ -3142,6 +3487,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 62.3,
         "rep_pct": 37.7,
@@ -3149,6 +3500,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 24.6,
       "latest_leg": 24.6,
       "ussen_2022": 17.7,
@@ -3163,14 +3515,15 @@
       "ussen_2022": 22008
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jackie Weyhenmeyer",
+      "dem": "Charles Smith"
     }
   },
   {
     "state_fips": "37",
     "district_id": "045",
     "district_name": "State House District 45",
+    "tier": null,
     "incumbent": {
       "name": "Frances Jackson",
       "party": "D"
@@ -3185,7 +3538,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Frances Jackson"
         }
       }
     ],
@@ -3214,6 +3567,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 55.2,
+        "rep_pct": 44.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -3221,6 +3580,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 10.3,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 15.1,
@@ -3236,13 +3596,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Frances Jackson"
     }
   },
   {
     "state_fips": "37",
     "district_id": "046",
     "district_name": "State House District 46",
+    "tier": null,
     "incumbent": {
       "name": "Brenden Jones",
       "party": "R"
@@ -3256,8 +3617,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Brenden Jones",
+          "dem": "Brittany Newton"
         }
       }
     ],
@@ -3286,6 +3647,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
@@ -3293,6 +3660,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -100.0,
       "latest_leg": -100.0,
       "ussen_2022": -28.8,
@@ -3307,14 +3675,15 @@
       "ussen_2022": 26845
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Brenden Jones",
+      "dem": "Brittany Newton"
     }
   },
   {
     "state_fips": "37",
     "district_id": "047",
     "district_name": "State House District 47",
+    "tier": null,
     "incumbent": {
       "name": "John Lowery",
       "party": "R"
@@ -3328,8 +3697,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "John Lowery",
+          "dem": "Eshonda Hooper"
         }
       }
     ],
@@ -3358,6 +3727,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.3,
+        "rep_pct": 60.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.4,
         "rep_pct": 64.6,
@@ -3365,6 +3740,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -21.4,
       "leg_2024": -29.3,
       "latest_leg": -29.3,
       "ussen_2022": -10.8,
@@ -3379,14 +3755,15 @@
       "ussen_2022": 19244
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "John Lowery",
+      "dem": "Eshonda Hooper"
     }
   },
   {
     "state_fips": "37",
     "district_id": "048",
     "district_name": "State House District 48",
+    "tier": 2,
     "incumbent": {
       "name": "Garland Pierce",
       "party": "D"
@@ -3400,8 +3777,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Ralph Carter",
+          "dem": "Garland Pierce"
         }
       }
     ],
@@ -3430,6 +3807,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.5,
+        "rep_pct": 46.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 51.9,
         "rep_pct": 48.1,
@@ -3437,6 +3820,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 7.0,
       "leg_2024": 3.8,
       "latest_leg": 3.8,
       "ussen_2022": -15.7,
@@ -3451,14 +3835,15 @@
       "ussen_2022": 8502
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Ralph Carter",
+      "dem": "Garland Pierce"
     }
   },
   {
     "state_fips": "37",
     "district_id": "049",
     "district_name": "State House District 49",
+    "tier": null,
     "incumbent": {
       "name": "Cynthia Ball",
       "party": "D"
@@ -3472,8 +3857,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Daran Thomas",
+          "dem": "Cynthia Ball"
         }
       }
     ],
@@ -3502,6 +3887,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 67.8,
+        "rep_pct": 29.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -3509,6 +3900,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 38.4,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 31.2,
@@ -3523,16 +3915,17 @@
       "ussen_2022": 13232
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Daran Thomas",
+      "dem": "Cynthia Ball"
     }
   },
   {
     "state_fips": "37",
     "district_id": "050",
     "district_name": "State House District 50",
+    "tier": null,
     "incumbent": {
-      "name": "Renee Price",
+      "name": "Ren\u00e9e Price",
       "party": "D"
     },
     "members": [
@@ -3540,12 +3933,12 @@
         "seat": 1,
         "seat_label": "",
         "incumbent": {
-          "name": "Renee Price",
+          "name": "Ren\u00e9e Price",
           "party": "D"
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Ren\u00e9e Price"
         }
       }
     ],
@@ -3574,6 +3967,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 59.5,
+        "rep_pct": 40.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -3581,6 +3980,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 18.9,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": -8.1,
@@ -3596,13 +3996,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Ren\u00e9e Price"
     }
   },
   {
     "state_fips": "37",
     "district_id": "051",
     "district_name": "State House District 51",
+    "tier": null,
     "incumbent": {
       "name": "John Sauls",
       "party": "R"
@@ -3616,8 +4017,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Charles Taylor",
+          "dem": "Tasherra Nichols McDuffie"
         }
       }
     ],
@@ -3646,6 +4047,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 35.0,
+        "rep_pct": 65.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.7,
         "rep_pct": 64.3,
@@ -3653,6 +4060,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -30.0,
       "leg_2024": -28.6,
       "latest_leg": -28.6,
       "ussen_2022": -40.4,
@@ -3667,14 +4075,15 @@
       "ussen_2022": 10166
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Charles Taylor",
+      "dem": "Tasherra Nichols McDuffie"
     }
   },
   {
     "state_fips": "37",
     "district_id": "052",
     "district_name": "State House District 52",
+    "tier": null,
     "incumbent": {
       "name": "Ben Moss",
       "party": "R"
@@ -3688,8 +4097,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Ben Moss",
+          "dem": "Joe Parfitt"
         }
       }
     ],
@@ -3718,6 +4127,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 38.9,
         "rep_pct": 61.1,
@@ -3725,6 +4140,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -22.1,
       "latest_leg": -22.1,
       "ussen_2022": -26.9,
@@ -3739,14 +4155,15 @@
       "ussen_2022": 14353
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Ben Moss",
+      "dem": "Joe Parfitt"
     }
   },
   {
     "state_fips": "37",
     "district_id": "053",
     "district_name": "State House District 53",
+    "tier": null,
     "incumbent": {
       "name": "Howard Penny Jr.",
       "party": "R"
@@ -3760,8 +4177,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Howard Penny Jr.",
+          "dem": "Kevin G. Thurman"
         }
       }
     ],
@@ -3790,6 +4207,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 32.9,
+        "rep_pct": 67.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.1,
         "rep_pct": 62.9,
@@ -3797,6 +4220,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -34.3,
       "leg_2024": -25.9,
       "latest_leg": -25.9,
       "ussen_2022": -35.8,
@@ -3811,14 +4235,15 @@
       "ussen_2022": 21088
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Howard Penny Jr.",
+      "dem": "Kevin G. Thurman"
     }
   },
   {
     "state_fips": "37",
     "district_id": "054",
     "district_name": "State House District 54",
+    "tier": null,
     "incumbent": {
       "name": "Robert Reives",
       "party": "D"
@@ -3833,7 +4258,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Robert Reives"
         }
       }
     ],
@@ -3862,6 +4287,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 55.3,
+        "rep_pct": 44.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 54.8,
         "rep_pct": 45.2,
@@ -3869,6 +4300,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 10.6,
       "leg_2024": 9.5,
       "latest_leg": 9.5,
       "ussen_2022": 12.1,
@@ -3884,13 +4316,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Robert Reives"
     }
   },
   {
     "state_fips": "37",
     "district_id": "055",
     "district_name": "State House District 55",
+    "tier": null,
     "incumbent": {
       "name": "Mark Brody",
       "party": "R"
@@ -3904,8 +4337,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Clancy Baucom",
+          "dem": "John J. Kirkpatrick IV"
         }
       }
     ],
@@ -3934,6 +4367,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.0,
         "rep_pct": 63.0,
@@ -3941,6 +4380,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -26.0,
       "latest_leg": -26.0,
       "ussen_2022": -29.4,
@@ -3955,14 +4395,15 @@
       "ussen_2022": 25616
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Clancy Baucom",
+      "dem": "John J. Kirkpatrick IV"
     }
   },
   {
     "state_fips": "37",
     "district_id": "056",
     "district_name": "State House District 56",
+    "tier": null,
     "incumbent": {
       "name": "Allen Buansi",
       "party": "D"
@@ -3977,7 +4418,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Allen Buansi"
         }
       }
     ],
@@ -4006,6 +4447,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 86.3,
         "rep_pct": 13.7,
@@ -4013,6 +4460,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 72.6,
       "latest_leg": 72.6,
       "ussen_2022": 62.7,
@@ -4028,13 +4476,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Allen Buansi"
     }
   },
   {
     "state_fips": "37",
     "district_id": "057",
     "district_name": "State House District 57",
+    "tier": null,
     "incumbent": {
       "name": "Tracy Clark",
       "party": "D"
@@ -4049,7 +4498,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Tracy Clark"
         }
       }
     ],
@@ -4078,6 +4527,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 55.1,
+        "rep_pct": 44.9,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 68.1,
         "rep_pct": 31.9,
@@ -4085,6 +4540,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 10.1,
       "leg_2024": 36.3,
       "latest_leg": 36.3,
       "ussen_2022": 27.0,
@@ -4100,13 +4556,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Tracy Clark"
     }
   },
   {
     "state_fips": "37",
     "district_id": "058",
     "district_name": "State House District 58",
+    "tier": null,
     "incumbent": {
       "name": "Amos Quick",
       "party": "D"
@@ -4121,7 +4578,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Amos Quick"
         }
       }
     ],
@@ -4150,6 +4607,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 69.2,
+        "rep_pct": 30.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -4157,6 +4620,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 38.3,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 45.5,
@@ -4172,13 +4636,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Amos Quick"
     }
   },
   {
     "state_fips": "37",
     "district_id": "059",
     "district_name": "State House District 59",
+    "tier": 2,
     "incumbent": {
       "name": "Alan Branson",
       "party": "R"
@@ -4192,8 +4657,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Alan Branson",
+          "dem": "Elma Hairston"
         }
       }
     ],
@@ -4222,6 +4687,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 43.7,
+        "rep_pct": 56.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 44.8,
         "rep_pct": 55.2,
@@ -4229,6 +4700,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -12.7,
       "leg_2024": -10.4,
       "latest_leg": -10.4,
       "ussen_2022": -25.3,
@@ -4243,14 +4715,15 @@
       "ussen_2022": 18394
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Alan Branson",
+      "dem": "Elma Hairston"
     }
   },
   {
     "state_fips": "37",
     "district_id": "060",
     "district_name": "State House District 60",
+    "tier": null,
     "incumbent": {
       "name": "Amanda Cook",
       "party": "D"
@@ -4264,8 +4737,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Joseph Perrotta",
+          "dem": "Amanda Cook"
         }
       }
     ],
@@ -4294,6 +4767,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 58.9,
+        "rep_pct": 41.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 63.2,
         "rep_pct": 36.8,
@@ -4301,6 +4780,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 17.9,
       "leg_2024": 26.4,
       "latest_leg": 26.4,
       "ussen_2022": 15.0,
@@ -4315,14 +4795,15 @@
       "ussen_2022": 10796
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Joseph Perrotta",
+      "dem": "Amanda Cook"
     }
   },
   {
     "state_fips": "37",
     "district_id": "061",
     "district_name": "State House District 61",
+    "tier": null,
     "incumbent": {
       "name": "Pricey Harrison",
       "party": "D"
@@ -4337,7 +4818,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Mary Harrison"
         }
       }
     ],
@@ -4366,6 +4847,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 78.9,
         "rep_pct": 21.1,
@@ -4373,6 +4860,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 57.7,
       "latest_leg": 57.7,
       "ussen_2022": 45.1,
@@ -4388,13 +4876,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Mary Harrison"
     }
   },
   {
     "state_fips": "37",
     "district_id": "062",
     "district_name": "State House District 62",
+    "tier": 1,
     "incumbent": {
       "name": "John Blust",
       "party": "R"
@@ -4408,8 +4897,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "John Blust",
+          "dem": "Shelly Headen"
         }
       }
     ],
@@ -4438,6 +4927,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 47.8,
+        "rep_pct": 52.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 46.6,
         "rep_pct": 53.4,
@@ -4445,6 +4940,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -4.3,
       "leg_2024": -6.9,
       "latest_leg": -6.9,
       "ussen_2022": -16.7,
@@ -4459,14 +4955,15 @@
       "ussen_2022": 16891
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "John Blust",
+      "dem": "Shelly Headen"
     }
   },
   {
     "state_fips": "37",
     "district_id": "063",
     "district_name": "State House District 63",
+    "tier": 2,
     "incumbent": {
       "name": "Stephen Ross",
       "party": "R"
@@ -4480,8 +4977,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Ryan Moffitt",
+          "dem": "Whitney Olive"
         }
       }
     ],
@@ -4510,6 +5007,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 48.9,
+        "rep_pct": 51.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 45.0,
         "rep_pct": 55.0,
@@ -4517,6 +5020,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -2.2,
       "leg_2024": -10.1,
       "latest_leg": -10.1,
       "ussen_2022": -10.7,
@@ -4531,14 +5035,15 @@
       "ussen_2022": 29918
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Ryan Moffitt",
+      "dem": "Whitney Olive"
     }
   },
   {
     "state_fips": "37",
     "district_id": "064",
     "district_name": "State House District 64",
+    "tier": 1,
     "incumbent": {
       "name": "Dennis Riddell",
       "party": "R"
@@ -4552,8 +5057,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Dennis Riddell",
+          "dem": "LeVon Barnes"
         }
       }
     ],
@@ -4582,6 +5087,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 37.5,
+        "rep_pct": 62.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 45.2,
         "rep_pct": 54.8,
@@ -4589,6 +5100,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -25.1,
       "leg_2024": -9.7,
       "latest_leg": -9.7,
       "ussen_2022": -12.7,
@@ -4603,14 +5115,15 @@
       "ussen_2022": 30095
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Dennis Riddell",
+      "dem": "LeVon Barnes"
     }
   },
   {
     "state_fips": "37",
     "district_id": "065",
     "district_name": "State House District 65",
+    "tier": null,
     "incumbent": {
       "name": "Reece Pyrtle",
       "party": "R"
@@ -4624,8 +5137,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Seth Woodall",
+          "dem": "Gavin McGaughey"
         }
       }
     ],
@@ -4654,6 +5167,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 32.8,
+        "rep_pct": 67.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
@@ -4661,6 +5180,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -34.3,
       "leg_2024": -100.0,
       "latest_leg": -100.0,
       "ussen_2022": -35.3,
@@ -4675,14 +5195,15 @@
       "ussen_2022": 32566
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Seth Woodall",
+      "dem": "Gavin McGaughey"
     }
   },
   {
     "state_fips": "37",
     "district_id": "066",
     "district_name": "State House District 66",
+    "tier": null,
     "incumbent": {
       "name": "Sarah Crawford",
       "party": "D"
@@ -4697,7 +5218,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Sarah Crawford"
         }
       }
     ],
@@ -4726,6 +5247,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 70.1,
+        "rep_pct": 27.2,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 74.9,
         "rep_pct": 0.0,
@@ -4733,6 +5260,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 42.9,
       "leg_2024": 74.9,
       "latest_leg": 74.9,
       "ussen_2022": 13.6,
@@ -4748,13 +5276,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Sarah Crawford"
     }
   },
   {
     "state_fips": "37",
     "district_id": "067",
     "district_name": "State House District 67",
+    "tier": null,
     "incumbent": {
       "name": "Cody Huneycutt",
       "party": "R"
@@ -4768,8 +5297,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Cody Huneycutt",
+          "dem": "Jocelyn Torres"
         }
       }
     ],
@@ -4798,6 +5327,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 25.0,
         "rep_pct": 75.0,
@@ -4805,6 +5340,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -50.1,
       "latest_leg": -50.1,
       "ussen_2022": -49.3,
@@ -4819,14 +5355,15 @@
       "ussen_2022": 32310
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Cody Huneycutt",
+      "dem": "Jocelyn Torres"
     }
   },
   {
     "state_fips": "37",
     "district_id": "068",
     "district_name": "State House District 68",
+    "tier": null,
     "incumbent": {
       "name": "David Willis",
       "party": "R"
@@ -4840,8 +5377,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "David Willis",
+          "dem": "Derek Warriner"
         }
       }
     ],
@@ -4870,6 +5407,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.5,
         "rep_pct": 62.5,
@@ -4877,6 +5420,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -25.0,
       "latest_leg": -25.0,
       "ussen_2022": -23.2,
@@ -4891,14 +5435,15 @@
       "ussen_2022": 37438
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "David Willis",
+      "dem": "Derek Warriner"
     }
   },
   {
     "state_fips": "37",
     "district_id": "069",
     "district_name": "State House District 69",
+    "tier": null,
     "incumbent": {
       "name": "Dean Arp",
       "party": "R"
@@ -4912,8 +5457,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Dean Arp",
+          "dem": "Heidi Sinsley"
         }
       }
     ],
@@ -4942,6 +5487,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 33.4,
+        "rep_pct": 66.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 36.8,
         "rep_pct": 63.2,
@@ -4949,6 +5500,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -33.2,
       "leg_2024": -26.4,
       "latest_leg": -26.4,
       "ussen_2022": -28.4,
@@ -4963,14 +5515,15 @@
       "ussen_2022": 34212
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Dean Arp",
+      "dem": "Heidi Sinsley"
     }
   },
   {
     "state_fips": "37",
     "district_id": "070",
     "district_name": "State House District 70",
+    "tier": null,
     "incumbent": {
       "name": "Brian Biggs",
       "party": "R"
@@ -4984,8 +5537,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Brian Biggs",
+          "dem": "Bill McCaskill"
         }
       }
     ],
@@ -5014,6 +5567,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 21.0,
+        "rep_pct": 79.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 23.8,
         "rep_pct": 76.2,
@@ -5021,6 +5580,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -58.0,
       "leg_2024": -52.3,
       "latest_leg": -52.3,
       "ussen_2022": -55.6,
@@ -5035,14 +5595,15 @@
       "ussen_2022": 28257
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Brian Biggs",
+      "dem": "Bill McCaskill"
     }
   },
   {
     "state_fips": "37",
     "district_id": "071",
     "district_name": "State House District 71",
+    "tier": null,
     "incumbent": {
       "name": "Kanika Brown",
       "party": "D"
@@ -5057,7 +5618,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Kanika Brown"
         }
       }
     ],
@@ -5086,6 +5647,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -5093,6 +5660,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 38.2,
@@ -5108,13 +5676,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Kanika Brown"
     }
   },
   {
     "state_fips": "37",
     "district_id": "072",
     "district_name": "State House District 72",
+    "tier": null,
     "incumbent": {
       "name": "Amber Baker",
       "party": "D"
@@ -5129,7 +5698,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Amber Baker"
         }
       }
     ],
@@ -5158,6 +5727,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 73.9,
+        "rep_pct": 26.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -5165,6 +5740,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 47.7,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 47.7,
@@ -5180,13 +5756,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Amber Baker"
     }
   },
   {
     "state_fips": "37",
     "district_id": "073",
     "district_name": "State House District 73",
+    "tier": 1,
     "incumbent": {
       "name": "Jonathan Almond",
       "party": "R"
@@ -5200,8 +5777,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jonathan Almond",
+          "dem": "Thomas Monks"
         }
       }
     ],
@@ -5230,6 +5807,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 51.1,
+        "rep_pct": 48.9,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 46.8,
         "rep_pct": 53.2,
@@ -5237,6 +5820,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 2.3,
       "leg_2024": -6.4,
       "latest_leg": -6.4,
       "ussen_2022": -23.8,
@@ -5251,14 +5835,15 @@
       "ussen_2022": 14846
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jonathan Almond",
+      "dem": "Thomas Monks"
     }
   },
   {
     "state_fips": "37",
     "district_id": "074",
     "district_name": "State House District 74",
+    "tier": 1,
     "incumbent": {
       "name": "Jeff Zenger",
       "party": "R"
@@ -5272,8 +5857,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jeff Zenger",
+          "dem": "Amy Taylor North"
         }
       }
     ],
@@ -5302,6 +5887,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 47.6,
+        "rep_pct": 52.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 48.2,
         "rep_pct": 51.8,
@@ -5309,6 +5900,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -4.7,
       "leg_2024": -3.6,
       "latest_leg": -3.6,
       "ussen_2022": -7.4,
@@ -5323,14 +5915,15 @@
       "ussen_2022": 39071
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jeff Zenger",
+      "dem": "Amy Taylor North"
     }
   },
   {
     "state_fips": "37",
     "district_id": "075",
     "district_name": "State House District 75",
+    "tier": 2,
     "incumbent": {
       "name": "Donny Lambeth",
       "party": "R"
@@ -5344,8 +5937,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Donny Lambeth",
+          "dem": "Jen Wiles"
         }
       }
     ],
@@ -5374,6 +5967,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 43.0,
         "rep_pct": 57.0,
@@ -5381,6 +5980,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -13.9,
       "latest_leg": -13.9,
       "ussen_2022": -16.3,
@@ -5395,14 +5995,15 @@
       "ussen_2022": 30079
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Donny Lambeth",
+      "dem": "Jen Wiles"
     }
   },
   {
     "state_fips": "37",
     "district_id": "076",
     "district_name": "State House District 76",
+    "tier": null,
     "incumbent": {
       "name": "Harry Warren",
       "party": "R"
@@ -5416,8 +6017,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Greg Edds",
+          "dem": "Scott Huffman"
         }
       }
     ],
@@ -5446,6 +6047,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.6,
         "rep_pct": 62.4,
@@ -5453,6 +6060,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -24.7,
       "latest_leg": -24.7,
       "ussen_2022": -26.4,
@@ -5467,16 +6075,17 @@
       "ussen_2022": 28793
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Greg Edds",
+      "dem": "Scott Huffman"
     }
   },
   {
     "state_fips": "37",
     "district_id": "077",
     "district_name": "State House District 77",
+    "tier": null,
     "incumbent": {
-      "name": "Julia Craven Howard",
+      "name": "Julia Howard",
       "party": "R"
     },
     "members": [
@@ -5484,12 +6093,12 @@
         "seat": 1,
         "seat_label": "",
         "incumbent": {
-          "name": "Julia Craven Howard",
+          "name": "Julia Howard",
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Julia Howard",
+          "dem": "Sabrina Harris"
         }
       }
     ],
@@ -5518,6 +6127,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 20.9,
         "rep_pct": 79.1,
@@ -5525,6 +6140,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -58.2,
       "latest_leg": -58.2,
       "ussen_2022": -56.1,
@@ -5539,14 +6155,15 @@
       "ussen_2022": 30507
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Julia Howard",
+      "dem": "Sabrina Harris"
     }
   },
   {
     "state_fips": "37",
     "district_id": "078",
     "district_name": "State House District 78",
+    "tier": null,
     "incumbent": {
       "name": "Neal Jackson",
       "party": "R"
@@ -5560,8 +6177,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Neal Jackson",
+          "dem": "Matt Borja"
         }
       }
     ],
@@ -5590,6 +6207,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 23.4,
+        "rep_pct": 76.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 23.5,
         "rep_pct": 76.5,
@@ -5597,6 +6220,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -53.1,
       "leg_2024": -52.9,
       "latest_leg": -52.9,
       "ussen_2022": -62.1,
@@ -5611,14 +6235,15 @@
       "ussen_2022": 26156
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Neal Jackson",
+      "dem": "Matt Borja"
     }
   },
   {
     "state_fips": "37",
     "district_id": "079",
     "district_name": "State House District 79",
+    "tier": null,
     "incumbent": {
       "name": "Keith Kidwell",
       "party": "R"
@@ -5632,7 +6257,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Darren Armstrong",
           "dem": "No candidate"
         }
       }
@@ -5662,6 +6287,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 36.8,
         "rep_pct": 63.2,
@@ -5669,6 +6300,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -26.5,
       "latest_leg": -26.5,
       "ussen_2022": -36.7,
@@ -5683,7 +6315,7 @@
       "ussen_2022": 21070
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Darren Armstrong",
       "dem": "No candidate"
     }
   },
@@ -5691,6 +6323,7 @@
     "state_fips": "37",
     "district_id": "080",
     "district_name": "State House District 80",
+    "tier": null,
     "incumbent": {
       "name": "Sam Watford",
       "party": "R"
@@ -5704,8 +6337,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Sam Watford",
+          "dem": "JacQuez Johnson"
         }
       }
     ],
@@ -5734,6 +6367,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 21.5,
+        "rep_pct": 78.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 24.3,
         "rep_pct": 75.7,
@@ -5741,6 +6380,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -56.9,
       "leg_2024": -51.4,
       "latest_leg": -51.4,
       "ussen_2022": -55.2,
@@ -5755,14 +6395,15 @@
       "ussen_2022": 27900
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Sam Watford",
+      "dem": "JacQuez Johnson"
     }
   },
   {
     "state_fips": "37",
     "district_id": "081",
     "district_name": "State House District 81",
+    "tier": null,
     "incumbent": {
       "name": "Larry Potts",
       "party": "R"
@@ -5776,8 +6417,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Larry Potts",
+          "dem": "Dylan Tucker"
         }
       }
     ],
@@ -5806,6 +6447,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 25.8,
+        "rep_pct": 74.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 28.1,
         "rep_pct": 71.9,
@@ -5813,6 +6460,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -48.5,
       "leg_2024": -43.8,
       "latest_leg": -43.8,
       "ussen_2022": -47.2,
@@ -5827,14 +6475,15 @@
       "ussen_2022": 28903
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Larry Potts",
+      "dem": "Dylan Tucker"
     }
   },
   {
     "state_fips": "37",
     "district_id": "082",
     "district_name": "State House District 82",
+    "tier": 1,
     "incumbent": {
       "name": "Brian Echevarria",
       "party": "R"
@@ -5848,8 +6497,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Brian Echevarria",
+          "dem": "Chris Bishopp"
         }
       }
     ],
@@ -5878,6 +6527,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 45.7,
         "rep_pct": 54.3,
@@ -5885,6 +6540,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -8.7,
       "latest_leg": -8.7,
       "ussen_2022": -27.5,
@@ -5899,14 +6555,15 @@
       "ussen_2022": 17772
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Brian Echevarria",
+      "dem": "Chris Bishopp"
     }
   },
   {
     "state_fips": "37",
     "district_id": "083",
     "district_name": "State House District 83",
+    "tier": null,
     "incumbent": {
       "name": "Grant Campbell",
       "party": "R"
@@ -5920,8 +6577,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Grant Campbell",
+          "dem": "Cortez Ferrell"
         }
       }
     ],
@@ -5950,6 +6607,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 34.3,
         "rep_pct": 65.7,
@@ -5957,6 +6620,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -31.4,
       "latest_leg": -31.4,
       "ussen_2022": -47.1,
@@ -5971,14 +6635,15 @@
       "ussen_2022": 21749
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Grant Campbell",
+      "dem": "Cortez Ferrell"
     }
   },
   {
     "state_fips": "37",
     "district_id": "084",
     "district_name": "State House District 84",
+    "tier": null,
     "incumbent": {
       "name": "Jeffrey McNeely",
       "party": "R"
@@ -5992,8 +6657,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jeffrey McNeely",
+          "dem": "Chris E. Gilbert"
         }
       }
     ],
@@ -6022,6 +6687,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 29.3,
         "rep_pct": 68.2,
@@ -6029,6 +6700,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -38.8,
       "latest_leg": -38.8,
       "ussen_2022": -39.4,
@@ -6043,14 +6715,15 @@
       "ussen_2022": 29570
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jeffrey McNeely",
+      "dem": "Chris E. Gilbert"
     }
   },
   {
     "state_fips": "37",
     "district_id": "085",
     "district_name": "State House District 85",
+    "tier": null,
     "incumbent": {
       "name": "Dudley Greene",
       "party": "R"
@@ -6064,8 +6737,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Dudley Greene",
+          "dem": "Suzanne Gavenus"
         }
       }
     ],
@@ -6094,6 +6767,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 25.4,
+        "rep_pct": 74.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 25.8,
         "rep_pct": 74.2,
@@ -6101,6 +6780,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -49.2,
       "leg_2024": -48.4,
       "latest_leg": -48.4,
       "ussen_2022": -46.5,
@@ -6115,14 +6795,15 @@
       "ussen_2022": 34071
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Dudley Greene",
+      "dem": "Suzanne Gavenus"
     }
   },
   {
     "state_fips": "37",
     "district_id": "086",
     "district_name": "State House District 86",
+    "tier": null,
     "incumbent": {
       "name": "Hugh Blackwell",
       "party": "R"
@@ -6136,8 +6817,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Hugh Blackwell",
+          "dem": "Wesley Hendrix"
         }
       }
     ],
@@ -6166,6 +6847,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 28.0,
         "rep_pct": 72.0,
@@ -6173,6 +6860,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -44.1,
       "latest_leg": -44.1,
       "ussen_2022": -38.7,
@@ -6187,14 +6875,15 @@
       "ussen_2022": 29978
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Hugh Blackwell",
+      "dem": "Wesley Hendrix"
     }
   },
   {
     "state_fips": "37",
     "district_id": "087",
     "district_name": "State House District 87",
+    "tier": null,
     "incumbent": {
       "name": "Destin Hall",
       "party": "R"
@@ -6208,8 +6897,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Destin Hall",
+          "dem": "Iris Bender"
         }
       }
     ],
@@ -6238,6 +6927,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 23.8,
+        "rep_pct": 76.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 24.6,
         "rep_pct": 75.4,
@@ -6245,6 +6940,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -52.4,
       "leg_2024": -50.8,
       "latest_leg": -50.8,
       "ussen_2022": -58.3,
@@ -6259,14 +6955,15 @@
       "ussen_2022": 11329
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Destin Hall",
+      "dem": "Iris Bender"
     }
   },
   {
     "state_fips": "37",
     "district_id": "088",
     "district_name": "State House District 88",
+    "tier": null,
     "incumbent": {
       "name": "Mary Belk",
       "party": "D"
@@ -6280,8 +6977,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Ray Craig",
+          "dem": "Mary Belk"
         }
       }
     ],
@@ -6310,6 +7007,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 69.3,
+        "rep_pct": 30.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -6317,6 +7020,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 38.5,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 41.3,
@@ -6331,14 +7035,15 @@
       "ussen_2022": 23502
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Ray Craig",
+      "dem": "Mary Belk"
     }
   },
   {
     "state_fips": "37",
     "district_id": "089",
     "district_name": "State House District 89",
+    "tier": null,
     "incumbent": {
       "name": "Mitchell Setzer",
       "party": "R"
@@ -6352,8 +7057,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Mitchell Setzer",
+          "dem": "Robert Thompson"
         }
       }
     ],
@@ -6382,6 +7087,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 24.0,
         "rep_pct": 76.0,
@@ -6389,6 +7100,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -52.0,
       "latest_leg": -52.0,
       "ussen_2022": -51.4,
@@ -6403,14 +7115,15 @@
       "ussen_2022": 32787
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Mitchell Setzer",
+      "dem": "Robert Thompson"
     }
   },
   {
     "state_fips": "37",
     "district_id": "090",
     "district_name": "State House District 90",
+    "tier": null,
     "incumbent": {
       "name": "Sarah Stevens",
       "party": "R"
@@ -6424,8 +7137,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Dan Kiger",
+          "dem": "Ken Badgett"
         }
       }
     ],
@@ -6454,6 +7167,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 22.1,
         "rep_pct": 77.9,
@@ -6461,6 +7180,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -55.8,
       "latest_leg": -55.8,
       "ussen_2022": -64.6,
@@ -6475,14 +7195,15 @@
       "ussen_2022": 16049
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Dan Kiger",
+      "dem": "Ken Badgett"
     }
   },
   {
     "state_fips": "37",
     "district_id": "091",
     "district_name": "State House District 91",
+    "tier": null,
     "incumbent": {
       "name": "Kyle Hall",
       "party": "R"
@@ -6496,8 +7217,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Kyle Hall",
+          "dem": "Lucille Puckett"
         }
       }
     ],
@@ -6526,6 +7247,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 32.8,
         "rep_pct": 67.2,
@@ -6533,6 +7260,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -34.3,
       "latest_leg": -34.3,
       "ussen_2022": -30.9,
@@ -6547,16 +7275,17 @@
       "ussen_2022": 20928
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Kyle Hall",
+      "dem": "Lucille Puckett"
     }
   },
   {
     "state_fips": "37",
     "district_id": "092",
     "district_name": "State House District 92",
+    "tier": null,
     "incumbent": {
-      "name": "Terry Brown",
+      "name": "Terry Brown Jr.",
       "party": "D"
     },
     "members": [
@@ -6564,12 +7293,12 @@
         "seat": 1,
         "seat_label": "",
         "incumbent": {
-          "name": "Terry Brown",
+          "name": "Terry Brown Jr.",
           "party": "D"
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Terry Brown Jr."
         }
       }
     ],
@@ -6598,6 +7327,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 69.5,
+        "rep_pct": 30.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -6605,6 +7340,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 38.9,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 39.0,
@@ -6620,13 +7356,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Terry Brown Jr."
     }
   },
   {
     "state_fips": "37",
     "district_id": "093",
     "district_name": "State House District 93",
+    "tier": 2,
     "incumbent": {
       "name": "Ray Pickett",
       "party": "R"
@@ -6640,8 +7377,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Ray Pickett",
+          "dem": "Charlie Wallin"
         }
       }
     ],
@@ -6670,6 +7407,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 41.6,
+        "rep_pct": 58.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 43.2,
         "rep_pct": 56.8,
@@ -6677,6 +7420,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -16.8,
       "leg_2024": -13.7,
       "latest_leg": -13.7,
       "ussen_2022": -36.1,
@@ -6691,14 +7435,15 @@
       "ussen_2022": 20997
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Ray Pickett",
+      "dem": "Charlie Wallin"
     }
   },
   {
     "state_fips": "37",
     "district_id": "094",
     "district_name": "State House District 94",
+    "tier": null,
     "incumbent": {
       "name": "Blair Eddins",
       "party": "R"
@@ -6712,8 +7457,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Blair Eddins",
+          "dem": "Andy Warren"
         }
       }
     ],
@@ -6742,6 +7487,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 19.9,
+        "rep_pct": 80.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 23.0,
         "rep_pct": 77.0,
@@ -6749,6 +7500,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -60.1,
       "leg_2024": -53.9,
       "latest_leg": -53.9,
       "ussen_2022": -60.8,
@@ -6763,14 +7515,15 @@
       "ussen_2022": 25517
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Blair Eddins",
+      "dem": "Andy Warren"
     }
   },
   {
     "state_fips": "37",
     "district_id": "095",
     "district_name": "State House District 95",
+    "tier": null,
     "incumbent": {
       "name": "Todd Carver",
       "party": "R"
@@ -6784,8 +7537,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Todd Carver",
+          "dem": "Mike Robinson"
         }
       }
     ],
@@ -6814,6 +7567,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 32.5,
+        "rep_pct": 67.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.5,
         "rep_pct": 64.5,
@@ -6821,6 +7580,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -35.0,
       "leg_2024": -28.9,
       "latest_leg": -28.9,
       "ussen_2022": -30.6,
@@ -6835,14 +7595,15 @@
       "ussen_2022": 33474
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Todd Carver",
+      "dem": "Mike Robinson"
     }
   },
   {
     "state_fips": "37",
     "district_id": "096",
     "district_name": "State House District 96",
+    "tier": null,
     "incumbent": {
       "name": "Jay Adams",
       "party": "R"
@@ -6856,8 +7617,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jay Adams",
+          "dem": "Park Inglefield"
         }
       }
     ],
@@ -6886,6 +7647,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.8,
         "rep_pct": 64.2,
@@ -6893,6 +7660,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -28.4,
       "latest_leg": -28.4,
       "ussen_2022": -29.2,
@@ -6907,14 +7675,15 @@
       "ussen_2022": 29360
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jay Adams",
+      "dem": "Park Inglefield"
     }
   },
   {
     "state_fips": "37",
     "district_id": "097",
     "district_name": "State House District 97",
+    "tier": null,
     "incumbent": {
       "name": "Heather Rhyne",
       "party": "R"
@@ -6928,8 +7697,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Heather Rhyne",
+          "dem": "Greg McBryde"
         }
       }
     ],
@@ -6958,6 +7727,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
@@ -6965,6 +7740,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -100.0,
       "latest_leg": -100.0,
       "ussen_2022": -46.1,
@@ -6979,14 +7755,15 @@
       "ussen_2022": 36285
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Heather Rhyne",
+      "dem": "Greg McBryde"
     }
   },
   {
     "state_fips": "37",
     "district_id": "098",
     "district_name": "State House District 98",
+    "tier": 3,
     "incumbent": {
       "name": "Beth Gardner Helfrich",
       "party": "D"
@@ -7000,8 +7777,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "John Rhodes",
+          "dem": "Beth Gardner Helfrich"
         }
       }
     ],
@@ -7030,6 +7807,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 49.1,
+        "rep_pct": 50.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 52.2,
         "rep_pct": 47.8,
@@ -7037,6 +7820,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -1.9,
       "leg_2024": 4.4,
       "latest_leg": 4.4,
       "ussen_2022": -1.4,
@@ -7051,14 +7835,15 @@
       "ussen_2022": 33587
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "John Rhodes",
+      "dem": "Beth Gardner Helfrich"
     }
   },
   {
     "state_fips": "37",
     "district_id": "099",
     "district_name": "State House District 99",
+    "tier": null,
     "incumbent": {
       "name": "Nasif Majeed",
       "party": "D"
@@ -7073,7 +7858,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Veleria Levy"
         }
       }
     ],
@@ -7102,6 +7887,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 82.5,
+        "rep_pct": 17.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 86.4,
         "rep_pct": 0.0,
@@ -7109,6 +7900,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 65.1,
       "leg_2024": 86.4,
       "latest_leg": 86.4,
       "ussen_2022": 69.4,
@@ -7124,13 +7916,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Veleria Levy"
     }
   },
   {
     "state_fips": "37",
     "district_id": "100",
     "district_name": "State House District 100",
+    "tier": null,
     "incumbent": {
       "name": "Julia Greenfield",
       "party": "D"
@@ -7145,7 +7938,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Julia Greenfield"
         }
       }
     ],
@@ -7174,6 +7967,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7181,6 +7980,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 22.4,
@@ -7196,13 +7996,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Julia Greenfield"
     }
   },
   {
     "state_fips": "37",
     "district_id": "101",
     "district_name": "State House District 101",
+    "tier": null,
     "incumbent": {
       "name": "Carolyn Logan",
       "party": "D"
@@ -7217,7 +8018,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Carolyn Logan"
         }
       }
     ],
@@ -7246,6 +8047,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 74.9,
+        "rep_pct": 25.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7253,6 +8060,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 49.8,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 34.9,
@@ -7268,13 +8076,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Carolyn Logan"
     }
   },
   {
     "state_fips": "37",
     "district_id": "102",
     "district_name": "State House District 102",
+    "tier": null,
     "incumbent": {
       "name": "Becky Carney",
       "party": "D"
@@ -7288,8 +8097,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Daniel Schmidt",
+          "dem": "Becky Carney"
         }
       }
     ],
@@ -7318,6 +8127,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 81.7,
+        "rep_pct": 18.3,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7325,6 +8140,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 63.4,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 53.7,
@@ -7339,14 +8155,15 @@
       "ussen_2022": 27030
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Daniel Schmidt",
+      "dem": "Becky Carney"
     }
   },
   {
     "state_fips": "37",
     "district_id": "103",
     "district_name": "State House District 103",
+    "tier": null,
     "incumbent": {
       "name": "Laura Budd",
       "party": "D"
@@ -7361,7 +8178,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Laura Budd"
         }
       }
     ],
@@ -7390,6 +8207,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 52.5,
+        "rep_pct": 47.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 58.1,
         "rep_pct": 41.9,
@@ -7397,6 +8220,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 5.0,
       "leg_2024": 16.1,
       "latest_leg": 16.1,
       "ussen_2022": 11.2,
@@ -7412,13 +8236,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Laura Budd"
     }
   },
   {
     "state_fips": "37",
     "district_id": "104",
     "district_name": "State House District 104",
+    "tier": null,
     "incumbent": {
       "name": "Brandon Lofton",
       "party": "D"
@@ -7432,8 +8257,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Trina V. Boyd",
+          "dem": "Brandon Lofton"
         }
       }
     ],
@@ -7462,6 +8287,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 55.3,
+        "rep_pct": 44.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 56.0,
         "rep_pct": 44.0,
@@ -7469,6 +8300,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 10.5,
       "leg_2024": 11.9,
       "latest_leg": 11.9,
       "ussen_2022": 16.6,
@@ -7483,14 +8315,15 @@
       "ussen_2022": 34563
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Trina V. Boyd",
+      "dem": "Brandon Lofton"
     }
   },
   {
     "state_fips": "37",
     "district_id": "105",
     "district_name": "State House District 105",
+    "tier": 1,
     "incumbent": {
       "name": "Tricia Cotham",
       "party": "R"
@@ -7504,8 +8337,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Tricia Cotham",
+          "dem": "Ken McCool"
         }
       }
     ],
@@ -7534,6 +8367,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 56.9,
+        "rep_pct": 43.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 49.8,
         "rep_pct": 50.2,
@@ -7541,6 +8380,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 13.7,
       "leg_2024": -0.4,
       "latest_leg": -0.4,
       "ussen_2022": -4.9,
@@ -7555,14 +8395,15 @@
       "ussen_2022": 34370
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Tricia Cotham",
+      "dem": "Ken McCool"
     }
   },
   {
     "state_fips": "37",
     "district_id": "106",
     "district_name": "State House District 106",
+    "tier": null,
     "incumbent": {
       "name": "Carla Cunningham",
       "party": "D"
@@ -7577,7 +8418,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Rodney Sadler"
         }
       }
     ],
@@ -7606,6 +8447,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 70.1,
+        "rep_pct": 29.9,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7613,6 +8460,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 40.3,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 49.7,
@@ -7628,13 +8476,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Rodney Sadler"
     }
   },
   {
     "state_fips": "37",
     "district_id": "107",
     "district_name": "State House District 107",
+    "tier": null,
     "incumbent": {
       "name": "Aisha Dew",
       "party": "D"
@@ -7649,7 +8498,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Aisha O. Dew"
         }
       }
     ],
@@ -7678,6 +8527,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 81.9,
+        "rep_pct": 18.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7685,6 +8540,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 63.7,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 69.2,
@@ -7700,13 +8556,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Aisha O. Dew"
     }
   },
   {
     "state_fips": "37",
     "district_id": "108",
     "district_name": "State House District 108",
+    "tier": null,
     "incumbent": {
       "name": "John Torbett",
       "party": "R"
@@ -7720,8 +8577,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "John Torbett",
+          "dem": "Sydnie Hutchinson"
         }
       }
     ],
@@ -7750,6 +8607,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.4,
         "rep_pct": 64.6,
@@ -7757,6 +8620,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -29.2,
       "latest_leg": -29.2,
       "ussen_2022": -33.3,
@@ -7771,14 +8635,15 @@
       "ussen_2022": 28071
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "John Torbett",
+      "dem": "Sydnie Hutchinson"
     }
   },
   {
     "state_fips": "37",
     "district_id": "109",
     "district_name": "State House District 109",
+    "tier": 3,
     "incumbent": {
       "name": "Donnie Loftis",
       "party": "R"
@@ -7792,8 +8657,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Donnie Loftis",
+          "dem": "Mark Carver"
         }
       }
     ],
@@ -7822,6 +8687,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.2,
+        "rep_pct": 60.8,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.0,
         "rep_pct": 58.0,
@@ -7829,6 +8700,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -21.6,
       "leg_2024": -16.1,
       "latest_leg": -16.1,
       "ussen_2022": -18.0,
@@ -7843,14 +8715,15 @@
       "ussen_2022": 31895
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Donnie Loftis",
+      "dem": "Mark Carver"
     }
   },
   {
     "state_fips": "37",
     "district_id": "110",
     "district_name": "State House District 110",
+    "tier": null,
     "incumbent": {
       "name": "Kelly Hastings",
       "party": "R"
@@ -7864,8 +8737,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Caroline Eason",
+          "dem": "Mary Silver"
         }
       }
     ],
@@ -7894,6 +8767,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 33.4,
         "rep_pct": 66.6,
@@ -7901,6 +8780,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -33.1,
       "latest_leg": -33.1,
       "ussen_2022": -33.1,
@@ -7915,14 +8795,15 @@
       "ussen_2022": 27124
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Caroline Eason",
+      "dem": "Mary Silver"
     }
   },
   {
     "state_fips": "37",
     "district_id": "111",
     "district_name": "State House District 111",
+    "tier": null,
     "incumbent": {
       "name": "Paul Scott",
       "party": "R"
@@ -7936,8 +8817,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Paul Scott",
+          "dem": "Jerry Blake"
         }
       }
     ],
@@ -7966,6 +8847,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 26.1,
         "rep_pct": 73.9,
@@ -7973,6 +8860,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -47.8,
       "latest_leg": -47.8,
       "ussen_2022": -47.8,
@@ -7987,14 +8875,15 @@
       "ussen_2022": 27960
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Paul Scott",
+      "dem": "Jerry Blake"
     }
   },
   {
     "state_fips": "37",
     "district_id": "112",
     "district_name": "State House District 112",
+    "tier": null,
     "incumbent": {
       "name": "Jordan Lopez",
       "party": "D"
@@ -8009,7 +8898,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Jordan Lopez"
         }
       }
     ],
@@ -8038,6 +8927,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 59.2,
+        "rep_pct": 40.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -8045,6 +8940,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 18.4,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 57.8,
@@ -8060,13 +8956,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Jordan Lopez"
     }
   },
   {
     "state_fips": "37",
     "district_id": "113",
     "district_name": "State House District 113",
+    "tier": null,
     "incumbent": {
       "name": "Jake Johnson",
       "party": "R"
@@ -8080,8 +8977,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jake Johnson",
+          "dem": "Mason Rhodes"
         }
       }
     ],
@@ -8110,6 +9007,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 33.3,
         "rep_pct": 66.7,
@@ -8117,6 +9020,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -33.4,
       "latest_leg": -33.4,
       "ussen_2022": -39.2,
@@ -8131,16 +9035,17 @@
       "ussen_2022": 31490
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jake Johnson",
+      "dem": "Mason Rhodes"
     }
   },
   {
     "state_fips": "37",
     "district_id": "114",
     "district_name": "State House District 114",
+    "tier": null,
     "incumbent": {
-      "name": "Eric Ager",
+      "name": "J. Eric Ager",
       "party": "D"
     },
     "members": [
@@ -8148,12 +9053,12 @@
         "seat": 1,
         "seat_label": "",
         "incumbent": {
-          "name": "Eric Ager",
+          "name": "J. Eric Ager",
           "party": "D"
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "J. Eric Ager"
         }
       }
     ],
@@ -8182,6 +9087,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 68.8,
+        "rep_pct": 31.2,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 59.7,
         "rep_pct": 40.3,
@@ -8189,6 +9100,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 37.5,
       "leg_2024": 19.4,
       "latest_leg": 19.4,
       "ussen_2022": 1.3,
@@ -8204,13 +9116,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "J. Eric Ager"
     }
   },
   {
     "state_fips": "37",
     "district_id": "115",
     "district_name": "State House District 115",
+    "tier": 2,
     "incumbent": {
       "name": "Lindsey Prather",
       "party": "D"
@@ -8224,8 +9137,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Anthony Penland",
+          "dem": "Lindsey Prather"
         }
       }
     ],
@@ -8254,6 +9167,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 57.6,
+        "rep_pct": 42.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 51.5,
         "rep_pct": 48.5,
@@ -8261,6 +9180,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 15.1,
       "leg_2024": 2.9,
       "latest_leg": 2.9,
       "ussen_2022": -18.4,
@@ -8275,14 +9195,15 @@
       "ussen_2022": 15644
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Anthony Penland",
+      "dem": "Lindsey Prather"
     }
   },
   {
     "state_fips": "37",
     "district_id": "116",
     "district_name": "State House District 116",
+    "tier": null,
     "incumbent": {
       "name": "Brian Turner",
       "party": "D"
@@ -8297,7 +9218,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Brian Turner"
         }
       }
     ],
@@ -8326,6 +9247,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 62.4,
+        "rep_pct": 37.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -8333,6 +9260,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 24.7,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 52.5,
@@ -8348,13 +9276,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Brian Turner"
     }
   },
   {
     "state_fips": "37",
     "district_id": "117",
     "district_name": "State House District 117",
+    "tier": 3,
     "incumbent": {
       "name": "Jennifer Balkcom",
       "party": "R"
@@ -8368,8 +9297,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jennifer Balkcom",
+          "dem": "Lynne Russo"
         }
       }
     ],
@@ -8398,6 +9327,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 41.0,
+        "rep_pct": 59.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.3,
         "rep_pct": 57.7,
@@ -8405,6 +9340,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -17.9,
       "leg_2024": -15.5,
       "latest_leg": -15.5,
       "ussen_2022": -20.7,
@@ -8419,14 +9355,15 @@
       "ussen_2022": 36377
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jennifer Balkcom",
+      "dem": "Lynne Russo"
     }
   },
   {
     "state_fips": "37",
     "district_id": "118",
     "district_name": "State House District 118",
+    "tier": null,
     "incumbent": {
       "name": "Mark Pless",
       "party": "R"
@@ -8440,8 +9377,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jimmy Rogers",
+          "dem": "Danny Davis"
         }
       }
     ],
@@ -8470,6 +9407,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.7,
+        "rep_pct": 60.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 38.7,
         "rep_pct": 61.3,
@@ -8477,6 +9420,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -20.6,
       "leg_2024": -22.5,
       "latest_leg": -22.5,
       "ussen_2022": -21.5,
@@ -8491,14 +9435,15 @@
       "ussen_2022": 36869
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jimmy Rogers",
+      "dem": "Danny Davis"
     }
   },
   {
     "state_fips": "37",
     "district_id": "119",
     "district_name": "State House District 119",
+    "tier": 2,
     "incumbent": {
       "name": "Mike Clampitt",
       "party": "R"
@@ -8512,8 +9457,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Mike Clampitt",
+          "dem": "Mark R. Burrows"
         }
       }
     ],
@@ -8542,6 +9487,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 46.1,
+        "rep_pct": 53.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 44.6,
         "rep_pct": 55.4,
@@ -8549,6 +9500,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -7.8,
       "leg_2024": -10.8,
       "latest_leg": -10.8,
       "ussen_2022": -12.6,
@@ -8563,14 +9515,15 @@
       "ussen_2022": 35878
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Mike Clampitt",
+      "dem": "Mark R. Burrows"
     }
   },
   {
     "state_fips": "37",
     "district_id": "120",
     "district_name": "State House District 120",
+    "tier": null,
     "incumbent": {
       "name": "Karl Gillespie",
       "party": "R"
@@ -8584,8 +9537,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Karl Gillespie",
+          "dem": "Caleb Brown"
         }
       }
     ],
@@ -8614,6 +9567,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 24.8,
         "rep_pct": 75.2,
@@ -8621,6 +9580,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -50.3,
       "latest_leg": -50.3,
       "ussen_2022": -55.3,
@@ -8635,8 +9595,8 @@
       "ussen_2022": 27305
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Karl Gillespie",
+      "dem": "Caleb Brown"
     }
   }
 ]

@@ -3,6 +3,7 @@
     "state_fips": "12",
     "district_id": "001",
     "district_name": "State House District 1",
+    "tier": null,
     "incumbent": {
       "name": "Michelle Salzman",
       "party": "R"
@@ -46,6 +47,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 30.7,
+        "rep_pct": 69.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 34.2,
         "rep_pct": 65.8,
@@ -53,6 +60,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -38.5,
       "leg_2024": -31.6,
       "latest_leg": -31.6,
       "gov_2022": -36.5,
@@ -76,6 +84,7 @@
     "state_fips": "12",
     "district_id": "002",
     "district_name": "State House District 2",
+    "tier": null,
     "incumbent": {
       "name": "Alex Andrade",
       "party": "R"
@@ -119,6 +128,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 36.4,
+        "rep_pct": 63.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.3,
         "rep_pct": 57.7,
@@ -126,6 +141,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -27.2,
       "leg_2024": -22.4,
       "latest_leg": -22.4,
       "gov_2022": -28.2,
@@ -149,6 +165,7 @@
     "state_fips": "12",
     "district_id": "003",
     "district_name": "State House District 3",
+    "tier": null,
     "incumbent": {
       "name": "Nathan Boyles",
       "party": "R"
@@ -192,6 +209,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 99.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 21.6,
         "rep_pct": 78.4,
@@ -199,6 +222,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -99.3,
       "leg_2024": -56.8,
       "latest_leg": -56.8,
       "gov_2022": -63.7,
@@ -222,6 +246,7 @@
     "state_fips": "12",
     "district_id": "004",
     "district_name": "State House District 4",
+    "tier": null,
     "incumbent": {
       "name": "Patt Maney",
       "party": "R"
@@ -265,6 +290,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 26.5,
         "rep_pct": 73.5,
@@ -272,6 +303,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -47.0,
       "latest_leg": -47.0,
       "gov_2022": -49.7,
@@ -295,6 +327,7 @@
     "state_fips": "12",
     "district_id": "005",
     "district_name": "State House District 5",
+    "tier": null,
     "incumbent": {
       "name": "Shane Abbott",
       "party": "R"
@@ -338,6 +371,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 19.6,
         "rep_pct": 80.4,
@@ -345,6 +384,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -60.8,
       "latest_leg": -60.8,
       "gov_2022": -64.9,
@@ -368,6 +408,7 @@
     "state_fips": "12",
     "district_id": "006",
     "district_name": "State House District 6",
+    "tier": null,
     "incumbent": {
       "name": "Philip Griffitts",
       "party": "R"
@@ -411,6 +452,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 24.1,
         "rep_pct": 75.9,
@@ -418,6 +465,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -51.9,
       "latest_leg": -51.9,
       "gov_2022": -57.3,
@@ -441,6 +489,7 @@
     "state_fips": "12",
     "district_id": "007",
     "district_name": "State House District 7",
+    "tier": null,
     "incumbent": {
       "name": "Jason Shoaf",
       "party": "R"
@@ -484,6 +533,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 22.6,
         "rep_pct": 77.4,
@@ -491,6 +546,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -54.8,
       "latest_leg": -54.8,
       "gov_2022": -57.8,
@@ -514,6 +570,7 @@
     "state_fips": "12",
     "district_id": "008",
     "district_name": "State House District 8",
+    "tier": null,
     "incumbent": {
       "name": "Gallop Franklin",
       "party": "D"
@@ -557,6 +614,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 71.6,
+        "rep_pct": 28.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 72.2,
         "rep_pct": 27.8,
@@ -564,6 +627,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 43.2,
       "leg_2024": 44.4,
       "latest_leg": 44.4,
       "gov_2022": 38.8,
@@ -587,6 +651,7 @@
     "state_fips": "12",
     "district_id": "009",
     "district_name": "State House District 9",
+    "tier": null,
     "incumbent": {
       "name": "Allison Tant",
       "party": "D"
@@ -630,6 +695,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 57.1,
         "rep_pct": 42.9,
@@ -637,6 +708,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 14.1,
       "latest_leg": 14.1,
       "gov_2022": -0.0,
@@ -660,6 +732,7 @@
     "state_fips": "12",
     "district_id": "010",
     "district_name": "State House District 10",
+    "tier": null,
     "incumbent": {
       "name": "Chuck Brannan",
       "party": "R"
@@ -703,6 +776,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 26.0,
         "rep_pct": 74.0,
@@ -710,6 +789,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -48.1,
       "latest_leg": -48.1,
       "gov_2022": -54.5,
@@ -733,6 +813,7 @@
     "state_fips": "12",
     "district_id": "011",
     "district_name": "State House District 11",
+    "tier": null,
     "incumbent": {
       "name": "Sam Garrison",
       "party": "R"
@@ -776,6 +857,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 26.4,
+        "rep_pct": 73.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 30.9,
         "rep_pct": 69.1,
@@ -783,6 +870,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -47.1,
       "leg_2024": -38.2,
       "latest_leg": -38.2,
       "gov_2022": -47.2,
@@ -806,6 +894,7 @@
     "state_fips": "12",
     "district_id": "012",
     "district_name": "State House District 12",
+    "tier": 2,
     "incumbent": {
       "name": "Wyman Duggan",
       "party": "R"
@@ -849,6 +938,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.9,
         "rep_pct": 57.1,
@@ -856,6 +951,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -14.1,
       "latest_leg": -14.1,
       "gov_2022": -21.9,
@@ -879,6 +975,7 @@
     "state_fips": "12",
     "district_id": "013",
     "district_name": "State House District 13",
+    "tier": null,
     "incumbent": {
       "name": "Angie Nixon",
       "party": "D"
@@ -922,6 +1019,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 70.8,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 99.7,
         "rep_pct": 0.0,
@@ -929,6 +1032,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 70.8,
       "leg_2024": 99.7,
       "latest_leg": 99.7,
       "gov_2022": 16.4,
@@ -952,6 +1056,7 @@
     "state_fips": "12",
     "district_id": "014",
     "district_name": "State House District 14",
+    "tier": null,
     "incumbent": {
       "name": "Kimberly Daniels",
       "party": "D"
@@ -995,6 +1100,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 99.6,
         "rep_pct": 0.0,
@@ -1002,6 +1113,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 99.6,
       "latest_leg": 99.6,
       "gov_2022": 20.6,
@@ -1025,6 +1137,7 @@
     "state_fips": "12",
     "district_id": "015",
     "district_name": "State House District 15",
+    "tier": null,
     "incumbent": {
       "name": "Dean Black",
       "party": "R"
@@ -1068,6 +1181,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 98.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.2,
         "rep_pct": 64.8,
@@ -1075,6 +1194,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -97.7,
       "leg_2024": -29.7,
       "latest_leg": -29.7,
       "gov_2022": -38.0,
@@ -1098,6 +1218,7 @@
     "state_fips": "12",
     "district_id": "016",
     "district_name": "State House District 16",
+    "tier": null,
     "incumbent": {
       "name": "Kiyan Michael",
       "party": "R"
@@ -1141,6 +1262,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 99.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 39.3,
         "rep_pct": 60.7,
@@ -1148,6 +1275,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -99.3,
       "leg_2024": -21.4,
       "latest_leg": -21.4,
       "gov_2022": -29.9,
@@ -1171,6 +1299,7 @@
     "state_fips": "12",
     "district_id": "017",
     "district_name": "State House District 17",
+    "tier": 3,
     "incumbent": {
       "name": "Jessica Baker",
       "party": "R"
@@ -1214,6 +1343,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.0,
+        "rep_pct": 61.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.9,
         "rep_pct": 58.1,
@@ -1221,6 +1356,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -22.0,
       "leg_2024": -16.1,
       "latest_leg": -16.1,
       "gov_2022": -23.4,
@@ -1244,6 +1380,7 @@
     "state_fips": "12",
     "district_id": "018",
     "district_name": "State House District 18",
+    "tier": null,
     "incumbent": {
       "name": "Kim Kendall",
       "party": "R"
@@ -1287,6 +1424,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 30.1,
         "rep_pct": 69.9,
@@ -1294,6 +1437,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -39.8,
       "latest_leg": -39.8,
       "gov_2022": -44.1,
@@ -1317,6 +1461,7 @@
     "state_fips": "12",
     "district_id": "019",
     "district_name": "State House District 19",
+    "tier": null,
     "incumbent": {
       "name": "Sam Greco",
       "party": "R"
@@ -1360,6 +1505,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 36.0,
+        "rep_pct": 64.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 39.1,
         "rep_pct": 60.9,
@@ -1367,6 +1518,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -28.1,
       "leg_2024": -21.9,
       "latest_leg": -21.9,
       "gov_2022": -30.9,
@@ -1390,6 +1542,7 @@
     "state_fips": "12",
     "district_id": "020",
     "district_name": "State House District 20",
+    "tier": null,
     "incumbent": {
       "name": "Judson Sapp",
       "party": "R"
@@ -1433,6 +1586,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 24.6,
         "rep_pct": 75.4,
@@ -1440,6 +1599,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -50.8,
       "latest_leg": -50.8,
       "gov_2022": -52.7,
@@ -1463,6 +1623,7 @@
     "state_fips": "12",
     "district_id": "021",
     "district_name": "State House District 21",
+    "tier": null,
     "incumbent": {
       "name": "Yvonne Hayes Hinson",
       "party": "D"
@@ -1506,6 +1667,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 60.2,
+        "rep_pct": 39.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -1513,6 +1680,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 20.4,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 15.8,
@@ -1536,6 +1704,7 @@
     "state_fips": "12",
     "district_id": "022",
     "district_name": "State House District 22",
+    "tier": 2,
     "incumbent": {
       "name": "Chad Johnson",
       "party": "R"
@@ -1579,6 +1748,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 43.9,
+        "rep_pct": 56.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 43.5,
         "rep_pct": 56.5,
@@ -1586,6 +1761,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -12.2,
       "leg_2024": -13.1,
       "latest_leg": -13.1,
       "gov_2022": -12.6,
@@ -1609,6 +1785,7 @@
     "state_fips": "12",
     "district_id": "023",
     "district_name": "State House District 23",
+    "tier": null,
     "incumbent": {
       "name": "J.J. Grow",
       "party": "R"
@@ -1652,6 +1829,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 26.1,
         "rep_pct": 73.9,
@@ -1659,6 +1842,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -47.8,
       "latest_leg": -47.8,
       "gov_2022": -49.0,
@@ -1682,6 +1866,7 @@
     "state_fips": "12",
     "district_id": "024",
     "district_name": "State House District 24",
+    "tier": null,
     "incumbent": {
       "name": "Ryan Chamberlin",
       "party": "R"
@@ -1725,6 +1910,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.6,
         "rep_pct": 64.4,
@@ -1732,6 +1923,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -28.8,
       "latest_leg": -28.8,
       "gov_2022": -36.5,
@@ -1755,6 +1947,7 @@
     "state_fips": "12",
     "district_id": "025",
     "district_name": "State House District 25",
+    "tier": null,
     "incumbent": {
       "name": "Taylor Yarkosky",
       "party": "R"
@@ -1798,6 +1991,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 66.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 40.0,
         "rep_pct": 60.0,
@@ -1805,6 +2004,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -32.0,
       "leg_2024": -20.1,
       "latest_leg": -20.1,
       "gov_2022": -26.2,
@@ -1828,6 +2028,7 @@
     "state_fips": "12",
     "district_id": "026",
     "district_name": "State House District 26",
+    "tier": null,
     "incumbent": {
       "name": "Nan Cobb",
       "party": "R"
@@ -1871,6 +2072,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 32.3,
+        "rep_pct": 67.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.1,
         "rep_pct": 64.9,
@@ -1878,6 +2085,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -35.4,
       "leg_2024": -29.9,
       "latest_leg": -29.9,
       "gov_2022": -37.0,
@@ -1901,6 +2109,7 @@
     "state_fips": "12",
     "district_id": "027",
     "district_name": "State House District 27",
+    "tier": null,
     "incumbent": {
       "name": "Richard Gentry",
       "party": "R"
@@ -1944,6 +2153,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 30.1,
         "rep_pct": 67.9,
@@ -1951,6 +2166,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -37.8,
       "latest_leg": -37.8,
       "gov_2022": -44.5,
@@ -1974,6 +2190,7 @@
     "state_fips": "12",
     "district_id": "028",
     "district_name": "State House District 28",
+    "tier": 3,
     "incumbent": {
       "name": "Bill Partington",
       "party": "R"
@@ -2017,6 +2234,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 38.1,
+        "rep_pct": 61.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 39.9,
         "rep_pct": 57.7,
@@ -2024,6 +2247,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -23.8,
       "leg_2024": -17.8,
       "latest_leg": -17.8,
       "gov_2022": -23.3,
@@ -2047,6 +2271,7 @@
     "state_fips": "12",
     "district_id": "029",
     "district_name": "State House District 29",
+    "tier": 2,
     "incumbent": {
       "name": "Webster Barnaby",
       "party": "R"
@@ -2090,6 +2315,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 40.5,
+        "rep_pct": 59.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.5,
         "rep_pct": 55.6,
@@ -2097,6 +2328,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -19.0,
       "leg_2024": -14.1,
       "latest_leg": -14.1,
       "gov_2022": -21.9,
@@ -2120,6 +2352,7 @@
     "state_fips": "12",
     "district_id": "030",
     "district_name": "State House District 30",
+    "tier": null,
     "incumbent": {
       "name": "Chase Tramont",
       "party": "R"
@@ -2163,6 +2396,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 99.8,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 34.4,
         "rep_pct": 65.6,
@@ -2170,6 +2409,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -99.6,
       "leg_2024": -31.1,
       "latest_leg": -31.1,
       "gov_2022": -36.1,
@@ -2193,6 +2433,7 @@
     "state_fips": "12",
     "district_id": "031",
     "district_name": "State House District 31",
+    "tier": null,
     "incumbent": {
       "name": "Tyler Sirois",
       "party": "R"
@@ -2236,6 +2477,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 36.3,
         "rep_pct": 63.7,
@@ -2243,6 +2490,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -27.4,
       "latest_leg": -27.4,
       "gov_2022": -32.4,
@@ -2266,6 +2514,7 @@
     "state_fips": "12",
     "district_id": "032",
     "district_name": "State House District 32",
+    "tier": null,
     "incumbent": {
       "name": "Brian Hodgers",
       "party": "R"
@@ -2309,6 +2558,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.7,
         "rep_pct": 64.3,
@@ -2316,6 +2571,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -28.6,
       "latest_leg": -28.6,
       "gov_2022": -28.1,
@@ -2339,6 +2595,7 @@
     "state_fips": "12",
     "district_id": "033",
     "district_name": "State House District 33",
+    "tier": 2,
     "incumbent": {
       "name": "Monique Miller",
       "party": "R"
@@ -2382,6 +2639,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 44.3,
+        "rep_pct": 55.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 43.9,
         "rep_pct": 56.1,
@@ -2389,6 +2652,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -11.5,
       "leg_2024": -12.2,
       "latest_leg": -12.2,
       "gov_2022": -18.9,
@@ -2412,6 +2676,7 @@
     "state_fips": "12",
     "district_id": "034",
     "district_name": "State House District 34",
+    "tier": null,
     "incumbent": {
       "name": "Robbie Brackett",
       "party": "R"
@@ -2455,6 +2720,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 31.9,
+        "rep_pct": 68.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 32.7,
         "rep_pct": 67.3,
@@ -2462,6 +2733,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -36.1,
       "leg_2024": -34.7,
       "latest_leg": -34.7,
       "gov_2022": -36.0,
@@ -2485,6 +2757,7 @@
     "state_fips": "12",
     "district_id": "035",
     "district_name": "State House District 35",
+    "tier": 1,
     "incumbent": {
       "name": "Erika Booth",
       "party": "R"
@@ -2528,6 +2801,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 44.6,
+        "rep_pct": 55.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 48.0,
         "rep_pct": 52.0,
@@ -2535,6 +2814,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -10.8,
       "leg_2024": -4.0,
       "latest_leg": -4.0,
       "gov_2022": -11.5,
@@ -2558,6 +2838,7 @@
     "state_fips": "12",
     "district_id": "036",
     "district_name": "State House District 36",
+    "tier": 1,
     "incumbent": {
       "name": "Rachel Plakon",
       "party": "R"
@@ -2601,6 +2882,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 45.4,
+        "rep_pct": 54.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 46.4,
         "rep_pct": 53.6,
@@ -2608,6 +2895,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -9.3,
       "leg_2024": -7.2,
       "latest_leg": -7.2,
       "gov_2022": -11.7,
@@ -2631,6 +2919,7 @@
     "state_fips": "12",
     "district_id": "037",
     "district_name": "State House District 37",
+    "tier": 1,
     "incumbent": {
       "name": "Susan Plasencia",
       "party": "R"
@@ -2674,6 +2963,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 48.1,
+        "rep_pct": 51.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 49.7,
         "rep_pct": 50.3,
@@ -2681,6 +2976,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -3.9,
       "leg_2024": -0.6,
       "latest_leg": -0.6,
       "gov_2022": -5.0,
@@ -2704,6 +3000,7 @@
     "state_fips": "12",
     "district_id": "038",
     "district_name": "State House District 38",
+    "tier": 1,
     "incumbent": {
       "name": "David Smith",
       "party": "R"
@@ -2747,6 +3044,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 47.7,
+        "rep_pct": 52.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 49.6,
         "rep_pct": 50.4,
@@ -2754,6 +3057,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -4.6,
       "leg_2024": -0.8,
       "latest_leg": -0.8,
       "gov_2022": -6.7,
@@ -2777,6 +3081,7 @@
     "state_fips": "12",
     "district_id": "039",
     "district_name": "State House District 39",
+    "tier": 1,
     "incumbent": {
       "name": "Doug Bankson",
       "party": "R"
@@ -2820,6 +3125,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 44.4,
+        "rep_pct": 55.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 47.4,
         "rep_pct": 52.6,
@@ -2827,6 +3138,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -11.3,
       "leg_2024": -5.1,
       "latest_leg": -5.1,
       "gov_2022": -14.8,
@@ -2850,6 +3162,7 @@
     "state_fips": "12",
     "district_id": "040",
     "district_name": "State House District 40",
+    "tier": null,
     "incumbent": {
       "name": "RaShon Young",
       "party": "D"
@@ -2893,6 +3206,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 65.0,
+        "rep_pct": 35.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 67.5,
         "rep_pct": 32.5,
@@ -2900,6 +3219,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 30.0,
       "leg_2024": 35.0,
       "latest_leg": 35.0,
       "gov_2022": 28.9,
@@ -2923,6 +3243,7 @@
     "state_fips": "12",
     "district_id": "041",
     "district_name": "State House District 41",
+    "tier": null,
     "incumbent": {
       "name": "Bruce Antone",
       "party": "D"
@@ -2966,6 +3287,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 81.5,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2973,6 +3300,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 81.5,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 42.7,
@@ -2996,6 +3324,7 @@
     "state_fips": "12",
     "district_id": "042",
     "district_name": "State House District 42",
+    "tier": null,
     "incumbent": {
       "name": "Anna V. Eskamani",
       "party": "D"
@@ -3039,6 +3368,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 56.6,
+        "rep_pct": 43.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 58.9,
         "rep_pct": 41.1,
@@ -3046,6 +3381,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 13.3,
       "leg_2024": 17.7,
       "latest_leg": 17.7,
       "gov_2022": 7.4,
@@ -3069,6 +3405,7 @@
     "state_fips": "12",
     "district_id": "043",
     "district_name": "State House District 43",
+    "tier": null,
     "incumbent": {
       "name": "Johanna L\u00f3pez",
       "party": "D"
@@ -3112,6 +3449,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 57.4,
+        "rep_pct": 42.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 57.3,
         "rep_pct": 42.7,
@@ -3119,6 +3462,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 14.8,
       "leg_2024": 14.7,
       "latest_leg": 14.7,
       "gov_2022": 7.8,
@@ -3142,6 +3486,7 @@
     "state_fips": "12",
     "district_id": "044",
     "district_name": "State House District 44",
+    "tier": null,
     "incumbent": {
       "name": "Rita Harris",
       "party": "D"
@@ -3185,6 +3530,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -3192,6 +3543,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 7.8,
@@ -3215,6 +3567,7 @@
     "state_fips": "12",
     "district_id": "045",
     "district_name": "State House District 45",
+    "tier": 1,
     "incumbent": {
       "name": "Leonard Spencer",
       "party": "D"
@@ -3258,6 +3611,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 46.7,
+        "rep_pct": 53.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 50.9,
         "rep_pct": 49.1,
@@ -3265,6 +3624,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -6.6,
       "leg_2024": 1.7,
       "latest_leg": 1.7,
       "gov_2022": -8.2,
@@ -3288,6 +3648,7 @@
     "state_fips": "12",
     "district_id": "046",
     "district_name": "State House District 46",
+    "tier": null,
     "incumbent": {
       "name": "Jose Alvarez",
       "party": "D"
@@ -3331,6 +3692,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 58.3,
+        "rep_pct": 38.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 57.0,
         "rep_pct": 39.6,
@@ -3338,6 +3705,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 19.5,
       "leg_2024": 17.4,
       "latest_leg": 17.4,
       "gov_2022": 14.7,
@@ -3361,6 +3729,7 @@
     "state_fips": "12",
     "district_id": "047",
     "district_name": "State House District 47",
+    "tier": 1,
     "incumbent": {
       "name": "Paula Stark",
       "party": "R"
@@ -3404,6 +3773,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 49.1,
+        "rep_pct": 50.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 49.2,
         "rep_pct": 50.8,
@@ -3411,6 +3786,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -1.9,
       "leg_2024": -1.6,
       "latest_leg": -1.6,
       "gov_2022": -12.9,
@@ -3434,6 +3810,7 @@
     "state_fips": "12",
     "district_id": "048",
     "district_name": "State House District 48",
+    "tier": 3,
     "incumbent": {
       "name": "Jon Albert",
       "party": "R"
@@ -3477,6 +3854,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.1,
         "rep_pct": 57.9,
@@ -3484,6 +3867,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -15.8,
       "latest_leg": -15.8,
       "gov_2022": -25.2,
@@ -3507,6 +3891,7 @@
     "state_fips": "12",
     "district_id": "049",
     "district_name": "State House District 49",
+    "tier": null,
     "incumbent": {
       "name": "Jennifer Kincart Jonsson",
       "party": "R"
@@ -3550,6 +3935,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 32.9,
         "rep_pct": 67.1,
@@ -3557,6 +3948,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -34.1,
       "latest_leg": -34.1,
       "gov_2022": -40.3,
@@ -3580,6 +3972,7 @@
     "state_fips": "12",
     "district_id": "050",
     "district_name": "State House District 50",
+    "tier": null,
     "incumbent": {
       "name": "Jennifer Canady",
       "party": "R"
@@ -3623,6 +4016,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.4,
         "rep_pct": 62.6,
@@ -3630,6 +4029,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -25.2,
       "latest_leg": -25.2,
       "gov_2022": -29.8,
@@ -3653,6 +4053,7 @@
     "state_fips": "12",
     "district_id": "051",
     "district_name": "State House District 51",
+    "tier": 2,
     "incumbent": {
       "name": "Josie Tomkow",
       "party": "R"
@@ -3696,6 +4097,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 43.1,
         "rep_pct": 56.9,
@@ -3703,6 +4110,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -13.8,
       "latest_leg": -13.8,
       "gov_2022": -23.1,
@@ -3726,6 +4134,7 @@
     "state_fips": "12",
     "district_id": "052",
     "district_name": "State House District 52",
+    "tier": null,
     "incumbent": {
       "name": "Vacant",
       "party": "O"
@@ -3769,6 +4178,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 27.0,
+        "rep_pct": 73.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 28.0,
         "rep_pct": 72.0,
@@ -3776,6 +4191,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -46.0,
       "leg_2024": -44.1,
       "latest_leg": -44.1,
       "gov_2022": -47.0,
@@ -3799,6 +4215,7 @@
     "state_fips": "12",
     "district_id": "053",
     "district_name": "State House District 53",
+    "tier": null,
     "incumbent": {
       "name": "Jeff Holcomb",
       "party": "R"
@@ -3842,6 +4259,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 29.9,
+        "rep_pct": 70.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 31.0,
         "rep_pct": 69.0,
@@ -3849,6 +4272,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -40.1,
       "leg_2024": -38.1,
       "latest_leg": -38.1,
       "gov_2022": -39.2,
@@ -3872,6 +4296,7 @@
     "state_fips": "12",
     "district_id": "054",
     "district_name": "State House District 54",
+    "tier": null,
     "incumbent": {
       "name": "Randy Maggard",
       "party": "R"
@@ -3915,6 +4340,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 36.1,
+        "rep_pct": 61.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 39.9,
         "rep_pct": 60.1,
@@ -3922,6 +4353,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -25.5,
       "leg_2024": -20.2,
       "latest_leg": -20.2,
       "gov_2022": -26.7,
@@ -3945,6 +4377,7 @@
     "state_fips": "12",
     "district_id": "055",
     "district_name": "State House District 55",
+    "tier": null,
     "incumbent": {
       "name": "Kevin Steele",
       "party": "R"
@@ -3988,6 +4421,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 77.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.8,
         "rep_pct": 64.2,
@@ -3995,6 +4434,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -55.0,
       "leg_2024": -28.4,
       "latest_leg": -28.4,
       "gov_2022": -34.5,
@@ -4018,6 +4458,7 @@
     "state_fips": "12",
     "district_id": "056",
     "district_name": "State House District 56",
+    "tier": null,
     "incumbent": {
       "name": "Brad Yeager",
       "party": "R"
@@ -4061,6 +4502,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 34.9,
         "rep_pct": 65.1,
@@ -4068,6 +4515,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -30.3,
       "latest_leg": -30.3,
       "gov_2022": -31.9,
@@ -4091,6 +4539,7 @@
     "state_fips": "12",
     "district_id": "057",
     "district_name": "State House District 57",
+    "tier": null,
     "incumbent": {
       "name": "Adam Anderson",
       "party": "R"
@@ -4134,6 +4583,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 38.6,
         "rep_pct": 58.8,
@@ -4141,6 +4596,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -20.2,
       "latest_leg": -20.2,
       "gov_2022": -22.8,
@@ -4164,6 +4620,7 @@
     "state_fips": "12",
     "district_id": "058",
     "district_name": "State House District 58",
+    "tier": 3,
     "incumbent": {
       "name": "Kim Berfield",
       "party": "R"
@@ -4207,6 +4664,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.7,
+        "rep_pct": 60.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.4,
         "rep_pct": 57.6,
@@ -4214,6 +4677,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -20.6,
       "leg_2024": -15.3,
       "latest_leg": -15.3,
       "gov_2022": -17.7,
@@ -4237,6 +4701,7 @@
     "state_fips": "12",
     "district_id": "059",
     "district_name": "State House District 59",
+    "tier": 3,
     "incumbent": {
       "name": "Berny Jacques",
       "party": "R"
@@ -4280,6 +4745,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 40.0,
+        "rep_pct": 60.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.3,
         "rep_pct": 58.7,
@@ -4287,6 +4758,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -20.1,
       "leg_2024": -17.4,
       "latest_leg": -17.4,
       "gov_2022": -20.4,
@@ -4310,6 +4782,7 @@
     "state_fips": "12",
     "district_id": "060",
     "district_name": "State House District 60",
+    "tier": null,
     "incumbent": {
       "name": "Lindsay Cross",
       "party": "D"
@@ -4353,6 +4826,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.2,
+        "rep_pct": 45.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 53.6,
         "rep_pct": 46.4,
@@ -4360,6 +4839,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 8.4,
       "leg_2024": 7.3,
       "latest_leg": 7.3,
       "gov_2022": 4.1,
@@ -4383,6 +4863,7 @@
     "state_fips": "12",
     "district_id": "061",
     "district_name": "State House District 61",
+    "tier": 2,
     "incumbent": {
       "name": "Linda Chaney",
       "party": "R"
@@ -4426,6 +4907,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 44.0,
+        "rep_pct": 56.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 43.8,
         "rep_pct": 56.2,
@@ -4433,6 +4920,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -11.9,
       "leg_2024": -12.5,
       "latest_leg": -12.5,
       "gov_2022": -12.4,
@@ -4456,6 +4944,7 @@
     "state_fips": "12",
     "district_id": "062",
     "district_name": "State House District 62",
+    "tier": null,
     "incumbent": {
       "name": "Michele Rayner-Goolsby",
       "party": "D"
@@ -4499,6 +4988,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 69.6,
+        "rep_pct": 30.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 68.7,
         "rep_pct": 31.3,
@@ -4506,6 +5001,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 39.3,
       "leg_2024": 37.3,
       "latest_leg": 37.3,
       "gov_2022": 34.4,
@@ -4529,6 +5025,7 @@
     "state_fips": "12",
     "district_id": "063",
     "district_name": "State House District 63",
+    "tier": null,
     "incumbent": {
       "name": "Dianne Hart",
       "party": "D"
@@ -4572,6 +5069,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 72.9,
         "rep_pct": 27.1,
@@ -4579,6 +5082,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 45.8,
       "latest_leg": 45.8,
       "gov_2022": 40.7,
@@ -4602,6 +5106,7 @@
     "state_fips": "12",
     "district_id": "064",
     "district_name": "State House District 64",
+    "tier": 3,
     "incumbent": {
       "name": "Susan Valdes[m]",
       "party": "R"
@@ -4645,6 +5150,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.3,
+        "rep_pct": 46.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 52.4,
         "rep_pct": 47.6,
@@ -4652,6 +5163,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 6.6,
       "leg_2024": 4.8,
       "latest_leg": 4.8,
       "gov_2022": -1.4,
@@ -4675,6 +5187,7 @@
     "state_fips": "12",
     "district_id": "065",
     "district_name": "State House District 65",
+    "tier": 2,
     "incumbent": {
       "name": "Karen Gonzalez Pittman",
       "party": "R"
@@ -4718,6 +5231,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 46.4,
+        "rep_pct": 53.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.8,
         "rep_pct": 57.2,
@@ -4725,6 +5244,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -7.3,
       "leg_2024": -14.5,
       "latest_leg": -14.5,
       "gov_2022": -10.9,
@@ -4748,6 +5268,7 @@
     "state_fips": "12",
     "district_id": "066",
     "district_name": "State House District 66",
+    "tier": 3,
     "incumbent": {
       "name": "Traci Koster",
       "party": "R"
@@ -4791,6 +5312,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.9,
+        "rep_pct": 60.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.7,
         "rep_pct": 58.3,
@@ -4798,6 +5325,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -20.3,
       "leg_2024": -16.5,
       "latest_leg": -16.5,
       "gov_2022": -18.6,
@@ -4821,6 +5349,7 @@
     "state_fips": "12",
     "district_id": "067",
     "district_name": "State House District 67",
+    "tier": null,
     "incumbent": {
       "name": "Fentrice Driskell",
       "party": "D"
@@ -4864,6 +5393,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.0,
+        "rep_pct": 46.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 54.7,
         "rep_pct": 45.3,
@@ -4871,6 +5406,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 8.0,
       "leg_2024": 9.3,
       "latest_leg": 9.3,
       "gov_2022": 4.5,
@@ -4894,6 +5430,7 @@
     "state_fips": "12",
     "district_id": "068",
     "district_name": "State House District 68",
+    "tier": null,
     "incumbent": {
       "name": "Lawrence McClure",
       "party": "R"
@@ -4937,6 +5474,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 31.7,
+        "rep_pct": 68.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 33.9,
         "rep_pct": 63.0,
@@ -4944,6 +5487,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -36.5,
       "leg_2024": -29.1,
       "latest_leg": -29.1,
       "gov_2022": -36.8,
@@ -4967,6 +5511,7 @@
     "state_fips": "12",
     "district_id": "069",
     "district_name": "State House District 69",
+    "tier": 3,
     "incumbent": {
       "name": "Danny Alvarez",
       "party": "R"
@@ -5010,6 +5555,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 43.3,
+        "rep_pct": 56.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.8,
         "rep_pct": 58.2,
@@ -5017,6 +5568,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -13.4,
       "leg_2024": -16.5,
       "latest_leg": -16.5,
       "gov_2022": -16.8,
@@ -5040,6 +5592,7 @@
     "state_fips": "12",
     "district_id": "070",
     "district_name": "State House District 70",
+    "tier": 3,
     "incumbent": {
       "name": "Michael Owen",
       "party": "R"
@@ -5083,6 +5636,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 37.1,
+        "rep_pct": 62.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.2,
         "rep_pct": 58.8,
@@ -5090,6 +5649,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -25.8,
       "leg_2024": -17.5,
       "latest_leg": -17.5,
       "gov_2022": -23.1,
@@ -5113,6 +5673,7 @@
     "state_fips": "12",
     "district_id": "071",
     "district_name": "State House District 71",
+    "tier": 3,
     "incumbent": {
       "name": "Will Robinson",
       "party": "R"
@@ -5156,6 +5717,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 40.4,
         "rep_pct": 59.6,
@@ -5163,6 +5730,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -19.1,
       "latest_leg": -19.1,
       "gov_2022": -23.9,
@@ -5186,6 +5754,7 @@
     "state_fips": "12",
     "district_id": "072",
     "district_name": "State House District 72",
+    "tier": null,
     "incumbent": {
       "name": "Bill Conerly",
       "party": "R"
@@ -5229,6 +5798,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 33.3,
+        "rep_pct": 66.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.3,
         "rep_pct": 64.7,
@@ -5236,6 +5811,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -33.5,
       "leg_2024": -29.4,
       "latest_leg": -29.4,
       "gov_2022": -32.0,
@@ -5259,6 +5835,7 @@
     "state_fips": "12",
     "district_id": "073",
     "district_name": "State House District 73",
+    "tier": 2,
     "incumbent": {
       "name": "Fiona McFarland",
       "party": "R"
@@ -5302,6 +5879,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 43.7,
+        "rep_pct": 56.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 43.7,
         "rep_pct": 56.3,
@@ -5309,6 +5892,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -12.5,
       "leg_2024": -12.6,
       "latest_leg": -12.6,
       "gov_2022": -10.9,
@@ -5332,6 +5916,7 @@
     "state_fips": "12",
     "district_id": "074",
     "district_name": "State House District 74",
+    "tier": null,
     "incumbent": {
       "name": "James Buchanan",
       "party": "R"
@@ -5375,6 +5960,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.4,
         "rep_pct": 64.6,
@@ -5382,6 +5973,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -29.3,
       "latest_leg": -29.3,
       "gov_2022": -29.2,
@@ -5405,6 +5997,7 @@
     "state_fips": "12",
     "district_id": "075",
     "district_name": "State House District 75",
+    "tier": null,
     "incumbent": {
       "name": "Danny Nix",
       "party": "R"
@@ -5448,6 +6041,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 33.7,
         "rep_pct": 66.3,
@@ -5455,6 +6054,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -32.7,
       "latest_leg": -32.7,
       "gov_2022": -37.6,
@@ -5478,6 +6078,7 @@
     "state_fips": "12",
     "district_id": "076",
     "district_name": "State House District 76",
+    "tier": null,
     "incumbent": {
       "name": "Vanessa Oliver",
       "party": "R"
@@ -5521,6 +6122,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 29.5,
         "rep_pct": 70.5,
@@ -5528,6 +6135,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -41.0,
       "latest_leg": -41.0,
       "gov_2022": -45.3,
@@ -5551,6 +6159,7 @@
     "state_fips": "12",
     "district_id": "077",
     "district_name": "State House District 77",
+    "tier": null,
     "incumbent": {
       "name": "Tiffany Esposito",
       "party": "R"
@@ -5594,6 +6203,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 32.6,
+        "rep_pct": 67.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 33.8,
         "rep_pct": 63.9,
@@ -5601,6 +6216,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -34.7,
       "leg_2024": -30.1,
       "latest_leg": -30.1,
       "gov_2022": -36.9,
@@ -5624,6 +6240,7 @@
     "state_fips": "12",
     "district_id": "078",
     "district_name": "State House District 78",
+    "tier": 3,
     "incumbent": {
       "name": "Jenna Persons-Mulicka",
       "party": "R"
@@ -5667,6 +6284,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 37.3,
+        "rep_pct": 62.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 40.1,
         "rep_pct": 59.9,
@@ -5674,6 +6297,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -25.5,
       "leg_2024": -19.8,
       "latest_leg": -19.8,
       "gov_2022": -26.6,
@@ -5697,6 +6321,7 @@
     "state_fips": "12",
     "district_id": "079",
     "district_name": "State House District 79",
+    "tier": null,
     "incumbent": {
       "name": "Mike Giallombardo",
       "party": "R"
@@ -5740,6 +6365,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 31.2,
         "rep_pct": 68.8,
@@ -5747,6 +6378,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -37.7,
       "latest_leg": -37.7,
       "gov_2022": -44.2,
@@ -5770,6 +6402,7 @@
     "state_fips": "12",
     "district_id": "080",
     "district_name": "State House District 80",
+    "tier": null,
     "incumbent": {
       "name": "Adam Botana",
       "party": "R"
@@ -5813,6 +6446,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 29.1,
+        "rep_pct": 70.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 30.8,
         "rep_pct": 69.1,
@@ -5820,6 +6459,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -41.7,
       "leg_2024": -38.3,
       "latest_leg": -38.3,
       "gov_2022": -39.4,
@@ -5843,6 +6483,7 @@
     "state_fips": "12",
     "district_id": "081",
     "district_name": "State House District 81",
+    "tier": null,
     "incumbent": {
       "name": "Yvette Benarroch",
       "party": "R"
@@ -5886,6 +6527,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 31.9,
         "rep_pct": 68.1,
@@ -5893,6 +6540,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -36.2,
       "latest_leg": -36.2,
       "pres_2024": -31.0
@@ -5914,6 +6562,7 @@
     "state_fips": "12",
     "district_id": "082",
     "district_name": "State House District 82",
+    "tier": null,
     "incumbent": {
       "name": "Lauren Melo",
       "party": "R"
@@ -5957,6 +6606,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 30.3,
         "rep_pct": 69.7,
@@ -5964,6 +6619,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -39.5,
       "latest_leg": -39.5,
       "gov_2022": -45.0,
@@ -5987,6 +6643,7 @@
     "state_fips": "12",
     "district_id": "083",
     "district_name": "State House District 83",
+    "tier": null,
     "incumbent": {
       "name": "Kaylee Tuck",
       "party": "R"
@@ -6030,6 +6687,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 25.4,
         "rep_pct": 74.6,
@@ -6037,6 +6700,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -49.2,
       "latest_leg": -49.2,
       "gov_2022": -54.4,
@@ -6060,6 +6724,7 @@
     "state_fips": "12",
     "district_id": "084",
     "district_name": "State House District 84",
+    "tier": 3,
     "incumbent": {
       "name": "Dana Trabulsy",
       "party": "R"
@@ -6103,6 +6768,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 38.7,
+        "rep_pct": 61.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.0,
         "rep_pct": 58.0,
@@ -6110,6 +6781,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -22.6,
       "leg_2024": -16.1,
       "latest_leg": -16.1,
       "gov_2022": -20.6,
@@ -6133,6 +6805,7 @@
     "state_fips": "12",
     "district_id": "085",
     "district_name": "State House District 85",
+    "tier": 2,
     "incumbent": {
       "name": "Toby Overdorf",
       "party": "R"
@@ -6176,6 +6849,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.1,
+        "rep_pct": 60.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.8,
         "rep_pct": 57.2,
@@ -6183,6 +6862,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -21.7,
       "leg_2024": -14.3,
       "latest_leg": -14.3,
       "gov_2022": -21.1,
@@ -6206,6 +6886,7 @@
     "state_fips": "12",
     "district_id": "086",
     "district_name": "State House District 86",
+    "tier": null,
     "incumbent": {
       "name": "John Snyder",
       "party": "R"
@@ -6249,6 +6930,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 31.5,
+        "rep_pct": 68.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 31.9,
         "rep_pct": 68.1,
@@ -6256,6 +6943,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -37.0,
       "leg_2024": -36.1,
       "latest_leg": -36.1,
       "gov_2022": -35.3,
@@ -6279,6 +6967,7 @@
     "state_fips": "12",
     "district_id": "087",
     "district_name": "State House District 87",
+    "tier": 3,
     "incumbent": {
       "name": "Vacant",
       "party": "O"
@@ -6322,6 +7011,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 40.7,
+        "rep_pct": 59.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 40.5,
         "rep_pct": 59.5,
@@ -6329,6 +7024,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -18.6,
       "leg_2024": -19.0,
       "latest_leg": -19.0,
       "gov_2022": -16.8,
@@ -6352,6 +7048,7 @@
     "state_fips": "12",
     "district_id": "088",
     "district_name": "State House District 88",
+    "tier": null,
     "incumbent": {
       "name": "Jervonte Edmonds",
       "party": "D"
@@ -6395,6 +7092,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 71.2,
+        "rep_pct": 28.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -6402,6 +7105,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 42.3,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 37.9,
@@ -6425,6 +7129,7 @@
     "state_fips": "12",
     "district_id": "089",
     "district_name": "State House District 89",
+    "tier": 2,
     "incumbent": {
       "name": "Debra Tendrich",
       "party": "D"
@@ -6468,6 +7173,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 52.4,
+        "rep_pct": 47.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 51.3,
         "rep_pct": 48.7,
@@ -6475,6 +7186,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 4.9,
       "leg_2024": 2.6,
       "latest_leg": 2.6,
       "gov_2022": -1.2,
@@ -6498,6 +7210,7 @@
     "state_fips": "12",
     "district_id": "090",
     "district_name": "State House District 90",
+    "tier": null,
     "incumbent": {
       "name": "Rob Long",
       "party": "D"
@@ -6541,6 +7254,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.9,
+        "rep_pct": 45.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 56.1,
         "rep_pct": 43.9,
@@ -6548,6 +7267,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 9.8,
       "leg_2024": 12.2,
       "latest_leg": 12.2,
       "gov_2022": 4.8,
@@ -6571,6 +7291,7 @@
     "state_fips": "12",
     "district_id": "091",
     "district_name": "State House District 91",
+    "tier": 1,
     "incumbent": {
       "name": "Peggy Gossett-Seidman",
       "party": "R"
@@ -6614,6 +7335,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 48.3,
+        "rep_pct": 51.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 45.5,
         "rep_pct": 54.5,
@@ -6621,6 +7348,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -3.5,
       "leg_2024": -9.1,
       "latest_leg": -9.1,
       "gov_2022": -9.1,
@@ -6644,6 +7372,7 @@
     "state_fips": "12",
     "district_id": "092",
     "district_name": "State House District 92",
+    "tier": null,
     "incumbent": {
       "name": "Kelly Skidmore",
       "party": "D"
@@ -6687,6 +7416,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 57.5,
+        "rep_pct": 42.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -6694,6 +7429,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 15.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 9.9,
@@ -6717,6 +7453,7 @@
     "state_fips": "12",
     "district_id": "093",
     "district_name": "State House District 93",
+    "tier": 1,
     "incumbent": {
       "name": "Anne Gerwig",
       "party": "R"
@@ -6760,6 +7497,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 50.6,
+        "rep_pct": 49.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 49.8,
         "rep_pct": 50.2,
@@ -6767,6 +7510,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 1.3,
       "leg_2024": -0.4,
       "latest_leg": -0.4,
       "gov_2022": -3.7,
@@ -6790,6 +7534,7 @@
     "state_fips": "12",
     "district_id": "094",
     "district_name": "State House District 94",
+    "tier": 2,
     "incumbent": {
       "name": "Meg Weinberger",
       "party": "R"
@@ -6833,6 +7578,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 40.5,
+        "rep_pct": 59.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 44.9,
         "rep_pct": 55.1,
@@ -6840,6 +7591,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -19.0,
       "leg_2024": -10.2,
       "latest_leg": -10.2,
       "gov_2022": -15.1,
@@ -6863,6 +7615,7 @@
     "state_fips": "12",
     "district_id": "095",
     "district_name": "State House District 95",
+    "tier": null,
     "incumbent": {
       "name": "Christine Hunschofsky",
       "party": "D"
@@ -6906,6 +7659,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -6913,6 +7672,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 8.8,
@@ -6936,6 +7696,7 @@
     "state_fips": "12",
     "district_id": "096",
     "district_name": "State House District 96",
+    "tier": null,
     "incumbent": {
       "name": "Dan Daley",
       "party": "D"
@@ -6979,6 +7740,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 61.2,
+        "rep_pct": 38.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -6986,6 +7753,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 22.3,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 16.5,
@@ -7009,6 +7777,7 @@
     "state_fips": "12",
     "district_id": "097",
     "district_name": "State House District 97",
+    "tier": null,
     "incumbent": {
       "name": "Lisa Dunkley",
       "party": "D"
@@ -7052,6 +7821,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7059,6 +7834,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 54.0,
@@ -7082,6 +7858,7 @@
     "state_fips": "12",
     "district_id": "098",
     "district_name": "State House District 98",
+    "tier": null,
     "incumbent": {
       "name": "Mitch Rosenwald",
       "party": "D"
@@ -7125,6 +7902,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7132,6 +7915,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 28.1,
@@ -7155,6 +7939,7 @@
     "state_fips": "12",
     "district_id": "099",
     "district_name": "State House District 99",
+    "tier": null,
     "incumbent": {
       "name": "Daryl Campbell",
       "party": "D"
@@ -7198,6 +7983,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7205,6 +7996,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 45.3,
@@ -7228,6 +8020,7 @@
     "state_fips": "12",
     "district_id": "100",
     "district_name": "State House District 100",
+    "tier": 2,
     "incumbent": {
       "name": "Chip LaMarca",
       "party": "R"
@@ -7271,6 +8064,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 42.9,
+        "rep_pct": 57.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.6,
         "rep_pct": 57.4,
@@ -7278,6 +8077,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -14.3,
       "leg_2024": -14.8,
       "latest_leg": -14.8,
       "gov_2022": -8.4,
@@ -7301,6 +8101,7 @@
     "state_fips": "12",
     "district_id": "101",
     "district_name": "State House District 101",
+    "tier": null,
     "incumbent": {
       "name": "Hillary Cassel",
       "party": "R"
@@ -7344,6 +8145,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.7,
+        "rep_pct": 46.3,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7351,6 +8158,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 7.5,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": -1.2,
@@ -7374,6 +8182,7 @@
     "state_fips": "12",
     "district_id": "102",
     "district_name": "State House District 102",
+    "tier": null,
     "incumbent": {
       "name": "Michael Gottlieb",
       "party": "D"
@@ -7417,6 +8226,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 53.6,
         "rep_pct": 46.4,
@@ -7424,6 +8239,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 7.1,
       "latest_leg": 7.1,
       "gov_2022": 3.3,
@@ -7447,6 +8263,7 @@
     "state_fips": "12",
     "district_id": "103",
     "district_name": "State House District 103",
+    "tier": null,
     "incumbent": {
       "name": "Robin Bartleman",
       "party": "D"
@@ -7490,6 +8307,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.2,
+        "rep_pct": 45.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 54.2,
         "rep_pct": 45.8,
@@ -7497,6 +8320,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 8.3,
       "leg_2024": 8.3,
       "latest_leg": 8.3,
       "gov_2022": 2.7,
@@ -7520,6 +8344,7 @@
     "state_fips": "12",
     "district_id": "104",
     "district_name": "State House District 104",
+    "tier": null,
     "incumbent": {
       "name": "Felicia Robinson",
       "party": "D"
@@ -7563,6 +8388,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7570,6 +8401,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 29.0,
@@ -7593,6 +8425,7 @@
     "state_fips": "12",
     "district_id": "105",
     "district_name": "State House District 105",
+    "tier": null,
     "incumbent": {
       "name": "Marie Woodson",
       "party": "D"
@@ -7636,6 +8469,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 68.5,
+        "rep_pct": 31.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 79.7,
         "rep_pct": 0.0,
@@ -7643,6 +8482,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 37.0,
       "leg_2024": 79.7,
       "latest_leg": 79.7,
       "gov_2022": 30.1,
@@ -7666,6 +8506,7 @@
     "state_fips": "12",
     "district_id": "106",
     "district_name": "State House District 106",
+    "tier": 1,
     "incumbent": {
       "name": "Fabi\u00e1n Basabe",
       "party": "R"
@@ -7709,6 +8550,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 49.8,
+        "rep_pct": 50.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 47.0,
         "rep_pct": 51.3,
@@ -7716,6 +8563,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -0.5,
       "leg_2024": -4.2,
       "latest_leg": -4.2,
       "gov_2022": -4.0,
@@ -7739,6 +8587,7 @@
     "state_fips": "12",
     "district_id": "107",
     "district_name": "State House District 107",
+    "tier": null,
     "incumbent": {
       "name": "Wallace Aristide",
       "party": "D"
@@ -7782,6 +8631,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7789,6 +8644,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 45.4,
@@ -7812,6 +8668,7 @@
     "state_fips": "12",
     "district_id": "108",
     "district_name": "State House District 108",
+    "tier": null,
     "incumbent": {
       "name": "Dotie Joseph",
       "party": "D"
@@ -7855,6 +8712,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7862,6 +8725,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 52.7,
@@ -7885,6 +8749,7 @@
     "state_fips": "12",
     "district_id": "109",
     "district_name": "State House District 109",
+    "tier": null,
     "incumbent": {
       "name": "Ashley Gantt",
       "party": "D"
@@ -7928,6 +8793,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -7935,6 +8806,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 42.3,
@@ -7958,6 +8830,7 @@
     "state_fips": "12",
     "district_id": "110",
     "district_name": "State House District 110",
+    "tier": null,
     "incumbent": {
       "name": "Tom Fabricio",
       "party": "R"
@@ -8001,6 +8874,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 28.8,
         "rep_pct": 71.2,
@@ -8008,6 +8887,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -42.3,
       "latest_leg": -42.3,
       "gov_2022": -42.1,
@@ -8031,6 +8911,7 @@
     "state_fips": "12",
     "district_id": "111",
     "district_name": "State House District 111",
+    "tier": null,
     "incumbent": {
       "name": "David Borrero",
       "party": "R"
@@ -8074,6 +8955,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 32.6,
         "rep_pct": 67.4,
@@ -8081,6 +8968,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -34.8,
       "latest_leg": -34.8,
       "gov_2022": -39.1,
@@ -8104,6 +8992,7 @@
     "state_fips": "12",
     "district_id": "112",
     "district_name": "State House District 112",
+    "tier": null,
     "incumbent": {
       "name": "Alex Rizo",
       "party": "R"
@@ -8147,6 +9036,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 27.1,
         "rep_pct": 72.9,
@@ -8154,6 +9049,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -45.9,
       "latest_leg": -45.9,
       "gov_2022": -49.1,
@@ -8177,6 +9073,7 @@
     "state_fips": "12",
     "district_id": "113",
     "district_name": "State House District 113",
+    "tier": 1,
     "incumbent": {
       "name": "Vacant",
       "party": "O"
@@ -8220,6 +9117,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 49.0,
+        "rep_pct": 51.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 45.3,
         "rep_pct": 54.7,
@@ -8227,6 +9130,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -2.0,
       "leg_2024": -9.3,
       "latest_leg": -9.3,
       "gov_2022": -4.2,
@@ -8250,6 +9154,7 @@
     "state_fips": "12",
     "district_id": "114",
     "district_name": "State House District 114",
+    "tier": 3,
     "incumbent": {
       "name": "Demi Busatta",
       "party": "R"
@@ -8293,6 +9198,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 43.6,
+        "rep_pct": 56.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.6,
         "rep_pct": 58.4,
@@ -8300,6 +9211,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -12.8,
       "leg_2024": -16.7,
       "latest_leg": -16.7,
       "gov_2022": -12.7,
@@ -8323,6 +9235,7 @@
     "state_fips": "12",
     "district_id": "115",
     "district_name": "State House District 115",
+    "tier": 3,
     "incumbent": {
       "name": "Omar Blanco",
       "party": "R"
@@ -8366,6 +9279,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 41.5,
+        "rep_pct": 58.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 40.7,
         "rep_pct": 59.3,
@@ -8373,6 +9292,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -16.9,
       "leg_2024": -18.7,
       "latest_leg": -18.7,
       "gov_2022": -17.1,
@@ -8396,6 +9316,7 @@
     "state_fips": "12",
     "district_id": "116",
     "district_name": "State House District 116",
+    "tier": null,
     "incumbent": {
       "name": "Daniel Perez",
       "party": "R"
@@ -8439,6 +9360,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 31.3,
         "rep_pct": 68.7,
@@ -8446,6 +9373,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -37.4,
       "latest_leg": -37.4,
       "gov_2022": -38.7,
@@ -8469,6 +9397,7 @@
     "state_fips": "12",
     "district_id": "117",
     "district_name": "State House District 117",
+    "tier": 3,
     "incumbent": {
       "name": "Kevin Chambliss",
       "party": "D"
@@ -8512,6 +9441,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 52.9,
         "rep_pct": 47.1,
@@ -8519,6 +9454,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 5.8,
       "latest_leg": 5.8,
       "gov_2022": 11.2,
@@ -8542,6 +9478,7 @@
     "state_fips": "12",
     "district_id": "118",
     "district_name": "State House District 118",
+    "tier": null,
     "incumbent": {
       "name": "Mike Redondo",
       "party": "R"
@@ -8585,6 +9522,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 31.6,
+        "rep_pct": 68.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 31.7,
         "rep_pct": 68.3,
@@ -8592,6 +9535,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -36.8,
       "leg_2024": -36.7,
       "latest_leg": -36.7,
       "gov_2022": -37.5,
@@ -8615,6 +9559,7 @@
     "state_fips": "12",
     "district_id": "119",
     "district_name": "State House District 119",
+    "tier": null,
     "incumbent": {
       "name": "Juan Carlos Porras",
       "party": "R"
@@ -8658,6 +9603,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 35.6,
+        "rep_pct": 64.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.4,
         "rep_pct": 64.6,
@@ -8665,6 +9616,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -28.7,
       "leg_2024": -29.2,
       "latest_leg": -29.2,
       "gov_2022": -29.5,
@@ -8688,6 +9640,7 @@
     "state_fips": "12",
     "district_id": "120",
     "district_name": "State House District 120",
+    "tier": null,
     "incumbent": {
       "name": "Jim Mooney",
       "party": "R"
@@ -8731,6 +9684,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.4,
+        "rep_pct": 60.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 36.9,
         "rep_pct": 63.1,
@@ -8738,6 +9697,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -21.2,
       "leg_2024": -26.1,
       "latest_leg": -26.1,
       "gov_2022": -21.2,

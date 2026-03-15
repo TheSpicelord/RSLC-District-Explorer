@@ -3,6 +3,7 @@
     "state_fips": "37",
     "district_id": "001",
     "district_name": "",
+    "tier": 2,
     "incumbent": {
       "name": "Bobby Hanig",
       "party": "R"
@@ -16,8 +17,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jerry R. Tillett",
+          "dem": "Melissa Zehner"
         }
       }
     ],
@@ -46,6 +47,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.8,
         "rep_pct": 57.2,
@@ -53,6 +60,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -14.4,
       "latest_leg": -14.4,
       "ussen_2022": -19.1,
@@ -67,14 +75,15 @@
       "ussen_2022": 52472
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jerry R. Tillett",
+      "dem": "Melissa Zehner"
     }
   },
   {
     "state_fips": "37",
     "district_id": "002",
     "district_name": "",
+    "tier": 2,
     "incumbent": {
       "name": "Norman Sanderson",
       "party": "R"
@@ -88,8 +97,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Norman Sanderson",
+          "dem": "Roy Surrett"
         }
       }
     ],
@@ -118,6 +127,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.8,
         "rep_pct": 56.0,
@@ -125,6 +140,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -14.2,
       "latest_leg": -14.2,
       "ussen_2022": -26.7,
@@ -139,14 +155,15 @@
       "ussen_2022": 66305
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Norman Sanderson",
+      "dem": "Roy Surrett"
     }
   },
   {
     "state_fips": "37",
     "district_id": "003",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Bob Brinson",
       "party": "R"
@@ -160,8 +177,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Bob Brinson",
+          "dem": "Charles Dudley"
         }
       }
     ],
@@ -190,6 +207,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 47.5,
+        "rep_pct": 52.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
@@ -197,6 +220,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -5.1,
       "leg_2024": -100.0,
       "latest_leg": -100.0,
       "ussen_2022": -22.3,
@@ -211,16 +235,17 @@
       "ussen_2022": 64520
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Bob Brinson",
+      "dem": "Charles Dudley"
     }
   },
   {
     "state_fips": "37",
     "district_id": "004",
     "district_name": "",
+    "tier": 2,
     "incumbent": {
-      "name": "Buck Newton",
+      "name": "Eldon Sharpe Newton III",
       "party": "R"
     },
     "members": [
@@ -228,12 +253,12 @@
         "seat": 1,
         "seat_label": "",
         "incumbent": {
-          "name": "Buck Newton",
+          "name": "Eldon Sharpe Newton III",
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Eldon Sharpe Newton III",
+          "dem": "Jess Rivera"
         }
       }
     ],
@@ -262,6 +287,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 42.5,
+        "rep_pct": 57.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 44.9,
         "rep_pct": 55.1,
@@ -269,6 +300,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -15.0,
       "leg_2024": -10.2,
       "latest_leg": -10.2,
       "ussen_2022": -12.8,
@@ -283,14 +315,15 @@
       "ussen_2022": 67622
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Eldon Sharpe Newton III",
+      "dem": "Jess Rivera"
     }
   },
   {
     "state_fips": "37",
     "district_id": "005",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Kandie Smith",
       "party": "D"
@@ -304,8 +337,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Henry Hostetler",
+          "dem": "Kandie Smith"
         }
       }
     ],
@@ -334,6 +367,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 52.2,
+        "rep_pct": 47.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 55.1,
         "rep_pct": 44.9,
@@ -341,6 +380,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 4.5,
       "leg_2024": 10.2,
       "latest_leg": 10.2,
       "ussen_2022": -11.4,
@@ -355,14 +395,15 @@
       "ussen_2022": 28621
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Henry Hostetler",
+      "dem": "Kandie Smith"
     }
   },
   {
     "state_fips": "37",
     "district_id": "006",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Michael Lazzara",
       "party": "R"
@@ -376,8 +417,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Michael Lazzara",
+          "dem": "Andi Morrow"
         }
       }
     ],
@@ -406,6 +447,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 30.4,
         "rep_pct": 69.6,
@@ -413,6 +460,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -39.3,
       "latest_leg": -39.3,
       "ussen_2022": -35.4,
@@ -427,14 +475,15 @@
       "ussen_2022": 44013
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Michael Lazzara",
+      "dem": "Andi Morrow"
     }
   },
   {
     "state_fips": "37",
     "district_id": "007",
     "district_name": "",
+    "tier": 1,
     "incumbent": {
       "name": "Michael Lee",
       "party": "R"
@@ -448,8 +497,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Michael Lee",
+          "dem": "Jessica Bichler"
         }
       }
     ],
@@ -478,6 +527,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 49.0,
+        "rep_pct": 51.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 43.7,
         "rep_pct": 52.2,
@@ -485,6 +540,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -1.9,
       "leg_2024": -8.5,
       "latest_leg": -8.5,
       "ussen_2022": -11.2,
@@ -499,14 +555,15 @@
       "ussen_2022": 37791
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Michael Lee",
+      "dem": "Jessica Bichler"
     }
   },
   {
     "state_fips": "37",
     "district_id": "008",
     "district_name": "",
+    "tier": 3,
     "incumbent": {
       "name": "Bill Rabon",
       "party": "R"
@@ -520,8 +577,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "William Rabon",
+          "dem": "Richard Combes"
         }
       }
     ],
@@ -550,6 +607,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 40.1,
         "rep_pct": 59.9,
@@ -557,6 +620,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -19.8,
       "latest_leg": -19.8,
       "ussen_2022": -21.5,
@@ -571,14 +635,15 @@
       "ussen_2022": 96454
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "William Rabon",
+      "dem": "Richard Combes"
     }
   },
   {
     "state_fips": "37",
     "district_id": "009",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Brent Jackson",
       "party": "R"
@@ -592,8 +657,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Brent Jackson",
+          "dem": "Helen Bronson"
         }
       }
     ],
@@ -622,6 +687,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.0,
         "rep_pct": 65.0,
@@ -629,6 +700,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -30.1,
       "latest_leg": -30.1,
       "ussen_2022": -31.7,
@@ -643,14 +715,15 @@
       "ussen_2022": 62357
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Brent Jackson",
+      "dem": "Helen Bronson"
     }
   },
   {
     "state_fips": "37",
     "district_id": "010",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Benton Sawrey",
       "party": "R"
@@ -664,8 +737,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Benton Sawrey",
+          "dem": "Pat LeGrand"
         }
       }
     ],
@@ -694,6 +767,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 36.1,
+        "rep_pct": 63.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.6,
         "rep_pct": 58.7,
@@ -701,6 +780,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -27.8,
       "leg_2024": -21.1,
       "latest_leg": -21.1,
       "ussen_2022": -42.1,
@@ -715,14 +795,15 @@
       "ussen_2022": 33902
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Benton Sawrey",
+      "dem": "Pat LeGrand"
     }
   },
   {
     "state_fips": "37",
     "district_id": "011",
     "district_name": "",
+    "tier": 1,
     "incumbent": {
       "name": "Lisa Stone Barnes",
       "party": "R"
@@ -736,8 +817,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Lisa Stone Barnes",
+          "dem": "James Gailliard"
         }
       }
     ],
@@ -766,6 +847,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 45.2,
+        "rep_pct": 54.8,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 48.7,
         "rep_pct": 51.3,
@@ -773,6 +860,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -9.7,
       "leg_2024": -2.6,
       "latest_leg": -2.6,
       "ussen_2022": -9.3,
@@ -787,14 +875,15 @@
       "ussen_2022": 54292
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Lisa Stone Barnes",
+      "dem": "James Gailliard"
     }
   },
   {
     "state_fips": "37",
     "district_id": "012",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Jim Burgin",
       "party": "R"
@@ -808,8 +897,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jim Burgin",
+          "dem": "Tanya White Anderson"
         }
       }
     ],
@@ -838,6 +927,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 36.6,
+        "rep_pct": 63.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 38.5,
         "rep_pct": 61.7,
@@ -845,6 +940,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -26.9,
       "leg_2024": -23.3,
       "latest_leg": -23.3,
       "ussen_2022": -28.8,
@@ -859,14 +955,15 @@
       "ussen_2022": 45239
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jim Burgin",
+      "dem": "Tanya White Anderson"
     }
   },
   {
     "state_fips": "37",
     "district_id": "013",
     "district_name": "",
+    "tier": 3,
     "incumbent": {
       "name": "Lisa Grafstein",
       "party": "D"
@@ -880,8 +977,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Robert van Brederode",
+          "dem": "Lisa Grafstein"
         }
       }
     ],
@@ -910,6 +1007,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 62.3,
+        "rep_pct": 34.3,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 50.2,
         "rep_pct": 46.1,
@@ -917,6 +1020,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 28.1,
       "leg_2024": 4.1,
       "latest_leg": 4.1,
       "ussen_2022": -14.6,
@@ -931,14 +1035,15 @@
       "ussen_2022": 37700
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Robert van Brederode",
+      "dem": "Lisa Grafstein"
     }
   },
   {
     "state_fips": "37",
     "district_id": "014",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Dan Blue",
       "party": "D"
@@ -952,8 +1057,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Angela McCarty",
+          "dem": "Dan Blue"
         }
       }
     ],
@@ -982,6 +1087,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 69.0,
+        "rep_pct": 28.2,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 73.5,
         "rep_pct": 23.6,
@@ -989,6 +1100,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 40.8,
       "leg_2024": 49.8,
       "latest_leg": 49.8,
       "ussen_2022": 35.5,
@@ -1003,14 +1115,15 @@
       "ussen_2022": 27931
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Angela McCarty",
+      "dem": "Dan Blue"
     }
   },
   {
     "state_fips": "37",
     "district_id": "015",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Jay Chaudhuri",
       "party": "D"
@@ -1024,8 +1137,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "David Bankert",
+          "dem": "Jay Chaudhuri"
         }
       }
     ],
@@ -1054,6 +1167,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 67.5,
+        "rep_pct": 29.3,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 65.9,
         "rep_pct": 30.2,
@@ -1061,6 +1180,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 38.2,
       "leg_2024": 35.7,
       "latest_leg": 35.7,
       "ussen_2022": 25.5,
@@ -1075,14 +1195,15 @@
       "ussen_2022": 35040
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "David Bankert",
+      "dem": "Jay Chaudhuri"
     }
   },
   {
     "state_fips": "37",
     "district_id": "016",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Gale Adcock",
       "party": "D"
@@ -1096,8 +1217,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Philip Hensley",
+          "dem": "Gale Adcock"
         }
       }
     ],
@@ -1126,6 +1247,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 65.2,
+        "rep_pct": 30.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -1133,6 +1260,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 34.5,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 22.4,
@@ -1147,14 +1275,15 @@
       "ussen_2022": 37744
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Philip Hensley",
+      "dem": "Gale Adcock"
     }
   },
   {
     "state_fips": "37",
     "district_id": "017",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Sydney Batch",
       "party": "D"
@@ -1168,8 +1297,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Shirley Johnson",
+          "dem": "Sydney Batch"
         }
       }
     ],
@@ -1198,6 +1327,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 51.8,
+        "rep_pct": 46.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 74.4,
         "rep_pct": 0.0,
@@ -1205,6 +1340,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 5.9,
       "leg_2024": 74.4,
       "latest_leg": 74.4,
       "ussen_2022": 15.6,
@@ -1219,14 +1355,15 @@
       "ussen_2022": 27666
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Shirley Johnson",
+      "dem": "Sydney Batch"
     }
   },
   {
     "state_fips": "37",
     "district_id": "018",
     "district_name": "",
+    "tier": 1,
     "incumbent": {
       "name": "Terence Everitt",
       "party": "D"
@@ -1240,8 +1377,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Chris Stock",
+          "dem": "Terence Everitt"
         }
       }
     ],
@@ -1270,6 +1407,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 51.4,
+        "rep_pct": 46.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 48.5,
         "rep_pct": 48.4,
@@ -1277,6 +1420,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 5.4,
       "leg_2024": 0.1,
       "latest_leg": 0.1,
       "ussen_2022": -13.0,
@@ -1291,14 +1435,15 @@
       "ussen_2022": 52024
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Chris Stock",
+      "dem": "Terence Everitt"
     }
   },
   {
     "state_fips": "37",
     "district_id": "019",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Val Applewhite",
       "party": "D"
@@ -1312,8 +1457,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Venus de la Cruz",
+          "dem": "Val Applewhite"
         }
       }
     ],
@@ -1342,6 +1487,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 52.7,
+        "rep_pct": 47.3,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 62.9,
         "rep_pct": 33.9,
@@ -1349,6 +1500,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 5.4,
       "leg_2024": 29.0,
       "latest_leg": 29.0,
       "ussen_2022": 27.8,
@@ -1363,14 +1515,15 @@
       "ussen_2022": 54160
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Venus de la Cruz",
+      "dem": "Val Applewhite"
     }
   },
   {
     "state_fips": "37",
     "district_id": "020",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Natalie Murdock",
       "party": "D"
@@ -1385,7 +1538,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Natalie Murdock"
         }
       }
     ],
@@ -1414,6 +1567,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 72.8,
+        "rep_pct": 27.2,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 72.3,
         "rep_pct": 27.7,
@@ -1421,6 +1580,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 45.7,
       "leg_2024": 44.6,
       "latest_leg": 44.6,
       "ussen_2022": 26.5,
@@ -1436,13 +1596,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Natalie Murdock"
     }
   },
   {
     "state_fips": "37",
     "district_id": "021",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Tom McInnis",
       "party": "R"
@@ -1456,8 +1617,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Tom McInnis",
+          "dem": "Paul Taylor"
         }
       }
     ],
@@ -1486,6 +1647,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 45.4,
+        "rep_pct": 54.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.2,
         "rep_pct": 62.8,
@@ -1493,6 +1660,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -9.3,
       "leg_2024": -25.5,
       "latest_leg": -25.5,
       "ussen_2022": -25.5,
@@ -1507,14 +1675,15 @@
       "ussen_2022": 49782
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Tom McInnis",
+      "dem": "Paul Taylor"
     }
   },
   {
     "state_fips": "37",
     "district_id": "022",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Sophia Chitlik",
       "party": "D"
@@ -1528,8 +1697,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Lakeshia Alston",
+          "dem": "Sophia Chitlik"
         }
       }
     ],
@@ -1558,6 +1727,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 78.4,
+        "rep_pct": 19.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 86.0,
         "rep_pct": 0.0,
@@ -1565,6 +1740,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 58.9,
       "leg_2024": 86.0,
       "latest_leg": 86.0,
       "ussen_2022": 51.3,
@@ -1579,14 +1755,15 @@
       "ussen_2022": 24353
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Lakeshia Alston",
+      "dem": "Sophia Chitlik"
     }
   },
   {
     "state_fips": "37",
     "district_id": "023",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Graig Meyer",
       "party": "D"
@@ -1600,8 +1777,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Laura Pichardo",
+          "dem": "Graig Meyer"
         }
       }
     ],
@@ -1630,6 +1807,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 67.3,
+        "rep_pct": 32.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 65.8,
         "rep_pct": 34.2,
@@ -1637,6 +1820,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 34.6,
       "leg_2024": 31.7,
       "latest_leg": 31.7,
       "ussen_2022": 3.3,
@@ -1651,16 +1835,17 @@
       "ussen_2022": 43982
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Laura Pichardo",
+      "dem": "Graig Meyer"
     }
   },
   {
     "state_fips": "37",
     "district_id": "024",
     "district_name": "",
+    "tier": 3,
     "incumbent": {
-      "name": "Danny Britt",
+      "name": "Danny Earl Britt",
       "party": "R"
     },
     "members": [
@@ -1668,12 +1853,12 @@
         "seat": 1,
         "seat_label": "",
         "incumbent": {
-          "name": "Danny Britt",
+          "name": "Danny Earl Britt",
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Danny Earl Britt",
+          "dem": "Catina Hamm"
         }
       }
     ],
@@ -1702,6 +1887,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 41.7,
+        "rep_pct": 58.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.3,
         "rep_pct": 58.7,
@@ -1709,6 +1900,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -16.6,
       "leg_2024": -17.5,
       "latest_leg": -17.5,
       "ussen_2022": -17.8,
@@ -1723,14 +1915,15 @@
       "ussen_2022": 35552
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Danny Earl Britt",
+      "dem": "Catina Hamm"
     }
   },
   {
     "state_fips": "37",
     "district_id": "025",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Amy Galey",
       "party": "R"
@@ -1744,8 +1937,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Amy Galey",
+          "dem": "Southey Blanton"
         }
       }
     ],
@@ -1774,6 +1967,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 37.2,
+        "rep_pct": 62.8,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 39.8,
         "rep_pct": 60.2,
@@ -1781,6 +1980,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -25.6,
       "leg_2024": -20.5,
       "latest_leg": -20.5,
       "ussen_2022": -21.9,
@@ -1795,14 +1995,15 @@
       "ussen_2022": 76019
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Amy Galey",
+      "dem": "Southey Blanton"
     }
   },
   {
     "state_fips": "37",
     "district_id": "026",
     "district_name": "",
+    "tier": 2,
     "incumbent": {
       "name": "Phil Berger",
       "party": "R"
@@ -1816,8 +2017,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Sam Page",
+          "dem": "Steve Luking"
         }
       }
     ],
@@ -1846,6 +2047,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 85.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.1,
         "rep_pct": 54.1,
@@ -1853,6 +2060,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -70.4,
       "leg_2024": -13.0,
       "latest_leg": -13.0,
       "ussen_2022": -32.0,
@@ -1867,14 +2075,15 @@
       "ussen_2022": 56461
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Sam Page",
+      "dem": "Steve Luking"
     }
   },
   {
     "state_fips": "37",
     "district_id": "027",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Michael Garrett",
       "party": "D"
@@ -1889,7 +2098,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Michael Garrett"
         }
       }
     ],
@@ -1918,6 +2127,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.5,
+        "rep_pct": 45.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 60.8,
         "rep_pct": 39.2,
@@ -1925,6 +2140,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 9.0,
       "leg_2024": 21.6,
       "latest_leg": 21.6,
       "ussen_2022": 11.4,
@@ -1940,13 +2156,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Michael Garrett"
     }
   },
   {
     "state_fips": "37",
     "district_id": "028",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Gladys Robinson",
       "party": "D"
@@ -1961,7 +2178,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Gladys Robinson"
         }
       }
     ],
@@ -1990,6 +2207,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 73.0,
+        "rep_pct": 27.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -1997,6 +2220,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 46.1,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 45.3,
@@ -2012,13 +2236,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Gladys Robinson"
     }
   },
   {
     "state_fips": "37",
     "district_id": "029",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Dave Craven",
       "party": "R"
@@ -2032,8 +2257,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Dave Craven",
+          "dem": "Bob Morrison"
         }
       }
     ],
@@ -2062,6 +2287,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 27.0,
+        "rep_pct": 73.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 31.4,
         "rep_pct": 68.6,
@@ -2069,6 +2300,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -46.1,
       "leg_2024": -37.1,
       "latest_leg": -37.1,
       "ussen_2022": -42.4,
@@ -2083,14 +2315,15 @@
       "ussen_2022": 62088
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Dave Craven",
+      "dem": "Bob Morrison"
     }
   },
   {
     "state_fips": "37",
     "district_id": "030",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Steve Jarvis",
       "party": "R"
@@ -2104,8 +2337,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Steven Jarvis",
+          "dem": "Pamela D. McAfee"
         }
       }
     ],
@@ -2134,6 +2367,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 23.4,
+        "rep_pct": 76.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 24.7,
         "rep_pct": 72.6,
@@ -2141,6 +2380,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -53.2,
       "leg_2024": -48.0,
       "latest_leg": -48.0,
       "ussen_2022": -50.9,
@@ -2155,14 +2395,15 @@
       "ussen_2022": 74286
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Steven Jarvis",
+      "dem": "Pamela D. McAfee"
     }
   },
   {
     "state_fips": "37",
     "district_id": "031",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Dana Caudill Jones",
       "party": "R"
@@ -2176,8 +2417,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Dana Caudill Jones",
+          "dem": "Andy Bowline"
         }
       }
     ],
@@ -2206,6 +2447,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.4,
         "rep_pct": 62.4,
@@ -2213,6 +2460,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -25.0,
       "latest_leg": -25.0,
       "ussen_2022": -20.4,
@@ -2227,14 +2475,15 @@
       "ussen_2022": 79581
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Dana Caudill Jones",
+      "dem": "Andy Bowline"
     }
   },
   {
     "state_fips": "37",
     "district_id": "032",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Paul Lowe Jr.",
       "party": "D"
@@ -2248,8 +2497,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Peter Antinozzi",
+          "dem": "Paul Lowe Jr."
         }
       }
     ],
@@ -2278,6 +2527,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 59.3,
+        "rep_pct": 40.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 69.0,
         "rep_pct": 28.2,
@@ -2285,6 +2540,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 18.6,
       "leg_2024": 40.8,
       "latest_leg": 40.8,
       "ussen_2022": 38.9,
@@ -2299,14 +2555,15 @@
       "ussen_2022": 64710
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Peter Antinozzi",
+      "dem": "Paul Lowe Jr."
     }
   },
   {
     "state_fips": "37",
     "district_id": "033",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Carl Ford",
       "party": "R"
@@ -2320,8 +2577,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Carl Ford",
+          "dem": "Gary Weart"
         }
       }
     ],
@@ -2350,6 +2607,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 26.7,
+        "rep_pct": 73.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 29.0,
         "rep_pct": 71.0,
@@ -2357,6 +2620,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -46.5,
       "leg_2024": -42.0,
       "latest_leg": -42.0,
       "ussen_2022": -43.5,
@@ -2371,14 +2635,15 @@
       "ussen_2022": 71823
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Carl Ford",
+      "dem": "Gary Weart"
     }
   },
   {
     "state_fips": "37",
     "district_id": "034",
     "district_name": "",
+    "tier": 1,
     "incumbent": {
       "name": "Chris Measmer",
       "party": "R"
@@ -2392,8 +2657,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Kevin Crutchfield",
+          "dem": "April Cook"
         }
       }
     ],
@@ -2422,6 +2687,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 43.1,
+        "rep_pct": 56.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 44.2,
         "rep_pct": 52.9,
@@ -2429,6 +2700,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -13.8,
       "leg_2024": -8.7,
       "latest_leg": -8.7,
       "ussen_2022": -26.6,
@@ -2443,14 +2715,15 @@
       "ussen_2022": 37523
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Kevin Crutchfield",
+      "dem": "April Cook"
     }
   },
   {
     "state_fips": "37",
     "district_id": "035",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Todd Johnson",
       "party": "R"
@@ -2464,8 +2737,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Todd Johnson",
+          "dem": "Christine Winward"
         }
       }
     ],
@@ -2494,6 +2767,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 36.7,
         "rep_pct": 63.3,
@@ -2501,6 +2780,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -26.7,
       "latest_leg": -26.7,
       "ussen_2022": -27.9,
@@ -2515,14 +2795,15 @@
       "ussen_2022": 84111
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Todd Johnson",
+      "dem": "Christine Winward"
     }
   },
   {
     "state_fips": "37",
     "district_id": "036",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Eddie Settle",
       "party": "R"
@@ -2536,8 +2817,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Eddie Settle",
+          "dem": "Trevor Hardwick"
         }
       }
     ],
@@ -2566,6 +2847,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 21.0,
         "rep_pct": 79.0,
@@ -2573,6 +2860,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -58.0,
       "latest_leg": -58.0,
       "ussen_2022": -63.6,
@@ -2587,14 +2875,15 @@
       "ussen_2022": 50387
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Eddie Settle",
+      "dem": "Trevor Hardwick"
     }
   },
   {
     "state_fips": "37",
     "district_id": "037",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Vickie Sawyer",
       "party": "R"
@@ -2608,8 +2897,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Vickie Sawyer",
+          "dem": "Raygan Angel"
         }
       }
     ],
@@ -2638,6 +2927,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.3,
         "rep_pct": 64.7,
@@ -2645,6 +2940,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -29.5,
       "latest_leg": -29.5,
       "ussen_2022": -29.5,
@@ -2659,14 +2955,15 @@
       "ussen_2022": 85271
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Vickie Sawyer",
+      "dem": "Raygan Angel"
     }
   },
   {
     "state_fips": "37",
     "district_id": "038",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Mujtaba Mohammed",
       "party": "D"
@@ -2681,7 +2978,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Mujtaba Mohammed"
         }
       }
     ],
@@ -2710,6 +3007,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2717,6 +3020,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 100.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 33.9,
@@ -2732,13 +3036,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Mujtaba Mohammed"
     }
   },
   {
     "state_fips": "37",
     "district_id": "039",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "DeAndrea Salvador",
       "party": "D"
@@ -2753,7 +3058,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "DeAndrea Salvador"
         }
       }
     ],
@@ -2782,6 +3087,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 63.9,
+        "rep_pct": 36.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2789,6 +3100,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 27.7,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 33.9,
@@ -2804,13 +3116,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "DeAndrea Salvador"
     }
   },
   {
     "state_fips": "37",
     "district_id": "040",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Joyce Waddell",
       "party": "D"
@@ -2824,8 +3137,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Bobbie Shields",
+          "dem": "Joyce Waddell"
         }
       }
     ],
@@ -2854,6 +3167,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 67.2,
+        "rep_pct": 32.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2861,6 +3180,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 34.4,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 52.4,
@@ -2875,14 +3195,15 @@
       "ussen_2022": 47181
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Bobbie Shields",
+      "dem": "Joyce Waddell"
     }
   },
   {
     "state_fips": "37",
     "district_id": "041",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Caleb Theodros",
       "party": "D"
@@ -2896,8 +3217,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Kevin Gray",
+          "dem": "Caleb Theodros"
         }
       }
     ],
@@ -2926,6 +3247,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 66.5,
+        "rep_pct": 33.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2933,6 +3260,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 33.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "ussen_2022": 56.7,
@@ -2947,14 +3275,15 @@
       "ussen_2022": 59816
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Kevin Gray",
+      "dem": "Caleb Theodros"
     }
   },
   {
     "state_fips": "37",
     "district_id": "042",
     "district_name": "",
+    "tier": 1,
     "incumbent": {
       "name": "Woodson Bradley",
       "party": "D"
@@ -2968,8 +3297,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Stacie McGinn",
+          "dem": "Woodson Bradley"
         }
       }
     ],
@@ -2998,6 +3327,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 55.0,
+        "rep_pct": 45.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 50.1,
         "rep_pct": 49.9,
@@ -3005,6 +3340,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 9.9,
       "leg_2024": 0.2,
       "latest_leg": 0.2,
       "ussen_2022": 1.9,
@@ -3019,14 +3355,15 @@
       "ussen_2022": 84701
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Stacie McGinn",
+      "dem": "Woodson Bradley"
     }
   },
   {
     "state_fips": "37",
     "district_id": "043",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Brad Overcash",
       "party": "R"
@@ -3040,8 +3377,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Brad Overcash",
+          "dem": "Steve Rutherford"
         }
       }
     ],
@@ -3070,6 +3407,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 38.2,
         "rep_pct": 61.8,
@@ -3077,6 +3420,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -23.6,
       "latest_leg": -23.6,
       "ussen_2022": -25.4,
@@ -3091,14 +3435,15 @@
       "ussen_2022": 68058
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Brad Overcash",
+      "dem": "Steve Rutherford"
     }
   },
   {
     "state_fips": "37",
     "district_id": "044",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Ted Alexander",
       "party": "R"
@@ -3112,8 +3457,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Ted Alexander",
+          "dem": "Rod Powell"
         }
       }
     ],
@@ -3142,6 +3487,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 27.5,
         "rep_pct": 72.5,
@@ -3149,6 +3500,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -45.0,
       "latest_leg": -45.0,
       "ussen_2022": -41.7,
@@ -3163,14 +3515,15 @@
       "ussen_2022": 74515
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Ted Alexander",
+      "dem": "Rod Powell"
     }
   },
   {
     "state_fips": "37",
     "district_id": "045",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Mark Hollo",
       "party": "R"
@@ -3184,8 +3537,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Mark Hollo",
+          "dem": "Greg Cranford"
         }
       }
     ],
@@ -3214,6 +3567,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 29.7,
         "rep_pct": 70.3,
@@ -3221,6 +3580,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -40.6,
       "latest_leg": -40.6,
       "ussen_2022": -42.3,
@@ -3235,14 +3595,15 @@
       "ussen_2022": 62753
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Mark Hollo",
+      "dem": "Greg Cranford"
     }
   },
   {
     "state_fips": "37",
     "district_id": "046",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Warren Daniel",
       "party": "R"
@@ -3256,8 +3617,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Warren Daniel",
+          "dem": "Kyle Whisnant"
         }
       }
     ],
@@ -3286,6 +3647,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.8,
+        "rep_pct": 60.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 34.8,
         "rep_pct": 65.2,
@@ -3293,6 +3660,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -20.5,
       "leg_2024": -30.5,
       "latest_leg": -30.5,
       "ussen_2022": -38.9,
@@ -3307,14 +3675,15 @@
       "ussen_2022": 58223
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Warren Daniel",
+      "dem": "Kyle Whisnant"
     }
   },
   {
     "state_fips": "37",
     "district_id": "047",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Ralph Hise",
       "party": "R"
@@ -3328,8 +3697,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Ralph Hise",
+          "dem": "Frank Patton Hughes III"
         }
       }
     ],
@@ -3358,6 +3727,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 35.8,
         "rep_pct": 64.2,
@@ -3365,6 +3740,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -28.3,
       "latest_leg": -28.3,
       "ussen_2022": -36.7,
@@ -3379,14 +3755,15 @@
       "ussen_2022": 62579
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Ralph Hise",
+      "dem": "Frank Patton Hughes III"
     }
   },
   {
     "state_fips": "37",
     "district_id": "048",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Tim Moffitt",
       "party": "R"
@@ -3400,8 +3777,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Tim Moffitt",
+          "dem": "Doyle Brown Jr."
         }
       }
     ],
@@ -3430,6 +3807,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 35.2,
+        "rep_pct": 64.8,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 36.0,
         "rep_pct": 63.9,
@@ -3437,6 +3820,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -29.6,
       "leg_2024": -27.9,
       "latest_leg": -27.9,
       "ussen_2022": -32.7,
@@ -3451,14 +3835,15 @@
       "ussen_2022": 74682
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Tim Moffitt",
+      "dem": "Doyle Brown Jr."
     }
   },
   {
     "state_fips": "37",
     "district_id": "049",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Julie Mayfield",
       "party": "D"
@@ -3472,8 +3857,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "C.J. Domingo",
+          "dem": "Julie Mayfield"
         }
       }
     ],
@@ -3502,6 +3887,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 65.7,
+        "rep_pct": 34.3,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 69.1,
         "rep_pct": 30.9,
@@ -3509,6 +3900,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 31.4,
       "leg_2024": 38.1,
       "latest_leg": 38.1,
       "ussen_2022": 25.4,
@@ -3523,14 +3915,15 @@
       "ussen_2022": 37810
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "C.J. Domingo",
+      "dem": "Julie Mayfield"
     }
   },
   {
     "state_fips": "37",
     "district_id": "050",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Kevin Corbin",
       "party": "R"
@@ -3544,8 +3937,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Kevin Corbin",
+          "dem": "Tom Downing"
         }
       }
     ],
@@ -3574,6 +3967,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 33.8,
+        "rep_pct": 66.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 33.5,
         "rep_pct": 66.5,
@@ -3581,6 +3980,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -32.5,
       "leg_2024": -33.1,
       "latest_leg": -33.1,
       "ussen_2022": -28.6,
@@ -3595,8 +3995,8 @@
       "ussen_2022": 82544
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Kevin Corbin",
+      "dem": "Tom Downing"
     }
   }
 ]

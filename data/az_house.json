@@ -3,6 +3,7 @@
     "state_fips": "04",
     "district_id": "001",
     "district_name": "State House District 1",
+    "tier": null,
     "incumbent": {
       "name": "Quang Nguyen",
       "party": "R"
@@ -95,6 +96,7 @@
     "state_fips": "04",
     "district_id": "002",
     "district_name": "State House District 2",
+    "tier": 1,
     "incumbent": {
       "name": "Justin Wilmeth",
       "party": "R"
@@ -187,6 +189,7 @@
     "state_fips": "04",
     "district_id": "003",
     "district_name": "State House District 3",
+    "tier": null,
     "incumbent": {
       "name": "Alexander Kolodin",
       "party": "R"
@@ -279,6 +282,7 @@
     "state_fips": "04",
     "district_id": "004",
     "district_name": "State House District 4",
+    "tier": 1,
     "incumbent": {
       "name": "Matt Gress",
       "party": "R"
@@ -371,6 +375,7 @@
     "state_fips": "04",
     "district_id": "005",
     "district_name": "State House District 5",
+    "tier": null,
     "incumbent": {
       "name": "Sarah Liguori",
       "party": "D"
@@ -463,6 +468,7 @@
     "state_fips": "04",
     "district_id": "006",
     "district_name": "State House District 6",
+    "tier": null,
     "incumbent": {
       "name": "Myron Tsosie",
       "party": "D"
@@ -555,6 +561,7 @@
     "state_fips": "04",
     "district_id": "007",
     "district_name": "State House District 7",
+    "tier": null,
     "incumbent": {
       "name": "David Marshall",
       "party": "R"
@@ -647,6 +654,7 @@
     "state_fips": "04",
     "district_id": "008",
     "district_name": "State House District 8",
+    "tier": null,
     "incumbent": {
       "name": "Janeen Connolly",
       "party": "D"
@@ -739,6 +747,7 @@
     "state_fips": "04",
     "district_id": "009",
     "district_name": "State House District 9",
+    "tier": 2,
     "incumbent": {
       "name": "Lorena Austin",
       "party": "D"
@@ -831,6 +840,7 @@
     "state_fips": "04",
     "district_id": "010",
     "district_name": "State House District 10",
+    "tier": null,
     "incumbent": {
       "name": "Justin Olson",
       "party": "R"
@@ -923,6 +933,7 @@
     "state_fips": "04",
     "district_id": "011",
     "district_name": "State House District 11",
+    "tier": null,
     "incumbent": {
       "name": "Oscar De Los Santos",
       "party": "D"
@@ -1015,6 +1026,7 @@
     "state_fips": "04",
     "district_id": "012",
     "district_name": "State House District 12",
+    "tier": null,
     "incumbent": {
       "name": "Patty Contreras",
       "party": "D"
@@ -1107,6 +1119,7 @@
     "state_fips": "04",
     "district_id": "013",
     "district_name": "State House District 13",
+    "tier": 1,
     "incumbent": {
       "name": "Julie Willoughby",
       "party": "R"
@@ -1199,6 +1212,7 @@
     "state_fips": "04",
     "district_id": "014",
     "district_name": "State House District 14",
+    "tier": null,
     "incumbent": {
       "name": "Laurin Hendrix",
       "party": "R"
@@ -1291,6 +1305,7 @@
     "state_fips": "04",
     "district_id": "015",
     "district_name": "State House District 15",
+    "tier": null,
     "incumbent": {
       "name": "Neal Carter",
       "party": "R"
@@ -1383,6 +1398,7 @@
     "state_fips": "04",
     "district_id": "016",
     "district_name": "State House District 16",
+    "tier": 1,
     "incumbent": {
       "name": "Teresa Martinez",
       "party": "R"
@@ -1475,6 +1491,7 @@
     "state_fips": "04",
     "district_id": "017",
     "district_name": "State House District 17",
+    "tier": 2,
     "incumbent": {
       "name": "Rachel Keshel",
       "party": "R"
@@ -1567,6 +1584,7 @@
     "state_fips": "04",
     "district_id": "018",
     "district_name": "State House District 18",
+    "tier": null,
     "incumbent": {
       "name": "Christopher Mathis",
       "party": "D"
@@ -1659,6 +1677,7 @@
     "state_fips": "04",
     "district_id": "019",
     "district_name": "State House District 19",
+    "tier": null,
     "incumbent": {
       "name": "Gail Griffin",
       "party": "R"
@@ -1751,6 +1770,7 @@
     "state_fips": "04",
     "district_id": "020",
     "district_name": "State House District 20",
+    "tier": null,
     "incumbent": {
       "name": "Alma Hernandez",
       "party": "D"
@@ -1843,6 +1863,7 @@
     "state_fips": "04",
     "district_id": "021",
     "district_name": "State House District 21",
+    "tier": null,
     "incumbent": {
       "name": "Consuelo Hernandez",
       "party": "D"
@@ -1935,6 +1956,7 @@
     "state_fips": "04",
     "district_id": "022",
     "district_name": "State House District 22",
+    "tier": null,
     "incumbent": {
       "name": "Lupe Contreras",
       "party": "D"
@@ -2027,6 +2049,7 @@
     "state_fips": "04",
     "district_id": "023",
     "district_name": "State House District 23",
+    "tier": 1,
     "incumbent": {
       "name": "Mariana Sandoval",
       "party": "D"
@@ -2119,6 +2142,7 @@
     "state_fips": "04",
     "district_id": "024",
     "district_name": "State House District 24",
+    "tier": null,
     "incumbent": {
       "name": "Lydia Hernandez",
       "party": "D"
@@ -2211,6 +2235,7 @@
     "state_fips": "04",
     "district_id": "025",
     "district_name": "State House District 25",
+    "tier": null,
     "incumbent": {
       "name": "Michael Carbone",
       "party": "R"
@@ -2303,6 +2328,7 @@
     "state_fips": "04",
     "district_id": "026",
     "district_name": "State House District 26",
+    "tier": null,
     "incumbent": {
       "name": "Cesar Aguilar",
       "party": "D"
@@ -2395,6 +2421,7 @@
     "state_fips": "04",
     "district_id": "027",
     "district_name": "State House District 27",
+    "tier": 1,
     "incumbent": {
       "name": "Lisa Fink",
       "party": "R"
@@ -2487,6 +2514,7 @@
     "state_fips": "04",
     "district_id": "028",
     "district_name": "State House District 28",
+    "tier": 3,
     "incumbent": {
       "name": "David Livingston",
       "party": "R"
@@ -2579,6 +2607,7 @@
     "state_fips": "04",
     "district_id": "029",
     "district_name": "State House District 29",
+    "tier": null,
     "incumbent": {
       "name": "Steve Montenegro",
       "party": "R"
@@ -2671,6 +2700,7 @@
     "state_fips": "04",
     "district_id": "030",
     "district_name": "State House District 30",
+    "tier": null,
     "incumbent": {
       "name": "Leo Biasiucci",
       "party": "R"

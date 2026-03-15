@@ -1,10 +1,60 @@
-const NATIONAL_CENTER = [39.5, -98.35];
-const NATIONAL_ZOOM = 4;
-const COUNTY_LABEL_MIN_ZOOM = 8;
-const BASE_WHEEL_PX_PER_ZOOM_LEVEL = 60;
-const CTRL_WHEEL_ZOOM_SLOW_FACTOR = 5;
-const BASE_ZOOM_SNAP = 1;
-const CTRL_FINE_ZOOM_SNAP = 0.2;
+import {
+  AUTO_SHAPE_URLS,
+  BASE_WHEEL_PX_PER_ZOOM_LEVEL,
+  BASE_ZOOM_SNAP,
+  CHAMBER_INDEX_URLS,
+  COUNTY_LABEL_MIN_ZOOM,
+  CTRL_FINE_ZOOM_SNAP,
+  CTRL_WHEEL_ZOOM_SLOW_FACTOR,
+  MAP_VIEW_TYPE_PRIORITY,
+  NATIONAL_CENTER,
+  NATIONAL_ZOOM,
+  OVERSEAS_TERRITORY_ABBR,
+  OVERSEAS_TERRITORY_FIPS,
+  STATE_NAME_TO_ABBR,
+  TARGET_DISTRICTS_JSON_URLS,
+  WORKBOOK_URLS,
+  XLSX_CDN_URL,
+} from "./modules/config.js";
+import {
+  countyOverlayToggle,
+  details,
+  detailsTitle,
+  exitStateBtn,
+  houseChamberBtn,
+  mapViewButtons,
+  projectionBaseLegBtn,
+  projectionBasePresBtn,
+  projectionControls,
+  projectionShiftSlider,
+  projectionShiftValue,
+  projectionToggleBtn,
+  senateChamberBtn,
+  sidebarEl,
+  stateSelect,
+  statusText,
+  targetDistrictsToggle,
+  upIn2026Toggle,
+} from "./modules/dom.js";
+import { state } from "./modules/state.js";
+
+const projectionRangeDem = document.getElementById("projectionRangeDem");
+const projectionRangeRep = document.getElementById("projectionRangeRep");
+const projectionZeroLabel = document.getElementById("projectionZeroLabel");
+const projectionSliderTicks = document.getElementById("projectionSliderTicks");
+const projectionSliderShell = document.querySelector(".projection-slider-shell");
+const projectionShiftBox = document.querySelector(".projection-shift-box");
+const projectionShiftCaption = document.querySelector(".projection-shift-caption");
+const projectionSliderFill = document.getElementById("projectionSliderFill");
+const projectionSliderThumb = document.getElementById("projectionSliderThumb");
+
+const MODEL_VIEW_META = {
+  model_hrcc_all: { label: "HRCC (All)", order: 0, tableTop: "HRCC", tableBottom: "All" },
+  model_hrcc_hm: { label: "HRCC (H+M)", order: 1, tableTop: "HRCC", tableBottom: "H+M" },
+};
+
+let projectionSliderDragging = false;
+const PROJECTION_RAIL_INSET_PX = 1;
 
 const map = L.map("map").setView(NATIONAL_CENTER, NATIONAL_ZOOM);
 map.boxZoom.disable();
@@ -46,169 +96,6 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.p
   attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
   interactive: false,
 }).addTo(map);
-
-const AUTO_SHAPE_URLS = {
-  states: "data/shapes/states.zip",
-  house: "data/shapes/house.zip",
-  senate: "data/shapes/senate.zip",
-  counties: "data/shapes/counties.zip",
-  nh_house_floterial: "data/shapes/nh_house_floterial.zip",
-};
-const TARGET_DISTRICTS_JSON_URLS = ["data/target_districts.json"];
-const CHAMBER_INDEX_URLS = ["data/chamber_files.json"];
-const WORKBOOK_URLS = [
-  "data/State Legislative Election History - Copy.xlsx",
-  "data/State Legislative Election History.xlsx",
-];
-const XLSX_CDN_URL = "https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js";
-
-const MAP_VIEW_TYPE_PRIORITY = {
-  gov: 0,
-  ussen: 1,
-  pres: 2,
-  leg: 3,
-};
-const STATE_NAME_TO_ABBR = {
-  ALABAMA: "AL",
-  ALASKA: "AK",
-  ARIZONA: "AZ",
-  ARKANSAS: "AR",
-  CALIFORNIA: "CA",
-  COLORADO: "CO",
-  CONNECTICUT: "CT",
-  DELAWARE: "DE",
-  FLORIDA: "FL",
-  GEORGIA: "GA",
-  HAWAII: "HI",
-  IDAHO: "ID",
-  ILLINOIS: "IL",
-  INDIANA: "IN",
-  IOWA: "IA",
-  KANSAS: "KS",
-  KENTUCKY: "KY",
-  LOUISIANA: "LA",
-  MAINE: "ME",
-  MARYLAND: "MD",
-  MASSACHUSETTS: "MA",
-  MICHIGAN: "MI",
-  MINNESOTA: "MN",
-  MISSISSIPPI: "MS",
-  MISSOURI: "MO",
-  MONTANA: "MT",
-  NEBRASKA: "NE",
-  NEVADA: "NV",
-  "NEW HAMPSHIRE": "NH",
-  "NEW JERSEY": "NJ",
-  "NEW MEXICO": "NM",
-  "NEW YORK": "NY",
-  "NORTH CAROLINA": "NC",
-  "NORTH DAKOTA": "ND",
-  OHIO: "OH",
-  OKLAHOMA: "OK",
-  OREGON: "OR",
-  PENNSYLVANIA: "PA",
-  "RHODE ISLAND": "RI",
-  "SOUTH CAROLINA": "SC",
-  "SOUTH DAKOTA": "SD",
-  TENNESSEE: "TN",
-  TEXAS: "TX",
-  UTAH: "UT",
-  VERMONT: "VT",
-  VIRGINIA: "VA",
-  WASHINGTON: "WA",
-  "WEST VIRGINIA": "WV",
-  WISCONSIN: "WI",
-  WYOMING: "WY",
-  "DISTRICT OF COLUMBIA": "DC",
-};
-
-const OVERSEAS_TERRITORY_FIPS = new Set(["60", "66", "69", "72", "78"]);
-const OVERSEAS_TERRITORY_ABBR = new Set(["AS", "GU", "MP", "PR", "VI"]);
-
-const state = {
-  mode: "national",
-  chamber: "house",
-  mapView: "latest_leg",
-  availableMapViews: [],
-  selectedState: null,
-  statesGeojson: null,
-  statesLayer: null,
-  statesByKey: new Map(),
-  stateBoundsByKey: new Map(),
-  stateLayerByKey: new Map(),
-  geojsonByChamber: {
-    house: null,
-    senate: null,
-  },
-  districtFeaturesByChamberState: {
-    house: new Map(),
-    senate: new Map(),
-  },
-  countyGeojson: null,
-  countyFeaturesByState: new Map(),
-  nhFloterialGeojson: null,
-  districtLayer: null,
-  districtLayerIndex: new Map(),
-  floterialLayer: null,
-  floterialLayerByJoinKey: new Map(),
-  currentDistrictFeatures: [],
-  districtNumberLayer: null,
-  districtNumberBuildToken: 0,
-  districtLabelRefreshToken: 0,
-  selectedDistrictLayer: null,
-  selectedDistrictOutlineLayer: null,
-  hoverDistrictLayer: null,
-  hoverInfoEl: null,
-  chamberOverviewBtnEl: null,
-  hasOpenPopup: false,
-  countyLayer: null,
-  countyLabelLayer: null,
-  countyVisible: false,
-  suspendPopupCloseOverview: false,
-  targetDistrictsMode: false,
-  upIn2026Mode: false,
-  projectionMode: false,
-  projectionBaseView: "latest_leg",
-  projectionShift: 0,
-  projectionPreviousUpIn2026Mode: false,
-  targetJoinKeySet: new Set(),
-  upIn2026JoinKeySet: new Set(),
-  filteredDistrictJoinKeySet: null,
-  targetDistricts: [],
-  availableMapViewsByState: new Map(),
-  dataByChamber: {
-    house: new Map(),
-    senate: new Map(),
-  },
-  chamberNamesByState: new Map(),
-  detailsInteractionsWired: false,
-  hoveredTableRowEl: null,
-  hoveredStateRowEl: null,
-  hoveredStateKey: null,
-  hoveredStateLayer: null,
-  hoveredStateOverlayLayer: null,
-  nationalSort: { key: null, direction: 0 },
-  detailsRenderToken: 0,
-};
-
-const houseChamberBtn = document.getElementById("houseChamberBtn");
-const senateChamberBtn = document.getElementById("senateChamberBtn");
-const mapViewButtons = document.getElementById("mapViewButtons");
-const projectionControls = document.getElementById("projectionControls");
-const projectionToggleBtn = document.getElementById("projectionToggleBtn");
-const projectionBaseLegBtn = document.getElementById("projectionBaseLegBtn");
-const projectionBasePresBtn = document.getElementById("projectionBasePresBtn");
-const projectionShiftSlider = document.getElementById("projectionShiftSlider");
-const projectionShiftValue = document.getElementById("projectionShiftValue");
-const countyOverlayToggle = document.getElementById("countyOverlayToggle");
-const targetDistrictsToggle = document.getElementById("targetDistrictsToggle");
-const upIn2026Toggle = document.getElementById("upIn2026Toggle");
-const stateSelect = document.getElementById("stateSelect");
-const exitStateBtn = document.getElementById("exitStateBtn");
-const statusText = document.getElementById("statusText");
-const detailsTitle = document.getElementById("detailsTitle");
-const details = document.getElementById("details");
-const sidebarEl = details?.closest?.(".sidebar") || document.querySelector(".sidebar");
 
 init().catch((err) => {
   console.error(err);
@@ -377,8 +264,51 @@ function wireEvents() {
   }
 
   if (projectionShiftSlider) {
-    projectionShiftSlider.addEventListener("input", async (e) => {
-      await setProjectionShift(e.target.value);
+    projectionShiftSlider.addEventListener("pointerdown", async (e) => {
+      if (!state.projectionMode) return;
+      projectionSliderDragging = true;
+      if (typeof projectionShiftSlider.setPointerCapture === "function") {
+        projectionShiftSlider.setPointerCapture(e.pointerId);
+      }
+      e.preventDefault();
+      await setProjectionShift(projectionShiftFromClientX(e.clientX));
+    });
+
+    projectionShiftSlider.addEventListener("pointermove", async (e) => {
+      if (!projectionSliderDragging || !state.projectionMode) return;
+      e.preventDefault();
+      await setProjectionShift(projectionShiftFromClientX(e.clientX));
+    });
+
+    const stopProjectionSliderDrag = (e) => {
+      projectionSliderDragging = false;
+      if (projectionShiftSlider && typeof projectionShiftSlider.releasePointerCapture === "function") {
+        try {
+          projectionShiftSlider.releasePointerCapture(e.pointerId);
+        } catch {}
+      }
+    };
+
+    projectionShiftSlider.addEventListener("pointerup", stopProjectionSliderDrag);
+    projectionShiftSlider.addEventListener("pointercancel", stopProjectionSliderDrag);
+    projectionShiftSlider.addEventListener("lostpointercapture", () => {
+      projectionSliderDragging = false;
+    });
+
+    projectionShiftSlider.addEventListener("keydown", async (e) => {
+      if (!state.projectionMode) return;
+      const current = Number(state.projectionShift || 0);
+      const { min, max } = projectionShiftBounds();
+      let next = null;
+      if (e.key === "ArrowLeft") next = current + 1;
+      if (e.key === "ArrowRight") next = current - 1;
+      if (e.key === "Home") next = max;
+      if (e.key === "End") next = min;
+      if (e.key === "PageUp") next = current + 5;
+      if (e.key === "PageDown") next = current - 5;
+      if (next === null) return;
+      e.preventDefault();
+      await setProjectionShift(Math.max(min, Math.min(max, next)));
     });
   }
 
@@ -439,13 +369,20 @@ function wireEvents() {
     applyFineZoomMode(false);
   });
 
+  window.addEventListener("resize", () => {
+    renderProjectionUi();
+  });
+
   map.getContainer().addEventListener(
     "wheel",
     (e) => {
       // Apply before Leaflet's wheel handler runs so ctrl+wheel uses finer zoom increments.
       applyFineZoomMode(e.ctrlKey);
+      if (e.ctrlKey) {
+        e.preventDefault();
+      }
     },
-    { capture: true, passive: true }
+    { capture: true, passive: false }
   );
 
   map.on("zoomend", () => {
@@ -717,10 +654,80 @@ function setMapViewButtonsDisabled(disabled) {
   }
 }
 
+function projectionShiftBounds() {
+  const min = Number(projectionShiftSlider?.getAttribute?.("aria-valuemin") ?? -5);
+  const max = Number(projectionShiftSlider?.getAttribute?.("aria-valuemax") ?? 25);
+  if (!Number.isFinite(min) || !Number.isFinite(max) || min >= max) {
+    return { min: -5, max: 25 };
+  }
+  return { min, max };
+}
+
+function projectionShiftFromClientX(clientX) {
+  if (!projectionSliderAxis) return 0;
+  const rect = projectionSliderAxis.getBoundingClientRect();
+  if (!rect || rect.width <= 0) return Number(state.projectionShift || 0);
+  const { min, max } = projectionShiftBounds();
+  const clampedX = Math.max(rect.left, Math.min(rect.right, clientX));
+  const ratio = (clampedX - rect.left) / rect.width;
+  const value = max - ratio * (max - min);
+  return Math.round(value);
+}
+
+function projectionVisualRatio(value) {
+  const { min, max } = projectionShiftBounds();
+  const clamped = Math.max(min, Math.min(max, Number(value) || 0));
+  return (max - clamped) / (max - min);
+}
+
+function renderProjectionScale() {
+  const { min, max } = projectionShiftBounds();
+  const zeroRatio = projectionVisualRatio(0);
+  const zeroPercent = `${(zeroRatio * 100).toFixed(4)}%`;
+
+  if (projectionRangeDem) {
+    projectionRangeDem.textContent = max > 0 ? `D+${Math.round(max)}` : '0';
+  }
+  if (projectionRangeRep) {
+    projectionRangeRep.textContent = min < 0 ? `R+${Math.abs(Math.round(min))}` : '0';
+  }
+  if (projectionZeroLabel) {
+    projectionZeroLabel.textContent = '0';
+  }
+  if (projectionSliderShell) {
+    projectionSliderShell.style.setProperty('--projection-zero-ratio', String(zeroRatio));
+    projectionSliderShell.style.setProperty('--projection-zero-percent', zeroPercent);
+  }
+  if (projectionSliderTicks) {
+    const ticks = [];
+    for (let value = Math.round(max); value >= Math.round(min); value -= 1) {
+      const classes = ['projection-tick'];
+      if (value === 0) {
+        classes.push('projection-tick-zero');
+      } else {
+        classes.push(value % 5 === 0 ? 'projection-tick-major' : 'projection-tick-minor');
+        classes.push(value > 0 ? 'projection-tick-dem' : 'projection-tick-rep');
+      }
+      const ratio = projectionVisualRatio(value);
+      ticks.push(`<span class="${classes.join(' ')}" style="left:${(ratio * 100).toFixed(4)}%"></span>`);
+    }
+    projectionSliderTicks.innerHTML = ticks.join('');
+  }
+}
+
+
 function renderProjectionUi() {
   const inState = state.mode === "state";
   const active = inState && !!state.projectionMode;
-  const accent = projectionShiftAccentColor(state.projectionShift);
+  const { min, max } = projectionShiftBounds();
+  const clampedShift = Math.max(min, Math.min(max, Number(state.projectionShift || 0)));
+  const accent = projectionShiftAccentColor(clampedShift);
+
+  if (clampedShift !== Number(state.projectionShift || 0)) {
+    state.projectionShift = clampedShift;
+  }
+
+  renderProjectionScale();
 
   document.body.classList.toggle("projection-active", active);
   if (sidebarEl) {
@@ -748,13 +755,34 @@ function renderProjectionUi() {
     projectionBasePresBtn.classList.toggle("active-projection-base", state.projectionBaseView === "pres_2024");
   }
   if (projectionShiftSlider) {
-    projectionShiftSlider.disabled = !active;
-    projectionShiftSlider.value = String(Number(state.projectionShift || 0));
+    const ratio = projectionVisualRatio(clampedShift);
+    projectionShiftSlider.classList.toggle("projection-shift-slider-disabled", !active);
+    projectionShiftSlider.setAttribute("aria-disabled", active ? "false" : "true");
+    projectionShiftSlider.setAttribute("aria-valuenow", String(clampedShift));
+    projectionShiftSlider.setAttribute("aria-valuetext", active ? projectionShiftLabel(clampedShift) : "Off");
     projectionShiftSlider.style.setProperty("--projection-accent", accent);
+    projectionShiftSlider.style.setProperty("--projection-thumb-ratio", String(ratio));
+    if (projectionSliderAxis) {
+      projectionSliderAxis.style.setProperty("--projection-accent", accent);
+      projectionSliderAxis.style.setProperty("--projection-thumb-ratio", String(ratio));
+    }
+    if (projectionSliderFill) {
+      projectionSliderFill.style.setProperty("--projection-thumb-ratio", String(ratio));
+    }
+    if (projectionSliderThumb) {
+      projectionSliderThumb.style.setProperty("--projection-accent", accent);
+      projectionSliderThumb.style.setProperty("--projection-thumb-ratio", String(ratio));
+    }
+  }
+  if (projectionShiftBox) {
+    projectionShiftBox.classList.toggle("projection-shift-box-inactive", !active);
   }
   if (projectionShiftValue) {
-    projectionShiftValue.textContent = projectionShiftLabel(state.projectionShift);
-    projectionShiftValue.style.color = accent;
+    projectionShiftValue.textContent = active ? projectionShiftLabel(state.projectionShift) : "Off";
+    projectionShiftValue.style.color = active ? accent : "#c2cbd5";
+  }
+  if (projectionShiftCaption) {
+    projectionShiftCaption.textContent = active ? "Shift" : "";
   }
   if (upIn2026Toggle) {
     upIn2026Toggle.checked = active ? true : !!state.upIn2026Mode;
@@ -764,9 +792,14 @@ function renderProjectionUi() {
 
 function projectionShiftAccentColor(shift) {
   const amount = Number(shift || 0);
+  const { min, max } = projectionShiftBounds();
   if (Math.abs(amount) < 0.0001) return "#d5dae0";
-  if (amount > 0) return interpolateHex("#cfe2ff", "#257BF8", Math.min(amount, 15) / 15);
-  return interpolateHex("#ffd4dc", "#F82644", Math.min(Math.abs(amount), 15) / 15);
+  if (amount > 0) {
+    const positiveMax = Math.max(1, max);
+    return interpolateHex("#cfe2ff", "#257BF8", Math.min(amount, positiveMax) / positiveMax);
+  }
+  const negativeMax = Math.max(1, Math.abs(min));
+  return interpolateHex("#ffd4dc", "#F82644", Math.min(Math.abs(amount), negativeMax) / negativeMax);
 }
 
 function projectionShiftLabel(shift) {
@@ -841,7 +874,8 @@ async function setProjectionBaseView(view) {
 }
 
 async function setProjectionShift(value) {
-  const next = Math.max(-5, Math.min(15, Math.round(Number(value) || 0)));
+  const { min, max } = projectionShiftBounds();
+  const next = Math.max(min, Math.min(max, Math.round(Number(value) || 0)));
   if (Number(state.projectionShift || 0) === next) {
     renderModeUi();
     return;
@@ -903,19 +937,46 @@ function buildAvailableMapViewsIndex() {
   state.availableMapViewsByState = index;
 }
 
+function parseModelViewKey(view) {
+  const meta = MODEL_VIEW_META[String(view || "").trim()];
+  if (!meta) return null;
+  return {
+    key: String(view),
+    label: meta.label,
+    order: meta.order,
+    tableTop: meta.tableTop,
+    tableBottom: meta.tableBottom,
+  };
+}
+
+function modelVariantFromViewKey(view) {
+  const key = String(view || "").trim();
+  if (!parseModelViewKey(key)) return null;
+  if (key.endsWith("_hm")) return "hm";
+  if (key.endsWith("_all")) return "all";
+  return null;
+}
+
 function availableMapViewsForState(meta) {
   const stateFips = normalizeStateFips(meta?.fips);
   if (!stateFips) return [];
   const found = state.availableMapViewsByState.get(stateFips) || new Set();
 
   return [...found]
-    .map((view) => parseMapViewKey(view))
-    .filter(Boolean)
+    .filter((view) => !!parseMapViewKey(view) || !!parseModelViewKey(view))
     .sort((a, b) => {
-      if (a.year !== b.year) return a.year - b.year;
-      return (MAP_VIEW_TYPE_PRIORITY[a.type] ?? 99) - (MAP_VIEW_TYPE_PRIORITY[b.type] ?? 99);
-    })
-    .map((item) => item.key);
+      const aModel = parseModelViewKey(a);
+      const bModel = parseModelViewKey(b);
+      if (aModel && bModel) return aModel.order - bModel.order;
+      if (aModel && !bModel) return 1;
+      if (!aModel && bModel) return -1;
+
+      const aParsed = parseMapViewKey(a);
+      const bParsed = parseMapViewKey(b);
+      if (!aParsed || !bParsed) return String(a).localeCompare(String(b));
+      if (aParsed.year !== bParsed.year) return aParsed.year - bParsed.year;
+      return (MAP_VIEW_TYPE_PRIORITY[aParsed.type] ?? 99) - (MAP_VIEW_TYPE_PRIORITY[bParsed.type] ?? 99);
+    });
 }
 
 function displayedMapViews() {
@@ -939,6 +1000,10 @@ function mapViewsInRecord(rec) {
   const viewMargins = rec.view_margins || {};
   for (const [key, value] of Object.entries(viewMargins)) {
     if (typeof value !== "number") continue;
+    if (parseModelViewKey(key)) {
+      found.add(String(key));
+      continue;
+    }
     const parsed = parseMapViewKey(key);
     if (parsed) found.add(parsed.key);
   }
@@ -970,14 +1035,69 @@ function parseMapViewKey(view) {
 }
 
 function mapViewButtonLabel(view) {
-  if (view === "latest_leg") return "Latest Leg";
+  if (view === "latest_leg") return "State Leg";
+  const model = parseModelViewKey(view);
+  if (model) return model.label;
   const parsed = parseMapViewKey(view);
   if (!parsed) return String(view || "");
-  if (parsed.type === "leg") return `${parsed.year} Leg`;
-  if (parsed.type === "gov") return `${parsed.year} Gov`;
-  if (parsed.type === "pres") return `${parsed.year} Pres`;
-  if (parsed.type === "ussen") return `${parsed.year} US Sen`;
+  if (parsed.type === "leg") return "State Leg";
+  if (parsed.type === "gov") return "Governor";
+  if (parsed.type === "pres") return "Presidential";
+  if (parsed.type === "ussen") return "US Senate";
   return `${parsed.year}`;
+}
+
+function mapViewDisplayOrder(view) {
+  if (view === "latest_leg") return 0;
+  const parsed = parseMapViewKey(view);
+  if (!parsed) return 99;
+  return ({ pres: 0, ussen: 1, gov: 2, leg: 3 })[parsed.type] ?? 99;
+}
+
+function mapViewIsStateLeg(view) {
+  if (view === "latest_leg") return true;
+  return parseMapViewKey(view)?.type === "leg";
+}
+
+function groupedMapViewSections() {
+  const shownViews = displayedMapViews();
+  const byYear = new Map([
+    [2022, []],
+    [2023, []],
+    [2024, []],
+    [2025, []],
+  ]);
+
+  for (const view of shownViews) {
+    if (view === "latest_leg" || parseModelViewKey(view)) continue;
+    const parsed = parseMapViewKey(view);
+    if (!parsed || !byYear.has(parsed.year)) continue;
+    byYear.get(parsed.year).push(view);
+  }
+
+  const sections = [];
+  for (const year of [2022, 2023, 2024, 2025]) {
+    const views = (byYear.get(year) || []).sort((a, b) => mapViewDisplayOrder(a) - mapViewDisplayOrder(b));
+    if (views.length) {
+      sections.push({ key: `year-${year}`, title: String(year), type: "views", views });
+    }
+  }
+
+  if (shownViews.includes("latest_leg")) {
+    sections.push({ key: "latest-leg", title: "Latest Leg", type: "views", views: ["latest_leg"] });
+  }
+
+  const modelingViews = shownViews
+    .filter((view) => !!parseModelViewKey(view))
+    .sort((a, b) => (parseModelViewKey(a)?.order ?? 99) - (parseModelViewKey(b)?.order ?? 99));
+
+  if (modelingViews.length) {
+    sections.push({ key: "modeling", title: "Modeling", type: "views", views: modelingViews });
+  } else {
+    sections.push({ key: "modeling", title: "Modeling", type: "placeholder", placeholder: "Coming Soon" });
+  }
+
+  return sections;
 }
 
 function pickMapView(availableViews, preferredView) {
@@ -994,25 +1114,50 @@ function renderMapViewButtons() {
   if (!mapViewButtons) return;
   mapViewButtons.innerHTML = "";
 
-  for (const view of displayedMapViews()) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "mapview-button";
-    if (view === state.mapView) {
-      button.classList.add("active-mapview");
+  for (const section of groupedMapViewSections()) {
+    const sectionEl = document.createElement("section");
+    sectionEl.className = `mapview-group mapview-group-${section.type}`;
+
+    const titleEl = document.createElement("div");
+    titleEl.className = "mapview-group-title";
+    titleEl.textContent = section.title;
+    sectionEl.appendChild(titleEl);
+
+    const bodyEl = document.createElement("div");
+    bodyEl.className = "mapview-group-buttons";
+
+    if (section.type === "placeholder") {
+      const placeholderEl = document.createElement("div");
+      placeholderEl.className = "mapview-placeholder";
+      placeholderEl.textContent = section.placeholder;
+      bodyEl.appendChild(placeholderEl);
+    } else {
+      for (const view of section.views) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `mapview-button ${mapViewIsStateLeg(view) ? "mapview-button-state-leg" : ""}`.trim();
+        if (view === state.mapView) {
+          button.classList.add("active-mapview");
+        }
+        button.textContent = mapViewButtonLabel(view);
+        button.disabled = state.mode !== "state";
+        button.addEventListener("click", async () => {
+          await setMapView(view);
+        });
+        bodyEl.appendChild(button);
+      }
     }
-    button.textContent = mapViewButtonLabel(view);
-    button.disabled = state.mode !== "state";
-    button.addEventListener("click", async () => {
-      await setMapView(view);
-    });
-    mapViewButtons.appendChild(button);
+
+    sectionEl.appendChild(bodyEl);
+    mapViewButtons.appendChild(sectionEl);
   }
 }
 
 async function setMapView(view) {
   if (state.mapView === view) return;
   state.mapView = view;
+  const modelingVariant = modelVariantFromViewKey(view);
+  if (modelingVariant) state.modelingVariant = modelingVariant;
   renderMapViewButtons();
   if (state.mode === "state") {
     if (state.districtLayer) {
@@ -1205,10 +1350,7 @@ function renderDistrictLayerForSelectedState() {
           clearDistrictHoverOutline();
           hideDistrictHoverInfo();
           setSelectedDistrict(layer);
-          state.detailsRenderToken += 1;
-          detailsTitle.textContent = districtTitle(feature.properties, joinInfo, rec);
-          details.innerHTML = detailHtml(feature.properties, joinInfo, rec);
-          resetSidebarScroll();
+          showDistrictDetailPanel(feature.properties, joinInfo, rec);
         });
       },
     }
@@ -1585,14 +1727,15 @@ function chamberCompositionHtml(composition) {
   const rows = compositionDotRows(composition.total);
   const majority = chamberMajoritySummary({ ...after, total: composition.total });
   const gainSummary = projectionMode ? projectionGainSummary(before, after) : null;
+  const flipCounts = projectionMode ? compositionFlipCounts(before, after) : { rep: 0, dem: 0 };
   return `
     <div class="chamber-composition-scroll">
       <div class="chamber-composition-layout">
         <div class="chamber-dotmap-wrap">
           <div class="chamber-dotmap" style="--dot-rows:${rows}">
-            <div class="dot-group-left">${dotMatrixHtml(after.rep, "dot-seat dot-rep", rows)}</div>
+            <div class="dot-group-left">${dotMatrixHtml(after.rep, "dot-seat dot-rep", rows, flipCounts.rep)}</div>
             <div class="dot-group-right">
-              <div class="dot-major-row">${dotMatrixHtml(after.dem, "dot-seat dot-dem", rows)}</div>
+              <div class="dot-major-row">${dotMatrixHtml(after.dem, "dot-seat dot-dem", rows, flipCounts.dem)}</div>
               <div class="dot-minor-row">
                 ${dotMatrixHtml(after.other, "dot-seat dot-other", Math.max(1, Math.min(rows, after.other || 1)))}
                 ${dotMatrixHtml(after.vacant, "dot-seat dot-vacant", Math.max(1, Math.min(rows, after.vacant || 1)))}
@@ -1649,6 +1792,13 @@ function projectionGainSummary(before, after) {
   return null;
 }
 
+function compositionFlipCounts(before, after) {
+  const repGain = Math.max(0, Number(after?.rep || 0) - Number(before?.rep || 0));
+  const demGain = Math.max(0, Number(after?.dem || 0) - Number(before?.dem || 0));
+  return { rep: repGain, dem: demGain };
+}
+
+
 function majoritySummaryHtml(majority, gainSummary = null) {
   let firstLine = '<div class="majority-summary">No majority</div>';
   if (majority?.type === "tie") {
@@ -1678,13 +1828,14 @@ function compositionDotRows(totalSeats) {
   return 6;
 }
 
-function dotMatrixHtml(count, dotClass, rowsOverride = null) {
+function dotMatrixHtml(count, dotClass, rowsOverride = null, flipCount = 0) {
   const safeCount = Math.max(0, Number(count) || 0);
   if (!safeCount) return "";
   const dotRows = Number.isFinite(Number(rowsOverride)) && Number(rowsOverride) > 0 ? Number(rowsOverride) : compositionDotRows(safeCount);
+  const safeFlipCount = Math.max(0, Math.min(safeCount, Number(flipCount) || 0));
   return `
     <div class="dot-matrix" style="--dot-rows:${dotRows}">
-      ${Array.from({ length: safeCount }, () => `<span class="${dotClass}"></span>`).join("")}
+      ${Array.from({ length: safeCount }, (_, idx) => `<span class="${dotClass}${idx >= safeCount - safeFlipCount ? ' dot-flip-gain' : ''}"></span>`).join("")}
     </div>
   `;
 }
@@ -1700,36 +1851,250 @@ function compositionRowHtml(label, beforeValue, afterValue, dotClass, projection
   `;
 }
 
+function districtTierValue(value) {
+  const tier = Number(value);
+  if (!Number.isInteger(tier) || tier < 1 || tier > 4) return null;
+  return tier;
+}
+
+function districtTierForRecord(rec) {
+  return districtTierValue(rec?.tier);
+}
+
+function createDefaultTargetFilters() {
+  return {
+    defense: { enabled: true, tiers: { 1: true, 2: true, 3: true, 4: true } },
+    offense: { enabled: true, tiers: { 1: true, 2: true, 3: true, 4: true } },
+  };
+}
+
+function ensureTargetFilters() {
+  if (!state.targetFilters || typeof state.targetFilters !== "object") {
+    state.targetFilters = createDefaultTargetFilters();
+  }
+  for (const section of ["defense", "offense"]) {
+    if (!state.targetFilters[section] || typeof state.targetFilters[section] !== "object") {
+      state.targetFilters[section] = createDefaultTargetFilters()[section];
+    }
+    if (typeof state.targetFilters[section].enabled !== "boolean") {
+      state.targetFilters[section].enabled = true;
+    }
+    if (!state.targetFilters[section].tiers || typeof state.targetFilters[section].tiers !== "object") {
+      state.targetFilters[section].tiers = { 1: true, 2: true, 3: true, 4: true };
+    }
+    for (const tier of [1, 2, 3, 4]) {
+      if (typeof state.targetFilters[section].tiers[tier] !== "boolean") {
+        state.targetFilters[section].tiers[tier] = true;
+      }
+    }
+  }
+}
+
+function resetTargetFilters() {
+  state.targetFilters = createDefaultTargetFilters();
+}
+
+function targetSectionForParty(party) {
+  return String(party || "").trim().toUpperCase() === "R" ? "defense" : String(party || "").trim().toUpperCase() === "D" ? "offense" : null;
+}
+
+function availableTargetTiersForSection(section) {
+  if (!state.selectedState) return [1, 2, 3, 4];
+  const selectedFips = normalizeStateFips(state.selectedState.fips);
+  if (!selectedFips) return [1, 2, 3, 4];
+  const dataMap = state.dataByChamber[state.chamber];
+  const tiers = new Set();
+  for (const [joinKey, rec] of dataMap.entries()) {
+    if (!String(joinKey || "").startsWith(`${selectedFips}|`)) continue;
+    if (targetSectionForParty(rec?.incumbent?.party) !== section) continue;
+    const tier = districtTierForRecord(rec);
+    if (tier !== null) tiers.add(tier);
+  }
+  return tiers.size ? [...tiers].sort((a, b) => a - b) : [1, 2, 3, 4];
+}
+
+function targetSectionHasAnyTierSelected(section) {
+  ensureTargetFilters();
+  return availableTargetTiersForSection(section).some((tier) => !!state.targetFilters?.[section]?.tiers?.[tier]);
+}
+
+function normalizeTargetFiltersAfterChange() {
+  ensureTargetFilters();
+  for (const section of ["defense", "offense"]) {
+    if (!targetSectionHasAnyTierSelected(section)) {
+      state.targetFilters[section].enabled = false;
+    }
+  }
+}
+
+function anyTargetFiltersActive() {
+  ensureTargetFilters();
+  return ["defense", "offense"].some((section) => !!state.targetFilters?.[section]?.enabled && targetSectionHasAnyTierSelected(section));
+}
+
+function targetSectionIsActive(section) {
+  ensureTargetFilters();
+  return !!state.targetDistrictsMode && !!state.targetFilters?.[section]?.enabled && targetSectionHasAnyTierSelected(section);
+}
+
+function targetTierIsActive(section, tier) {
+  ensureTargetFilters();
+  return !!state.targetDistrictsMode && !!state.targetFilters?.[section]?.enabled && !!state.targetFilters?.[section]?.tiers?.[tier];
+}
+
+function targetRowPassesActiveFilters(row) {
+  const section = row?.targetSection || targetSectionForParty(row?.incParty || row?.rec?.incumbent?.party);
+  const tier = districtTierValue(row?.tier ?? row?.rec?.tier);
+  if (!section || tier === null) return false;
+  ensureTargetFilters();
+  return !!state.targetFilters?.[section]?.enabled && !!state.targetFilters?.[section]?.tiers?.[tier];
+}
+
+function setExclusiveTargetFilter(section, tier = null) {
+  ensureTargetFilters();
+  for (const key of ["defense", "offense"]) {
+    state.targetFilters[key].enabled = false;
+    for (const currentTier of [1, 2, 3, 4]) state.targetFilters[key].tiers[currentTier] = false;
+  }
+  if (!state.targetFilters[section]) return;
+  state.targetFilters[section].enabled = true;
+  if (tier === null) {
+    for (const currentTier of availableTargetTiersForSection(section)) state.targetFilters[section].tiers[currentTier] = true;
+  } else {
+    state.targetFilters[section].tiers[tier] = true;
+  }
+}
+
+async function toggleTargetFilterControl(section, tier = null) {
+  ensureTargetFilters();
+  if (!section || !state.targetFilters[section]) return;
+
+  if (!state.targetDistrictsMode) {
+    setExclusiveTargetFilter(section, tier);
+    await setTargetDistrictsMode(true, { preserveFilters: true });
+    return;
+  }
+
+  if (tier === null) {
+    if (targetSectionIsActive(section)) {
+      state.targetFilters[section].enabled = false;
+    } else {
+      state.targetFilters[section].enabled = true;
+      for (const currentTier of [1, 2, 3, 4]) state.targetFilters[section].tiers[currentTier] = false;
+      for (const currentTier of availableTargetTiersForSection(section)) state.targetFilters[section].tiers[currentTier] = true;
+    }
+  } else if (!state.targetFilters[section].enabled || !state.targetFilters[section].tiers[tier]) {
+    state.targetFilters[section].enabled = true;
+    state.targetFilters[section].tiers[tier] = true;
+  } else {
+    state.targetFilters[section].tiers[tier] = false;
+  }
+
+  normalizeTargetFiltersAfterChange();
+
+  if (!anyTargetFiltersActive()) {
+    await setTargetDistrictsMode(false, { preserveFilters: true });
+    return;
+  }
+
+  syncTargetModeUi();
+  if (state.mode === "state" && state.selectedState && !state.selectedDistrictLayer) {
+    showStateChamberOverview({ resetScroll: false });
+  }
+  if (state.mode !== "state") return;
+  if (state.districtLayer) {
+    refreshDistrictLayerForActiveFilters();
+  } else {
+    await ensureDistrictShapesLoaded();
+    renderDistrictLayerForSelectedState();
+  }
+  await updateCountyOverlayVisibility();
+}
+
+function targetDistrictTableColCount(electionCols = [], showDistrictNameCol = false, includeTierColumn = false, includeOutcomeColumn = false) {
+  return 4 + electionCols.length + (showDistrictNameCol ? 1 : 0) + (includeTierColumn ? 1 : 0) + (includeOutcomeColumn ? 1 : 0);
+}
+
+function groupedTargetDistrictRowsHtml(rows, electionCols, showDistrictNameCol = false, sectionKey = "") {
+  const groups = [1, 2, 3, 4]
+    .map((tier) => ({ tier, rows: rows.filter((row) => row.tier === tier) }))
+    .filter((group) => group.rows.length);
+  if (!groups.length) return "";
+
+  const colCount = targetDistrictTableColCount(electionCols, showDistrictNameCol, true, state.projectionMode);
+  return groups
+    .map((group, groupIdx) => {
+      const groupActive = targetTierIsActive(sectionKey, group.tier);
+      const groupRowsHtml = group.rows
+        .map((row, rowIdx) =>
+          targetDistrictRowHtml(row, electionCols, showDistrictNameCol, {
+            includeTierColumn: true,
+            suppressTierCell: rowIdx > 0,
+            rowClass: `${rowIdx === 0 ? "target-tier-group-start" : ""} ${state.targetDistrictsMode && !row.filterActive ? "target-row-inactive" : ""}`.trim(),
+            tierCellHtml:
+              rowIdx === 0
+                ? `<td class="target-tier-group-cell target-filter-toggle ${groupActive ? "active-target-mode" : ""}" data-target-section="${escapeHtml(sectionKey)}" data-target-tier="${group.tier}" rowspan="${group.rows.length}"><span class="target-tier-group-label">Tier ${group.tier}</span></td>`
+                : "",
+          })
+        )
+        .join("");
+      const spacerHtml =
+        groupIdx < groups.length - 1
+          ? `<tr class="target-tier-spacer" aria-hidden="true"><td colspan="${colCount}"></td></tr>`
+          : "";
+      return `${groupRowsHtml}${spacerHtml}`;
+    })
+    .join("");
+}
+
 function targetDistrictsSectionHtml(targets) {
   const showDistrictNameCol = shouldShowDistrictNameColumn();
   const defenseCols = districtElectionColumns(targets.defense);
   const offenseCols = districtElectionColumns(targets.offense);
-  const defenseRows = targets.defense.map((row) => targetDistrictRowHtml(row, defenseCols, showDistrictNameCol)).join("");
-  const offenseRows = targets.offense.map((row) => targetDistrictRowHtml(row, offenseCols, showDistrictNameCol)).join("");
+  const defenseRows = groupedTargetDistrictRowsHtml(targets.defense, defenseCols, showDistrictNameCol, "defense");
+  const offenseRows = groupedTargetDistrictRowsHtml(targets.offense, offenseCols, showDistrictNameCol, "offense");
+  const defenseActive = targetSectionIsActive("defense");
+  const offenseActive = targetSectionIsActive("offense");
   return `
     <div id="targetModeHeader" class="detail-section-title centered-section-title large-section-title target-mode-header ${state.targetDistrictsMode ? "active-target-mode" : ""}">Target Districts</div>
     <div class="target-columns">
-      <div class="target-column">
-        <div class="detail-subtitle centered-subtitle chart-header">Defense</div>
-        ${targetDistrictTableHtml(defenseRows, targets.defense, showDistrictNameCol)}
+      <div class="target-column ${defenseActive ? "" : "target-column-muted"}">
+        <div class="detail-subtitle centered-subtitle chart-header target-section-toggle target-filter-toggle ${defenseActive ? "active-target-mode" : ""}" data-target-section="defense">Defense</div>
+        ${targetDistrictTableHtml(defenseRows, targets.defense, showDistrictNameCol, { includeTierColumn: true, tierHeaderLabel: "Tier" })}
       </div>
-      <div class="target-column">
-        <div class="detail-subtitle centered-subtitle chart-header">Offense</div>
-        ${targetDistrictTableHtml(offenseRows, targets.offense, showDistrictNameCol)}
+      <div class="target-column ${offenseActive ? "" : "target-column-muted"}">
+        <div class="detail-subtitle centered-subtitle chart-header target-section-toggle target-filter-toggle ${offenseActive ? "active-target-mode" : ""}" data-target-section="offense">Offense</div>
+        ${targetDistrictTableHtml(offenseRows, targets.offense, showDistrictNameCol, { includeTierColumn: true, tierHeaderLabel: "Tier" })}
       </div>
     </div>
   `;
 }
+function districtModelColumns(rows = []) {
+  const columns = [];
+  for (const view of Object.keys(MODEL_VIEW_META)) {
+    if (!rows.some((row) => typeof getMarginForView(row?.rec, view) === "number")) continue;
+    const meta = parseModelViewKey(view);
+    if (!meta) continue;
+    columns.push({ type: "margin", view, labelTop: meta.tableTop, labelBottom: meta.tableBottom });
+  }
+  return columns;
+}
+
 function districtElectionColumns(rows = []) {
+  const modelColumns = districtModelColumns(rows);
+  const columns = [...modelColumns];
+
   if (state.projectionMode) {
     const baseHead = projectionBaseHeaderLines();
-    return [
+    if (columns.length) columns.push({ type: "gap" });
+    columns.push(
       { type: "margin", view: "projection_base", labelTop: baseHead.top, labelBottom: baseHead.bottom },
       { type: "margin", view: "projection_2026", labelTop: "Proj", labelBottom: "2026" },
-    ];
+    );
+    return columns;
   }
 
-  const include = (view) => rows.some((row) => typeof row?.marginsByView?.[view] === "number");
+  const include = (view) => rows.some((row) => typeof getMarginForView(row?.rec, view) === "number");
   const includeGov2022 = include("gov_2022");
   const includeUsSen2022 = include("ussen_2022");
 
@@ -1759,9 +2124,8 @@ function districtElectionColumns(rows = []) {
     },
   ].filter((group) => group.columns.length);
 
-  const columns = [];
   groups.forEach((group, idx) => {
-    if (idx > 0) columns.push({ type: "gap" });
+    if (columns.length || idx > 0) columns.push({ type: "gap" });
     for (const col of group.columns) columns.push({ type: "margin", ...col });
   });
   return columns;
@@ -1786,7 +2150,9 @@ function districtNameDisplayForRecord(rec) {
   return rawName;
 }
 
-function targetDistrictTableHtml(rowsHtml, rows = [], showDistrictNameCol = false) {
+function targetDistrictTableHtml(rowsHtml, rows = [], showDistrictNameCol = false, options = {}) {
+  const { includeTierColumn = false, tierHeaderLabel = "Tier" } = options;
+  const includeOutcomeColumn = !!state.projectionMode;
   const electionCols = districtElectionColumns(rows);
   const headCols = electionCols
     .map((col) => {
@@ -1796,19 +2162,23 @@ function targetDistrictTableHtml(rowsHtml, rows = [], showDistrictNameCol = fals
       return `<th class="target-col-margin"><span class="twoline-head">${escapeHtml(String(top))}<br/>${escapeHtml(String(bottom))}</span></th>`;
     })
     .join("");
+  const tierHead = includeTierColumn ? `<th class="target-col-tier">${escapeHtml(tierHeaderLabel)}</th>` : "";
   const districtNameHead = showDistrictNameCol ? '<th class="target-col-district-name">District</th>' : "";
-  const colCount = 4 + electionCols.length + (showDistrictNameCol ? 1 : 0);
+  const outcomeHead = includeOutcomeColumn ? '<th class="target-col-outcome">Outcome</th>' : "";
+  const colCount = targetDistrictTableColCount(electionCols, showDistrictNameCol, includeTierColumn, includeOutcomeColumn);
 
   return `
     <table class="target-table">
       <thead>
         <tr>
+          ${tierHead}
           <th class="target-col-district">#</th>
           ${districtNameHead}
           <th class="target-col-inc">Inc</th>
           <th class="target-col-candidate">2026 GOP</th>
           <th class="target-col-candidate">2026 DEM</th>
           ${headCols}
+          ${outcomeHead}
         </tr>
       </thead>
       <tbody>
@@ -1821,13 +2191,49 @@ function districtColumnMarginValue(row, col) {
   if (!row || !col || col.type === "gap") return null;
   if (col.view === "projection_base") return projectionBaseMarginForRecord(row.rec);
   if (col.view === "projection_2026") return projectedMarginForRecord(row.rec);
-  return row?.marginsByView?.[col.view];
+  const cached = row?.marginsByView?.[col.view];
+  if (typeof cached === "number") return cached;
+  return row?.rec ? getMarginForView(row.rec, col.view) : null;
+}
+function projectionOutcomeForRow(row) {
+  if (!state.projectionMode || !row?.rec) return null;
+  const projected = projectedMarginForRecord(row.rec);
+  if (typeof projected !== "number") return null;
+
+  const currentParty = row.incParty === "R" || row.incParty === "D"
+    ? row.incParty
+    : String(row?.rec?.incumbent?.party || "").trim().toUpperCase();
+  const resolvedCurrentParty = currentParty === "R" || currentParty === "D" ? currentParty : null;
+  const projectedParty = Math.abs(projected) < 0.0001
+    ? resolvedCurrentParty
+    : projected > 0
+      ? "D"
+      : "R";
+
+  if (!resolvedCurrentParty || !projectedParty) return null;
+
+  if (resolvedCurrentParty === projectedParty) {
+    if (projectedParty === "R") return { label: "GOP Hold", className: "outcome-cell-gop-hold" };
+    return { label: "Dem Hold", className: "outcome-cell-dem-hold" };
+  }
+
+  if (projectedParty === "R") return { label: "GOP Flip", className: "outcome-cell-gop-flip" };
+  return { label: "Dem Flip", className: "outcome-cell-dem-flip" };
 }
 
-function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row]), showDistrictNameCol = false) {
+
+function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row]), showDistrictNameCol = false, options = {}) {
+  const { includeTierColumn = false, suppressTierCell = false, tierCellHtml = null, rowClass = "" } = options;
   const incClass = row.incParty === "R" ? "inc-r" : row.incParty === "D" ? "inc-d" : "inc-u";
   const districtNameCell = showDistrictNameCol
     ? `<td class="district-name-cell" title="${escapeHtml(row.districtNameDisplay || "")}">${escapeHtml(row.districtNameDisplay || "-")}</td>`
+    : "";
+  const tierCell = includeTierColumn
+    ? suppressTierCell
+      ? ""
+      : typeof tierCellHtml === "string"
+        ? tierCellHtml
+        : `<td class="target-tier-cell">${escapeHtml(row.tier ? String(row.tier) : "")}</td>`
     : "";
   const marginCells = electionCols
     .map((col) => {
@@ -1838,63 +2244,70 @@ function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row]
       return `<td class="${cellClass}" style="background:${targetMarginCellColor(margin)}">${escapeHtml(formatSignedRMargin(margin))}</td>`;
     })
     .join("");
+  const outcome = projectionOutcomeForRow(row);
+  const outcomeCell = state.projectionMode
+    ? `<td class="outcome-cell ${escapeHtml(outcome?.className || 'outcome-cell-na')}">${escapeHtml(outcome?.label || 'N/A')}</td>`
+    : "";
   const candidateCells = recordIsUpIn2026(row.rec)
     ? `<td class="candidate-cell">${candidateCellHtml(row.rec, "R", { short: false })}</td><td class="candidate-cell">${candidateCellHtml(row.rec, "D", { short: false })}</td>`
     : '<td class="candidate-cell candidate-cell-unavailable" colspan="2">Not up in 2026</td>';
   return `
-    <tr class="target-row district-select-row ${rowNeedsExpandedCandidateCells(row.rec) ? "target-row-multi" : ""}" data-join-key="${escapeHtml(row.joinKey)}">
+    <tr class="target-row district-select-row ${rowNeedsExpandedCandidateCells(row.rec) ? "target-row-multi" : ""} ${escapeHtml(rowClass)}" data-join-key="${escapeHtml(row.joinKey)}">
+      ${tierCell}
       <td class="target-district-cell">${escapeHtml(row.districtLabel)}</td>
       ${districtNameCell}
       <td class="inc-cell ${incClass}"><strong>${escapeHtml(row.incParty || "?")}</strong></td>
       ${candidateCells}
       ${marginCells}
+      ${outcomeCell}
     </tr>
   `;
 }
 function targetTablesForSelectedState() {
 
   const rows = targetDistrictRowsForSelectedState();
+  const rowSort = (a, b) => (a.tier - b.tier) || (targetSortValue(a) - targetSortValue(b)) || (districtLabelSortValue(a.districtLabel) - districtLabelSortValue(b.districtLabel));
   const defense = rows
     .filter((row) => row.incParty === "R")
-    .sort((a, b) => targetSortValue(a) - targetSortValue(b));
+    .sort(rowSort);
   const offense = rows
     .filter((row) => row.incParty === "D")
-    .sort((a, b) => targetSortValue(a) - targetSortValue(b));
+    .sort(rowSort);
   return { defense, offense };
 }
 
 function targetDistrictRowsForSelectedState() {
   if (!state.selectedState) return [];
-  const selectedAbbr = normalizeStateAbbr(state.selectedState.abbr);
-  if (!selectedAbbr) return [];
-  const chamberText = state.chamber;
+  const selectedFips = normalizeStateFips(state.selectedState.fips);
+  if (!selectedFips) return [];
   const dataMap = state.dataByChamber[state.chamber];
   const rows = [];
 
-  for (const target of state.targetDistricts || []) {
-    if (target.stateAbbr !== selectedAbbr) continue;
-    if (target.chamber !== chamberText) continue;
-    const key = makeJoinKey(state.selectedState.fips, target.districtId);
-    const rec = dataMap.get(key);
-    if (!rec) continue;
+  for (const [joinKey, rec] of dataMap.entries()) {
+    if (!String(joinKey || "").startsWith(`${selectedFips}|`)) continue;
+    const tier = districtTierForRecord(rec);
+    if (tier === null) continue;
     const incParty = String(rec.incumbent?.party || "").trim().toUpperCase();
     if (incParty !== "R" && incParty !== "D") continue;
-    const marginsByView = {
-      leg_2025: getMarginForView(rec, "leg_2025"),
-      leg_2024: getMarginForView(rec, "leg_2024"),
-      pres_2024: getMarginForView(rec, "pres_2024"),
-      leg_2023: getMarginForView(rec, "leg_2023"),
-      leg_2022: getMarginForView(rec, "leg_2022"),
-      gov_2022: getMarginForView(rec, "gov_2022"),
-      ussen_2022: getMarginForView(rec, "ussen_2022"),
-    };
+    const targetSection = targetSectionForParty(incParty);
     rows.push({
-      joinKey: key,
-      districtLabel: displayDistrictId(target.rawDistrict, target.districtId),
+      joinKey,
+      districtLabel: displayDistrictId(rec.district_id, rec.district_id),
       districtNameDisplay: districtNameDisplayForRecord(rec),
       incParty,
+      targetSection,
+      tier,
       rec,
-      marginsByView,
+      filterActive: targetSection ? targetRowPassesActiveFilters({ incParty, targetSection, tier, rec }) : false,
+      marginsByView: {
+        leg_2025: getMarginForView(rec, "leg_2025"),
+        leg_2024: getMarginForView(rec, "leg_2024"),
+        pres_2024: getMarginForView(rec, "pres_2024"),
+        leg_2023: getMarginForView(rec, "leg_2023"),
+        leg_2022: getMarginForView(rec, "leg_2022"),
+        gov_2022: getMarginForView(rec, "gov_2022"),
+        ussen_2022: getMarginForView(rec, "ussen_2022"),
+      },
     });
   }
 
@@ -1904,11 +2317,11 @@ function allDistrictsSectionHtml(rows) {
   const chamberLabel = capitalize(state.chamber);
   const showDistrictNameCol = shouldShowDistrictNameColumn();
   const allCols = districtElectionColumns(rows);
-  const bodyRows = rows.map((row) => targetDistrictRowHtml(row, allCols, showDistrictNameCol)).join("");
+  const bodyRows = rows.map((row) => targetDistrictRowHtml(row, allCols, showDistrictNameCol, { includeTierColumn: true })).join("");
   return `
     <div class="detail-section-title centered-section-title large-section-title all-districts-header">All ${escapeHtml(chamberLabel)} Districts</div>
     <div class="all-districts-table-wrap">
-      ${targetDistrictTableHtml(bodyRows, rows, showDistrictNameCol)}
+      ${targetDistrictTableHtml(bodyRows, rows, showDistrictNameCol, { includeTierColumn: true, tierHeaderLabel: "Tier" })}
     </div>
   `;
 }
@@ -1933,6 +2346,7 @@ function allDistrictRowsForSelectedState() {
         districtLabel: displayDistrictId(rec.district_id, rec.district_id),
         districtNameDisplay: districtNameDisplayForRecord(rec),
         incParty: incParty === "R" || incParty === "D" ? incParty : "O",
+        tier: districtTierForRecord(rec),
         rec,
         marginsByView: {
           leg_2025: getMarginForView(rec, "leg_2025"),
@@ -1958,6 +2372,7 @@ function allDistrictRowsForSelectedState() {
         districtLabel: displayDistrictId(joinInfo.rawDistrict, joinInfo.districtId),
         districtNameDisplay: districtNameDisplayForRecord(rec),
         incParty: incParty === "R" || incParty === "D" ? incParty : "O",
+        tier: districtTierForRecord(rec),
         rec,
         marginsByView: {
           leg_2025: getMarginForView(rec, "leg_2025"),
@@ -2058,6 +2473,10 @@ function memberIsIncumbentNominee(member, party) {
   const key = party === "R" ? "rep" : "dem";
   const candidateName = String(member.candidates?.[key] || "").trim().toUpperCase();
   return !!candidateName && candidateName === incumbentName;
+}
+
+function memberIncumbentRunningFor2026(member) {
+  return memberIsIncumbentNominee(member, "R") || memberIsIncumbentNominee(member, "D");
 }
 
 function candidateSeatCount(rec) {
@@ -2203,6 +2622,7 @@ function wireTargetTableInteractions() {
       await setTargetDistrictsMode(!state.targetDistrictsMode);
     };
   }
+  syncTargetModeUi();
   wireDetailsInteractions();
 }
 
@@ -2213,6 +2633,17 @@ function wireDetailsInteractions() {
   details.addEventListener("mouseover", (event) => {
     const targetEl = event.target instanceof Element ? event.target : null;
     if (!targetEl) return;
+
+    const pointEl = document.elementFromPoint(event.clientX, event.clientY);
+    if (pointEl instanceof Element && pointEl.closest(".target-tier-group-cell, .target-section-toggle")) {
+      setHoveredTableRow(null);
+      return;
+    }
+
+    if (targetEl.closest(".target-tier-group-cell, .target-section-toggle")) {
+      setHoveredTableRow(null);
+      return;
+    }
 
     const districtRow = targetEl.closest(".district-select-row[data-join-key]");
     if (districtRow) {
@@ -2225,6 +2656,13 @@ function wireDetailsInteractions() {
     if (stateRow) {
       setHoveredTableRow(null);
       setHoveredStateRow(stateRow);
+    }
+  });
+
+  details.addEventListener("mousemove", (event) => {
+    const pointEl = document.elementFromPoint(event.clientX, event.clientY);
+    if (pointEl instanceof Element && pointEl.closest(".target-tier-group-cell, .target-section-toggle")) {
+      if (state.hoveredTableRowEl) setHoveredTableRow(null);
     }
   });
 
@@ -2251,6 +2689,14 @@ function wireDetailsInteractions() {
   details.addEventListener("click", async (event) => {
     const targetEl = event.target instanceof Element ? event.target : null;
     if (!targetEl) return;
+
+    const targetFilterControl = targetEl.closest(".target-filter-toggle[data-target-section]");
+    if (targetFilterControl) {
+      const section = String(targetFilterControl.dataset.targetSection || "").trim();
+      const tier = districtTierValue(targetFilterControl.dataset.targetTier);
+      await toggleTargetFilterControl(section, tier);
+      return;
+    }
 
     const sortHeader = targetEl.closest("th.national-sortable[data-sort-key]");
     if (sortHeader && state.mode === "national") {
@@ -2358,10 +2804,7 @@ function selectDistrictFromTargetRow(joinKey) {
   const feature = layer.__featureRef;
   const joinInfo = extractJoinIds(feature.properties);
   const rec = layer.__dataMapRef.get(joinInfo.key);
-  state.detailsRenderToken += 1;
-  detailsTitle.textContent = districtTitle(feature.properties, joinInfo, rec);
-  details.innerHTML = detailHtml(feature.properties, joinInfo, rec);
-  resetSidebarScroll();
+  showDistrictDetailPanel(feature.properties, joinInfo, rec);
 }
 function targetJoinKeySetForSelectedState() {
   return state.targetJoinKeySet || new Set();
@@ -2381,18 +2824,18 @@ function refreshTargetJoinKeySet() {
     state.targetJoinKeySet = set;
     return;
   }
-  const selectedAbbr = normalizeStateAbbr(state.selectedState.abbr);
   const stateFips = normalizeStateFips(state.selectedState.fips);
-  if (!selectedAbbr || !stateFips) {
+  if (!stateFips) {
     state.targetJoinKeySet = set;
     return;
   }
-  const chamberText = state.chamber;
 
-  for (const target of state.targetDistricts || []) {
-    if (target.stateAbbr !== selectedAbbr) continue;
-    if (target.chamber !== chamberText) continue;
-    set.add(makeJoinKey(stateFips, target.districtId));
+  const dataMap = state.dataByChamber[state.chamber];
+  for (const [joinKey, rec] of dataMap.entries()) {
+    if (!String(joinKey || "").startsWith(`${stateFips}|`)) continue;
+    if (districtTierForRecord(rec) === null) continue;
+    if (!targetRowPassesActiveFilters({ rec })) continue;
+    set.add(joinKey);
   }
   state.targetJoinKeySet = set;
 }
@@ -2440,9 +2883,17 @@ function refreshFilteredDistrictJoinKeySet() {
   state.filteredDistrictJoinKeySet = filtered;
 }
 
-async function setTargetDistrictsMode(enabled) {
+async function setTargetDistrictsMode(enabled, options = {}) {
+  const { preserveFilters = false } = options;
   state.targetDistrictsMode = !!enabled;
+  ensureTargetFilters();
+  if (state.targetDistrictsMode && !preserveFilters) {
+    resetTargetFilters();
+  }
   syncTargetModeUi();
+  if (state.mode === "state" && state.selectedState && !state.selectedDistrictLayer) {
+    showStateChamberOverview({ resetScroll: false });
+  }
   if (state.mode !== "state") return;
   if (state.districtLayer) {
     refreshDistrictLayerForActiveFilters();
@@ -2458,6 +2909,12 @@ function syncTargetModeUi() {
   const modeHeader = details?.querySelector?.("#targetModeHeader");
   if (modeHeader) {
     modeHeader.classList.toggle("active-target-mode", !!state.targetDistrictsMode);
+  }
+  for (const control of details?.querySelectorAll?.('.target-filter-toggle') || []) {
+    const section = String(control.dataset.targetSection || '').trim();
+    const tier = districtTierValue(control.dataset.targetTier);
+    const active = tier === null ? targetSectionIsActive(section) : targetTierIsActive(section, tier);
+    control.classList.toggle('active-target-mode', active);
   }
 }
 
@@ -3593,6 +4050,17 @@ function popupDistrictTitle(properties, joinInfo) {
   const chamberCode = state.chamber === "house" ? "HD" : "SD";
   return `${abbr} ${chamberCode}-${district}`;
 }
+function popupCandidateLineHtml(line) {
+  const text = String(line || "");
+  if (text.endsWith(" (R)")) {
+    return `${escapeHtml(text.slice(0, -4))} (<span class="party-letter-r">R</span>)`;
+  }
+  if (text.endsWith(" (D)")) {
+    return `${escapeHtml(text.slice(0, -4))} (<span class="party-letter-d">D</span>)`;
+  }
+  return escapeHtml(text);
+}
+
 function popupHtml(properties, joinInfo, rec) {
   const title = popupDistrictTitle(properties, joinInfo);
   if (!rec) {
@@ -3607,17 +4075,33 @@ function popupHtml(properties, joinInfo, rec) {
         const fallbackDem = candidateDisplayLines(rec, "D", { includeParty: true, includeSeatLabel: true });
         return (seatOrderedCandidates.length ? seatOrderedCandidates : [...fallbackRep, ...fallbackDem]).map((line) => {
           if (!line) return "";
-          if (isNoCandidateLine(line)) return `&nbsp;&nbsp;<span class="muted-inline">${escapeHtml(line)}</span>`;
-          return `&nbsp;&nbsp;${escapeHtml(line)}`;
+          if (isNoCandidateLine(line)) return `&nbsp;&nbsp;<span class="muted-inline">${popupCandidateLineHtml(line)}</span>`;
+          return `&nbsp;&nbsp;${popupCandidateLineHtml(line)}`;
         });
       })();
 
+  const incumbentParty = String(rec?.incumbent?.party || "").trim().toUpperCase();
+  const incumbentPartyHtml = incumbentParty === "R"
+    ? '(<span class="party-letter-r">R</span>)'
+    : incumbentParty === "D"
+      ? '(<span class="party-letter-d">D</span>)'
+      : '';
+  const incumbentLine = `&nbsp;&nbsp;Inc: ${escapeHtml(String(rec?.incumbent?.name || "Vacant").trim() || "Vacant")} ${incumbentPartyHtml}`;
+  const hmModelView = modelViewKeyForVariant(rec, "hm");
+  const hmModelLine = hmModelView
+    ? `&nbsp;&nbsp;Model (H+M): ${formatMarginHtml(getMarginForView(rec, hmModelView))}`
+    : null;
+
   const summaryLines = state.projectionMode
     ? [
+        incumbentLine,
+        ...(hmModelLine ? [hmModelLine] : []),
         `&nbsp;&nbsp;${projectionBaseDisplayLabel(rec)}: ${formatMarginHtml(projectionBaseMarginForRecord(rec))}`,
         `&nbsp;&nbsp;Proj 2026: ${formatMarginHtml(projectedMarginForRecord(rec))}`,
       ]
     : [
+        incumbentLine,
+        ...(hmModelLine ? [hmModelLine] : []),
         `&nbsp;&nbsp;${latestLegDisplayLabel(rec)}: ${formatMarginHtml(getMarginForView(rec, "latest_leg"))}`,
         `&nbsp;&nbsp;2024 Pres: ${formatMarginHtml(getMarginForView(rec, "pres_2024"))}`,
       ];
@@ -3640,6 +4124,109 @@ function latestLegDisplayLabel(rec) {
   return "Latest Leg";
 }
 
+function modelViewKeyForVariant(rec, variant) {
+  const models = rec?.models;
+  if (!models || typeof models !== "object") return null;
+  const suffix = variant === "hm" ? "_hm" : "_all";
+  return Object.keys(models).find((key) => !!parseModelViewKey(key) && key.endsWith(suffix)) || null;
+}
+
+function activeModelViewForRecord(rec) {
+  const models = rec?.models;
+  if (!models || typeof models !== "object") return null;
+  const preferredVariantView = modelViewKeyForVariant(rec, state.modelingVariant);
+  if (preferredVariantView) return preferredVariantView;
+  if (parseModelViewKey(state.mapView) && models[state.mapView]) return state.mapView;
+  return modelViewKeyForVariant(rec, "all") || modelViewKeyForVariant(rec, "hm") || Object.keys(models).find((key) => !!parseModelViewKey(key)) || null;
+}
+
+function wireModelingPanelInteractions(properties, joinInfo, rec) {
+  const buttons = details.querySelectorAll("[data-modeling-variant]");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const variant = String(button.dataset.modelingVariant || "").trim();
+      if (variant !== "all" && variant !== "hm") return;
+      if (state.modelingVariant === variant) return;
+      state.modelingVariant = variant;
+      const scrollTop = details.scrollTop;
+      showDistrictDetailPanel(properties, joinInfo, rec, { resetScroll: false, preserveScrollTop: scrollTop });
+    });
+  });
+}
+
+function showDistrictDetailPanel(properties, joinInfo, rec, options = {}) {
+  const { resetScroll = true, preserveScrollTop = null } = options;
+  state.detailsRenderToken += 1;
+  detailsTitle.textContent = districtTitle(properties, joinInfo, rec);
+  details.innerHTML = detailHtml(properties, joinInfo, rec);
+  wireModelingPanelInteractions(properties, joinInfo, rec);
+  if (typeof preserveScrollTop === "number") {
+    details.scrollTop = preserveScrollTop;
+  } else if (resetScroll) {
+    resetSidebarScroll();
+  }
+}
+
+function modelingPanelHtml(rec) {
+  const modelView = activeModelViewForRecord(rec);
+  const model = modelView ? rec?.models?.[modelView] : null;
+  if (!model) {
+    return `
+      <div class="detail-section-title centered-section-title large-section-title">Modeling</div>
+      <div class="detail-row">No modeling data.</div>
+    `;
+  }
+
+  const modelMeta = parseModelViewKey(modelView);
+  const affinity = model.affinity || null;
+  const education = model.education || null;
+  const allView = modelViewKeyForVariant(rec, "all");
+  const hmView = modelViewKeyForVariant(rec, "hm");
+  const activeVariant = modelVariantFromViewKey(modelView) || "all";
+  const blocks = [];
+
+  if (affinity) {
+    blocks.push(
+      stackedBreakdownHtml(
+        `Affinity Model: ${formatMarginHtml(affinity.margin)}`,
+        [
+          { label: "GOP Base", value: affinity.gop_base, colorClass: "color-model-gop-base" },
+          { label: "GOP Target", value: affinity.gop_target, colorClass: "color-model-gop-target" },
+          { label: "Swing", value: affinity.swing, colorClass: "color-model-swing" },
+          { label: "Likely Dem", value: affinity.dem_likely, colorClass: "color-model-dem-likely" },
+          { label: "Dem Base", value: affinity.dem_base, colorClass: "color-model-dem-base" },
+        ],
+        { normalizeTo100: true }
+      )
+    );
+  }
+
+  if (education) {
+    blocks.push(
+      stackedBreakdownHtml(
+        "Modeled Education",
+        [
+          { label: "Non-College", value: education.non_college, colorClass: "color-edu-noncollege" },
+          { label: "College", value: education.college, colorClass: "color-edu-college" },
+        ],
+        { normalizeTo100: true }
+      )
+    );
+  }
+
+  return `
+    <div class="detail-section-title centered-section-title large-section-title">Modeling</div>
+    <div class="modeling-subheader-row">
+      <div class="detail-row modeling-variant-note">${escapeHtml(model.family || "Model")}</div>
+      <div class="modeling-switch" role="group" aria-label="Modeling variant">
+        <button type="button" class="modeling-switch-btn ${activeVariant === "all" ? "active" : ""}" data-modeling-variant="all" ${allView ? "" : "disabled"}>All</button>
+        <button type="button" class="modeling-switch-btn ${activeVariant === "hm" ? "active" : ""}" data-modeling-variant="hm" ${hmView ? "" : "disabled"}>H+M</button>
+      </div>
+    </div>
+    ${blocks.join("") || '<div class="detail-row">No modeling data.</div>'}
+  `;
+}
+
 function detailHtml(properties, joinInfo, rec) {
   if (!rec) {
     return `<div>No joined data found.</div>`;
@@ -3656,6 +4243,7 @@ function detailHtml(properties, joinInfo, rec) {
   const incumbentRowsHtml = incumbentRowsForDetail(rec);
   const candidateRowsHtml = candidateRowsForDetail(rec);
   const pastElectionRows = pastElectionRowsHtml(rec);
+  const pastTurnoutRows = pastTurnoutRowsHtml(rec);
   const metroChart = stackedBreakdownHtml("Metro Type", [
     { label: "Rural", value: metro.rural_pct, colorClass: "color-metro-rural" },
     { label: "Town", value: metro.town_pct, colorClass: "color-metro-town" },
@@ -3663,9 +4251,9 @@ function detailHtml(properties, joinInfo, rec) {
     { label: "Urban", value: metro.urban_pct, colorClass: "color-metro-urban" },
   ]);
   const incomeChart = stackedBreakdownHtml("Household Income", [
-    { label: "<$50,000", value: income.lt_50k, colorClass: "color-income-lt50k" },
-    { label: "$50,000-$100,000", value: income.between_50_100k, colorClass: "color-income-50to100k" },
-    { label: ">$150,000", value: income.gt_150k, colorClass: "color-income-gt150k" },
+    { label: "<$50k", value: income.lt_50k, colorClass: "color-income-lt50k" },
+    { label: "$50k-$100k", value: income.between_50_100k, colorClass: "color-income-50to100k" },
+    { label: ">$150k", value: income.gt_150k, colorClass: "color-income-gt150k" },
     { label: "Unknown", value: incomeUnknown, colorClass: "color-unknown" },
   ]);
   const educationChart = stackedBreakdownHtml("Education", [
@@ -3681,10 +4269,7 @@ function detailHtml(properties, joinInfo, rec) {
     { label: "Asian", value: rec.demographics.asian_pct, colorClass: "color-race-asian" },
     { label: "Other", value: raceOther, colorClass: "color-race-other" },
   ]);
-  const modelingPanel = `
-    <div class="detail-section-title centered-section-title large-section-title">Modeling</div>
-    <div class="detail-row">Coming soon.</div>
-  `;
+  const modelingPanel = modelingPanelHtml(rec);
   const demographicsPanel = `
     <div class="detail-section-title centered-section-title large-section-title">Demographics</div>
     ${metroChart}
@@ -3695,13 +4280,18 @@ function detailHtml(properties, joinInfo, rec) {
 
   return `
     ${incumbentRowsHtml}
-    <div class="detail-section-title centered-section-title large-section-title candidates-title">2026 Candidates</div>
+    <div class="detail-section-title large-section-title candidates-title">2026 Candidates</div>
     ${candidateRowsHtml}
     <div class="detail-break"></div>
 
     <div class="detail-section">
       <div class="detail-section-title centered-section-title large-section-title">Past Election Results</div>
       <div class="past-election-grid">${pastElectionRows}</div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title centered-section-title large-section-title">Past Turnout</div>
+      <div class="past-election-grid">${pastTurnoutRows}</div>
     </div>
 
     <div class="detail-section">
@@ -3740,7 +4330,7 @@ function displayDistrictId(rawDistrict, fallbackDistrictId) {
 function incumbentRowsForDetail(rec) {
   const members = recordMembers(rec);
   if (!members.length) {
-    return `<div class="detail-meta">Incumbent: Vacant</div>`;
+    return `<div class="detail-meta incumbent-detail-meta">Incumbent: Vacant</div>`;
   }
   return members
     .map((member, idx) => {
@@ -3748,7 +4338,7 @@ function incumbentRowsForDetail(rec) {
       const labelBase = member.seat_label || fallbackSeat;
       const label = labelBase ? `${labelBase} Incumbent` : "Incumbent";
       if (!hasIncumbentForMember(member)) {
-        return `<div class="detail-meta detail-meta-muted">${escapeHtml(label)}: Vacant</div>`;
+        return `<div class="detail-meta detail-meta-muted incumbent-detail-meta">${escapeHtml(label)}: Vacant</div>`;
       }
       const name = String(member?.incumbent?.name || "").trim();
       const party = String(member?.incumbent?.party || "").trim().toUpperCase();
@@ -3757,7 +4347,8 @@ function incumbentRowsForDetail(rec) {
         : party === "D"
           ? '(<span class="party-letter-d">D</span>)'
           : "";
-      return `<div class="detail-meta">${escapeHtml(label)}: ${escapeHtml(name)} ${partyHtml}</div>`;
+      const fadedClass = recordIsUpIn2026(rec) && !memberIncumbentRunningFor2026(member) ? ' incumbent-detail-meta-faded' : '';
+      return `<div class="detail-meta incumbent-detail-meta${fadedClass}">${escapeHtml(label)}: ${escapeHtml(name)} ${partyHtml}</div>`;
     })
     .join("");
 }
@@ -3772,32 +4363,33 @@ function candidateRowsForDetail(rec) {
     return '<div class="candidate-party-cell candidate-party-unavailable">No candidate</div>';
   }
 
-  const showSeatColumn = members.length > 1 || members.some((m) => !!m?.seat_label);
-  const gridClass = showSeatColumn ? "candidate-grid with-seat" : "candidate-grid";
-  const headerSeat = showSeatColumn ? '<div class="candidate-grid-head candidate-grid-seat-head">Seat</div>' : "";
+  const showSeatBlocks = members.length > 1 || members.some((m) => !!m?.seat_label);
 
-  const rows = members
+  return members
     .map((member, idx) => {
       const seatLabel = member.seat_label || `Seat ${idx + 1}`;
       const rep = normalizeCandidateName(member?.candidates?.rep);
       const dem = normalizeCandidateName(member?.candidates?.dem);
       const repInc = memberIsIncumbentNominee(member, "R") && hasNamedCandidate(rep) ? "*" : "";
       const demInc = memberIsIncumbentNominee(member, "D") && hasNamedCandidate(dem) ? "*" : "";
-      const seatCell = showSeatColumn ? `<div class="candidate-seat-label">${escapeHtml(seatLabel)}</div>` : "";
       const repClass = hasNamedCandidate(rep) ? "candidate-party-cell candidate-party-r" : "candidate-party-cell candidate-party-r candidate-party-muted";
       const demClass = hasNamedCandidate(dem) ? "candidate-party-cell candidate-party-d" : "candidate-party-cell candidate-party-d candidate-party-muted";
-      return `${seatCell}<div class="${repClass}">${escapeHtml(rep + repInc)}</div><div class="${demClass}">${escapeHtml(dem + demInc)}</div>`;
+      const seatHeader = showSeatBlocks ? `<div class="candidate-seat-header">${escapeHtml(seatLabel)}</div>` : "";
+      return `
+        <div class="candidate-stack${showSeatBlocks ? ' candidate-stack-with-seat' : ''}">
+          ${seatHeader}
+          <div class="candidate-stack-row">
+            <div class="candidate-stack-label candidate-grid-head-r">Republican</div>
+            <div class="${repClass}">${escapeHtml(rep + repInc)}</div>
+          </div>
+          <div class="candidate-stack-row">
+            <div class="candidate-stack-label candidate-grid-head-d">Democrat</div>
+            <div class="${demClass}">${escapeHtml(dem + demInc)}</div>
+          </div>
+        </div>
+      `;
     })
     .join("");
-
-  return `
-    <div class="${gridClass}">
-      ${headerSeat}
-      <div class="candidate-grid-head candidate-grid-head-r">Republican</div>
-      <div class="candidate-grid-head candidate-grid-head-d">Democrat</div>
-      ${rows}
-    </div>
-  `;
 }
 function incumbentDisplayForMember(member) {
   if (!hasIncumbentForMember(member)) return "Vacant";
@@ -3842,7 +4434,7 @@ function turnoutByYear(rec) {
   const pres24Total = Number(rec.top_ticket_totals?.pres_2024 || 0);
   if (totalRegistered > 0 && pres24Total > 0) {
     const turnout = clampPct((pres24Total / totalRegistered) * 100);
-    byYear.set(2024, turnoutChartBlock("2024 Presidential Turnout", turnout, pres24Total, totalRegistered));
+    byYear.set(2024, [turnoutChartBlock("2024 Presidential Turnout", turnout, pres24Total, totalRegistered)]);
   }
 
   const gov22Total = Number(rec.top_ticket_totals?.gov_2022 || 0);
@@ -3850,7 +4442,7 @@ function turnoutByYear(rec) {
   const midterm22Total = Math.max(gov22Total, sen22Total);
   if (totalRegistered > 0 && midterm22Total > 0) {
     const turnout = clampPct((midterm22Total / totalRegistered) * 100);
-    byYear.set(2022, turnoutChartBlock("2022 Midterm Turnout", turnout, midterm22Total, totalRegistered));
+    byYear.set(2022, [turnoutChartBlock("2022 Midterm Turnout", turnout, midterm22Total, totalRegistered)]);
   }
 
   return {
@@ -3859,52 +4451,44 @@ function turnoutByYear(rec) {
   };
 }
 
+function yearColumnGridHtml(byYear, options = {}) {
+  const { emptyMessage = "No data available." } = options;
+  const leftYears = [2025, 2024];
+  const rightYears = [2023, 2022];
+
+  const buildColumn = (years) => {
+    const blocks = years
+      .map((year) => {
+        const items = byYear.get(year) || [];
+        if (!items.length) return "";
+        return `<div class="past-year-block"><div class="past-year-block-body">${items.join("")}</div></div>`;
+      })
+      .filter(Boolean)
+      .join("");
+    return blocks || `<div class="detail-row">${escapeHtml(emptyMessage)}</div>`;
+  };
+
+  const hasAny = [...byYear.values()].some((items) => Array.isArray(items) && items.length);
+  if (!hasAny) {
+    return `<div class="detail-row">${escapeHtml(emptyMessage)}</div>`;
+  }
+
+  return `
+    <div class="past-election-two-col">
+      <div class="past-election-column past-election-column-left">${buildColumn(leftYears)}</div>
+      <div class="past-election-column past-election-column-right">${buildColumn(rightYears)}</div>
+    </div>
+  `;
+}
+
 function pastElectionRowsHtml(rec) {
-  const electionRowsByYear = new Map();
-  const yearOrder = [];
-  const yearSeen = new Set();
-
   const grouped = groupElectionRows(rec);
+  return yearColumnGridHtml(grouped.byYear, { emptyMessage: "No election history available." });
+}
+
+function pastTurnoutRowsHtml(rec) {
   const turnout = turnoutByYear(rec);
-
-  for (const year of grouped.years) {
-    const leftHtml = grouped.byYear.get(year) || "";
-    if (!leftHtml && !turnout.byYear.has(year)) continue;
-    electionRowsByYear.set(year, leftHtml);
-    if (!yearSeen.has(year)) {
-      yearSeen.add(year);
-      yearOrder.push(year);
-    }
-  }
-
-  for (const year of turnout.byYear.keys()) {
-    if (!yearSeen.has(year)) {
-      yearSeen.add(year);
-      yearOrder.push(year);
-    }
-  }
-
-  yearOrder.sort((a, b) => b - a);
-
-  if (!yearOrder.length) {
-    return '<div class="detail-row">No election history available.</div>';
-  }
-
-  const yearRows = yearOrder
-    .map((year, idx) => {
-      const dividerClass = idx < yearOrder.length - 1 ? "with-year-divider" : "";
-      const leftHtml = electionRowsByYear.get(year) || "";
-      const rightHtml = turnout.byYear.get(year) || "";
-      return `
-        <div class="past-election-year-row ${dividerClass}">
-          <div class="past-election-year-left">${leftHtml}</div>
-          <div class="past-election-year-right">${rightHtml}</div>
-        </div>
-      `;
-    })
-    .join("");
-
-  return `${yearRows}`;
+  return yearColumnGridHtml(turnout.byYear, { emptyMessage: "No turnout history available." });
 }
 
 function turnoutChartBlock(label, turnoutPct, turnoutVotes, totalRegistered) {
@@ -3925,8 +4509,13 @@ function turnoutChartBlock(label, turnoutPct, turnoutVotes, totalRegistered) {
 }
 
 function groupElectionRows(rec) {
-  const legLabel = state.chamber === "senate" ? "State Senate" : "State House";
+  const legLabel = state.chamber === "senate" ? "State Leg" : "State Leg";
   const byYear = new Map();
+
+  const pushYearRow = (year, priority, html) => {
+    if (!byYear.has(year)) byYear.set(year, []);
+    byYear.get(year).push({ priority, html });
+  };
 
   const legElections = [...(rec.elections || [])]
     .filter((e) => Number.isFinite(Number(e?.year)) && typeof e.dem_pct === "number" && typeof e.rep_pct === "number")
@@ -3934,58 +4523,40 @@ function groupElectionRows(rec) {
 
   for (const election of legElections) {
     const year = Number(election.year);
-    if (!byYear.has(year)) byYear.set(year, []);
-    byYear.get(year).push({
-      priority: 0,
-      html: electionChartBlock(`${year} ${legLabel}`, election.rep_pct, election.dem_pct),
-    });
+    pushYearRow(year, 3, electionChartBlock(`${year} ${legLabel}`, election.rep_pct, election.dem_pct));
   }
 
   const presMargin = getMarginForView(rec, "pres_2024");
   if (typeof presMargin === "number") {
     const presDem = clampPct(50 + presMargin / 2);
     const presRep = clampPct(50 - presMargin / 2);
-    const year = 2024;
-    if (!byYear.has(year)) byYear.set(year, []);
-    byYear.get(year).push({
-      priority: 1,
-      html: electionChartBlock("2024 Presidential", presRep, presDem),
-    });
-  }
-
-  const govMargin = getMarginForView(rec, "gov_2022");
-  if (typeof govMargin === "number") {
-    const govDem = clampPct(50 + govMargin / 2);
-    const govRep = clampPct(50 - govMargin / 2);
-    const year = 2022;
-    if (!byYear.has(year)) byYear.set(year, []);
-    byYear.get(year).push({
-      priority: 1,
-      html: electionChartBlock("2022 Gubernatorial", govRep, govDem),
-    });
+    pushYearRow(2024, 0, electionChartBlock("2024 Presidential", presRep, presDem));
   }
 
   const ussenMargin = getMarginForView(rec, "ussen_2022");
   if (typeof ussenMargin === "number") {
     const ussenDem = clampPct(50 + ussenMargin / 2);
     const ussenRep = clampPct(50 - ussenMargin / 2);
-    const year = 2022;
-    if (!byYear.has(year)) byYear.set(year, []);
-    byYear.get(year).push({
-      priority: 2,
-      html: electionChartBlock("2022 US Senate", ussenRep, ussenDem),
-    });
+    pushYearRow(2022, 1, electionChartBlock("2022 US Senate", ussenRep, ussenDem));
+  }
+
+  const govMargin = getMarginForView(rec, "gov_2022");
+  if (typeof govMargin === "number") {
+    const govDem = clampPct(50 + govMargin / 2);
+    const govRep = clampPct(50 - govMargin / 2);
+    pushYearRow(2022, 2, electionChartBlock("2022 Governor", govRep, govDem));
   }
 
   const years = [...byYear.keys()].sort((a, b) => b - a);
   const rowHtmlByYear = new Map();
   for (const year of years) {
-    const html = byYear
-      .get(year)
-      .sort((a, b) => a.priority - b.priority)
-      .map((row) => row.html)
-      .join("");
-    rowHtmlByYear.set(year, html);
+    rowHtmlByYear.set(
+      year,
+      byYear
+        .get(year)
+        .sort((a, b) => a.priority - b.priority)
+        .map((row) => row.html)
+    );
   }
 
   return {

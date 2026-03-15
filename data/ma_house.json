@@ -3,6 +3,7 @@
     "state_fips": "25",
     "district_id": "001",
     "district_name": "1st Barnstable District",
+    "tier": null,
     "incumbent": {
       "name": "Chris Flanagan",
       "party": "D"
@@ -75,6 +76,7 @@
     "state_fips": "25",
     "district_id": "002",
     "district_name": "2nd Barnstable District",
+    "tier": null,
     "incumbent": {
       "name": "Kip Diggs",
       "party": "D"
@@ -147,6 +149,7 @@
     "state_fips": "25",
     "district_id": "003",
     "district_name": "3rd Barnstable District",
+    "tier": 2,
     "incumbent": {
       "name": "David Vieira",
       "party": "R"
@@ -219,6 +222,7 @@
     "state_fips": "25",
     "district_id": "004",
     "district_name": "4th Barnstable District",
+    "tier": null,
     "incumbent": {
       "name": "Hadley Luddy",
       "party": "D"
@@ -291,6 +295,7 @@
     "state_fips": "25",
     "district_id": "005",
     "district_name": "5th Barnstable District",
+    "tier": null,
     "incumbent": {
       "name": "Steven Xiarhos",
       "party": "R"
@@ -363,6 +368,7 @@
     "state_fips": "25",
     "district_id": "006",
     "district_name": "Barnstable-Dukes-Nantucket District",
+    "tier": null,
     "incumbent": {
       "name": "Thomas Moakley",
       "party": "D"
@@ -435,6 +441,7 @@
     "state_fips": "25",
     "district_id": "007",
     "district_name": "1st Berkshire District",
+    "tier": null,
     "incumbent": {
       "name": "John Barrett III",
       "party": "D"
@@ -507,6 +514,7 @@
     "state_fips": "25",
     "district_id": "008",
     "district_name": "2nd Berkshire District",
+    "tier": null,
     "incumbent": {
       "name": "Tricia Farley-Bouvier",
       "party": "D"
@@ -579,6 +587,7 @@
     "state_fips": "25",
     "district_id": "009",
     "district_name": "3rd Berkshire District",
+    "tier": null,
     "incumbent": {
       "name": "Leigh Davis",
       "party": "D"
@@ -651,6 +660,7 @@
     "state_fips": "25",
     "district_id": "010",
     "district_name": "1st Bristol District",
+    "tier": 1,
     "incumbent": {
       "name": "Michael Chaisson",
       "party": "R"
@@ -723,6 +733,7 @@
     "state_fips": "25",
     "district_id": "011",
     "district_name": "2nd Bristol District",
+    "tier": null,
     "incumbent": {
       "name": "James Hawkins",
       "party": "D"
@@ -795,6 +806,7 @@
     "state_fips": "25",
     "district_id": "012",
     "district_name": "3rd Bristol District",
+    "tier": null,
     "incumbent": {
       "name": "Lisa Field",
       "party": "D"
@@ -867,6 +879,7 @@
     "state_fips": "25",
     "district_id": "013",
     "district_name": "4th Bristol District",
+    "tier": 2,
     "incumbent": {
       "name": "Steven Howitt",
       "party": "R"
@@ -939,6 +952,7 @@
     "state_fips": "25",
     "district_id": "014",
     "district_name": "5th Bristol District",
+    "tier": 1,
     "incumbent": {
       "name": "Justin Thurber",
       "party": "R"
@@ -1011,6 +1025,7 @@
     "state_fips": "25",
     "district_id": "015",
     "district_name": "6th Bristol District",
+    "tier": null,
     "incumbent": {
       "name": "Carole Fiola",
       "party": "D"
@@ -1083,6 +1098,7 @@
     "state_fips": "25",
     "district_id": "016",
     "district_name": "7th Bristol District",
+    "tier": null,
     "incumbent": {
       "name": "Alan Silvia",
       "party": "D"
@@ -1155,6 +1171,7 @@
     "state_fips": "25",
     "district_id": "017",
     "district_name": "8th Bristol District",
+    "tier": 1,
     "incumbent": {
       "name": "Steven Ouellette",
       "party": "D"
@@ -1227,6 +1244,7 @@
     "state_fips": "25",
     "district_id": "018",
     "district_name": "9th Bristol District",
+    "tier": null,
     "incumbent": {
       "name": "Christopher Markey",
       "party": "D"
@@ -1299,6 +1317,7 @@
     "state_fips": "25",
     "district_id": "019",
     "district_name": "10th Bristol District",
+    "tier": 3,
     "incumbent": {
       "name": "Mark Sylvia",
       "party": "D"
@@ -1371,6 +1390,7 @@
     "state_fips": "25",
     "district_id": "020",
     "district_name": "11th Bristol District",
+    "tier": null,
     "incumbent": {
       "name": "Christopher Hendricks",
       "party": "D"
@@ -1443,6 +1463,7 @@
     "state_fips": "25",
     "district_id": "021",
     "district_name": "12th Bristol District",
+    "tier": null,
     "incumbent": {
       "name": "Norman Orrall",
       "party": "R"
@@ -1515,6 +1536,7 @@
     "state_fips": "25",
     "district_id": "022",
     "district_name": "13th Bristol District",
+    "tier": null,
     "incumbent": {
       "name": "Antonio Cabral",
       "party": "D"
@@ -1587,6 +1609,7 @@
     "state_fips": "25",
     "district_id": "023",
     "district_name": "14th Bristol District",
+    "tier": null,
     "incumbent": {
       "name": "Adam Scanlon",
       "party": "D"
@@ -1659,6 +1682,7 @@
     "state_fips": "25",
     "district_id": "024",
     "district_name": "1st Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Dawne Shand",
       "party": "D"
@@ -1731,6 +1755,7 @@
     "state_fips": "25",
     "district_id": "025",
     "district_name": "2nd Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Kristin Kassner",
       "party": "D"
@@ -1803,6 +1828,7 @@
     "state_fips": "25",
     "district_id": "026",
     "district_name": "3rd Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Andy Vargas",
       "party": "D"
@@ -1875,6 +1901,7 @@
     "state_fips": "25",
     "district_id": "027",
     "district_name": "4th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Estela Reyes",
       "party": "D"
@@ -1947,6 +1974,7 @@
     "state_fips": "25",
     "district_id": "028",
     "district_name": "5th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Vacant",
       "party": "O"
@@ -2019,6 +2047,7 @@
     "state_fips": "25",
     "district_id": "029",
     "district_name": "6th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Hannah Bowen",
       "party": "D"
@@ -2091,6 +2120,7 @@
     "state_fips": "25",
     "district_id": "030",
     "district_name": "7th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Manny Cruz",
       "party": "D"
@@ -2163,6 +2193,7 @@
     "state_fips": "25",
     "district_id": "031",
     "district_name": "8th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Jenny Armini",
       "party": "D"
@@ -2235,6 +2266,7 @@
     "state_fips": "25",
     "district_id": "032",
     "district_name": "9th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Donald Wong",
       "party": "R"
@@ -2307,6 +2339,7 @@
     "state_fips": "25",
     "district_id": "033",
     "district_name": "10th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Dan Cahill",
       "party": "D"
@@ -2379,6 +2412,7 @@
     "state_fips": "25",
     "district_id": "034",
     "district_name": "11th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Sean Reid",
       "party": "D"
@@ -2451,6 +2485,7 @@
     "state_fips": "25",
     "district_id": "035",
     "district_name": "12th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Thomas Walsh",
       "party": "D"
@@ -2523,6 +2558,7 @@
     "state_fips": "25",
     "district_id": "036",
     "district_name": "13th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Sally Kerans",
       "party": "D"
@@ -2595,6 +2631,7 @@
     "state_fips": "25",
     "district_id": "037",
     "district_name": "14th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Adrianne Ramos",
       "party": "D"
@@ -2667,6 +2704,7 @@
     "state_fips": "25",
     "district_id": "038",
     "district_name": "15th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Ryan Hamilton",
       "party": "D"
@@ -2739,6 +2777,7 @@
     "state_fips": "25",
     "district_id": "039",
     "district_name": "16th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Francisco Paulino",
       "party": "D"
@@ -2811,6 +2850,7 @@
     "state_fips": "25",
     "district_id": "040",
     "district_name": "17th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Frank Moran",
       "party": "D"
@@ -2883,6 +2923,7 @@
     "state_fips": "25",
     "district_id": "041",
     "district_name": "18th Essex District",
+    "tier": null,
     "incumbent": {
       "name": "Tram Nguyen",
       "party": "D"
@@ -2955,6 +2996,7 @@
     "state_fips": "25",
     "district_id": "042",
     "district_name": "1st Franklin District",
+    "tier": null,
     "incumbent": {
       "name": "Vacant",
       "party": "O"
@@ -3027,6 +3069,7 @@
     "state_fips": "25",
     "district_id": "043",
     "district_name": "2nd Franklin District",
+    "tier": null,
     "incumbent": {
       "name": "Susannah Whipps",
       "party": "O"
@@ -3099,6 +3142,7 @@
     "state_fips": "25",
     "district_id": "044",
     "district_name": "1st Hampden District",
+    "tier": 2,
     "incumbent": {
       "name": "Todd Smola",
       "party": "R"
@@ -3171,6 +3215,7 @@
     "state_fips": "25",
     "district_id": "045",
     "district_name": "2nd Hampden District",
+    "tier": null,
     "incumbent": {
       "name": "Brian Michael Ashe",
       "party": "D"
@@ -3243,6 +3288,7 @@
     "state_fips": "25",
     "district_id": "046",
     "district_name": "3rd Hampden District",
+    "tier": null,
     "incumbent": {
       "name": "Nicholas Boldyga",
       "party": "R"
@@ -3315,6 +3361,7 @@
     "state_fips": "25",
     "district_id": "047",
     "district_name": "4th Hampden District",
+    "tier": 1,
     "incumbent": {
       "name": "Kelly Pease",
       "party": "R"
@@ -3387,6 +3434,7 @@
     "state_fips": "25",
     "district_id": "048",
     "district_name": "5th Hampden District",
+    "tier": null,
     "incumbent": {
       "name": "Patricia Duffy",
       "party": "D"
@@ -3459,6 +3507,7 @@
     "state_fips": "25",
     "district_id": "049",
     "district_name": "6th Hampden District",
+    "tier": null,
     "incumbent": {
       "name": "Michael Finn",
       "party": "D"
@@ -3531,6 +3580,7 @@
     "state_fips": "25",
     "district_id": "050",
     "district_name": "7th Hampden District",
+    "tier": null,
     "incumbent": {
       "name": "Aaron Saunders",
       "party": "D"
@@ -3603,6 +3653,7 @@
     "state_fips": "25",
     "district_id": "051",
     "district_name": "8th Hampden District",
+    "tier": null,
     "incumbent": {
       "name": "Shirley Arriaga",
       "party": "D"
@@ -3675,6 +3726,7 @@
     "state_fips": "25",
     "district_id": "052",
     "district_name": "9th Hampden District",
+    "tier": null,
     "incumbent": {
       "name": "Orlando Ramos",
       "party": "D"
@@ -3747,6 +3799,7 @@
     "state_fips": "25",
     "district_id": "053",
     "district_name": "10th Hampden District",
+    "tier": null,
     "incumbent": {
       "name": "Carlos Gonzalez",
       "party": "D"
@@ -3819,6 +3872,7 @@
     "state_fips": "25",
     "district_id": "054",
     "district_name": "11th Hampden District",
+    "tier": null,
     "incumbent": {
       "name": "Bud Williams",
       "party": "D"
@@ -3891,6 +3945,7 @@
     "state_fips": "25",
     "district_id": "055",
     "district_name": "12th Hampden District",
+    "tier": null,
     "incumbent": {
       "name": "Angelo Puppolo Jr.",
       "party": "D"
@@ -3963,6 +4018,7 @@
     "state_fips": "25",
     "district_id": "056",
     "district_name": "1st Hampshire District",
+    "tier": null,
     "incumbent": {
       "name": "Lindsay Sabadosa",
       "party": "D"
@@ -4035,6 +4091,7 @@
     "state_fips": "25",
     "district_id": "057",
     "district_name": "2nd Hampshire District",
+    "tier": null,
     "incumbent": {
       "name": "Homar Gomez",
       "party": "D"
@@ -4107,6 +4164,7 @@
     "state_fips": "25",
     "district_id": "058",
     "district_name": "3rd Hampshire District",
+    "tier": null,
     "incumbent": {
       "name": "Mindy Domb",
       "party": "D"
@@ -4179,6 +4237,7 @@
     "state_fips": "25",
     "district_id": "059",
     "district_name": "1st Middlesex District",
+    "tier": 2,
     "incumbent": {
       "name": "Margaret Scarsdale",
       "party": "D"
@@ -4251,6 +4310,7 @@
     "state_fips": "25",
     "district_id": "060",
     "district_name": "2nd Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "James Arciero",
       "party": "D"
@@ -4323,6 +4383,7 @@
     "state_fips": "25",
     "district_id": "061",
     "district_name": "3rd Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Kate Hogan",
       "party": "D"
@@ -4395,6 +4456,7 @@
     "state_fips": "25",
     "district_id": "062",
     "district_name": "4th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Danielle Gregoire",
       "party": "D"
@@ -4467,6 +4529,7 @@
     "state_fips": "25",
     "district_id": "063",
     "district_name": "5th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "David Linsky",
       "party": "D"
@@ -4539,6 +4602,7 @@
     "state_fips": "25",
     "district_id": "064",
     "district_name": "6th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Priscila Sousa",
       "party": "D"
@@ -4611,6 +4675,7 @@
     "state_fips": "25",
     "district_id": "065",
     "district_name": "7th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Jack Patrick Lewis",
       "party": "D"
@@ -4683,6 +4748,7 @@
     "state_fips": "25",
     "district_id": "066",
     "district_name": "8th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "James Arena-DeRosa",
       "party": "D"
@@ -4755,6 +4821,7 @@
     "state_fips": "25",
     "district_id": "067",
     "district_name": "9th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Thomas Stanley",
       "party": "D"
@@ -4827,6 +4894,7 @@
     "state_fips": "25",
     "district_id": "068",
     "district_name": "10th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "John Lawn",
       "party": "D"
@@ -4899,6 +4967,7 @@
     "state_fips": "25",
     "district_id": "069",
     "district_name": "11th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Amy Sangiolo",
       "party": "D"
@@ -4971,6 +5040,7 @@
     "state_fips": "25",
     "district_id": "070",
     "district_name": "12th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Greg Schwartz",
       "party": "D"
@@ -5043,6 +5113,7 @@
     "state_fips": "25",
     "district_id": "071",
     "district_name": "13th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Carmine Lawrence Gentile",
       "party": "D"
@@ -5115,6 +5186,7 @@
     "state_fips": "25",
     "district_id": "072",
     "district_name": "14th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Simon Cataldo",
       "party": "D"
@@ -5187,6 +5259,7 @@
     "state_fips": "25",
     "district_id": "073",
     "district_name": "15th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Michelle Ciccolo",
       "party": "D"
@@ -5259,6 +5332,7 @@
     "state_fips": "25",
     "district_id": "074",
     "district_name": "16th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Rodney Elliott",
       "party": "D"
@@ -5331,6 +5405,7 @@
     "state_fips": "25",
     "district_id": "075",
     "district_name": "17th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Vanna Howard",
       "party": "D"
@@ -5403,6 +5478,7 @@
     "state_fips": "25",
     "district_id": "076",
     "district_name": "18th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Tara Hong",
       "party": "D"
@@ -5475,6 +5551,7 @@
     "state_fips": "25",
     "district_id": "077",
     "district_name": "19th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "David Allen Robertson",
       "party": "D"
@@ -5547,6 +5624,7 @@
     "state_fips": "25",
     "district_id": "078",
     "district_name": "20th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Bradley Jones Jr.",
       "party": "R"
@@ -5619,6 +5697,7 @@
     "state_fips": "25",
     "district_id": "079",
     "district_name": "21st Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Kenneth Gordon",
       "party": "D"
@@ -5691,6 +5770,7 @@
     "state_fips": "25",
     "district_id": "080",
     "district_name": "22nd Middlesex District",
+    "tier": 1,
     "incumbent": {
       "name": "Marc Lombardo",
       "party": "R"
@@ -5763,6 +5843,7 @@
     "state_fips": "25",
     "district_id": "081",
     "district_name": "23rd Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Sean Garballey",
       "party": "D"
@@ -5835,6 +5916,7 @@
     "state_fips": "25",
     "district_id": "082",
     "district_name": "24th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "David Rogers",
       "party": "D"
@@ -5907,6 +5989,7 @@
     "state_fips": "25",
     "district_id": "083",
     "district_name": "25th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Marjorie Decker",
       "party": "D"
@@ -5979,6 +6062,7 @@
     "state_fips": "25",
     "district_id": "084",
     "district_name": "26th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Mike Connolly",
       "party": "D"
@@ -6051,6 +6135,7 @@
     "state_fips": "25",
     "district_id": "085",
     "district_name": "27th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Erika Uyterhoeven",
       "party": "D"
@@ -6123,6 +6208,7 @@
     "state_fips": "25",
     "district_id": "086",
     "district_name": "28th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Joseph McGonagle Jr.",
       "party": "D"
@@ -6195,6 +6281,7 @@
     "state_fips": "25",
     "district_id": "087",
     "district_name": "29th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Steven Owens",
       "party": "D"
@@ -6267,6 +6354,7 @@
     "state_fips": "25",
     "district_id": "088",
     "district_name": "30th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Richard Haggerty",
       "party": "D"
@@ -6339,6 +6427,7 @@
     "state_fips": "25",
     "district_id": "089",
     "district_name": "31st Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Michael Day",
       "party": "D"
@@ -6411,6 +6500,7 @@
     "state_fips": "25",
     "district_id": "090",
     "district_name": "32nd Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Kate Lipper-Garabedian",
       "party": "D"
@@ -6483,6 +6573,7 @@
     "state_fips": "25",
     "district_id": "091",
     "district_name": "33rd Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Steven Ultrino",
       "party": "D"
@@ -6555,6 +6646,7 @@
     "state_fips": "25",
     "district_id": "092",
     "district_name": "34th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Christine Barber",
       "party": "D"
@@ -6627,6 +6719,7 @@
     "state_fips": "25",
     "district_id": "093",
     "district_name": "35th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Paul Donato Sr.",
       "party": "D"
@@ -6699,6 +6792,7 @@
     "state_fips": "25",
     "district_id": "094",
     "district_name": "36th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Colleen Garry",
       "party": "D"
@@ -6771,6 +6865,7 @@
     "state_fips": "25",
     "district_id": "095",
     "district_name": "37th Middlesex District",
+    "tier": null,
     "incumbent": {
       "name": "Danillo Sena",
       "party": "D"
@@ -6843,6 +6938,7 @@
     "state_fips": "25",
     "district_id": "096",
     "district_name": "1st Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Bruce Ayers",
       "party": "D"
@@ -6915,6 +7011,7 @@
     "state_fips": "25",
     "district_id": "097",
     "district_name": "2nd Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Tackey Chan",
       "party": "D"
@@ -6987,6 +7084,7 @@
     "state_fips": "25",
     "district_id": "098",
     "district_name": "3rd Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Ronald Mariano",
       "party": "D"
@@ -7059,6 +7157,7 @@
     "state_fips": "25",
     "district_id": "099",
     "district_name": "4th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "James Murphy",
       "party": "D"
@@ -7131,6 +7230,7 @@
     "state_fips": "25",
     "district_id": "100",
     "district_name": "5th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Mark Cusack",
       "party": "D"
@@ -7203,6 +7303,7 @@
     "state_fips": "25",
     "district_id": "101",
     "district_name": "6th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "William Galvin",
       "party": "D"
@@ -7275,6 +7376,7 @@
     "state_fips": "25",
     "district_id": "102",
     "district_name": "7th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Richard Wells Jr.",
       "party": "D"
@@ -7347,6 +7449,7 @@
     "state_fips": "25",
     "district_id": "103",
     "district_name": "8th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Edward Philips",
       "party": "D"
@@ -7419,6 +7522,7 @@
     "state_fips": "25",
     "district_id": "104",
     "district_name": "9th Norfolk District",
+    "tier": 2,
     "incumbent": {
       "name": "Marcus Vaughn",
       "party": "R"
@@ -7491,6 +7595,7 @@
     "state_fips": "25",
     "district_id": "105",
     "district_name": "10th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Jeffrey Roy",
       "party": "D"
@@ -7563,6 +7668,7 @@
     "state_fips": "25",
     "district_id": "106",
     "district_name": "11th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Paul McMurtry",
       "party": "D"
@@ -7635,6 +7741,7 @@
     "state_fips": "25",
     "district_id": "107",
     "district_name": "12th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "John Rogers",
       "party": "D"
@@ -7707,6 +7814,7 @@
     "state_fips": "25",
     "district_id": "108",
     "district_name": "13th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Joshua Tarsky",
       "party": "D"
@@ -7779,6 +7887,7 @@
     "state_fips": "25",
     "district_id": "109",
     "district_name": "14th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Alice Peisch",
       "party": "D"
@@ -7851,6 +7960,7 @@
     "state_fips": "25",
     "district_id": "110",
     "district_name": "15th Norfolk District",
+    "tier": null,
     "incumbent": {
       "name": "Tommy Vitolo",
       "party": "D"
@@ -7923,6 +8033,7 @@
     "state_fips": "25",
     "district_id": "111",
     "district_name": "1st Plymouth District",
+    "tier": 3,
     "incumbent": {
       "name": "Michelle Badger",
       "party": "D"
@@ -7995,6 +8106,7 @@
     "state_fips": "25",
     "district_id": "112",
     "district_name": "2nd Plymouth District",
+    "tier": 2,
     "incumbent": {
       "name": "John Gaskey",
       "party": "R"
@@ -8067,6 +8179,7 @@
     "state_fips": "25",
     "district_id": "113",
     "district_name": "3rd Plymouth District",
+    "tier": null,
     "incumbent": {
       "name": "Joan Meschino",
       "party": "D"
@@ -8139,6 +8252,7 @@
     "state_fips": "25",
     "district_id": "114",
     "district_name": "4th Plymouth District",
+    "tier": null,
     "incumbent": {
       "name": "Patrick Joseph Kearney",
       "party": "D"
@@ -8211,6 +8325,7 @@
     "state_fips": "25",
     "district_id": "115",
     "district_name": "5th Plymouth District",
+    "tier": 1,
     "incumbent": {
       "name": "David DeCoste",
       "party": "R"
@@ -8283,6 +8398,7 @@
     "state_fips": "25",
     "district_id": "116",
     "district_name": "6th Plymouth District",
+    "tier": 1,
     "incumbent": {
       "name": "Kenneth Sweezey",
       "party": "R"
@@ -8355,6 +8471,7 @@
     "state_fips": "25",
     "district_id": "117",
     "district_name": "7th Plymouth District",
+    "tier": 1,
     "incumbent": {
       "name": "Alyson Sullivan",
       "party": "R"
@@ -8427,6 +8544,7 @@
     "state_fips": "25",
     "district_id": "118",
     "district_name": "8th Plymouth District",
+    "tier": 1,
     "incumbent": {
       "name": "Dennis Gallagher",
       "party": "D"
@@ -8499,6 +8617,7 @@
     "state_fips": "25",
     "district_id": "119",
     "district_name": "9th Plymouth District",
+    "tier": null,
     "incumbent": {
       "name": "Bridget Plouffe",
       "party": "D"
@@ -8571,6 +8690,7 @@
     "state_fips": "25",
     "district_id": "120",
     "district_name": "10th Plymouth District",
+    "tier": null,
     "incumbent": {
       "name": "Michelle DuBois",
       "party": "D"
@@ -8643,6 +8763,7 @@
     "state_fips": "25",
     "district_id": "121",
     "district_name": "11th Plymouth District",
+    "tier": null,
     "incumbent": {
       "name": "Rita Mendes",
       "party": "D"
@@ -8715,6 +8836,7 @@
     "state_fips": "25",
     "district_id": "122",
     "district_name": "12th Plymouth District",
+    "tier": null,
     "incumbent": {
       "name": "Kathleen LaNatra",
       "party": "D"
@@ -8787,6 +8909,7 @@
     "state_fips": "25",
     "district_id": "123",
     "district_name": "1st Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Adrian Madaro",
       "party": "D"
@@ -8859,6 +8982,7 @@
     "state_fips": "25",
     "district_id": "124",
     "district_name": "2nd Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Daniel Joseph Ryan",
       "party": "D"
@@ -8931,6 +9055,7 @@
     "state_fips": "25",
     "district_id": "125",
     "district_name": "3rd Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Aaron Michlewitz",
       "party": "D"
@@ -9003,6 +9128,7 @@
     "state_fips": "25",
     "district_id": "126",
     "district_name": "4th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "David Biele",
       "party": "D"
@@ -9075,6 +9201,7 @@
     "state_fips": "25",
     "district_id": "127",
     "district_name": "5th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Christopher Worrell",
       "party": "D"
@@ -9147,6 +9274,7 @@
     "state_fips": "25",
     "district_id": "128",
     "district_name": "6th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Russell Holmes",
       "party": "D"
@@ -9219,6 +9347,7 @@
     "state_fips": "25",
     "district_id": "129",
     "district_name": "7th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Chynah Tyler",
       "party": "D"
@@ -9291,6 +9420,7 @@
     "state_fips": "25",
     "district_id": "130",
     "district_name": "8th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Jay Livingstone",
       "party": "D"
@@ -9363,6 +9493,7 @@
     "state_fips": "25",
     "district_id": "131",
     "district_name": "9th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "John Moran",
       "party": "D"
@@ -9435,6 +9566,7 @@
     "state_fips": "25",
     "district_id": "132",
     "district_name": "10th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Bill MacGregor",
       "party": "D"
@@ -9507,6 +9639,7 @@
     "state_fips": "25",
     "district_id": "133",
     "district_name": "11th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Judith Garc\u00eda",
       "party": "D"
@@ -9579,6 +9712,7 @@
     "state_fips": "25",
     "district_id": "134",
     "district_name": "12th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Brandy Fluker Oakley",
       "party": "D"
@@ -9651,6 +9785,7 @@
     "state_fips": "25",
     "district_id": "135",
     "district_name": "13th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Daniel Hunt",
       "party": "D"
@@ -9723,6 +9858,7 @@
     "state_fips": "25",
     "district_id": "136",
     "district_name": "14th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Rob Consalvo",
       "party": "D"
@@ -9795,6 +9931,7 @@
     "state_fips": "25",
     "district_id": "137",
     "district_name": "15th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Sam Monta\u00f1o",
       "party": "D"
@@ -9867,6 +10004,7 @@
     "state_fips": "25",
     "district_id": "138",
     "district_name": "16th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Jessica Giannino",
       "party": "D"
@@ -9939,6 +10077,7 @@
     "state_fips": "25",
     "district_id": "139",
     "district_name": "17th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Kevin Honan",
       "party": "D"
@@ -10011,6 +10150,7 @@
     "state_fips": "25",
     "district_id": "140",
     "district_name": "18th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Michael Moran",
       "party": "D"
@@ -10083,6 +10223,7 @@
     "state_fips": "25",
     "district_id": "141",
     "district_name": "19th Suffolk District",
+    "tier": null,
     "incumbent": {
       "name": "Jeffrey Turco",
       "party": "D"
@@ -10155,6 +10296,7 @@
     "state_fips": "25",
     "district_id": "142",
     "district_name": "1st Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "Kimberly Ferguson",
       "party": "R"
@@ -10227,6 +10369,7 @@
     "state_fips": "25",
     "district_id": "143",
     "district_name": "2nd Worcester District",
+    "tier": 3,
     "incumbent": {
       "name": "Jonathan Zlotnik",
       "party": "D"
@@ -10299,6 +10442,7 @@
     "state_fips": "25",
     "district_id": "144",
     "district_name": "3rd Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "Michael Kushmerek",
       "party": "D"
@@ -10371,6 +10515,7 @@
     "state_fips": "25",
     "district_id": "145",
     "district_name": "4th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "Natalie Higgins",
       "party": "D"
@@ -10443,6 +10588,7 @@
     "state_fips": "25",
     "district_id": "146",
     "district_name": "5th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "Donald Berthiaume Jr.",
       "party": "R"
@@ -10515,6 +10661,7 @@
     "state_fips": "25",
     "district_id": "147",
     "district_name": "6th Worcester District",
+    "tier": 2,
     "incumbent": {
       "name": "John J. Marsi Jr.",
       "party": "R"
@@ -10587,6 +10734,7 @@
     "state_fips": "25",
     "district_id": "148",
     "district_name": "7th Worcester District",
+    "tier": 1,
     "incumbent": {
       "name": "Paul Frost",
       "party": "R"
@@ -10659,6 +10807,7 @@
     "state_fips": "25",
     "district_id": "149",
     "district_name": "8th Worcester District",
+    "tier": 1,
     "incumbent": {
       "name": "Michael Soter",
       "party": "R"
@@ -10731,6 +10880,7 @@
     "state_fips": "25",
     "district_id": "150",
     "district_name": "9th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "David Muradian Jr.",
       "party": "R"
@@ -10803,6 +10953,7 @@
     "state_fips": "25",
     "district_id": "151",
     "district_name": "10th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "Brian Murray",
       "party": "D"
@@ -10875,6 +11026,7 @@
     "state_fips": "25",
     "district_id": "152",
     "district_name": "11th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "Hannah Kane",
       "party": "R"
@@ -10947,6 +11099,7 @@
     "state_fips": "25",
     "district_id": "153",
     "district_name": "12th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "Meghan Kilcoyne",
       "party": "D"
@@ -11019,6 +11172,7 @@
     "state_fips": "25",
     "district_id": "154",
     "district_name": "13th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "John Mahoney",
       "party": "D"
@@ -11091,6 +11245,7 @@
     "state_fips": "25",
     "district_id": "155",
     "district_name": "14th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "James O'Day",
       "party": "D"
@@ -11163,6 +11318,7 @@
     "state_fips": "25",
     "district_id": "156",
     "district_name": "15th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "Mary Keefe",
       "party": "D"
@@ -11235,6 +11391,7 @@
     "state_fips": "25",
     "district_id": "157",
     "district_name": "16th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "Daniel M. Donahue",
       "party": "D"
@@ -11307,6 +11464,7 @@
     "state_fips": "25",
     "district_id": "158",
     "district_name": "17th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "David LeBoeuf",
       "party": "D"
@@ -11379,6 +11537,7 @@
     "state_fips": "25",
     "district_id": "159",
     "district_name": "18th Worcester District",
+    "tier": 2,
     "incumbent": {
       "name": "Joseph McKenna",
       "party": "R"
@@ -11451,6 +11610,7 @@
     "state_fips": "25",
     "district_id": "160",
     "district_name": "19th Worcester District",
+    "tier": null,
     "incumbent": {
       "name": "Kate Donaghue",
       "party": "D"

@@ -3,6 +3,7 @@
     "state_fips": "50",
     "district_id": "ADD",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Steven Hefferman",
       "party": "R"
@@ -95,6 +96,7 @@
     "state_fips": "50",
     "district_id": "BEN",
     "district_name": "",
+    "tier": 2,
     "incumbent": {
       "name": "Seth Bongartz",
       "party": "D"
@@ -187,6 +189,7 @@
     "state_fips": "50",
     "district_id": "CAL",
     "district_name": "",
+    "tier": 3,
     "incumbent": {
       "name": "Scott Beck",
       "party": "R"
@@ -267,6 +270,7 @@
     "state_fips": "50",
     "district_id": "CHC",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Philip Baruth",
       "party": "D"
@@ -371,6 +375,7 @@
     "state_fips": "50",
     "district_id": "CHN",
     "district_name": "",
+    "tier": 2,
     "incumbent": {
       "name": "Christopher Mattos",
       "party": "R"
@@ -451,6 +456,7 @@
     "state_fips": "50",
     "district_id": "CHS",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Thomas Chittenden",
       "party": "D"
@@ -555,6 +561,7 @@
     "state_fips": "50",
     "district_id": "ESX",
     "district_name": "",
+    "tier": 2,
     "incumbent": {
       "name": "Russ Ingalls",
       "party": "R"
@@ -635,6 +642,7 @@
     "state_fips": "50",
     "district_id": "FRA",
     "district_name": "",
+    "tier": 1,
     "incumbent": {
       "name": "Randy Brock",
       "party": "R"
@@ -727,6 +735,7 @@
     "state_fips": "50",
     "district_id": "GRI",
     "district_name": "",
+    "tier": 1,
     "incumbent": {
       "name": "Patrick Brennan",
       "party": "R"
@@ -807,6 +816,7 @@
     "state_fips": "50",
     "district_id": "LAM",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Richard Westman",
       "party": "R"
@@ -887,6 +897,7 @@
     "state_fips": "50",
     "district_id": "ORA",
     "district_name": "",
+    "tier": 2,
     "incumbent": {
       "name": "John Benson",
       "party": "R"
@@ -967,6 +978,7 @@
     "state_fips": "50",
     "district_id": "ORL",
     "district_name": "",
+    "tier": 3,
     "incumbent": {
       "name": "John Morley",
       "party": "R"
@@ -1047,6 +1059,7 @@
     "state_fips": "50",
     "district_id": "RUT",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Brian Collamore",
       "party": "R"
@@ -1151,6 +1164,7 @@
     "state_fips": "50",
     "district_id": "WAS",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Ann Cummings",
       "party": "D"
@@ -1255,6 +1269,7 @@
     "state_fips": "50",
     "district_id": "WDH",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Wendy Harrison",
       "party": "D"
@@ -1347,6 +1362,7 @@
     "state_fips": "50",
     "district_id": "WSR",
     "district_name": "",
+    "tier": null,
     "incumbent": {
       "name": "Alison Clarkson",
       "party": "D"

@@ -3,6 +3,7 @@
     "state_fips": "02",
     "district_id": "001",
     "district_name": "State House District 1",
+    "tier": 1,
     "incumbent": {
       "name": "Jeremy Bynum",
       "party": "R"
@@ -81,6 +82,7 @@
     "state_fips": "02",
     "district_id": "002",
     "district_name": "State House District 2",
+    "tier": 2,
     "incumbent": {
       "name": "Rebecca Himschoot",
       "party": "O"
@@ -153,6 +155,7 @@
     "state_fips": "02",
     "district_id": "003",
     "district_name": "State House District 3",
+    "tier": null,
     "incumbent": {
       "name": "Andi Story",
       "party": "D"
@@ -231,6 +234,7 @@
     "state_fips": "02",
     "district_id": "004",
     "district_name": "State House District 4",
+    "tier": null,
     "incumbent": {
       "name": "Sara Hannan",
       "party": "D"
@@ -309,6 +313,7 @@
     "state_fips": "02",
     "district_id": "005",
     "district_name": "State House District 5",
+    "tier": null,
     "incumbent": {
       "name": "Louise Stutes",
       "party": "R"
@@ -387,6 +392,7 @@
     "state_fips": "02",
     "district_id": "006",
     "district_name": "State House District 6",
+    "tier": 1,
     "incumbent": {
       "name": "Sarah Vance",
       "party": "R"
@@ -465,6 +471,7 @@
     "state_fips": "02",
     "district_id": "007",
     "district_name": "State House District 7",
+    "tier": null,
     "incumbent": {
       "name": "Justin Ruffridge",
       "party": "R"
@@ -543,6 +550,7 @@
     "state_fips": "02",
     "district_id": "008",
     "district_name": "State House District 8",
+    "tier": null,
     "incumbent": {
       "name": "Bill Elam",
       "party": "R"
@@ -621,6 +629,7 @@
     "state_fips": "02",
     "district_id": "009",
     "district_name": "State House District 9",
+    "tier": null,
     "incumbent": {
       "name": "Ky Holland",
       "party": "O"
@@ -699,6 +708,7 @@
     "state_fips": "02",
     "district_id": "010",
     "district_name": "State House District 10",
+    "tier": 1,
     "incumbent": {
       "name": "Chuck Kopp",
       "party": "R"
@@ -777,6 +787,7 @@
     "state_fips": "02",
     "district_id": "011",
     "district_name": "State House District 11",
+    "tier": 1,
     "incumbent": {
       "name": "Julie Coulombe",
       "party": "R"
@@ -855,6 +866,7 @@
     "state_fips": "02",
     "district_id": "012",
     "district_name": "State House District 12",
+    "tier": null,
     "incumbent": {
       "name": "Calvin Schrage",
       "party": "O"
@@ -933,6 +945,7 @@
     "state_fips": "02",
     "district_id": "013",
     "district_name": "State House District 13",
+    "tier": null,
     "incumbent": {
       "name": "Andy Josephson",
       "party": "D"
@@ -1011,6 +1024,7 @@
     "state_fips": "02",
     "district_id": "014",
     "district_name": "State House District 14",
+    "tier": null,
     "incumbent": {
       "name": "Alyse Galvin",
       "party": "O"
@@ -1089,6 +1103,7 @@
     "state_fips": "02",
     "district_id": "015",
     "district_name": "State House District 15",
+    "tier": 1,
     "incumbent": {
       "name": "Mia Costello",
       "party": "R"
@@ -1167,6 +1182,7 @@
     "state_fips": "02",
     "district_id": "016",
     "district_name": "State House District 16",
+    "tier": null,
     "incumbent": {
       "name": "Carolyn Hall",
       "party": "D"
@@ -1245,6 +1261,7 @@
     "state_fips": "02",
     "district_id": "017",
     "district_name": "State House District 17",
+    "tier": null,
     "incumbent": {
       "name": "Zack Fields",
       "party": "D"
@@ -1323,6 +1340,7 @@
     "state_fips": "02",
     "district_id": "018",
     "district_name": "State House District 18",
+    "tier": 1,
     "incumbent": {
       "name": "David Nelson",
       "party": "R"
@@ -1401,6 +1419,7 @@
     "state_fips": "02",
     "district_id": "019",
     "district_name": "State House District 19",
+    "tier": null,
     "incumbent": {
       "name": "Genevieve Mina",
       "party": "D"
@@ -1479,6 +1498,7 @@
     "state_fips": "02",
     "district_id": "020",
     "district_name": "State House District 20",
+    "tier": null,
     "incumbent": {
       "name": "Andrew Gray",
       "party": "D"
@@ -1557,6 +1577,7 @@
     "state_fips": "02",
     "district_id": "021",
     "district_name": "State House District 21",
+    "tier": null,
     "incumbent": {
       "name": "Donna Mears",
       "party": "D"
@@ -1635,6 +1656,7 @@
     "state_fips": "02",
     "district_id": "022",
     "district_name": "State House District 22",
+    "tier": 3,
     "incumbent": {
       "name": "Ted Eischeid",
       "party": "D"
@@ -1713,6 +1735,7 @@
     "state_fips": "02",
     "district_id": "023",
     "district_name": "State House District 23",
+    "tier": null,
     "incumbent": {
       "name": "Jamie Allard",
       "party": "R"
@@ -1791,6 +1814,7 @@
     "state_fips": "02",
     "district_id": "024",
     "district_name": "State House District 24",
+    "tier": null,
     "incumbent": {
       "name": "Dan Saddler",
       "party": "R"
@@ -1869,6 +1893,7 @@
     "state_fips": "02",
     "district_id": "025",
     "district_name": "State House District 25",
+    "tier": null,
     "incumbent": {
       "name": "DeLena Johnson",
       "party": "R"
@@ -1947,6 +1972,7 @@
     "state_fips": "02",
     "district_id": "026",
     "district_name": "State House District 26",
+    "tier": null,
     "incumbent": {
       "name": "Steve St. Clair",
       "party": "R"
@@ -2025,6 +2051,7 @@
     "state_fips": "02",
     "district_id": "027",
     "district_name": "State House District 27",
+    "tier": null,
     "incumbent": {
       "name": "Jubilee Underwood",
       "party": "R"
@@ -2103,6 +2130,7 @@
     "state_fips": "02",
     "district_id": "028",
     "district_name": "State House District 28",
+    "tier": null,
     "incumbent": {
       "name": "Elexie Moore",
       "party": "R"
@@ -2181,6 +2209,7 @@
     "state_fips": "02",
     "district_id": "029",
     "district_name": "State House District 29",
+    "tier": null,
     "incumbent": {
       "name": "Garret Nelson",
       "party": "R"
@@ -2259,6 +2288,7 @@
     "state_fips": "02",
     "district_id": "030",
     "district_name": "State House District 30",
+    "tier": null,
     "incumbent": {
       "name": "Kevin McCabe",
       "party": "R"
@@ -2337,6 +2367,7 @@
     "state_fips": "02",
     "district_id": "031",
     "district_name": "State House District 31",
+    "tier": null,
     "incumbent": {
       "name": "Maxine Dibert",
       "party": "D"
@@ -2415,6 +2446,7 @@
     "state_fips": "02",
     "district_id": "032",
     "district_name": "State House District 32",
+    "tier": null,
     "incumbent": {
       "name": "Will Stapp",
       "party": "R"
@@ -2493,6 +2525,7 @@
     "state_fips": "02",
     "district_id": "033",
     "district_name": "State House District 33",
+    "tier": null,
     "incumbent": {
       "name": "Mike Prax",
       "party": "R"
@@ -2571,6 +2604,7 @@
     "state_fips": "02",
     "district_id": "034",
     "district_name": "State House District 34",
+    "tier": null,
     "incumbent": {
       "name": "Frank Tomaszewski",
       "party": "R"
@@ -2649,6 +2683,7 @@
     "state_fips": "02",
     "district_id": "035",
     "district_name": "State House District 35",
+    "tier": null,
     "incumbent": {
       "name": "Ashley Carrick",
       "party": "D"
@@ -2727,6 +2762,7 @@
     "state_fips": "02",
     "district_id": "036",
     "district_name": "State House District 36",
+    "tier": 2,
     "incumbent": {
       "name": "Rebecca Schwanke",
       "party": "R"
@@ -2805,6 +2841,7 @@
     "state_fips": "02",
     "district_id": "037",
     "district_name": "State House District 37",
+    "tier": null,
     "incumbent": {
       "name": "Bryce Edgmon",
       "party": "O"
@@ -2870,6 +2907,7 @@
     "state_fips": "02",
     "district_id": "038",
     "district_name": "State House District 38",
+    "tier": null,
     "incumbent": {
       "name": "Nellie Jimmie",
       "party": "D"
@@ -2948,6 +2986,7 @@
     "state_fips": "02",
     "district_id": "039",
     "district_name": "State House District 39",
+    "tier": null,
     "incumbent": {
       "name": "Neal Foster",
       "party": "D"
@@ -3026,6 +3065,7 @@
     "state_fips": "02",
     "district_id": "040",
     "district_name": "State House District 40",
+    "tier": null,
     "incumbent": {
       "name": "Robyn Frier",
       "party": "D"
