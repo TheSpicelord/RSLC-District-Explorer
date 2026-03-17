@@ -48,7 +48,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 46.3,
-      "pres_2024": 51.2
+      "pres_2024": 51.2,
+      "model_rslc_all": -51.7,
+      "model_rslc_hm": -64.9
     },
     "pres_2024_margin": 51.2,
     "gov_2022_margin": 46.3,
@@ -61,6 +63,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.3
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 8.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 8.3
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.2
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.6
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 23.5
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 37.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 8.1
+            }
+          ],
+          "margin": -51.7,
+          "gop_consistent": 0.3,
+          "gop_gov_drop": 8.8,
+          "gop_targets": 8.3,
+          "djt_overperform": 1.7,
+          "issue_targets": 1.2,
+          "core_persuasion": 10.6,
+          "dem_targets": 23.5,
+          "dem_gov_drop": 37.5,
+          "dem_consistent": 8.1
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.4
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 8.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 5.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.0
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 0.8
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 4.7
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 18.9
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 48.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 11.4
+            }
+          ],
+          "margin": -64.9,
+          "gop_consistent": 0.4,
+          "gop_gov_drop": 8.0,
+          "gop_targets": 5.9,
+          "djt_overperform": 1.0,
+          "issue_targets": 0.8,
+          "core_persuasion": 4.7,
+          "dem_targets": 18.9,
+          "dem_gov_drop": 48.9,
+          "dem_consistent": 11.4
+        }
+      }
     }
   },
   {
@@ -112,7 +244,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 44.9,
-      "pres_2024": -3.5
+      "pres_2024": -3.5,
+      "model_rslc_all": -17.0,
+      "model_rslc_hm": -28.1
     },
     "pres_2024_margin": -3.5,
     "gov_2022_margin": 44.9,
@@ -125,6 +259,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 20.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.0
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.1
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.1
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 14.3
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 13.6
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 25.7
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 10.0
+            }
+          ],
+          "margin": -17.0,
+          "gop_consistent": 0.7,
+          "gop_gov_drop": 20.6,
+          "gop_targets": 11.0,
+          "djt_overperform": 2.1,
+          "issue_targets": 2.1,
+          "core_persuasion": 14.3,
+          "dem_targets": 13.6,
+          "dem_gov_drop": 25.7,
+          "dem_consistent": 10.0
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.9
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 19.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.5
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.9
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.4
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 8.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.2
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 32.1
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 14.1
+            }
+          ],
+          "margin": -28.1,
+          "gop_consistent": 0.9,
+          "gop_gov_drop": 19.9,
+          "gop_targets": 9.5,
+          "djt_overperform": 1.9,
+          "issue_targets": 1.4,
+          "core_persuasion": 8.1,
+          "dem_targets": 12.2,
+          "dem_gov_drop": 32.1,
+          "dem_consistent": 14.1
+        }
+      }
     }
   },
   {
@@ -176,7 +440,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 62.7,
-      "pres_2024": 77.1
+      "pres_2024": 77.1,
+      "model_rslc_all": -78.3,
+      "model_rslc_hm": -90.9
     },
     "pres_2024_margin": 77.1,
     "gov_2022_margin": 62.7,
@@ -189,6 +455,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 1.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 4.2
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.5
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 0.8
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 8.6
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 30.4
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 46.0
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 7.3
+            }
+          ],
+          "margin": -78.3,
+          "gop_consistent": 0.0,
+          "gop_gov_drop": 1.2,
+          "gop_targets": 4.2,
+          "djt_overperform": 1.5,
+          "issue_targets": 0.8,
+          "core_persuasion": 8.6,
+          "dem_targets": 30.4,
+          "dem_gov_drop": 46.0,
+          "dem_consistent": 7.3
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 0.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 1.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 0.6
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 0.2
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 2.8
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 23.8
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 59.7
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 10.1
+            }
+          ],
+          "margin": -90.9,
+          "gop_consistent": 0.0,
+          "gop_gov_drop": 0.8,
+          "gop_targets": 1.9,
+          "djt_overperform": 0.6,
+          "issue_targets": 0.2,
+          "core_persuasion": 2.8,
+          "dem_targets": 23.8,
+          "dem_gov_drop": 59.7,
+          "dem_consistent": 10.1
+        }
+      }
     }
   },
   {
@@ -240,7 +636,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 17.0,
-      "pres_2024": 0.1
+      "pres_2024": 0.1,
+      "model_rslc_all": -9.9,
+      "model_rslc_hm": -17.8
     },
     "pres_2024_margin": 0.1,
     "gov_2022_margin": 17.0,
@@ -253,6 +651,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "Darrin Camilleri"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 3.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 22.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.6
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.8
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.1
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.3
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.2
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 22.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 12.8
+            }
+          ],
+          "margin": -9.9,
+          "gop_consistent": 3.0,
+          "gop_gov_drop": 22.4,
+          "gop_targets": 12.6,
+          "djt_overperform": 1.8,
+          "issue_targets": 2.1,
+          "core_persuasion": 10.3,
+          "dem_targets": 12.2,
+          "dem_gov_drop": 22.9,
+          "dem_consistent": 12.8
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 3.5
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 21.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.8
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.7
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.0
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 26.4
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 16.4
+            }
+          ],
+          "margin": -17.8,
+          "gop_consistent": 3.5,
+          "gop_gov_drop": 21.6,
+          "gop_targets": 10.9,
+          "djt_overperform": 1.7,
+          "issue_targets": 1.8,
+          "core_persuasion": 6.7,
+          "dem_targets": 11.0,
+          "dem_gov_drop": 26.4,
+          "dem_consistent": 16.4
+        }
+      }
     }
   },
   {
@@ -304,7 +832,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 30.2,
-      "pres_2024": 15.0
+      "pres_2024": 15.0,
+      "model_rslc_all": -26.4,
+      "model_rslc_hm": -33.5
     },
     "pres_2024_margin": 15.0,
     "gov_2022_margin": 30.2,
@@ -317,6 +847,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 1.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 18.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.4
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.0
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.7
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.9
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 14.4
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 29.3
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 12.2
+            }
+          ],
+          "margin": -26.4,
+          "gop_consistent": 1.0,
+          "gop_gov_drop": 18.1,
+          "gop_targets": 10.4,
+          "djt_overperform": 2.0,
+          "issue_targets": 1.7,
+          "core_persuasion": 10.9,
+          "dem_targets": 14.4,
+          "dem_gov_drop": 29.3,
+          "dem_consistent": 12.2
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 1.3
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 18.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 8.8
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.9
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.2
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.0
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.6
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 33.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 15.6
+            }
+          ],
+          "margin": -33.5,
+          "gop_consistent": 1.3,
+          "gop_gov_drop": 18.1,
+          "gop_targets": 8.8,
+          "djt_overperform": 1.9,
+          "issue_targets": 1.2,
+          "core_persuasion": 7.0,
+          "dem_targets": 12.6,
+          "dem_gov_drop": 33.5,
+          "dem_consistent": 15.6
+        }
+      }
     }
   },
   {
@@ -368,7 +1028,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 45.1,
-      "pres_2024": 77.4
+      "pres_2024": 77.4,
+      "model_rslc_all": -75.5,
+      "model_rslc_hm": -86.1
     },
     "pres_2024_margin": 77.4,
     "gov_2022_margin": 45.1,
@@ -381,6 +1043,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "Mary Cavanagh"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 2.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 4.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.2
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 0.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.6
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 27.2
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 46.1
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 9.8
+            }
+          ],
+          "margin": -75.5,
+          "gop_consistent": 0.0,
+          "gop_gov_drop": 2.7,
+          "gop_targets": 4.9,
+          "djt_overperform": 1.2,
+          "issue_targets": 0.5,
+          "core_persuasion": 7.6,
+          "dem_targets": 27.2,
+          "dem_gov_drop": 46.1,
+          "dem_consistent": 9.8
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 2.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 2.6
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 0.5
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 0.3
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 2.8
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 21.1
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 57.3
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 12.9
+            }
+          ],
+          "margin": -86.1,
+          "gop_consistent": 0.0,
+          "gop_gov_drop": 2.6,
+          "gop_targets": 2.6,
+          "djt_overperform": 0.5,
+          "issue_targets": 0.3,
+          "core_persuasion": 2.8,
+          "dem_targets": 21.1,
+          "dem_gov_drop": 57.3,
+          "dem_consistent": 12.9
+        }
+      }
     }
   },
   {
@@ -432,7 +1224,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 52.0,
-      "pres_2024": 36.3
+      "pres_2024": 36.3,
+      "model_rslc_all": -44.6,
+      "model_rslc_hm": -51.3
     },
     "pres_2024_margin": 36.3,
     "gov_2022_margin": 52.0,
@@ -445,6 +1239,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.6
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 10.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.3
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.9
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.0
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 11.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 13.3
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 29.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 22.0
+            }
+          ],
+          "margin": -44.6,
+          "gop_consistent": 0.6,
+          "gop_gov_drop": 10.3,
+          "gop_targets": 9.3,
+          "djt_overperform": 2.9,
+          "issue_targets": 1.0,
+          "core_persuasion": 11.1,
+          "dem_targets": 13.3,
+          "dem_gov_drop": 29.5,
+          "dem_consistent": 22.0
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 10.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 7.8
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 0.8
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.4
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.8
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 32.4
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 27.0
+            }
+          ],
+          "margin": -51.3,
+          "gop_consistent": 0.7,
+          "gop_gov_drop": 10.4,
+          "gop_targets": 7.8,
+          "djt_overperform": 2.7,
+          "issue_targets": 0.8,
+          "core_persuasion": 7.4,
+          "dem_targets": 10.8,
+          "dem_gov_drop": 32.4,
+          "dem_consistent": 27.0
+        }
+      }
     }
   },
   {
@@ -496,7 +1420,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 61.0,
-      "pres_2024": 11.7
+      "pres_2024": 11.7,
+      "model_rslc_all": -22.0,
+      "model_rslc_hm": -27.5
     },
     "pres_2024_margin": 11.7,
     "gov_2022_margin": 61.0,
@@ -509,6 +1435,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "Dayna Polehanki"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 1.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 18.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.7
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.6
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.6
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 12.4
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.9
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 26.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 12.9
+            }
+          ],
+          "margin": -22.0,
+          "gop_consistent": 1.1,
+          "gop_gov_drop": 18.9,
+          "gop_targets": 10.7,
+          "djt_overperform": 2.6,
+          "issue_targets": 1.6,
+          "core_persuasion": 12.4,
+          "dem_targets": 12.9,
+          "dem_gov_drop": 26.9,
+          "dem_consistent": 12.9
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 1.3
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 19.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.5
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.5
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.3
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 8.9
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.9
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 30.0
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 15.5
+            }
+          ],
+          "margin": -27.5,
+          "gop_consistent": 1.3,
+          "gop_gov_drop": 19.1,
+          "gop_targets": 9.5,
+          "djt_overperform": 2.5,
+          "issue_targets": 1.3,
+          "core_persuasion": 8.9,
+          "dem_targets": 11.9,
+          "dem_gov_drop": 30.0,
+          "dem_consistent": 15.5
+        }
+      }
     }
   },
   {
@@ -560,7 +1616,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 11.1,
-      "pres_2024": -5.1
+      "pres_2024": -5.1,
+      "model_rslc_all": -7.4,
+      "model_rslc_hm": -13.9
     },
     "pres_2024_margin": -5.1,
     "gov_2022_margin": 11.1,
@@ -573,6 +1631,136 @@
     "candidates_2026": {
       "rep": "Michael Webber",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 1.9
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 22.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.5
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 3.3
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.0
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 14.3
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.3
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 25.8
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 6.8
+            }
+          ],
+          "margin": -7.4,
+          "gop_consistent": 1.9,
+          "gop_gov_drop": 22.1,
+          "gop_targets": 12.5,
+          "djt_overperform": 3.3,
+          "issue_targets": 2.0,
+          "core_persuasion": 14.3,
+          "dem_targets": 11.3,
+          "dem_gov_drop": 25.8,
+          "dem_consistent": 6.8
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 2.4
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 22.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.1
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 3.3
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.3
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.2
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.4
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 30.4
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 8.7
+            }
+          ],
+          "margin": -13.9,
+          "gop_consistent": 2.4,
+          "gop_gov_drop": 22.1,
+          "gop_targets": 11.1,
+          "djt_overperform": 3.3,
+          "issue_targets": 1.3,
+          "core_persuasion": 10.2,
+          "dem_targets": 10.4,
+          "dem_gov_drop": 30.4,
+          "dem_consistent": 8.7
+        }
+      }
     }
   },
   {
@@ -624,7 +1812,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 38.7,
-      "pres_2024": 30.6
+      "pres_2024": 30.6,
+      "model_rslc_all": -36.3,
+      "model_rslc_hm": -45.4
     },
     "pres_2024_margin": 30.6,
     "gov_2022_margin": 38.7,
@@ -637,6 +1827,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 14.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.0
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.2
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.1
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.8
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.3
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 32.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 15.9
+            }
+          ],
+          "margin": -36.3,
+          "gop_consistent": 0.1,
+          "gop_gov_drop": 14.7,
+          "gop_targets": 10.0,
+          "djt_overperform": 2.2,
+          "issue_targets": 1.1,
+          "core_persuasion": 10.8,
+          "dem_targets": 12.3,
+          "dem_gov_drop": 32.9,
+          "dem_consistent": 15.9
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 0.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 14.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 8.2
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.0
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 0.7
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.6
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 37.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 19.7
+            }
+          ],
+          "margin": -45.4,
+          "gop_consistent": 0.1,
+          "gop_gov_drop": 14.1,
+          "gop_targets": 8.2,
+          "djt_overperform": 2.0,
+          "issue_targets": 0.7,
+          "core_persuasion": 7.1,
+          "dem_targets": 10.6,
+          "dem_gov_drop": 37.5,
+          "dem_consistent": 19.7
+        }
+      }
     }
   },
   {
@@ -688,7 +2008,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 15.0,
-      "pres_2024": 3.2
+      "pres_2024": 3.2,
+      "model_rslc_all": -9.4,
+      "model_rslc_hm": -17.6
     },
     "pres_2024_margin": 3.2,
     "gov_2022_margin": 15.0,
@@ -701,6 +2023,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "Veronica Klinefelt"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 1.8
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 22.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.1
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.7
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.7
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.9
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 23.2
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 12.3
+            }
+          ],
+          "margin": -9.4,
+          "gop_consistent": 1.8,
+          "gop_gov_drop": 22.3,
+          "gop_targets": 13.9,
+          "djt_overperform": 2.1,
+          "issue_targets": 1.7,
+          "core_persuasion": 10.7,
+          "dem_targets": 11.9,
+          "dem_gov_drop": 23.2,
+          "dem_consistent": 12.3
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 2.4
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 22.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.1
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.9
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.1
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.4
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.5
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 27.1
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 16.5
+            }
+          ],
+          "margin": -17.6,
+          "gop_consistent": 2.4,
+          "gop_gov_drop": 22.0,
+          "gop_targets": 12.1,
+          "djt_overperform": 1.9,
+          "issue_targets": 1.1,
+          "core_persuasion": 6.4,
+          "dem_targets": 10.5,
+          "dem_gov_drop": 27.1,
+          "dem_consistent": 16.5
+        }
+      }
     }
   },
   {
@@ -761,7 +2213,9 @@
       "leg_2022": 0.3,
       "latest_leg": 0.3,
       "gov_2022": 8.2,
-      "pres_2024": -7.2
+      "pres_2024": -7.2,
+      "model_rslc_all": -0.1,
+      "model_rslc_hm": -5.3
     },
     "pres_2024_margin": -7.2,
     "gov_2022_margin": 8.2,
@@ -774,6 +2228,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "Kevin Hertel"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 4.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 25.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.0
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.2
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 9.7
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.7
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 22.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 9.8
+            }
+          ],
+          "margin": -0.1,
+          "gop_consistent": 4.0,
+          "gop_gov_drop": 25.3,
+          "gop_targets": 14.0,
+          "djt_overperform": 2.2,
+          "issue_targets": 1.5,
+          "core_persuasion": 9.7,
+          "dem_targets": 10.7,
+          "dem_gov_drop": 22.9,
+          "dem_consistent": 9.8
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 4.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 24.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.1
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.1
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.7
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.8
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 25.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 12.0
+            }
+          ],
+          "margin": -5.3,
+          "gop_consistent": 4.7,
+          "gop_gov_drop": 24.8,
+          "gop_targets": 12.9,
+          "djt_overperform": 2.1,
+          "issue_targets": 1.1,
+          "core_persuasion": 6.7,
+          "dem_targets": 9.8,
+          "dem_gov_drop": 25.9,
+          "dem_consistent": 12.0
+        }
+      }
     }
   },
   {
@@ -825,7 +2409,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": 23.0,
-      "pres_2024": -1.7
+      "pres_2024": -1.7,
+      "model_rslc_all": -10.0,
+      "model_rslc_hm": -15.7
     },
     "pres_2024_margin": -1.7,
     "gov_2022_margin": 23.0,
@@ -838,6 +2424,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 2.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 20.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.5
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 3.0
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.9
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 13.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.8
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 25.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 9.7
+            }
+          ],
+          "margin": -10.0,
+          "gop_consistent": 2.7,
+          "gop_gov_drop": 20.8,
+          "gop_targets": 12.5,
+          "djt_overperform": 3.0,
+          "issue_targets": 1.9,
+          "core_persuasion": 13.1,
+          "dem_targets": 10.8,
+          "dem_gov_drop": 25.5,
+          "dem_consistent": 9.7
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 3.2
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 20.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.1
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 3.0
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 9.9
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.0
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 28.8
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 11.9
+            }
+          ],
+          "margin": -15.7,
+          "gop_consistent": 3.2,
+          "gop_gov_drop": 20.7,
+          "gop_targets": 11.1,
+          "djt_overperform": 3.0,
+          "issue_targets": 1.5,
+          "core_persuasion": 9.9,
+          "dem_targets": 10.0,
+          "dem_gov_drop": 28.8,
+          "dem_consistent": 11.9
+        }
+      }
     }
   },
   {
@@ -898,7 +2614,9 @@
       "leg_2022": 11.8,
       "latest_leg": 11.8,
       "gov_2022": 20.1,
-      "pres_2024": 9.7
+      "pres_2024": 9.7,
+      "model_rslc_all": -9.5,
+      "model_rslc_hm": -16.8
     },
     "pres_2024_margin": 9.7,
     "gov_2022_margin": 20.1,
@@ -911,6 +2629,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "Sue Shink"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 8.5
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 18.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.2
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.8
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.3
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 16.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 18.7
+            }
+          ],
+          "margin": -9.5,
+          "gop_consistent": 8.5,
+          "gop_gov_drop": 18.7,
+          "gop_targets": 11.2,
+          "djt_overperform": 1.7,
+          "issue_targets": 1.8,
+          "core_persuasion": 10.1,
+          "dem_targets": 12.3,
+          "dem_gov_drop": 16.9,
+          "dem_consistent": 18.7
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 9.8
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 17.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.6
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.8
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.0
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 19.3
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 23.1
+            }
+          ],
+          "margin": -16.8,
+          "gop_consistent": 9.8,
+          "gop_gov_drop": 17.2,
+          "gop_targets": 9.6,
+          "djt_overperform": 1.7,
+          "issue_targets": 1.5,
+          "core_persuasion": 6.8,
+          "dem_targets": 11.0,
+          "dem_gov_drop": 19.3,
+          "dem_consistent": 23.1
+        }
+      }
     }
   },
   {
@@ -971,7 +2819,9 @@
       "leg_2022": 48.3,
       "latest_leg": 48.3,
       "gov_2022": 51.7,
-      "pres_2024": 43.1
+      "pres_2024": 43.1,
+      "model_rslc_all": -38.9,
+      "model_rslc_hm": -52.2
     },
     "pres_2024_margin": 43.1,
     "gov_2022_margin": 51.7,
@@ -984,6 +2834,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 2.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 12.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.3
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.2
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 9.8
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 14.3
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 22.0
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 26.8
+            }
+          ],
+          "margin": -38.9,
+          "gop_consistent": 2.1,
+          "gop_gov_drop": 12.8,
+          "gop_targets": 9.3,
+          "djt_overperform": 1.7,
+          "issue_targets": 1.2,
+          "core_persuasion": 9.8,
+          "dem_targets": 14.3,
+          "dem_gov_drop": 22.0,
+          "dem_consistent": 26.8
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 2.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 10.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 6.4
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.4
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.0
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.0
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 25.2
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 34.7
+            }
+          ],
+          "margin": -52.2,
+          "gop_consistent": 2.7,
+          "gop_gov_drop": 10.6,
+          "gop_targets": 6.4,
+          "djt_overperform": 1.4,
+          "issue_targets": 1.0,
+          "core_persuasion": 6.1,
+          "dem_targets": 12.0,
+          "dem_gov_drop": 25.2,
+          "dem_consistent": 34.7
+        }
+      }
     }
   },
   {
@@ -1044,7 +3024,9 @@
       "leg_2022": -30.0,
       "latest_leg": -30.0,
       "gov_2022": -17.1,
-      "pres_2024": -30.0
+      "pres_2024": -30.0,
+      "model_rslc_all": 30.3,
+      "model_rslc_hm": 26.4
     },
     "pres_2024_margin": -30.0,
     "gov_2022_margin": -17.1,
@@ -1057,6 +3039,136 @@
     "candidates_2026": {
       "rep": "Joe Bellino",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 16.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 28.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.0
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.4
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 11.4
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.9
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 9.6
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 7.7
+            }
+          ],
+          "margin": 30.3,
+          "gop_consistent": 16.0,
+          "gop_gov_drop": 28.5,
+          "gop_targets": 13.0,
+          "djt_overperform": 1.4,
+          "issue_targets": 2.5,
+          "core_persuasion": 11.4,
+          "dem_targets": 9.9,
+          "dem_gov_drop": 9.6,
+          "dem_consistent": 7.7
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 19.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 26.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.4
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.1
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.5
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.6
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 11.8
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 9.9
+            }
+          ],
+          "margin": 26.4,
+          "gop_consistent": 19.1,
+          "gop_gov_drop": 26.7,
+          "gop_targets": 11.9,
+          "djt_overperform": 1.4,
+          "issue_targets": 2.1,
+          "core_persuasion": 7.5,
+          "dem_targets": 9.6,
+          "dem_gov_drop": 11.8,
+          "dem_consistent": 9.9
+        }
+      }
     }
   },
   {
@@ -1117,7 +3229,9 @@
       "leg_2022": -30.8,
       "latest_leg": -30.8,
       "gov_2022": -20.2,
-      "pres_2024": -30.0
+      "pres_2024": -30.0,
+      "model_rslc_all": 34.9,
+      "model_rslc_hm": 33.1
     },
     "pres_2024_margin": -30.0,
     "gov_2022_margin": -20.2,
@@ -1130,6 +3244,136 @@
     "candidates_2026": {
       "rep": "Jonathan Lindsey",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 16.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 30.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.1
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.2
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.6
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 12.3
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.7
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 6.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 8.3
+            }
+          ],
+          "margin": 34.9,
+          "gop_consistent": 16.1,
+          "gop_gov_drop": 30.2,
+          "gop_targets": 13.1,
+          "djt_overperform": 1.2,
+          "issue_targets": 2.6,
+          "core_persuasion": 12.3,
+          "dem_targets": 9.7,
+          "dem_gov_drop": 6.5,
+          "dem_consistent": 8.3
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 19.9
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 29.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.8
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.3
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.2
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.2
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.1
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 8.2
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 10.8
+            }
+          ],
+          "margin": 33.1,
+          "gop_consistent": 19.9,
+          "gop_gov_drop": 29.5,
+          "gop_targets": 11.8,
+          "djt_overperform": 1.3,
+          "issue_targets": 2.2,
+          "core_persuasion": 7.2,
+          "dem_targets": 9.1,
+          "dem_gov_drop": 8.2,
+          "dem_consistent": 10.8
+        }
+      }
     }
   },
   {
@@ -1190,7 +3434,9 @@
       "leg_2022": -23.9,
       "latest_leg": -23.9,
       "gov_2022": -12.9,
-      "pres_2024": -23.7
+      "pres_2024": -23.7,
+      "model_rslc_all": 26.7,
+      "model_rslc_hm": 22.9
     },
     "pres_2024_margin": -23.7,
     "gov_2022_margin": -12.9,
@@ -1203,6 +3449,136 @@
     "candidates_2026": {
       "rep": "Thomas Albert",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 17.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 25.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.8
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.4
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.9
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 11.0
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.4
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 9.6
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 9.0
+            }
+          ],
+          "margin": 26.7,
+          "gop_consistent": 17.1,
+          "gop_gov_drop": 25.8,
+          "gop_targets": 12.8,
+          "djt_overperform": 1.4,
+          "issue_targets": 2.9,
+          "core_persuasion": 11.0,
+          "dem_targets": 10.4,
+          "dem_gov_drop": 9.6,
+          "dem_consistent": 9.0
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 20.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 24.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.6
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.4
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.4
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.1
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 11.4
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 11.4
+            }
+          ],
+          "margin": 22.9,
+          "gop_consistent": 20.0,
+          "gop_gov_drop": 24.2,
+          "gop_targets": 11.6,
+          "djt_overperform": 1.4,
+          "issue_targets": 2.5,
+          "core_persuasion": 7.4,
+          "dem_targets": 10.1,
+          "dem_gov_drop": 11.4,
+          "dem_consistent": 11.4
+        }
+      }
     }
   },
   {
@@ -1263,7 +3639,9 @@
       "leg_2022": 19.6,
       "latest_leg": 19.6,
       "gov_2022": 25.3,
-      "pres_2024": 17.1
+      "pres_2024": 17.1,
+      "model_rslc_all": -18.2,
+      "model_rslc_hm": -24.9
     },
     "pres_2024_margin": 17.1,
     "gov_2022_margin": 25.3,
@@ -1276,6 +3654,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 7.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 15.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.3
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.9
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.7
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.6
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 13.4
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 14.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 24.1
+            }
+          ],
+          "margin": -18.2,
+          "gop_consistent": 7.7,
+          "gop_gov_drop": 15.8,
+          "gop_targets": 10.3,
+          "djt_overperform": 1.9,
+          "issue_targets": 1.7,
+          "core_persuasion": 10.6,
+          "dem_targets": 13.4,
+          "dem_gov_drop": 14.5,
+          "dem_consistent": 24.1
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 9.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 14.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 8.8
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.8
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.3
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.2
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.7
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 15.7
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 29.9
+            }
+          ],
+          "margin": -24.9,
+          "gop_consistent": 9.1,
+          "gop_gov_drop": 14.5,
+          "gop_targets": 8.8,
+          "djt_overperform": 1.8,
+          "issue_targets": 1.3,
+          "core_persuasion": 7.2,
+          "dem_targets": 11.7,
+          "dem_gov_drop": 15.7,
+          "dem_consistent": 29.9
+        }
+      }
     }
   },
   {
@@ -1336,7 +3844,9 @@
       "leg_2022": -21.9,
       "latest_leg": -21.9,
       "gov_2022": -10.9,
-      "pres_2024": -16.6
+      "pres_2024": -16.6,
+      "model_rslc_all": 19.7,
+      "model_rslc_hm": 17.3
     },
     "pres_2024_margin": -16.6,
     "gov_2022_margin": -10.9,
@@ -1349,6 +3859,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 13.2
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 26.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.4
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.4
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.6
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 12.0
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.1
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 9.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 11.5
+            }
+          ],
+          "margin": 19.7,
+          "gop_consistent": 13.2,
+          "gop_gov_drop": 26.2,
+          "gop_targets": 12.4,
+          "djt_overperform": 1.4,
+          "issue_targets": 2.6,
+          "core_persuasion": 12.0,
+          "dem_targets": 11.1,
+          "dem_gov_drop": 9.5,
+          "dem_consistent": 11.5
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 16.2
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 25.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.6
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.4
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.7
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.2
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 11.1
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 14.3
+            }
+          ],
+          "margin": 17.3,
+          "gop_consistent": 16.2,
+          "gop_gov_drop": 25.1,
+          "gop_targets": 11.6,
+          "djt_overperform": 1.4,
+          "issue_targets": 2.5,
+          "core_persuasion": 7.7,
+          "dem_targets": 10.2,
+          "dem_gov_drop": 11.1,
+          "dem_consistent": 14.3
+        }
+      }
     }
   },
   {
@@ -1409,7 +4049,9 @@
       "leg_2022": 20.6,
       "latest_leg": 20.6,
       "gov_2022": 23.9,
-      "pres_2024": 12.0
+      "pres_2024": 12.0,
+      "model_rslc_all": -14.4,
+      "model_rslc_hm": -21.0
     },
     "pres_2024_margin": 12.0,
     "gov_2022_margin": 23.9,
@@ -1422,6 +4064,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "Sarah Anthony"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 7.4
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 19.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.8
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.6
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.0
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.4
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 14.0
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 24.2
+            }
+          ],
+          "margin": -14.4,
+          "gop_consistent": 7.4,
+          "gop_gov_drop": 19.0,
+          "gop_targets": 9.8,
+          "djt_overperform": 1.6,
+          "issue_targets": 1.5,
+          "core_persuasion": 10.0,
+          "dem_targets": 12.4,
+          "dem_gov_drop": 14.0,
+          "dem_consistent": 24.2
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 8.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 17.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 8.5
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.6
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.2
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.4
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.8
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 15.2
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 29.9
+            }
+          ],
+          "margin": -21.0,
+          "gop_consistent": 8.7,
+          "gop_gov_drop": 17.7,
+          "gop_targets": 8.5,
+          "djt_overperform": 1.6,
+          "issue_targets": 1.2,
+          "core_persuasion": 6.4,
+          "dem_targets": 10.8,
+          "dem_gov_drop": 15.2,
+          "dem_consistent": 29.9
+        }
+      }
     }
   },
   {
@@ -1482,7 +4254,9 @@
       "leg_2022": -24.0,
       "latest_leg": -24.0,
       "gov_2022": -12.0,
-      "pres_2024": -24.0
+      "pres_2024": -24.0,
+      "model_rslc_all": 24.6,
+      "model_rslc_hm": 19.8
     },
     "pres_2024_margin": -24.0,
     "gov_2022_margin": -12.0,
@@ -1495,6 +4269,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 10.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 29.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 16.4
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.1
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.1
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 9.4
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.0
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 14.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 6.0
+            }
+          ],
+          "margin": 24.6,
+          "gop_consistent": 10.1,
+          "gop_gov_drop": 29.0,
+          "gop_targets": 16.4,
+          "djt_overperform": 2.1,
+          "issue_targets": 2.1,
+          "core_persuasion": 9.4,
+          "dem_targets": 10.0,
+          "dem_gov_drop": 14.9,
+          "dem_consistent": 6.0
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 11.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 27.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.2
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.1
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.7
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.0
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.2
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 17.2
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 7.3
+            }
+          ],
+          "margin": 19.8,
+          "gop_consistent": 11.7,
+          "gop_gov_drop": 27.6,
+          "gop_targets": 15.2,
+          "djt_overperform": 2.1,
+          "issue_targets": 1.7,
+          "core_persuasion": 7.0,
+          "dem_targets": 10.2,
+          "dem_gov_drop": 17.2,
+          "dem_consistent": 7.3
+        }
+      }
     }
   },
   {
@@ -1546,7 +4450,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": -1.8,
-      "pres_2024": -23.1
+      "pres_2024": -23.1,
+      "model_rslc_all": 18.8,
+      "model_rslc_hm": 14.4
     },
     "pres_2024_margin": -23.1,
     "gov_2022_margin": -1.8,
@@ -1559,6 +4465,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 5.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 30.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.6
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.5
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.1
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.0
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.8
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 19.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 3.6
+            }
+          ],
+          "margin": 18.8,
+          "gop_consistent": 5.7,
+          "gop_gov_drop": 30.8,
+          "gop_targets": 15.6,
+          "djt_overperform": 2.5,
+          "issue_targets": 2.1,
+          "core_persuasion": 10.0,
+          "dem_targets": 9.8,
+          "dem_gov_drop": 19.9,
+          "dem_consistent": 3.6
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 6.6
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 30.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.4
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.6
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.7
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.5
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.6
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 22.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 4.4
+            }
+          ],
+          "margin": 14.4,
+          "gop_consistent": 6.6,
+          "gop_gov_drop": 30.3,
+          "gop_targets": 14.4,
+          "djt_overperform": 2.6,
+          "issue_targets": 1.7,
+          "core_persuasion": 7.5,
+          "dem_targets": 9.6,
+          "dem_gov_drop": 22.9,
+          "dem_consistent": 4.4
+        }
+      }
     }
   },
   {
@@ -1610,7 +4646,9 @@
     "elections": [],
     "view_margins": {
       "gov_2022": -16.1,
-      "pres_2024": -27.7
+      "pres_2024": -27.7,
+      "model_rslc_all": 21.2,
+      "model_rslc_hm": 16.3
     },
     "pres_2024_margin": -27.7,
     "gov_2022_margin": -16.1,
@@ -1623,6 +4661,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 4.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 31.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 17.2
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.5
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.0
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.6
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 19.0
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 3.5
+            }
+          ],
+          "margin": 21.2,
+          "gop_consistent": 4.7,
+          "gop_gov_drop": 31.4,
+          "gop_targets": 17.2,
+          "djt_overperform": 2.5,
+          "issue_targets": 2.0,
+          "core_persuasion": 10.1,
+          "dem_targets": 9.6,
+          "dem_gov_drop": 19.0,
+          "dem_consistent": 3.5
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 5.9
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 30.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.6
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.4
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.3
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 22.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 4.5
+            }
+          ],
+          "margin": 16.3,
+          "gop_consistent": 5.9,
+          "gop_gov_drop": 30.8,
+          "gop_targets": 15.9,
+          "djt_overperform": 2.6,
+          "issue_targets": 1.4,
+          "core_persuasion": 7.1,
+          "dem_targets": 9.3,
+          "dem_gov_drop": 22.5,
+          "dem_consistent": 4.5
+        }
+      }
     }
   },
   {
@@ -1683,7 +4851,9 @@
       "leg_2022": -33.7,
       "latest_leg": -33.7,
       "gov_2022": -21.2,
-      "pres_2024": -37.4
+      "pres_2024": -37.4,
+      "model_rslc_all": 39.0,
+      "model_rslc_hm": 35.9
     },
     "pres_2024_margin": -37.4,
     "gov_2022_margin": -21.2,
@@ -1696,6 +4866,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 13.3
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 36.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.0
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.0
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 3.0
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 9.0
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 8.7
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 10.7
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 4.6
+            }
+          ],
+          "margin": 39.0,
+          "gop_consistent": 13.3,
+          "gop_gov_drop": 36.7,
+          "gop_targets": 13.0,
+          "djt_overperform": 1.0,
+          "issue_targets": 3.0,
+          "core_persuasion": 9.0,
+          "dem_targets": 8.7,
+          "dem_gov_drop": 10.7,
+          "dem_consistent": 4.6
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 15.5
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 35.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.7
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.0
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.8
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 8.6
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 12.8
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 5.7
+            }
+          ],
+          "margin": 35.9,
+          "gop_consistent": 15.5,
+          "gop_gov_drop": 35.8,
+          "gop_targets": 11.7,
+          "djt_overperform": 1.0,
+          "issue_targets": 2.8,
+          "core_persuasion": 6.1,
+          "dem_targets": 8.6,
+          "dem_gov_drop": 12.8,
+          "dem_consistent": 5.7
+        }
+      }
     }
   },
   {
@@ -1756,7 +5056,9 @@
       "leg_2022": -25.1,
       "latest_leg": -25.1,
       "gov_2022": -10.9,
-      "pres_2024": -27.7
+      "pres_2024": -27.7,
+      "model_rslc_all": 29.5,
+      "model_rslc_hm": 23.9
     },
     "pres_2024_margin": -27.7,
     "gov_2022_margin": -10.9,
@@ -1769,6 +5071,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 13.2
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 32.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.8
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.2
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 9.3
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.1
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 12.3
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 7.4
+            }
+          ],
+          "margin": 29.5,
+          "gop_consistent": 13.2,
+          "gop_gov_drop": 32.3,
+          "gop_targets": 12.8,
+          "djt_overperform": 1.2,
+          "issue_targets": 2.5,
+          "core_persuasion": 9.3,
+          "dem_targets": 9.1,
+          "dem_gov_drop": 12.3,
+          "dem_consistent": 7.4
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 15.4
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 30.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.4
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.2
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.3
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.3
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.1
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 14.8
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 9.2
+            }
+          ],
+          "margin": 23.9,
+          "gop_consistent": 15.4,
+          "gop_gov_drop": 30.2,
+          "gop_targets": 11.4,
+          "djt_overperform": 1.2,
+          "issue_targets": 2.3,
+          "core_persuasion": 6.3,
+          "dem_targets": 9.1,
+          "dem_gov_drop": 14.8,
+          "dem_consistent": 9.2
+        }
+      }
     }
   },
   {
@@ -1829,7 +5261,9 @@
       "leg_2022": 28.2,
       "latest_leg": 28.2,
       "gov_2022": 31.3,
-      "pres_2024": 18.3
+      "pres_2024": 18.3,
+      "model_rslc_all": -20.2,
+      "model_rslc_hm": -29.4
     },
     "pres_2024_margin": 18.3,
     "gov_2022_margin": 31.3,
@@ -1842,6 +5276,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "John Cherry"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 4.3
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 18.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.6
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.6
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.0
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 16.1
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 19.1
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 18.3
+            }
+          ],
+          "margin": -20.2,
+          "gop_consistent": 4.3,
+          "gop_gov_drop": 18.1,
+          "gop_targets": 10.9,
+          "djt_overperform": 1.6,
+          "issue_targets": 1.6,
+          "core_persuasion": 10.0,
+          "dem_targets": 16.1,
+          "dem_gov_drop": 19.1,
+          "dem_consistent": 18.3
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 5.4
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 16.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 8.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.5
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.3
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.2
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 13.9
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 22.7
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 23.6
+            }
+          ],
+          "margin": -29.4,
+          "gop_consistent": 5.4,
+          "gop_gov_drop": 16.5,
+          "gop_targets": 8.9,
+          "djt_overperform": 1.5,
+          "issue_targets": 1.3,
+          "core_persuasion": 6.2,
+          "dem_targets": 13.9,
+          "dem_gov_drop": 22.7,
+          "dem_consistent": 23.6
+        }
+      }
     }
   },
   {
@@ -1902,7 +5466,9 @@
       "leg_2022": 13.9,
       "latest_leg": 13.9,
       "gov_2022": 20.6,
-      "pres_2024": 9.9
+      "pres_2024": 9.9,
+      "model_rslc_all": -4.9,
+      "model_rslc_hm": -12.8
     },
     "pres_2024_margin": 9.9,
     "gov_2022_margin": 20.6,
@@ -1915,6 +5481,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "Sam Singh"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 8.5
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 22.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.7
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.4
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.9
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 9.4
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.6
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 14.2
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 20.3
+            }
+          ],
+          "margin": -4.9,
+          "gop_consistent": 8.5,
+          "gop_gov_drop": 22.0,
+          "gop_targets": 10.7,
+          "djt_overperform": 1.4,
+          "issue_targets": 1.9,
+          "core_persuasion": 9.4,
+          "dem_targets": 11.6,
+          "dem_gov_drop": 14.2,
+          "dem_consistent": 20.3
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 9.8
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 19.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.3
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.4
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.7
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.4
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.5
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 16.0
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 25.1
+            }
+          ],
+          "margin": -12.8,
+          "gop_consistent": 9.8,
+          "gop_gov_drop": 19.7,
+          "gop_targets": 9.3,
+          "djt_overperform": 1.4,
+          "issue_targets": 1.7,
+          "core_persuasion": 6.4,
+          "dem_targets": 10.5,
+          "dem_gov_drop": 16.0,
+          "dem_consistent": 25.1
+        }
+      }
     }
   },
   {
@@ -1975,7 +5671,9 @@
       "leg_2022": 20.6,
       "latest_leg": 20.6,
       "gov_2022": 30.7,
-      "pres_2024": 26.0
+      "pres_2024": 26.0,
+      "model_rslc_all": -23.9,
+      "model_rslc_hm": -29.6
     },
     "pres_2024_margin": 26.0,
     "gov_2022_margin": 30.7,
@@ -1988,6 +5686,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 6.2
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 14.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.4
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.6
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.2
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.9
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 15.1
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 17.0
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 22.9
+            }
+          ],
+          "margin": -23.9,
+          "gop_consistent": 6.2,
+          "gop_gov_drop": 14.5,
+          "gop_targets": 10.4,
+          "djt_overperform": 1.6,
+          "issue_targets": 1.2,
+          "core_persuasion": 10.9,
+          "dem_targets": 15.1,
+          "dem_gov_drop": 17.0,
+          "dem_consistent": 22.9
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 7.6
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 13.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.4
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.1
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.8
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.2
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 18.6
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 29.2
+            }
+          ],
+          "margin": -29.6,
+          "gop_consistent": 7.6,
+          "gop_gov_drop": 13.4,
+          "gop_targets": 9.4,
+          "djt_overperform": 1.7,
+          "issue_targets": 1.1,
+          "core_persuasion": 6.8,
+          "dem_targets": 12.2,
+          "dem_gov_drop": 18.6,
+          "dem_consistent": 29.2
+        }
+      }
     }
   },
   {
@@ -2048,7 +5876,9 @@
       "leg_2022": -0.4,
       "latest_leg": -0.4,
       "gov_2022": 8.9,
-      "pres_2024": 4.3
+      "pres_2024": 4.3,
+      "model_rslc_all": -6.0,
+      "model_rslc_hm": -9.8
     },
     "pres_2024_margin": 4.3,
     "gov_2022_margin": 8.9,
@@ -2061,6 +5891,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 9.6
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 18.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.6
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.1
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.7
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 9.6
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 13.4
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 13.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 19.4
+            }
+          ],
+          "margin": -6.0,
+          "gop_consistent": 9.6,
+          "gop_gov_drop": 18.1,
+          "gop_targets": 12.6,
+          "djt_overperform": 2.1,
+          "issue_targets": 1.7,
+          "core_persuasion": 9.6,
+          "dem_targets": 13.4,
+          "dem_gov_drop": 13.5,
+          "dem_consistent": 19.4
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 11.4
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 16.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.7
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 2.2
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.4
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.0
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.0
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 14.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 23.1
+            }
+          ],
+          "margin": -9.8,
+          "gop_consistent": 11.4,
+          "gop_gov_drop": 16.7,
+          "gop_targets": 11.7,
+          "djt_overperform": 2.2,
+          "issue_targets": 1.4,
+          "core_persuasion": 7.0,
+          "dem_targets": 12.0,
+          "dem_gov_drop": 14.5,
+          "dem_consistent": 23.1
+        }
+      }
     }
   },
   {
@@ -2121,7 +6081,9 @@
       "leg_2022": -26.4,
       "latest_leg": -26.4,
       "gov_2022": -16.4,
-      "pres_2024": -18.6
+      "pres_2024": -18.6,
+      "model_rslc_all": 24.6,
+      "model_rslc_hm": 23.1
     },
     "pres_2024_margin": -18.6,
     "gov_2022_margin": -16.4,
@@ -2134,6 +6096,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 13.9
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 27.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.2
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.6
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.4
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.3
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.6
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 9.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 10.0
+            }
+          ],
+          "margin": 24.6,
+          "gop_consistent": 13.9,
+          "gop_gov_drop": 27.0,
+          "gop_targets": 14.2,
+          "djt_overperform": 1.6,
+          "issue_targets": 2.4,
+          "core_persuasion": 10.3,
+          "dem_targets": 10.6,
+          "dem_gov_drop": 9.9,
+          "dem_consistent": 10.0
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 16.5
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 26.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.5
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.1
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.9
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.0
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 11.1
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 12.0
+            }
+          ],
+          "margin": 23.1,
+          "gop_consistent": 16.5,
+          "gop_gov_drop": 26.2,
+          "gop_targets": 13.5,
+          "djt_overperform": 1.7,
+          "issue_targets": 2.1,
+          "core_persuasion": 6.9,
+          "dem_targets": 10.0,
+          "dem_gov_drop": 11.1,
+          "dem_consistent": 12.0
+        }
+      }
     }
   },
   {
@@ -2194,7 +6286,9 @@
       "leg_2022": -5.7,
       "latest_leg": -5.7,
       "gov_2022": 3.6,
-      "pres_2024": -6.9
+      "pres_2024": -6.9,
+      "model_rslc_all": 12.2,
+      "model_rslc_hm": 6.8
     },
     "pres_2024_margin": -6.9,
     "gov_2022_margin": 3.6,
@@ -2207,6 +6301,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 11.2
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 25.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.8
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.3
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.6
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.9
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.8
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 8.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 16.2
+            }
+          ],
+          "margin": 12.2,
+          "gop_consistent": 11.2,
+          "gop_gov_drop": 25.7,
+          "gop_targets": 11.8,
+          "djt_overperform": 1.3,
+          "issue_targets": 2.6,
+          "core_persuasion": 10.9,
+          "dem_targets": 11.8,
+          "dem_gov_drop": 8.5,
+          "dem_consistent": 16.2
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 13.6
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 23.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.4
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.2
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.4
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.3
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.1
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 10.0
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 20.0
+            }
+          ],
+          "margin": 6.8,
+          "gop_consistent": 13.6,
+          "gop_gov_drop": 23.9,
+          "gop_targets": 10.4,
+          "djt_overperform": 1.2,
+          "issue_targets": 2.4,
+          "core_persuasion": 7.3,
+          "dem_targets": 11.1,
+          "dem_gov_drop": 10.0,
+          "dem_consistent": 20.0
+        }
+      }
     }
   },
   {
@@ -2267,7 +6491,9 @@
       "leg_2022": -34.6,
       "latest_leg": -34.6,
       "gov_2022": -23.6,
-      "pres_2024": -34.8
+      "pres_2024": -34.8,
+      "model_rslc_all": 38.7,
+      "model_rslc_hm": 35.8
     },
     "pres_2024_margin": -34.8,
     "gov_2022_margin": -23.6,
@@ -2280,6 +6506,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 19.7
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 29.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.3
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.2
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.9
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.3
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 7.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 6.4
+            }
+          ],
+          "margin": 38.7,
+          "gop_consistent": 19.7,
+          "gop_gov_drop": 29.3,
+          "gop_targets": 13.3,
+          "djt_overperform": 1.2,
+          "issue_targets": 2.9,
+          "core_persuasion": 10.1,
+          "dem_targets": 9.3,
+          "dem_gov_drop": 7.9,
+          "dem_consistent": 6.4
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 23.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 27.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.0
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.2
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 6.9
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.4
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 9.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 7.9
+            }
+          ],
+          "margin": 35.8,
+          "gop_consistent": 23.0,
+          "gop_gov_drop": 27.6,
+          "gop_targets": 12.0,
+          "djt_overperform": 1.2,
+          "issue_targets": 2.5,
+          "core_persuasion": 6.9,
+          "dem_targets": 9.4,
+          "dem_gov_drop": 9.5,
+          "dem_consistent": 7.9
+        }
+      }
     }
   },
   {
@@ -2340,7 +6696,9 @@
       "leg_2022": -31.0,
       "latest_leg": -31.0,
       "gov_2022": -16.8,
-      "pres_2024": -31.1
+      "pres_2024": -31.1,
+      "model_rslc_all": 34.6,
+      "model_rslc_hm": 31.3
     },
     "pres_2024_margin": -31.1,
     "gov_2022_margin": -16.8,
@@ -2353,6 +6711,136 @@
     "candidates_2026": {
       "rep": "Roger Hauck",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 17.2
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 27.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.6
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.3
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.8
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 11.1
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.8
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 7.4
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 7.9
+            }
+          ],
+          "margin": 34.6,
+          "gop_consistent": 17.2,
+          "gop_gov_drop": 27.9,
+          "gop_targets": 14.6,
+          "djt_overperform": 1.3,
+          "issue_targets": 2.8,
+          "core_persuasion": 11.1,
+          "dem_targets": 9.8,
+          "dem_gov_drop": 7.4,
+          "dem_consistent": 7.9
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 20.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 26.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.3
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.3
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.5
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.8
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 8.9
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 9.9
+            }
+          ],
+          "margin": 31.3,
+          "gop_consistent": 20.1,
+          "gop_gov_drop": 26.5,
+          "gop_targets": 13.3,
+          "djt_overperform": 1.3,
+          "issue_targets": 2.5,
+          "core_persuasion": 7.5,
+          "dem_targets": 9.8,
+          "dem_gov_drop": 8.9,
+          "dem_consistent": 9.9
+        }
+      }
     }
   },
   {
@@ -2413,7 +6901,9 @@
       "leg_2022": 6.8,
       "latest_leg": 6.8,
       "gov_2022": 12.9,
-      "pres_2024": 0.9
+      "pres_2024": 0.9,
+      "model_rslc_all": -0.4,
+      "model_rslc_hm": -6.9
     },
     "pres_2024_margin": 0.9,
     "gov_2022_margin": 12.9,
@@ -2426,6 +6916,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 9.4
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 20.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.1
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.9
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 11.0
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 13.3
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 12.2
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 17.4
+            }
+          ],
+          "margin": -0.4,
+          "gop_consistent": 9.4,
+          "gop_gov_drop": 20.0,
+          "gop_targets": 13.1,
+          "djt_overperform": 1.7,
+          "issue_targets": 1.9,
+          "core_persuasion": 11.0,
+          "dem_targets": 13.3,
+          "dem_gov_drop": 12.2,
+          "dem_consistent": 17.4
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 11.0
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 18.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.6
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.5
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.8
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.3
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 12.4
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 14.2
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 21.6
+            }
+          ],
+          "margin": -6.9,
+          "gop_consistent": 11.0,
+          "gop_gov_drop": 18.7,
+          "gop_targets": 11.6,
+          "djt_overperform": 1.5,
+          "issue_targets": 1.8,
+          "core_persuasion": 7.3,
+          "dem_targets": 12.4,
+          "dem_gov_drop": 14.2,
+          "dem_consistent": 21.6
+        }
+      }
     }
   },
   {
@@ -2486,7 +7106,9 @@
       "leg_2022": -32.5,
       "latest_leg": -32.5,
       "gov_2022": -22.3,
-      "pres_2024": -36.9
+      "pres_2024": -36.9,
+      "model_rslc_all": 38.8,
+      "model_rslc_hm": 35.9
     },
     "pres_2024_margin": -36.9,
     "gov_2022_margin": -22.3,
@@ -2499,6 +7121,136 @@
     "candidates_2026": {
       "rep": "Michele Hoitenga",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 16.8
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 32.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.3
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.3
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.7
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.2
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 7.0
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 7.1
+            }
+          ],
+          "margin": 38.8,
+          "gop_consistent": 16.8,
+          "gop_gov_drop": 32.0,
+          "gop_targets": 13.3,
+          "djt_overperform": 1.3,
+          "issue_targets": 2.5,
+          "core_persuasion": 10.7,
+          "dem_targets": 9.2,
+          "dem_gov_drop": 7.0,
+          "dem_consistent": 7.1
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 19.8
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 30.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.5
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.3
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.3
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.2
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 9.5
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 8.5
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 8.6
+            }
+          ],
+          "margin": 35.9,
+          "gop_consistent": 19.8,
+          "gop_gov_drop": 30.2,
+          "gop_targets": 12.5,
+          "djt_overperform": 1.3,
+          "issue_targets": 2.3,
+          "core_persuasion": 7.2,
+          "dem_targets": 9.5,
+          "dem_gov_drop": 8.5,
+          "dem_consistent": 8.6
+        }
+      }
     }
   },
   {
@@ -2559,7 +7311,9 @@
       "leg_2022": -12.7,
       "latest_leg": -12.7,
       "gov_2022": -1.2,
-      "pres_2024": -10.8
+      "pres_2024": -10.8,
+      "model_rslc_all": 13.7,
+      "model_rslc_hm": 9.0
     },
     "pres_2024_margin": -10.8,
     "gov_2022_margin": -1.2,
@@ -2572,6 +7326,136 @@
     "candidates_2026": {
       "rep": "John Damoose",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 11.2
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 25.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.2
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.9
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 10.6
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.6
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 9.3
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 16.2
+            }
+          ],
+          "margin": 13.7,
+          "gop_consistent": 11.2,
+          "gop_gov_drop": 25.4,
+          "gop_targets": 13.2,
+          "djt_overperform": 1.7,
+          "issue_targets": 1.9,
+          "core_persuasion": 10.6,
+          "dem_targets": 10.6,
+          "dem_gov_drop": 9.3,
+          "dem_consistent": 16.2
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 13.1
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 23.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.3
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.7
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 1.6
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.2
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 10.5
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 10.7
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 19.0
+            }
+          ],
+          "margin": 9.0,
+          "gop_consistent": 13.1,
+          "gop_gov_drop": 23.8,
+          "gop_targets": 12.3,
+          "djt_overperform": 1.7,
+          "issue_targets": 1.6,
+          "core_persuasion": 7.2,
+          "dem_targets": 10.5,
+          "dem_gov_drop": 10.7,
+          "dem_consistent": 19.0
+        }
+      }
     }
   },
   {
@@ -2632,7 +7516,9 @@
       "leg_2022": -25.7,
       "latest_leg": -25.7,
       "gov_2022": -7.2,
-      "pres_2024": -18.6
+      "pres_2024": -18.6,
+      "model_rslc_all": 22.3,
+      "model_rslc_hm": 17.6
     },
     "pres_2024_margin": -18.6,
     "gov_2022_margin": -7.2,
@@ -2645,6 +7531,136 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rslc_all": {
+        "label": "RSLC (All)",
+        "family": "RSLC",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 7.5
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 31.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.3
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.5
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 12.4
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.5
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 13.8
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 5.4
+            }
+          ],
+          "margin": 22.3,
+          "gop_consistent": 7.5,
+          "gop_gov_drop": 31.6,
+          "gop_targets": 13.9,
+          "djt_overperform": 1.3,
+          "issue_targets": 2.5,
+          "core_persuasion": 12.4,
+          "dem_targets": 11.5,
+          "dem_gov_drop": 13.8,
+          "dem_consistent": 5.4
+        }
+      },
+      "model_rslc_hm": {
+        "label": "RSLC (H+M)",
+        "family": "RSLC",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "gop_consistent",
+              "label": "GOP Consistent",
+              "value": 9.2
+            },
+            {
+              "key": "gop_gov_drop",
+              "label": "GOP Gov Drop",
+              "value": 30.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.9
+            },
+            {
+              "key": "djt_overperform",
+              "label": "DJT Overperform",
+              "value": 1.3
+            },
+            {
+              "key": "issue_targets",
+              "label": "Issue Targets",
+              "value": 2.4
+            },
+            {
+              "key": "core_persuasion",
+              "label": "Core Persuasion",
+              "value": 7.9
+            },
+            {
+              "key": "dem_targets",
+              "label": "Dem Targets",
+              "value": 11.5
+            },
+            {
+              "key": "dem_gov_drop",
+              "label": "Dem Gov Drop",
+              "value": 17.0
+            },
+            {
+              "key": "dem_consistent",
+              "label": "Dem Consistent",
+              "value": 6.8
+            }
+          ],
+          "margin": 17.6,
+          "gop_consistent": 9.2,
+          "gop_gov_drop": 30.8,
+          "gop_targets": 12.9,
+          "djt_overperform": 1.3,
+          "issue_targets": 2.4,
+          "core_persuasion": 7.9,
+          "dem_targets": 11.5,
+          "dem_gov_drop": 17.0,
+          "dem_consistent": 6.8
+        }
+      }
     }
   }
 ]

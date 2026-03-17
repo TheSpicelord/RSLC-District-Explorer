@@ -80,12 +80,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 9.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.7
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 11.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 70.9
+            }
+          ],
+          "margin": 62.7,
           "gop_base": 9.1,
           "gop_target": 3.7,
           "swing": 11.7,
           "dem_likely": 4.6,
-          "dem_base": 70.9,
-          "margin": 62.7
+          "dem_base": 70.9
         },
         "education": {
           "non_college": 16.2,
@@ -97,12 +124,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 8.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 2.0
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 79.8
+            }
+          ],
+          "margin": 72.7,
           "gop_base": 8.2,
           "gop_target": 2.0,
           "swing": 6.8,
           "dem_likely": 3.1,
-          "dem_base": 79.8,
-          "margin": 72.7
+          "dem_base": 79.8
         },
         "education": {
           "non_college": 13.9,
@@ -192,12 +246,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 17.3
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.8
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 11.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 61.4
+            }
+          ],
+          "margin": 40.0,
           "gop_base": 17.3,
           "gop_target": 6.8,
           "swing": 11.8,
           "dem_likely": 2.7,
-          "dem_base": 61.4,
-          "margin": 40.0
+          "dem_base": 61.4
         },
         "education": {
           "non_college": 84.4,
@@ -209,12 +290,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 16.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 2.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 71.2
+            }
+          ],
+          "margin": 54.6,
           "gop_base": 16.2,
           "gop_target": 2.6,
           "swing": 7.8,
           "dem_likely": 2.2,
-          "dem_base": 71.2,
-          "margin": 54.6
+          "dem_base": 71.2
         },
         "education": {
           "non_college": 79.6,
@@ -304,12 +412,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 6.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.7
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 81.6
+            }
+          ],
+          "margin": 74.4,
           "gop_base": 6.4,
           "gop_target": 3.7,
           "swing": 5.4,
           "dem_likely": 2.9,
-          "dem_base": 81.6,
-          "margin": 74.4
+          "dem_base": 81.6
         },
         "education": {
           "non_college": 70.3,
@@ -321,12 +456,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 4.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 1.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 2.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 1.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 90.5
+            }
+          ],
+          "margin": 87.3,
           "gop_base": 4.0,
           "gop_target": 1.1,
           "swing": 2.5,
           "dem_likely": 1.9,
-          "dem_base": 90.5,
-          "margin": 87.3
+          "dem_base": 90.5
         },
         "education": {
           "non_college": 61.4,
@@ -416,12 +578,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 11.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 2.8
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 79.5
+            }
+          ],
+          "margin": 68.7,
           "gop_base": 11.1,
           "gop_target": 2.8,
           "swing": 3.5,
           "dem_likely": 3.1,
-          "dem_base": 79.5,
-          "margin": 68.7
+          "dem_base": 79.5
         },
         "education": {
           "non_college": 34.1,
@@ -433,12 +622,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 11.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 2.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 2.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 82.3
+            }
+          ],
+          "margin": 71.0,
           "gop_base": 11.1,
           "gop_target": 2.2,
           "swing": 2.4,
           "dem_likely": 2.0,
-          "dem_base": 82.3,
-          "margin": 71.0
+          "dem_base": 82.3
         },
         "education": {
           "non_college": 25.9,
@@ -528,12 +744,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 32.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.4
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 15.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 1.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 45.6
+            }
+          ],
+          "margin": 9.6,
           "gop_base": 32.1,
           "gop_target": 5.4,
           "swing": 15.4,
           "dem_likely": 1.5,
-          "dem_base": 45.6,
-          "margin": 9.6
+          "dem_base": 45.6
         },
         "education": {
           "non_college": 67.3,
@@ -545,12 +788,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 32.6
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 10.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 1.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 52.2
+            }
+          ],
+          "margin": 17.6,
           "gop_base": 32.6,
           "gop_target": 3.2,
           "swing": 10.7,
           "dem_likely": 1.2,
-          "dem_base": 52.2,
-          "margin": 17.6
+          "dem_base": 52.2
         },
         "education": {
           "non_college": 62.7,
@@ -640,12 +910,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 39.8
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 43.2
+            }
+          ],
+          "margin": 0.1,
           "gop_base": 39.8,
           "gop_target": 6.9,
           "swing": 6.7,
           "dem_likely": 3.6,
-          "dem_base": 43.2,
-          "margin": 0.1
+          "dem_base": 43.2
         },
         "education": {
           "non_college": 37.7,
@@ -657,12 +954,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 41.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 7.0
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 44.8
+            }
+          ],
+          "margin": -1.1,
           "gop_base": 41.2,
           "gop_target": 7.0,
           "swing": 4.8,
           "dem_likely": 2.3,
-          "dem_base": 44.8,
-          "margin": -1.1
+          "dem_base": 44.8
         },
         "education": {
           "non_college": 32.1,
@@ -752,12 +1076,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 8.6
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 79.8
+            }
+          ],
+          "margin": 70.8,
           "gop_base": 8.6,
           "gop_target": 3.2,
           "swing": 5.7,
           "dem_likely": 2.8,
-          "dem_base": 79.8,
-          "margin": 70.8
+          "dem_base": 79.8
         },
         "education": {
           "non_college": 39.1,
@@ -769,12 +1120,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 8.5
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 1.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 1.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 84.7
+            }
+          ],
+          "margin": 76.0,
           "gop_base": 8.5,
           "gop_target": 1.9,
           "swing": 3.1,
           "dem_likely": 1.7,
-          "dem_base": 84.7,
-          "margin": 76.0
+          "dem_base": 84.7
         },
         "education": {
           "non_college": 31.1,
@@ -864,12 +1242,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 10.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 2.3
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 78.4
+            }
+          ],
+          "margin": 68.1,
           "gop_base": 10.4,
           "gop_target": 2.3,
           "swing": 6.5,
           "dem_likely": 2.4,
-          "dem_base": 78.4,
-          "margin": 68.1
+          "dem_base": 78.4
         },
         "education": {
           "non_college": 62.1,
@@ -881,12 +1286,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 10.3
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 1.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 1.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 83.9
+            }
+          ],
+          "margin": 73.9,
           "gop_base": 10.3,
           "gop_target": 1.1,
           "swing": 3.3,
           "dem_likely": 1.4,
-          "dem_base": 83.9,
-          "margin": 73.9
+          "dem_base": 83.9
         },
         "education": {
           "non_college": 56.1,
@@ -976,12 +1408,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 33.3
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 50.7
+            }
+          ],
+          "margin": 16.2,
           "gop_base": 33.3,
           "gop_target": 5.5,
           "swing": 6.2,
           "dem_likely": 4.3,
-          "dem_base": 50.7,
-          "margin": 16.2
+          "dem_base": 50.7
         },
         "education": {
           "non_college": 34.2,
@@ -993,12 +1452,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 35.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 49.7
+            }
+          ],
+          "margin": 12.0,
           "gop_base": 35.2,
           "gop_target": 5.5,
           "swing": 6.5,
           "dem_likely": 3.0,
-          "dem_base": 49.7,
-          "margin": 12.0
+          "dem_base": 49.7
         },
         "education": {
           "non_college": 27.3,
@@ -1088,12 +1574,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 31.6
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.7
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 9.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 48.8
+            }
+          ],
+          "margin": 14.4,
           "gop_base": 31.6,
           "gop_target": 6.7,
           "swing": 9.0,
           "dem_likely": 3.9,
-          "dem_base": 48.8,
-          "margin": 14.4
+          "dem_base": 48.8
         },
         "education": {
           "non_college": 32.8,
@@ -1105,12 +1618,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 32.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 51.1
+            }
+          ],
+          "margin": 15.4,
           "gop_base": 32.1,
           "gop_target": 6.5,
           "swing": 7.5,
           "dem_likely": 2.9,
-          "dem_base": 51.1,
-          "margin": 15.4
+          "dem_base": 51.1
         },
         "education": {
           "non_college": 27.0,
@@ -1200,12 +1740,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 35.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.7
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 47.9
+            }
+          ],
+          "margin": 12.0,
           "gop_base": 35.4,
           "gop_target": 4.7,
           "swing": 7.8,
           "dem_likely": 4.2,
-          "dem_base": 47.9,
-          "margin": 12.0
+          "dem_base": 47.9
         },
         "education": {
           "non_college": 73.5,
@@ -1217,12 +1784,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 39.7
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 49.0
+            }
+          ],
+          "margin": 7.5,
           "gop_base": 39.7,
           "gop_target": 4.1,
           "swing": 4.9,
           "dem_likely": 2.3,
-          "dem_base": 49.0,
-          "margin": 7.5
+          "dem_base": 49.0
         },
         "education": {
           "non_college": 66.8,
@@ -1312,12 +1906,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 31.9
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 51.3
+            }
+          ],
+          "margin": 17.8,
           "gop_base": 31.9,
           "gop_target": 6.1,
           "swing": 6.3,
           "dem_likely": 4.5,
-          "dem_base": 51.3,
-          "margin": 17.8
+          "dem_base": 51.3
         },
         "education": {
           "non_college": 20.9,
@@ -1329,12 +1950,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 32.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 53.1
+            }
+          ],
+          "margin": 17.5,
           "gop_base": 32.4,
           "gop_target": 6.2,
           "swing": 5.4,
           "dem_likely": 3.0,
-          "dem_base": 53.1,
-          "margin": 17.5
+          "dem_base": 53.1
         },
         "education": {
           "non_college": 16.5,
@@ -1424,12 +2072,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 45.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.8
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 5.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 37.4
+            }
+          ],
+          "margin": -8.7,
           "gop_base": 45.4,
           "gop_target": 5.8,
           "swing": 6.4,
           "dem_likely": 5.1,
-          "dem_base": 37.4,
-          "margin": -8.7
+          "dem_base": 37.4
         },
         "education": {
           "non_college": 71.7,
@@ -1441,12 +2116,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 49.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 37.3
+            }
+          ],
+          "margin": -15.4,
           "gop_base": 49.1,
           "gop_target": 5.9,
           "swing": 5.4,
           "dem_likely": 2.3,
-          "dem_base": 37.3,
-          "margin": -15.4
+          "dem_base": 37.3
         },
         "education": {
           "non_college": 66.8,
@@ -1536,12 +2238,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 35.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 48.1
+            }
+          ],
+          "margin": 10.3,
           "gop_base": 35.0,
           "gop_target": 6.2,
           "swing": 7.3,
           "dem_likely": 3.4,
-          "dem_base": 48.1,
-          "margin": 10.3
+          "dem_base": 48.1
         },
         "education": {
           "non_college": 73.0,
@@ -1553,12 +2282,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 38.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 50.0
+            }
+          ],
+          "margin": 8.5,
           "gop_base": 38.0,
           "gop_target": 5.6,
           "swing": 4.2,
           "dem_likely": 2.1,
-          "dem_base": 50.0,
-          "margin": 8.5
+          "dem_base": 50.0
         },
         "education": {
           "non_college": 66.6,
@@ -1648,12 +2404,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 34.3
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.0
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 51.5
+            }
+          ],
+          "margin": 17.9,
           "gop_base": 34.3,
           "gop_target": 4.0,
           "swing": 5.5,
           "dem_likely": 4.7,
-          "dem_base": 51.5,
-          "margin": 17.9
+          "dem_base": 51.5
         },
         "education": {
           "non_college": 59.8,
@@ -1665,12 +2448,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 39.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 50.9
+            }
+          ],
+          "margin": 10.7,
           "gop_base": 39.0,
           "gop_target": 3.5,
           "swing": 4.3,
           "dem_likely": 2.3,
-          "dem_base": 50.9,
-          "margin": 10.7
+          "dem_base": 50.9
         },
         "education": {
           "non_college": 53.0,
@@ -1760,12 +2570,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 43.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 7.0
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 38.4
+            }
+          ],
+          "margin": -6.9,
           "gop_base": 43.0,
           "gop_target": 7.0,
           "swing": 7.0,
           "dem_likely": 4.7,
-          "dem_base": 38.4,
-          "margin": -6.9
+          "dem_base": 38.4
         },
         "education": {
           "non_college": 39.4,
@@ -1777,12 +2614,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 44.6
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 7.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 39.9
+            }
+          ],
+          "margin": -9.1,
           "gop_base": 44.6,
           "gop_target": 7.2,
           "swing": 5.5,
           "dem_likely": 2.8,
-          "dem_base": 39.9,
-          "margin": -9.1
+          "dem_base": 39.9
         },
         "education": {
           "non_college": 33.6,
@@ -1872,12 +2736,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 21.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.4
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 5.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 63.2
+            }
+          ],
+          "margin": 41.7,
           "gop_base": 21.1,
           "gop_target": 5.4,
           "swing": 5.3,
           "dem_likely": 5.0,
-          "dem_base": 63.2,
-          "margin": 41.7
+          "dem_base": 63.2
         },
         "education": {
           "non_college": 16.7,
@@ -1889,12 +2780,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 21.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.4
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 65.0
+            }
+          ],
+          "margin": 41.9,
           "gop_base": 21.1,
           "gop_target": 5.4,
           "swing": 5.2,
           "dem_likely": 3.4,
-          "dem_base": 65.0,
-          "margin": 41.9
+          "dem_base": 65.0
         },
         "education": {
           "non_college": 12.7,
@@ -1984,12 +2902,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 33.8
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.8
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 47.7
+            }
+          ],
+          "margin": 11.4,
           "gop_base": 33.8,
           "gop_target": 6.8,
           "swing": 7.5,
           "dem_likely": 4.3,
-          "dem_base": 47.7,
-          "margin": 11.4
+          "dem_base": 47.7
         },
         "education": {
           "non_college": 60.5,
@@ -2001,12 +2946,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 35.5
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 50.3
+            }
+          ],
+          "margin": 10.8,
           "gop_base": 35.5,
           "gop_target": 6.5,
           "swing": 5.1,
           "dem_likely": 2.5,
-          "dem_base": 50.3,
-          "margin": 10.8
+          "dem_base": 50.3
         },
         "education": {
           "non_college": 54.4,
@@ -2096,12 +3068,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 31.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 50.9
+            }
+          ],
+          "margin": 17.7,
           "gop_base": 31.1,
           "gop_target": 6.5,
           "swing": 7.1,
           "dem_likely": 4.4,
-          "dem_base": 50.9,
-          "margin": 17.7
+          "dem_base": 50.9
         },
         "education": {
           "non_college": 20.8,
@@ -2113,12 +3112,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 32.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 51.1
+            }
+          ],
+          "margin": 15.6,
           "gop_base": 32.2,
           "gop_target": 6.5,
           "swing": 7.0,
           "dem_likely": 3.2,
-          "dem_base": 51.1,
-          "margin": 15.6
+          "dem_base": 51.1
         },
         "education": {
           "non_college": 16.3,
@@ -2208,12 +3234,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 53.5
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 31.6
+            }
+          ],
+          "margin": -24.5,
           "gop_base": 53.5,
           "gop_target": 6.1,
           "swing": 5.3,
           "dem_likely": 3.5,
-          "dem_base": 31.6,
-          "margin": -24.5
+          "dem_base": 31.6
         },
         "education": {
           "non_college": 83.4,
@@ -2225,12 +3278,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 56.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 33.3
+            }
+          ],
+          "margin": -24.9,
           "gop_base": 56.0,
           "gop_target": 4.5,
           "swing": 4.0,
           "dem_likely": 2.3,
-          "dem_base": 33.3,
-          "margin": -24.9
+          "dem_base": 33.3
         },
         "education": {
           "non_college": 82.1,
@@ -2320,12 +3400,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 63.9
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 23.7
+            }
+          ],
+          "margin": -40.7,
           "gop_base": 63.9,
           "gop_target": 4.1,
           "swing": 4.6,
           "dem_likely": 3.6,
-          "dem_base": 23.7,
-          "margin": -40.7
+          "dem_base": 23.7
         },
         "education": {
           "non_college": 90.3,
@@ -2337,12 +3444,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 66.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 24.5
+            }
+          ],
+          "margin": -42.2,
           "gop_base": 66.4,
           "gop_target": 3.1,
           "swing": 3.1,
           "dem_likely": 2.8,
-          "dem_base": 24.5,
-          "margin": -42.2
+          "dem_base": 24.5
         },
         "education": {
           "non_college": 89.7,
@@ -2432,12 +3566,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 34.5
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 49.0
+            }
+          ],
+          "margin": 11.0,
           "gop_base": 34.5,
           "gop_target": 6.5,
           "swing": 7.0,
           "dem_likely": 3.0,
-          "dem_base": 49.0,
-          "margin": 11.0
+          "dem_base": 49.0
         },
         "education": {
           "non_college": 76.8,
@@ -2449,12 +3610,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 34.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 53.9
+            }
+          ],
+          "margin": 17.7,
           "gop_base": 34.0,
           "gop_target": 4.6,
           "swing": 5.0,
           "dem_likely": 2.4,
-          "dem_base": 53.9,
-          "margin": 17.7
+          "dem_base": 53.9
         },
         "education": {
           "non_college": 74.0,
@@ -2544,12 +3732,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 64.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 23.5
+            }
+          ],
+          "margin": -40.9,
           "gop_base": 64.0,
           "gop_target": 4.1,
           "swing": 4.7,
           "dem_likely": 3.7,
-          "dem_base": 23.5,
-          "margin": -40.9
+          "dem_base": 23.5
         },
         "education": {
           "non_college": 87.3,
@@ -2561,12 +3776,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 68.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 2.8
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 23.5
+            }
+          ],
+          "margin": -45.3,
           "gop_base": 68.1,
           "gop_target": 2.8,
           "swing": 3.5,
           "dem_likely": 2.1,
-          "dem_base": 23.5,
-          "margin": -45.3
+          "dem_base": 23.5
         },
         "education": {
           "non_college": 86.9,
@@ -2656,12 +3898,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 42.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 43.0
+            }
+          ],
+          "margin": -0.5,
           "gop_base": 42.0,
           "gop_target": 5.6,
           "swing": 5.2,
           "dem_likely": 4.1,
-          "dem_base": 43.0,
-          "margin": -0.5
+          "dem_base": 43.0
         },
         "education": {
           "non_college": 43.8,
@@ -2673,12 +3942,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 43.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 44.3
+            }
+          ],
+          "margin": -2.1,
           "gop_base": 43.2,
           "gop_target": 5.6,
           "swing": 4.6,
           "dem_likely": 2.4,
-          "dem_base": 44.3,
-          "margin": -2.1
+          "dem_base": 44.3
         },
         "education": {
           "non_college": 38.3,
@@ -2768,12 +4064,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 55.6
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 29.9
+            }
+          ],
+          "margin": -25.7,
           "gop_base": 55.6,
           "gop_target": 4.6,
           "swing": 5.2,
           "dem_likely": 4.6,
-          "dem_base": 29.9,
-          "margin": -25.7
+          "dem_base": 29.9
         },
         "education": {
           "non_college": 76.2,
@@ -2785,12 +4108,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 59.5
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 30.1
+            }
+          ],
+          "margin": -29.8,
           "gop_base": 59.5,
           "gop_target": 3.6,
           "swing": 3.6,
           "dem_likely": 3.2,
-          "dem_base": 30.1,
-          "margin": -29.8
+          "dem_base": 30.1
         },
         "education": {
           "non_college": 78.4,
@@ -2880,12 +4230,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 33.5
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.8
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 54.2
+            }
+          ],
+          "margin": 20.4,
           "gop_base": 33.5,
           "gop_target": 3.8,
           "swing": 5.0,
           "dem_likely": 3.5,
-          "dem_base": 54.2,
-          "margin": 20.4
+          "dem_base": 54.2
         },
         "education": {
           "non_college": 42.4,
@@ -2897,12 +4274,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 35.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 54.4
+            }
+          ],
+          "margin": 17.7,
           "gop_base": 35.4,
           "gop_target": 3.6,
           "swing": 4.3,
           "dem_likely": 2.3,
-          "dem_base": 54.4,
-          "margin": 17.7
+          "dem_base": 54.4
         },
         "education": {
           "non_college": 36.5,
@@ -2992,12 +4396,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 59.6
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.4
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.5
+            }
+          ],
+          "margin": -33.0,
           "gop_base": 59.6,
           "gop_target": 4.4,
           "swing": 5.0,
           "dem_likely": 3.5,
-          "dem_base": 27.5,
-          "margin": -33.0
+          "dem_base": 27.5
         },
         "education": {
           "non_college": 85.7,
@@ -3009,12 +4440,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 63.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.3
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 28.1
+            }
+          ],
+          "margin": -36.0,
           "gop_base": 63.1,
           "gop_target": 3.3,
           "swing": 3.3,
           "dem_likely": 2.3,
-          "dem_base": 28.1,
-          "margin": -36.0
+          "dem_base": 28.1
         },
         "education": {
           "non_college": 84.5,
@@ -3104,12 +4562,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 55.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 29.3
+            }
+          ],
+          "margin": -26.5,
           "gop_base": 55.2,
           "gop_target": 5.2,
           "swing": 5.7,
           "dem_likely": 4.6,
-          "dem_base": 29.3,
-          "margin": -26.5
+          "dem_base": 29.3
         },
         "education": {
           "non_college": 77.0,
@@ -3121,12 +4606,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 58.9
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.3
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 30.1
+            }
+          ],
+          "margin": -30.9,
           "gop_base": 58.9,
           "gop_target": 4.3,
           "swing": 4.6,
           "dem_likely": 2.2,
-          "dem_base": 30.1,
-          "margin": -30.9
+          "dem_base": 30.1
         },
         "education": {
           "non_college": 73.6,
@@ -3216,12 +4728,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 57.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.5
+            }
+          ],
+          "margin": -31.8,
           "gop_base": 57.1,
           "gop_target": 6.2,
           "swing": 5.2,
           "dem_likely": 4.0,
-          "dem_base": 27.5,
-          "margin": -31.8
+          "dem_base": 27.5
         },
         "education": {
           "non_college": 91.7,
@@ -3233,12 +4772,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 61.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.9
+            }
+          ],
+          "margin": -33.5,
           "gop_base": 61.1,
           "gop_target": 4.1,
           "swing": 3.1,
           "dem_likely": 3.8,
-          "dem_base": 27.9,
-          "margin": -33.5
+          "dem_base": 27.9
         },
         "education": {
           "non_college": 91.2,
@@ -3328,12 +4894,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 68.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 21.1
+            }
+          ],
+          "margin": -47.3,
           "gop_base": 68.0,
           "gop_target": 3.5,
           "swing": 4.3,
           "dem_likely": 3.1,
-          "dem_base": 21.1,
-          "margin": -47.3
+          "dem_base": 21.1
         },
         "education": {
           "non_college": 92.4,
@@ -3345,12 +4938,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 71.8
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 2.4
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 2.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 20.8
+            }
+          ],
+          "margin": -51.2,
           "gop_base": 71.8,
           "gop_target": 2.4,
           "swing": 2.8,
           "dem_likely": 2.2,
-          "dem_base": 20.8,
-          "margin": -51.2
+          "dem_base": 20.8
         },
         "education": {
           "non_college": 92.4,
@@ -3440,12 +5060,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 46.6
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.3
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 5.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 36.9
+            }
+          ],
+          "margin": -8.8,
           "gop_base": 46.6,
           "gop_target": 4.3,
           "swing": 7.1,
           "dem_likely": 5.2,
-          "dem_base": 36.9,
-          "margin": -8.8
+          "dem_base": 36.9
         },
         "education": {
           "non_college": 72.0,
@@ -3457,12 +5104,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 51.9
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.7
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 36.5
+            }
+          ],
+          "margin": -16.8,
           "gop_base": 51.9,
           "gop_target": 3.7,
           "swing": 5.7,
           "dem_likely": 2.3,
-          "dem_base": 36.5,
-          "margin": -16.8
+          "dem_base": 36.5
         },
         "education": {
           "non_college": 66.0,
@@ -3552,12 +5226,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 64.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 22.4
+            }
+          ],
+          "margin": -43.8,
           "gop_base": 64.2,
           "gop_target": 5.2,
           "swing": 4.9,
           "dem_likely": 3.2,
-          "dem_base": 22.4,
-          "margin": -43.8
+          "dem_base": 22.4
         },
         "education": {
           "non_college": 93.3,
@@ -3569,12 +5270,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 65.9
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 24.1
+            }
+          ],
+          "margin": -41.7,
           "gop_base": 65.9,
           "gop_target": 3.1,
           "swing": 3.8,
           "dem_likely": 3.2,
-          "dem_base": 24.1,
-          "margin": -41.7
+          "dem_base": 24.1
         },
         "education": {
           "non_college": 93.8,
@@ -3664,12 +5392,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 60.7
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 23.8
+            }
+          ],
+          "margin": -38.4,
           "gop_base": 60.7,
           "gop_target": 5.5,
           "swing": 6.0,
           "dem_likely": 4.0,
-          "dem_base": 23.8,
-          "margin": -38.4
+          "dem_base": 23.8
         },
         "education": {
           "non_college": 86.0,
@@ -3681,12 +5436,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 64.5
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.3
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 1.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 24.7
+            }
+          ],
+          "margin": -42.2,
           "gop_base": 64.5,
           "gop_target": 4.3,
           "swing": 4.6,
           "dem_likely": 1.9,
-          "dem_base": 24.7,
-          "margin": -42.2
+          "dem_base": 24.7
         },
         "education": {
           "non_college": 84.8,
@@ -3776,12 +5558,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 52.7
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.3
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 31.5
+            }
+          ],
+          "margin": -21.9,
           "gop_base": 52.7,
           "gop_target": 5.3,
           "swing": 5.9,
           "dem_likely": 4.6,
-          "dem_base": 31.5,
-          "margin": -21.9
+          "dem_base": 31.5
         },
         "education": {
           "non_college": 65.0,
@@ -3793,12 +5602,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 55.9
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.7
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 32.1
+            }
+          ],
+          "margin": -26.2,
           "gop_base": 55.9,
           "gop_target": 4.7,
           "swing": 5.0,
           "dem_likely": 2.3,
-          "dem_base": 32.1,
-          "margin": -26.2
+          "dem_base": 32.1
         },
         "education": {
           "non_college": 61.2,
@@ -3888,12 +5724,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 54.9
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.3
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 29.3
+            }
+          ],
+          "margin": -27.0,
           "gop_base": 54.9,
           "gop_target": 5.3,
           "swing": 6.5,
           "dem_likely": 3.9,
-          "dem_base": 29.3,
-          "margin": -27.0
+          "dem_base": 29.3
         },
         "education": {
           "non_college": 80.7,
@@ -3905,12 +5768,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 56.8
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 30.6
+            }
+          ],
+          "margin": -26.6,
           "gop_base": 56.8,
           "gop_target": 3.9,
           "swing": 5.2,
           "dem_likely": 3.5,
-          "dem_base": 30.6,
-          "margin": -26.6
+          "dem_base": 30.6
         },
         "education": {
           "non_college": 80.8,
@@ -4000,12 +5890,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 49.7
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.8
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 33.0
+            }
+          ],
+          "margin": -16.7,
           "gop_base": 49.7,
           "gop_target": 4.8,
           "swing": 7.7,
           "dem_likely": 4.8,
-          "dem_base": 33.0,
-          "margin": -16.7
+          "dem_base": 33.0
         },
         "education": {
           "non_college": 61.6,
@@ -4017,12 +5934,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 52.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.4
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 33.8
+            }
+          ],
+          "margin": -20.4,
           "gop_base": 52.2,
           "gop_target": 4.4,
           "swing": 7.2,
           "dem_likely": 2.4,
-          "dem_base": 33.8,
-          "margin": -20.4
+          "dem_base": 33.8
         },
         "education": {
           "non_college": 56.8,
@@ -4112,12 +6056,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 38.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.1
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 8.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 43.7
+            }
+          ],
+          "margin": 2.9,
           "gop_base": 38.2,
           "gop_target": 6.1,
           "swing": 8.4,
           "dem_likely": 3.5,
-          "dem_base": 43.7,
-          "margin": 2.9
+          "dem_base": 43.7
         },
         "education": {
           "non_college": 29.5,
@@ -4129,12 +6100,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 38.3
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 46.6
+            }
+          ],
+          "margin": 5.0,
           "gop_base": 38.3,
           "gop_target": 5.9,
           "swing": 6.5,
           "dem_likely": 2.6,
-          "dem_base": 46.6,
-          "margin": 5.0
+          "dem_base": 46.6
         },
         "education": {
           "non_college": 26.3,
@@ -4224,12 +6222,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 33.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 50.6
+            }
+          ],
+          "margin": 15.1,
           "gop_base": 33.4,
           "gop_target": 5.5,
           "swing": 7.1,
           "dem_likely": 3.4,
-          "dem_base": 50.6,
-          "margin": 15.1
+          "dem_base": 50.6
         },
         "education": {
           "non_college": 36.9,
@@ -4241,12 +6266,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 33.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.3
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 53.0
+            }
+          ],
+          "margin": 16.9,
           "gop_base": 33.4,
           "gop_target": 5.3,
           "swing": 5.7,
           "dem_likely": 2.6,
-          "dem_base": 53.0,
-          "margin": 16.9
+          "dem_base": 53.0
         },
         "education": {
           "non_college": 33.0,
@@ -4336,12 +6388,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 54.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 32.4
+            }
+          ],
+          "margin": -24.0,
           "gop_base": 54.1,
           "gop_target": 5.2,
           "swing": 5.4,
           "dem_likely": 2.9,
-          "dem_base": 32.4,
-          "margin": -24.0
+          "dem_base": 32.4
         },
         "education": {
           "non_college": 70.9,
@@ -4353,12 +6432,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 54.9
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 34.7
+            }
+          ],
+          "margin": -22.1,
           "gop_base": 54.9,
           "gop_target": 4.2,
           "swing": 3.8,
           "dem_likely": 2.3,
-          "dem_base": 34.7,
-          "margin": -22.1
+          "dem_base": 34.7
         },
         "education": {
           "non_college": 68.8,
@@ -4448,12 +6554,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 41.9
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.7
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 41.0
+            }
+          ],
+          "margin": -4.0,
           "gop_base": 41.9,
           "gop_target": 6.7,
           "swing": 6.9,
           "dem_likely": 3.6,
-          "dem_base": 41.0,
-          "margin": -4.0
+          "dem_base": 41.0
         },
         "education": {
           "non_college": 80.9,
@@ -4465,12 +6598,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 43.5
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 1.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 44.1
+            }
+          ],
+          "margin": -2.4,
           "gop_base": 43.5,
           "gop_target": 4.9,
           "swing": 5.6,
           "dem_likely": 1.9,
-          "dem_base": 44.1,
-          "margin": -2.4
+          "dem_base": 44.1
         },
         "education": {
           "non_college": 79.1,
@@ -4560,12 +6720,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 60.8
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 25.7
+            }
+          ],
+          "margin": -36.0,
           "gop_base": 60.8,
           "gop_target": 4.9,
           "swing": 4.7,
           "dem_likely": 4.0,
-          "dem_base": 25.7,
-          "margin": -36.0
+          "dem_base": 25.7
         },
         "education": {
           "non_college": 90.3,
@@ -4577,12 +6764,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 62.5
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.4
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.2
+            }
+          ],
+          "margin": -34.9,
           "gop_base": 62.5,
           "gop_target": 3.4,
           "swing": 3.1,
           "dem_likely": 3.8,
-          "dem_base": 27.2,
-          "margin": -34.9
+          "dem_base": 27.2
         },
         "education": {
           "non_college": 90.6,
@@ -4672,12 +6886,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 21.5
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 62.9
+            }
+          ],
+          "margin": 39.9,
           "gop_base": 21.5,
           "gop_target": 4.6,
           "swing": 7.9,
           "dem_likely": 3.1,
-          "dem_base": 62.9,
-          "margin": 39.9
+          "dem_base": 62.9
         },
         "education": {
           "non_college": 49.7,
@@ -4689,12 +6930,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 21.1
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 67.3
+            }
+          ],
+          "margin": 44.8,
           "gop_base": 21.1,
           "gop_target": 3.6,
           "swing": 5.7,
           "dem_likely": 2.2,
-          "dem_base": 67.3,
-          "margin": 44.8
+          "dem_base": 67.3
         },
         "education": {
           "non_college": 45.2,
@@ -4784,12 +7052,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 13.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.7
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 73.1
+            }
+          ],
+          "margin": 59.5,
           "gop_base": 13.2,
           "gop_target": 3.7,
           "swing": 6.8,
           "dem_likely": 3.3,
-          "dem_base": 73.1,
-          "margin": 59.5
+          "dem_base": 73.1
         },
         "education": {
           "non_college": 46.9,
@@ -4801,12 +7096,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 12.6
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 2.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 77.6
+            }
+          ],
+          "margin": 64.5,
           "gop_base": 12.6,
           "gop_target": 2.9,
           "swing": 4.4,
           "dem_likely": 2.4,
-          "dem_base": 77.6,
-          "margin": 64.5
+          "dem_base": 77.6
         },
         "education": {
           "non_college": 43.7,
@@ -4896,12 +7218,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 35.3
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.8
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 47.5
+            }
+          ],
+          "margin": 11.1,
           "gop_base": 35.3,
           "gop_target": 5.8,
           "swing": 6.7,
           "dem_likely": 4.7,
-          "dem_base": 47.5,
-          "margin": 11.1
+          "dem_base": 47.5
         },
         "education": {
           "non_college": 24.5,
@@ -4913,12 +7262,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 35.6
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.7
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 49.1
+            }
+          ],
+          "margin": 11.0,
           "gop_base": 35.6,
           "gop_target": 5.7,
           "swing": 6.4,
           "dem_likely": 3.2,
-          "dem_base": 49.1,
-          "margin": 11.0
+          "dem_base": 49.1
         },
         "education": {
           "non_college": 20.1,
@@ -5008,12 +7384,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 32.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 7.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 51.8
+            }
+          ],
+          "margin": 16.6,
           "gop_base": 32.4,
           "gop_target": 5.6,
           "swing": 7.4,
           "dem_likely": 2.8,
-          "dem_base": 51.8,
-          "margin": 16.6
+          "dem_base": 51.8
         },
         "education": {
           "non_college": 74.7,
@@ -5025,12 +7428,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 33.2
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.0
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 54.5
+            }
+          ],
+          "margin": 19.5,
           "gop_base": 33.2,
           "gop_target": 4.0,
           "swing": 6.1,
           "dem_likely": 2.2,
-          "dem_base": 54.5,
-          "margin": 19.5
+          "dem_base": 54.5
         },
         "education": {
           "non_college": 72.4,
@@ -5120,12 +7550,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 51.9
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 6.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 6.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 31.0
+            }
+          ],
+          "margin": -22.5,
           "gop_base": 51.9,
           "gop_target": 6.2,
           "swing": 6.2,
           "dem_likely": 4.6,
-          "dem_base": 31.0,
-          "margin": -22.5
+          "dem_base": 31.0
         },
         "education": {
           "non_college": 71.8,
@@ -5137,12 +7594,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 52.3
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 33.8
+            }
+          ],
+          "margin": -19.2,
           "gop_base": 52.3,
           "gop_target": 4.9,
           "swing": 4.8,
           "dem_likely": 4.2,
-          "dem_base": 33.8,
-          "margin": -19.2
+          "dem_base": 33.8
         },
         "education": {
           "non_college": 69.6,
@@ -5232,12 +7716,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 49.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 34.7
+            }
+          ],
+          "margin": -16.6,
           "gop_base": 49.4,
           "gop_target": 5.9,
           "swing": 5.9,
           "dem_likely": 4.0,
-          "dem_base": 34.7,
-          "margin": -16.6
+          "dem_base": 34.7
         },
         "education": {
           "non_college": 63.7,
@@ -5249,12 +7760,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 50.3
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 5.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 4.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 36.7
+            }
+          ],
+          "margin": -15.7,
           "gop_base": 50.3,
           "gop_target": 5.2,
           "swing": 4.8,
           "dem_likely": 3.1,
-          "dem_base": 36.7,
-          "margin": -15.7
+          "dem_base": 36.7
         },
         "education": {
           "non_college": 61.5,
@@ -5344,12 +7882,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 58.0
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.6
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 28.0
+            }
+          ],
+          "margin": -30.4,
           "gop_base": 58.0,
           "gop_target": 4.6,
           "swing": 5.2,
           "dem_likely": 4.2,
-          "dem_base": 28.0,
-          "margin": -30.4
+          "dem_base": 28.0
         },
         "education": {
           "non_college": 81.0,
@@ -5361,12 +7926,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 62.3
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.9
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 2.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 28.0
+            }
+          ],
+          "margin": -36.2,
           "gop_base": 62.3,
           "gop_target": 3.9,
           "swing": 3.9,
           "dem_likely": 2.0,
-          "dem_base": 28.0,
-          "margin": -36.2
+          "dem_base": 28.0
         },
         "education": {
           "non_college": 78.4,
@@ -5456,12 +8048,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 41.4
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 44.4
+            }
+          ],
+          "margin": 3.4,
           "gop_base": 41.4,
           "gop_target": 4.2,
           "swing": 5.5,
           "dem_likely": 4.6,
-          "dem_base": 44.4,
-          "margin": 3.4
+          "dem_base": 44.4
         },
         "education": {
           "non_college": 78.2,
@@ -5473,12 +8092,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 42.8
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.3
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 46.6
+            }
+          ],
+          "margin": 4.0,
           "gop_base": 42.8,
           "gop_target": 3.3,
           "swing": 3.9,
           "dem_likely": 3.5,
-          "dem_base": 46.6,
-          "margin": 4.0
+          "dem_base": 46.6
         },
         "education": {
           "non_college": 75.9,
@@ -5568,12 +8214,39 @@
         "family": "HRCC",
         "variant": "All",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 57.7
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 4.5
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 5.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 4.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 28.3
+            }
+          ],
+          "margin": -29.6,
           "gop_base": 57.7,
           "gop_target": 4.5,
           "swing": 5.2,
           "dem_likely": 4.3,
-          "dem_base": 28.3,
-          "margin": -29.6
+          "dem_base": 28.3
         },
         "education": {
           "non_college": 90.9,
@@ -5585,12 +8258,39 @@
         "family": "HRCC",
         "variant": "H+M",
         "affinity": {
+          "segments": [
+            {
+              "key": "gop_base",
+              "label": "GOP Base",
+              "value": 59.8
+            },
+            {
+              "key": "gop_target",
+              "label": "GOP Target",
+              "value": 3.2
+            },
+            {
+              "key": "swing",
+              "label": "Swing",
+              "value": 3.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Likely Dem",
+              "value": 3.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 29.3
+            }
+          ],
+          "margin": -29.8,
           "gop_base": 59.8,
           "gop_target": 3.2,
           "swing": 3.8,
           "dem_likely": 3.9,
-          "dem_base": 29.3,
-          "margin": -29.8
+          "dem_base": 29.3
         },
         "education": {
           "non_college": 90.6,

@@ -475,6 +475,36 @@ def modeling_view_label(family_display: str, variant_label: str) -> str:
     return f"{family_display} ({variant_label})"
 
 
+MODELING_AFFINITY_LAYOUTS = {
+    "hrcc": {
+        "segments": [
+            {"header": "GOP BASE", "key": "gop_base", "label": "GOP Base"},
+            {"header": "GOP TARGET", "key": "gop_target", "label": "GOP Target"},
+            {"header": "SWING", "key": "swing", "label": "Swing"},
+            {"header": "DEM LIKELY", "key": "dem_likely", "label": "Likely Dem"},
+            {"header": "DEM BASE", "key": "dem_base", "label": "Dem Base"},
+        ],
+        "gop_count": 2,
+        "dem_count": 2,
+    },
+    "rslc": {
+        "segments": [
+            {"header": "GOP CONSISTENT", "key": "gop_consistent", "label": "GOP Consistent"},
+            {"header": "GOP GOV DROP", "key": "gop_gov_drop", "label": "GOP Gov Drop"},
+            {"header": "GOP TARGETS", "key": "gop_targets", "label": "GOP Targets"},
+            {"header": "DJT OVERPERFORM", "key": "djt_overperform", "label": "DJT Overperform"},
+            {"header": "ISSUE TARGETS", "key": "issue_targets", "label": "Issue Targets"},
+            {"header": "CORE PERSUASION", "key": "core_persuasion", "label": "Core Persuasion"},
+            {"header": "DEM TARGETS", "key": "dem_targets", "label": "Dem Targets"},
+            {"header": "DEM GOV DROP", "key": "dem_gov_drop", "label": "Dem Gov Drop"},
+            {"header": "DEM CONSISTENT", "key": "dem_consistent", "label": "Dem Consistent"},
+        ],
+        "gop_count": 3,
+        "dem_count": 3,
+    },
+}
+
+
 def discover_modeling_blocks(rows: List[List[str]]):
     if len(rows) < 4:
         return []
@@ -601,24 +631,44 @@ def build_modeling_rows(sheet_rows: List[Tuple[int, Dict[int, str]]]):
             )
 
             if block["kind"] == "affinity":
-                gop_base = pct(values_by_header.get("GOP BASE"))
-                gop_target = pct(values_by_header.get("GOP TARGET"))
-                swing = pct(values_by_header.get("SWING"))
-                dem_likely = pct(values_by_header.get("DEM LIKELY"))
-                dem_base = pct(values_by_header.get("DEM BASE"))
-                total_pct = gop_base + gop_target + swing + dem_likely + dem_base
+                layout = MODELING_AFFINITY_LAYOUTS.get(block["family_key"])
+                if not layout:
+                    continue
+
+                segments = []
+                total_pct = 0.0
+                for spec in layout["segments"]:
+                    value = pct(values_by_header.get(spec["header"]))
+                    segments.append(
+                        {
+                            "key": spec["key"],
+                            "label": spec["label"],
+                            "value": value,
+                        }
+                    )
+                    total_pct += value
+
                 if total_pct <= 0.01:
                     continue
 
-                margin = round((dem_likely + dem_base) - (gop_base + gop_target), 1)
-                model_entry["affinity"] = {
-                    "gop_base": gop_base,
-                    "gop_target": gop_target,
-                    "swing": swing,
-                    "dem_likely": dem_likely,
-                    "dem_base": dem_base,
+                gop_count = int(layout.get("gop_count", 0) or 0)
+                dem_count = int(layout.get("dem_count", 0) or 0)
+                gop_total = sum(segment["value"] for segment in segments[:gop_count])
+                dem_total = sum(segment["value"] for segment in segments[-dem_count:]) if dem_count else 0.0
+                if block["family_key"] == "rslc":
+                    margin = round(gop_total - dem_total, 1)
+                else:
+                    margin = round(dem_total - gop_total, 1)
+
+                affinity_entry = {
+                    "segments": segments,
                     "margin": margin,
                 }
+                for segment in segments:
+                    if segment["key"]:
+                        affinity_entry[segment["key"]] = segment["value"]
+
+                model_entry["affinity"] = affinity_entry
                 continue
 
             non_college = pct(values_by_header.get("NON-COLLEGE"))

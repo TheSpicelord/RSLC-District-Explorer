@@ -919,6 +919,12 @@ body.projection-active .chamber-buttons {
   grid-auto-flow: column;
 }
 
+.three-col {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(var(--legend-rows, 1), auto);
+  grid-auto-flow: column;
+}
+
 .stacked-legend-item {
   display: flex;
   align-items: center;
@@ -1055,6 +1061,42 @@ body.projection-active .chamber-buttons {
 }
 
 .color-model-dem-base {
+  background: #143f86;
+}
+
+.color-model-rslc-1 {
+  background: #7e0e23;
+}
+
+.color-model-rslc-2 {
+  background: #b81831;
+}
+
+.color-model-rslc-3 {
+  background: #f82644;
+}
+
+.color-model-rslc-4 {
+  background: #f08b7f;
+}
+
+.color-model-rslc-5 {
+  background: #ff6f9b;
+}
+
+.color-model-rslc-6 {
+  background: #9a7bc6;
+}
+
+.color-model-rslc-7 {
+  background: #6ea4ff;
+}
+
+.color-model-rslc-8 {
+  background: #257bf8;
+}
+
+.color-model-rslc-9 {
   background: #143f86;
 }
 
@@ -1989,7 +2031,8 @@ body.projection-active .chamber-buttons {
     min-height: 460px;
   }
 
-  .two-col {
+  .two-col,
+  .three-col {
     grid-template-columns: 1fr;
   }
 

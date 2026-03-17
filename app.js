@@ -49,8 +49,31 @@ const projectionSliderFill = document.getElementById("projectionSliderFill");
 const projectionSliderThumb = document.getElementById("projectionSliderThumb");
 
 const MODEL_VIEW_META = {
-  model_hrcc_all: { label: "HRCC (All)", order: 0, tableTop: "HRCC", tableBottom: "All" },
-  model_hrcc_hm: { label: "HRCC (H+M)", order: 1, tableTop: "HRCC", tableBottom: "H+M" },
+  model_hrcc_hm: { label: "HRCC (H+M)", order: 0, tableTop: "HRCC", tableBottom: "H+M" },
+  model_hrcc_all: { label: "HRCC (All)", order: 1, tableTop: "HRCC", tableBottom: "All" },
+  model_rslc_hm: { label: "RSLC (H+M)", order: 2, tableTop: "RSLC", tableBottom: "H+M" },
+  model_rslc_all: { label: "RSLC (All)", order: 3, tableTop: "RSLC", tableBottom: "All" },
+};
+
+const MODEL_SEGMENT_COLOR_CLASSES = {
+  HRCC: [
+    "color-model-gop-base",
+    "color-model-gop-target",
+    "color-model-swing",
+    "color-model-dem-likely",
+    "color-model-dem-base",
+  ],
+  RSLC: [
+    "color-model-rslc-1",
+    "color-model-rslc-2",
+    "color-model-rslc-3",
+    "color-model-rslc-4",
+    "color-model-rslc-5",
+    "color-model-rslc-6",
+    "color-model-rslc-7",
+    "color-model-rslc-8",
+    "color-model-rslc-9",
+  ],
 };
 
 let projectionSliderDragging = false;
@@ -4167,6 +4190,28 @@ function showDistrictDetailPanel(properties, joinInfo, rec, options = {}) {
   }
 }
 
+function affinitySegmentsForModel(model) {
+  const affinity = model?.affinity;
+  if (!affinity || typeof affinity !== "object") return [];
+  if (Array.isArray(affinity.segments) && affinity.segments.length) {
+    const familyKey = String(model?.family || "").trim().toUpperCase();
+    const palette = MODEL_SEGMENT_COLOR_CLASSES[familyKey] || [];
+    return affinity.segments.map((segment, idx) => ({
+      label: segment?.label || `Bucket ${idx + 1}`,
+      value: typeof segment?.value === "number" ? segment.value : Number(segment?.value || 0),
+      colorClass: palette[idx] || (idx % 2 === 0 ? "color-model-gop-target" : "color-model-dem-likely"),
+    }));
+  }
+
+  return [
+    { label: "GOP Base", value: affinity.gop_base, colorClass: "color-model-gop-base" },
+    { label: "GOP Target", value: affinity.gop_target, colorClass: "color-model-gop-target" },
+    { label: "Swing", value: affinity.swing, colorClass: "color-model-swing" },
+    { label: "Likely Dem", value: affinity.dem_likely, colorClass: "color-model-dem-likely" },
+    { label: "Dem Base", value: affinity.dem_base, colorClass: "color-model-dem-base" },
+  ].filter((segment) => typeof segment.value === "number");
+}
+
 function modelingPanelHtml(rec) {
   const modelView = activeModelViewForRecord(rec);
   const model = modelView ? rec?.models?.[modelView] : null;
@@ -4186,19 +4231,19 @@ function modelingPanelHtml(rec) {
   const blocks = [];
 
   if (affinity) {
-    blocks.push(
-      stackedBreakdownHtml(
-        `Affinity Model: ${formatMarginHtml(affinity.margin)}`,
-        [
-          { label: "GOP Base", value: affinity.gop_base, colorClass: "color-model-gop-base" },
-          { label: "GOP Target", value: affinity.gop_target, colorClass: "color-model-gop-target" },
-          { label: "Swing", value: affinity.swing, colorClass: "color-model-swing" },
-          { label: "Likely Dem", value: affinity.dem_likely, colorClass: "color-model-dem-likely" },
-          { label: "Dem Base", value: affinity.dem_base, colorClass: "color-model-dem-base" },
-        ],
-        { normalizeTo100: true }
-      )
-    );
+    const affinitySegments = affinitySegmentsForModel(model);
+    if (affinitySegments.length) {
+      blocks.push(
+        stackedBreakdownHtml(
+          `Affinity Model: ${formatMarginHtml(getMarginForView(rec, modelView))}`,
+          affinitySegments,
+          {
+            normalizeTo100: true,
+            legendColumns: String(model?.family || "").trim().toUpperCase() === "RSLC" ? 3 : 2,
+          }
+        )
+      );
+    }
   }
 
   if (education) {
@@ -4219,8 +4264,8 @@ function modelingPanelHtml(rec) {
     <div class="modeling-subheader-row">
       <div class="detail-row modeling-variant-note">${escapeHtml(model.family || "Model")}</div>
       <div class="modeling-switch" role="group" aria-label="Modeling variant">
-        <button type="button" class="modeling-switch-btn ${activeVariant === "all" ? "active" : ""}" data-modeling-variant="all" ${allView ? "" : "disabled"}>All</button>
         <button type="button" class="modeling-switch-btn ${activeVariant === "hm" ? "active" : ""}" data-modeling-variant="hm" ${hmView ? "" : "disabled"}>H+M</button>
+        <button type="button" class="modeling-switch-btn ${activeVariant === "all" ? "active" : ""}" data-modeling-variant="all" ${allView ? "" : "disabled"}>All</button>
       </div>
     </div>
     ${blocks.join("") || '<div class="detail-row">No modeling data.</div>'}
@@ -4270,6 +4315,10 @@ function detailHtml(properties, joinInfo, rec) {
     { label: "Other", value: raceOther, colorClass: "color-race-other" },
   ]);
   const modelingPanel = modelingPanelHtml(rec);
+  const pollingPanel = `
+    <div class="detail-section-title centered-section-title large-section-title">Polling</div>
+    <div class="detail-row">No polling data.</div>
+  `;
   const demographicsPanel = `
     <div class="detail-section-title centered-section-title large-section-title">Demographics</div>
     ${metroChart}
@@ -4295,8 +4344,12 @@ function detailHtml(properties, joinInfo, rec) {
     </div>
 
     <div class="detail-section">
+      ${modelingPanel}
+    </div>
+
+    <div class="detail-section">
       <div class="split-two-col">
-        <div class="split-col-left">${modelingPanel}</div>
+        <div class="split-col-left">${pollingPanel}</div>
         <div class="split-col-right">${demographicsPanel}</div>
       </div>
     </div>
@@ -4618,6 +4671,9 @@ function getMarginForView(rec, view) {
 
   if (rec.view_margins && typeof rec.view_margins[view] === "number") {
     margin = rec.view_margins[view];
+    if (String(view).startsWith("model_rslc_")) {
+      margin = -margin;
+    }
     cache[view] = margin;
     return margin;
   }
@@ -4765,7 +4821,7 @@ function stackedBreakdownHtml(title, items, options = {}) {
 
   const segments = chartItems
     .map((item) => {
-      const showLabel = item.value >= 7.5;
+      const showLabel = item.value >= 6.3;
       return `
         <div class="stacked-segment ${item.colorClass}" style="width:${widthPct(item.value)}">
           ${showLabel ? `<span class="stacked-segment-label">${escapeHtml(segmentFormatter(item.value))}</span>` : ""}
@@ -4774,7 +4830,9 @@ function stackedBreakdownHtml(title, items, options = {}) {
     })
     .join("");
 
-  const legendRows = Math.ceil(normalized.length / 2);
+  const legendColumns = Math.max(1, Math.min(3, Number(options.legendColumns) || 2));
+  const legendClass = legendColumns === 3 ? "three-col" : "two-col";
+  const legendRows = Math.ceil(normalized.length / legendColumns);
   const legend = normalized
     .map(
       (item) => `
@@ -4791,7 +4849,7 @@ function stackedBreakdownHtml(title, items, options = {}) {
   return `
     <div class="detail-subtitle centered-subtitle ${headerClass}">${title}</div>
     <div class="stacked-chart">${segments}</div>
-    ${showLegend ? `<div class="stacked-legend two-col" style="--legend-rows:${legendRows};">${legend}</div>` : ""}
+    ${showLegend ? `<div class="stacked-legend ${legendClass}" style="--legend-rows:${legendRows};">${legend}</div>` : ""}
     <div class="detail-break"></div>
   `;
 }
