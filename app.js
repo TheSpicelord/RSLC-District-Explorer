@@ -76,6 +76,14 @@ const MODEL_SEGMENT_COLOR_CLASSES = {
   ],
 };
 
+const BUILD_VERSION = "20260316a";
+
+function withCacheBust(url) {
+  const text = String(url || "").trim();
+  if (!text) return text;
+  return text.includes("?") ? `${text}&v=${BUILD_VERSION}` : `${text}?v=${BUILD_VERSION}`;
+}
+
 let projectionSliderDragging = false;
 const PROJECTION_RAIL_INSET_PX = 1;
 
@@ -195,7 +203,7 @@ async function loadAllChamberData() {
 async function loadChamberIndex() {
   for (const url of CHAMBER_INDEX_URLS) {
     try {
-      const response = await fetch(url);
+      const response = await fetch(withCacheBust(url));
       if (!response.ok) continue;
       const parsed = await response.json();
       const normalized = normalizeChamberIndex(parsed);
@@ -235,7 +243,7 @@ function normalizeChamberIndex(parsed) {
 
 async function fetchJsonArray(url) {
   try {
-    const response = await fetch(url);
+    const response = await fetch(withCacheBust(url));
     if (!response.ok) return [];
     const data = await response.json();
     return Array.isArray(data) ? data : [];
@@ -3719,7 +3727,7 @@ function featureMatchesSelectedState(properties = {}) {
 
 async function loadUrlZipToGeojson(url) {
   try {
-    const response = await fetch(url);
+    const response = await fetch(withCacheBust(url));
     if (!response.ok) return null;
     const arrayBuffer = await response.arrayBuffer();
     const parsed = await shp(arrayBuffer);
@@ -3768,7 +3776,7 @@ async function loadTargetDistricts() {
 async function loadTargetDistrictsFromJson() {
   for (const url of TARGET_DISTRICTS_JSON_URLS) {
     try {
-      const response = await fetch(url);
+      const response = await fetch(withCacheBust(url));
       if (!response.ok) continue;
       const data = await response.json();
       if (!Array.isArray(data)) continue;
@@ -3812,7 +3820,7 @@ async function loadChamberNamesFromWorkbook() {
     let workbook = null;
     for (const workbookUrl of WORKBOOK_URLS) {
       try {
-        const response = await fetch(workbookUrl);
+        const response = await fetch(withCacheBust(workbookUrl));
         if (!response.ok) continue;
         const bytes = await response.arrayBuffer();
         workbook = window.XLSX.read(bytes, { type: "array" });
@@ -3891,7 +3899,7 @@ async function loadTargetDistrictsFromWorkbook() {
     let workbook = null;
     for (const workbookUrl of WORKBOOK_URLS) {
       try {
-        const response = await fetch(workbookUrl);
+        const response = await fetch(withCacheBust(workbookUrl));
         if (!response.ok) continue;
         const bytes = await response.arrayBuffer();
         workbook = window.XLSX.read(bytes, { type: "array" });
