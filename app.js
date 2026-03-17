@@ -53,6 +53,7 @@ const MODEL_VIEW_META = {
   model_hrcc_all: { label: "HRCC (All)", order: 1, tableTop: "HRCC", tableBottom: "All" },
   model_rslc_hm: { label: "RSLC (H+M)", order: 2, tableTop: "RSLC", tableBottom: "H+M" },
   model_rslc_all: { label: "RSLC (All)", order: 3, tableTop: "RSLC", tableBottom: "All" },
+  model_rga_all: { label: "RGA (All)", order: 4, tableTop: "RGA", tableBottom: "All" },
 };
 
 const MODEL_SEGMENT_COLOR_CLASSES = {
@@ -74,9 +75,29 @@ const MODEL_SEGMENT_COLOR_CLASSES = {
     "color-model-rslc-8",
     "color-model-rslc-9",
   ],
+  RGA: [
+    "color-model-gop-base",
+    "color-model-gop-target",
+    "color-model-rga-trust",
+    "color-model-rslc-4",
+    "color-model-rga-middle",
+    "color-model-rga-dem-trust",
+    "color-model-dem-soft",
+    "color-model-dem-base",
+  ],
 };
 
-const BUILD_VERSION = "20260316a";
+const RGA_SEVEN_BUCKET_COLOR_CLASSES = [
+  "color-model-gop-base",
+  "color-model-gop-target",
+  "color-model-rga-trust",
+  "color-model-rga-middle",
+  "color-model-rga-vulnerable",
+  "color-model-dem-soft",
+  "color-model-dem-base",
+];
+
+const BUILD_VERSION = "20260317e";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -1894,6 +1915,7 @@ function districtTierForRecord(rec) {
 
 function createDefaultTargetFilters() {
   return {
+    split: { enabled: true, tiers: { 1: true, 2: true, 3: true, 4: true } },
     defense: { enabled: true, tiers: { 1: true, 2: true, 3: true, 4: true } },
     offense: { enabled: true, tiers: { 1: true, 2: true, 3: true, 4: true } },
   };
@@ -1903,7 +1925,7 @@ function ensureTargetFilters() {
   if (!state.targetFilters || typeof state.targetFilters !== "object") {
     state.targetFilters = createDefaultTargetFilters();
   }
-  for (const section of ["defense", "offense"]) {
+  for (const section of ["split", "defense", "offense"]) {
     if (!state.targetFilters[section] || typeof state.targetFilters[section] !== "object") {
       state.targetFilters[section] = createDefaultTargetFilters()[section];
     }
@@ -1925,8 +1947,32 @@ function resetTargetFilters() {
   state.targetFilters = createDefaultTargetFilters();
 }
 
+function incumbentPartyCodeForRecord(rec) {
+  const members = recordMembers(rec);
+  if (members.length) {
+    let hasRep = false;
+    let hasDem = false;
+    for (const member of members) {
+      const party = String(member?.incumbent?.party || "").trim().toUpperCase();
+      if (party === "R") hasRep = true;
+      if (party === "D") hasDem = true;
+    }
+    if (hasRep && hasDem) return "S";
+    if (hasRep) return "R";
+    if (hasDem) return "D";
+    return "O";
+  }
+
+  const party = String(rec?.incumbent?.party || "").trim().toUpperCase();
+  return party === "R" || party === "D" ? party : "O";
+}
+
 function targetSectionForParty(party) {
-  return String(party || "").trim().toUpperCase() === "R" ? "defense" : String(party || "").trim().toUpperCase() === "D" ? "offense" : null;
+  const normalized = String(party || "").trim().toUpperCase();
+  if (normalized === "S") return "split";
+  if (normalized === "R") return "defense";
+  if (normalized === "D") return "offense";
+  return null;
 }
 
 function availableTargetTiersForSection(section) {
@@ -1937,7 +1983,7 @@ function availableTargetTiersForSection(section) {
   const tiers = new Set();
   for (const [joinKey, rec] of dataMap.entries()) {
     if (!String(joinKey || "").startsWith(`${selectedFips}|`)) continue;
-    if (targetSectionForParty(rec?.incumbent?.party) !== section) continue;
+    if (targetSectionForParty(incumbentPartyCodeForRecord(rec)) !== section) continue;
     const tier = districtTierForRecord(rec);
     if (tier !== null) tiers.add(tier);
   }
@@ -1951,7 +1997,7 @@ function targetSectionHasAnyTierSelected(section) {
 
 function normalizeTargetFiltersAfterChange() {
   ensureTargetFilters();
-  for (const section of ["defense", "offense"]) {
+  for (const section of ["split", "defense", "offense"]) {
     if (!targetSectionHasAnyTierSelected(section)) {
       state.targetFilters[section].enabled = false;
     }
@@ -1960,7 +2006,7 @@ function normalizeTargetFiltersAfterChange() {
 
 function anyTargetFiltersActive() {
   ensureTargetFilters();
-  return ["defense", "offense"].some((section) => !!state.targetFilters?.[section]?.enabled && targetSectionHasAnyTierSelected(section));
+  return ["split", "defense", "offense"].some((section) => !!state.targetFilters?.[section]?.enabled && targetSectionHasAnyTierSelected(section));
 }
 
 function targetSectionIsActive(section) {
@@ -1974,7 +2020,7 @@ function targetTierIsActive(section, tier) {
 }
 
 function targetRowPassesActiveFilters(row) {
-  const section = row?.targetSection || targetSectionForParty(row?.incParty || row?.rec?.incumbent?.party);
+  const section = row?.targetSection || targetSectionForParty(row?.incParty || incumbentPartyCodeForRecord(row?.rec));
   const tier = districtTierValue(row?.tier ?? row?.rec?.tier);
   if (!section || tier === null) return false;
   ensureTargetFilters();
@@ -1983,7 +2029,7 @@ function targetRowPassesActiveFilters(row) {
 
 function setExclusiveTargetFilter(section, tier = null) {
   ensureTargetFilters();
-  for (const key of ["defense", "offense"]) {
+  for (const key of ["split", "defense", "offense"]) {
     state.targetFilters[key].enabled = false;
     for (const currentTier of [1, 2, 3, 4]) state.targetFilters[key].tiers[currentTier] = false;
   }
@@ -2080,15 +2126,27 @@ function groupedTargetDistrictRowsHtml(rows, electionCols, showDistrictNameCol =
 
 function targetDistrictsSectionHtml(targets) {
   const showDistrictNameCol = shouldShowDistrictNameColumn();
+  const splitCols = districtElectionColumns(targets.split);
   const defenseCols = districtElectionColumns(targets.defense);
   const offenseCols = districtElectionColumns(targets.offense);
+  const splitRows = groupedTargetDistrictRowsHtml(targets.split, splitCols, showDistrictNameCol, "split");
   const defenseRows = groupedTargetDistrictRowsHtml(targets.defense, defenseCols, showDistrictNameCol, "defense");
   const offenseRows = groupedTargetDistrictRowsHtml(targets.offense, offenseCols, showDistrictNameCol, "offense");
+  const splitActive = targetSectionIsActive("split");
   const defenseActive = targetSectionIsActive("defense");
   const offenseActive = targetSectionIsActive("offense");
+  const splitHtml = targets.split.length
+    ? `
+      <div class="target-column ${splitActive ? "" : "target-column-muted"}">
+        <div class="detail-subtitle centered-subtitle chart-header target-section-toggle target-filter-toggle ${splitActive ? "active-target-mode" : ""}" data-target-section="split">Split</div>
+        ${targetDistrictTableHtml(splitRows, targets.split, showDistrictNameCol, { includeTierColumn: true, tierHeaderLabel: "Tier" })}
+      </div>
+    `
+    : "";
   return `
     <div id="targetModeHeader" class="detail-section-title centered-section-title large-section-title target-mode-header ${state.targetDistrictsMode ? "active-target-mode" : ""}">Target Districts</div>
     <div class="target-columns">
+      ${splitHtml}
       <div class="target-column ${defenseActive ? "" : "target-column-muted"}">
         <div class="detail-subtitle centered-subtitle chart-header target-section-toggle target-filter-toggle ${defenseActive ? "active-target-mode" : ""}" data-target-section="defense">Defense</div>
         ${targetDistrictTableHtml(defenseRows, targets.defense, showDistrictNameCol, { includeTierColumn: true, tierHeaderLabel: "Tier" })}
@@ -2255,7 +2313,7 @@ function projectionOutcomeForRow(row) {
 
 function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row]), showDistrictNameCol = false, options = {}) {
   const { includeTierColumn = false, suppressTierCell = false, tierCellHtml = null, rowClass = "" } = options;
-  const incClass = row.incParty === "R" ? "inc-r" : row.incParty === "D" ? "inc-d" : "inc-u";
+  const incClass = row.incParty === "R" ? "inc-r" : row.incParty === "D" ? "inc-d" : row.incParty === "S" ? "inc-s" : "inc-u";
   const districtNameCell = showDistrictNameCol
     ? `<td class="district-name-cell" title="${escapeHtml(row.districtNameDisplay || "")}">${escapeHtml(row.districtNameDisplay || "-")}</td>`
     : "";
@@ -2298,13 +2356,16 @@ function targetTablesForSelectedState() {
 
   const rows = targetDistrictRowsForSelectedState();
   const rowSort = (a, b) => (a.tier - b.tier) || (targetSortValue(a) - targetSortValue(b)) || (districtLabelSortValue(a.districtLabel) - districtLabelSortValue(b.districtLabel));
+  const split = rows
+    .filter((row) => row.incParty === "S")
+    .sort(rowSort);
   const defense = rows
     .filter((row) => row.incParty === "R")
     .sort(rowSort);
   const offense = rows
     .filter((row) => row.incParty === "D")
     .sort(rowSort);
-  return { defense, offense };
+  return { split, defense, offense };
 }
 
 function targetDistrictRowsForSelectedState() {
@@ -2318,8 +2379,8 @@ function targetDistrictRowsForSelectedState() {
     if (!String(joinKey || "").startsWith(`${selectedFips}|`)) continue;
     const tier = districtTierForRecord(rec);
     if (tier === null) continue;
-    const incParty = String(rec.incumbent?.party || "").trim().toUpperCase();
-    if (incParty !== "R" && incParty !== "D") continue;
+    const incParty = incumbentPartyCodeForRecord(rec);
+    if (incParty !== "R" && incParty !== "D" && incParty !== "S") continue;
     const targetSection = targetSectionForParty(incParty);
     rows.push({
       joinKey,
@@ -2371,12 +2432,12 @@ function allDistrictRowsForSelectedState() {
       const joinKey = makeJoinKey(selectedFips, rec.district_id);
       if (!joinKey || seen.has(joinKey)) continue;
       seen.add(joinKey);
-      const incParty = String(rec.incumbent?.party || "").trim().toUpperCase() || "O";
+      const incParty = incumbentPartyCodeForRecord(rec);
       rows.push({
         joinKey,
         districtLabel: displayDistrictId(rec.district_id, rec.district_id),
         districtNameDisplay: districtNameDisplayForRecord(rec),
-        incParty: incParty === "R" || incParty === "D" ? incParty : "O",
+        incParty: incParty === "R" || incParty === "D" || incParty === "S" ? incParty : "O",
         tier: districtTierForRecord(rec),
         rec,
         marginsByView: {
@@ -2397,12 +2458,12 @@ function allDistrictRowsForSelectedState() {
       seen.add(joinInfo.key);
       const rec = dataMap.get(joinInfo.key);
       if (!rec) continue;
-      const incParty = String(rec.incumbent?.party || "").trim().toUpperCase() || "O";
+      const incParty = incumbentPartyCodeForRecord(rec);
       rows.push({
         joinKey: joinInfo.key,
         districtLabel: displayDistrictId(joinInfo.rawDistrict, joinInfo.districtId),
         districtNameDisplay: districtNameDisplayForRecord(rec),
-        incParty: incParty === "R" || incParty === "D" ? incParty : "O",
+        incParty: incParty === "R" || incParty === "D" || incParty === "S" ? incParty : "O",
         tier: districtTierForRecord(rec),
         rec,
         marginsByView: {
@@ -4203,7 +4264,9 @@ function affinitySegmentsForModel(model) {
   if (!affinity || typeof affinity !== "object") return [];
   if (Array.isArray(affinity.segments) && affinity.segments.length) {
     const familyKey = String(model?.family || "").trim().toUpperCase();
-    const palette = MODEL_SEGMENT_COLOR_CLASSES[familyKey] || [];
+    const palette = familyKey === "RGA" && affinity.segments.length === 7
+      ? RGA_SEVEN_BUCKET_COLOR_CLASSES
+      : (MODEL_SEGMENT_COLOR_CLASSES[familyKey] || []);
     return affinity.segments.map((segment, idx) => ({
       label: segment?.label || `Bucket ${idx + 1}`,
       value: typeof segment?.value === "number" ? segment.value : Number(segment?.value || 0),
@@ -4679,7 +4742,7 @@ function getMarginForView(rec, view) {
 
   if (rec.view_margins && typeof rec.view_margins[view] === "number") {
     margin = rec.view_margins[view];
-    if (String(view).startsWith("model_rslc_")) {
+    if (String(view).startsWith("model_rslc_") || String(view).startsWith("model_rga_")) {
       margin = -margin;
     }
     cache[view] = margin;

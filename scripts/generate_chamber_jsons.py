@@ -505,6 +505,74 @@ MODELING_AFFINITY_LAYOUTS = {
 }
 
 
+def slug_key(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "_", str(value or "").strip().lower()).strip("_")
+
+
+def affinity_layout_for_block(block: dict):
+    layout = MODELING_AFFINITY_LAYOUTS.get(block["family_key"])
+    if layout:
+        return layout
+
+    if block["family_key"] != "rga":
+        return None
+
+    ordered_headers = [block["headers"][ci] for ci in sorted(block["headers"].keys())]
+    segments = []
+    seen = {}
+    for index, header in enumerate(ordered_headers):
+        raw_label = str(header or "").strip()
+        if not raw_label:
+            continue
+        base_key = slug_key(raw_label) or f"bucket_{index + 1}"
+        seen[base_key] = seen.get(base_key, 0) + 1
+        seg_key = base_key if seen[base_key] == 1 else f"{base_key}_{seen[base_key]}"
+        segments.append(
+            {
+                "header": clean_header(raw_label),
+                "key": seg_key,
+                "label": raw_label,
+            }
+        )
+
+    return {"segments": segments}
+
+
+def affinity_margin_for_block(block: dict, segments: List[dict]) -> float:
+    family_key = block["family_key"]
+    values_by_label = {clean_header(segment.get("label")): float(segment.get("value") or 0.0) for segment in segments}
+
+    if family_key == "rslc":
+        gop_total = sum(segment["value"] for segment in segments[:3])
+        dem_total = sum(segment["value"] for segment in segments[-3:])
+        return round(gop_total - dem_total, 1)
+
+    if family_key == "rga":
+        if clean_header(block.get("state_abbr")) == "WI":
+            gop_total = values_by_label.get("TIFFANY BASE", 0.0) + values_by_label.get("GOP SOFT", 0.0)
+            dem_total = values_by_label.get("DEM SOFT", 0.0) + values_by_label.get("DEM BASE", 0.0)
+            return round(gop_total - dem_total, 1)
+        if clean_header(block.get("state_abbr")) == "IA":
+            gop_total = values_by_label.get("FEENSTRA BASE", 0.0) + values_by_label.get("GOP TARGETS", 0.0)
+            dem_total = values_by_label.get("DEM LIKELY", 0.0) + values_by_label.get("DEM BASE", 0.0)
+            return round(gop_total - dem_total, 1)
+        if clean_header(block.get("state_abbr")) == "AZ":
+            gop_total = values_by_label.get("GOP BASE", 0.0) + values_by_label.get("GOP TARGETS", 0.0)
+            dem_total = values_by_label.get("DEM LIKELY", 0.0) + values_by_label.get("HOBBS BASE", 0.0)
+            return round(gop_total - dem_total, 1)
+        if clean_header(block.get("state_abbr")) == "GA":
+            gop_total = values_by_label.get("GOP BASE", 0.0) + values_by_label.get("GOP TARGETS", 0.0)
+            dem_total = values_by_label.get("DEM LIKELY", 0.0) + values_by_label.get("DEM BASE", 0.0)
+            return round(gop_total - dem_total, 1)
+
+    layout = MODELING_AFFINITY_LAYOUTS.get(family_key) or {}
+    gop_count = int(layout.get("gop_count", 0) or 0)
+    dem_count = int(layout.get("dem_count", 0) or 0)
+    gop_total = sum(segment["value"] for segment in segments[:gop_count])
+    dem_total = sum(segment["value"] for segment in segments[-dem_count:]) if dem_count else 0.0
+    return round(dem_total - gop_total, 1)
+
+
 def discover_modeling_blocks(rows: List[List[str]]):
     if len(rows) < 4:
         return []
@@ -631,7 +699,7 @@ def build_modeling_rows(sheet_rows: List[Tuple[int, Dict[int, str]]]):
             )
 
             if block["kind"] == "affinity":
-                layout = MODELING_AFFINITY_LAYOUTS.get(block["family_key"])
+                layout = affinity_layout_for_block(block)
                 if not layout:
                     continue
 
@@ -651,14 +719,7 @@ def build_modeling_rows(sheet_rows: List[Tuple[int, Dict[int, str]]]):
                 if total_pct <= 0.01:
                     continue
 
-                gop_count = int(layout.get("gop_count", 0) or 0)
-                dem_count = int(layout.get("dem_count", 0) or 0)
-                gop_total = sum(segment["value"] for segment in segments[:gop_count])
-                dem_total = sum(segment["value"] for segment in segments[-dem_count:]) if dem_count else 0.0
-                if block["family_key"] == "rslc":
-                    margin = round(gop_total - dem_total, 1)
-                else:
-                    margin = round(dem_total - gop_total, 1)
+                margin = affinity_margin_for_block(block, segments)
 
                 affinity_entry = {
                     "segments": segments,
@@ -695,6 +756,9 @@ def apply_modeling_rows(base_rows: List[dict], modeling_rows: Dict[Tuple[str, st
         if not district_id:
             continue
         model_bundle = modeling_rows.get((state_abbr, chamber, district_id))
+        if not model_bundle and state_abbr == "AZ":
+            other_chamber = "senate" if chamber == "house" else "house"
+            model_bundle = modeling_rows.get((state_abbr, other_chamber, district_id))
         if not model_bundle:
             continue
 

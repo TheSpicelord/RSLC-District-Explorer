@@ -58,7 +58,8 @@
       "latest_leg": -19.0,
       "gov_2022": -17.6,
       "ussen_2022": -22.6,
-      "pres_2024": -20.3
+      "pres_2024": -20.3,
+      "model_rga_all": 29.5
     },
     "pres_2024_margin": -20.3,
     "gov_2022_margin": -17.6,
@@ -71,6 +72,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 35.2
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 14.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 8.8
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 4.8
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 12.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 4.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 16.0
+            }
+          ],
+          "margin": 29.5,
+          "tiffany_base": 35.2,
+          "gop_soft": 14.6,
+          "gop_trust_target": 8.8,
+          "conflicted_djt_lean": 4.8,
+          "remaining_middle": 12.3,
+          "dem_trust_target": 4.0,
+          "dem_soft": 4.3,
+          "dem_base": 16.0
+        }
+      }
     }
   },
   {
@@ -132,7 +193,8 @@
       "latest_leg": -29.0,
       "gov_2022": -24.2,
       "ussen_2022": -29.0,
-      "pres_2024": -27.4
+      "pres_2024": -27.4,
+      "model_rga_all": 34.7
     },
     "pres_2024_margin": -27.4,
     "gov_2022_margin": -24.2,
@@ -145,6 +207,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 34.7
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 16.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 10.4
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 5.5
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 13.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.9
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 4.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 12.1
+            }
+          ],
+          "margin": 34.7,
+          "tiffany_base": 34.7,
+          "gop_soft": 16.1,
+          "gop_trust_target": 10.4,
+          "conflicted_djt_lean": 5.5,
+          "remaining_middle": 13.3,
+          "dem_trust_target": 3.9,
+          "dem_soft": 4.0,
+          "dem_base": 12.1
+        }
+      }
     }
   },
   {
@@ -206,7 +328,8 @@
       "latest_leg": 38.0,
       "gov_2022": 37.5,
       "ussen_2022": 33.8,
-      "pres_2024": 27.5
+      "pres_2024": 27.5,
+      "model_rga_all": -32.2
     },
     "pres_2024_margin": 27.5,
     "gov_2022_margin": 37.5,
@@ -219,6 +342,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 6.6
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 5.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.9
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 15.8
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 6.1
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 18.7
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 11.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 32.5
+            }
+          ],
+          "margin": -32.2,
+          "tiffany_base": 6.6,
+          "gop_soft": 5.0,
+          "gop_trust_target": 3.9,
+          "conflicted_djt_lean": 15.8,
+          "remaining_middle": 6.1,
+          "dem_trust_target": 18.7,
+          "dem_soft": 11.3,
+          "dem_base": 32.5
+        }
+      }
     }
   },
   {
@@ -280,7 +463,8 @@
       "latest_leg": 98.4,
       "gov_2022": 70.2,
       "ussen_2022": 69.3,
-      "pres_2024": 68.0
+      "pres_2024": 68.0,
+      "model_rga_all": -61.5
     },
     "pres_2024_margin": 68.0,
     "gov_2022_margin": 70.2,
@@ -293,6 +477,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 2.1
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 2.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 1.3
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 9.3
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 2.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 15.8
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 14.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 51.8
+            }
+          ],
+          "margin": -61.5,
+          "tiffany_base": 2.1,
+          "gop_soft": 2.6,
+          "gop_trust_target": 1.3,
+          "conflicted_djt_lean": 9.3,
+          "remaining_middle": 2.7,
+          "dem_trust_target": 15.8,
+          "dem_soft": 14.4,
+          "dem_base": 51.8
+        }
+      }
     }
   },
   {
@@ -354,7 +598,8 @@
       "latest_leg": -6.6,
       "gov_2022": 6.0,
       "ussen_2022": 1.3,
-      "pres_2024": 5.9
+      "pres_2024": 5.9,
+      "model_rga_all": -11.2
     },
     "pres_2024_margin": 5.9,
     "gov_2022_margin": 6.0,
@@ -367,6 +612,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 19.0
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 8.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.8
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 11.0
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 8.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 7.0
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 7.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 30.8
+            }
+          ],
+          "margin": -11.2,
+          "tiffany_base": 19.0,
+          "gop_soft": 8.1,
+          "gop_trust_target": 7.8,
+          "conflicted_djt_lean": 11.0,
+          "remaining_middle": 8.8,
+          "dem_trust_target": 7.0,
+          "dem_soft": 7.5,
+          "dem_base": 30.8
+        }
+      }
     }
   },
   {
@@ -428,7 +733,8 @@
       "latest_leg": 98.5,
       "gov_2022": 73.5,
       "ussen_2022": 73.1,
-      "pres_2024": 68.3
+      "pres_2024": 68.3,
+      "model_rga_all": -57.3
     },
     "pres_2024_margin": 68.3,
     "gov_2022_margin": 73.5,
@@ -441,6 +747,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 1.6
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 2.5
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 1.3
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 10.4
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 4.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 18.2
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 13.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 48.1
+            }
+          ],
+          "margin": -57.3,
+          "tiffany_base": 1.6,
+          "gop_soft": 2.5,
+          "gop_trust_target": 1.3,
+          "conflicted_djt_lean": 10.4,
+          "remaining_middle": 4.6,
+          "dem_trust_target": 18.2,
+          "dem_soft": 13.3,
+          "dem_base": 48.1
+        }
+      }
     }
   },
   {
@@ -502,7 +868,8 @@
       "latest_leg": 34.6,
       "gov_2022": 35.8,
       "ussen_2022": 32.3,
-      "pres_2024": 28.3
+      "pres_2024": 28.3,
+      "model_rga_all": -38.1
     },
     "pres_2024_margin": 28.3,
     "gov_2022_margin": 35.8,
@@ -515,6 +882,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 8.4
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 5.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.2
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 12.4
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 5.4
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 10.9
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 10.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 42.0
+            }
+          ],
+          "margin": -38.1,
+          "tiffany_base": 8.4,
+          "gop_soft": 5.6,
+          "gop_trust_target": 5.2,
+          "conflicted_djt_lean": 12.4,
+          "remaining_middle": 5.4,
+          "dem_trust_target": 10.9,
+          "dem_soft": 10.1,
+          "dem_base": 42.0
+        }
+      }
     }
   },
   {
@@ -576,7 +1003,8 @@
       "latest_leg": 1.5,
       "gov_2022": 2.3,
       "ussen_2022": -2.6,
-      "pres_2024": 2.5
+      "pres_2024": 2.5,
+      "model_rga_all": -1.0
     },
     "pres_2024_margin": 2.5,
     "gov_2022_margin": 2.3,
@@ -589,6 +1017,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 23.6
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 9.5
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 8.1
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 8.3
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 10.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.6
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 6.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.5
+            }
+          ],
+          "margin": -1.0,
+          "tiffany_base": 23.6,
+          "gop_soft": 9.5,
+          "gop_trust_target": 8.1,
+          "conflicted_djt_lean": 8.3,
+          "remaining_middle": 10.8,
+          "dem_trust_target": 5.6,
+          "dem_soft": 6.6,
+          "dem_base": 27.5
+        }
+      }
     }
   },
   {
@@ -650,7 +1138,8 @@
       "latest_leg": -89.3,
       "gov_2022": -14.2,
       "ussen_2022": -18.9,
-      "pres_2024": -15.7
+      "pres_2024": -15.7,
+      "model_rga_all": 20.0
     },
     "pres_2024_margin": -15.7,
     "gov_2022_margin": -14.2,
@@ -663,6 +1152,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 29.1
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 14.2
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 9.2
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 7.2
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 11.9
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.2
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 5.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 17.5
+            }
+          ],
+          "margin": 20.0,
+          "tiffany_base": 29.1,
+          "gop_soft": 14.2,
+          "gop_trust_target": 9.2,
+          "conflicted_djt_lean": 7.2,
+          "remaining_middle": 11.9,
+          "dem_trust_target": 5.2,
+          "dem_soft": 5.8,
+          "dem_base": 17.5
+        }
+      }
     }
   },
   {
@@ -724,7 +1273,8 @@
       "latest_leg": -24.8,
       "gov_2022": -14.6,
       "ussen_2022": -19.5,
-      "pres_2024": -20.5
+      "pres_2024": -20.5,
+      "model_rga_all": 25.7
     },
     "pres_2024_margin": -20.5,
     "gov_2022_margin": -14.6,
@@ -737,6 +1287,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 27.9
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 16.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 11.6
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 7.4
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 12.9
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.6
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 4.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 14.8
+            }
+          ],
+          "margin": 25.7,
+          "tiffany_base": 27.9,
+          "gop_soft": 16.7,
+          "gop_trust_target": 11.6,
+          "conflicted_djt_lean": 7.4,
+          "remaining_middle": 12.9,
+          "dem_trust_target": 4.6,
+          "dem_soft": 4.1,
+          "dem_base": 14.8
+        }
+      }
     }
   },
   {
@@ -798,7 +1408,8 @@
       "latest_leg": -16.7,
       "gov_2022": -24.2,
       "ussen_2022": -28.7,
-      "pres_2024": -27.9
+      "pres_2024": -27.9,
+      "model_rga_all": 29.0
     },
     "pres_2024_margin": -27.9,
     "gov_2022_margin": -24.2,
@@ -811,6 +1422,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 31.9
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 13.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 13.6
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 7.5
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 13.0
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.5
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 3.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 12.8
+            }
+          ],
+          "margin": 29.0,
+          "tiffany_base": 31.9,
+          "gop_soft": 13.8,
+          "gop_trust_target": 13.6,
+          "conflicted_djt_lean": 7.5,
+          "remaining_middle": 13.0,
+          "dem_trust_target": 3.5,
+          "dem_soft": 3.9,
+          "dem_base": 12.8
+        }
+      }
     }
   },
   {
@@ -872,7 +1543,8 @@
       "latest_leg": -35.1,
       "gov_2022": -25.6,
       "ussen_2022": -30.4,
-      "pres_2024": -29.1
+      "pres_2024": -29.1,
+      "model_rga_all": 40.9
     },
     "pres_2024_margin": -29.1,
     "gov_2022_margin": -25.6,
@@ -885,6 +1557,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 38.3
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 17.3
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 9.5
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 3.8
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 13.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.1
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 3.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 11.7
+            }
+          ],
+          "margin": 40.9,
+          "tiffany_base": 38.3,
+          "gop_soft": 17.3,
+          "gop_trust_target": 9.5,
+          "conflicted_djt_lean": 3.8,
+          "remaining_middle": 13.2,
+          "dem_trust_target": 3.1,
+          "dem_soft": 3.0,
+          "dem_base": 11.7
+        }
+      }
     }
   },
   {
@@ -946,7 +1678,8 @@
       "latest_leg": -93.4,
       "gov_2022": -28.5,
       "ussen_2022": -31.8,
-      "pres_2024": -30.8
+      "pres_2024": -30.8,
+      "model_rga_all": 39.1
     },
     "pres_2024_margin": -30.8,
     "gov_2022_margin": -28.5,
@@ -959,6 +1692,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 37.4
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 15.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 12.3
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 4.2
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 13.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.9
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 3.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 11.0
+            }
+          ],
+          "margin": 39.1,
+          "tiffany_base": 37.4,
+          "gop_soft": 15.9,
+          "gop_trust_target": 12.3,
+          "conflicted_djt_lean": 4.2,
+          "remaining_middle": 13.2,
+          "dem_trust_target": 2.9,
+          "dem_soft": 3.2,
+          "dem_base": 11.0
+        }
+      }
     }
   },
   {
@@ -1020,7 +1813,8 @@
       "latest_leg": 2.3,
       "gov_2022": 10.2,
       "ussen_2022": 4.6,
-      "pres_2024": 1.6
+      "pres_2024": 1.6,
+      "model_rga_all": -0.3
     },
     "pres_2024_margin": 1.6,
     "gov_2022_margin": 10.2,
@@ -1033,6 +1827,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 22.2
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 12.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.4
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 7.8
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 9.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 6.1
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 6.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.7
+            }
+          ],
+          "margin": -0.3,
+          "tiffany_base": 22.2,
+          "gop_soft": 12.1,
+          "gop_trust_target": 7.4,
+          "conflicted_djt_lean": 7.8,
+          "remaining_middle": 9.7,
+          "dem_trust_target": 6.1,
+          "dem_soft": 6.9,
+          "dem_base": 27.7
+        }
+      }
     }
   },
   {
@@ -1094,7 +1948,8 @@
       "latest_leg": -22.8,
       "gov_2022": 17.5,
       "ussen_2022": 11.9,
-      "pres_2024": 7.7
+      "pres_2024": 7.7,
+      "model_rga_all": -9.2
     },
     "pres_2024_margin": 7.7,
     "gov_2022_margin": 17.5,
@@ -1107,6 +1962,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 17.5
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 10.2
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.8
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 10.8
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 9.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 8.2
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 9.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.8
+            }
+          ],
+          "margin": -9.2,
+          "tiffany_base": 17.5,
+          "gop_soft": 10.2,
+          "gop_trust_target": 6.8,
+          "conflicted_djt_lean": 10.8,
+          "remaining_middle": 9.7,
+          "dem_trust_target": 8.2,
+          "dem_soft": 9.1,
+          "dem_base": 27.8
+        }
+      }
     }
   },
   {
@@ -1168,7 +2083,8 @@
       "latest_leg": 97.2,
       "gov_2022": 35.5,
       "ussen_2022": 31.6,
-      "pres_2024": 29.5
+      "pres_2024": 29.5,
+      "model_rga_all": -38.8
     },
     "pres_2024_margin": 29.5,
     "gov_2022_margin": 35.5,
@@ -1181,6 +2097,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 10.0
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 6.4
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.2
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 11.1
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 4.0
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 9.1
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 10.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 45.0
+            }
+          ],
+          "margin": -38.8,
+          "tiffany_base": 10.0,
+          "gop_soft": 6.4,
+          "gop_trust_target": 4.2,
+          "conflicted_djt_lean": 11.1,
+          "remaining_middle": 4.0,
+          "dem_trust_target": 9.1,
+          "dem_soft": 10.2,
+          "dem_base": 45.0
+        }
+      }
     }
   },
   {
@@ -1242,7 +2218,8 @@
       "latest_leg": -20.3,
       "gov_2022": 11.8,
       "ussen_2022": 5.3,
-      "pres_2024": 1.0
+      "pres_2024": 1.0,
+      "model_rga_all": -0.6
     },
     "pres_2024_margin": 1.0,
     "gov_2022_margin": 11.8,
@@ -1255,6 +2232,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 23.7
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 12.3
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.6
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 6.9
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 8.1
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.8
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 6.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 30.2
+            }
+          ],
+          "margin": -0.6,
+          "tiffany_base": 23.7,
+          "gop_soft": 12.3,
+          "gop_trust_target": 6.6,
+          "conflicted_djt_lean": 6.9,
+          "remaining_middle": 8.1,
+          "dem_trust_target": 5.8,
+          "dem_soft": 6.4,
+          "dem_base": 30.2
+        }
+      }
     }
   },
   {
@@ -1316,7 +2353,8 @@
       "latest_leg": 6.6,
       "gov_2022": 13.2,
       "ussen_2022": 8.5,
-      "pres_2024": 8.7
+      "pres_2024": 8.7,
+      "model_rga_all": -16.0
     },
     "pres_2024_margin": 8.7,
     "gov_2022_margin": 13.2,
@@ -1329,6 +2367,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 13.7
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 9.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.1
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 13.0
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 7.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 10.0
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 9.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 29.8
+            }
+          ],
+          "margin": -16.0,
+          "tiffany_base": 13.7,
+          "gop_soft": 9.6,
+          "gop_trust_target": 7.1,
+          "conflicted_djt_lean": 13.0,
+          "remaining_middle": 7.3,
+          "dem_trust_target": 10.0,
+          "dem_soft": 9.5,
+          "dem_base": 29.8
+        }
+      }
     }
   },
   {
@@ -1390,7 +2488,8 @@
       "latest_leg": -8.1,
       "gov_2022": -23.4,
       "ussen_2022": -28.2,
-      "pres_2024": -25.8
+      "pres_2024": -25.8,
+      "model_rga_all": 32.4
     },
     "pres_2024_margin": -25.8,
     "gov_2022_margin": -23.4,
@@ -1403,6 +2502,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 34.7
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 15.5
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 11.0
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 5.4
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 11.5
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.1
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 3.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 14.0
+            }
+          ],
+          "margin": 32.4,
+          "tiffany_base": 34.7,
+          "gop_soft": 15.5,
+          "gop_trust_target": 11.0,
+          "conflicted_djt_lean": 5.4,
+          "remaining_middle": 11.5,
+          "dem_trust_target": 4.1,
+          "dem_soft": 3.8,
+          "dem_base": 14.0
+        }
+      }
     }
   },
   {
@@ -1464,7 +2623,8 @@
       "latest_leg": -40.1,
       "gov_2022": -35.3,
       "ussen_2022": -38.7,
-      "pres_2024": -34.5
+      "pres_2024": -34.5,
+      "model_rga_all": 39.3
     },
     "pres_2024_margin": -34.5,
     "gov_2022_margin": -35.3,
@@ -1477,6 +2637,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 39.7
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 13.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 11.8
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 5.8
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 11.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.8
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 3.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 11.0
+            }
+          ],
+          "margin": 39.3,
+          "tiffany_base": 39.7,
+          "gop_soft": 13.8,
+          "gop_trust_target": 11.8,
+          "conflicted_djt_lean": 5.8,
+          "remaining_middle": 11.8,
+          "dem_trust_target": 2.8,
+          "dem_soft": 3.2,
+          "dem_base": 11.0
+        }
+      }
     }
   },
   {
@@ -1538,7 +2758,8 @@
       "latest_leg": -88.3,
       "gov_2022": 3.4,
       "ussen_2022": -0.7,
-      "pres_2024": 1.2
+      "pres_2024": 1.2,
+      "model_rga_all": -5.4
     },
     "pres_2024_margin": 1.2,
     "gov_2022_margin": 3.4,
@@ -1551,6 +2772,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 17.9
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 10.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 8.5
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 12.5
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 9.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 8.5
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 9.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 24.3
+            }
+          ],
+          "margin": -5.4,
+          "tiffany_base": 17.9,
+          "gop_soft": 10.0,
+          "gop_trust_target": 8.5,
+          "conflicted_djt_lean": 12.5,
+          "remaining_middle": 9.3,
+          "dem_trust_target": 8.5,
+          "dem_soft": 9.0,
+          "dem_base": 24.3
+        }
+      }
     }
   },
   {
@@ -1612,7 +2893,8 @@
       "latest_leg": 95.3,
       "gov_2022": 12.7,
       "ussen_2022": 9.4,
-      "pres_2024": 7.6
+      "pres_2024": 7.6,
+      "model_rga_all": -13.0
     },
     "pres_2024_margin": 7.6,
     "gov_2022_margin": 12.7,
@@ -1625,6 +2907,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 13.5
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 10.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.3
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 13.5
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 9.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 10.0
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 9.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.3
+            }
+          ],
+          "margin": -13.0,
+          "tiffany_base": 13.5,
+          "gop_soft": 10.0,
+          "gop_trust_target": 7.3,
+          "conflicted_djt_lean": 13.5,
+          "remaining_middle": 9.2,
+          "dem_trust_target": 10.0,
+          "dem_soft": 9.2,
+          "dem_base": 27.3
+        }
+      }
     }
   },
   {
@@ -1686,7 +3028,8 @@
       "latest_leg": -89.5,
       "gov_2022": -30.4,
       "ussen_2022": -36.2,
-      "pres_2024": -35.8
+      "pres_2024": -35.8,
+      "model_rga_all": 47.4
     },
     "pres_2024_margin": -35.8,
     "gov_2022_margin": -30.4,
@@ -1699,6 +3042,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 39.2
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 19.4
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 11.1
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 3.4
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 13.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.3
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 2.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 8.6
+            }
+          ],
+          "margin": 47.4,
+          "tiffany_base": 39.2,
+          "gop_soft": 19.4,
+          "gop_trust_target": 11.1,
+          "conflicted_djt_lean": 3.4,
+          "remaining_middle": 13.3,
+          "dem_trust_target": 2.3,
+          "dem_soft": 2.6,
+          "dem_base": 8.6
+        }
+      }
     }
   },
   {
@@ -1760,7 +3163,8 @@
       "latest_leg": -17.4,
       "gov_2022": -6.4,
       "ussen_2022": -12.2,
-      "pres_2024": -13.2
+      "pres_2024": -13.2,
+      "model_rga_all": 18.0
     },
     "pres_2024_margin": -13.2,
     "gov_2022_margin": -6.4,
@@ -1773,6 +3177,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 28.1
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 14.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 9.7
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 6.4
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 10.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.0
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 5.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 19.9
+            }
+          ],
+          "margin": 18.0,
+          "tiffany_base": 28.1,
+          "gop_soft": 14.9,
+          "gop_trust_target": 9.7,
+          "conflicted_djt_lean": 6.4,
+          "remaining_middle": 10.8,
+          "dem_trust_target": 5.0,
+          "dem_soft": 5.1,
+          "dem_base": 19.9
+        }
+      }
     }
   },
   {
@@ -1834,7 +3298,8 @@
       "latest_leg": 99.8,
       "gov_2022": -6.3,
       "ussen_2022": -10.7,
-      "pres_2024": -13.6
+      "pres_2024": -13.6,
+      "model_rga_all": 22.3
     },
     "pres_2024_margin": -13.6,
     "gov_2022_margin": -6.3,
@@ -1847,6 +3312,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 29.3
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 15.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 9.1
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 5.5
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 13.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.7
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 4.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 18.6
+            }
+          ],
+          "margin": 22.3,
+          "tiffany_base": 29.3,
+          "gop_soft": 15.6,
+          "gop_trust_target": 9.1,
+          "conflicted_djt_lean": 5.5,
+          "remaining_middle": 13.2,
+          "dem_trust_target": 4.7,
+          "dem_soft": 4.0,
+          "dem_base": 18.6
+        }
+      }
     }
   },
   {
@@ -1908,7 +3433,8 @@
       "latest_leg": 98.4,
       "gov_2022": 76.5,
       "ussen_2022": 74.6,
-      "pres_2024": 68.8
+      "pres_2024": 68.8,
+      "model_rga_all": -72.2
     },
     "pres_2024_margin": 68.8,
     "gov_2022_margin": 76.5,
@@ -1921,6 +3447,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 1.0
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 1.4
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 0.9
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 8.1
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 1.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 12.7
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 8.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 66.2
+            }
+          ],
+          "margin": -72.2,
+          "tiffany_base": 1.0,
+          "gop_soft": 1.4,
+          "gop_trust_target": 0.9,
+          "conflicted_djt_lean": 8.1,
+          "remaining_middle": 1.3,
+          "dem_trust_target": 12.7,
+          "dem_soft": 8.4,
+          "dem_base": 66.2
+        }
+      }
     }
   },
   {
@@ -1982,7 +3568,8 @@
       "latest_leg": 36.0,
       "gov_2022": 57.7,
       "ussen_2022": 53.5,
-      "pres_2024": 52.3
+      "pres_2024": 52.3,
+      "model_rga_all": -61.9
     },
     "pres_2024_margin": 52.3,
     "gov_2022_margin": 57.7,
@@ -1995,6 +3582,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 4.0
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 3.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 1.9
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 10.1
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 1.5
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 10.6
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 10.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 58.0
+            }
+          ],
+          "margin": -61.9,
+          "tiffany_base": 4.0,
+          "gop_soft": 3.0,
+          "gop_trust_target": 1.9,
+          "conflicted_djt_lean": 10.1,
+          "remaining_middle": 1.5,
+          "dem_trust_target": 10.6,
+          "dem_soft": 10.9,
+          "dem_base": 58.0
+        }
+      }
     }
   },
   {
@@ -2056,7 +3703,8 @@
       "latest_leg": -26.3,
       "gov_2022": -21.8,
       "ussen_2022": -26.5,
-      "pres_2024": -22.1
+      "pres_2024": -22.1,
+      "model_rga_all": 22.2
     },
     "pres_2024_margin": -22.1,
     "gov_2022_margin": -21.8,
@@ -2069,6 +3717,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 30.7
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 12.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 11.2
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 8.8
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 12.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.5
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 4.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 16.0
+            }
+          ],
+          "margin": 22.2,
+          "tiffany_base": 30.7,
+          "gop_soft": 12.0,
+          "gop_trust_target": 11.2,
+          "conflicted_djt_lean": 8.8,
+          "remaining_middle": 12.3,
+          "dem_trust_target": 4.5,
+          "dem_soft": 4.5,
+          "dem_base": 16.0
+        }
+      }
     }
   },
   {
@@ -2130,7 +3838,8 @@
       "latest_leg": -24.9,
       "gov_2022": -16.7,
       "ussen_2022": -21.5,
-      "pres_2024": -19.3
+      "pres_2024": -19.3,
+      "model_rga_all": 26.3
     },
     "pres_2024_margin": -19.3,
     "gov_2022_margin": -16.7,
@@ -2143,6 +3852,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 33.0
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 15.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 8.5
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 5.4
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 11.9
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 4.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 17.1
+            }
+          ],
+          "margin": 26.3,
+          "tiffany_base": 33.0,
+          "gop_soft": 15.1,
+          "gop_trust_target": 8.5,
+          "conflicted_djt_lean": 5.4,
+          "remaining_middle": 11.9,
+          "dem_trust_target": 4.3,
+          "dem_soft": 4.7,
+          "dem_base": 17.1
+        }
+      }
     }
   },
   {
@@ -2204,7 +3973,8 @@
       "latest_leg": 5.1,
       "gov_2022": 7.3,
       "ussen_2022": 2.5,
-      "pres_2024": 3.6
+      "pres_2024": 3.6,
+      "model_rga_all": -9.2
     },
     "pres_2024_margin": 3.6,
     "gov_2022_margin": 7.3,
@@ -2217,6 +3987,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 16.2
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 10.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 8.3
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 12.3
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 9.0
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 8.6
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 9.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 26.4
+            }
+          ],
+          "margin": -9.2,
+          "tiffany_base": 16.2,
+          "gop_soft": 10.1,
+          "gop_trust_target": 8.3,
+          "conflicted_djt_lean": 12.3,
+          "remaining_middle": 9.0,
+          "dem_trust_target": 8.6,
+          "dem_soft": 9.1,
+          "dem_base": 26.4
+        }
+      }
     }
   },
   {
@@ -2278,7 +4108,8 @@
       "latest_leg": 0.9,
       "gov_2022": 9.1,
       "ussen_2022": 3.2,
-      "pres_2024": 2.2
+      "pres_2024": 2.2,
+      "model_rga_all": -3.6
     },
     "pres_2024_margin": 2.2,
     "gov_2022_margin": 9.1,
@@ -2291,6 +4122,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 19.6
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 12.2
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.7
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 9.0
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 8.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 7.5
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 6.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 28.5
+            }
+          ],
+          "margin": -3.6,
+          "tiffany_base": 19.6,
+          "gop_soft": 12.2,
+          "gop_trust_target": 7.7,
+          "conflicted_djt_lean": 9.0,
+          "remaining_middle": 8.6,
+          "dem_trust_target": 7.5,
+          "dem_soft": 6.9,
+          "dem_base": 28.5
+        }
+      }
     }
   },
   {
@@ -2352,7 +4243,8 @@
       "latest_leg": 4.7,
       "gov_2022": 10.8,
       "ussen_2022": 4.4,
-      "pres_2024": 2.6
+      "pres_2024": 2.6,
+      "model_rga_all": -4.1
     },
     "pres_2024_margin": 2.6,
     "gov_2022_margin": 10.8,
@@ -2365,6 +4257,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 19.8
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 12.2
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.5
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 8.8
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 8.1
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 7.4
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 6.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 29.7
+            }
+          ],
+          "margin": -4.1,
+          "tiffany_base": 19.8,
+          "gop_soft": 12.2,
+          "gop_trust_target": 7.5,
+          "conflicted_djt_lean": 8.8,
+          "remaining_middle": 8.1,
+          "dem_trust_target": 7.4,
+          "dem_soft": 6.4,
+          "dem_base": 29.7
+        }
+      }
     }
   },
   {
@@ -2426,7 +4378,8 @@
       "latest_leg": -92.8,
       "gov_2022": -34.2,
       "ussen_2022": -38.6,
-      "pres_2024": -33.6
+      "pres_2024": -33.6,
+      "model_rga_all": 38.2
     },
     "pres_2024_margin": -33.6,
     "gov_2022_margin": -34.2,
@@ -2439,6 +4392,66 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "tiffany_base",
+              "label": "Tiffany Base",
+              "value": 39.1
+            },
+            {
+              "key": "gop_soft",
+              "label": "GOP Soft",
+              "value": 13.2
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 12.6
+            },
+            {
+              "key": "conflicted_djt_lean",
+              "label": "Conflicted DJT Lean",
+              "value": 6.0
+            },
+            {
+              "key": "remaining_middle",
+              "label": "Remaining Middle",
+              "value": 12.4
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.7
+            },
+            {
+              "key": "dem_soft",
+              "label": "Dem Soft",
+              "value": 3.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 11.1
+            }
+          ],
+          "margin": 38.2,
+          "tiffany_base": 39.1,
+          "gop_soft": 13.2,
+          "gop_trust_target": 12.6,
+          "conflicted_djt_lean": 6.0,
+          "remaining_middle": 12.4,
+          "dem_trust_target": 2.7,
+          "dem_soft": 3.0,
+          "dem_base": 11.1
+        }
+      }
     }
   }
 ]

@@ -58,7 +58,8 @@
       "latest_leg": 6.9,
       "gov_2022": -10.0,
       "ussen_2022": -3.0,
-      "pres_2024": -1.6
+      "pres_2024": -1.6,
+      "model_rga_all": -8.3
     },
     "pres_2024_margin": -1.6,
     "gov_2022_margin": -10.0,
@@ -71,6 +72,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 22.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.5
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 12.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 5.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 14.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.2
+            }
+          ],
+          "margin": -8.3,
+          "feenstra_base": 22.3,
+          "gop_targets": 11.2,
+          "trust_targets": 6.5,
+          "stubborn_middle": 12.8,
+          "vulnerable_targets": 5.3,
+          "dem_likely": 14.6,
+          "dem_base": 27.2
+        }
+      }
     }
   },
   {
@@ -132,7 +187,8 @@
       "latest_leg": -21.4,
       "gov_2022": -30.7,
       "ussen_2022": -22.7,
-      "pres_2024": -18.6
+      "pres_2024": -18.6,
+      "model_rga_all": 8.3
     },
     "pres_2024_margin": -18.6,
     "gov_2022_margin": -30.7,
@@ -145,6 +201,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 32.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.3
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.8
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.9
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 26.1
+            }
+          ],
+          "margin": 8.3,
+          "feenstra_base": 32.7,
+          "gop_targets": 11.3,
+          "trust_targets": 6.8,
+          "stubborn_middle": 10.9,
+          "vulnerable_targets": 2.7,
+          "dem_likely": 9.6,
+          "dem_base": 26.1
+        }
+      }
     }
   },
   {
@@ -206,7 +316,8 @@
       "latest_leg": -57.5,
       "gov_2022": -69.8,
       "ussen_2022": -62.9,
-      "pres_2024": -57.1
+      "pres_2024": -57.1,
+      "model_rga_all": 53.6
     },
     "pres_2024_margin": -57.1,
     "gov_2022_margin": -69.8,
@@ -219,6 +330,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 50.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 18.5
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.8
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 11.3
+            }
+          ],
+          "margin": 53.6,
+          "feenstra_base": 50.3,
+          "gop_targets": 18.5,
+          "trust_targets": 7.8,
+          "stubborn_middle": 7.6,
+          "vulnerable_targets": 0.6,
+          "dem_likely": 3.9,
+          "dem_base": 11.3
+        }
+      }
     }
   },
   {
@@ -280,7 +445,8 @@
       "latest_leg": -98.1,
       "gov_2022": -82.3,
       "ussen_2022": -77.5,
-      "pres_2024": -73.3
+      "pres_2024": -73.3,
+      "model_rga_all": 71.5
     },
     "pres_2024_margin": -73.3,
     "gov_2022_margin": -82.3,
@@ -293,6 +459,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 67.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.8
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 5.1
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 5.7
+            }
+          ],
+          "margin": 71.5,
+          "feenstra_base": 67.1,
+          "gop_targets": 12.2,
+          "trust_targets": 7.8,
+          "stubborn_middle": 5.1,
+          "vulnerable_targets": 0.1,
+          "dem_likely": 2.1,
+          "dem_base": 5.7
+        }
+      }
     }
   },
   {
@@ -354,7 +574,8 @@
       "latest_leg": -77.8,
       "gov_2022": -66.3,
       "ussen_2022": -58.7,
-      "pres_2024": -56.4
+      "pres_2024": -56.4,
+      "model_rga_all": 54.7
     },
     "pres_2024_margin": -56.4,
     "gov_2022_margin": -66.3,
@@ -367,6 +588,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 51.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 17.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 10.0
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 6.5
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 10.7
+            }
+          ],
+          "margin": 54.7,
+          "feenstra_base": 51.7,
+          "gop_targets": 17.2,
+          "trust_targets": 10.0,
+          "stubborn_middle": 6.5,
+          "vulnerable_targets": 0.4,
+          "dem_likely": 3.5,
+          "dem_base": 10.7
+        }
+      }
     }
   },
   {
@@ -428,7 +703,8 @@
       "latest_leg": -97.7,
       "gov_2022": -46.9,
       "ussen_2022": -39.4,
-      "pres_2024": -36.2
+      "pres_2024": -36.2,
+      "model_rga_all": 29.1
     },
     "pres_2024_margin": -36.2,
     "gov_2022_margin": -46.9,
@@ -441,6 +717,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 40.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.6
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.5
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 7.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 18.9
+            }
+          ],
+          "margin": 29.1,
+          "feenstra_base": 40.9,
+          "gop_targets": 14.6,
+          "trust_targets": 7.5,
+          "stubborn_middle": 9.6,
+          "vulnerable_targets": 0.9,
+          "dem_likely": 7.5,
+          "dem_base": 18.9
+        }
+      }
     }
   },
   {
@@ -502,7 +832,8 @@
       "latest_leg": -83.4,
       "gov_2022": -57.4,
       "ussen_2022": -51.0,
-      "pres_2024": -50.6
+      "pres_2024": -50.6,
+      "model_rga_all": 49.0
     },
     "pres_2024_margin": -50.6,
     "gov_2022_margin": -57.4,
@@ -515,6 +846,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 46.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 19.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 10.1
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 13.1
+            }
+          ],
+          "margin": 49.0,
+          "feenstra_base": 46.0,
+          "gop_targets": 19.4,
+          "trust_targets": 10.1,
+          "stubborn_middle": 7.6,
+          "vulnerable_targets": 0.5,
+          "dem_likely": 3.3,
+          "dem_base": 13.1
+        }
+      }
     }
   },
   {
@@ -576,7 +961,8 @@
       "latest_leg": -97.5,
       "gov_2022": -31.2,
       "ussen_2022": -24.1,
-      "pres_2024": -26.7
+      "pres_2024": -26.7,
+      "model_rga_all": 15.5
     },
     "pres_2024_margin": -26.7,
     "gov_2022_margin": -31.2,
@@ -589,6 +975,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 32.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 8.1
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 8.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 23.3
+            }
+          ],
+          "margin": 15.5,
+          "feenstra_base": 32.7,
+          "gop_targets": 14.2,
+          "trust_targets": 8.1,
+          "stubborn_middle": 10.8,
+          "vulnerable_targets": 2.7,
+          "dem_likely": 8.1,
+          "dem_base": 23.3
+        }
+      }
     }
   },
   {
@@ -650,7 +1090,8 @@
       "latest_leg": -46.6,
       "gov_2022": -46.7,
       "ussen_2022": -39.3,
-      "pres_2024": -39.2
+      "pres_2024": -39.2,
+      "model_rga_all": 35.8
     },
     "pres_2024_margin": -39.2,
     "gov_2022_margin": -46.7,
@@ -663,6 +1104,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 39.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 18.3
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 10.0
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.3
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 5.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 17.0
+            }
+          ],
+          "margin": 35.8,
+          "feenstra_base": 39.5,
+          "gop_targets": 18.3,
+          "trust_targets": 10.0,
+          "stubborn_middle": 9.3,
+          "vulnerable_targets": 1.0,
+          "dem_likely": 5.0,
+          "dem_base": 17.0
+        }
+      }
     }
   },
   {
@@ -724,7 +1219,8 @@
       "latest_leg": -98.4,
       "gov_2022": -50.0,
       "ussen_2022": -42.4,
-      "pres_2024": -42.6
+      "pres_2024": -42.6,
+      "model_rga_all": 39.5
     },
     "pres_2024_margin": -42.6,
     "gov_2022_margin": -50.0,
@@ -737,6 +1233,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 43.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 17.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 8.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.5
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 18.0
+            }
+          ],
+          "margin": 39.5,
+          "feenstra_base": 43.9,
+          "gop_targets": 17.2,
+          "trust_targets": 8.3,
+          "stubborn_middle": 8.5,
+          "vulnerable_targets": 0.5,
+          "dem_likely": 3.6,
+          "dem_base": 18.0
+        }
+      }
     }
   },
   {
@@ -798,7 +1348,8 @@
       "latest_leg": -44.8,
       "gov_2022": -51.1,
       "ussen_2022": -41.8,
-      "pres_2024": -40.7
+      "pres_2024": -40.7,
+      "model_rga_all": 39.4
     },
     "pres_2024_margin": -40.7,
     "gov_2022_margin": -51.1,
@@ -811,6 +1362,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 40.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 20.5
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.4
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 16.9
+            }
+          ],
+          "margin": 39.4,
+          "feenstra_base": 40.3,
+          "gop_targets": 20.5,
+          "trust_targets": 9.4,
+          "stubborn_middle": 7.6,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 4.5,
+          "dem_base": 16.9
+        }
+      }
     }
   },
   {
@@ -872,7 +1477,8 @@
       "latest_leg": -47.6,
       "gov_2022": -58.7,
       "ussen_2022": -50.5,
-      "pres_2024": -45.7
+      "pres_2024": -45.7,
+      "model_rga_all": 42.2
     },
     "pres_2024_margin": -45.7,
     "gov_2022_margin": -58.7,
@@ -885,6 +1491,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 44.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 17.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.8
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.0
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 15.9
+            }
+          ],
+          "margin": 42.2,
+          "feenstra_base": 44.2,
+          "gop_targets": 17.8,
+          "trust_targets": 9.8,
+          "stubborn_middle": 8.0,
+          "vulnerable_targets": 0.4,
+          "dem_likely": 3.9,
+          "dem_base": 15.9
+        }
+      }
     }
   },
   {
@@ -946,7 +1606,8 @@
       "latest_leg": -54.4,
       "gov_2022": -63.8,
       "ussen_2022": -56.0,
-      "pres_2024": -53.6
+      "pres_2024": -53.6,
+      "model_rga_all": 50.0
     },
     "pres_2024_margin": -53.6,
     "gov_2022_margin": -63.8,
@@ -959,6 +1620,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 47.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 19.3
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 6.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 13.1
+            }
+          ],
+          "margin": 50.0,
+          "feenstra_base": 47.5,
+          "gop_targets": 19.3,
+          "trust_targets": 9.2,
+          "stubborn_middle": 6.7,
+          "vulnerable_targets": 0.5,
+          "dem_likely": 3.7,
+          "dem_base": 13.1
+        }
+      }
     }
   },
   {
@@ -1020,7 +1735,8 @@
       "latest_leg": -97.5,
       "gov_2022": -39.3,
       "ussen_2022": -31.7,
-      "pres_2024": -26.8
+      "pres_2024": -26.8,
+      "model_rga_all": 19.2
     },
     "pres_2024_margin": -26.8,
     "gov_2022_margin": -39.3,
@@ -1033,6 +1749,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 35.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.1
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 7.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 22.4
+            }
+          ],
+          "margin": 19.2,
+          "feenstra_base": 35.5,
+          "gop_targets": 14.0,
+          "trust_targets": 7.2,
+          "stubborn_middle": 11.1,
+          "vulnerable_targets": 1.9,
+          "dem_likely": 7.9,
+          "dem_base": 22.4
+        }
+      }
     }
   },
   {
@@ -1094,7 +1864,8 @@
       "latest_leg": -38.6,
       "gov_2022": -42.4,
       "ussen_2022": -37.3,
-      "pres_2024": -35.0
+      "pres_2024": -35.0,
+      "model_rga_all": 37.9
     },
     "pres_2024_margin": -35.0,
     "gov_2022_margin": -42.4,
@@ -1107,6 +1878,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 46.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 8.7
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 18.6
+            }
+          ],
+          "margin": 37.9,
+          "feenstra_base": 46.4,
+          "gop_targets": 14.2,
+          "trust_targets": 8.7,
+          "stubborn_middle": 7.8,
+          "vulnerable_targets": 0.3,
+          "dem_likely": 4.1,
+          "dem_base": 18.6
+        }
+      }
     }
   },
   {
@@ -1168,7 +1993,8 @@
       "latest_leg": -50.1,
       "gov_2022": -49.0,
       "ussen_2022": -43.8,
-      "pres_2024": -42.0
+      "pres_2024": -42.0,
+      "model_rga_all": 44.6
     },
     "pres_2024_margin": -42.0,
     "gov_2022_margin": -49.0,
@@ -1181,6 +2007,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 49.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 6.5
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 15.5
+            }
+          ],
+          "margin": 44.6,
+          "feenstra_base": 49.2,
+          "gop_targets": 14.0,
+          "trust_targets": 11.3,
+          "stubborn_middle": 6.5,
+          "vulnerable_targets": 0.3,
+          "dem_likely": 3.1,
+          "dem_base": 15.5
+        }
+      }
     }
   },
   {
@@ -1242,7 +2122,8 @@
       "latest_leg": -98.4,
       "gov_2022": -51.3,
       "ussen_2022": -44.7,
-      "pres_2024": -44.1
+      "pres_2024": -44.1,
+      "model_rga_all": 46.1
     },
     "pres_2024_margin": -44.1,
     "gov_2022_margin": -51.3,
@@ -1255,6 +2136,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 46.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 16.6
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 12.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.1
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 13.8
+            }
+          ],
+          "margin": 46.1,
+          "feenstra_base": 46.6,
+          "gop_targets": 16.6,
+          "trust_targets": 12.2,
+          "stubborn_middle": 7.1,
+          "vulnerable_targets": 0.4,
+          "dem_likely": 3.3,
+          "dem_base": 13.8
+        }
+      }
     }
   },
   {
@@ -1316,7 +2251,8 @@
       "latest_leg": -47.7,
       "gov_2022": -49.2,
       "ussen_2022": -42.9,
-      "pres_2024": -40.3
+      "pres_2024": -40.3,
+      "model_rga_all": 44.8
     },
     "pres_2024_margin": -40.3,
     "gov_2022_margin": -49.2,
@@ -1329,6 +2265,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 49.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.9
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 13.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.0
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 13.8
+            }
+          ],
+          "margin": 44.8,
+          "feenstra_base": 49.1,
+          "gop_targets": 12.9,
+          "trust_targets": 13.3,
+          "stubborn_middle": 7.0,
+          "vulnerable_targets": 0.5,
+          "dem_likely": 3.4,
+          "dem_base": 13.8
+        }
+      }
     }
   },
   {
@@ -1390,7 +2380,8 @@
       "latest_leg": -17.2,
       "gov_2022": -14.8,
       "ussen_2022": -10.9,
-      "pres_2024": -8.6
+      "pres_2024": -8.6,
+      "model_rga_all": 7.8
     },
     "pres_2024_margin": -8.6,
     "gov_2022_margin": -14.8,
@@ -1403,6 +2394,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 31.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.4
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 26.0
+            }
+          ],
+          "margin": 7.8,
+          "feenstra_base": 31.6,
+          "gop_targets": 12.2,
+          "trust_targets": 7.4,
+          "stubborn_middle": 11.2,
+          "vulnerable_targets": 1.5,
+          "dem_likely": 10.0,
+          "dem_base": 26.0
+        }
+      }
     }
   },
   {
@@ -1464,7 +2509,8 @@
       "latest_leg": 5.0,
       "gov_2022": -12.8,
       "ussen_2022": -8.1,
-      "pres_2024": -8.2
+      "pres_2024": -8.2,
+      "model_rga_all": 4.2
     },
     "pres_2024_margin": -8.2,
     "gov_2022_margin": -12.8,
@@ -1477,6 +2523,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 28.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.4
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.9
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 12.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 24.4
+            }
+          ],
+          "margin": 4.2,
+          "feenstra_base": 28.6,
+          "gop_targets": 12.4,
+          "trust_targets": 7.4,
+          "stubborn_middle": 11.9,
+          "vulnerable_targets": 2.8,
+          "dem_likely": 12.4,
+          "dem_base": 24.4
+        }
+      }
     }
   },
   {
@@ -1538,7 +2638,8 @@
       "latest_leg": -17.4,
       "gov_2022": -26.7,
       "ussen_2022": -19.5,
-      "pres_2024": -23.7
+      "pres_2024": -23.7,
+      "model_rga_all": 21.7
     },
     "pres_2024_margin": -23.7,
     "gov_2022_margin": -26.7,
@@ -1551,6 +2652,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 36.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 8.7
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.9
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 23.5
+            }
+          ],
+          "margin": 21.7,
+          "feenstra_base": 36.5,
+          "gop_targets": 15.2,
+          "trust_targets": 8.7,
+          "stubborn_middle": 8.9,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 6.5,
+          "dem_base": 23.5
+        }
+      }
     }
   },
   {
@@ -1612,7 +2767,8 @@
       "latest_leg": -18.6,
       "gov_2022": -26.3,
       "ussen_2022": -19.1,
-      "pres_2024": -20.3
+      "pres_2024": -20.3,
+      "model_rga_all": 17.8
     },
     "pres_2024_margin": -20.3,
     "gov_2022_margin": -26.3,
@@ -1625,6 +2781,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 35.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 8.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 25.4
+            }
+          ],
+          "margin": 17.8,
+          "feenstra_base": 35.5,
+          "gop_targets": 13.8,
+          "trust_targets": 8.2,
+          "stubborn_middle": 10.2,
+          "vulnerable_targets": 0.8,
+          "dem_likely": 6.1,
+          "dem_base": 25.4
+        }
+      }
     }
   },
   {
@@ -1686,7 +2896,8 @@
       "latest_leg": -44.3,
       "gov_2022": -44.5,
       "ussen_2022": -37.6,
-      "pres_2024": -40.7
+      "pres_2024": -40.7,
+      "model_rga_all": 39.3
     },
     "pres_2024_margin": -40.7,
     "gov_2022_margin": -44.5,
@@ -1699,6 +2910,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 43.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 16.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.4
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 16.2
+            }
+          ],
+          "margin": 39.3,
+          "feenstra_base": 43.2,
+          "gop_targets": 16.7,
+          "trust_targets": 11.4,
+          "stubborn_middle": 7.7,
+          "vulnerable_targets": 0.5,
+          "dem_likely": 4.4,
+          "dem_base": 16.2
+        }
+      }
     }
   },
   {
@@ -1760,7 +3025,8 @@
       "latest_leg": -34.0,
       "gov_2022": -53.5,
       "ussen_2022": -45.4,
-      "pres_2024": -47.7
+      "pres_2024": -47.7,
+      "model_rga_all": 43.3
     },
     "pres_2024_margin": -47.7,
     "gov_2022_margin": -53.5,
@@ -1773,6 +3039,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 45.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 16.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 10.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 6.9
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 14.9
+            }
+          ],
+          "margin": 43.3,
+          "feenstra_base": 45.9,
+          "gop_targets": 16.8,
+          "trust_targets": 10.3,
+          "stubborn_middle": 6.9,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 4.5,
+          "dem_base": 14.9
+        }
+      }
     }
   },
   {
@@ -1834,7 +3154,8 @@
       "latest_leg": -29.7,
       "gov_2022": -28.1,
       "ussen_2022": -22.2,
-      "pres_2024": -28.2
+      "pres_2024": -28.2,
+      "model_rga_all": 15.1
     },
     "pres_2024_margin": -28.2,
     "gov_2022_margin": -28.1,
@@ -1847,6 +3168,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 30.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.9
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 8.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 12.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 24.4
+            }
+          ],
+          "margin": 15.1,
+          "feenstra_base": 30.8,
+          "gop_targets": 14.9,
+          "trust_targets": 8.3,
+          "stubborn_middle": 12.8,
+          "vulnerable_targets": 2.5,
+          "dem_likely": 6.2,
+          "dem_base": 24.4
+        }
+      }
     }
   },
   {
@@ -1908,7 +3283,8 @@
       "latest_leg": -47.4,
       "gov_2022": -53.6,
       "ussen_2022": -46.2,
-      "pres_2024": -50.2
+      "pres_2024": -50.2,
+      "model_rga_all": 43.9
     },
     "pres_2024_margin": -50.2,
     "gov_2022_margin": -53.6,
@@ -1921,6 +3297,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 42.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 20.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.5
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.1
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 15.1
+            }
+          ],
+          "margin": 43.9,
+          "feenstra_base": 42.9,
+          "gop_targets": 20.2,
+          "trust_targets": 9.5,
+          "stubborn_middle": 7.1,
+          "vulnerable_targets": 1.0,
+          "dem_likely": 4.1,
+          "dem_base": 15.1
+        }
+      }
     }
   },
   {
@@ -1982,7 +3412,8 @@
       "latest_leg": 11.5,
       "gov_2022": -5.6,
       "ussen_2022": 0.0,
-      "pres_2024": 0.9
+      "pres_2024": 0.9,
+      "model_rga_all": -7.0
     },
     "pres_2024_margin": 0.9,
     "gov_2022_margin": -5.6,
@@ -1995,6 +3426,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 27.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.9
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 33.2
+            }
+          ],
+          "margin": -7.0,
+          "feenstra_base": 27.1,
+          "gop_targets": 9.7,
+          "trust_targets": 7.3,
+          "stubborn_middle": 9.9,
+          "vulnerable_targets": 2.2,
+          "dem_likely": 10.6,
+          "dem_base": 33.2
+        }
+      }
     }
   },
   {
@@ -2056,7 +3541,8 @@
       "latest_leg": -6.6,
       "gov_2022": -7.7,
       "ussen_2022": -1.6,
-      "pres_2024": -1.7
+      "pres_2024": -1.7,
+      "model_rga_all": -3.8
     },
     "pres_2024_margin": -1.7,
     "gov_2022_margin": -7.7,
@@ -2069,6 +3555,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 29.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.1
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.3
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 33.1
+            }
+          ],
+          "margin": -3.8,
+          "feenstra_base": 29.3,
+          "gop_targets": 9.1,
+          "trust_targets": 7.9,
+          "stubborn_middle": 9.3,
+          "vulnerable_targets": 2.1,
+          "dem_likely": 9.1,
+          "dem_base": 33.1
+        }
+      }
     }
   },
   {
@@ -2130,7 +3670,8 @@
       "latest_leg": 95.7,
       "gov_2022": 15.6,
       "ussen_2022": 21.1,
-      "pres_2024": 15.6
+      "pres_2024": 15.6,
+      "model_rga_all": -24.4
     },
     "pres_2024_margin": 15.6,
     "gov_2022_margin": 15.6,
@@ -2143,6 +3684,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 17.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 8.1
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.5
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 13.3
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 3.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 39.2
+            }
+          ],
+          "margin": -24.4,
+          "feenstra_base": 17.6,
+          "gop_targets": 8.1,
+          "trust_targets": 7.5,
+          "stubborn_middle": 13.3,
+          "vulnerable_targets": 3.5,
+          "dem_likely": 10.9,
+          "dem_base": 39.2
+        }
+      }
     }
   },
   {
@@ -2204,7 +3799,8 @@
       "latest_leg": 25.2,
       "gov_2022": 16.7,
       "ussen_2022": 21.9,
-      "pres_2024": 17.8
+      "pres_2024": 17.8,
+      "model_rga_all": -25.4
     },
     "pres_2024_margin": 17.8,
     "gov_2022_margin": 16.7,
@@ -2217,6 +3813,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 17.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 7.3
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.5
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 14.0
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 4.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 39.8
+            }
+          ],
+          "margin": -25.4,
+          "feenstra_base": 17.7,
+          "gop_targets": 7.3,
+          "trust_targets": 6.5,
+          "stubborn_middle": 14.0,
+          "vulnerable_targets": 4.1,
+          "dem_likely": 10.6,
+          "dem_base": 39.8
+        }
+      }
     }
   },
   {
@@ -2278,7 +3928,8 @@
       "latest_leg": 96.0,
       "gov_2022": 7.0,
       "ussen_2022": 11.9,
-      "pres_2024": 14.9
+      "pres_2024": 14.9,
+      "model_rga_all": -19.7
     },
     "pres_2024_margin": 14.9,
     "gov_2022_margin": 7.0,
@@ -2291,6 +3942,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 25.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 7.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 5.0
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 41.3
+            }
+          ],
+          "margin": -19.7,
+          "feenstra_base": 25.4,
+          "gop_targets": 7.0,
+          "trust_targets": 5.0,
+          "stubborn_middle": 8.2,
+          "vulnerable_targets": 2.2,
+          "dem_likely": 10.8,
+          "dem_base": 41.3
+        }
+      }
     }
   },
   {
@@ -2352,7 +4057,8 @@
       "latest_leg": 95.9,
       "gov_2022": 13.0,
       "ussen_2022": 16.9,
-      "pres_2024": 19.8
+      "pres_2024": 19.8,
+      "model_rga_all": -24.2
     },
     "pres_2024_margin": 19.8,
     "gov_2022_margin": 13.0,
@@ -2365,6 +4071,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 23.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 7.3
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 4.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 11.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 43.4
+            }
+          ],
+          "margin": -24.2,
+          "feenstra_base": 23.2,
+          "gop_targets": 7.3,
+          "trust_targets": 4.3,
+          "stubborn_middle": 8.2,
+          "vulnerable_targets": 2.3,
+          "dem_likely": 11.3,
+          "dem_base": 43.4
+        }
+      }
     }
   },
   {
@@ -2426,7 +4186,8 @@
       "latest_leg": 75.1,
       "gov_2022": 30.7,
       "ussen_2022": 34.2,
-      "pres_2024": 26.1
+      "pres_2024": 26.1,
+      "model_rga_all": -30.5
     },
     "pres_2024_margin": 26.1,
     "gov_2022_margin": 30.7,
@@ -2439,6 +4200,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 14.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 7.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 8.0
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 15.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 3.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 13.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 38.2
+            }
+          ],
+          "margin": -30.5,
+          "feenstra_base": 14.0,
+          "gop_targets": 7.0,
+          "trust_targets": 8.0,
+          "stubborn_middle": 15.8,
+          "vulnerable_targets": 3.7,
+          "dem_likely": 13.3,
+          "dem_base": 38.2
+        }
+      }
     }
   },
   {
@@ -2500,7 +4315,8 @@
       "latest_leg": 53.4,
       "gov_2022": 54.3,
       "ussen_2022": 56.5,
-      "pres_2024": 47.1
+      "pres_2024": 47.1,
+      "model_rga_all": -48.6
     },
     "pres_2024_margin": 47.1,
     "gov_2022_margin": 54.3,
@@ -2513,6 +4329,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 10.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 4.6
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 4.7
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 4.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 13.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 50.7
+            }
+          ],
+          "margin": -48.6,
+          "feenstra_base": 10.8,
+          "gop_targets": 4.6,
+          "trust_targets": 4.7,
+          "stubborn_middle": 11.7,
+          "vulnerable_targets": 4.2,
+          "dem_likely": 13.3,
+          "dem_base": 50.7
+        }
+      }
     }
   },
   {
@@ -2574,7 +4444,8 @@
       "latest_leg": 38.1,
       "gov_2022": 39.8,
       "ussen_2022": 43.2,
-      "pres_2024": 38.0
+      "pres_2024": 38.0,
+      "model_rga_all": -37.1
     },
     "pres_2024_margin": 38.0,
     "gov_2022_margin": 39.8,
@@ -2587,6 +4458,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 16.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 6.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 5.1
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.1
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 49.3
+            }
+          ],
+          "margin": -37.1,
+          "feenstra_base": 16.0,
+          "gop_targets": 6.4,
+          "trust_targets": 5.1,
+          "stubborn_middle": 11.1,
+          "vulnerable_targets": 1.9,
+          "dem_likely": 10.2,
+          "dem_base": 49.3
+        }
+      }
     }
   },
   {
@@ -2648,7 +4573,8 @@
       "latest_leg": 97.6,
       "gov_2022": 50.7,
       "ussen_2022": 54.6,
-      "pres_2024": 52.0
+      "pres_2024": 52.0,
+      "model_rga_all": -54.8
     },
     "pres_2024_margin": 52.0,
     "gov_2022_margin": 50.7,
@@ -2661,6 +4587,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 10.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 5.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 3.6
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 6.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 12.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 58.5
+            }
+          ],
+          "margin": -54.8,
+          "feenstra_base": 10.3,
+          "gop_targets": 5.8,
+          "trust_targets": 3.6,
+          "stubborn_middle": 6.6,
+          "vulnerable_targets": 2.7,
+          "dem_likely": 12.4,
+          "dem_base": 58.5
+        }
+      }
     }
   },
   {
@@ -2722,7 +4702,8 @@
       "latest_leg": -98.3,
       "gov_2022": -52.1,
       "ussen_2022": -47.0,
-      "pres_2024": -44.3
+      "pres_2024": -44.3,
+      "model_rga_all": 42.4
     },
     "pres_2024_margin": -44.3,
     "gov_2022_margin": -52.1,
@@ -2735,6 +4716,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 46.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 16.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 8.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 15.6
+            }
+          ],
+          "margin": 42.4,
+          "feenstra_base": 46.3,
+          "gop_targets": 16.4,
+          "trust_targets": 8.9,
+          "stubborn_middle": 7.7,
+          "vulnerable_targets": 0.4,
+          "dem_likely": 4.7,
+          "dem_base": 15.6
+        }
+      }
     }
   },
   {
@@ -2796,7 +4831,8 @@
       "latest_leg": -11.5,
       "gov_2022": -27.0,
       "ussen_2022": -20.7,
-      "pres_2024": -24.6
+      "pres_2024": -24.6,
+      "model_rga_all": 20.1
     },
     "pres_2024_margin": -24.6,
     "gov_2022_margin": -27.0,
@@ -2809,6 +4845,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 33.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 17.6
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 8.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.1
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 7.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 23.6
+            }
+          ],
+          "margin": 20.1,
+          "feenstra_base": 33.2,
+          "gop_targets": 17.6,
+          "trust_targets": 8.2,
+          "stubborn_middle": 9.1,
+          "vulnerable_targets": 1.1,
+          "dem_likely": 7.1,
+          "dem_base": 23.6
+        }
+      }
     }
   },
   {
@@ -2870,7 +4960,8 @@
       "latest_leg": 9.4,
       "gov_2022": -4.1,
       "ussen_2022": 2.6,
-      "pres_2024": -0.8
+      "pres_2024": -0.8,
+      "model_rga_all": -7.6
     },
     "pres_2024_margin": -0.8,
     "gov_2022_margin": -4.1,
@@ -2883,6 +4974,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 24.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.9
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.4
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 12.9
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 33.3
+            }
+          ],
+          "margin": -7.6,
+          "feenstra_base": 24.3,
+          "gop_targets": 10.9,
+          "trust_targets": 6.4,
+          "stubborn_middle": 12.9,
+          "vulnerable_targets": 2.7,
+          "dem_likely": 9.5,
+          "dem_base": 33.3
+        }
+      }
     }
   },
   {
@@ -2944,7 +5089,8 @@
       "latest_leg": -1.9,
       "gov_2022": -10.5,
       "ussen_2022": -4.2,
-      "pres_2024": -7.5
+      "pres_2024": -7.5,
+      "model_rga_all": 2.3
     },
     "pres_2024_margin": -7.5,
     "gov_2022_margin": -10.5,
@@ -2957,6 +5103,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 28.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.4
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 8.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 29.9
+            }
+          ],
+          "margin": 2.3,
+          "feenstra_base": 28.4,
+          "gop_targets": 12.7,
+          "trust_targets": 7.4,
+          "stubborn_middle": 11.2,
+          "vulnerable_targets": 1.5,
+          "dem_likely": 8.9,
+          "dem_base": 29.9
+        }
+      }
     }
   },
   {
@@ -3018,7 +5218,8 @@
       "latest_leg": -0.6,
       "gov_2022": -7.3,
       "ussen_2022": -2.4,
-      "pres_2024": -4.3
+      "pres_2024": -4.3,
+      "model_rga_all": -4.0
     },
     "pres_2024_margin": -4.3,
     "gov_2022_margin": -7.3,
@@ -3031,6 +5232,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 27.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.0
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.4
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 33.0
+            }
+          ],
+          "margin": -4.0,
+          "feenstra_base": 27.8,
+          "gop_targets": 10.7,
+          "trust_targets": 6.0,
+          "stubborn_middle": 10.4,
+          "vulnerable_targets": 2.5,
+          "dem_likely": 9.5,
+          "dem_base": 33.0
+        }
+      }
     }
   },
   {
@@ -3092,7 +5347,8 @@
       "latest_leg": 0.8,
       "gov_2022": -4.0,
       "ussen_2022": 1.3,
-      "pres_2024": 0.8
+      "pres_2024": 0.8,
+      "model_rga_all": -4.9
     },
     "pres_2024_margin": 0.8,
     "gov_2022_margin": -4.0,
@@ -3105,6 +5361,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 27.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.9
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 32.8
+            }
+          ],
+          "margin": -4.9,
+          "feenstra_base": 27.9,
+          "gop_targets": 9.9,
+          "trust_targets": 6.3,
+          "stubborn_middle": 10.7,
+          "vulnerable_targets": 2.5,
+          "dem_likely": 9.9,
+          "dem_base": 32.8
+        }
+      }
     }
   },
   {
@@ -3166,7 +5476,8 @@
       "latest_leg": -3.4,
       "gov_2022": -4.8,
       "ussen_2022": 0.7,
-      "pres_2024": 4.6
+      "pres_2024": 4.6,
+      "model_rga_all": -9.7
     },
     "pres_2024_margin": 4.6,
     "gov_2022_margin": -4.8,
@@ -3179,6 +5490,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 28.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 8.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 5.8
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 11.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 35.4
+            }
+          ],
+          "margin": -9.7,
+          "feenstra_base": 28.7,
+          "gop_targets": 8.2,
+          "trust_targets": 5.8,
+          "stubborn_middle": 8.6,
+          "vulnerable_targets": 2.0,
+          "dem_likely": 11.2,
+          "dem_base": 35.4
+        }
+      }
     }
   },
   {
@@ -3240,7 +5605,8 @@
       "latest_leg": 64.3,
       "gov_2022": 2.6,
       "ussen_2022": 8.1,
-      "pres_2024": 9.7
+      "pres_2024": 9.7,
+      "model_rga_all": -13.4
     },
     "pres_2024_margin": 9.7,
     "gov_2022_margin": 2.6,
@@ -3253,6 +5619,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 26.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 8.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 5.4
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.3
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 38.2
+            }
+          ],
+          "margin": -13.4,
+          "feenstra_base": 26.3,
+          "gop_targets": 8.7,
+          "trust_targets": 5.4,
+          "stubborn_middle": 9.3,
+          "vulnerable_targets": 1.9,
+          "dem_likely": 10.2,
+          "dem_base": 38.2
+        }
+      }
     }
   },
   {
@@ -3314,7 +5734,8 @@
       "latest_leg": -29.3,
       "gov_2022": -28.3,
       "ussen_2022": -22.8,
-      "pres_2024": -22.5
+      "pres_2024": -22.5,
+      "model_rga_all": 15.7
     },
     "pres_2024_margin": -22.5,
     "gov_2022_margin": -28.3,
@@ -3327,6 +5748,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 34.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.5
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 12.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 8.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 23.1
+            }
+          ],
+          "margin": 15.7,
+          "feenstra_base": 34.8,
+          "gop_targets": 12.0,
+          "trust_targets": 7.5,
+          "stubborn_middle": 12.7,
+          "vulnerable_targets": 1.9,
+          "dem_likely": 8.0,
+          "dem_base": 23.1
+        }
+      }
     }
   },
   {
@@ -3388,7 +5863,8 @@
       "latest_leg": -10.3,
       "gov_2022": -14.1,
       "ussen_2022": -9.0,
-      "pres_2024": -8.7
+      "pres_2024": -8.7,
+      "model_rga_all": 2.5
     },
     "pres_2024_margin": -8.7,
     "gov_2022_margin": -14.1,
@@ -3401,6 +5877,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 30.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.1
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.5
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 28.2
+            }
+          ],
+          "margin": 2.5,
+          "feenstra_base": 30.0,
+          "gop_targets": 11.1,
+          "trust_targets": 7.5,
+          "stubborn_middle": 10.7,
+          "vulnerable_targets": 2.1,
+          "dem_likely": 10.4,
+          "dem_base": 28.2
+        }
+      }
     }
   },
   {
@@ -3462,7 +5992,8 @@
       "latest_leg": -28.2,
       "gov_2022": -35.6,
       "ussen_2022": -28.0,
-      "pres_2024": -28.6
+      "pres_2024": -28.6,
+      "model_rga_all": 28.8
     },
     "pres_2024_margin": -28.6,
     "gov_2022_margin": -35.6,
@@ -3475,6 +6006,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 37.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 16.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 12.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.3
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 5.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 19.6
+            }
+          ],
+          "margin": 28.8,
+          "feenstra_base": 37.9,
+          "gop_targets": 16.4,
+          "trust_targets": 12.3,
+          "stubborn_middle": 7.3,
+          "vulnerable_targets": 0.6,
+          "dem_likely": 5.9,
+          "dem_base": 19.6
+        }
+      }
     }
   },
   {
@@ -3536,7 +6121,8 @@
       "latest_leg": -20.5,
       "gov_2022": -20.2,
       "ussen_2022": -12.9,
-      "pres_2024": -17.7
+      "pres_2024": -17.7,
+      "model_rga_all": 15.8
     },
     "pres_2024_margin": -17.7,
     "gov_2022_margin": -20.2,
@@ -3549,6 +6135,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 31.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.5
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 24.8
+            }
+          ],
+          "margin": 15.8,
+          "feenstra_base": 31.3,
+          "gop_targets": 15.8,
+          "trust_targets": 9.2,
+          "stubborn_middle": 11.5,
+          "vulnerable_targets": 1.0,
+          "dem_likely": 6.5,
+          "dem_base": 24.8
+        }
+      }
     }
   },
   {
@@ -3610,7 +6250,8 @@
       "latest_leg": 73.3,
       "gov_2022": 37.3,
       "ussen_2022": 39.3,
-      "pres_2024": 24.5
+      "pres_2024": 24.5,
+      "model_rga_all": -33.4
     },
     "pres_2024_margin": 24.5,
     "gov_2022_margin": 37.3,
@@ -3623,6 +6264,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 16.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 7.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 3.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 13.3
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 17.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 39.4
+            }
+          ],
+          "margin": -33.4,
+          "feenstra_base": 16.3,
+          "gop_targets": 7.4,
+          "trust_targets": 3.2,
+          "stubborn_middle": 13.3,
+          "vulnerable_targets": 2.6,
+          "dem_likely": 17.7,
+          "dem_base": 39.4
+        }
+      }
     }
   },
   {
@@ -3684,7 +6379,8 @@
       "latest_leg": 97.0,
       "gov_2022": 27.4,
       "ussen_2022": 31.3,
-      "pres_2024": 29.4
+      "pres_2024": 29.4,
+      "model_rga_all": -35.0
     },
     "pres_2024_margin": 29.4,
     "gov_2022_margin": 27.4,
@@ -3697,6 +6393,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 16.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 7.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 4.6
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.4
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 13.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 45.2
+            }
+          ],
+          "margin": -35.0,
+          "feenstra_base": 16.3,
+          "gop_targets": 7.8,
+          "trust_targets": 4.6,
+          "stubborn_middle": 9.4,
+          "vulnerable_targets": 2.8,
+          "dem_likely": 13.9,
+          "dem_base": 45.2
+        }
+      }
     }
   },
   {
@@ -3758,7 +6508,8 @@
       "latest_leg": -25.3,
       "gov_2022": -27.0,
       "ussen_2022": -20.9,
-      "pres_2024": -21.3
+      "pres_2024": -21.3,
+      "model_rga_all": 20.9
     },
     "pres_2024_margin": -21.3,
     "gov_2022_margin": -27.0,
@@ -3771,6 +6522,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 35.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 10.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 22.6
+            }
+          ],
+          "margin": 20.9,
+          "feenstra_base": 35.2,
+          "gop_targets": 14.4,
+          "trust_targets": 10.3,
+          "stubborn_middle": 10.7,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 6.1,
+          "dem_base": 22.6
+        }
+      }
     }
   },
   {
@@ -3832,7 +6637,8 @@
       "latest_leg": -4.6,
       "gov_2022": -16.1,
       "ussen_2022": -10.8,
-      "pres_2024": -7.2
+      "pres_2024": -7.2,
+      "model_rga_all": 2.0
     },
     "pres_2024_margin": -7.2,
     "gov_2022_margin": -16.1,
@@ -3845,6 +6651,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 27.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.0
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 12.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 28.5
+            }
+          ],
+          "margin": 2.0,
+          "feenstra_base": 27.2,
+          "gop_targets": 13.0,
+          "trust_targets": 7.0,
+          "stubborn_middle": 12.6,
+          "vulnerable_targets": 2.0,
+          "dem_likely": 9.7,
+          "dem_base": 28.5
+        }
+      }
     }
   },
   {
@@ -3906,7 +6766,8 @@
       "latest_leg": -13.7,
       "gov_2022": -24.5,
       "ussen_2022": -18.9,
-      "pres_2024": -19.3
+      "pres_2024": -19.3,
+      "model_rga_all": 16.7
     },
     "pres_2024_margin": -19.3,
     "gov_2022_margin": -24.5,
@@ -3919,6 +6780,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 32.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.1
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 24.9
+            }
+          ],
+          "margin": 16.7,
+          "feenstra_base": 32.2,
+          "gop_targets": 15.8,
+          "trust_targets": 11.1,
+          "stubborn_middle": 8.8,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 6.4,
+          "dem_base": 24.9
+        }
+      }
     }
   },
   {
@@ -3980,7 +6895,8 @@
       "latest_leg": -98.5,
       "gov_2022": -46.8,
       "ussen_2022": -40.8,
-      "pres_2024": -39.1
+      "pres_2024": -39.1,
+      "model_rga_all": 41.2
     },
     "pres_2024_margin": -39.1,
     "gov_2022_margin": -46.8,
@@ -3993,6 +6909,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 45.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 16.5
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.4
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 5.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 16.5
+            }
+          ],
+          "margin": 41.2,
+          "feenstra_base": 45.3,
+          "gop_targets": 16.5,
+          "trust_targets": 11.4,
+          "stubborn_middle": 5.8,
+          "vulnerable_targets": 0.5,
+          "dem_likely": 4.1,
+          "dem_base": 16.5
+        }
+      }
     }
   },
   {
@@ -4054,7 +7024,8 @@
       "latest_leg": -98.3,
       "gov_2022": -37.9,
       "ussen_2022": -31.9,
-      "pres_2024": -32.3
+      "pres_2024": -32.3,
+      "model_rga_all": 33.0
     },
     "pres_2024_margin": -32.3,
     "gov_2022_margin": -37.9,
@@ -4067,6 +7038,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 39.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 16.9
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.7
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 5.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 18.3
+            }
+          ],
+          "margin": 33.0,
+          "feenstra_base": 39.6,
+          "gop_targets": 16.9,
+          "trust_targets": 9.7,
+          "stubborn_middle": 9.6,
+          "vulnerable_targets": 0.8,
+          "dem_likely": 5.2,
+          "dem_base": 18.3
+        }
+      }
     }
   },
   {
@@ -4128,7 +7153,8 @@
       "latest_leg": -48.4,
       "gov_2022": -52.5,
       "ussen_2022": -45.5,
-      "pres_2024": -44.4
+      "pres_2024": -44.4,
+      "model_rga_all": 43.5
     },
     "pres_2024_margin": -44.4,
     "gov_2022_margin": -52.5,
@@ -4141,6 +7167,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 43.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 18.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 10.6
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.0
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 14.1
+            }
+          ],
+          "margin": 43.5,
+          "feenstra_base": 43.8,
+          "gop_targets": 18.4,
+          "trust_targets": 10.6,
+          "stubborn_middle": 8.0,
+          "vulnerable_targets": 0.6,
+          "dem_likely": 4.6,
+          "dem_base": 14.1
+        }
+      }
     }
   },
   {
@@ -4202,7 +7282,8 @@
       "latest_leg": -20.4,
       "gov_2022": -33.9,
       "ussen_2022": -27.0,
-      "pres_2024": -28.0
+      "pres_2024": -28.0,
+      "model_rga_all": 28.9
     },
     "pres_2024_margin": -28.0,
     "gov_2022_margin": -33.9,
@@ -4215,6 +7296,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 39.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.6
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.1
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 19.7
+            }
+          ],
+          "margin": 28.9,
+          "feenstra_base": 39.1,
+          "gop_targets": 15.6,
+          "trust_targets": 11.1,
+          "stubborn_middle": 7.8,
+          "vulnerable_targets": 0.5,
+          "dem_likely": 6.1,
+          "dem_base": 19.7
+        }
+      }
     }
   },
   {
@@ -4276,7 +7411,8 @@
       "latest_leg": -27.0,
       "gov_2022": -40.5,
       "ussen_2022": -30.2,
-      "pres_2024": -33.1
+      "pres_2024": -33.1,
+      "model_rga_all": 31.4
     },
     "pres_2024_margin": -33.1,
     "gov_2022_margin": -40.5,
@@ -4289,6 +7425,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 36.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 19.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 5.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 19.2
+            }
+          ],
+          "margin": 31.4,
+          "feenstra_base": 36.2,
+          "gop_targets": 19.7,
+          "trust_targets": 11.3,
+          "stubborn_middle": 7.6,
+          "vulnerable_targets": 0.8,
+          "dem_likely": 5.3,
+          "dem_base": 19.2
+        }
+      }
     }
   },
   {
@@ -4350,7 +7540,8 @@
       "latest_leg": -2.4,
       "gov_2022": -7.2,
       "ussen_2022": -1.7,
-      "pres_2024": -5.2
+      "pres_2024": -5.2,
+      "model_rga_all": 4.3
     },
     "pres_2024_margin": -5.2,
     "gov_2022_margin": -7.2,
@@ -4363,6 +7554,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 26.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.1
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.7
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 26.5
+            }
+          ],
+          "margin": 4.3,
+          "feenstra_base": 26.6,
+          "gop_targets": 14.1,
+          "trust_targets": 9.7,
+          "stubborn_middle": 11.6,
+          "vulnerable_targets": 1.7,
+          "dem_likely": 9.9,
+          "dem_base": 26.5
+        }
+      }
     }
   },
   {
@@ -4424,7 +7669,8 @@
       "latest_leg": -98.4,
       "gov_2022": -34.0,
       "ussen_2022": -27.5,
-      "pres_2024": -29.2
+      "pres_2024": -29.2,
+      "model_rga_all": 32.8
     },
     "pres_2024_margin": -29.2,
     "gov_2022_margin": -34.0,
@@ -4437,6 +7683,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 40.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 13.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 19.0
+            }
+          ],
+          "margin": 32.8,
+          "feenstra_base": 40.2,
+          "gop_targets": 15.7,
+          "trust_targets": 13.2,
+          "stubborn_middle": 7.2,
+          "vulnerable_targets": 0.6,
+          "dem_likely": 4.1,
+          "dem_base": 19.0
+        }
+      }
     }
   },
   {
@@ -4498,7 +7798,8 @@
       "latest_leg": 97.7,
       "gov_2022": -2.1,
       "ussen_2022": 6.2,
-      "pres_2024": 4.5
+      "pres_2024": 4.5,
+      "model_rga_all": -12.2
     },
     "pres_2024_margin": 4.5,
     "gov_2022_margin": -2.1,
@@ -4511,6 +7812,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 23.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 11.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 34.7
+            }
+          ],
+          "margin": -12.2,
+          "feenstra_base": 23.6,
+          "gop_targets": 10.4,
+          "trust_targets": 6.9,
+          "stubborn_middle": 10.2,
+          "vulnerable_targets": 2.5,
+          "dem_likely": 11.5,
+          "dem_base": 34.7
+        }
+      }
     }
   },
   {
@@ -4572,7 +7927,8 @@
       "latest_leg": 75.3,
       "gov_2022": 17.9,
       "ussen_2022": 24.9,
-      "pres_2024": 22.0
+      "pres_2024": 22.0,
+      "model_rga_all": -27.2
     },
     "pres_2024_margin": 22.0,
     "gov_2022_margin": 17.9,
@@ -4585,6 +7941,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 15.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.0
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 13.0
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 3.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 16.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 35.1
+            }
+          ],
+          "margin": -27.2,
+          "feenstra_base": 15.3,
+          "gop_targets": 9.2,
+          "trust_targets": 7.0,
+          "stubborn_middle": 13.0,
+          "vulnerable_targets": 3.8,
+          "dem_likely": 16.6,
+          "dem_base": 35.1
+        }
+      }
     }
   },
   {
@@ -4646,7 +8056,8 @@
       "latest_leg": -91.4,
       "gov_2022": -24.4,
       "ussen_2022": -14.4,
-      "pres_2024": -18.0
+      "pres_2024": -18.0,
+      "model_rga_all": 19.1
     },
     "pres_2024_margin": -18.0,
     "gov_2022_margin": -24.4,
@@ -4659,6 +8070,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 33.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.6
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.6
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 5.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 25.0
+            }
+          ],
+          "margin": 19.1,
+          "feenstra_base": 33.5,
+          "gop_targets": 15.6,
+          "trust_targets": 11.6,
+          "stubborn_middle": 8.6,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 5.0,
+          "dem_base": 25.0
+        }
+      }
     }
   },
   {
@@ -4720,7 +8185,8 @@
       "latest_leg": -67.7,
       "gov_2022": -42.4,
       "ussen_2022": -32.5,
-      "pres_2024": -34.7
+      "pres_2024": -34.7,
+      "model_rga_all": 37.7
     },
     "pres_2024_margin": -34.7,
     "gov_2022_margin": -42.4,
@@ -4733,6 +8199,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 42.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 16.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 12.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.0
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 16.7
+            }
+          ],
+          "margin": 37.7,
+          "feenstra_base": 42.9,
+          "gop_targets": 16.0,
+          "trust_targets": 12.2,
+          "stubborn_middle": 7.0,
+          "vulnerable_targets": 0.8,
+          "dem_likely": 4.5,
+          "dem_base": 16.7
+        }
+      }
     }
   },
   {
@@ -4794,7 +8314,8 @@
       "latest_leg": -28.6,
       "gov_2022": -35.0,
       "ussen_2022": -24.7,
-      "pres_2024": -25.6
+      "pres_2024": -25.6,
+      "model_rga_all": 19.3
     },
     "pres_2024_margin": -25.6,
     "gov_2022_margin": -35.0,
@@ -4807,6 +8328,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 35.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.4
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.1
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 5.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 26.4
+            }
+          ],
+          "margin": 19.3,
+          "feenstra_base": 35.2,
+          "gop_targets": 15.7,
+          "trust_targets": 7.4,
+          "stubborn_middle": 9.1,
+          "vulnerable_targets": 1.1,
+          "dem_likely": 5.2,
+          "dem_base": 26.4
+        }
+      }
     }
   },
   {
@@ -4868,7 +8443,8 @@
       "latest_leg": -10.9,
       "gov_2022": -36.9,
       "ussen_2022": -28.0,
-      "pres_2024": -31.0
+      "pres_2024": -31.0,
+      "model_rga_all": 31.7
     },
     "pres_2024_margin": -31.0,
     "gov_2022_margin": -36.9,
@@ -4881,6 +8457,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 37.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 18.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.7
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 19.7
+            }
+          ],
+          "margin": 31.7,
+          "feenstra_base": 37.1,
+          "gop_targets": 18.8,
+          "trust_targets": 11.7,
+          "stubborn_middle": 7.6,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 4.5,
+          "dem_base": 19.7
+        }
+      }
     }
   },
   {
@@ -4942,7 +8572,8 @@
       "latest_leg": -98.2,
       "gov_2022": -41.1,
       "ussen_2022": -33.4,
-      "pres_2024": -32.8
+      "pres_2024": -32.8,
+      "model_rga_all": 33.4
     },
     "pres_2024_margin": -32.8,
     "gov_2022_margin": -41.1,
@@ -4955,6 +8586,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 36.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 19.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 12.5
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 17.9
+            }
+          ],
+          "margin": 33.4,
+          "feenstra_base": 36.5,
+          "gop_targets": 19.7,
+          "trust_targets": 12.5,
+          "stubborn_middle": 7.7,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 4.9,
+          "dem_base": 17.9
+        }
+      }
     }
   },
   {
@@ -5016,7 +8701,8 @@
       "latest_leg": -34.5,
       "gov_2022": -35.6,
       "ussen_2022": -26.7,
-      "pres_2024": -30.4
+      "pres_2024": -30.4,
+      "model_rga_all": 28.8
     },
     "pres_2024_margin": -30.4,
     "gov_2022_margin": -35.6,
@@ -5029,6 +8715,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 35.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 17.9
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.8
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 18.8
+            }
+          ],
+          "margin": 28.8,
+          "feenstra_base": 35.8,
+          "gop_targets": 17.9,
+          "trust_targets": 11.8,
+          "stubborn_middle": 8.8,
+          "vulnerable_targets": 0.9,
+          "dem_likely": 6.1,
+          "dem_base": 18.8
+        }
+      }
     }
   },
   {
@@ -5090,7 +8830,8 @@
       "latest_leg": -14.1,
       "gov_2022": -13.9,
       "ussen_2022": -6.5,
-      "pres_2024": -12.4
+      "pres_2024": -12.4,
+      "model_rga_all": 11.0
     },
     "pres_2024_margin": -12.4,
     "gov_2022_margin": -13.9,
@@ -5103,6 +8844,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 27.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 17.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 10.0
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.1
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 23.7
+            }
+          ],
+          "margin": 11.0,
+          "feenstra_base": 27.1,
+          "gop_targets": 17.0,
+          "trust_targets": 10.0,
+          "stubborn_middle": 11.1,
+          "vulnerable_targets": 1.7,
+          "dem_likely": 9.4,
+          "dem_base": 23.7
+        }
+      }
     }
   },
   {
@@ -5164,7 +8959,8 @@
       "latest_leg": -22.7,
       "gov_2022": -34.1,
       "ussen_2022": -25.2,
-      "pres_2024": -28.6
+      "pres_2024": -28.6,
+      "model_rga_all": 27.9
     },
     "pres_2024_margin": -28.6,
     "gov_2022_margin": -34.1,
@@ -5177,6 +8973,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 34.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 18.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.7
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.4
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 5.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 20.3
+            }
+          ],
+          "margin": 27.9,
+          "feenstra_base": 34.7,
+          "gop_targets": 18.8,
+          "trust_targets": 11.7,
+          "stubborn_middle": 8.4,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 5.3,
+          "dem_base": 20.3
+        }
+      }
     }
   },
   {
@@ -5238,7 +9088,8 @@
       "latest_leg": 12.3,
       "gov_2022": 3.9,
       "ussen_2022": 11.0,
-      "pres_2024": 7.9
+      "pres_2024": 7.9,
+      "model_rga_all": -14.0
     },
     "pres_2024_margin": 7.9,
     "gov_2022_margin": 3.9,
@@ -5251,6 +9102,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 22.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 36.7
+            }
+          ],
+          "margin": -14.0,
+          "feenstra_base": 22.2,
+          "gop_targets": 10.8,
+          "trust_targets": 6.9,
+          "stubborn_middle": 10.8,
+          "vulnerable_targets": 2.3,
+          "dem_likely": 10.3,
+          "dem_base": 36.7
+        }
+      }
     }
   },
   {
@@ -5312,7 +9217,8 @@
       "latest_leg": -6.6,
       "gov_2022": -8.9,
       "ussen_2022": 0.3,
-      "pres_2024": -1.4
+      "pres_2024": -1.4,
+      "model_rga_all": -4.3
     },
     "pres_2024_margin": -1.4,
     "gov_2022_margin": -8.9,
@@ -5325,6 +9231,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 26.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 12.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.5
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 8.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 34.1
+            }
+          ],
+          "margin": -4.3,
+          "feenstra_base": 26.5,
+          "gop_targets": 12.0,
+          "trust_targets": 6.5,
+          "stubborn_middle": 10.2,
+          "vulnerable_targets": 2.0,
+          "dem_likely": 8.7,
+          "dem_base": 34.1
+        }
+      }
     }
   },
   {
@@ -5386,7 +9346,8 @@
       "latest_leg": 95.5,
       "gov_2022": 0.4,
       "ussen_2022": 4.4,
-      "pres_2024": 6.7
+      "pres_2024": 6.7,
+      "model_rga_all": -5.6
     },
     "pres_2024_margin": 6.7,
     "gov_2022_margin": 0.4,
@@ -5399,6 +9360,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 27.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.1
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.8
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 33.5
+            }
+          ],
+          "margin": -5.6,
+          "feenstra_base": 27.5,
+          "gop_targets": 10.1,
+          "trust_targets": 7.8,
+          "stubborn_middle": 10.2,
+          "vulnerable_targets": 1.3,
+          "dem_likely": 9.7,
+          "dem_base": 33.5
+        }
+      }
     }
   },
   {
@@ -5460,7 +9475,8 @@
       "latest_leg": 96.4,
       "gov_2022": 12.2,
       "ussen_2022": 15.8,
-      "pres_2024": 16.4
+      "pres_2024": 16.4,
+      "model_rga_all": -17.5
     },
     "pres_2024_margin": 16.4,
     "gov_2022_margin": 12.2,
@@ -5473,6 +9489,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 21.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 10.6
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.7
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.3
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 38.5
+            }
+          ],
+          "margin": -17.5,
+          "feenstra_base": 21.3,
+          "gop_targets": 10.6,
+          "trust_targets": 6.7,
+          "stubborn_middle": 10.3,
+          "vulnerable_targets": 1.8,
+          "dem_likely": 10.9,
+          "dem_base": 38.5
+        }
+      }
     }
   },
   {
@@ -5534,7 +9604,8 @@
       "latest_leg": 97.7,
       "gov_2022": 4.0,
       "ussen_2022": 9.6,
-      "pres_2024": 8.8
+      "pres_2024": 8.8,
+      "model_rga_all": -13.4
     },
     "pres_2024_margin": 8.8,
     "gov_2022_margin": 4.0,
@@ -5547,6 +9618,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 25.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 7.9
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.6
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.5
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 10.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 36.1
+            }
+          ],
+          "margin": -13.4,
+          "feenstra_base": 25.7,
+          "gop_targets": 7.9,
+          "trust_targets": 6.6,
+          "stubborn_middle": 10.5,
+          "vulnerable_targets": 2.2,
+          "dem_likely": 10.9,
+          "dem_base": 36.1
+        }
+      }
     }
   },
   {
@@ -5608,7 +9733,8 @@
       "latest_leg": -20.9,
       "gov_2022": -27.3,
       "ussen_2022": -18.7,
-      "pres_2024": -18.2
+      "pres_2024": -18.2,
+      "model_rga_all": 13.9
     },
     "pres_2024_margin": -18.2,
     "gov_2022_margin": -27.3,
@@ -5621,6 +9747,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 34.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.5
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.3
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 8.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 25.7
+            }
+          ],
+          "margin": 13.9,
+          "feenstra_base": 34.1,
+          "gop_targets": 13.5,
+          "trust_targets": 7.9,
+          "stubborn_middle": 9.3,
+          "vulnerable_targets": 1.5,
+          "dem_likely": 8.0,
+          "dem_base": 25.7
+        }
+      }
     }
   },
   {
@@ -5682,7 +9862,8 @@
       "latest_leg": 96.7,
       "gov_2022": 11.3,
       "ussen_2022": 16.9,
-      "pres_2024": 12.1
+      "pres_2024": 12.1,
+      "model_rga_all": -14.2
     },
     "pres_2024_margin": 12.1,
     "gov_2022_margin": 11.3,
@@ -5695,6 +9876,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 19.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.5
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 6.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 14.4
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 11.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 34.0
+            }
+          ],
+          "margin": -14.2,
+          "feenstra_base": 19.8,
+          "gop_targets": 11.5,
+          "trust_targets": 6.9,
+          "stubborn_middle": 14.4,
+          "vulnerable_targets": 2.0,
+          "dem_likely": 11.5,
+          "dem_base": 34.0
+        }
+      }
     }
   },
   {
@@ -5756,7 +9991,8 @@
       "latest_leg": 96.7,
       "gov_2022": 35.1,
       "ussen_2022": 37.9,
-      "pres_2024": 34.3
+      "pres_2024": 34.3,
+      "model_rga_all": -32.7
     },
     "pres_2024_margin": 34.3,
     "gov_2022_margin": 35.1,
@@ -5769,6 +10005,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 17.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 7.5
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.1
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.4
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 12.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 45.2
+            }
+          ],
+          "margin": -32.7,
+          "feenstra_base": 17.0,
+          "gop_targets": 7.5,
+          "trust_targets": 7.1,
+          "stubborn_middle": 9.4,
+          "vulnerable_targets": 1.8,
+          "dem_likely": 12.0,
+          "dem_base": 45.2
+        }
+      }
     }
   },
   {
@@ -5830,7 +10120,8 @@
       "latest_leg": 21.6,
       "gov_2022": 15.0,
       "ussen_2022": 18.8,
-      "pres_2024": 17.9
+      "pres_2024": 17.9,
+      "model_rga_all": -16.3
     },
     "pres_2024_margin": 17.9,
     "gov_2022_margin": 15.0,
@@ -5843,6 +10134,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 20.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.8
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.5
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 11.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 36.5
+            }
+          ],
+          "margin": -16.3,
+          "feenstra_base": 20.3,
+          "gop_targets": 11.2,
+          "trust_targets": 7.8,
+          "stubborn_middle": 11.5,
+          "vulnerable_targets": 1.5,
+          "dem_likely": 11.3,
+          "dem_base": 36.5
+        }
+      }
     }
   },
   {
@@ -5904,7 +10249,8 @@
       "latest_leg": 4.8,
       "gov_2022": 0.7,
       "ussen_2022": 5.0,
-      "pres_2024": 9.3
+      "pres_2024": 9.3,
+      "model_rga_all": -11.0
     },
     "pres_2024_margin": 9.3,
     "gov_2022_margin": 0.7,
@@ -5917,6 +10263,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 25.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.6
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 5.6
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.5
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 11.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 34.7
+            }
+          ],
+          "margin": -11.0,
+          "feenstra_base": 25.4,
+          "gop_targets": 9.6,
+          "trust_targets": 5.6,
+          "stubborn_middle": 11.5,
+          "vulnerable_targets": 1.9,
+          "dem_likely": 11.3,
+          "dem_base": 34.7
+        }
+      }
     }
   },
   {
@@ -5978,7 +10378,8 @@
       "latest_leg": 94.5,
       "gov_2022": -4.8,
       "ussen_2022": 3.4,
-      "pres_2024": 1.3
+      "pres_2024": 1.3,
+      "model_rga_all": -5.5
     },
     "pres_2024_margin": 1.3,
     "gov_2022_margin": -4.8,
@@ -5991,6 +10392,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 22.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.5
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 12.0
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 31.6
+            }
+          ],
+          "margin": -5.5,
+          "feenstra_base": 22.4,
+          "gop_targets": 13.5,
+          "trust_targets": 9.2,
+          "stubborn_middle": 12.0,
+          "vulnerable_targets": 1.4,
+          "dem_likely": 9.8,
+          "dem_base": 31.6
+        }
+      }
     }
   },
   {
@@ -6052,7 +10507,8 @@
       "latest_leg": -21.1,
       "gov_2022": -30.1,
       "ussen_2022": -22.7,
-      "pres_2024": -22.3
+      "pres_2024": -22.3,
+      "model_rga_all": 27.2
     },
     "pres_2024_margin": -22.3,
     "gov_2022_margin": -30.1,
@@ -6065,6 +10521,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 35.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 17.8
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 5.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 21.0
+            }
+          ],
+          "margin": 27.2,
+          "feenstra_base": 35.6,
+          "gop_targets": 17.8,
+          "trust_targets": 11.9,
+          "stubborn_middle": 7.6,
+          "vulnerable_targets": 0.8,
+          "dem_likely": 5.2,
+          "dem_base": 21.0
+        }
+      }
     }
   },
   {
@@ -6126,7 +10636,8 @@
       "latest_leg": -17.5,
       "gov_2022": -15.0,
       "ussen_2022": -11.0,
-      "pres_2024": -8.5
+      "pres_2024": -8.5,
+      "model_rga_all": 11.8
     },
     "pres_2024_margin": -8.5,
     "gov_2022_margin": -15.0,
@@ -6139,6 +10650,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 32.0
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.4
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 7.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 26.8
+            }
+          ],
+          "margin": 11.8,
+          "feenstra_base": 32.0,
+          "gop_targets": 13.7,
+          "trust_targets": 9.4,
+          "stubborn_middle": 10.2,
+          "vulnerable_targets": 0.8,
+          "dem_likely": 7.1,
+          "dem_base": 26.8
+        }
+      }
     }
   },
   {
@@ -6200,7 +10765,8 @@
       "latest_leg": -72.9,
       "gov_2022": -29.7,
       "ussen_2022": -23.4,
-      "pres_2024": -24.1
+      "pres_2024": -24.1,
+      "model_rga_all": 28.4
     },
     "pres_2024_margin": -24.1,
     "gov_2022_margin": -29.7,
@@ -6213,6 +10779,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 36.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 16.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.6
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.0
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 19.2
+            }
+          ],
+          "margin": 28.4,
+          "feenstra_base": 36.9,
+          "gop_targets": 16.7,
+          "trust_targets": 11.6,
+          "stubborn_middle": 8.8,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 6.0,
+          "dem_base": 19.2
+        }
+      }
     }
   },
   {
@@ -6274,7 +10894,8 @@
       "latest_leg": 97.7,
       "gov_2022": 28.0,
       "ussen_2022": 31.4,
-      "pres_2024": 29.9
+      "pres_2024": 29.9,
+      "model_rga_all": -33.6
     },
     "pres_2024_margin": 29.9,
     "gov_2022_margin": 28.0,
@@ -6287,6 +10908,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 17.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 6.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 5.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 3.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 12.6
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 44.6
+            }
+          ],
+          "margin": -33.6,
+          "feenstra_base": 17.2,
+          "gop_targets": 6.4,
+          "trust_targets": 5.3,
+          "stubborn_middle": 10.6,
+          "vulnerable_targets": 3.3,
+          "dem_likely": 12.6,
+          "dem_base": 44.6
+        }
+      }
     }
   },
   {
@@ -6348,7 +11023,8 @@
       "latest_leg": 52.2,
       "gov_2022": 51.2,
       "ussen_2022": 54.0,
-      "pres_2024": 50.2
+      "pres_2024": 50.2,
+      "model_rga_all": -53.6
     },
     "pres_2024_margin": 50.2,
     "gov_2022_margin": 51.2,
@@ -6361,6 +11037,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 9.8
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 5.9
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 4.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 3.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 14.4
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 54.9
+            }
+          ],
+          "margin": -53.6,
+          "feenstra_base": 9.8,
+          "gop_targets": 5.9,
+          "trust_targets": 4.2,
+          "stubborn_middle": 7.2,
+          "vulnerable_targets": 3.5,
+          "dem_likely": 14.4,
+          "dem_base": 54.9
+        }
+      }
     }
   },
   {
@@ -6422,7 +11152,8 @@
       "latest_leg": -18.0,
       "gov_2022": -21.5,
       "ussen_2022": -16.0,
-      "pres_2024": -20.9
+      "pres_2024": -20.9,
+      "model_rga_all": 19.2
     },
     "pres_2024_margin": -20.9,
     "gov_2022_margin": -21.5,
@@ -6435,6 +11166,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 35.5
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 15.1
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 8.7
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.3
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 5.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 26.3
+            }
+          ],
+          "margin": 19.2,
+          "feenstra_base": 35.5,
+          "gop_targets": 15.1,
+          "trust_targets": 8.7,
+          "stubborn_middle": 8.3,
+          "vulnerable_targets": 1.0,
+          "dem_likely": 5.1,
+          "dem_base": 26.3
+        }
+      }
     }
   },
   {
@@ -6496,7 +11281,8 @@
       "latest_leg": -97.7,
       "gov_2022": -53.5,
       "ussen_2022": -47.8,
-      "pres_2024": -49.0
+      "pres_2024": -49.0,
+      "model_rga_all": 44.5
     },
     "pres_2024_margin": -49.0,
     "gov_2022_margin": -53.5,
@@ -6509,6 +11295,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 44.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 19.4
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.1
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.5
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 14.9
+            }
+          ],
+          "margin": 44.5,
+          "feenstra_base": 44.1,
+          "gop_targets": 19.4,
+          "trust_targets": 9.1,
+          "stubborn_middle": 7.5,
+          "vulnerable_targets": 0.9,
+          "dem_likely": 4.1,
+          "dem_base": 14.9
+        }
+      }
     }
   },
   {
@@ -6570,7 +11410,8 @@
       "latest_leg": 98.7,
       "gov_2022": 61.5,
       "ussen_2022": 63.8,
-      "pres_2024": 51.9
+      "pres_2024": 51.9,
+      "model_rga_all": -56.4
     },
     "pres_2024_margin": 51.9,
     "gov_2022_margin": 61.5,
@@ -6583,6 +11424,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 8.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 5.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 3.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.1
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 4.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 14.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 55.0
+            }
+          ],
+          "margin": -56.4,
+          "feenstra_base": 8.1,
+          "gop_targets": 5.0,
+          "trust_targets": 3.9,
+          "stubborn_middle": 9.1,
+          "vulnerable_targets": 4.4,
+          "dem_likely": 14.5,
+          "dem_base": 55.0
+        }
+      }
     }
   },
   {
@@ -6644,7 +11539,8 @@
       "latest_leg": 98.5,
       "gov_2022": 62.0,
       "ussen_2022": 63.7,
-      "pres_2024": 52.9
+      "pres_2024": 52.9,
+      "model_rga_all": -57.8
     },
     "pres_2024_margin": 52.9,
     "gov_2022_margin": 62.0,
@@ -6657,6 +11553,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 9.4
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 4.5
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 2.7
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 4.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 16.1
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 55.6
+            }
+          ],
+          "margin": -57.8,
+          "feenstra_base": 9.4,
+          "gop_targets": 4.5,
+          "trust_targets": 2.7,
+          "stubborn_middle": 7.6,
+          "vulnerable_targets": 4.1,
+          "dem_likely": 16.1,
+          "dem_base": 55.6
+        }
+      }
     }
   },
   {
@@ -6718,7 +11668,8 @@
       "latest_leg": -9.7,
       "gov_2022": -20.2,
       "ussen_2022": -15.0,
-      "pres_2024": -12.9
+      "pres_2024": -12.9,
+      "model_rga_all": 13.2
     },
     "pres_2024_margin": -12.9,
     "gov_2022_margin": -20.2,
@@ -6731,6 +11682,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 32.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 13.3
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 7.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 25.5
+            }
+          ],
+          "margin": 13.2,
+          "feenstra_base": 32.9,
+          "gop_targets": 13.3,
+          "trust_targets": 9.3,
+          "stubborn_middle": 10.8,
+          "vulnerable_targets": 0.8,
+          "dem_likely": 7.5,
+          "dem_base": 25.5
+        }
+      }
     }
   },
   {
@@ -6792,7 +11797,8 @@
       "latest_leg": -21.4,
       "gov_2022": -13.0,
       "ussen_2022": -8.1,
-      "pres_2024": -7.5
+      "pres_2024": -7.5,
+      "model_rga_all": 19.2
     },
     "pres_2024_margin": -7.5,
     "gov_2022_margin": -13.0,
@@ -6805,6 +11811,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 36.3
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.0
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 10.1
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 7.9
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.3
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 24.8
+            }
+          ],
+          "margin": 19.2,
+          "feenstra_base": 36.3,
+          "gop_targets": 14.0,
+          "trust_targets": 10.1,
+          "stubborn_middle": 7.9,
+          "vulnerable_targets": 0.6,
+          "dem_likely": 6.3,
+          "dem_base": 24.8
+        }
+      }
     }
   },
   {
@@ -6866,7 +11926,8 @@
       "latest_leg": -20.4,
       "gov_2022": -17.9,
       "ussen_2022": -10.9,
-      "pres_2024": -8.1
+      "pres_2024": -8.1,
+      "model_rga_all": -0.8
     },
     "pres_2024_margin": -8.1,
     "gov_2022_margin": -17.9,
@@ -6879,6 +11940,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 30.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.5
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.3
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 9.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 3.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 11.2
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 29.2
+            }
+          ],
+          "margin": -0.8,
+          "feenstra_base": 30.1,
+          "gop_targets": 9.5,
+          "trust_targets": 7.3,
+          "stubborn_middle": 9.7,
+          "vulnerable_targets": 3.0,
+          "dem_likely": 11.2,
+          "dem_base": 29.2
+        }
+      }
     }
   },
   {
@@ -6940,7 +12055,8 @@
       "latest_leg": -15.2,
       "gov_2022": -16.8,
       "ussen_2022": -9.3,
-      "pres_2024": -7.9
+      "pres_2024": -7.9,
+      "model_rga_all": 2.8
     },
     "pres_2024_margin": -7.9,
     "gov_2022_margin": -16.8,
@@ -6953,6 +12069,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 29.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 11.3
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 12.2
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 8.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 29.2
+            }
+          ],
+          "margin": 2.8,
+          "feenstra_base": 29.2,
+          "gop_targets": 11.3,
+          "trust_targets": 7.9,
+          "stubborn_middle": 12.2,
+          "vulnerable_targets": 1.7,
+          "dem_likely": 8.5,
+          "dem_base": 29.2
+        }
+      }
     }
   },
   {
@@ -7014,7 +12184,8 @@
       "latest_leg": -42.7,
       "gov_2022": -47.1,
       "ussen_2022": -39.2,
-      "pres_2024": -41.0
+      "pres_2024": -41.0,
+      "model_rga_all": 38.2
     },
     "pres_2024_margin": -41.0,
     "gov_2022_margin": -47.1,
@@ -7027,6 +12198,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 40.1
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 19.6
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 11.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 6.1
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 0.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 17.0
+            }
+          ],
+          "margin": 38.2,
+          "feenstra_base": 40.1,
+          "gop_targets": 19.6,
+          "trust_targets": 11.9,
+          "stubborn_middle": 6.1,
+          "vulnerable_targets": 0.7,
+          "dem_likely": 4.5,
+          "dem_base": 17.0
+        }
+      }
     }
   },
   {
@@ -7088,7 +12313,8 @@
       "latest_leg": -17.6,
       "gov_2022": -20.0,
       "ussen_2022": -13.3,
-      "pres_2024": -12.5
+      "pres_2024": -12.5,
+      "model_rga_all": 10.3
     },
     "pres_2024_margin": -12.5,
     "gov_2022_margin": -20.0,
@@ -7101,6 +12327,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 29.2
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 10.6
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.9
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 1.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.7
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 23.4
+            }
+          ],
+          "margin": 10.3,
+          "feenstra_base": 29.2,
+          "gop_targets": 14.2,
+          "trust_targets": 10.6,
+          "stubborn_middle": 11.9,
+          "vulnerable_targets": 1.0,
+          "dem_likely": 9.7,
+          "dem_base": 23.4
+        }
+      }
     }
   },
   {
@@ -7162,7 +12442,8 @@
       "latest_leg": 17.6,
       "gov_2022": 17.4,
       "ussen_2022": 23.8,
-      "pres_2024": 19.1
+      "pres_2024": 19.1,
+      "model_rga_all": -23.8
     },
     "pres_2024_margin": 19.1,
     "gov_2022_margin": 17.4,
@@ -7175,6 +12456,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 17.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 9.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 7.5
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 11.8
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 14.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 36.0
+            }
+          ],
+          "margin": -23.8,
+          "feenstra_base": 17.9,
+          "gop_targets": 9.2,
+          "trust_targets": 7.5,
+          "stubborn_middle": 11.8,
+          "vulnerable_targets": 2.6,
+          "dem_likely": 14.9,
+          "dem_base": 36.0
+        }
+      }
     }
   },
   {
@@ -7236,7 +12571,8 @@
       "latest_leg": 0.3,
       "gov_2022": -5.7,
       "ussen_2022": 2.3,
-      "pres_2024": -1.7
+      "pres_2024": -1.7,
+      "model_rga_all": -4.8
     },
     "pres_2024_margin": -1.7,
     "gov_2022_margin": -5.7,
@@ -7249,6 +12585,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 20.9
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.9
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 12.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 12.8
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.1
+            }
+          ],
+          "margin": -4.8,
+          "feenstra_base": 20.9,
+          "gop_targets": 14.2,
+          "trust_targets": 9.9,
+          "stubborn_middle": 12.6,
+          "vulnerable_targets": 2.5,
+          "dem_likely": 12.8,
+          "dem_base": 27.1
+        }
+      }
     }
   },
   {
@@ -7310,7 +12700,8 @@
       "latest_leg": -11.4,
       "gov_2022": -12.2,
       "ussen_2022": -3.8,
-      "pres_2024": -8.3
+      "pres_2024": -8.3,
+      "model_rga_all": 2.9
     },
     "pres_2024_margin": -8.3,
     "gov_2022_margin": -12.2,
@@ -7323,6 +12714,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 25.6
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 14.7
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.2
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 10.6
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 9.5
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 27.9
+            }
+          ],
+          "margin": 2.9,
+          "feenstra_base": 25.6,
+          "gop_targets": 14.7,
+          "trust_targets": 9.2,
+          "stubborn_middle": 10.6,
+          "vulnerable_targets": 2.4,
+          "dem_likely": 9.5,
+          "dem_base": 27.9
+        }
+      }
     }
   },
   {
@@ -7384,7 +12829,8 @@
       "latest_leg": -67.6,
       "gov_2022": -26.4,
       "ussen_2022": -20.5,
-      "pres_2024": -26.8
+      "pres_2024": -26.8,
+      "model_rga_all": 16.4
     },
     "pres_2024_margin": -26.8,
     "gov_2022_margin": -26.4,
@@ -7397,6 +12843,60 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_rga_all": {
+        "label": "RGA (All)",
+        "family": "RGA",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "feenstra_base",
+              "label": "Feenstra Base",
+              "value": 29.7
+            },
+            {
+              "key": "gop_targets",
+              "label": "GOP Targets",
+              "value": 18.2
+            },
+            {
+              "key": "trust_targets",
+              "label": "Trust Targets",
+              "value": 9.6
+            },
+            {
+              "key": "stubborn_middle",
+              "label": "Stubborn Middle",
+              "value": 8.7
+            },
+            {
+              "key": "vulnerable_targets",
+              "label": "Vulnerable Targets",
+              "value": 2.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 6.9
+            },
+            {
+              "key": "dem_base",
+              "label": "Dem Base",
+              "value": 24.6
+            }
+          ],
+          "margin": 16.4,
+          "feenstra_base": 29.7,
+          "gop_targets": 18.2,
+          "trust_targets": 9.6,
+          "stubborn_middle": 8.7,
+          "vulnerable_targets": 2.3,
+          "dem_likely": 6.9,
+          "dem_base": 24.6
+        }
+      }
     }
   }
 ]

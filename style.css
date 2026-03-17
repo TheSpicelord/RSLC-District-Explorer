@@ -1060,8 +1060,28 @@ body.projection-active .chamber-buttons {
   background: #257bf8;
 }
 
+.color-model-dem-soft {
+  background: #257bf8;
+}
+
 .color-model-dem-base {
   background: #143f86;
+}
+
+.color-model-rga-trust {
+  background: #FA7285;
+}
+
+.color-model-rga-middle {
+  background: #C9BFE7;
+}
+
+.color-model-rga-vulnerable {
+  background: #BAADFD;
+}
+
+.color-model-rga-dem-trust {
+  background: #76ABFA;
 }
 
 .color-model-rslc-1 {
@@ -1069,11 +1089,11 @@ body.projection-active .chamber-buttons {
 }
 
 .color-model-rslc-2 {
-  background: #b81831;
+  background: #f82644;
 }
 
 .color-model-rslc-3 {
-  background: #f82644;
+  background: #FA7285;
 }
 
 .color-model-rslc-4 {
@@ -1089,7 +1109,7 @@ body.projection-active .chamber-buttons {
 }
 
 .color-model-rslc-7 {
-  background: #6ea4ff;
+  background: #76ABFA;
 }
 
 .color-model-rslc-8 {
@@ -1622,6 +1642,10 @@ body.projection-active .chamber-buttons {
 
 .inc-d {
   background: #A6E1F8;
+}
+
+.inc-s {
+  background: #CAAEC2;
 }
 
 .inc-u {
