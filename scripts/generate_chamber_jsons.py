@@ -549,20 +549,20 @@ def affinity_margin_for_block(block: dict, segments: List[dict]) -> float:
 
     if family_key == "rga":
         if clean_header(block.get("state_abbr")) == "WI":
-            gop_total = values_by_label.get("TIFFANY BASE", 0.0) + values_by_label.get("GOP SOFT", 0.0)
-            dem_total = values_by_label.get("DEM SOFT", 0.0) + values_by_label.get("DEM BASE", 0.0)
+            gop_total = values_by_label.get("TIFFANY BASE", 0.0) + values_by_label.get("GOP SOFT", 0.0) + values_by_label.get("GOP TRUST TARGET", 0.0)
+            dem_total = values_by_label.get("DEM TRUST TARGET", 0.0) + values_by_label.get("DEM SOFT", 0.0) + values_by_label.get("DEM BASE", 0.0)
             return round(gop_total - dem_total, 1)
         if clean_header(block.get("state_abbr")) == "IA":
-            gop_total = values_by_label.get("FEENSTRA BASE", 0.0) + values_by_label.get("GOP TARGETS", 0.0)
-            dem_total = values_by_label.get("DEM LIKELY", 0.0) + values_by_label.get("DEM BASE", 0.0)
+            gop_total = values_by_label.get("FEENSTRA BASE", 0.0) + values_by_label.get("GOP TARGETS", 0.0) + values_by_label.get("TRUST TARGETS", 0.0)
+            dem_total = values_by_label.get("VULNERABLE TARGETS", 0.0) + values_by_label.get("DEM LIKELY", 0.0) + values_by_label.get("DEM BASE", 0.0)
             return round(gop_total - dem_total, 1)
         if clean_header(block.get("state_abbr")) == "AZ":
-            gop_total = values_by_label.get("GOP BASE", 0.0) + values_by_label.get("GOP TARGETS", 0.0)
-            dem_total = values_by_label.get("DEM LIKELY", 0.0) + values_by_label.get("HOBBS BASE", 0.0)
+            gop_total = values_by_label.get("GOP BASE", 0.0) + values_by_label.get("GOP TARGETS", 0.0) + values_by_label.get("TRUST TARGETS", 0.0)
+            dem_total = values_by_label.get("VULNERABLE TARGETS", 0.0) + values_by_label.get("DEM LIKELY", 0.0) + values_by_label.get("HOBBS BASE", 0.0)
             return round(gop_total - dem_total, 1)
         if clean_header(block.get("state_abbr")) == "GA":
-            gop_total = values_by_label.get("GOP BASE", 0.0) + values_by_label.get("GOP TARGETS", 0.0)
-            dem_total = values_by_label.get("DEM LIKELY", 0.0) + values_by_label.get("DEM BASE", 0.0)
+            gop_total = values_by_label.get("GOP BASE", 0.0) + values_by_label.get("GOP TARGETS", 0.0) + values_by_label.get("TRUST TARGETS", 0.0)
+            dem_total = values_by_label.get("VULNERABLE TARGETS", 0.0) + values_by_label.get("DEM LIKELY", 0.0) + values_by_label.get("DEM BASE", 0.0)
             return round(gop_total - dem_total, 1)
 
     layout = MODELING_AFFINITY_LAYOUTS.get(family_key) or {}
