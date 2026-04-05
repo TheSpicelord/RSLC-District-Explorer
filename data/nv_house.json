@@ -47,6 +47,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.8,
+        "rep_pct": 42.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 56.2,
         "rep_pct": 43.8,
@@ -54,11 +60,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 12.2,
       "leg_2024": 12.4,
       "latest_leg": 12.4,
       "gov_2022": 11.1,
       "ussen_2022": 13.0,
-      "pres_2024": 7.8
+      "pres_2024": 7.8,
+      "model_lombardo_all": -9.3,
+      "model_lombardo_hm": -11.0
     },
     "pres_2024_margin": 7.8,
     "gov_2022_margin": 11.1,
@@ -71,6 +80,112 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 32.6
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.9
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.9
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.3
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 42.3
+            }
+          ],
+          "margin": -9.3,
+          "lombardo_base": 32.6,
+          "gop_likely": 2.7,
+          "gop_trust_target": 6.9,
+          "conflicted_middle": 8.9,
+          "dem_trust_target": 4.3,
+          "dem_likely": 2.3,
+          "ford_base": 42.3
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 35.2
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 46.4
+            }
+          ],
+          "margin": -11.0,
+          "lombardo_base": 35.2,
+          "gop_likely": 1.9,
+          "gop_trust_target": 4.3,
+          "conflicted_middle": 6.7,
+          "dem_trust_target": 3.9,
+          "dem_likely": 1.7,
+          "ford_base": 46.4
+        }
+      }
     }
   },
   {
@@ -121,6 +236,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 44.3,
+        "rep_pct": 54.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 44.1,
         "rep_pct": 55.9,
@@ -128,11 +249,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -10.1,
       "leg_2024": -11.7,
       "latest_leg": -11.7,
       "gov_2022": -3.8,
       "ussen_2022": -1.1,
-      "pres_2024": -5.6
+      "pres_2024": -5.6,
+      "model_lombardo_all": 4.1,
+      "model_lombardo_hm": 4.2
     },
     "pres_2024_margin": -5.6,
     "gov_2022_margin": -3.8,
@@ -145,6 +269,112 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 38.8
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.5
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.2
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 10.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 34.5
+            }
+          ],
+          "margin": 4.1,
+          "lombardo_base": 38.8,
+          "gop_likely": 2.5,
+          "gop_trust_target": 6.2,
+          "conflicted_middle": 10.2,
+          "dem_trust_target": 5.1,
+          "dem_likely": 2.7,
+          "ford_base": 34.5
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 42.1
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.6
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.4
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 37.6
+            }
+          ],
+          "margin": 4.2,
+          "lombardo_base": 42.1,
+          "gop_likely": 1.8,
+          "gop_trust_target": 4.6,
+          "conflicted_middle": 7.4,
+          "dem_trust_target": 4.4,
+          "dem_likely": 2.1,
+          "ford_base": 37.6
+        }
+      }
     }
   },
   {
@@ -166,7 +396,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Selena Torres"
         }
       }
     ],
@@ -195,6 +425,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 55.3,
+        "rep_pct": 44.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 56.0,
         "rep_pct": 44.0,
@@ -202,11 +438,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 10.7,
       "leg_2024": 12.1,
       "latest_leg": 12.1,
       "gov_2022": 9.4,
       "ussen_2022": 11.4,
-      "pres_2024": 7.5
+      "pres_2024": 7.5,
+      "model_lombardo_all": -13.1,
+      "model_lombardo_hm": -13.1
     },
     "pres_2024_margin": 7.5,
     "gov_2022_margin": 9.4,
@@ -218,7 +457,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Selena Torres"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 31.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.6
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.5
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.2
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 44.5
+            }
+          ],
+          "margin": -13.1,
+          "lombardo_base": 31.5,
+          "gop_likely": 2.1,
+          "gop_trust_target": 5.6,
+          "conflicted_middle": 8.5,
+          "dem_trust_target": 5.5,
+          "dem_likely": 2.2,
+          "ford_base": 44.5
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 35.0
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.1
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.6
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 48.2
+            }
+          ],
+          "margin": -13.1,
+          "lombardo_base": 35.0,
+          "gop_likely": 1.7,
+          "gop_trust_target": 3.1,
+          "conflicted_middle": 5.6,
+          "dem_trust_target": 4.7,
+          "dem_likely": 1.6,
+          "ford_base": 48.2
+        }
+      }
     }
   },
   {
@@ -239,7 +584,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Lisa Cole",
           "dem": "No candidate"
         }
       }
@@ -269,6 +614,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 62.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 45.6,
         "rep_pct": 54.4,
@@ -276,11 +627,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -25.2,
       "leg_2024": -8.8,
       "latest_leg": -8.8,
       "gov_2022": -6.2,
       "ussen_2022": -4.0,
-      "pres_2024": -8.1
+      "pres_2024": -8.1,
+      "model_lombardo_all": 5.5,
+      "model_lombardo_hm": 6.3
     },
     "pres_2024_margin": -8.1,
     "gov_2022_margin": -6.2,
@@ -291,8 +645,114 @@
       "ussen_2022": 27263
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Lisa Cole",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 40.2
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.7
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.9
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 34.9
+            }
+          ],
+          "margin": 5.5,
+          "lombardo_base": 40.2,
+          "gop_likely": 2.7,
+          "gop_trust_target": 6.7,
+          "conflicted_middle": 8.9,
+          "dem_trust_target": 4.2,
+          "dem_likely": 2.5,
+          "ford_base": 34.9
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 44.1
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 37.9
+            }
+          ],
+          "margin": 6.3,
+          "lombardo_base": 44.1,
+          "gop_likely": 1.9,
+          "gop_trust_target": 4.3,
+          "conflicted_middle": 6.3,
+          "dem_trust_target": 3.7,
+          "dem_likely": 1.8,
+          "ford_base": 37.9
+        }
+      }
     }
   },
   {
@@ -314,7 +774,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Brittney Miller"
         }
       }
     ],
@@ -343,6 +803,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 52.9,
+        "rep_pct": 45.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 50.8,
         "rep_pct": 47.0,
@@ -350,11 +816,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 7.4,
       "leg_2024": 3.9,
       "latest_leg": 3.9,
       "gov_2022": 8.0,
       "ussen_2022": 9.9,
-      "pres_2024": 2.1
+      "pres_2024": 2.1,
+      "model_lombardo_all": -4.0,
+      "model_lombardo_hm": -6.2
     },
     "pres_2024_margin": 2.1,
     "gov_2022_margin": 8.0,
@@ -366,7 +835,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Brittney Miller"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 34.8
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.4
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 38.8
+            }
+          ],
+          "margin": -4.0,
+          "lombardo_base": 34.8,
+          "gop_likely": 2.7,
+          "gop_trust_target": 7.3,
+          "conflicted_middle": 9.4,
+          "dem_trust_target": 4.3,
+          "dem_likely": 2.7,
+          "ford_base": 38.8
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 37.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.5
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 43.5
+            }
+          ],
+          "margin": -6.2,
+          "lombardo_base": 37.3,
+          "gop_likely": 2.1,
+          "gop_trust_target": 4.5,
+          "conflicted_middle": 6.7,
+          "dem_trust_target": 3.8,
+          "dem_likely": 2.1,
+          "ford_base": 43.5
+        }
+      }
     }
   },
   {
@@ -388,7 +963,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Jovan Jackson"
         }
       }
     ],
@@ -417,6 +992,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 81.4,
+        "rep_pct": 18.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 69.9,
         "rep_pct": 19.4,
@@ -424,11 +1005,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 62.9,
       "leg_2024": 50.5,
       "latest_leg": 50.5,
       "gov_2022": 60.3,
       "ussen_2022": 62.3,
-      "pres_2024": 49.8
+      "pres_2024": 49.8,
+      "model_lombardo_all": -54.5,
+      "model_lombardo_hm": -62.5
     },
     "pres_2024_margin": 49.8,
     "gov_2022_margin": 60.3,
@@ -440,7 +1024,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Jovan Jackson"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 11.8
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 7.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 64.5
+            }
+          ],
+          "margin": -54.5,
+          "lombardo_base": 11.8,
+          "gop_likely": 1.7,
+          "gop_trust_target": 4.0,
+          "conflicted_middle": 7.2,
+          "dem_trust_target": 7.3,
+          "dem_likely": 3.5,
+          "ford_base": 64.5
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 12.1
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.2
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 1.8
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 3.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 73.3
+            }
+          ],
+          "margin": -62.5,
+          "lombardo_base": 12.1,
+          "gop_likely": 1.2,
+          "gop_trust_target": 1.8,
+          "conflicted_middle": 3.7,
+          "dem_trust_target": 5.4,
+          "dem_likely": 2.5,
+          "ford_base": 73.3
+        }
+      }
     }
   },
   {
@@ -462,7 +1152,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Tanya Flanagan"
         }
       }
     ],
@@ -491,6 +1181,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 63.5,
+        "rep_pct": 36.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -498,11 +1194,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 26.9,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 27.7,
       "ussen_2022": 29.6,
-      "pres_2024": 23.6
+      "pres_2024": 23.6,
+      "model_lombardo_all": -27.7,
+      "model_lombardo_hm": -31.3
     },
     "pres_2024_margin": 23.6,
     "gov_2022_margin": 27.7,
@@ -514,14 +1213,120 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Tanya Flanagan"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 24.4
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.4
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.5
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.4
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 52.1
+            }
+          ],
+          "margin": -27.7,
+          "lombardo_base": 24.4,
+          "gop_likely": 2.4,
+          "gop_trust_target": 6.5,
+          "conflicted_middle": 7.3,
+          "dem_trust_target": 4.9,
+          "dem_likely": 2.4,
+          "ford_base": 52.1
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 26.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.6
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.0
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 57.6
+            }
+          ],
+          "margin": -31.3,
+          "lombardo_base": 26.3,
+          "gop_likely": 1.8,
+          "gop_trust_target": 3.6,
+          "conflicted_middle": 5.0,
+          "dem_trust_target": 3.9,
+          "dem_likely": 1.8,
+          "ford_base": 57.6
+        }
+      }
     }
   },
   {
     "state_fips": "32",
     "district_id": "008",
     "district_name": "Assembly District 8",
-    "tier": null,
+    "tier": 3,
     "incumbent": {
       "name": "Duy Nguyen",
       "party": "D"
@@ -536,7 +1341,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Duy Nguyen"
         }
       }
     ],
@@ -565,6 +1370,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 55.9,
+        "rep_pct": 44.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 53.6,
         "rep_pct": 46.4,
@@ -572,11 +1383,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 11.9,
       "leg_2024": 7.2,
       "latest_leg": 7.2,
       "gov_2022": 10.7,
       "ussen_2022": 12.4,
-      "pres_2024": 2.5
+      "pres_2024": 2.5,
+      "model_lombardo_all": -8.4,
+      "model_lombardo_hm": -13.5
     },
     "pres_2024_margin": 2.5,
     "gov_2022_margin": 10.7,
@@ -588,14 +1402,120 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Duy Nguyen"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 31.8
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.5
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 8.1
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 10.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 39.0
+            }
+          ],
+          "margin": -8.4,
+          "lombardo_base": 31.8,
+          "gop_likely": 2.5,
+          "gop_trust_target": 8.1,
+          "conflicted_middle": 10.8,
+          "dem_trust_target": 4.1,
+          "dem_likely": 3.7,
+          "ford_base": 39.0
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 33.0
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.2
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.9
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 45.4
+            }
+          ],
+          "margin": -13.5,
+          "lombardo_base": 33.0,
+          "gop_likely": 1.7,
+          "gop_trust_target": 5.2,
+          "conflicted_middle": 7.9,
+          "dem_trust_target": 4.0,
+          "dem_likely": 2.8,
+          "ford_base": 45.4
+        }
+      }
     }
   },
   {
     "state_fips": "32",
     "district_id": "009",
     "district_name": "Assembly District 9",
-    "tier": 2,
+    "tier": 1,
     "incumbent": {
       "name": "Steve Yeager",
       "party": "D"
@@ -639,6 +1559,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.2,
+        "rep_pct": 46.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 51.1,
         "rep_pct": 48.9,
@@ -646,11 +1572,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 6.4,
       "leg_2024": 2.2,
       "latest_leg": 2.2,
       "gov_2022": 6.5,
       "ussen_2022": 8.1,
-      "pres_2024": 0.5
+      "pres_2024": 0.5,
+      "model_lombardo_all": -4.0,
+      "model_lombardo_hm": -5.7
     },
     "pres_2024_margin": 0.5,
     "gov_2022_margin": 6.5,
@@ -663,6 +1592,112 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 33.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.5
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 11.0
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.3
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 37.0
+            }
+          ],
+          "margin": -4.0,
+          "lombardo_base": 33.5,
+          "gop_likely": 2.8,
+          "gop_trust_target": 7.5,
+          "conflicted_middle": 11.0,
+          "dem_trust_target": 4.8,
+          "dem_likely": 3.3,
+          "ford_base": 37.0
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 36.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.9
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 41.7
+            }
+          ],
+          "margin": -5.7,
+          "lombardo_base": 36.5,
+          "gop_likely": 2.0,
+          "gop_trust_target": 5.0,
+          "conflicted_middle": 7.9,
+          "dem_trust_target": 4.4,
+          "dem_likely": 2.5,
+          "ford_base": 41.7
+        }
+      }
     }
   },
   {
@@ -684,7 +1719,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Venise Karris"
         }
       }
     ],
@@ -713,6 +1748,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 58.2,
+        "rep_pct": 41.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 64.6,
         "rep_pct": 0.0,
@@ -720,11 +1761,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 16.4,
       "leg_2024": 64.6,
       "latest_leg": 64.6,
       "gov_2022": 16.8,
       "ussen_2022": 19.3,
-      "pres_2024": 12.6
+      "pres_2024": 12.6,
+      "model_lombardo_all": -19.3,
+      "model_lombardo_hm": -20.7
     },
     "pres_2024_margin": 12.6,
     "gov_2022_margin": 16.8,
@@ -736,7 +1780,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Venise Karris"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 28.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.2
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 6.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 47.0
+            }
+          ],
+          "margin": -19.3,
+          "lombardo_base": 28.5,
+          "gop_likely": 1.9,
+          "gop_trust_target": 5.2,
+          "conflicted_middle": 8.7,
+          "dem_trust_target": 6.2,
+          "dem_likely": 2.7,
+          "ford_base": 47.0
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 31.2
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.5
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.2
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 51.3
+            }
+          ],
+          "margin": -20.7,
+          "lombardo_base": 31.2,
+          "gop_likely": 1.5,
+          "gop_trust_target": 3.2,
+          "conflicted_middle": 5.8,
+          "dem_trust_target": 5.0,
+          "dem_likely": 2.1,
+          "ford_base": 51.3
+        }
+      }
     }
   },
   {
@@ -758,7 +1908,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Cinthia Moore"
         }
       }
     ],
@@ -787,6 +1937,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 73.3,
+        "rep_pct": 26.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 69.3,
         "rep_pct": 30.7,
@@ -794,11 +1950,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 46.7,
       "leg_2024": 38.7,
       "latest_leg": 38.7,
       "gov_2022": 44.1,
       "ussen_2022": 48.0,
-      "pres_2024": 34.6
+      "pres_2024": 34.6,
+      "model_lombardo_all": -43.4,
+      "model_lombardo_hm": -49.3
     },
     "pres_2024_margin": 34.6,
     "gov_2022_margin": 44.1,
@@ -810,7 +1969,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Cinthia Moore"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 15.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 8.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.3
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 56.2
+            }
+          ],
+          "margin": -43.4,
+          "lombardo_base": 15.5,
+          "gop_likely": 1.6,
+          "gop_trust_target": 4.0,
+          "conflicted_middle": 9.8,
+          "dem_trust_target": 8.5,
+          "dem_likely": 4.3,
+          "ford_base": 56.2
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 16.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.3
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 2.8
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 6.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.9
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 64.2
+            }
+          ],
+          "margin": -49.3,
+          "lombardo_base": 16.5,
+          "gop_likely": 1.3,
+          "gop_trust_target": 2.8,
+          "conflicted_middle": 5.6,
+          "dem_trust_target": 6.8,
+          "dem_likely": 2.9,
+          "ford_base": 64.2
+        }
+      }
     }
   },
   {
@@ -832,7 +2097,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Max Carter"
         }
       }
     ],
@@ -861,6 +2126,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 50.9,
+        "rep_pct": 49.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 50.4,
         "rep_pct": 49.6,
@@ -868,11 +2139,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 1.9,
       "leg_2024": 0.9,
       "latest_leg": 0.9,
       "gov_2022": 4.3,
       "ussen_2022": 6.0,
-      "pres_2024": 0.9
+      "pres_2024": 0.9,
+      "model_lombardo_all": -5.7,
+      "model_lombardo_hm": -4.5
     },
     "pres_2024_margin": 0.9,
     "gov_2022_margin": 4.3,
@@ -884,7 +2158,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Max Carter"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 34.6
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.5
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.9
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 41.0
+            }
+          ],
+          "margin": -5.7,
+          "lombardo_base": 34.6,
+          "gop_likely": 2.6,
+          "gop_trust_target": 6.5,
+          "conflicted_middle": 8.8,
+          "dem_trust_target": 4.5,
+          "dem_likely": 1.9,
+          "ford_base": 41.0
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 38.8
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.0
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 43.8
+            }
+          ],
+          "margin": -4.5,
+          "lombardo_base": 38.8,
+          "gop_likely": 2.0,
+          "gop_trust_target": 4.0,
+          "conflicted_middle": 6.0,
+          "dem_trust_target": 4.0,
+          "dem_likely": 1.5,
+          "ford_base": 43.8
+        }
+      }
     }
   },
   {
@@ -905,7 +2285,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Brian Hibbetts",
           "dem": "No candidate"
         }
       }
@@ -935,6 +2315,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 44.4,
+        "rep_pct": 55.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 44.5,
         "rep_pct": 55.5,
@@ -942,11 +2328,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -11.1,
       "leg_2024": -11.0,
       "latest_leg": -11.0,
       "gov_2022": -8.1,
       "ussen_2022": -5.7,
-      "pres_2024": -8.5
+      "pres_2024": -8.5,
+      "model_lombardo_all": 7.0,
+      "model_lombardo_hm": 7.5
     },
     "pres_2024_margin": -8.5,
     "gov_2022_margin": -8.1,
@@ -957,8 +2346,114 @@
       "ussen_2022": 30008
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Brian Hibbetts",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 40.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.4
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 33.7
+            }
+          ],
+          "margin": 7.0,
+          "lombardo_base": 40.5,
+          "gop_likely": 2.9,
+          "gop_trust_target": 6.4,
+          "conflicted_middle": 9.3,
+          "dem_trust_target": 4.6,
+          "dem_likely": 2.7,
+          "ford_base": 33.7
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 44.4
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 36.8
+            }
+          ],
+          "margin": 7.5,
+          "lombardo_base": 44.4,
+          "gop_likely": 2.0,
+          "gop_trust_target": 4.3,
+          "conflicted_middle": 6.7,
+          "dem_trust_target": 3.8,
+          "dem_likely": 2.1,
+          "ford_base": 36.8
+        }
+      }
     }
   },
   {
@@ -980,7 +2475,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Erica Mosca"
         }
       }
     ],
@@ -1009,6 +2504,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 66.0,
+        "rep_pct": 34.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -1016,11 +2517,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 32.0,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 30.3,
       "ussen_2022": 32.2,
-      "pres_2024": 21.3
+      "pres_2024": 21.3,
+      "model_lombardo_all": -31.9,
+      "model_lombardo_hm": -36.2
     },
     "pres_2024_margin": 21.3,
     "gov_2022_margin": 30.3,
@@ -1032,7 +2536,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Erica Mosca"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 21.4
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.1
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 6.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 52.7
+            }
+          ],
+          "margin": -31.9,
+          "lombardo_base": 21.4,
+          "gop_likely": 2.1,
+          "gop_trust_target": 5.3,
+          "conflicted_middle": 9.1,
+          "dem_trust_target": 6.7,
+          "dem_likely": 2.7,
+          "ford_base": 52.7
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 23.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.4
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 59.2
+            }
+          ],
+          "margin": -36.2,
+          "lombardo_base": 23.3,
+          "gop_likely": 1.7,
+          "gop_trust_target": 3.0,
+          "conflicted_middle": 5.4,
+          "dem_trust_target": 5.5,
+          "dem_likely": 2.0,
+          "ford_base": 59.2
+        }
+      }
     }
   },
   {
@@ -1054,7 +2664,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Howard Watts III"
         }
       }
     ],
@@ -1083,6 +2693,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 62.5,
+        "rep_pct": 37.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 58.3,
         "rep_pct": 38.5,
@@ -1090,11 +2706,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 25.1,
       "leg_2024": 19.8,
       "latest_leg": 19.8,
       "gov_2022": 24.7,
       "ussen_2022": 27.2,
-      "pres_2024": 18.8
+      "pres_2024": 18.8,
+      "model_lombardo_all": -27.3,
+      "model_lombardo_hm": -30.3
     },
     "pres_2024_margin": 18.8,
     "gov_2022_margin": 24.7,
@@ -1106,14 +2725,120 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Howard Watts III"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 23.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.2
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 10.4
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 7.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 4.6
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 47.8
+            }
+          ],
+          "margin": -27.3,
+          "lombardo_base": 23.5,
+          "gop_likely": 1.6,
+          "gop_trust_target": 4.2,
+          "conflicted_middle": 10.4,
+          "dem_trust_target": 7.9,
+          "dem_likely": 4.6,
+          "ford_base": 47.8
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 25.6
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.2
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 2.8
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 6.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 54.0
+            }
+          ],
+          "margin": -30.3,
+          "lombardo_base": 25.6,
+          "gop_likely": 1.2,
+          "gop_trust_target": 2.8,
+          "conflicted_middle": 6.6,
+          "dem_trust_target": 6.6,
+          "dem_likely": 3.1,
+          "ford_base": 54.0
+        }
+      }
     }
   },
   {
     "state_fips": "32",
     "district_id": "016",
     "district_name": "Assembly District 16",
-    "tier": null,
+    "tier": 3,
     "incumbent": {
       "name": "Cecelia Gonz\u00e1lez",
       "party": "D"
@@ -1128,7 +2853,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Cecelia Gonz\u00e1lez"
         }
       }
     ],
@@ -1157,6 +2882,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.9,
+        "rep_pct": 46.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 52.2,
         "rep_pct": 44.7,
@@ -1164,11 +2895,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 7.7,
       "leg_2024": 7.5,
       "latest_leg": 7.5,
       "gov_2022": 8.7,
       "ussen_2022": 10.5,
-      "pres_2024": 4.3
+      "pres_2024": 4.3,
+      "model_lombardo_all": -10.0,
+      "model_lombardo_hm": -10.5
     },
     "pres_2024_margin": 4.3,
     "gov_2022_margin": 8.7,
@@ -1180,7 +2914,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Cecelia Gonz\u00e1lez"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 32.1
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.3
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.7
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.1
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 41.4
+            }
+          ],
+          "margin": -10.0,
+          "lombardo_base": 32.1,
+          "gop_likely": 2.3,
+          "gop_trust_target": 6.7,
+          "conflicted_middle": 9.1,
+          "dem_trust_target": 5.5,
+          "dem_likely": 3.0,
+          "ford_base": 41.4
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 35.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.2
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 45.8
+            }
+          ],
+          "margin": -10.5,
+          "lombardo_base": 35.5,
+          "gop_likely": 1.9,
+          "gop_trust_target": 4.2,
+          "conflicted_middle": 6.2,
+          "dem_trust_target": 4.4,
+          "dem_likely": 2.1,
+          "ford_base": 45.8
+        }
+      }
     }
   },
   {
@@ -1202,7 +3042,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Linda Hunt"
         }
       }
     ],
@@ -1231,6 +3071,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 65.5,
+        "rep_pct": 34.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 64.7,
         "rep_pct": 35.3,
@@ -1238,11 +3084,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 31.0,
       "leg_2024": 29.4,
       "latest_leg": 29.4,
       "gov_2022": 30.4,
       "ussen_2022": 31.8,
-      "pres_2024": 25.2
+      "pres_2024": 25.2,
+      "model_lombardo_all": -27.2,
+      "model_lombardo_hm": -32.7
     },
     "pres_2024_margin": 25.2,
     "gov_2022_margin": 30.4,
@@ -1254,7 +3103,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Linda Hunt"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 23.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.8
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.5
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 49.6
+            }
+          ],
+          "margin": -27.2,
+          "lombardo_base": 23.3,
+          "gop_likely": 2.6,
+          "gop_trust_target": 7.8,
+          "conflicted_middle": 8.5,
+          "dem_trust_target": 4.6,
+          "dem_likely": 3.5,
+          "ford_base": 49.6
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 24.7
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 56.7
+            }
+          ],
+          "margin": -32.7,
+          "lombardo_base": 24.7,
+          "gop_likely": 1.8,
+          "gop_trust_target": 4.3,
+          "conflicted_middle": 5.7,
+          "dem_trust_target": 4.4,
+          "dem_likely": 2.5,
+          "ford_base": 56.7
+        }
+      }
     }
   },
   {
@@ -1276,7 +3231,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Venicia Considine"
         }
       }
     ],
@@ -1305,6 +3260,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 60.4,
+        "rep_pct": 39.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 59.5,
         "rep_pct": 40.5,
@@ -1312,11 +3273,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 20.7,
       "leg_2024": 19.0,
       "latest_leg": 19.0,
       "gov_2022": 21.6,
       "ussen_2022": 23.6,
-      "pres_2024": 14.9
+      "pres_2024": 14.9,
+      "model_lombardo_all": -19.6,
+      "model_lombardo_hm": -23.3
     },
     "pres_2024_margin": 14.9,
     "gov_2022_margin": 21.6,
@@ -1328,7 +3292,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Venicia Considine"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 27.1
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.4
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 46.6
+            }
+          ],
+          "margin": -19.6,
+          "lombardo_base": 27.1,
+          "gop_likely": 2.4,
+          "gop_trust_target": 7.3,
+          "conflicted_middle": 8.7,
+          "dem_trust_target": 5.4,
+          "dem_likely": 2.5,
+          "ford_base": 46.6
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 29.4
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.9
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 52.7
+            }
+          ],
+          "margin": -23.3,
+          "lombardo_base": 29.4,
+          "gop_likely": 1.8,
+          "gop_trust_target": 3.9,
+          "conflicted_middle": 5.7,
+          "dem_trust_target": 4.7,
+          "dem_likely": 1.8,
+          "ford_base": 52.7
+        }
+      }
     }
   },
   {
@@ -1349,7 +3419,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jason Patchett",
           "dem": "No candidate"
         }
       }
@@ -1379,6 +3449,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
@@ -1386,11 +3462,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -100.0,
       "latest_leg": -100.0,
       "gov_2022": -29.7,
       "ussen_2022": -27.7,
-      "pres_2024": -29.5
+      "pres_2024": -29.5,
+      "model_lombardo_all": 28.7,
+      "model_lombardo_hm": 31.3
     },
     "pres_2024_margin": -29.5,
     "gov_2022_margin": -29.7,
@@ -1401,8 +3480,114 @@
       "ussen_2022": 33354
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Jason Patchett",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 51.7
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 3.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.4
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.5
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 24.3
+            }
+          ],
+          "margin": 28.7,
+          "lombardo_base": 51.7,
+          "gop_likely": 3.0,
+          "gop_trust_target": 6.4,
+          "conflicted_middle": 9.5,
+          "dem_trust_target": 3.3,
+          "dem_likely": 1.7,
+          "ford_base": 24.3
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 56.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.3
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.4
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.9
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.2
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 26.1
+            }
+          ],
+          "margin": 31.3,
+          "lombardo_base": 56.3,
+          "gop_likely": 2.3,
+          "gop_trust_target": 4.4,
+          "conflicted_middle": 6.9,
+          "dem_trust_target": 2.8,
+          "dem_likely": 1.2,
+          "ford_base": 26.1
+        }
+      }
     }
   },
   {
@@ -1424,7 +3609,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "David Orentlicher"
         }
       }
     ],
@@ -1453,6 +3638,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 59.4,
+        "rep_pct": 37.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 58.8,
         "rep_pct": 41.2,
@@ -1460,11 +3651,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 21.7,
       "leg_2024": 17.7,
       "latest_leg": 17.7,
       "gov_2022": 22.6,
       "ussen_2022": 24.5,
-      "pres_2024": 15.3
+      "pres_2024": 15.3,
+      "model_lombardo_all": -19.9,
+      "model_lombardo_hm": -23.0
     },
     "pres_2024_margin": 15.3,
     "gov_2022_margin": 22.6,
@@ -1476,7 +3670,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "David Orentlicher"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 27.8
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.9
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 47.3
+            }
+          ],
+          "margin": -19.9,
+          "lombardo_base": 27.8,
+          "gop_likely": 2.1,
+          "gop_trust_target": 5.9,
+          "conflicted_middle": 8.8,
+          "dem_trust_target": 5.7,
+          "dem_likely": 2.5,
+          "ford_base": 47.3
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 29.7
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.5
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 52.5
+            }
+          ],
+          "margin": -23.0,
+          "lombardo_base": 29.7,
+          "gop_likely": 1.8,
+          "gop_trust_target": 3.5,
+          "conflicted_middle": 5.7,
+          "dem_trust_target": 4.8,
+          "dem_likely": 2.0,
+          "ford_base": 52.5
+        }
+      }
     }
   },
   {
@@ -1498,7 +3798,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Elaine Marzola"
         }
       }
     ],
@@ -1527,6 +3827,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 52.4,
+        "rep_pct": 47.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 50.7,
         "rep_pct": 49.3,
@@ -1534,11 +3840,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 4.8,
       "leg_2024": 1.5,
       "latest_leg": 1.5,
       "gov_2022": 4.8,
       "ussen_2022": 7.7,
-      "pres_2024": 1.7
+      "pres_2024": 1.7,
+      "model_lombardo_all": -1.5,
+      "model_lombardo_hm": -3.1
     },
     "pres_2024_margin": 1.7,
     "gov_2022_margin": 4.8,
@@ -1550,14 +3859,120 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Elaine Marzola"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 36.4
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.6
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 37.9
+            }
+          ],
+          "margin": -1.5,
+          "lombardo_base": 36.4,
+          "gop_likely": 2.6,
+          "gop_trust_target": 7.3,
+          "conflicted_middle": 9.2,
+          "dem_trust_target": 4.0,
+          "dem_likely": 2.6,
+          "ford_base": 37.9
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 39.0
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.8
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 42.0
+            }
+          ],
+          "margin": -3.1,
+          "lombardo_base": 39.0,
+          "gop_likely": 1.9,
+          "gop_trust_target": 4.8,
+          "conflicted_middle": 6.7,
+          "dem_trust_target": 3.5,
+          "dem_likely": 2.0,
+          "ford_base": 42.0
+        }
+      }
     }
   },
   {
     "state_fips": "32",
     "district_id": "022",
     "district_name": "Assembly District 22",
-    "tier": null,
+    "tier": 2,
     "incumbent": {
       "name": "Melissa Hardy",
       "party": "R"
@@ -1571,7 +3986,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Melissa Hardy",
           "dem": "No candidate"
         }
       }
@@ -1601,6 +4016,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 41.5,
+        "rep_pct": 58.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
@@ -1608,11 +4029,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -17.1,
       "leg_2024": -100.0,
       "latest_leg": -100.0,
       "gov_2022": -9.3,
       "ussen_2022": -7.0,
-      "pres_2024": -11.1
+      "pres_2024": -11.1,
+      "model_lombardo_all": 10.2,
+      "model_lombardo_hm": 10.2
     },
     "pres_2024_margin": -11.1,
     "gov_2022_margin": -9.3,
@@ -1623,15 +4047,121 @@
       "ussen_2022": 32522
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Melissa Hardy",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 42.1
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 32.6
+            }
+          ],
+          "margin": 10.2,
+          "lombardo_base": 42.1,
+          "gop_likely": 2.8,
+          "gop_trust_target": 7.0,
+          "conflicted_middle": 9.2,
+          "dem_trust_target": 4.3,
+          "dem_likely": 2.1,
+          "ford_base": 32.6
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 45.4
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.7
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 35.6
+            }
+          ],
+          "margin": 10.2,
+          "lombardo_base": 45.4,
+          "gop_likely": 2.1,
+          "gop_trust_target": 4.7,
+          "conflicted_middle": 6.8,
+          "dem_trust_target": 3.8,
+          "dem_likely": 1.7,
+          "ford_base": 35.6
+        }
+      }
     }
   },
   {
     "state_fips": "32",
     "district_id": "023",
     "district_name": "Assembly District 23",
-    "tier": null,
+    "tier": 3,
     "incumbent": {
       "name": "Danielle Gallant",
       "party": "R"
@@ -1645,7 +4175,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Danielle Gallant",
           "dem": "No candidate"
         }
       }
@@ -1675,6 +4205,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.6,
+        "rep_pct": 58.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
@@ -1682,11 +4218,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -19.3,
       "leg_2024": -100.0,
       "latest_leg": -100.0,
       "gov_2022": -16.3,
       "ussen_2022": -14.7,
-      "pres_2024": -16.7
+      "pres_2024": -16.7,
+      "model_lombardo_all": 18.5,
+      "model_lombardo_hm": 18.7
     },
     "pres_2024_margin": -16.7,
     "gov_2022_margin": -16.3,
@@ -1697,8 +4236,114 @@
       "ussen_2022": 40517
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Danielle Gallant",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 46.7
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.2
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.4
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 28.9
+            }
+          ],
+          "margin": 18.5,
+          "lombardo_base": 46.7,
+          "gop_likely": 2.7,
+          "gop_trust_target": 6.2,
+          "conflicted_middle": 9.4,
+          "dem_trust_target": 4.1,
+          "dem_likely": 2.0,
+          "ford_base": 28.9
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 49.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.7
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 31.1
+            }
+          ],
+          "margin": 18.7,
+          "lombardo_base": 49.5,
+          "gop_likely": 2.0,
+          "gop_trust_target": 4.7,
+          "conflicted_middle": 7.2,
+          "dem_trust_target": 3.8,
+          "dem_likely": 1.7,
+          "ford_base": 31.1
+        }
+      }
     }
   },
   {
@@ -1720,7 +4365,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Erica Roth"
         }
       }
     ],
@@ -1749,6 +4394,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 65.9,
+        "rep_pct": 34.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 64.3,
         "rep_pct": 35.7,
@@ -1756,11 +4407,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 31.8,
       "leg_2024": 28.7,
       "latest_leg": 28.7,
       "gov_2022": 31.2,
       "ussen_2022": 34.6,
-      "pres_2024": 27.4
+      "pres_2024": 27.4,
+      "model_lombardo_all": -24.6,
+      "model_lombardo_hm": -27.4
     },
     "pres_2024_margin": 27.4,
     "gov_2022_margin": 31.2,
@@ -1772,14 +4426,120 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Erica Roth"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 25.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.3
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 10.4
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 7.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 48.1
+            }
+          ],
+          "margin": -24.6,
+          "lombardo_base": 25.3,
+          "gop_likely": 1.3,
+          "gop_trust_target": 4.0,
+          "conflicted_middle": 10.4,
+          "dem_trust_target": 7.8,
+          "dem_likely": 3.1,
+          "ford_base": 48.1
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 27.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 0.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.2
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 53.4
+            }
+          ],
+          "margin": -27.4,
+          "lombardo_base": 27.3,
+          "gop_likely": 0.9,
+          "gop_trust_target": 3.0,
+          "conflicted_middle": 7.6,
+          "dem_trust_target": 5.7,
+          "dem_likely": 2.2,
+          "ford_base": 53.4
+        }
+      }
     }
   },
   {
     "state_fips": "32",
     "district_id": "025",
     "district_name": "Assembly District 25",
-    "tier": null,
+    "tier": 3,
     "incumbent": {
       "name": "Selena La Rue Hatch",
       "party": "D"
@@ -1794,7 +4554,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Selena La Rue Hatch"
         }
       }
     ],
@@ -1823,6 +4583,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.9,
+        "rep_pct": 46.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 53.5,
         "rep_pct": 46.5,
@@ -1830,11 +4596,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 7.8,
       "leg_2024": 7.0,
       "latest_leg": 7.0,
       "gov_2022": 12.2,
       "ussen_2022": 16.1,
-      "pres_2024": 12.6
+      "pres_2024": 12.6,
+      "model_lombardo_all": -4.8,
+      "model_lombardo_hm": -5.0
     },
     "pres_2024_margin": 12.6,
     "gov_2022_margin": 12.2,
@@ -1846,14 +4615,120 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Selena La Rue Hatch"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 36.2
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.7
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 10.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.3
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 40.3
+            }
+          ],
+          "margin": -4.8,
+          "lombardo_base": 36.2,
+          "gop_likely": 1.6,
+          "gop_trust_target": 3.7,
+          "conflicted_middle": 10.6,
+          "dem_trust_target": 5.3,
+          "dem_likely": 2.3,
+          "ford_base": 40.3
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 38.6
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.2
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.1
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 43.0
+            }
+          ],
+          "margin": -5.0,
+          "lombardo_base": 38.6,
+          "gop_likely": 1.2,
+          "gop_trust_target": 3.0,
+          "conflicted_middle": 8.1,
+          "dem_trust_target": 4.4,
+          "dem_likely": 1.8,
+          "ford_base": 43.0
+        }
+      }
     }
   },
   {
     "state_fips": "32",
     "district_id": "026",
     "district_name": "Assembly District 26",
-    "tier": 2,
+    "tier": 3,
     "incumbent": {
       "name": "Rich DeLong",
       "party": "R"
@@ -1867,7 +4742,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Rich DeLong",
           "dem": "No candidate"
         }
       }
@@ -1897,6 +4772,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 71.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 39.3,
         "rep_pct": 60.7,
@@ -1904,11 +4785,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -43.4,
       "leg_2024": -21.4,
       "latest_leg": -21.4,
       "gov_2022": -9.2,
       "ussen_2022": -6.0,
-      "pres_2024": -6.7
+      "pres_2024": -6.7,
+      "model_lombardo_all": 13.9,
+      "model_lombardo_hm": 15.2
     },
     "pres_2024_margin": -6.7,
     "gov_2022_margin": -9.2,
@@ -1919,8 +4803,114 @@
       "ussen_2022": 39627
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Rich DeLong",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 44.0
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.3
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 11.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 30.4
+            }
+          ],
+          "margin": 13.9,
+          "lombardo_base": 44.0,
+          "gop_likely": 2.3,
+          "gop_trust_target": 4.3,
+          "conflicted_middle": 11.8,
+          "dem_trust_target": 5.1,
+          "dem_likely": 2.0,
+          "ford_base": 30.4
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 47.4
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.4
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 32.4
+            }
+          ],
+          "margin": 15.2,
+          "lombardo_base": 47.4,
+          "gop_likely": 1.7,
+          "gop_trust_target": 3.4,
+          "conflicted_middle": 9.2,
+          "dem_trust_target": 4.4,
+          "dem_likely": 1.5,
+          "ford_base": 32.4
+        }
+      }
     }
   },
   {
@@ -1942,7 +4932,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Heather Goulding"
         }
       }
     ],
@@ -1971,6 +4961,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 58.2,
+        "rep_pct": 41.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 55.8,
         "rep_pct": 44.2,
@@ -1978,11 +4974,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 16.4,
       "leg_2024": 11.6,
       "latest_leg": 11.6,
       "gov_2022": 17.8,
       "ussen_2022": 20.1,
-      "pres_2024": 11.9
+      "pres_2024": 11.9,
+      "model_lombardo_all": -9.9,
+      "model_lombardo_hm": -11.9
     },
     "pres_2024_margin": 11.9,
     "gov_2022_margin": 17.8,
@@ -1994,7 +4993,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Heather Goulding"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 31.8
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.2
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.5
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 10.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.2
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 41.7
+            }
+          ],
+          "margin": -9.9,
+          "lombardo_base": 31.8,
+          "gop_likely": 2.2,
+          "gop_trust_target": 6.5,
+          "conflicted_middle": 10.8,
+          "dem_trust_target": 4.8,
+          "dem_likely": 2.2,
+          "ford_base": 41.7
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 34.1
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.6
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.6
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 46.1
+            }
+          ],
+          "margin": -11.9,
+          "lombardo_base": 34.1,
+          "gop_likely": 1.7,
+          "gop_trust_target": 4.6,
+          "conflicted_middle": 7.7,
+          "dem_trust_target": 4.2,
+          "dem_likely": 1.6,
+          "ford_base": 46.1
+        }
+      }
     }
   },
   {
@@ -2016,7 +5121,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Reuben D'Silva"
         }
       }
     ],
@@ -2045,6 +5150,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 67.4,
+        "rep_pct": 32.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2052,11 +5163,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 34.8,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 32.5,
       "ussen_2022": 36.1,
-      "pres_2024": 26.8
+      "pres_2024": 26.8,
+      "model_lombardo_all": -33.8,
+      "model_lombardo_hm": -37.0
     },
     "pres_2024_margin": 26.8,
     "gov_2022_margin": 32.5,
@@ -2068,14 +5182,120 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Reuben D'Silva"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 19.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.2
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 7.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.6
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 53.8
+            }
+          ],
+          "margin": -33.8,
+          "lombardo_base": 19.5,
+          "gop_likely": 2.1,
+          "gop_trust_target": 6.0,
+          "conflicted_middle": 9.2,
+          "dem_trust_target": 7.8,
+          "dem_likely": 1.6,
+          "ford_base": 53.8
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 22.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.8
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 6.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 59.8
+            }
+          ],
+          "margin": -37.0,
+          "lombardo_base": 22.3,
+          "gop_likely": 1.6,
+          "gop_trust_target": 3.8,
+          "conflicted_middle": 5.3,
+          "dem_trust_target": 6.1,
+          "dem_likely": 1.1,
+          "ford_base": 59.8
+        }
+      }
     }
   },
   {
     "state_fips": "32",
     "district_id": "029",
     "district_name": "Assembly District 29",
-    "tier": 3,
+    "tier": 2,
     "incumbent": {
       "name": "Joe Dalia",
       "party": "D"
@@ -2119,6 +5339,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.1,
+        "rep_pct": 46.9,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 52.2,
         "rep_pct": 47.8,
@@ -2126,11 +5352,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 6.3,
       "leg_2024": 4.3,
       "latest_leg": 4.3,
       "gov_2022": 7.1,
       "ussen_2022": 9.1,
-      "pres_2024": 3.3
+      "pres_2024": 3.3,
+      "model_lombardo_all": -3.9,
+      "model_lombardo_hm": -5.3
     },
     "pres_2024_margin": 3.3,
     "gov_2022_margin": 7.1,
@@ -2143,6 +5372,112 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 34.8
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.7
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.5
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 38.9
+            }
+          ],
+          "margin": -3.9,
+          "lombardo_base": 34.8,
+          "gop_likely": 2.7,
+          "gop_trust_target": 7.7,
+          "conflicted_middle": 9.5,
+          "dem_trust_target": 3.9,
+          "dem_likely": 2.5,
+          "ford_base": 38.9
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 37.9
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.9
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 43.3
+            }
+          ],
+          "margin": -5.3,
+          "lombardo_base": 37.9,
+          "gop_likely": 2.0,
+          "gop_trust_target": 5.0,
+          "conflicted_middle": 6.6,
+          "dem_trust_target": 3.3,
+          "dem_likely": 1.9,
+          "ford_base": 43.3
+        }
+      }
     }
   },
   {
@@ -2164,7 +5499,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Natha Anderson"
         }
       }
     ],
@@ -2193,6 +5528,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 55.2,
+        "rep_pct": 41.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
@@ -2200,11 +5541,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 13.8,
       "leg_2024": 100.0,
       "latest_leg": 100.0,
       "gov_2022": 14.8,
       "ussen_2022": 17.1,
-      "pres_2024": 10.6
+      "pres_2024": 10.6,
+      "model_lombardo_all": -10.7,
+      "model_lombardo_hm": -11.7
     },
     "pres_2024_margin": 10.6,
     "gov_2022_margin": 14.8,
@@ -2216,7 +5560,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Natha Anderson"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 32.2
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.6
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 6.2
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 42.6
+            }
+          ],
+          "margin": -10.7,
+          "lombardo_base": 32.2,
+          "gop_likely": 1.7,
+          "gop_trust_target": 5.6,
+          "conflicted_middle": 9.8,
+          "dem_trust_target": 6.2,
+          "dem_likely": 2.0,
+          "ford_base": 42.6
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 35.1
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.3
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 3.9
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.4
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 46.7
+            }
+          ],
+          "margin": -11.7,
+          "lombardo_base": 35.1,
+          "gop_likely": 1.3,
+          "gop_trust_target": 3.9,
+          "conflicted_middle": 6.8,
+          "dem_trust_target": 4.8,
+          "dem_likely": 1.4,
+          "ford_base": 46.7
+        }
+      }
     }
   },
   {
@@ -2237,7 +5687,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jill Dickman",
           "dem": "No candidate"
         }
       }
@@ -2267,6 +5717,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.3,
         "rep_pct": 62.7,
@@ -2274,11 +5730,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -25.5,
       "latest_leg": -25.5,
       "gov_2022": -15.8,
       "ussen_2022": -13.0,
-      "pres_2024": -15.8
+      "pres_2024": -15.8,
+      "model_lombardo_all": 18.8,
+      "model_lombardo_hm": 20.2
     },
     "pres_2024_margin": -15.8,
     "gov_2022_margin": -15.8,
@@ -2289,8 +5748,114 @@
       "ussen_2022": 33727
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Jill Dickman",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 47.7
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.4
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.6
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.5
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 29.5
+            }
+          ],
+          "margin": 18.8,
+          "lombardo_base": 47.7,
+          "gop_likely": 2.4,
+          "gop_trust_target": 5.6,
+          "conflicted_middle": 9.5,
+          "dem_trust_target": 3.6,
+          "dem_likely": 1.8,
+          "ford_base": 29.5
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 51.4
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.3
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 31.7
+            }
+          ],
+          "margin": 20.2,
+          "lombardo_base": 51.4,
+          "gop_likely": 1.8,
+          "gop_trust_target": 4.0,
+          "conflicted_middle": 6.7,
+          "dem_trust_target": 3.1,
+          "dem_likely": 1.3,
+          "ford_base": 31.7
+        }
+      }
     }
   },
   {
@@ -2311,7 +5876,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Alexis Hansen",
           "dem": "No candidate"
         }
       }
@@ -2341,6 +5906,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 29.8,
         "rep_pct": 70.2,
@@ -2348,11 +5919,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -40.3,
       "latest_leg": -40.3,
       "gov_2022": -32.4,
       "ussen_2022": -29.8,
-      "pres_2024": -32.1
+      "pres_2024": -32.1,
+      "model_lombardo_all": 36.0,
+      "model_lombardo_hm": 38.4
     },
     "pres_2024_margin": -32.1,
     "gov_2022_margin": -32.4,
@@ -2363,8 +5937,114 @@
       "ussen_2022": 29049
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Alexis Hansen",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 56.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 3.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.8
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 22.8
+            }
+          ],
+          "margin": 36.0,
+          "lombardo_base": 56.3,
+          "gop_likely": 3.6,
+          "gop_trust_target": 5.8,
+          "conflicted_middle": 7.7,
+          "dem_trust_target": 2.8,
+          "dem_likely": 1.1,
+          "ford_base": 22.8
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 60.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.1
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.5
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 0.9
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 23.9
+            }
+          ],
+          "margin": 38.4,
+          "lombardo_base": 60.3,
+          "gop_likely": 2.9,
+          "gop_trust_target": 4.1,
+          "conflicted_middle": 5.5,
+          "dem_trust_target": 2.3,
+          "dem_likely": 0.9,
+          "ford_base": 23.9
+        }
+      }
     }
   },
   {
@@ -2385,7 +6065,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Bert Gurr",
           "dem": "No candidate"
         }
       }
@@ -2415,6 +6095,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 19.1,
+        "rep_pct": 80.9,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 84.1,
@@ -2422,11 +6108,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -61.7,
       "leg_2024": -68.2,
       "latest_leg": -68.2,
       "gov_2022": -56.7,
       "ussen_2022": -54.9,
-      "pres_2024": -57.2
+      "pres_2024": -57.2,
+      "model_lombardo_all": 56.6,
+      "model_lombardo_hm": 60.0
     },
     "pres_2024_margin": -57.2,
     "gov_2022_margin": -56.7,
@@ -2437,8 +6126,114 @@
       "ussen_2022": 25492
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Bert Gurr",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 66.4
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 3.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.6
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 1.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 0.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 12.9
+            }
+          ],
+          "margin": 56.6,
+          "lombardo_base": 66.4,
+          "gop_likely": 3.9,
+          "gop_trust_target": 6.6,
+          "conflicted_middle": 7.6,
+          "dem_trust_target": 1.9,
+          "dem_likely": 0.8,
+          "ford_base": 12.9
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 70.6
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 3.3
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 1.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 0.6
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 13.3
+            }
+          ],
+          "margin": 60.0,
+          "lombardo_base": 70.6,
+          "gop_likely": 3.3,
+          "gop_trust_target": 5.3,
+          "conflicted_middle": 5.3,
+          "dem_trust_target": 1.5,
+          "dem_likely": 0.6,
+          "ford_base": 13.3
+        }
+      }
     }
   },
   {
@@ -2460,7 +6255,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Hanadi Nadeem"
         }
       }
     ],
@@ -2489,6 +6284,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 56.1,
+        "rep_pct": 43.9,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 53.3,
         "rep_pct": 46.7,
@@ -2496,11 +6297,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 12.2,
       "leg_2024": 6.5,
       "latest_leg": 6.5,
       "gov_2022": 12.7,
       "ussen_2022": 15.5,
-      "pres_2024": 8.4
+      "pres_2024": 8.4,
+      "model_lombardo_all": -12.3,
+      "model_lombardo_hm": -13.7
     },
     "pres_2024_margin": 8.4,
     "gov_2022_margin": 12.7,
@@ -2512,7 +6316,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Hanadi Nadeem"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 31.6
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.7
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.5
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 43.5
+            }
+          ],
+          "margin": -12.3,
+          "lombardo_base": 31.6,
+          "gop_likely": 2.1,
+          "gop_trust_target": 6.7,
+          "conflicted_middle": 8.6,
+          "dem_trust_target": 5.1,
+          "dem_likely": 2.5,
+          "ford_base": 43.5
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 34.3
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.6
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.1
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 5.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 47.6
+            }
+          ],
+          "margin": -13.7,
+          "lombardo_base": 34.3,
+          "gop_likely": 1.6,
+          "gop_trust_target": 4.1,
+          "conflicted_middle": 5.8,
+          "dem_trust_target": 4.5,
+          "dem_likely": 2.0,
+          "ford_base": 47.6
+        }
+      }
     }
   },
   {
@@ -2533,7 +6443,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Rebecca Edgeworth",
           "dem": "No candidate"
         }
       }
@@ -2563,6 +6473,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 48.9,
+        "rep_pct": 47.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 45.7,
         "rep_pct": 54.3,
@@ -2570,11 +6486,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 1.5,
       "leg_2024": -8.6,
       "latest_leg": -8.6,
       "gov_2022": 2.3,
       "ussen_2022": 4.3,
-      "pres_2024": -3.1
+      "pres_2024": -3.1,
+      "model_lombardo_all": 1.3,
+      "model_lombardo_hm": -1.5
     },
     "pres_2024_margin": -3.1,
     "gov_2022_margin": 2.3,
@@ -2585,8 +6504,114 @@
       "ussen_2022": 25645
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Rebecca Edgeworth",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 36.4
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 8.2
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 10.5
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.6
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 35.3
+            }
+          ],
+          "margin": 1.3,
+          "lombardo_base": 36.4,
+          "gop_likely": 2.8,
+          "gop_trust_target": 8.2,
+          "conflicted_middle": 10.5,
+          "dem_trust_target": 4.3,
+          "dem_likely": 2.6,
+          "ford_base": 35.3
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 38.6
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.9
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.8
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.9
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 40.0
+            }
+          ],
+          "margin": -1.5,
+          "lombardo_base": 38.6,
+          "gop_likely": 1.9,
+          "gop_trust_target": 5.8,
+          "conflicted_middle": 7.8,
+          "dem_trust_target": 3.9,
+          "dem_likely": 2.0,
+          "ford_base": 40.0
+        }
+      }
     }
   },
   {
@@ -2607,7 +6632,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Gregory Hafen II",
           "dem": "No candidate"
         }
       }
@@ -2637,6 +6662,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 36.4,
         "rep_pct": 63.6,
@@ -2644,11 +6675,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -27.3,
       "latest_leg": -27.3,
       "gov_2022": -24.7,
       "ussen_2022": -22.9,
-      "pres_2024": -23.7
+      "pres_2024": -23.7,
+      "model_lombardo_all": 22.7,
+      "model_lombardo_hm": 25.5
     },
     "pres_2024_margin": -23.7,
     "gov_2022_margin": -24.7,
@@ -2659,15 +6693,121 @@
       "ussen_2022": 31574
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Gregory Hafen II",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 47.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 3.4
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.4
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 10.0
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.6
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.4
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 25.8
+            }
+          ],
+          "margin": 22.7,
+          "lombardo_base": 47.5,
+          "gop_likely": 3.4,
+          "gop_trust_target": 6.4,
+          "conflicted_middle": 10.0,
+          "dem_trust_target": 4.6,
+          "dem_likely": 2.4,
+          "ford_base": 25.8
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 51.7
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 3.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.0
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 27.4
+            }
+          ],
+          "margin": 25.5,
+          "lombardo_base": 51.7,
+          "gop_likely": 3.0,
+          "gop_trust_target": 5.3,
+          "conflicted_middle": 7.0,
+          "dem_trust_target": 3.7,
+          "dem_likely": 1.8,
+          "ford_base": 27.4
+        }
+      }
     }
   },
   {
     "state_fips": "32",
     "district_id": "037",
     "district_name": "Assembly District 37",
-    "tier": 2,
+    "tier": 1,
     "incumbent": {
       "name": "Shea Backus",
       "party": "D"
@@ -2682,7 +6822,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Shea Backus"
         }
       }
     ],
@@ -2711,6 +6851,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 48.9,
+        "rep_pct": 46.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 51.3,
         "rep_pct": 48.7,
@@ -2718,11 +6864,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 2.5,
       "leg_2024": 2.6,
       "latest_leg": 2.6,
       "gov_2022": 1.5,
       "ussen_2022": 3.6,
-      "pres_2024": 0.1
+      "pres_2024": 0.1,
+      "model_lombardo_all": 0.4,
+      "model_lombardo_hm": 0.0
     },
     "pres_2024_margin": 0.1,
     "gov_2022_margin": 1.5,
@@ -2734,7 +6883,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Shea Backus"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 38.0
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.4
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.2
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.0
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.4
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 37.6
+            }
+          ],
+          "margin": 0.4,
+          "lombardo_base": 38.0,
+          "gop_likely": 2.4,
+          "gop_trust_target": 6.2,
+          "conflicted_middle": 9.0,
+          "dem_trust_target": 4.3,
+          "dem_likely": 2.4,
+          "ford_base": 37.6
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 40.6
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.3
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.9
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 40.5
+            }
+          ],
+          "margin": 0.0,
+          "lombardo_base": 40.6,
+          "gop_likely": 1.8,
+          "gop_trust_target": 4.3,
+          "conflicted_middle": 6.8,
+          "dem_trust_target": 4.0,
+          "dem_likely": 1.9,
+          "ford_base": 40.5
+        }
+      }
     }
   },
   {
@@ -2755,7 +7010,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Gregory Koenig",
           "dem": "No candidate"
         }
       }
@@ -2785,6 +7040,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
@@ -2792,11 +7053,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -100.0,
       "leg_2024": -100.0,
       "latest_leg": -100.0,
       "gov_2022": -45.7,
       "ussen_2022": -44.1,
-      "pres_2024": -47.5
+      "pres_2024": -47.5,
+      "model_lombardo_all": 48.6,
+      "model_lombardo_hm": 51.2
     },
     "pres_2024_margin": -47.5,
     "gov_2022_margin": -45.7,
@@ -2807,8 +7071,114 @@
       "ussen_2022": 26888
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Gregory Koenig",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 61.9
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 3.4
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 6.9
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.5
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 0.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 15.9
+            }
+          ],
+          "margin": 48.6,
+          "lombardo_base": 61.9,
+          "gop_likely": 3.4,
+          "gop_trust_target": 6.9,
+          "conflicted_middle": 8.6,
+          "dem_trust_target": 2.5,
+          "dem_likely": 0.8,
+          "ford_base": 15.9
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 65.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 3.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.8
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 0.7
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 16.7
+            }
+          ],
+          "margin": 51.2,
+          "lombardo_base": 65.5,
+          "gop_likely": 3.1,
+          "gop_trust_target": 5.8,
+          "conflicted_middle": 6.3,
+          "dem_trust_target": 2.1,
+          "dem_likely": 0.7,
+          "ford_base": 16.7
+        }
+      }
     }
   },
   {
@@ -2829,7 +7199,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Blayne Osborn",
           "dem": "No candidate"
         }
       }
@@ -2859,6 +7229,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 29.8,
+        "rep_pct": 70.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 28.5,
         "rep_pct": 71.5,
@@ -2866,11 +7242,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -40.3,
       "leg_2024": -43.0,
       "latest_leg": -43.0,
       "gov_2022": -36.9,
       "ussen_2022": -34.8,
-      "pres_2024": -36.0
+      "pres_2024": -36.0,
+      "model_lombardo_all": 42.9,
+      "model_lombardo_hm": 45.3
     },
     "pres_2024_margin": -36.0,
     "gov_2022_margin": -36.9,
@@ -2881,8 +7260,114 @@
       "ussen_2022": 39489
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Blayne Osborn",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 60.2
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 3.1
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.4
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 8.5
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 19.4
+            }
+          ],
+          "margin": 42.9,
+          "lombardo_base": 60.2,
+          "gop_likely": 3.1,
+          "gop_trust_target": 5.4,
+          "conflicted_middle": 8.5,
+          "dem_trust_target": 2.4,
+          "dem_likely": 1.0,
+          "ford_base": 19.4
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 63.8
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.8
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.1
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 2.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 0.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 20.5
+            }
+          ],
+          "margin": 45.3,
+          "lombardo_base": 63.8,
+          "gop_likely": 2.8,
+          "gop_trust_target": 4.0,
+          "conflicted_middle": 6.1,
+          "dem_trust_target": 2.0,
+          "dem_likely": 0.8,
+          "ford_base": 20.5
+        }
+      }
     }
   },
   {
@@ -2933,6 +7418,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 38.0,
+        "rep_pct": 58.8,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 38.7,
         "rep_pct": 61.3,
@@ -2940,11 +7431,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -20.8,
       "leg_2024": -22.6,
       "latest_leg": -22.6,
       "gov_2022": -15.8,
       "ussen_2022": -12.6,
-      "pres_2024": -14.9
+      "pres_2024": -14.9,
+      "model_lombardo_all": 20.5,
+      "model_lombardo_hm": 22.0
     },
     "pres_2024_margin": -14.9,
     "gov_2022_margin": -15.8,
@@ -2957,6 +7451,112 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 48.0
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.4
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 5.4
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 10.3
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.2
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 28.7
+            }
+          ],
+          "margin": 20.5,
+          "lombardo_base": 48.0,
+          "gop_likely": 2.4,
+          "gop_trust_target": 5.4,
+          "conflicted_middle": 10.3,
+          "dem_trust_target": 4.0,
+          "dem_likely": 1.2,
+          "ford_base": 28.7
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 51.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.0
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.6
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 1.0
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 30.5
+            }
+          ],
+          "margin": 22.0,
+          "lombardo_base": 51.5,
+          "gop_likely": 2.0,
+          "gop_trust_target": 4.0,
+          "conflicted_middle": 7.6,
+          "dem_trust_target": 3.4,
+          "dem_likely": 1.0,
+          "ford_base": 30.5
+        }
+      }
     }
   },
   {
@@ -3007,6 +7607,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 51.8,
+        "rep_pct": 46.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 50.4,
         "rep_pct": 49.6,
@@ -3014,11 +7620,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 5.7,
       "leg_2024": 0.7,
       "latest_leg": 0.7,
       "gov_2022": 5.4,
       "ussen_2022": 7.2,
-      "pres_2024": -0.8
+      "pres_2024": -0.8,
+      "model_lombardo_all": -2.8,
+      "model_lombardo_hm": -4.6
     },
     "pres_2024_margin": -0.8,
     "gov_2022_margin": 5.4,
@@ -3031,6 +7640,112 @@
     "candidates_2026": {
       "rep": "No candidate",
       "dem": "No candidate"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 35.2
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.7
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.6
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.7
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.1
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 3.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 37.6
+            }
+          ],
+          "margin": -2.8,
+          "lombardo_base": 35.2,
+          "gop_likely": 2.7,
+          "gop_trust_target": 7.6,
+          "conflicted_middle": 9.7,
+          "dem_trust_target": 4.1,
+          "dem_likely": 3.1,
+          "ford_base": 37.6
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 37.9
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.9
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 7.0
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 3.7
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.2
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 42.3
+            }
+          ],
+          "margin": -4.6,
+          "lombardo_base": 37.9,
+          "gop_likely": 2.0,
+          "gop_trust_target": 4.9,
+          "conflicted_middle": 7.0,
+          "dem_trust_target": 3.7,
+          "dem_likely": 2.2,
+          "ford_base": 42.3
+        }
+      }
     }
   },
   {
@@ -3052,7 +7767,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Tracy Brown-May"
         }
       }
     ],
@@ -3081,6 +7796,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 56.7,
+        "rep_pct": 43.3,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 55.4,
         "rep_pct": 44.6,
@@ -3088,11 +7809,14 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 13.3,
       "leg_2024": 10.9,
       "latest_leg": 10.9,
       "gov_2022": 13.2,
       "ussen_2022": 14.6,
-      "pres_2024": 5.1
+      "pres_2024": 5.1,
+      "model_lombardo_all": -11.2,
+      "model_lombardo_hm": -14.6
     },
     "pres_2024_margin": 5.1,
     "gov_2022_margin": 13.2,
@@ -3104,7 +7828,113 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Tracy Brown-May"
+    },
+    "models": {
+      "model_lombardo_all": {
+        "label": "Lombardo (All)",
+        "family": "Lombardo",
+        "variant": "All",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 31.5
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 2.0
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 7.1
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 9.4
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 5.4
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.8
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 41.9
+            }
+          ],
+          "margin": -11.2,
+          "lombardo_base": 31.5,
+          "gop_likely": 2.0,
+          "gop_trust_target": 7.1,
+          "conflicted_middle": 9.4,
+          "dem_trust_target": 5.4,
+          "dem_likely": 2.8,
+          "ford_base": 41.9
+        }
+      },
+      "model_lombardo_hm": {
+        "label": "Lombardo (H+M)",
+        "family": "Lombardo",
+        "variant": "H+M",
+        "affinity": {
+          "segments": [
+            {
+              "key": "lombardo_base",
+              "label": "Lombardo Base",
+              "value": 33.2
+            },
+            {
+              "key": "gop_likely",
+              "label": "GOP Likely",
+              "value": 1.5
+            },
+            {
+              "key": "gop_trust_target",
+              "label": "GOP Trust Target",
+              "value": 4.4
+            },
+            {
+              "key": "conflicted_middle",
+              "label": "Conflicted Middle",
+              "value": 6.8
+            },
+            {
+              "key": "dem_trust_target",
+              "label": "Dem Trust Target",
+              "value": 4.8
+            },
+            {
+              "key": "dem_likely",
+              "label": "Dem Likely",
+              "value": 2.1
+            },
+            {
+              "key": "ford_base",
+              "label": "Ford Base",
+              "value": 47.2
+            }
+          ],
+          "margin": -14.6,
+          "lombardo_base": 33.2,
+          "gop_likely": 1.5,
+          "gop_trust_target": 4.4,
+          "conflicted_middle": 6.8,
+          "dem_trust_target": 4.8,
+          "dem_likely": 2.1,
+          "ford_base": 47.2
+        }
+      }
     }
   }
 ]

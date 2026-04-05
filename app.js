@@ -49,11 +49,14 @@ const projectionSliderFill = document.getElementById("projectionSliderFill");
 const projectionSliderThumb = document.getElementById("projectionSliderThumb");
 
 const MODEL_VIEW_META = {
-  model_hrcc_hm: { label: "HRCC (H+M)", order: 0, tableTop: "HRCC", tableBottom: "H+M" },
-  model_hrcc_all: { label: "HRCC (All)", order: 1, tableTop: "HRCC", tableBottom: "All" },
-  model_rslc_hm: { label: "RSLC (H+M)", order: 2, tableTop: "RSLC", tableBottom: "H+M" },
-  model_rslc_all: { label: "RSLC (All)", order: 3, tableTop: "RSLC", tableBottom: "All" },
-  model_rga_all: { label: "RGA (All)", order: 4, tableTop: "RGA", tableBottom: "All" },
+  model_hrcc_hm:      { label: "HRCC (H+M)", order: 0, tableTop: "HRCC", tableBottom: "H+M" },
+  model_hrcc_all:     { label: "HRCC (All)", order: 1, tableTop: "HRCC", tableBottom: "All" },
+  model_rslc_vi:      { label: "RSLC (VI)",  order: 2, tableTop: "RSLC", tableBottom: "VI"  },
+  model_rslc_hm:      { label: "RSLC (H+M)", order: 3, tableTop: "RSLC", tableBottom: "H+M" },
+  model_rslc_all:     { label: "RSLC (All)", order: 4, tableTop: "RSLC", tableBottom: "All" },
+  model_rga_all:      { label: "RGA (All)",  order: 5, tableTop: "RGA",  tableBottom: "All" },
+  model_lombardo_hm:  { label: "Lom (H+M)",  order: 6, tableTop: "Lom",  tableBottom: "H+M" },
+  model_lombardo_all: { label: "Lom (All)",   order: 7, tableTop: "Lom",  tableBottom: "All" },
 };
 
 const MODEL_SEGMENT_COLOR_CLASSES = {
@@ -82,6 +85,15 @@ const MODEL_SEGMENT_COLOR_CLASSES = {
     "color-model-rslc-4",
     "color-model-rga-middle",
     "color-model-rga-dem-trust",
+    "color-model-dem-soft",
+    "color-model-dem-base",
+  ],
+  LOMBARDO: [
+    "color-model-gop-base",
+    "color-model-gop-target",
+    "color-model-rga-trust",
+    "color-model-rga-middle",
+    "color-model-rga-vulnerable",
     "color-model-dem-soft",
     "color-model-dem-base",
   ],
@@ -622,6 +634,11 @@ async function selectStateByMeta(meta, feature, options = {}) {
   refreshTargetJoinKeySet();
   state.availableMapViews = availableMapViewsForState(meta);
   state.mapView = pickMapView(state.availableMapViews, state.mapView);
+  if (normalizeStateFips(meta?.fips) === "26") {
+    state.modelingVariant = "vi";
+  } else if (state.modelingVariant === "vi") {
+    state.modelingVariant = "all";
+  }
   stateSelect.value = meta.key;
   detailsTitle.textContent = selectedStateChamberHeader();
   renderMapViewButtons();
@@ -1005,6 +1022,7 @@ function modelVariantFromViewKey(view) {
   const key = String(view || "").trim();
   if (!parseModelViewKey(key)) return null;
   if (key.endsWith("_hm")) return "hm";
+  if (key.endsWith("_vi")) return "vi";
   if (key.endsWith("_all")) return "all";
   return null;
 }
@@ -2158,10 +2176,25 @@ function targetDistrictsSectionHtml(targets) {
     </div>
   `;
 }
+function modelFamilyFromViewKey(view) {
+  const m = String(view).match(/^model_(.+)_(all|hm|vi)$/);
+  return m ? m[1] : null;
+}
+
 function districtModelColumns(rows = []) {
   const columns = [];
+  // If a model family has VI data, only show the VI column (suppress All and H+M for that family)
+  const familiesWithVI = new Set();
+  for (const view of Object.keys(MODEL_VIEW_META)) {
+    if (!view.endsWith("_vi")) continue;
+    if (rows.some((row) => typeof getMarginForView(row?.rec, view) === "number")) {
+      familiesWithVI.add(modelFamilyFromViewKey(view));
+    }
+  }
   for (const view of Object.keys(MODEL_VIEW_META)) {
     if (!rows.some((row) => typeof getMarginForView(row?.rec, view) === "number")) continue;
+    const family = modelFamilyFromViewKey(view);
+    if (family && familiesWithVI.has(family) && !view.endsWith("_vi")) continue;
     const meta = parseModelViewKey(view);
     if (!meta) continue;
     columns.push({ type: "margin", view, labelTop: meta.tableTop, labelBottom: meta.tableBottom });
@@ -2355,7 +2388,7 @@ function targetDistrictRowHtml(row, electionCols = districtElectionColumns([row]
 function targetTablesForSelectedState() {
 
   const rows = targetDistrictRowsForSelectedState();
-  const rowSort = (a, b) => (a.tier - b.tier) || (targetSortValue(a) - targetSortValue(b)) || (districtLabelSortValue(a.districtLabel) - districtLabelSortValue(b.districtLabel));
+  const rowSort = (a, b) => (a.tier - b.tier) || (targetSortValue(a) - targetSortValue(b)) || districtLabelCompare(a.districtLabel, b.districtLabel);
   const split = rows
     .filter((row) => row.incParty === "S")
     .sort(rowSort);
@@ -2479,7 +2512,7 @@ function allDistrictRowsForSelectedState() {
     }
   }
 
-  rows.sort((a, b) => districtLabelSortValue(a.districtLabel) - districtLabelSortValue(b.districtLabel));
+  rows.sort((a, b) => districtLabelCompare(a.districtLabel, b.districtLabel));
   return rows;
 }
 function districtLabelSortValue(label) {
@@ -2493,6 +2526,17 @@ function districtLabelSortValue(label) {
     suffixScore += (suffix.charCodeAt(i) - 64) / Math.pow(27, i + 1);
   }
   return numPart + suffixScore;
+}
+
+function districtLabelCompare(a, b) {
+  const aVal = districtLabelSortValue(a);
+  const bVal = districtLabelSortValue(b);
+  // Both numeric-style: compare by numeric value
+  if (aVal !== Number.POSITIVE_INFINITY || bVal !== Number.POSITIVE_INFINITY) {
+    return aVal - bVal;
+  }
+  // Both text-style (e.g. MA/VT senate): plain locale sort
+  return String(a || "").localeCompare(String(b || ""));
 }
 
 function recordMembers(rec) {
@@ -4179,9 +4223,13 @@ function popupHtml(properties, joinInfo, rec) {
       ? '(<span class="party-letter-d">D</span>)'
       : '';
   const incumbentLine = `&nbsp;&nbsp;Inc: ${escapeHtml(String(rec?.incumbent?.name || "Vacant").trim() || "Vacant")} ${incumbentPartyHtml}`;
-  const hmModelView = modelViewKeyForVariant(rec, "hm");
-  const hmModelLine = hmModelView
-    ? `&nbsp;&nbsp;Model (H+M): ${formatMarginHtml(getMarginForView(rec, hmModelView))}`
+  const tooltipViView  = modelViewKeyForVariant(rec, "vi");
+  const tooltipHmView  = modelViewKeyForVariant(rec, "hm");
+  const tooltipAllView = modelViewKeyForVariant(rec, "all");
+  const tooltipModelView  = tooltipViView || tooltipHmView || tooltipAllView;
+  const tooltipModelLabel = tooltipViView ? "Model (VI)" : tooltipHmView ? "Model (H+M)" : "Model";
+  const hmModelLine = tooltipModelView
+    ? `&nbsp;&nbsp;${tooltipModelLabel}: ${formatMarginHtml(getMarginForView(rec, tooltipModelView))}`
     : null;
 
   const summaryLines = state.projectionMode
@@ -4219,7 +4267,7 @@ function latestLegDisplayLabel(rec) {
 function modelViewKeyForVariant(rec, variant) {
   const models = rec?.models;
   if (!models || typeof models !== "object") return null;
-  const suffix = variant === "hm" ? "_hm" : "_all";
+  const suffix = variant === "hm" ? "_hm" : variant === "vi" ? "_vi" : "_all";
   return Object.keys(models).find((key) => !!parseModelViewKey(key) && key.endsWith(suffix)) || null;
 }
 
@@ -4237,7 +4285,7 @@ function wireModelingPanelInteractions(properties, joinInfo, rec) {
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const variant = String(button.dataset.modelingVariant || "").trim();
-      if (variant !== "all" && variant !== "hm") return;
+      if (variant !== "all" && variant !== "hm" && variant !== "vi") return;
       if (state.modelingVariant === variant) return;
       state.modelingVariant = variant;
       const scrollTop = details.scrollTop;
@@ -4298,7 +4346,8 @@ function modelingPanelHtml(rec) {
   const education = model.education || null;
   const allView = modelViewKeyForVariant(rec, "all");
   const hmView = modelViewKeyForVariant(rec, "hm");
-  const activeVariant = modelVariantFromViewKey(modelView) || "all";
+  const viView = modelViewKeyForVariant(rec, "vi");
+  const activeVariant = modelVariantFromViewKey(modelView) || (viView ? "vi" : "all");
   const blocks = [];
 
   if (affinity) {
@@ -4335,6 +4384,7 @@ function modelingPanelHtml(rec) {
     <div class="modeling-subheader-row">
       <div class="detail-row modeling-variant-note">${escapeHtml(model.family || "Model")}</div>
       <div class="modeling-switch" role="group" aria-label="Modeling variant">
+        ${viView ? `<button type="button" class="modeling-switch-btn ${activeVariant === "vi" ? "active" : ""}" data-modeling-variant="vi">VI</button>` : ""}
         <button type="button" class="modeling-switch-btn ${activeVariant === "hm" ? "active" : ""}" data-modeling-variant="hm" ${hmView ? "" : "disabled"}>H+M</button>
         <button type="button" class="modeling-switch-btn ${activeVariant === "all" ? "active" : ""}" data-modeling-variant="all" ${allView ? "" : "disabled"}>All</button>
       </div>
@@ -4742,7 +4792,7 @@ function getMarginForView(rec, view) {
 
   if (rec.view_margins && typeof rec.view_margins[view] === "number") {
     margin = rec.view_margins[view];
-    if (String(view).startsWith("model_rslc_") || String(view).startsWith("model_rga_")) {
+    if (String(view).startsWith("model_rslc_") || String(view).startsWith("model_rga_") || String(view).startsWith("model_lombardo_")) {
       margin = -margin;
     }
     cache[view] = margin;

@@ -17,7 +17,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Court Boice",
           "dem": "No candidate"
         }
       }
@@ -47,6 +47,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 29.2,
+        "rep_pct": 70.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 32.6,
         "rep_pct": 67.4,
@@ -54,6 +60,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -41.3,
       "leg_2024": -34.8,
       "latest_leg": -34.8,
       "gov_2022": -36.8,
@@ -69,7 +76,7 @@
       "ussen_2022": 34810
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Court Boice",
       "dem": "No candidate"
     }
   },
@@ -91,7 +98,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Virgle Osborne",
           "dem": "No candidate"
         }
       }
@@ -121,6 +128,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 27.2,
+        "rep_pct": 70.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 28.6,
         "rep_pct": 71.4,
@@ -128,6 +141,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -42.9,
       "leg_2024": -42.8,
       "latest_leg": -42.8,
       "gov_2022": -44.0,
@@ -143,7 +157,7 @@
       "ussen_2022": 33877
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Virgle Osborne",
       "dem": "No candidate"
     }
   },
@@ -165,7 +179,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Dwayne Yunker",
           "dem": "No candidate"
         }
       }
@@ -195,6 +209,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 31.6,
+        "rep_pct": 68.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 31.6,
         "rep_pct": 68.4,
@@ -202,6 +222,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -36.5,
       "leg_2024": -36.8,
       "latest_leg": -36.8,
       "gov_2022": -34.2,
@@ -217,7 +238,7 @@
       "ussen_2022": 32826
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Dwayne Yunker",
       "dem": "No candidate"
     }
   },
@@ -239,7 +260,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Alek Skarlatos",
           "dem": "No candidate"
         }
       }
@@ -269,6 +290,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 97.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 29.7,
         "rep_pct": 70.3,
@@ -276,6 +303,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -94.3,
       "leg_2024": -40.5,
       "latest_leg": -40.5,
       "gov_2022": -46.9,
@@ -291,7 +319,7 @@
       "ussen_2022": 40716
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Alek Skarlatos",
       "dem": "No candidate"
     }
   },
@@ -314,7 +342,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Pam Marsh"
         }
       }
     ],
@@ -343,6 +371,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 64.4,
+        "rep_pct": 35.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 64.1,
         "rep_pct": 35.9,
@@ -350,6 +384,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 28.8,
       "leg_2024": 28.2,
       "latest_leg": 28.2,
       "gov_2022": 19.8,
@@ -366,7 +401,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Pam Marsh"
     }
   },
   {
@@ -387,7 +422,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Kim Wallan",
           "dem": "No candidate"
         }
       }
@@ -417,6 +452,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.7,
+        "rep_pct": 60.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.0,
         "rep_pct": 58.0,
@@ -424,6 +465,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -20.5,
       "leg_2024": -16.1,
       "latest_leg": -16.1,
       "gov_2022": -19.6,
@@ -439,7 +481,7 @@
       "ussen_2022": 28170
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Kim Wallan",
       "dem": "No candidate"
     }
   },
@@ -491,6 +533,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 51.7,
+        "rep_pct": 47.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 55.9,
         "rep_pct": 44.1,
@@ -498,6 +546,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 4.1,
       "leg_2024": 11.8,
       "latest_leg": 11.8,
       "gov_2022": -2.1,
@@ -536,7 +585,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Lisa Fragala"
         }
       }
     ],
@@ -565,6 +614,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 84.7,
+        "rep_pct": 15.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 97.4,
         "rep_pct": 0.0,
@@ -572,6 +627,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 69.7,
       "leg_2024": 97.4,
       "latest_leg": 97.4,
       "gov_2022": 63.0,
@@ -588,7 +644,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Lisa Fragala"
     }
   },
   {
@@ -639,6 +695,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.8,
+        "rep_pct": 60.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 38.1,
         "rep_pct": 61.9,
@@ -646,6 +708,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -20.3,
       "leg_2024": -23.8,
       "latest_leg": -23.8,
       "gov_2022": -17.2,
@@ -684,7 +747,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "David Gomberg"
         }
       }
     ],
@@ -713,6 +776,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 56.7,
+        "rep_pct": 43.2,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 97.4,
         "rep_pct": 0.0,
@@ -720,6 +789,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 13.5,
       "leg_2024": 97.4,
       "latest_leg": 97.4,
       "gov_2022": 3.8,
@@ -736,7 +806,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "David Gomberg"
     }
   },
   {
@@ -787,6 +857,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 25.3,
+        "rep_pct": 74.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 74.1,
@@ -794,6 +870,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -49.2,
       "leg_2024": -74.1,
       "latest_leg": -74.1,
       "gov_2022": -47.7,
@@ -831,7 +908,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Darin Harbick",
           "dem": "No candidate"
         }
       }
@@ -861,6 +938,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 42.4,
+        "rep_pct": 57.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 42.2,
         "rep_pct": 57.8,
@@ -868,6 +951,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -15.0,
       "leg_2024": -15.6,
       "latest_leg": -15.6,
       "gov_2022": -15.2,
@@ -883,7 +967,7 @@
       "ussen_2022": 38669
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Darin Harbick",
       "dem": "No candidate"
     }
   },
@@ -906,7 +990,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Nancy Nathanson"
         }
       }
     ],
@@ -935,6 +1019,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 65.2,
+        "rep_pct": 34.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 66.6,
         "rep_pct": 33.4,
@@ -942,6 +1032,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 30.6,
       "leg_2024": 33.2,
       "latest_leg": 33.2,
       "gov_2022": 22.0,
@@ -958,7 +1049,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Nancy Nathanson"
     }
   },
   {
@@ -980,7 +1071,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Julie Fahey"
         }
       }
     ],
@@ -1009,6 +1100,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 59.7,
+        "rep_pct": 40.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 94.1,
         "rep_pct": 0.0,
@@ -1016,6 +1113,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 19.6,
       "leg_2024": 94.1,
       "latest_leg": 94.1,
       "gov_2022": 15.5,
@@ -1032,7 +1130,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Julie Fahey"
     }
   },
   {
@@ -1053,7 +1151,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Shelly Boshart Davis",
           "dem": "No candidate"
         }
       }
@@ -1083,6 +1181,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 39.9,
+        "rep_pct": 60.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 41.2,
         "rep_pct": 58.8,
@@ -1090,6 +1194,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -20.1,
       "leg_2024": -17.5,
       "latest_leg": -17.5,
       "gov_2022": -17.6,
@@ -1105,7 +1210,7 @@
       "ussen_2022": 34381
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Shelly Boshart Davis",
       "dem": "No candidate"
     }
   },
@@ -1128,7 +1233,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Sarah Finger McDonald"
         }
       }
     ],
@@ -1157,6 +1262,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 75.2,
+        "rep_pct": 24.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 83.9,
         "rep_pct": 0.0,
@@ -1164,6 +1275,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 50.6,
       "leg_2024": 83.9,
       "latest_leg": 83.9,
       "gov_2022": 43.6,
@@ -1180,7 +1292,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Sarah Finger McDonald"
     }
   },
   {
@@ -1231,6 +1343,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 96.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 30.6,
         "rep_pct": 69.4,
@@ -1238,6 +1356,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -93.4,
       "leg_2024": -38.8,
       "latest_leg": -38.8,
       "gov_2022": -38.3,
@@ -1275,7 +1394,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Rick Lewis",
           "dem": "No candidate"
         }
       }
@@ -1305,6 +1424,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 28.8,
+        "rep_pct": 71.1,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 29.1,
         "rep_pct": 70.9,
@@ -1312,6 +1437,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -42.3,
       "leg_2024": -41.8,
       "latest_leg": -41.8,
       "gov_2022": -39.7,
@@ -1327,7 +1453,7 @@
       "ussen_2022": 33208
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Rick Lewis",
       "dem": "No candidate"
     }
   },
@@ -1350,7 +1476,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Tom Andersen"
         }
       }
     ],
@@ -1379,6 +1505,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.4,
+        "rep_pct": 45.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 54.3,
         "rep_pct": 45.7,
@@ -1386,6 +1518,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 8.9,
       "leg_2024": 8.7,
       "latest_leg": 8.7,
       "gov_2022": 4.1,
@@ -1402,7 +1535,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Tom Andersen"
     }
   },
   {
@@ -1424,7 +1557,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Paul Evans"
         }
       }
     ],
@@ -1453,6 +1586,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 54.2,
+        "rep_pct": 44.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 58.1,
         "rep_pct": 41.9,
@@ -1460,6 +1599,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 10.1,
       "leg_2024": 16.2,
       "latest_leg": 16.2,
       "gov_2022": 1.9,
@@ -1476,7 +1616,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Paul Evans"
     }
   },
   {
@@ -1497,7 +1637,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Kevin Mannix",
           "dem": "No candidate"
         }
       }
@@ -1527,6 +1667,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 45.6,
+        "rep_pct": 51.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 48.1,
         "rep_pct": 51.9,
@@ -1534,6 +1680,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -5.8,
       "leg_2024": -3.8,
       "latest_leg": -3.8,
       "gov_2022": -6.9,
@@ -1549,7 +1696,7 @@
       "ussen_2022": 25205
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Kevin Mannix",
       "dem": "No candidate"
     }
   },
@@ -1572,7 +1719,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Lesly Mu\u00f1oz"
         }
       }
     ],
@@ -1601,6 +1748,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 48.3,
+        "rep_pct": 51.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 50.4,
         "rep_pct": 49.6,
@@ -1608,6 +1761,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -3.2,
       "leg_2024": 0.8,
       "latest_leg": 0.8,
       "gov_2022": -6.5,
@@ -1624,7 +1778,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Lesly Mu\u00f1oz"
     }
   },
   {
@@ -1645,7 +1799,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Anna Scharf",
           "dem": "No candidate"
         }
       }
@@ -1675,6 +1829,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 36.6,
+        "rep_pct": 63.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 37.9,
         "rep_pct": 62.1,
@@ -1682,6 +1842,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -26.6,
       "leg_2024": -24.3,
       "latest_leg": -24.3,
       "gov_2022": -23.4,
@@ -1697,7 +1858,7 @@
       "ussen_2022": 40344
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Anna Scharf",
       "dem": "No candidate"
     }
   },
@@ -1719,7 +1880,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Lucetta Elmer",
           "dem": "No candidate"
         }
       }
@@ -1749,6 +1910,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 43.6,
+        "rep_pct": 56.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 40.3,
         "rep_pct": 59.7,
@@ -1756,6 +1923,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -12.6,
       "leg_2024": -19.4,
       "latest_leg": -19.4,
       "gov_2022": -17.4,
@@ -1771,7 +1939,7 @@
       "ussen_2022": 30455
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Lucetta Elmer",
       "dem": "No candidate"
     }
   },
@@ -1794,7 +1962,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Ben Bowman"
         }
       }
     ],
@@ -1823,6 +1991,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 65.3,
+        "rep_pct": 34.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 67.7,
         "rep_pct": 32.3,
@@ -1830,6 +2004,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 30.8,
       "leg_2024": 35.5,
       "latest_leg": 35.5,
       "gov_2022": 23.7,
@@ -1846,7 +2021,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Ben Bowman"
     }
   },
   {
@@ -1868,7 +2043,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Sue Rieke Smith"
         }
       }
     ],
@@ -1897,6 +2072,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.2,
+        "rep_pct": 46.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 56.1,
         "rep_pct": 43.9,
@@ -1904,6 +2085,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 6.6,
       "leg_2024": 12.2,
       "latest_leg": 12.2,
       "gov_2022": 2.8,
@@ -1920,7 +2102,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Sue Rieke Smith"
     }
   },
   {
@@ -1971,6 +2153,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 71.2,
+        "rep_pct": 28.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 74.1,
         "rep_pct": 25.9,
@@ -1978,6 +2166,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 42.5,
       "leg_2024": 48.2,
       "latest_leg": 48.2,
       "gov_2022": 36.9,
@@ -2016,7 +2205,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Dacia Grayber"
         }
       }
     ],
@@ -2045,6 +2234,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 82.0,
+        "rep_pct": 17.9,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 86.0,
         "rep_pct": 14.0,
@@ -2052,6 +2247,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 64.1,
       "leg_2024": 72.0,
       "latest_leg": 72.0,
       "gov_2022": 57.8,
@@ -2068,7 +2264,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Dacia Grayber"
     }
   },
   {
@@ -2090,7 +2286,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Susan McLain"
         }
       }
     ],
@@ -2119,6 +2315,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 53.6,
+        "rep_pct": 46.3,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 85.8,
         "rep_pct": 14.0,
@@ -2126,6 +2328,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 7.3,
       "leg_2024": 71.9,
       "latest_leg": 71.9,
       "gov_2022": 3.5,
@@ -2142,7 +2345,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Susan McLain"
     }
   },
   {
@@ -2164,7 +2367,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Nathan Sosa"
         }
       }
     ],
@@ -2193,6 +2396,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 61.7,
+        "rep_pct": 38.2,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 96.4,
         "rep_pct": 0.0,
@@ -2200,6 +2409,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 23.5,
       "leg_2024": 96.4,
       "latest_leg": 96.4,
       "gov_2022": 21.1,
@@ -2216,7 +2426,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Nathan Sosa"
     }
   },
   {
@@ -2237,7 +2447,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Darcey Edwards",
           "dem": "No candidate"
         }
       }
@@ -2267,6 +2477,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 40.5,
+        "rep_pct": 59.3,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 38.7,
         "rep_pct": 61.3,
@@ -2274,6 +2490,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -18.8,
       "leg_2024": -22.6,
       "latest_leg": -22.6,
       "gov_2022": -19.9,
@@ -2289,7 +2506,7 @@
       "ussen_2022": 37922
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Darcey Edwards",
       "dem": "No candidate"
     }
   },
@@ -2312,7 +2529,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Cyrus Javadi"
         }
       }
     ],
@@ -2341,6 +2558,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 48.7,
+        "rep_pct": 51.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 47.8,
         "rep_pct": 52.2,
@@ -2348,6 +2571,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -2.4,
       "leg_2024": -4.4,
       "latest_leg": -4.4,
       "gov_2022": -2.7,
@@ -2364,7 +2588,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Cyrus Javadi"
     }
   },
   {
@@ -2386,7 +2610,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Shannon Jones Isadore"
         }
       }
     ],
@@ -2415,6 +2639,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 84.8,
+        "rep_pct": 15.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 86.9,
         "rep_pct": 13.1,
@@ -2422,6 +2652,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 69.7,
       "leg_2024": 73.8,
       "latest_leg": 73.8,
       "gov_2022": 63.9,
@@ -2438,7 +2669,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Shannon Jones Isadore"
     }
   },
   {
@@ -2460,7 +2691,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Mari Watanabe"
         }
       }
     ],
@@ -2489,6 +2720,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 68.7,
+        "rep_pct": 31.2,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 71.5,
         "rep_pct": 28.5,
@@ -2496,6 +2733,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 37.4,
       "leg_2024": 43.1,
       "latest_leg": 43.1,
       "gov_2022": 28.9,
@@ -2512,7 +2750,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Mari Watanabe"
     }
   },
   {
@@ -2534,7 +2772,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Farrah Chaichi"
         }
       }
     ],
@@ -2563,6 +2801,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 67.2,
+        "rep_pct": 32.6,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 69.1,
         "rep_pct": 30.9,
@@ -2570,6 +2814,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 34.6,
       "leg_2024": 38.2,
       "latest_leg": 38.2,
       "gov_2022": 28.8,
@@ -2586,7 +2831,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Farrah Chaichi"
     }
   },
   {
@@ -2608,7 +2853,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Hai Pham"
         }
       }
     ],
@@ -2637,6 +2882,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 61.4,
+        "rep_pct": 38.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 62.9,
         "rep_pct": 37.1,
@@ -2644,6 +2895,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 23.0,
       "leg_2024": 25.8,
       "latest_leg": 25.8,
       "gov_2022": 13.9,
@@ -2660,7 +2912,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Hai Pham"
     }
   },
   {
@@ -2682,7 +2934,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Jules Walters"
         }
       }
     ],
@@ -2711,6 +2963,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 59.2,
+        "rep_pct": 40.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 61.4,
         "rep_pct": 38.6,
@@ -2718,6 +2976,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 18.4,
       "leg_2024": 22.8,
       "latest_leg": 22.8,
       "gov_2022": 11.2,
@@ -2734,7 +2993,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Jules Walters"
     }
   },
   {
@@ -2756,7 +3015,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Daniel Nguyen"
         }
       }
     ],
@@ -2785,6 +3044,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 68.0,
+        "rep_pct": 32.0,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 97.9,
         "rep_pct": 0.0,
@@ -2792,6 +3057,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 36.0,
       "leg_2024": 97.9,
       "latest_leg": 97.9,
       "gov_2022": 33.6,
@@ -2808,7 +3074,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Daniel Nguyen"
     }
   },
   {
@@ -2830,7 +3096,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "April Dobson"
         }
       }
     ],
@@ -2859,6 +3125,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 55.0,
+        "rep_pct": 44.9,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 54.5,
         "rep_pct": 45.5,
@@ -2866,6 +3138,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 10.1,
       "leg_2024": 9.0,
       "latest_leg": 9.0,
       "gov_2022": -0.8,
@@ -2882,7 +3155,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "April Dobson"
     }
   },
   {
@@ -2933,6 +3206,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 50.2,
+        "rep_pct": 49.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 56.0,
         "rep_pct": 44.0,
@@ -2940,6 +3219,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 0.5,
       "leg_2024": 12.0,
       "latest_leg": 12.0,
       "gov_2022": 0.0,
@@ -2978,7 +3258,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Mark Gamba"
         }
       }
     ],
@@ -3007,6 +3287,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 78.2,
+        "rep_pct": 21.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 80.1,
         "rep_pct": 19.9,
@@ -3014,6 +3300,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 56.5,
       "leg_2024": 60.1,
       "latest_leg": 60.1,
       "gov_2022": 49.1,
@@ -3030,7 +3317,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Mark Gamba"
     }
   },
   {
@@ -3052,7 +3339,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Rob Nosse"
         }
       }
     ],
@@ -3081,6 +3368,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 91.5,
+        "rep_pct": 6.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 98.5,
         "rep_pct": 0.0,
@@ -3088,6 +3381,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 84.8,
       "leg_2024": 98.5,
       "latest_leg": 98.5,
       "gov_2022": 80.6,
@@ -3104,7 +3398,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Rob Nosse"
     }
   },
   {
@@ -3126,7 +3420,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Tawna Sanchez"
         }
       }
     ],
@@ -3155,6 +3449,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 91.8,
+        "rep_pct": 8.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 92.3,
         "rep_pct": 7.7,
@@ -3162,6 +3462,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 83.7,
       "leg_2024": 84.7,
       "latest_leg": 84.7,
       "gov_2022": 80.2,
@@ -3178,7 +3479,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Tawna Sanchez"
     }
   },
   {
@@ -3200,7 +3501,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Travis Nelson"
         }
       }
     ],
@@ -3229,6 +3530,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 87.7,
+        "rep_pct": 11.4,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 98.3,
         "rep_pct": 0.0,
@@ -3236,6 +3543,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 76.2,
       "leg_2024": 98.3,
       "latest_leg": 98.3,
       "gov_2022": 69.7,
@@ -3252,7 +3560,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Travis Nelson"
     }
   },
   {
@@ -3274,7 +3582,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Thuy Tran"
         }
       }
     ],
@@ -3303,6 +3611,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 84.1,
+        "rep_pct": 15.9,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 98.0,
         "rep_pct": 0.0,
@@ -3310,6 +3624,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 68.2,
       "leg_2024": 98.0,
       "latest_leg": 98.0,
       "gov_2022": 62.6,
@@ -3326,7 +3641,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Thuy Tran"
     }
   },
   {
@@ -3348,7 +3663,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Willy Chotzen"
         }
       }
     ],
@@ -3377,6 +3692,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 83.8,
+        "rep_pct": 16.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 85.3,
         "rep_pct": 14.7,
@@ -3384,6 +3705,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 67.7,
       "leg_2024": 70.6,
       "latest_leg": 70.6,
       "gov_2022": 59.4,
@@ -3400,7 +3722,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Willy Chotzen"
     }
   },
   {
@@ -3422,7 +3744,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Andrea Valderrama"
         }
       }
     ],
@@ -3451,6 +3773,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 68.6,
+        "rep_pct": 31.2,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 95.5,
         "rep_pct": 0.0,
@@ -3458,6 +3786,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 37.3,
       "leg_2024": 95.5,
       "latest_leg": 95.5,
       "gov_2022": 28.2,
@@ -3474,7 +3803,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Andrea Valderrama"
     }
   },
   {
@@ -3496,7 +3825,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Lamar Wise"
         }
       }
     ],
@@ -3525,6 +3854,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 51.2,
+        "rep_pct": 48.7,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 53.1,
         "rep_pct": 46.9,
@@ -3532,6 +3867,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 2.6,
       "leg_2024": 6.2,
       "latest_leg": 6.2,
       "gov_2022": -3.6,
@@ -3548,7 +3884,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Lamar Wise"
     }
   },
   {
@@ -3570,7 +3906,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Zach Hudson"
         }
       }
     ],
@@ -3599,6 +3935,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 52.1,
+        "rep_pct": 47.8,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 56.0,
         "rep_pct": 44.0,
@@ -3606,6 +3948,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 4.3,
       "leg_2024": 11.9,
       "latest_leg": 11.9,
       "gov_2022": 1.5,
@@ -3622,7 +3965,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Zach Hudson"
     }
   },
   {
@@ -3644,7 +3987,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Ricki Ruiz"
         }
       }
     ],
@@ -3673,6 +4016,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 51.8,
+        "rep_pct": 48.1,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 54.6,
         "rep_pct": 45.4,
@@ -3680,6 +4029,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 3.7,
       "leg_2024": 9.3,
       "latest_leg": 9.3,
       "gov_2022": -1.1,
@@ -3696,14 +4046,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Ricki Ruiz"
     }
   },
   {
     "state_fips": "41",
     "district_id": "051",
     "district_name": "State House District 51",
-    "tier": null,
+    "tier": 3,
     "incumbent": {
       "name": "Matt Bunch",
       "party": "R"
@@ -3717,7 +4067,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Matt Bunch",
           "dem": "No candidate"
         }
       }
@@ -3747,6 +4097,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 33.7,
+        "rep_pct": 66.0,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 94.1,
@@ -3754,6 +4110,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -32.4,
       "leg_2024": -94.1,
       "latest_leg": -94.1,
       "gov_2022": -32.0,
@@ -3769,7 +4126,7 @@
       "ussen_2022": 37671
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Matt Bunch",
       "dem": "No candidate"
     }
   },
@@ -3821,6 +4178,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 47.4,
+        "rep_pct": 52.5,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 48.2,
         "rep_pct": 51.8,
@@ -3828,6 +4191,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -5.0,
       "leg_2024": -3.7,
       "latest_leg": -3.7,
       "gov_2022": -4.2,
@@ -3866,7 +4230,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Emerson Levy"
         }
       }
     ],
@@ -3895,6 +4259,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 50.6,
+        "rep_pct": 49.3,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 54.2,
         "rep_pct": 45.8,
@@ -3902,6 +4272,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 1.3,
       "leg_2024": 8.4,
       "latest_leg": 8.4,
       "gov_2022": -4.1,
@@ -3918,7 +4289,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Emerson Levy"
     }
   },
   {
@@ -3940,7 +4311,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Jason Kropf"
         }
       }
     ],
@@ -3969,6 +4340,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 64.4,
+        "rep_pct": 35.5,
+        "winner": "D"
+      },
+      {
         "year": 2024,
         "dem_pct": 96.5,
         "rep_pct": 0.0,
@@ -3976,6 +4353,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": 28.9,
       "leg_2024": 96.5,
       "latest_leg": 96.5,
       "gov_2022": 19.3,
@@ -3992,7 +4370,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Jason Kropf"
     }
   },
   {
@@ -4013,7 +4391,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "E. Werner Reschke",
           "dem": "No candidate"
         }
       }
@@ -4043,6 +4421,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 31.1,
+        "rep_pct": 68.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 30.2,
         "rep_pct": 69.8,
@@ -4050,6 +4434,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -37.6,
       "leg_2024": -39.6,
       "latest_leg": -39.6,
       "gov_2022": -42.7,
@@ -4065,7 +4450,7 @@
       "ussen_2022": 35948
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "E. Werner Reschke",
       "dem": "No candidate"
     }
   },
@@ -4087,7 +4472,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Emily McIntire",
           "dem": "No candidate"
         }
       }
@@ -4117,6 +4502,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 27.2,
+        "rep_pct": 72.6,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 96.7,
@@ -4124,6 +4515,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -45.4,
       "leg_2024": -96.7,
       "latest_leg": -96.7,
       "gov_2022": -47.5,
@@ -4139,7 +4531,7 @@
       "ussen_2022": 29581
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Emily McIntire",
       "dem": "No candidate"
     }
   },
@@ -4161,7 +4553,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Greg Smith",
           "dem": "No candidate"
         }
       }
@@ -4191,6 +4583,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 97.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 97.6,
@@ -4198,6 +4596,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -94.9,
       "leg_2024": -97.6,
       "latest_leg": -97.6,
       "gov_2022": -50.5,
@@ -4213,7 +4612,7 @@
       "ussen_2022": 21964
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Greg Smith",
       "dem": "No candidate"
     }
   },
@@ -4235,7 +4634,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Bobby Levy",
           "dem": "No candidate"
         }
       }
@@ -4265,6 +4664,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 83.7,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 98.2,
@@ -4272,6 +4677,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -67.3,
       "leg_2024": -98.2,
       "latest_leg": -98.2,
       "gov_2022": -46.8,
@@ -4287,7 +4693,7 @@
       "ussen_2022": 30324
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Bobby Levy",
       "dem": "No candidate"
     }
   },
@@ -4309,7 +4715,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Vikki Breese-Iverson",
           "dem": "No candidate"
         }
       }
@@ -4339,6 +4745,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 27.5,
+        "rep_pct": 72.4,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 28.1,
         "rep_pct": 71.9,
@@ -4346,6 +4758,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -45.0,
       "leg_2024": -43.9,
       "latest_leg": -43.9,
       "gov_2022": -44.1,
@@ -4361,7 +4774,7 @@
       "ussen_2022": 35073
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Vikki Breese-Iverson",
       "dem": "No candidate"
     }
   },
@@ -4383,7 +4796,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Mark Owens",
           "dem": "No candidate"
         }
       }
@@ -4413,6 +4826,12 @@
     },
     "elections": [
       {
+        "year": 2022,
+        "dem_pct": 0.0,
+        "rep_pct": 89.2,
+        "winner": "R"
+      },
+      {
         "year": 2024,
         "dem_pct": 0.0,
         "rep_pct": 98.8,
@@ -4420,6 +4839,7 @@
       }
     ],
     "view_margins": {
+      "leg_2022": -78.4,
       "leg_2024": -98.8,
       "latest_leg": -98.8,
       "gov_2022": -60.2,
@@ -4435,7 +4855,7 @@
       "ussen_2022": 29524
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Mark Owens",
       "dem": "No candidate"
     }
   }

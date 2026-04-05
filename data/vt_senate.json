@@ -17,8 +17,8 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Steven Hefferman",
+          "dem": "Ruth Hardy"
         }
       },
       {
@@ -30,7 +30,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Hannah Sessions"
         }
       }
     ],
@@ -88,8 +88,8 @@
       "ussen_2022": 23137
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Steven Hefferman",
+      "dem": "Ruth Hardy"
     }
   },
   {
@@ -111,7 +111,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Seth Bongartz"
         }
       },
       {
@@ -123,7 +123,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Robert Plunkett"
         }
       }
     ],
@@ -182,7 +182,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Seth Bongartz"
     }
   },
   {
@@ -203,7 +203,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Scott Beck",
           "dem": "No candidate"
         }
       }
@@ -262,7 +262,7 @@
       "ussen_2022": 7523
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Scott Beck",
       "dem": "No candidate"
     }
   },
@@ -285,7 +285,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Martine Gulick"
         }
       },
       {
@@ -297,7 +297,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Nikhil Goyal"
         }
       },
       {
@@ -309,7 +309,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Elaine Haney"
         }
       }
     ],
@@ -368,7 +368,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Martine Gulick"
     }
   },
   {
@@ -389,7 +389,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Christopher Mattos",
           "dem": "No candidate"
         }
       }
@@ -448,7 +448,7 @@
       "ussen_2022": 8661
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Christopher Mattos",
       "dem": "No candidate"
     }
   },
@@ -471,19 +471,19 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Thomas Chittenden"
         }
       },
       {
         "seat": 2,
         "seat_label": "",
         "incumbent": {
-          "name": "Virginia V. Lyons",
+          "name": "Virginia Lyons",
           "party": "D"
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Virginia Lyons"
         }
       },
       {
@@ -495,7 +495,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Kesha Ram Hinsdale"
         }
       }
     ],
@@ -554,14 +554,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Thomas Chittenden"
     }
   },
   {
     "state_fips": "50",
     "district_id": "ESX",
     "district_name": "",
-    "tier": 2,
+    "tier": null,
     "incumbent": {
       "name": "Russ Ingalls",
       "party": "R"
@@ -575,7 +575,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Russ Ingalls",
           "dem": "No candidate"
         }
       }
@@ -634,7 +634,7 @@
       "ussen_2022": 8454
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Russ Ingalls",
       "dem": "No candidate"
     }
   },
@@ -642,7 +642,7 @@
     "state_fips": "50",
     "district_id": "FRA",
     "district_name": "",
-    "tier": 1,
+    "tier": null,
     "incumbent": {
       "name": "Randy Brock",
       "party": "R"
@@ -656,7 +656,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Randy Brock",
           "dem": "No candidate"
         }
       },
@@ -668,7 +668,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Robert Norris",
           "dem": "No candidate"
         }
       }
@@ -727,7 +727,7 @@
       "ussen_2022": 15320
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Randy Brock",
       "dem": "No candidate"
     }
   },
@@ -749,7 +749,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Patrick Brennan",
           "dem": "No candidate"
         }
       }
@@ -808,7 +808,7 @@
       "ussen_2022": 6845
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Patrick Brennan",
       "dem": "No candidate"
     }
   },
@@ -830,7 +830,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Richard Westman",
           "dem": "No candidate"
         }
       }
@@ -889,7 +889,7 @@
       "ussen_2022": 9656
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Richard Westman",
       "dem": "No candidate"
     }
   },
@@ -911,7 +911,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "John Benson",
           "dem": "No candidate"
         }
       }
@@ -970,7 +970,7 @@
       "ussen_2022": 10334
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "John Benson",
       "dem": "No candidate"
     }
   },
@@ -992,7 +992,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "John Morley",
           "dem": "No candidate"
         }
       }
@@ -1051,7 +1051,7 @@
       "ussen_2022": 10835
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "John Morley",
       "dem": "No candidate"
     }
   },
@@ -1073,7 +1073,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Brian Collamore",
           "dem": "No candidate"
         }
       },
@@ -1085,7 +1085,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "David Weeks",
           "dem": "No candidate"
         }
       },
@@ -1097,7 +1097,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Terry Williams",
           "dem": "No candidate"
         }
       }
@@ -1156,7 +1156,7 @@
       "ussen_2022": 26603
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Brian Collamore",
       "dem": "No candidate"
     }
   },
@@ -1179,7 +1179,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Ann Cummings"
         }
       },
       {
@@ -1191,7 +1191,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Andrew Perchlik"
         }
       },
       {
@@ -1203,7 +1203,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Anne Watson"
         }
       }
     ],
@@ -1262,7 +1262,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Ann Cummings"
     }
   },
   {
@@ -1284,7 +1284,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Wendy Harrison"
         }
       },
       {
@@ -1296,7 +1296,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Nader Hashim"
         }
       }
     ],
@@ -1355,7 +1355,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Wendy Harrison"
     }
   },
   {
@@ -1376,8 +1376,8 @@
           "party": "D"
         },
         "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
+          "rep": "Jonathan Gleason",
+          "dem": "Joe Major"
         }
       },
       {
@@ -1389,7 +1389,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Rebecca White"
         }
       },
       {
@@ -1405,7 +1405,7 @@
         }
       }
     ],
-    "candidate_seats_up": 3,
+    "candidate_seats_up": 2,
     "next_election": 2026,
     "demographics": {
       "population": 47782,
@@ -1459,8 +1459,8 @@
       "ussen_2022": 27523
     },
     "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+      "rep": "Jonathan Gleason",
+      "dem": "Joe Major"
     }
   }
 ]

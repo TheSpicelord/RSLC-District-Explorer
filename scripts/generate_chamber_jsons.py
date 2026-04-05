@@ -454,6 +454,9 @@ def parse_modeling_section(value: str):
     if "high+mid" in lower or "high + mid" in lower or "h+m" in lower:
         variant_key = "hm"
         variant_label = "H+M"
+    elif "vote intent" in lower or re.search(r'\bvi\b', lower):
+        variant_key = "vi"
+        variant_label = "VI"
     elif "all" in lower:
         variant_key = "all"
         variant_label = "All"
@@ -514,7 +517,7 @@ def affinity_layout_for_block(block: dict):
     if layout:
         return layout
 
-    if block["family_key"] != "rga":
+    if block["family_key"] not in ("rga", "lombardo"):
         return None
 
     ordered_headers = [block["headers"][ci] for ci in sorted(block["headers"].keys())]
@@ -545,6 +548,11 @@ def affinity_margin_for_block(block: dict, segments: List[dict]) -> float:
     if family_key == "rslc":
         gop_total = sum(segment["value"] for segment in segments[:3])
         dem_total = sum(segment["value"] for segment in segments[-3:])
+        return round(gop_total - dem_total, 1)
+
+    if family_key == "lombardo":
+        gop_total = sum(segment["value"] for segment in segments[:2])
+        dem_total = sum(segment["value"] for segment in segments[-2:])
         return round(gop_total - dem_total, 1)
 
     if family_key == "rga":

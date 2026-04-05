@@ -17,7 +17,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Patrick Hatlestad",
           "dem": "No candidate"
         }
       },
@@ -29,7 +29,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "David Richter",
           "dem": "No candidate"
         }
       }
@@ -80,7 +80,7 @@
       "ussen_2022": 3348
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Patrick Hatlestad",
       "dem": "No candidate"
     }
   },
@@ -102,7 +102,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Bert Anderson",
           "dem": "No candidate"
         }
       },
@@ -114,13 +114,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Donald Longmuir",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 8439,
       "rural_pct": 99.9,
@@ -165,7 +165,7 @@
       "ussen_2022": 5071
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Bert Anderson",
       "dem": "No candidate"
     }
   },
@@ -187,7 +187,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jeff Hoverson",
           "dem": "No candidate"
         }
       },
@@ -199,7 +199,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Lori VanWinkle",
           "dem": "No candidate"
         }
       }
@@ -250,7 +250,7 @@
       "ussen_2022": 3611
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Jeff Hoverson",
       "dem": "No candidate"
     }
   },
@@ -272,7 +272,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jay Fisher",
           "dem": "No candidate"
         }
       },
@@ -284,7 +284,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Scott Louser",
           "dem": "No candidate"
         }
       }
@@ -335,7 +335,7 @@
       "ussen_2022": 7029
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Jay Fisher",
       "dem": "No candidate"
     }
   },
@@ -357,7 +357,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Dick Anderson",
           "dem": "No candidate"
         }
       },
@@ -369,13 +369,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Daniel R. Vollmer",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 9917,
       "rural_pct": 99.9,
@@ -420,7 +420,7 @@
       "ussen_2022": 7332
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Dick Anderson",
       "dem": "No candidate"
     }
   },
@@ -442,7 +442,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jason Dockter",
           "dem": "No candidate"
         }
       },
@@ -454,7 +454,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Matt Heilman",
           "dem": "No candidate"
         }
       }
@@ -505,7 +505,7 @@
       "ussen_2022": 6490
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Jason Dockter",
       "dem": "No candidate"
     }
   },
@@ -527,7 +527,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Mike Berg",
           "dem": "No candidate"
         }
       },
@@ -539,13 +539,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "SuAnn Olson",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 11063,
       "rural_pct": 81.2,
@@ -597,7 +597,7 @@
       "ussen_2022": 6813
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Mike Berg",
       "dem": "No candidate"
     }
   },
@@ -605,7 +605,7 @@
     "state_fips": "38",
     "district_id": "009",
     "district_name": "State House District 9",
-    "tier": null,
+    "tier": 3,
     "incumbent": {
       "name": "Collette Brown",
       "party": "D"
@@ -620,7 +620,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Collette Brown"
         }
       },
       {
@@ -632,7 +632,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Jayme Davis"
         }
       }
     ],
@@ -690,14 +690,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Collette Brown"
     }
   },
   {
     "state_fips": "38",
     "district_id": "010",
     "district_name": "State House District 10",
-    "tier": 1,
+    "tier": null,
     "incumbent": {
       "name": "Jared Hendrix",
       "party": "R"
@@ -711,7 +711,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jared Hendrix",
           "dem": "No candidate"
         }
       },
@@ -723,13 +723,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Steve Swiontek",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 6762,
       "rural_pct": 0.2,
@@ -781,7 +781,7 @@
       "ussen_2022": 3177
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Jared Hendrix",
       "dem": "No candidate"
     }
   },
@@ -804,7 +804,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Liz Conmy"
         }
       },
       {
@@ -816,7 +816,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Gretchen Dobervich"
         }
       }
     ],
@@ -867,7 +867,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Liz Conmy"
     }
   },
   {
@@ -888,7 +888,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Mitch Ostlie",
           "dem": "No candidate"
         }
       },
@@ -900,13 +900,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Bernie Satrom",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 7297,
       "rural_pct": 16.2,
@@ -951,7 +951,7 @@
       "ussen_2022": 4547
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Mitch Ostlie",
       "dem": "No candidate"
     }
   },
@@ -959,7 +959,7 @@
     "state_fips": "38",
     "district_id": "013",
     "district_name": "State House District 13",
-    "tier": null,
+    "tier": 2,
     "incumbent": {
       "name": "Jim Jonas",
       "party": "R"
@@ -973,7 +973,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jim Jonas",
           "dem": "No candidate"
         }
       },
@@ -985,7 +985,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Austen Schauer",
           "dem": "No candidate"
         }
       }
@@ -1036,7 +1036,7 @@
       "ussen_2022": 5506
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Jim Jonas",
       "dem": "No candidate"
     }
   },
@@ -1058,7 +1058,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jon Nelson",
           "dem": "No candidate"
         }
       },
@@ -1070,13 +1070,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Robin Weisz",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 9338,
       "rural_pct": 87.1,
@@ -1121,7 +1121,7 @@
       "ussen_2022": 6234
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Jon Nelson",
       "dem": "No candidate"
     }
   },
@@ -1143,7 +1143,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Kathy Frelich",
           "dem": "No candidate"
         }
       },
@@ -1155,7 +1155,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Donna Henderson",
           "dem": "No candidate"
         }
       }
@@ -1213,7 +1213,7 @@
       "ussen_2022": 6227
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Kathy Frelich",
       "dem": "No candidate"
     }
   },
@@ -1221,7 +1221,7 @@
     "state_fips": "38",
     "district_id": "016",
     "district_name": "State House District 16",
-    "tier": 3,
+    "tier": null,
     "incumbent": {
       "name": "Ben Koppelman",
       "party": "R"
@@ -1235,7 +1235,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Ben Koppelman",
           "dem": "No candidate"
         }
       },
@@ -1247,13 +1247,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Andrew Marschall",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 8856,
       "rural_pct": 2.7,
@@ -1298,7 +1298,7 @@
       "ussen_2022": 4104
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Ben Koppelman",
       "dem": "No candidate"
     }
   },
@@ -1320,7 +1320,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Landon Bahl",
           "dem": "No candidate"
         }
       },
@@ -1332,7 +1332,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Mark Sanford",
           "dem": "No candidate"
         }
       }
@@ -1383,7 +1383,7 @@
       "ussen_2022": 5558
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Landon Bahl",
       "dem": "No candidate"
     }
   },
@@ -1391,7 +1391,7 @@
     "state_fips": "38",
     "district_id": "018",
     "district_name": "State House District 18",
-    "tier": 1,
+    "tier": null,
     "incumbent": {
       "name": "Nels Christianson",
       "party": "R"
@@ -1405,7 +1405,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Nels Christianson",
           "dem": "No candidate"
         }
       },
@@ -1417,13 +1417,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Steve Vetter",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 7345,
       "rural_pct": 8.0,
@@ -1468,7 +1468,7 @@
       "ussen_2022": 4139
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Nels Christianson",
       "dem": "No candidate"
     }
   },
@@ -1490,7 +1490,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Karen Anderson",
           "dem": "No candidate"
         }
       },
@@ -1502,7 +1502,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "David Monson",
           "dem": "No candidate"
         }
       }
@@ -1553,7 +1553,7 @@
       "ussen_2022": 5892
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Karen Anderson",
       "dem": "No candidate"
     }
   },
@@ -1575,7 +1575,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Vacant",
           "dem": "No candidate"
         }
       },
@@ -1587,13 +1587,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Mike Beltz",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 9236,
       "rural_pct": 98.4,
@@ -1645,7 +1645,7 @@
       "ussen_2022": 6082
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Mike Beltz",
       "dem": "No candidate"
     }
   },
@@ -1668,7 +1668,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "LaurieBeth Hager"
         }
       },
       {
@@ -1680,7 +1680,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Mary Schneider"
         }
       }
     ],
@@ -1731,7 +1731,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "LaurieBeth Hager"
     }
   },
   {
@@ -1752,7 +1752,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Brandy Pyle",
           "dem": "No candidate"
         }
       },
@@ -1764,13 +1764,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jonathan Warrey",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 10475,
       "rural_pct": 70.9,
@@ -1815,7 +1815,7 @@
       "ussen_2022": 5638
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Brandy Pyle",
       "dem": "No candidate"
     }
   },
@@ -1837,7 +1837,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Dennis Nehring",
           "dem": "No candidate"
         }
       },
@@ -1849,7 +1849,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Nico Rios",
           "dem": "No candidate"
         }
       }
@@ -1907,7 +1907,7 @@
       "ussen_2022": 1774
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Dennis Nehring",
       "dem": "No candidate"
     }
   },
@@ -1929,7 +1929,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Daniel Johnston",
           "dem": "No candidate"
         }
       },
@@ -1941,13 +1941,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Dwight Kiefert",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 8514,
       "rural_pct": 64.2,
@@ -1999,7 +1999,7 @@
       "ussen_2022": 5704
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Daniel Johnston",
       "dem": "No candidate"
     }
   },
@@ -2022,7 +2022,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Alisa Mitskog"
         }
       },
       {
@@ -2033,7 +2033,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Kathy Skroch",
           "dem": "No candidate"
         }
       }
@@ -2085,7 +2085,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Alisa Mitskog"
     }
   },
   {
@@ -2106,7 +2106,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Roger A. Maki",
           "dem": "No candidate"
         }
       },
@@ -2118,13 +2118,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Kelby Timmons",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 7169,
       "rural_pct": 99.1,
@@ -2176,7 +2176,7 @@
       "ussen_2022": 4242
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Roger A. Maki",
       "dem": "No candidate"
     }
   },
@@ -2198,7 +2198,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Timothy Brown",
           "dem": "No candidate"
         }
       },
@@ -2210,7 +2210,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Greg Stemen",
           "dem": "No candidate"
         }
       }
@@ -2261,7 +2261,7 @@
       "ussen_2022": 5191
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Timothy Brown",
       "dem": "No candidate"
     }
   },
@@ -2283,7 +2283,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Michael Don Brandenburg",
           "dem": "No candidate"
         }
       },
@@ -2295,13 +2295,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jim Grueneich",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 9604,
       "rural_pct": 99.8,
@@ -2353,7 +2353,7 @@
       "ussen_2022": 6893
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Michael Don Brandenburg",
       "dem": "No candidate"
     }
   },
@@ -2375,7 +2375,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Craig Headland",
           "dem": "No candidate"
         }
       },
@@ -2387,7 +2387,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Don Vigesaa",
           "dem": "No candidate"
         }
       }
@@ -2438,7 +2438,7 @@
       "ussen_2022": 6567
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Craig Headland",
       "dem": "No candidate"
     }
   },
@@ -2460,7 +2460,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Glenn Bosch",
           "dem": "No candidate"
         }
       },
@@ -2472,13 +2472,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Mike Nathe",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 8056,
       "rural_pct": 36.1,
@@ -2523,7 +2523,7 @@
       "ussen_2022": 5275
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Glenn Bosch",
       "dem": "No candidate"
     }
   },
@@ -2545,7 +2545,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Dawson Holle",
           "dem": "No candidate"
         }
       },
@@ -2557,7 +2557,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Karen Rohr",
           "dem": "No candidate"
         }
       }
@@ -2608,7 +2608,7 @@
       "ussen_2022": 6523
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Dawson Holle",
       "dem": "No candidate"
     }
   },
@@ -2630,7 +2630,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Pat Heinert",
           "dem": "No candidate"
         }
       },
@@ -2642,13 +2642,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Lisa Meier",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 8071,
       "rural_pct": 5.9,
@@ -2693,7 +2693,7 @@
       "ussen_2022": 3817
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Pat Heinert",
       "dem": "No candidate"
     }
   },
@@ -2715,7 +2715,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Anna Novak",
           "dem": "No candidate"
         }
       },
@@ -2727,7 +2727,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Bill Tveit",
           "dem": "No candidate"
         }
       }
@@ -2778,7 +2778,7 @@
       "ussen_2022": 7631
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Anna Novak",
       "dem": "No candidate"
     }
   },
@@ -2800,7 +2800,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Todd Porter",
           "dem": "No candidate"
         }
       },
@@ -2812,13 +2812,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Nathan Toman",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 8845,
       "rural_pct": 16.6,
@@ -2863,7 +2863,7 @@
       "ussen_2022": 4188
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Todd Porter",
       "dem": "No candidate"
     }
   },
@@ -2885,7 +2885,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Karen Karls",
           "dem": "No candidate"
         }
       },
@@ -2897,7 +2897,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Bob Martinson",
           "dem": "No candidate"
         }
       }
@@ -2948,7 +2948,7 @@
       "ussen_2022": 7161
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Karen Karls",
       "dem": "No candidate"
     }
   },
@@ -2970,7 +2970,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Ty Dressler",
           "dem": "No candidate"
         }
       },
@@ -2982,13 +2982,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Dori Hauck",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 7797,
       "rural_pct": 61.3,
@@ -3040,7 +3040,7 @@
       "ussen_2022": 4586
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Ty Dressler",
       "dem": "No candidate"
     }
   },
@@ -3062,7 +3062,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Mike Lefor",
           "dem": "No candidate"
         }
       },
@@ -3074,7 +3074,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Vicky Steiner",
           "dem": "No candidate"
         }
       }
@@ -3125,7 +3125,7 @@
       "ussen_2022": 4072
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Mike Lefor",
       "dem": "No candidate"
     }
   },
@@ -3147,7 +3147,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Dan Ruby",
           "dem": "No candidate"
         }
       },
@@ -3159,13 +3159,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Christina Wolff",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 7728,
       "rural_pct": 44.7,
@@ -3210,7 +3210,7 @@
       "ussen_2022": 1762
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Dan Ruby",
       "dem": "No candidate"
     }
   },
@@ -3232,7 +3232,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Keith Kempenich",
           "dem": "No candidate"
         }
       },
@@ -3244,7 +3244,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Mike Schatz",
           "dem": "No candidate"
         }
       }
@@ -3295,7 +3295,7 @@
       "ussen_2022": 6438
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Keith Kempenich",
       "dem": "No candidate"
     }
   },
@@ -3317,7 +3317,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Macy Bolinske",
           "dem": "No candidate"
         }
       },
@@ -3329,13 +3329,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Matthew Ruby",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 5382,
       "rural_pct": 14.8,
@@ -3380,7 +3380,7 @@
       "ussen_2022": 2622
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Macy Bolinske",
       "dem": "No candidate"
     }
   },
@@ -3402,7 +3402,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Karen Grindberg",
           "dem": "No candidate"
         }
       },
@@ -3414,7 +3414,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jorin Johnson",
           "dem": "No candidate"
         }
       }
@@ -3465,7 +3465,7 @@
       "ussen_2022": 5763
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Karen Grindberg",
       "dem": "No candidate"
     }
   },
@@ -3487,7 +3487,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Dustin McNally",
           "dem": "No candidate"
         }
       },
@@ -3499,13 +3499,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Doug Osowski",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 5208,
       "rural_pct": 19.5,
@@ -3550,7 +3550,7 @@
       "ussen_2022": 2569
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Dustin McNally",
       "dem": "No candidate"
     }
   },
@@ -3573,7 +3573,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Zachary Ista"
         }
       },
       {
@@ -3584,7 +3584,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Eric James Murphy",
           "dem": "No candidate"
         }
       }
@@ -3636,7 +3636,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Zachary Ista"
     }
   },
   {
@@ -3658,7 +3658,7 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Austin Foss"
         }
       },
       {
@@ -3670,12 +3670,12 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Karla Rose Hanson"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 7374,
       "rural_pct": 0.1,
@@ -3728,14 +3728,14 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Austin Foss"
     }
   },
   {
     "state_fips": "38",
     "district_id": "045",
     "district_name": "State House District 45",
-    "tier": null,
+    "tier": 3,
     "incumbent": {
       "name": "Carrie McLeod",
       "party": "R"
@@ -3749,7 +3749,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Carrie McLeod",
           "dem": "No candidate"
         }
       },
@@ -3761,7 +3761,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Scott Wagner",
           "dem": "No candidate"
         }
       }
@@ -3812,7 +3812,7 @@
       "ussen_2022": 5179
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Carrie McLeod",
       "dem": "No candidate"
     }
   },
@@ -3820,7 +3820,7 @@
     "state_fips": "38",
     "district_id": "046",
     "district_name": "State House District 46",
-    "tier": 1,
+    "tier": null,
     "incumbent": {
       "name": "Jim Kasper",
       "party": "R"
@@ -3834,7 +3834,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Jim Kasper",
           "dem": "No candidate"
         }
       },
@@ -3846,13 +3846,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Desiree Morton",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 2,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 10240,
       "rural_pct": 24.0,
@@ -3897,7 +3897,7 @@
       "ussen_2022": 6080
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Jim Kasper",
       "dem": "No candidate"
     }
   },
@@ -3919,7 +3919,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Lawrence Klemin",
           "dem": "No candidate"
         }
       },
@@ -3931,7 +3931,7 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Mike Motschenbacher",
           "dem": "No candidate"
         }
       }
@@ -3982,7 +3982,7 @@
       "ussen_2022": 6757
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Lawrence Klemin",
       "dem": "No candidate"
     }
   },
@@ -4005,12 +4005,12 @@
         },
         "candidates": {
           "rep": "No candidate",
-          "dem": "No candidate"
+          "dem": "Lisa Finley-DeVille"
         }
       }
     ],
     "candidate_seats_up": 1,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 2968,
       "rural_pct": 99.6,
@@ -4063,7 +4063,7 @@
     },
     "candidates_2026": {
       "rep": "No candidate",
-      "dem": "No candidate"
+      "dem": "Lisa Finley-DeVille"
     }
   },
   {
@@ -4084,13 +4084,13 @@
           "party": "R"
         },
         "candidates": {
-          "rep": "No candidate",
+          "rep": "Clayton Fegley",
           "dem": "No candidate"
         }
       }
     ],
     "candidate_seats_up": 1,
-    "next_election": 2026,
+    "next_election": 2028,
     "demographics": {
       "population": 4710,
       "rural_pct": 99.6,
@@ -4142,7 +4142,7 @@
       "ussen_2022": 3127
     },
     "candidates_2026": {
-      "rep": "No candidate",
+      "rep": "Clayton Fegley",
       "dem": "No candidate"
     }
   }
