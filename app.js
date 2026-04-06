@@ -1,3 +1,6 @@
+import { requireAuth } from "./modules/auth.js";
+await requireAuth("https://districts.rslc.gop/auth");
+
 import {
   AUTO_SHAPE_URLS,
   BASE_WHEEL_PX_PER_ZOOM_LEVEL,

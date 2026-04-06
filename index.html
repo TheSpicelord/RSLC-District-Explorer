@@ -11,6 +11,14 @@
     crossorigin=""
   />
   <link rel="stylesheet" href="style.css?v=20260317e" />
+  <script>
+    (function () {
+      var expires = localStorage.getItem("rslc_auth_expires");
+      if (!expires || Date.now() >= Number(expires)) {
+        document.documentElement.classList.add("auth-pending");
+      }
+    })();
+  </script>
 </head>
 <body>
   <header class="topbar">
