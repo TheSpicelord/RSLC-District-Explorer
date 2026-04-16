@@ -131,14 +131,15 @@ input:disabled {
 
 .chamber-buttons button {
   margin-left: 0;
-  min-width: 154px;
-  min-height: 44px;
-  padding: 0.56rem 0.9rem;
+  min-width: 0;
+  min-height: 0;
+  padding: 0.45rem 0.7rem;
+  white-space: nowrap;
   background: #2f3f51;
   border: 1px solid #566b82;
   color: #dce7f4;
   font-weight: 800;
-  font-size: 1.12rem;
+  font-size: 1rem;
   letter-spacing: 0.2px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
@@ -903,6 +904,23 @@ body.projection-active .chamber-buttons {
   line-height: 1;
   letter-spacing: 0.1px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.cd-number-label-wrap {
+  background: transparent;
+  border: none;
+}
+
+.cd-number-label {
+  display: inline-block;
+  color: #e8b84b;
+  font-family: "Bahnschrift Condensed", "Bahnschrift", "Segoe UI", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
   user-select: none;
   white-space: nowrap;
 }
@@ -2095,6 +2113,197 @@ body.projection-active .chamber-buttons {
   .chamber-buttons {
     margin-left: 0;
   }
+}
+
+/* ── Auth gate ─────────────────────────────────────────────────────────── */
+
+html.auth-pending header,
+html.auth-pending main {
+  visibility: hidden;
+}
+
+#auth-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #1a232f, #111820 35%, #0f1318 100%);
+}
+
+.auth-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2.5rem 2rem 2rem;
+  width: min(360px, 90vw);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth-title {
+  margin: 0 0 0.15rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.auth-subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+#auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.auth-input {
+  background: #0f1318;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 0.95rem;
+  padding: 0.55rem 0.75rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.auth-input:focus {
+  border-color: var(--accent);
+}
+
+.auth-btn {
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.6rem;
+  transition: opacity 0.15s;
+}
+
+.auth-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.auth-btn:not(:disabled):hover {
+  opacity: 0.88;
+}
+
+.auth-error {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #e05c5c;
+  text-align: center;
+}
+
+/* ── Statewide mode ─────────────────────────────────────────────────────────── */
+
+.statewide-cards-section {
+  padding-bottom: 0.25rem;
+}
+
+.statewide-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 0.45rem;
+  padding: 0.15rem 0 0.1rem;
+}
+
+.statewide-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  text-align: center;
+}
+
+.statewide-card-r {
+  border-color: rgba(248, 38, 68, 0.35);
+  background: rgba(248, 38, 68, 0.06);
+}
+
+.statewide-card-d {
+  border-color: rgba(37, 123, 248, 0.35);
+  background: rgba(37, 123, 248, 0.06);
+}
+
+.statewide-card-office {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #8794a3;
+  white-space: nowrap;
+}
+
+.statewide-card-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #c8d4e2;
+  white-space: nowrap;
+}
+
+.statewide-card-party {
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+/* Statewide table */
+
+.statewide-table {
+  table-layout: fixed;
+  width: auto;
+}
+
+.statewide-table .statewide-office-head {
+  width: 128px;
+}
+
+.statewide-table .statewide-inc-head {
+  width: 30px;
+  text-align: center;
+}
+
+.statewide-table .statewide-year-head {
+  width: 58px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.statewide-table .statewide-office-head,
+.statewide-table .statewide-office-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+.statewide-table .statewide-candidate-head {
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.statewide-vacant {
+  color: #8794a3;
+  font-style: italic;
+}
+
+.statewide-table .margin-cell {
+  text-align: center;
+  white-space: nowrap;
 }
 
 

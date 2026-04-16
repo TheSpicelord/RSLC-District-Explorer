@@ -1,7 +1,12 @@
+import { requireAuth } from "./modules/auth.js";
+await requireAuth("https://districts.rslc.gop/auth");
+
 import {
   AUTO_SHAPE_URLS,
   BASE_WHEEL_PX_PER_ZOOM_LEVEL,
   BASE_ZOOM_SNAP,
+  CD_TARGETS_JSON_URL,
+  STATEWIDES_JSON_URL,
   CHAMBER_INDEX_URLS,
   COUNTY_LABEL_MIN_ZOOM,
   CTRL_FINE_ZOOM_SNAP,
@@ -17,7 +22,10 @@ import {
   XLSX_CDN_URL,
 } from "./modules/config.js";
 import {
+  cdFilterToggle,
+  congressionalOverlayToggle,
   countyOverlayToggle,
+  statewideChamberBtn,
   details,
   detailsTitle,
   exitStateBtn,
@@ -109,7 +117,7 @@ const RGA_SEVEN_BUCKET_COLOR_CLASSES = [
   "color-model-dem-base",
 ];
 
-const BUILD_VERSION = "20260317e";
+const BUILD_VERSION = "20260416b";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -132,6 +140,12 @@ map.createPane("districtPane");
 map.getPane("districtPane").style.zIndex = 420;
 map.createPane("floterialPane");
 map.getPane("floterialPane").style.zIndex = 430;
+map.createPane("congressionalPane");
+map.getPane("congressionalPane").style.zIndex = 435;
+map.getPane("congressionalPane").style.pointerEvents = "none";
+map.createPane("congressionalLabelPane");
+map.getPane("congressionalLabelPane").style.zIndex = 451;
+map.getPane("congressionalLabelPane").style.pointerEvents = "none";
 map.createPane("countyPane");
 map.getPane("countyPane").style.zIndex = 440;
 map.createPane("countyLabelPane");
@@ -192,6 +206,14 @@ async function init() {
     .catch((_err) => {
       // Keep app responsive if chamber names fail.
     });
+
+  loadCongressionalTargets().catch((_err) => {
+    // Keep app responsive if CD targets data fails.
+  });
+
+  loadStatewides().catch((_err) => {
+    // Keep app responsive if statewide data fails.
+  });
 
   targetsPromise
     .then((targets) => {
@@ -294,10 +316,30 @@ function wireEvents() {
     await setChamber("senate");
   });
 
+  if (statewideChamberBtn) {
+    statewideChamberBtn.addEventListener("click", async () => {
+      if (state.mode !== "state") return;
+      await setStatewideMode(!state.statewideMode);
+    });
+  }
+
   countyOverlayToggle.addEventListener("change", async (e) => {
     state.countyVisible = e.target.checked;
     await updateCountyOverlayVisibility();
   });
+
+  if (congressionalOverlayToggle) {
+    congressionalOverlayToggle.addEventListener("change", async (e) => {
+      state.congressionalVisible = e.target.checked;
+      await updateCongressionalOverlayVisibility();
+    });
+  }
+
+  if (cdFilterToggle) {
+    cdFilterToggle.addEventListener("change", async (e) => {
+      await setCdFilterMode(e.target.checked);
+    });
+  }
 
   targetDistrictsToggle.addEventListener("change", async (e) => {
     await setTargetDistrictsMode(e.target.checked);
@@ -452,6 +494,7 @@ function wireEvents() {
   map.on("zoomend", () => {
     refreshCountyLabels();
     refreshDistrictNumberLabels();
+    refreshCongressionalLabels();
   });
 
   map.on("popupopen", () => {
@@ -652,9 +695,17 @@ async function selectStateByMeta(meta, feature, options = {}) {
     focusOnState(meta, featureBounds);
   }
 
+  if (state.statewideMode) {
+    refreshStateBoundaryStyles();
+    renderModeUi();
+    showStatewideOverview();
+    setStatus(`Viewing ${meta.name || meta.abbr || meta.key} statewide.`);
+    return;
+  }
   await ensureDistrictShapesLoaded();
   renderDistrictLayerForSelectedState();
   await updateCountyOverlayVisibility();
+  await updateCongressionalOverlayVisibility();
   refreshStateBoundaryStyles();
   renderModeUi();
   setStatus(`Viewing ${meta.name || meta.abbr || meta.key} ${capitalize(state.chamber)} districts.`);
@@ -673,6 +724,7 @@ function focusOnState(meta, bounds) {
 
 function enterNationalView() {
   state.mode = "national";
+  state.statewideMode = false;
   state.selectedState = null;
   state.targetJoinKeySet = new Set();
   state.availableMapViews = [];
@@ -680,6 +732,7 @@ function enterNationalView() {
   renderMapViewButtons();
   clearDistrictLayer();
   clearCountyLayers();
+  clearCongressionalLayer();
   if (state.statesLayer && !map.hasLayer(state.statesLayer)) {
     map.addLayer(state.statesLayer);
   }
@@ -702,17 +755,22 @@ function enterNationalView() {
 }
 function renderModeUi() {
   const inState = state.mode === "state";
+  const inStatesideNonStatewide = inState && !state.statewideMode;
   houseChamberBtn.disabled = !inState;
   senateChamberBtn.disabled = !inState;
-  countyOverlayToggle.disabled = !inState;
-  targetDistrictsToggle.disabled = !inState;
+  if (statewideChamberBtn) statewideChamberBtn.disabled = !inState;
+  countyOverlayToggle.disabled = !inState || state.statewideMode;
+  targetDistrictsToggle.disabled = !inState || state.statewideMode;
+  if (congressionalOverlayToggle) congressionalOverlayToggle.disabled = !inState || state.statewideMode;
+  if (cdFilterToggle) cdFilterToggle.disabled = !inState || state.statewideMode;
   syncTargetModeUi();
   syncUpIn2026Ui();
   renderProjectionUi();
   exitStateBtn.hidden = !inState;
-  houseChamberBtn.classList.toggle("active-chamber", state.chamber === "house");
-  senateChamberBtn.classList.toggle("active-chamber", state.chamber === "senate");
-  setMapViewButtonsDisabled(!inState);
+  houseChamberBtn.classList.toggle("active-chamber", inState && !state.statewideMode && state.chamber === "house");
+  senateChamberBtn.classList.toggle("active-chamber", inState && !state.statewideMode && state.chamber === "senate");
+  if (statewideChamberBtn) statewideChamberBtn.classList.toggle("active-chamber", inState && state.statewideMode);
+  setMapViewButtonsDisabled(!inStatesideNonStatewide);
 }
 
 function setMapViewButtonsDisabled(disabled) {
@@ -808,11 +866,11 @@ function renderProjectionUi() {
   }
 
   if (projectionControls) {
-    projectionControls.hidden = !inState;
+    projectionControls.hidden = !inState || state.statewideMode;
     projectionControls.style.setProperty("--projection-accent", accent);
   }
   if (projectionToggleBtn) {
-    projectionToggleBtn.disabled = !inState;
+    projectionToggleBtn.disabled = !inState || state.statewideMode;
     projectionToggleBtn.classList.toggle("active-projection", active);
   }
   if (projectionBaseLegBtn) {
@@ -855,7 +913,7 @@ function renderProjectionUi() {
   }
   if (upIn2026Toggle) {
     upIn2026Toggle.checked = active ? true : !!state.upIn2026Mode;
-    upIn2026Toggle.disabled = !inState || active;
+    upIn2026Toggle.disabled = !inState || active || state.statewideMode;
   }
 }
 
@@ -1249,6 +1307,17 @@ function refreshStateBoundaryStyles() {
 function stateBoundaryStyle(feature) {
   const meta = stateMetaFromFeature(feature);
   const isSelected = state.mode === "state" && state.selectedState && meta.key === state.selectedState.key;
+  if (isSelected && state.statewideMode) {
+    const fips = normalizeStateFips(state.selectedState?.fips);
+    const govMargin = govDemMarginForStateFips(fips);
+    return {
+      color: "#1b2733",
+      weight: 1.5,
+      fillColor: typeof govMargin === "number" ? marginColor(govMargin) : "#d5dae0",
+      fillOpacity: 0.72,
+      opacity: 1,
+    };
+  }
   if (isSelected) {
     return {
       color: "#2f3c4b",
@@ -2104,6 +2173,7 @@ async function toggleTargetFilterControl(section, tier = null) {
     renderDistrictLayerForSelectedState();
   }
   await updateCountyOverlayVisibility();
+  await updateCongressionalOverlayVisibility();
 }
 
 function targetDistrictTableColCount(electionCols = [], showDistrictNameCol = false, includeTierColumn = false, includeOutcomeColumn = false) {
@@ -2950,6 +3020,18 @@ function upIn2026JoinKeySetForSelectedState() {
   return state.upIn2026JoinKeySet || new Set();
 }
 
+function cdJoinKeySetForSelectedState() {
+  const set = new Set();
+  if (!state.selectedState || !state.congressionalTargetsData) return set;
+  const stateFips = normalizeStateFips(state.selectedState.fips);
+  if (!stateFips) return set;
+  const index = state.congressionalTargetsData[state.chamber] || {};
+  for (const [joinKey, cds] of Object.entries(index)) {
+    if (joinKey.startsWith(`${stateFips}|`) && cds?.length) set.add(joinKey);
+  }
+  return set;
+}
+
 function filteredDistrictJoinKeySetForSelectedState() {
   return state.filteredDistrictJoinKeySet || null;
 }
@@ -3004,6 +3086,7 @@ function refreshFilteredDistrictJoinKeySet() {
   const activeSets = [];
   if (state.targetDistrictsMode) activeSets.push(targetJoinKeySetForSelectedState());
   if (state.upIn2026Mode || state.projectionMode) activeSets.push(upIn2026JoinKeySetForSelectedState());
+  if (state.cdFilterMode && state.congressionalTargetsData) activeSets.push(cdJoinKeySetForSelectedState());
 
   if (!activeSets.length) {
     state.filteredDistrictJoinKeySet = null;
@@ -3076,6 +3159,232 @@ async function setUpIn2026Mode(enabled) {
 function syncUpIn2026Ui() {
   if (upIn2026Toggle) upIn2026Toggle.checked = !!state.upIn2026Mode;
 }
+
+async function setCdFilterMode(enabled) {
+  state.cdFilterMode = !!enabled;
+  if (cdFilterToggle) cdFilterToggle.checked = state.cdFilterMode;
+  if (state.mode !== "state") return;
+  await updateCongressionalOverlayVisibility();
+  if (state.districtLayer) {
+    refreshDistrictLayerForActiveFilters();
+  } else {
+    await ensureDistrictShapesLoaded();
+    renderDistrictLayerForSelectedState();
+  }
+}
+
+async function loadCongressionalTargets() {
+  try {
+    const response = await fetch(withCacheBust(CD_TARGETS_JSON_URL));
+    if (!response.ok) return;
+    const data = await response.json();
+    if (data && typeof data === "object" && data.target_cds) {
+      state.congressionalTargetsData = data;
+    }
+  } catch (_err) {
+    // File not yet generated — filter will simply return an empty set.
+  }
+}
+
+// ── Statewide mode ────────────────────────────────────────────────────────────
+
+async function loadStatewides() {
+  try {
+    const response = await fetch(withCacheBust(STATEWIDES_JSON_URL));
+    if (!response.ok) return;
+    const data = await response.json();
+    if (data && typeof data === "object") {
+      state.statewideDataByFips = new Map(Object.entries(data));
+    }
+  } catch (_err) {
+    // Statewide data unavailable — statewide mode will show no incumbent info.
+  }
+}
+
+const STATEWIDE_OFFICE_SORT = [
+  /^gov(ernor)?$/i,
+  /lt\.?\s*gov|lieutenant\s+gov/i,
+  /sec(retary)?\s*(of\s*)?state|^sos$/i,
+  /att(orney)?\s*gen|^ag$/i,
+  /agr(iculture|icultural)|ag\s+comm|farm\s+bur/i,
+  /treas/i,
+  /audit/i,
+];
+
+function statewideOfficeSortIndex(office) {
+  const o = String(office || "").trim();
+  for (let i = 0; i < STATEWIDE_OFFICE_SORT.length; i++) {
+    if (STATEWIDE_OFFICE_SORT[i].test(o)) return i;
+  }
+  return STATEWIDE_OFFICE_SORT.length;
+}
+
+function govDemMarginForStateFips(fips) {
+  const records = state.statewideDataByFips.get(fips) || [];
+  const govRecord = records.find((r) => /^governor$/i.test(String(r.office || "").trim()));
+  if (!govRecord) return null;
+  const elections = [...(govRecord.elections || [])].sort((a, b) => b.year - a.year);
+  const latest = elections.find((e) => typeof e.dem_margin === "number");
+  return latest ? latest.dem_margin : null;
+}
+
+async function setStatewideMode(enabled) {
+  if (enabled) {
+    state.statewideMode = true;
+    if (state.projectionMode) {
+      state.projectionMode = false;
+      state.upIn2026Mode = state.projectionPreviousUpIn2026Mode;
+    }
+    clearDistrictLayer();
+    clearCountyLayers();
+  } else {
+    state.statewideMode = false;
+    if (state.mode === "state") {
+      await ensureDistrictShapesLoaded();
+      renderDistrictLayerForSelectedState();
+      await updateCountyOverlayVisibility();
+    }
+  }
+  refreshStateBoundaryStyles();
+  renderModeUi();
+  if (state.mode === "state") {
+    if (enabled) {
+      showStatewideOverview();
+    } else {
+      showStateChamberOverview();
+    }
+  }
+}
+
+function showStatewideOverview() {
+  state.detailsRenderToken += 1;
+  setHoveredTableRow(null);
+  const fips = normalizeStateFips(state.selectedState?.fips);
+  const stateName = state.selectedState?.name || state.selectedState?.abbr || "";
+  detailsTitle.textContent = `${stateName} Statewide`;
+  const records = [...(state.statewideDataByFips.get(fips) || [])].sort(
+    (a, b) => statewideOfficeSortIndex(a.office) - statewideOfficeSortIndex(b.office)
+  );
+  details.innerHTML = statewideOverviewHtml(records);
+  resetSidebarScroll();
+}
+
+function statewideOverviewHtml(records) {
+  if (!records.length) {
+    return '<div class="detail-section"><div class="detail-meta">No statewide data available.</div></div>';
+  }
+
+  // Determine which years have any data across all records
+  const yearSet = new Set();
+  for (const rec of records) {
+    for (const e of rec.elections || []) yearSet.add(e.year);
+  }
+  const years = [...yearSet].sort((a, b) => b - a); // newest first
+
+  return `
+    <div class="detail-section statewide-cards-section">
+      ${statewideIncumbentCardsHtml(records)}
+    </div>
+    <div class="detail-section">
+      ${statewideTableHtml(records, years)}
+    </div>
+  `;
+}
+
+function statewideIncumbentCardsHtml(records) {
+  const cards = records
+    .map((rec) => {
+      const party = String(rec.party || "").toUpperCase();
+      const partyClass = party === "R" ? "statewide-card-r" : party === "D" ? "statewide-card-d" : "statewide-card-other";
+      const name = rec.incumbent || "Vacant";
+      const partyBadge = party === "R"
+        ? '<span class="statewide-card-party party-letter-r">R</span>'
+        : party === "D"
+          ? '<span class="statewide-card-party party-letter-d">D</span>'
+          : "";
+      return `
+        <div class="statewide-card ${partyClass}">
+          <div class="statewide-card-office">${escapeHtml(rec.office)}</div>
+          <div class="statewide-card-name">${escapeHtml(name)} ${partyBadge}</div>
+        </div>
+      `;
+    })
+    .join("");
+  return `<div class="statewide-cards-row">${cards}</div>`;
+}
+
+function statewideTableHtml(records, years) {
+  const yearHeaders = years.map((y) => `<th class="statewide-year-head">${y}</th>`).join("");
+  const rows = records.map((rec) => statewideTableRowHtml(rec, years)).join("");
+  return `
+    <table class="target-table statewide-table">
+      <thead>
+        <tr>
+          <th class="statewide-office-head">Office</th>
+          <th class="statewide-inc-head">INC</th>
+          <th class="statewide-candidate-head">2026 GOP</th>
+          <th class="statewide-candidate-head">2026 Dem</th>
+          ${yearHeaders}
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+  `;
+}
+
+function statewideTableRowHtml(rec, years) {
+  const isUp = Number(rec.next_election) === 2026;
+  const party = String(rec.party || "").toUpperCase();
+  const incClass = party === "R" ? "inc-r" : party === "D" ? "inc-d" : "inc-u";
+  const partyCell = `<td class="inc-cell ${incClass}"><strong>${escapeHtml(party || "?")}</strong></td>`;
+
+  const electionsByYear = new Map((rec.elections || []).map((e) => [e.year, e]));
+
+  const yearCells = years
+    .map((y) => {
+      const e = electionsByYear.get(y);
+      if (!e) return `<td class="margin-cell margin-cell-na">—</td>`;
+      const color = marginColor(e.dem_margin);
+      const label = formatMargin(e.dem_margin);
+      return `<td class="margin-cell" style="background:${color}">${escapeHtml(label)}</td>`;
+    })
+    .join("");
+
+  if (!isUp) {
+    return `
+      <tr>
+        <td class="statewide-office-cell">${escapeHtml(rec.office)}</td>
+        ${partyCell}
+        <td class="candidate-cell candidate-cell-unavailable" colspan="2">Not up in 2026</td>
+        ${yearCells}
+      </tr>
+    `;
+  }
+
+  const rep = rec.rep_candidate || "";
+  const dem = rec.dem_candidate || "";
+  const inc = String(rec.incumbent || "").trim().toLowerCase();
+  const repIsInc = party === "R" && inc && rep && String(rep).trim().toLowerCase().includes(inc.split(" ").slice(-1)[0]);
+  const demIsInc = party === "D" && inc && dem && String(dem).trim().toLowerCase().includes(inc.split(" ").slice(-1)[0]);
+  const repLine = rep
+    ? `<div class="candidate-line">${escapeHtml(rep)}${repIsInc ? "*" : ""}</div>`
+    : `<div class="candidate-line candidate-line-muted">No candidate</div>`;
+  const demLine = dem
+    ? `<div class="candidate-line">${escapeHtml(dem)}${demIsInc ? "*" : ""}</div>`
+    : `<div class="candidate-line candidate-line-muted">No candidate</div>`;
+
+  return `
+    <tr>
+      <td class="statewide-office-cell">${escapeHtml(rec.office)}</td>
+      ${partyCell}
+      <td class="candidate-cell">${repLine}</td>
+      <td class="candidate-cell">${demLine}</td>
+      ${yearCells}
+    </tr>
+  `;
+}
+
+// ── End statewide mode ────────────────────────────────────────────────────────
 
 function refreshDistrictLayerForActiveFilters(options = {}) {
   const { rebuildLabels = true } = options;
@@ -3815,6 +4124,148 @@ function clearCountyLayers() {
   if (state.countyLabelLayer && map.hasLayer(state.countyLabelLayer)) map.removeLayer(state.countyLabelLayer);
   state.countyLayer = null;
   state.countyLabelLayer = null;
+}
+
+async function ensureCongressionalShapeLoaded(abbr) {
+  if (state.congressionalGeojsonByState.has(abbr)) return;
+  setStatus("Loading congressional district boundaries...");
+  // Some state congressional shapefiles are in projected coordinates (LCC, UTM,
+  // Web Mercator).  A pre-converted WGS84 GeoJSON sidecar is used when present
+  // so Leaflet renders them at the correct location.
+  const geojsonUrl = `data/shapes/congressionals/${abbr.toUpperCase()}.geojson`;
+  const zipUrl     = `data/shapes/congressionals/${abbr.toUpperCase()}.zip`;
+  let geojson = null;
+  try {
+    const res = await fetch(withCacheBust(geojsonUrl));
+    if (res.ok) geojson = await res.json();
+  } catch (_) {}
+  if (!geojson) geojson = await loadUrlZipToGeojson(zipUrl);
+  state.congressionalGeojsonByState.set(abbr, geojson || null);
+}
+
+async function updateCongressionalOverlayVisibility() {
+  if (!state.congressionalVisible || state.mode !== "state" || !state.selectedState) {
+    clearCongressionalLayer();
+    return;
+  }
+
+  const abbr = state.selectedState.abbr;
+  if (!abbr) {
+    clearCongressionalLayer();
+    return;
+  }
+
+  await ensureCongressionalShapeLoaded(abbr);
+  const geojson = state.congressionalGeojsonByState.get(abbr);
+  if (!geojson) {
+    clearCongressionalLayer();
+    return;
+  }
+
+  const visibleGeojson = cdFilteredGeojson(geojson, abbr);
+  clearCongressionalLayer();
+  state.congressionalLayer = L.geoJSON(visibleGeojson, {
+    pane: "congressionalPane",
+    interactive: false,
+    style: {
+      color: "#e8b84b",
+      weight: 3.0,
+      fillOpacity: 0,
+      opacity: 0.85,
+    },
+  }).addTo(map);
+  state.congressionalLabelLayer = buildCongressionalLabelLayer(visibleGeojson);
+  refreshCongressionalLabels();
+}
+
+function cdFilteredGeojson(geojson, abbr) {
+  if (!state.cdFilterMode || !state.congressionalTargetsData) return geojson;
+  const targetSet = new Set(state.congressionalTargetsData.target_cds || []);
+  const features = (geojson.features || []).filter((f) => {
+    const num = cdDistrictLabel(f.properties || {});
+    return num && targetSet.has(`${abbr}-${num}`);
+  });
+  return { type: "FeatureCollection", features };
+}
+
+function clearCongressionalLayer() {
+  if (state.congressionalLayer && map.hasLayer(state.congressionalLayer)) {
+    map.removeLayer(state.congressionalLayer);
+  }
+  state.congressionalLayer = null;
+  if (state.congressionalLabelLayer && map.hasLayer(state.congressionalLabelLayer)) {
+    map.removeLayer(state.congressionalLabelLayer);
+  }
+  state.congressionalLabelLayer = null;
+}
+
+function cdDistrictLabel(props) {
+  // Try common TIGER field names for the CD number
+  for (const field of ["CD119FP", "CD118FP", "CD117FP", "DISTRICT", "CD_NUM", "CDLABEL"]) {
+    const val = String(readProperty(props, field) || "").trim().replace(/^0+/, "") || null;
+    if (val && val.toUpperCase() !== "ZZ" && val !== "") return val;
+  }
+  // Fall back to parsing NAMELSAD: "Congressional District 5" → "5"
+  const namelsad = String(readProperty(props, "NAMELSAD") || "").trim();
+  const match = namelsad.match(/\b(\d+)\s*$/);
+  if (match) return match[1];
+  return null;
+}
+
+function buildCongressionalLabelLayer(geojson) {
+  const group = L.layerGroup();
+  for (const feature of geojson.features || []) {
+    const label = cdDistrictLabel(feature.properties || {});
+    if (!label) continue;
+    const bounds = geometryBounds(feature.geometry);
+    if (!bounds.isValid()) continue;
+    const marker = L.marker(bounds.getCenter(), {
+      pane: "congressionalLabelPane",
+      interactive: false,
+      icon: L.divIcon({ className: "cd-number-label-wrap", html: "" }),
+    });
+    marker.__cdBounds = bounds;
+    marker.__cdText = label;
+    marker.addTo(group);
+  }
+  return group.addTo(map);
+}
+
+function refreshCongressionalLabels() {
+  if (!state.congressionalLabelLayer) return;
+  if (!state.congressionalVisible || state.mode !== "state") {
+    if (map.hasLayer(state.congressionalLabelLayer)) map.removeLayer(state.congressionalLabelLayer);
+    return;
+  }
+  if (!map.hasLayer(state.congressionalLabelLayer)) map.addLayer(state.congressionalLabelLayer);
+
+  const viewBounds = map.getBounds().pad(0.06);
+  state.congressionalLabelLayer.eachLayer((marker) => {
+    const bounds = marker.__cdBounds;
+    const text = marker.__cdText || "";
+    if (!bounds || !bounds.isValid() || !text) return;
+
+    if (!viewBounds.intersects(bounds)) {
+      marker.setIcon(L.divIcon({ className: "cd-number-label-wrap", html: "" }));
+      return;
+    }
+
+    const nw = map.latLngToContainerPoint(bounds.getNorthWest());
+    const se = map.latLngToContainerPoint(bounds.getSouthEast());
+    const width = Math.max(0, Math.abs(se.x - nw.x));
+    const height = Math.max(0, Math.abs(se.y - nw.y));
+    const minWidthNeeded = Math.max(12, text.length * 7);
+    if (width < minWidthNeeded || height < 12) {
+      marker.setIcon(L.divIcon({ className: "cd-number-label-wrap", html: "" }));
+      return;
+    }
+
+    const byWidth = width / Math.max(1, text.length * 0.82);
+    const byHeight = height * 0.72;
+    const size = Math.max(13, Math.min(26, Math.min(byWidth, byHeight)));
+    const html = `<span class="cd-number-label" style="font-size:${size.toFixed(1)}px;">${escapeHtml(text)}</span>`;
+    marker.setIcon(L.divIcon({ className: "cd-number-label-wrap", html }));
+  });
 }
 
 function featureMatchesSelectedState(properties = {}) {
@@ -4986,13 +5437,19 @@ function normalizeTo100(items) {
 
 async function setChamber(chamber) {
   if (chamber !== "house" && chamber !== "senate") return;
-  if (state.chamber === chamber) return;
+  const wasStatewide = state.statewideMode;
+  if (state.chamber === chamber && !wasStatewide) return;
+  state.statewideMode = false;
   state.chamber = chamber;
   refreshTargetJoinKeySet();
   renderModeUi();
   if (state.mode === "state") {
     await ensureDistrictShapesLoaded();
     renderDistrictLayerForSelectedState();
+    refreshStateBoundaryStyles();
+    if (wasStatewide) {
+      showStateChamberOverview();
+    }
   }
 }
 

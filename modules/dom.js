@@ -1,5 +1,6 @@
 export const houseChamberBtn = document.getElementById("houseChamberBtn");
 export const senateChamberBtn = document.getElementById("senateChamberBtn");
+export const statewideChamberBtn = document.getElementById("statewideChamberBtn");
 export const mapViewButtons = document.getElementById("mapViewButtons");
 export const projectionControls = document.getElementById("projectionControls");
 export const projectionToggleBtn = document.getElementById("projectionToggleBtn");
@@ -8,6 +9,8 @@ export const projectionBasePresBtn = document.getElementById("projectionBasePres
 export const projectionShiftSlider = document.getElementById("projectionShiftSlider");
 export const projectionShiftValue = document.getElementById("projectionShiftValue");
 export const countyOverlayToggle = document.getElementById("countyOverlayToggle");
+export const congressionalOverlayToggle = document.getElementById("congressionalOverlayToggle");
+export const cdFilterToggle = document.getElementById("cdFilterToggle");
 export const targetDistrictsToggle = document.getElementById("targetDistrictsToggle");
 export const upIn2026Toggle = document.getElementById("upIn2026Toggle");
 export const stateSelect = document.getElementById("stateSelect");

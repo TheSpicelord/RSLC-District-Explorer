@@ -10,7 +10,15 @@
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   />
-  <link rel="stylesheet" href="style.css?v=20260317e" />
+  <link rel="stylesheet" href="style.css?v=20260416b" />
+  <script>
+    (function () {
+      var expires = localStorage.getItem("rslc_auth_expires");
+      if (!expires || Date.now() >= Number(expires)) {
+        document.documentElement.classList.add("auth-pending");
+      }
+    })();
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -26,6 +34,7 @@
           <div class="chamber-buttons">
             <button id="houseChamberBtn" type="button">Lower Chamber</button>
             <button id="senateChamberBtn" type="button">Upper Chamber</button>
+            <button id="statewideChamberBtn" type="button">Statewide</button>
           </div>
         </div>
         <div class="controls-row controls-row-secondary">
@@ -42,6 +51,14 @@
             <label class="county-overlay-label">
               <input id="targetDistrictsToggle" type="checkbox" />
               Target Districts
+            </label>
+            <label class="county-overlay-label">
+              <input id="congressionalOverlayToggle" type="checkbox" />
+              CD Overlay
+            </label>
+            <label class="county-overlay-label">
+              <input id="cdFilterToggle" type="checkbox" />
+              Target CD Filter
             </label>
           </div>
         </div>
@@ -92,7 +109,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"></script>
-  <script type="module" src="app.js?v=20260317e"></script>
+  <script type="module" src="app.js?v=20260416b"></script>
 </body>
 </html>
 

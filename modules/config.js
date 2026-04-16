@@ -15,6 +15,8 @@ export const AUTO_SHAPE_URLS = {
 };
 
 export const TARGET_DISTRICTS_JSON_URLS = ["data/target_districts.json"];
+export const CD_TARGETS_JSON_URL = "data/congressional_targets.json";
+export const STATEWIDES_JSON_URL = "data/statewides.json";
 export const CHAMBER_INDEX_URLS = ["data/chamber_files.json"];
 export const STATE_CHAMBER_NAMES_URLS = ["data/state_chamber_names.json"];
 export const WORKBOOK_URLS = [
