@@ -117,7 +117,7 @@ const RGA_SEVEN_BUCKET_COLOR_CLASSES = [
   "color-model-dem-base",
 ];
 
-const BUILD_VERSION = "20260602a";
+const BUILD_VERSION = "20260602b";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
