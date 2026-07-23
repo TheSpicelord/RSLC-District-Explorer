@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local backups and scratch files
+Backup/
+data/_tmp_*.xlsx
+
+# OS cruft
+.DS_Store
+Thumbs.db
