@@ -162,7 +162,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260813b";
+const BUILD_VERSION = "20260813c";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();

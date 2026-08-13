@@ -1911,43 +1911,33 @@ body.projection-active .chamber-buttons {
   background: rgba(255, 255, 255, 0.05);
 }
 
-/* Vertical rules inside each chamber group. The MARGIN column needs one too, or it runs
-   into "Ind Seats" while every other pair is divided.
-   Body cells are State(1) GOP(2) Dem(3) Ind(4) Margin(5) gap(6) GOP(7) Dem(8) Ind(9)
-   Margin(10). The second header row has no gap cell — the spacer is a rowspan from row one
-   — so its upper-chamber columns sit one place earlier, at 6-9 rather than 7-10. */
-.national-overview-table td:nth-child(2),
-.national-overview-table td:nth-child(3),
-.national-overview-table td:nth-child(4),
-.national-overview-table td:nth-child(5),
-.national-overview-table td:nth-child(7),
-.national-overview-table td:nth-child(8),
-.national-overview-table td:nth-child(9),
-.national-overview-table td:nth-child(10) {
-  border-left: 1px solid #2f3a47;
+/* Full grid on every cell, like the target tables. Positional (nth-child) rules were
+   fragile here: the second header row has no gap cell — the spacer is a rowspan from row
+   one — so its columns sit one place earlier than the body's, and every column added or
+   removed re-shifts both lists. Bordering all four sides needs no column arithmetic. */
+.national-overview-table th,
+.national-overview-table td {
+  border: 1px solid var(--border);
 }
 
-.national-overview-table thead tr:nth-child(2) th:nth-child(2),
-.national-overview-table thead tr:nth-child(2) th:nth-child(3),
-.national-overview-table thead tr:nth-child(2) th:nth-child(4),
-.national-overview-table thead tr:nth-child(2) th:nth-child(5),
-.national-overview-table thead tr:nth-child(2) th:nth-child(6),
-.national-overview-table thead tr:nth-child(2) th:nth-child(7),
-.national-overview-table thead tr:nth-child(2) th:nth-child(8),
-.national-overview-table thead tr:nth-child(2) th:nth-child(9) {
-  border-left: 1px solid #2f3a47;
+/* Margin cells already carry the black rule every coloured margin column uses; give the
+   header the same one so the column reads as a single block rather than a boxed body
+   sitting under an unboxed head. */
+.national-overview-table th.national-margin-head {
+  border: 1px solid #000 !important;
 }
 
-/* Close the group headers over the columns they span. */
-.national-overview-table .national-section-head {
-  border-left: 1px solid #2f3a47;
-}
-
+/* The spacer between the chambers draws no rules of its own; the vertical lines on either
+   side of it come from the neighbouring cells, leaving a clean 12px break between the two
+   groups. The sides must be `none` rather than transparent: under border-collapse a
+   transparent border still competes with its neighbour's, and on the right-hand edge the
+   gap cell would win and erase the upper chamber's opening line. */
 .national-gap-col,
 .national-gap-cell {
   width: 12px;
   min-width: 12px;
   padding: 0 !important;
+  border: none !important;
   border-bottom: 1px solid transparent !important;
   background: transparent;
 }
