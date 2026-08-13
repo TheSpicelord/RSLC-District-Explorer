@@ -65,6 +65,12 @@ body {
   row-gap: 0.5rem;
 }
 
+/* display:flex above outranks the browser's [hidden] rule, so hiding the row from JS needs
+   an explicit override. */
+.controls-row[hidden] {
+  display: none;
+}
+
 label {
   font-size: 0.92rem;
   color: var(--muted);
@@ -1859,8 +1865,9 @@ body.projection-active .chamber-buttons {
   border-bottom: 1px solid var(--border);
 }
 
+/* Headers sit at the same 0.9rem as the body rows above. */
 .national-overview-table .national-state-head {
-  font-size: 1.02rem !important;
+  font-size: 0.9rem !important;
   font-weight: 800;
 }
 
@@ -1876,7 +1883,7 @@ body.projection-active .chamber-buttons {
 }
 
 .national-section-head {
-  font-size: 0.92rem !important;
+  font-size: 0.9rem !important;
 }
 
 .national-overview-table thead tr:nth-child(2) th {
@@ -1904,21 +1911,35 @@ body.projection-active .chamber-buttons {
   background: rgba(255, 255, 255, 0.05);
 }
 
+/* Vertical rules inside each chamber group. The MARGIN column needs one too, or it runs
+   into "Ind Seats" while every other pair is divided.
+   Body cells are State(1) GOP(2) Dem(3) Ind(4) Margin(5) gap(6) GOP(7) Dem(8) Ind(9)
+   Margin(10). The second header row has no gap cell — the spacer is a rowspan from row one
+   — so its upper-chamber columns sit one place earlier, at 6-9 rather than 7-10. */
 .national-overview-table td:nth-child(2),
 .national-overview-table td:nth-child(3),
 .national-overview-table td:nth-child(4),
+.national-overview-table td:nth-child(5),
 .national-overview-table td:nth-child(7),
 .national-overview-table td:nth-child(8),
-.national-overview-table td:nth-child(9) {
+.national-overview-table td:nth-child(9),
+.national-overview-table td:nth-child(10) {
   border-left: 1px solid #2f3a47;
 }
 
 .national-overview-table thead tr:nth-child(2) th:nth-child(2),
 .national-overview-table thead tr:nth-child(2) th:nth-child(3),
 .national-overview-table thead tr:nth-child(2) th:nth-child(4),
+.national-overview-table thead tr:nth-child(2) th:nth-child(5),
 .national-overview-table thead tr:nth-child(2) th:nth-child(6),
 .national-overview-table thead tr:nth-child(2) th:nth-child(7),
-.national-overview-table thead tr:nth-child(2) th:nth-child(8) {
+.national-overview-table thead tr:nth-child(2) th:nth-child(8),
+.national-overview-table thead tr:nth-child(2) th:nth-child(9) {
+  border-left: 1px solid #2f3a47;
+}
+
+/* Close the group headers over the columns they span. */
+.national-overview-table .national-section-head {
   border-left: 1px solid #2f3a47;
 }
 

@@ -41,6 +41,17 @@ from build_model_margins import (MODELS, ON_HOLD, EXTERNAL_MODELS, FILE_STEM, JO
 # numbers, which is how Iowa nearly picked them up while it was on hold.
 DEDICATED = set(MODELS) | set(ON_HOLD) | set(EXTERNAL_MODELS)
 
+# States where the national model does not describe the electorate and is left blank rather
+# than shown. Both have unusual party identification — Alaska's plurality-undeclared
+# registration, Hawaii's absence of party registration — so the audiences carry a ~47 point
+# systematic bias and never place a district on the other side:
+#   AK  model mean R+58.8 vs presidential R+11.3; no district reads Democratic, though
+#       several are (presidential range runs to D+37).
+#   HI  model mean D+68.7 vs presidential D+21.2; nothing below D+35, though some are R+13.
+# Correlation alone does not catch this — Alaska ranks districts fine (r=+0.90); it is the
+# offset that makes the number unusable.
+NATIONAL_EXCLUDE = {"AK", "HI"}
+
 TABLE = "RSLC DRA June National Audiences and Scores"
 GOP_COL = "RSLC Republican Legislative Voters"
 DEM_COL = "RSLC Democratic Legislative Voters"
@@ -246,7 +257,7 @@ def fallback_states():
     states = set()
     for stem in found:
         states.add(stem_to_abbr.get(stem, stem.upper()))
-    return sorted(states - DEDICATED)
+    return sorted(states - DEDICATED - NATIONAL_EXCLUDE)
 
 
 def already_done(state):
@@ -299,6 +310,9 @@ def main():
         clash = [s for s in states if s in DEDICATED]
         if clash:
             sys.exit(f"These states have a dedicated model, refusing to overwrite: {clash}")
+        excluded = [s for s in states if s in NATIONAL_EXCLUDE]
+        if excluded:
+            sys.exit(f"The national model is a poor fit for {excluded}; see NATIONAL_EXCLUDE.")
 
     if args.resume:
         skipped = [s for s in states if already_done(s)]

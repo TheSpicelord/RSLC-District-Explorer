@@ -56,8 +56,7 @@
   "view_margins": {
    "leg_2022": -99.2,
    "latest_leg": -99.2,
-   "pres_2024": -8.0,
-   "model_drnatl_all": 64.2
+   "pres_2024": -8.0
   },
   "pres_2024_margin": -8.0,
   "gov_2022_margin": null,
@@ -70,36 +69,6 @@
   "candidates_2026": {
    "rep": "Bert Stedman",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 79.4
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 5.4
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 15.2
-      }
-     ],
-     "margin": 64.2,
-     "gop_legislative": 79.4,
-     "unaligned": 5.4,
-     "dem_legislative": 15.2
-    }
-   }
   }
  },
  {
@@ -159,8 +128,7 @@
   "view_margins": {
    "leg_2024": 96.5,
    "latest_leg": 96.5,
-   "pres_2024": 25.0,
-   "model_drnatl_all": 39.3
+   "pres_2024": 25.0
   },
   "pres_2024_margin": 25.0,
   "gov_2022_margin": null,
@@ -173,36 +141,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 64.7
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 10.0
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 25.3
-      }
-     ],
-     "margin": 39.3,
-     "gop_legislative": 64.7,
-     "unaligned": 10.0,
-     "dem_legislative": 25.3
-    }
-   }
   }
  },
  {
@@ -262,8 +200,7 @@
   "view_margins": {
    "leg_2022": -98.1,
    "latest_leg": -98.1,
-   "pres_2024": -14.8,
-   "model_drnatl_all": 70.5
+   "pres_2024": -14.8
   },
   "pres_2024_margin": -14.8,
   "gov_2022_margin": null,
@@ -276,36 +213,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 83.1
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 4.3
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 12.6
-      }
-     ],
-     "margin": 70.5,
-     "gop_legislative": 83.1,
-     "unaligned": 4.3,
-     "dem_legislative": 12.6
-    }
-   }
   }
  },
  {
@@ -365,8 +272,7 @@
   "view_margins": {
    "leg_2024": -71.8,
    "latest_leg": -71.8,
-   "pres_2024": -47.2,
-   "model_drnatl_all": 84.7
+   "pres_2024": -47.2
   },
   "pres_2024_margin": -47.2,
   "gov_2022_margin": null,
@@ -379,36 +285,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 91.3
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 2.2
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 6.6
-      }
-     ],
-     "margin": 84.7,
-     "gop_legislative": 91.3,
-     "unaligned": 2.2,
-     "dem_legislative": 6.6
-    }
-   }
   }
  },
  {
@@ -468,8 +344,7 @@
   "view_margins": {
    "leg_2022": -33.8,
    "latest_leg": -33.8,
-   "pres_2024": -0.1,
-   "model_drnatl_all": 63.1
+   "pres_2024": -0.1
   },
   "pres_2024_margin": -0.1,
   "gov_2022_margin": null,
@@ -482,36 +357,6 @@
   "candidates_2026": {
    "rep": "Cathy Giessel",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 78.8
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 5.6
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 15.6
-      }
-     ],
-     "margin": 63.1,
-     "gop_legislative": 78.8,
-     "unaligned": 5.6,
-     "dem_legislative": 15.6
-    }
-   }
   }
  },
  {
@@ -571,8 +416,7 @@
   "view_margins": {
    "leg_2024": -2.4,
    "latest_leg": -2.4,
-   "pres_2024": -0.7,
-   "model_drnatl_all": 57.0
+   "pres_2024": -0.7
   },
   "pres_2024_margin": -0.7,
   "gov_2022_margin": null,
@@ -585,36 +429,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 75.0
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.9
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 18.1
-      }
-     ],
-     "margin": 57.0,
-     "gop_legislative": 75.0,
-     "unaligned": 6.9,
-     "dem_legislative": 18.1
-    }
-   }
   }
  },
  {
@@ -674,8 +488,7 @@
   "view_margins": {
    "leg_2022": 13.3,
    "latest_leg": 13.3,
-   "pres_2024": 11.1,
-   "model_drnatl_all": 41.1
+   "pres_2024": 11.1
   },
   "pres_2024_margin": 11.1,
   "gov_2022_margin": null,
@@ -688,36 +501,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "Elvi Gray-Jackson"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 64.5
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 12.0
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 23.5
-      }
-     ],
-     "margin": 41.1,
-     "gop_legislative": 64.5,
-     "unaligned": 12.0,
-     "dem_legislative": 23.5
-    }
-   }
   }
  },
  {
@@ -777,8 +560,7 @@
   "view_margins": {
    "leg_2024": 10.8,
    "latest_leg": 10.8,
-   "pres_2024": 6.2,
-   "model_drnatl_all": 52.3
+   "pres_2024": 6.2
   },
   "pres_2024_margin": 6.2,
   "gov_2022_margin": null,
@@ -791,36 +573,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 71.6
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 9.2
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 19.3
-      }
-     ],
-     "margin": 52.3,
-     "gop_legislative": 71.6,
-     "unaligned": 9.2,
-     "dem_legislative": 19.3
-    }
-   }
   }
  },
  {
@@ -880,8 +632,7 @@
   "view_margins": {
    "leg_2022": 66.4,
    "latest_leg": 66.4,
-   "pres_2024": 14.6,
-   "model_drnatl_all": 32.2
+   "pres_2024": 14.6
   },
   "pres_2024_margin": 14.6,
   "gov_2022_margin": null,
@@ -894,36 +645,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "Löki Tobin"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 59.4
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 13.4
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 27.2
-      }
-     ],
-     "margin": 32.2,
-     "gop_legislative": 59.4,
-     "unaligned": 13.4,
-     "dem_legislative": 27.2
-    }
-   }
   }
  },
  {
@@ -983,8 +704,7 @@
   "view_margins": {
    "leg_2024": 69.8,
    "latest_leg": 69.8,
-   "pres_2024": 14.1,
-   "model_drnatl_all": 28.3
+   "pres_2024": 14.1
   },
   "pres_2024_margin": 14.1,
   "gov_2022_margin": null,
@@ -997,36 +717,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 57.8
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 12.7
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 29.5
-      }
-     ],
-     "margin": 28.3,
-     "gop_legislative": 57.8,
-     "unaligned": 12.7,
-     "dem_legislative": 29.5
-    }
-   }
   }
  },
  {
@@ -1086,8 +776,7 @@
   "view_margins": {
    "leg_2022": 16.3,
    "latest_leg": 16.3,
-   "pres_2024": 5.5,
-   "model_drnatl_all": 45.8
+   "pres_2024": 5.5
   },
   "pres_2024_margin": 5.5,
   "gov_2022_margin": null,
@@ -1100,36 +789,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "Bill Wielechowski"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 68.9
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 8.0
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 23.1
-      }
-     ],
-     "margin": 45.8,
-     "gop_legislative": 68.9,
-     "unaligned": 8.0,
-     "dem_legislative": 23.1
-    }
-   }
   }
  },
  {
@@ -1189,8 +848,7 @@
   "view_margins": {
    "leg_2024": -71.7,
    "latest_leg": -71.7,
-   "pres_2024": -25.2,
-   "model_drnatl_all": 72.7
+   "pres_2024": -25.2
   },
   "pres_2024_margin": -25.2,
   "gov_2022_margin": null,
@@ -1203,36 +861,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 83.9
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 4.8
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 11.3
-      }
-     ],
-     "margin": 72.7,
-     "gop_legislative": 83.9,
-     "unaligned": 4.8,
-     "dem_legislative": 11.3
-    }
-   }
   }
  },
  {
@@ -1292,8 +920,7 @@
   "view_margins": {
    "leg_2022": -51.8,
    "latest_leg": -51.8,
-   "pres_2024": -44.4,
-   "model_drnatl_all": 83.8
+   "pres_2024": -44.4
   },
   "pres_2024_margin": -44.4,
   "gov_2022_margin": null,
@@ -1306,36 +933,6 @@
   "candidates_2026": {
    "rep": "Cathy Tilton",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 90.7
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 2.5
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 6.8
-      }
-     ],
-     "margin": 83.8,
-     "gop_legislative": 90.7,
-     "unaligned": 2.5,
-     "dem_legislative": 6.8
-    }
-   }
   }
  },
  {
@@ -1395,8 +992,7 @@
   "view_margins": {
    "leg_2024": -97.6,
    "latest_leg": -97.6,
-   "pres_2024": -52.3,
-   "model_drnatl_all": 84.9
+   "pres_2024": -52.3
   },
   "pres_2024_margin": -52.3,
   "gov_2022_margin": null,
@@ -1409,36 +1005,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 91.3
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 2.2
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 6.4
-      }
-     ],
-     "margin": 84.9,
-     "gop_legislative": 91.3,
-     "unaligned": 2.2,
-     "dem_legislative": 6.4
-    }
-   }
   }
  },
  {
@@ -1498,8 +1064,7 @@
   "view_margins": {
    "leg_2022": -97.6,
    "latest_leg": -97.6,
-   "pres_2024": -44.8,
-   "model_drnatl_all": 83.7
+   "pres_2024": -44.8
   },
   "pres_2024_margin": -44.8,
   "gov_2022_margin": null,
@@ -1512,36 +1077,6 @@
   "candidates_2026": {
    "rep": "George Rauscher",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 90.3
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 3.1
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 6.6
-      }
-     ],
-     "margin": 83.7,
-     "gop_legislative": 90.3,
-     "unaligned": 3.1,
-     "dem_legislative": 6.6
-    }
-   }
   }
  },
  {
@@ -1601,8 +1136,7 @@
   "view_margins": {
    "leg_2024": 3.1,
    "latest_leg": 3.1,
-   "pres_2024": -16.3,
-   "model_drnatl_all": 51.9
+   "pres_2024": -16.3
   },
   "pres_2024_margin": -16.3,
   "gov_2022_margin": null,
@@ -1615,36 +1149,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 70.5
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 10.8
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 18.6
-      }
-     ],
-     "margin": 51.9,
-     "gop_legislative": 70.5,
-     "unaligned": 10.8,
-     "dem_legislative": 18.6
-    }
-   }
   }
  },
  {
@@ -1704,8 +1208,7 @@
   "view_margins": {
    "leg_2022": -25.1,
    "latest_leg": -25.1,
-   "pres_2024": -35.0,
-   "model_drnatl_all": 75.7
+   "pres_2024": -35.0
   },
   "pres_2024_margin": -35.0,
   "gov_2022_margin": null,
@@ -1718,36 +1221,6 @@
   "candidates_2026": {
    "rep": "Robert Myers",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 85.7
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 4.4
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 9.9
-      }
-     ],
-     "margin": 75.7,
-     "gop_legislative": 85.7,
-     "unaligned": 4.4,
-     "dem_legislative": 9.9
-    }
-   }
   }
  },
  {
@@ -1807,8 +1280,7 @@
   "view_margins": {
    "leg_2024": -3.7,
    "latest_leg": -3.7,
-   "pres_2024": -8.3,
-   "model_drnatl_all": 59.4
+   "pres_2024": -8.3
   },
   "pres_2024_margin": -8.3,
   "gov_2022_margin": null,
@@ -1821,36 +1293,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 75.8
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.8
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 16.4
-      }
-     ],
-     "margin": 59.4,
-     "gop_legislative": 75.8,
-     "unaligned": 7.8,
-     "dem_legislative": 16.4
-    }
-   }
   }
  },
  {
@@ -1910,8 +1352,7 @@
   "view_margins": {
    "leg_2022": 64.7,
    "latest_leg": 64.7,
-   "pres_2024": 2.2,
-   "model_drnatl_all": 42.5
+   "pres_2024": 2.2
   },
   "pres_2024_margin": 2.2,
   "gov_2022_margin": null,
@@ -1924,36 +1365,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 64.2
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 14.0
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 21.7
-      }
-     ],
-     "margin": 42.5,
-     "gop_legislative": 64.2,
-     "unaligned": 14.0,
-     "dem_legislative": 21.7
-    }
-   }
   }
  },
  {
@@ -2013,8 +1424,7 @@
   "view_margins": {
    "leg_2024": 97.6,
    "latest_leg": 97.6,
-   "pres_2024": 2.2,
-   "model_drnatl_all": 44.5
+   "pres_2024": 2.2
   },
   "pres_2024_margin": 2.2,
   "gov_2022_margin": null,
@@ -2027,36 +1437,6 @@
   "candidates_2026": {
    "rep": "No candidate",
    "dem": "No candidate"
-  },
-  "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
-    "variant": "All",
-    "affinity": {
-     "segments": [
-      {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 67.0
-      },
-      {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 10.6
-      },
-      {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 22.4
-      }
-     ],
-     "margin": 44.5,
-     "gop_legislative": 67.0,
-     "unaligned": 10.6,
-     "dem_legislative": 22.4
-    }
-   }
   }
  }
 ]

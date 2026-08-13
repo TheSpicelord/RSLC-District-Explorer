@@ -55,6 +55,9 @@ const projectionShiftBox = document.querySelector(".projection-shift-box");
 const projectionShiftCaption = document.querySelector(".projection-shift-caption");
 const projectionSliderFill = document.getElementById("projectionSliderFill");
 const projectionSliderThumb = document.getElementById("projectionSliderThumb");
+// Map-view buttons and the overlay toggles only mean anything once a state is chosen, so
+// the whole row is hidden on the national overview rather than shown disabled.
+const controlsRowSecondary = document.querySelector(".controls-row-secondary");
 
 const MODEL_VIEW_META = {
   model_hrcc_hm:      { label: "HRCC (H+M)", order: 0,  tableTop: "HRCC", tableBottom: "H+M" },
@@ -159,7 +162,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260813a";
+const BUILD_VERSION = "20260813b";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -798,6 +801,7 @@ function enterNationalView() {
 function renderModeUi() {
   const inState = state.mode === "state";
   const inStatesideNonStatewide = inState && !state.statewideMode;
+  if (controlsRowSecondary) controlsRowSecondary.hidden = !inState;
   houseChamberBtn.disabled = !inState;
   senateChamberBtn.disabled = !inState;
   if (statewideChamberBtn) statewideChamberBtn.disabled = !inState;
