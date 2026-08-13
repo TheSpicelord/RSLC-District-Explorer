@@ -308,34 +308,41 @@ def val(row: Dict[int, str], col: str):
     return row.get(col_to_idx(col), "")
 
 
+# Column letters for the SLDL/SLDU sheets only (build_rows); the per-state override tabs
+# have their own layout.
+#
+# A "2025 Gubernatorial Elections" block was inserted at BJ-BQ, pushing everything from the
+# incumbent block onward 8 columns to the right. The legislative/top-ticket election columns
+# above (LEG_ELECTION_COLS, TOP_TICKET_COLS) sit before BJ and are unaffected. Symptom of a
+# future shift: "ignored N Leg Tier values outside 1-4" where the reported values are
+# decimals — that means leg_tier is pointing at a demographics percentage.
 MAIN_SHEET_COLS = {
     "district_name": "E",
-    "incumbent_party": "BJ",
-    "incumbent_name": "BK",
-    "rep_candidate": "BL",
-    "dem_candidate": "BM",
-    "next_election": "BN",
-    "djt_tier": "CS",
-    "leg_tier": "CT",
+    "incumbent_party": "BR",
+    "incumbent_name": "BS",
+    "rep_candidate": "BT",
+    "dem_candidate": "BU",
+    "next_election": "BV",
+    "leg_tier": "DA",
     "demographics": {
-        "rural_pct": "BZ",
-        "town_pct": "CA",
-        "suburban_pct": "CB",
-        "urban_pct": "CC",
-        "white_pct": "CD",
-        "hispanic_pct": "CE",
-        "black_pct": "CF",
-        "asian_pct": "CG",
-        "other_pct": "CH",
-        "lt_50k": "CI",
-        "between_50_100k": "CJ",
-        "gt_150k": "CK",
-        "unknown_pct": "CL",
-        "non_college_pct": "CM",
-        "college_pct": "CN",
-        "post_grad_pct": "CO",
-        "education_unknown_pct": "CP",
-        "total_voters": "CQ",
+        "rural_pct": "CH",
+        "town_pct": "CI",
+        "suburban_pct": "CJ",
+        "urban_pct": "CK",
+        "white_pct": "CL",
+        "hispanic_pct": "CM",
+        "black_pct": "CN",
+        "asian_pct": "CO",
+        "other_pct": "CP",
+        "lt_50k": "CQ",
+        "between_50_100k": "CR",
+        "gt_150k": "CS",
+        "unknown_pct": "CT",
+        "non_college_pct": "CU",
+        "college_pct": "CV",
+        "post_grad_pct": "CW",
+        "education_unknown_pct": "CX",
+        "total_voters": "CY",
     },
 }
 
@@ -378,40 +385,22 @@ def parse_tier_value(value):
     return None
 
 
-def resolve_district_tier(djt_raw, leg_raw, tier_audit=None, sheet_name="", state_abbr="", district_id=""):
-    djt_text = str(djt_raw or "").strip()
+def resolve_district_tier(leg_raw, tier_audit=None, sheet_name="", state_abbr="", district_id=""):
+    """Tier comes from the workbook's single 'Leg Tier' column. '0' means untiered."""
     leg_text = str(leg_raw or "").strip()
-    djt_tier = parse_tier_value(djt_text)
     leg_tier = parse_tier_value(leg_text)
 
     if tier_audit is not None:
         bucket = tier_audit.setdefault(
             sheet_name or "UNKNOWN",
-            {
-                "invalid_djt": 0,
-                "invalid_leg": 0,
-                "both_valid": [],
-            },
+            {"invalid_leg": 0, "unparsed": []},
         )
-        if djt_text and djt_tier is None:
-            bucket["invalid_djt"] += 1
-        if leg_text and leg_tier is None:
+        if leg_text and leg_text != "0" and leg_tier is None:
             bucket["invalid_leg"] += 1
-        if djt_tier in VALID_TIER_VALUES and leg_tier in VALID_TIER_VALUES:
-            bucket["both_valid"].append(
-                {
-                    "state": state_abbr,
-                    "district_id": district_id,
-                    "djt_tier": djt_tier,
-                    "leg_tier": leg_tier,
-                }
-            )
+            if len(bucket["unparsed"]) < 5:
+                bucket["unparsed"].append(f"{state_abbr}-{district_id}={leg_text!r}")
 
-    if djt_tier in VALID_TIER_VALUES:
-        return djt_tier
-    if leg_tier in VALID_TIER_VALUES:
-        return leg_tier
-    return None
+    return leg_tier if leg_tier in VALID_TIER_VALUES else None
 
 
 def normalize_modeling_chamber(value: str) -> str:
@@ -806,7 +795,6 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str, ti
         dem_name = str(val(row, MAIN_SHEET_COLS["dem_candidate"]) or "").strip() or "No candidate"
         next_election = parse_next_election(val(row, MAIN_SHEET_COLS["next_election"]))
         tier = resolve_district_tier(
-            val(row, MAIN_SHEET_COLS["djt_tier"]),
             val(row, MAIN_SHEET_COLS["leg_tier"]),
             tier_audit=tier_audit,
             sheet_name=sheet_name,
@@ -1394,22 +1382,10 @@ def main():
 
     for sheet_name in ("SLDL", "SLDU"):
         bucket = tier_audit.get(sheet_name) or {}
-        invalid_djt = int(bucket.get("invalid_djt") or 0)
         invalid_leg = int(bucket.get("invalid_leg") or 0)
-        both_valid = list(bucket.get("both_valid") or [])
-        if invalid_djt:
-            print(f"WARNING: {sheet_name} ignored {invalid_djt} DJT Tier values outside 1-4.")
         if invalid_leg:
-            print(f"WARNING: {sheet_name} ignored {invalid_leg} Leg Tier values outside 1-4.")
-        if both_valid:
-            examples = ", ".join(
-                f"{item['state']}-{item['district_id']} (DJT {item['djt_tier']}, Leg {item['leg_tier']})"
-                for item in both_valid[:8]
-            )
-            print(
-                f"WARNING: {sheet_name} has {len(both_valid)} rows with both DJT Tier and Leg Tier set; "
-                f"using DJT Tier. Examples: {examples}"
-            )
+            examples = ", ".join(bucket.get("unparsed") or [])
+            print(f"WARNING: {sheet_name} ignored {invalid_leg} Leg Tier values outside 1-4. Examples: {examples}")
 
     from validate_chamber_jsons import validate_generated_outputs
 

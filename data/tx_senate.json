@@ -1,2265 +1,4125 @@
 [
-  {
-    "state_fips": "48",
-    "district_id": "001",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Bryan Hughes",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Bryan Hughes",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Bryan Hughes",
-          "dem": "Laticia Ambroz"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 613115,
-      "rural_pct": 55.0,
-      "town_pct": 17.1,
-      "suburban_pct": 7.2,
-      "urban_pct": 20.7,
-      "income_brackets": {
-        "lt_50k": 30.7,
-        "between_50_100k": 29.8,
-        "gt_150k": 24.6,
-        "unknown_pct": 14.8
-      },
-      "college_pct": 19.7,
-      "post_grad_pct": 8.6,
-      "education_unknown_pct": 26.7,
-      "white_pct": 65.4,
-      "hispanic_pct": 7.7,
-      "black_pct": 15.7,
-      "asian_pct": 1.2,
-      "other_pct": 10.0
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -100.0,
-      "latest_leg": -100.0,
-      "gov_2022": -57.7,
-      "pres_2024": -54.1
-    },
-    "pres_2024_margin": -54.1,
-    "gov_2022_margin": -57.7,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 403307,
-      "gov_2022": 294177,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Bryan Hughes",
-      "dem": "Laticia Ambroz"
-    }
+ {
+  "state_fips": "48",
+  "district_id": "001",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Bryan Hughes",
+   "party": "R"
   },
-  {
-    "state_fips": "48",
-    "district_id": "002",
-    "district_name": "",
-    "tier": 3,
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
     "incumbent": {
-      "name": "Bob Hall",
-      "party": "R"
+     "name": "Bryan Hughes",
+     "party": "R"
     },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Bob Hall",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Bob Hall",
-          "dem": "Keenen Colbert"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 630381,
-      "rural_pct": 31.4,
-      "town_pct": 10.5,
-      "suburban_pct": 44.7,
-      "urban_pct": 13.4,
-      "income_brackets": {
-        "lt_50k": 18.1,
-        "between_50_100k": 26.6,
-        "gt_150k": 40.6,
-        "unknown_pct": 14.8
-      },
-      "college_pct": 21.1,
-      "post_grad_pct": 9.8,
-      "education_unknown_pct": 27.0,
-      "white_pct": 54.3,
-      "hispanic_pct": 16.8,
-      "black_pct": 11.6,
-      "asian_pct": 5.8,
-      "other_pct": 11.5
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 38.1,
-        "rep_pct": 61.9,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -23.8,
-      "latest_leg": -23.8,
-      "gov_2022": -19.8,
-      "pres_2024": -20.3
-    },
-    "pres_2024_margin": -20.3,
-    "gov_2022_margin": -19.8,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 405493,
-      "gov_2022": 284434,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Bob Hall",
-      "dem": "Keenen Colbert"
+    "candidates": {
+     "rep": "Bryan Hughes",
+     "dem": "Laticia Ambroz"
     }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 613115,
+   "rural_pct": 55.0,
+   "town_pct": 17.1,
+   "suburban_pct": 7.2,
+   "urban_pct": 20.7,
+   "income_brackets": {
+    "lt_50k": 30.7,
+    "between_50_100k": 29.8,
+    "gt_150k": 24.6,
+    "unknown_pct": 14.8
+   },
+   "college_pct": 19.7,
+   "post_grad_pct": 8.6,
+   "education_unknown_pct": 26.7,
+   "white_pct": 65.4,
+   "hispanic_pct": 7.7,
+   "black_pct": 15.7,
+   "asian_pct": 1.2,
+   "other_pct": 10.0
   },
-  {
-    "state_fips": "48",
-    "district_id": "003",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Robert Nichols",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Robert Nichols",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Trent Ashby",
-          "dem": "Bobby Tillman"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 628139,
-      "rural_pct": 55.7,
-      "town_pct": 19.7,
-      "suburban_pct": 13.1,
-      "urban_pct": 11.5,
-      "income_brackets": {
-        "lt_50k": 32.8,
-        "between_50_100k": 29.1,
-        "gt_150k": 21.5,
-        "unknown_pct": 16.5
-      },
-      "college_pct": 18.4,
-      "post_grad_pct": 7.4,
-      "education_unknown_pct": 29.4,
-      "white_pct": 64.3,
-      "hispanic_pct": 9.3,
-      "black_pct": 15.6,
-      "asian_pct": 1.4,
-      "other_pct": 9.4
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 21.2,
-        "rep_pct": 77.4,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -56.3,
-      "latest_leg": -56.3,
-      "gov_2022": -54.0,
-      "pres_2024": -52.7
-    },
-    "pres_2024_margin": -52.7,
-    "gov_2022_margin": -54.0,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 391170,
-      "gov_2022": 266980,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Trent Ashby",
-      "dem": "Bobby Tillman"
-    }
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 0.0,
+    "rep_pct": 100.0,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -100.0,
+   "latest_leg": -100.0,
+   "gov_2022": -57.7,
+   "pres_2024": -54.1,
+   "model_rslc_all": 67.2,
+   "model_rslc_hm": 74.3
   },
-  {
-    "state_fips": "48",
-    "district_id": "004",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Brett Ligon",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Brett Ligon",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Brett Ligon",
-          "dem": "Ron Angeletti"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 663682,
-      "rural_pct": 27.5,
-      "town_pct": 6.2,
-      "suburban_pct": 39.2,
-      "urban_pct": 27.1,
-      "income_brackets": {
-        "lt_50k": 17.1,
-        "between_50_100k": 24.3,
-        "gt_150k": 43.6,
-        "unknown_pct": 14.9
-      },
-      "college_pct": 21.5,
-      "post_grad_pct": 9.6,
-      "education_unknown_pct": 26.9,
-      "white_pct": 57.5,
-      "hispanic_pct": 17.9,
-      "black_pct": 10.3,
-      "asian_pct": 3.1,
-      "other_pct": 11.2
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 30.1,
-        "rep_pct": 69.9,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -39.9,
-      "latest_leg": -39.9,
-      "gov_2022": -36.2,
-      "pres_2024": -34.0
-    },
-    "pres_2024_margin": -34.0,
-    "gov_2022_margin": -36.2,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 422990,
-      "gov_2022": 293176,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Brett Ligon",
-      "dem": "Ron Angeletti"
-    }
+  "pres_2024_margin": -54.1,
+  "gov_2022_margin": -57.7,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 403307,
+   "gov_2022": 294177,
+   "ussen_2022": 0
   },
-  {
-    "state_fips": "48",
-    "district_id": "005",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Charles Schwertner",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Charles Schwertner",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Charles Schwertner",
-          "dem": "Paul Thomasson"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 635778,
-      "rural_pct": 49.6,
-      "town_pct": 9.5,
-      "suburban_pct": 8.9,
-      "urban_pct": 32.0,
-      "income_brackets": {
-        "lt_50k": 18.7,
-        "between_50_100k": 25.0,
-        "gt_150k": 39.1,
-        "unknown_pct": 17.1
-      },
-      "college_pct": 20.9,
-      "post_grad_pct": 10.1,
-      "education_unknown_pct": 29.1,
-      "white_pct": 61.0,
-      "hispanic_pct": 16.4,
-      "black_pct": 7.2,
-      "asian_pct": 3.4,
-      "other_pct": 12.1
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 0.0,
-        "rep_pct": 71.6,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -43.1,
-      "latest_leg": -43.1,
-      "gov_2022": -23.1,
-      "pres_2024": -23.4
-    },
-    "pres_2024_margin": -23.4,
-    "gov_2022_margin": -23.1,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 428108,
-      "gov_2022": 299588,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Charles Schwertner",
-      "dem": "Paul Thomasson"
-    }
+  "candidates_2026": {
+   "rep": "Bryan Hughes",
+   "dem": "Laticia Ambroz"
   },
-  {
-    "state_fips": "48",
-    "district_id": "006",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Carol Alvarado",
-      "party": "D"
-    },
-    "members": [
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
       {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Carol Alvarado",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 418377,
-      "rural_pct": 0.7,
-      "town_pct": 0.0,
-      "suburban_pct": 42.1,
-      "urban_pct": 57.2,
-      "income_brackets": {
-        "lt_50k": 40.0,
-        "between_50_100k": 27.0,
-        "gt_150k": 16.3,
-        "unknown_pct": 16.7
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 79.5
       },
-      "college_pct": 20.4,
-      "post_grad_pct": 4.9,
-      "education_unknown_pct": 30.1,
-      "white_pct": 17.9,
-      "hispanic_pct": 55.3,
-      "black_pct": 14.5,
-      "asian_pct": 2.9,
-      "other_pct": 9.4
-    },
-    "elections": [
       {
-        "year": 2024,
-        "dem_pct": 63.0,
-        "rep_pct": 37.0,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 26.0,
-      "latest_leg": 26.0,
-      "gov_2022": 34.7,
-      "pres_2024": 18.5
-    },
-    "pres_2024_margin": 18.5,
-    "gov_2022_margin": 34.7,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 197710,
-      "gov_2022": 129387,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "007",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Paul Bettencourt",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Paul Bettencourt",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 628125,
-      "rural_pct": 12.3,
-      "town_pct": 0.0,
-      "suburban_pct": 78.2,
-      "urban_pct": 9.5,
-      "income_brackets": {
-        "lt_50k": 11.6,
-        "between_50_100k": 22.3,
-        "gt_150k": 53.0,
-        "unknown_pct": 13.0
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 8.2
       },
-      "college_pct": 24.1,
-      "post_grad_pct": 10.7,
-      "education_unknown_pct": 25.5,
-      "white_pct": 51.5,
-      "hispanic_pct": 21.2,
-      "black_pct": 8.8,
-      "asian_pct": 8.2,
-      "other_pct": 10.4
-    },
-    "elections": [
       {
-        "year": 2024,
-        "dem_pct": 36.6,
-        "rep_pct": 63.4,
-        "winner": "R"
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 12.3
       }
-    ],
-    "view_margins": {
-      "leg_2024": -26.8,
-      "latest_leg": -26.8,
-      "gov_2022": -21.4,
-      "pres_2024": -21.0
-    },
-    "pres_2024_margin": -21.0,
-    "gov_2022_margin": -21.4,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 406522,
-      "gov_2022": 288422,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
+     ],
+     "margin": 67.2,
+     "gop_framework": 79.5,
+     "unaligned": 8.2,
+     "dem_framework": 12.3
     }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "008",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Angela Paxton",
-      "party": "R"
-    },
-    "members": [
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
       {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Angela Paxton",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 694046,
-      "rural_pct": 26.8,
-      "town_pct": 4.6,
-      "suburban_pct": 43.2,
-      "urban_pct": 25.4,
-      "income_brackets": {
-        "lt_50k": 11.3,
-        "between_50_100k": 19.8,
-        "gt_150k": 54.9,
-        "unknown_pct": 14.0
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 85.1
       },
-      "college_pct": 23.3,
-      "post_grad_pct": 12.2,
-      "education_unknown_pct": 26.7,
-      "white_pct": 59.7,
-      "hispanic_pct": 10.5,
-      "black_pct": 7.1,
-      "asian_pct": 10.3,
-      "other_pct": 12.5
-    },
-    "elections": [
       {
-        "year": 2024,
-        "dem_pct": 40.6,
-        "rep_pct": 59.4,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -18.7,
-      "latest_leg": -18.7,
-      "gov_2022": -18.3,
-      "pres_2024": -18.5
-    },
-    "pres_2024_margin": -18.5,
-    "gov_2022_margin": -18.3,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 479017,
-      "gov_2022": 337673,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "009",
-    "district_name": "",
-    "tier": 1,
-    "incumbent": {
-      "name": "Taylor Rehmet",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Taylor Rehmet",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "Leigh Wambsganss",
-          "dem": "Taylor Rehmet"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 611147,
-      "rural_pct": 6.0,
-      "town_pct": 0.1,
-      "suburban_pct": 43.3,
-      "urban_pct": 50.7,
-      "income_brackets": {
-        "lt_50k": 18.1,
-        "between_50_100k": 23.9,
-        "gt_150k": 43.7,
-        "unknown_pct": 14.2
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 4.1
       },
-      "college_pct": 21.8,
-      "post_grad_pct": 9.7,
-      "education_unknown_pct": 26.2,
-      "white_pct": 57.4,
-      "hispanic_pct": 18.6,
-      "black_pct": 7.6,
-      "asian_pct": 5.0,
-      "other_pct": 11.4
-    },
-    "elections": [
       {
-        "year": 2022,
-        "dem_pct": 40.0,
-        "rep_pct": 60.0,
-        "winner": "R"
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 10.8
       }
-    ],
-    "view_margins": {
-      "leg_2022": -20.1,
-      "latest_leg": -20.1,
-      "gov_2022": -16.4,
-      "pres_2024": -17.4
-    },
-    "pres_2024_margin": -17.4,
-    "gov_2022_margin": -16.4,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 398010,
-      "gov_2022": 281625,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Leigh Wambsganss",
-      "dem": "Taylor Rehmet"
+     ],
+     "margin": 74.3,
+     "gop_framework": 85.1,
+     "unaligned": 4.1,
+     "dem_framework": 10.8
     }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "010",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Phil King",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Phil King",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 598749,
-      "rural_pct": 25.9,
-      "town_pct": 11.1,
-      "suburban_pct": 15.8,
-      "urban_pct": 47.2,
-      "income_brackets": {
-        "lt_50k": 23.9,
-        "between_50_100k": 27.4,
-        "gt_150k": 34.3,
-        "unknown_pct": 14.4
-      },
-      "college_pct": 20.7,
-      "post_grad_pct": 9.3,
-      "education_unknown_pct": 25.9,
-      "white_pct": 54.5,
-      "hispanic_pct": 16.4,
-      "black_pct": 16.3,
-      "asian_pct": 2.4,
-      "other_pct": 10.3
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 38.3,
-        "rep_pct": 61.7,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -23.4,
-      "latest_leg": -23.4,
-      "gov_2022": -22.2,
-      "pres_2024": -21.8
-    },
-    "pres_2024_margin": -21.8,
-    "gov_2022_margin": -22.2,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 384998,
-      "gov_2022": 277412,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "011",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Mayes Middleton",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Mayes Middleton",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Dennis Paul",
-          "dem": "Shannon Dicely"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 618606,
-      "rural_pct": 13.2,
-      "town_pct": 4.4,
-      "suburban_pct": 72.8,
-      "urban_pct": 9.3,
-      "income_brackets": {
-        "lt_50k": 16.3,
-        "between_50_100k": 24.1,
-        "gt_150k": 45.2,
-        "unknown_pct": 14.5
-      },
-      "college_pct": 21.6,
-      "post_grad_pct": 10.9,
-      "education_unknown_pct": 26.1,
-      "white_pct": 52.5,
-      "hispanic_pct": 20.9,
-      "black_pct": 11.0,
-      "asian_pct": 5.7,
-      "other_pct": 9.8
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -100.0,
-      "latest_leg": -100.0,
-      "gov_2022": -18.9,
-      "pres_2024": -21.1
-    },
-    "pres_2024_margin": -21.1,
-    "gov_2022_margin": -18.9,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 389498,
-      "gov_2022": 279735,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Dennis Paul",
-      "dem": "Shannon Dicely"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "012",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Tan Parker",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Tan Parker",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 666882,
-      "rural_pct": 18.0,
-      "town_pct": 3.3,
-      "suburban_pct": 55.2,
-      "urban_pct": 23.5,
-      "income_brackets": {
-        "lt_50k": 11.0,
-        "between_50_100k": 18.8,
-        "gt_150k": 57.2,
-        "unknown_pct": 13.0
-      },
-      "college_pct": 24.3,
-      "post_grad_pct": 13.2,
-      "education_unknown_pct": 24.7,
-      "white_pct": 62.8,
-      "hispanic_pct": 11.9,
-      "black_pct": 5.8,
-      "asian_pct": 8.2,
-      "other_pct": 11.2
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 38.6,
-        "rep_pct": 61.4,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -22.7,
-      "latest_leg": -22.7,
-      "gov_2022": -18.1,
-      "pres_2024": -18.4
-    },
-    "pres_2024_margin": -18.4,
-    "gov_2022_margin": -18.1,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 468574,
-      "gov_2022": 351679,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "013",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Borris Miles",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Borris Miles",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "Borris Miles"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 488994,
-      "rural_pct": 2.5,
-      "town_pct": 0.0,
-      "suburban_pct": 22.6,
-      "urban_pct": 74.9,
-      "income_brackets": {
-        "lt_50k": 33.2,
-        "between_50_100k": 24.5,
-        "gt_150k": 24.2,
-        "unknown_pct": 18.1
-      },
-      "college_pct": 19.4,
-      "post_grad_pct": 8.7,
-      "education_unknown_pct": 32.1,
-      "white_pct": 15.6,
-      "hispanic_pct": 20.8,
-      "black_pct": 44.2,
-      "asian_pct": 9.2,
-      "other_pct": 10.1
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 100.0,
-        "rep_pct": 0.0,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 100.0,
-      "latest_leg": 100.0,
-      "gov_2022": 56.8,
-      "pres_2024": 47.6
-    },
-    "pres_2024_margin": 47.6,
-    "gov_2022_margin": 56.8,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 262070,
-      "gov_2022": 181326,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "Borris Miles"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "014",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Sarah Eckhardt",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Sarah Eckhardt",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 671571,
-      "rural_pct": 8.0,
-      "town_pct": 1.7,
-      "suburban_pct": 16.9,
-      "urban_pct": 73.4,
-      "income_brackets": {
-        "lt_50k": 13.4,
-        "between_50_100k": 19.8,
-        "gt_150k": 49.4,
-        "unknown_pct": 17.4
-      },
-      "college_pct": 21.6,
-      "post_grad_pct": 12.2,
-      "education_unknown_pct": 28.3,
-      "white_pct": 56.8,
-      "hispanic_pct": 17.9,
-      "black_pct": 6.1,
-      "asian_pct": 7.2,
-      "other_pct": 12.1
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 100.0,
-        "rep_pct": 0.0,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 100.0,
-      "latest_leg": 100.0,
-      "gov_2022": 53.8,
-      "pres_2024": 46.2
-    },
-    "pres_2024_margin": 46.2,
-    "gov_2022_margin": 53.8,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 439539,
-      "gov_2022": 352771,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "015",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Molly Cook",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Molly Cook",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 556198,
-      "rural_pct": 2.5,
-      "town_pct": 0.0,
-      "suburban_pct": 38.6,
-      "urban_pct": 58.9,
-      "income_brackets": {
-        "lt_50k": 20.0,
-        "between_50_100k": 23.2,
-        "gt_150k": 41.9,
-        "unknown_pct": 14.9
-      },
-      "college_pct": 21.9,
-      "post_grad_pct": 11.5,
-      "education_unknown_pct": 27.1,
-      "white_pct": 39.0,
-      "hispanic_pct": 24.6,
-      "black_pct": 19.1,
-      "asian_pct": 7.7,
-      "other_pct": 9.7
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 61.9,
-        "rep_pct": 38.1,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 23.8,
-      "latest_leg": 23.8,
-      "gov_2022": 30.9,
-      "pres_2024": 25.4
-    },
-    "pres_2024_margin": 25.4,
-    "gov_2022_margin": 30.9,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 336271,
-      "gov_2022": 247542,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "016",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Nathan Johnson",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Nathan Johnson",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 465527,
-      "rural_pct": 0.7,
-      "town_pct": 0.0,
-      "suburban_pct": 17.9,
-      "urban_pct": 81.4,
-      "income_brackets": {
-        "lt_50k": 26.6,
-        "between_50_100k": 23.9,
-        "gt_150k": 32.5,
-        "unknown_pct": 17.0
-      },
-      "college_pct": 20.2,
-      "post_grad_pct": 9.0,
-      "education_unknown_pct": 29.4,
-      "white_pct": 39.5,
-      "hispanic_pct": 29.6,
-      "black_pct": 14.7,
-      "asian_pct": 4.7,
-      "other_pct": 11.5
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 100.0,
-        "rep_pct": 0.0,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 100.0,
-      "latest_leg": 100.0,
-      "gov_2022": 25.1,
-      "pres_2024": 18.4
-    },
-    "pres_2024_margin": 18.4,
-    "gov_2022_margin": 25.1,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 267066,
-      "gov_2022": 194897,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "017",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Joan Huffman",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Joan Huffman",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 588526,
-      "rural_pct": 25.9,
-      "town_pct": 7.6,
-      "suburban_pct": 32.8,
-      "urban_pct": 33.6,
-      "income_brackets": {
-        "lt_50k": 15.0,
-        "between_50_100k": 21.2,
-        "gt_150k": 48.9,
-        "unknown_pct": 14.9
-      },
-      "college_pct": 22.9,
-      "post_grad_pct": 12.1,
-      "education_unknown_pct": 28.2,
-      "white_pct": 52.2,
-      "hispanic_pct": 18.1,
-      "black_pct": 8.6,
-      "asian_pct": 10.2,
-      "other_pct": 10.9
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 35.8,
-        "rep_pct": 64.2,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -28.3,
-      "latest_leg": -28.3,
-      "gov_2022": -25.0,
-      "pres_2024": -22.8
-    },
-    "pres_2024_margin": -22.8,
-    "gov_2022_margin": -25.0,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 385280,
-      "gov_2022": 283582,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "018",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Lois Kolkhorst",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Lois Kolkhorst",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Lois Kolkhorst",
-          "dem": "Erica Gillum"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 652993,
-      "rural_pct": 43.3,
-      "town_pct": 10.8,
-      "suburban_pct": 34.1,
-      "urban_pct": 11.6,
-      "income_brackets": {
-        "lt_50k": 18.5,
-        "between_50_100k": 25.3,
-        "gt_150k": 40.2,
-        "unknown_pct": 16.0
-      },
-      "college_pct": 21.7,
-      "post_grad_pct": 9.5,
-      "education_unknown_pct": 29.4,
-      "white_pct": 47.0,
-      "hispanic_pct": 20.4,
-      "black_pct": 11.5,
-      "asian_pct": 10.1,
-      "other_pct": 11.0
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 33.8,
-        "rep_pct": 66.2,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -32.3,
-      "latest_leg": -32.3,
-      "gov_2022": -28.7,
-      "pres_2024": -26.6
-    },
-    "pres_2024_margin": -26.6,
-    "gov_2022_margin": -28.7,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 413478,
-      "gov_2022": 290000,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Lois Kolkhorst",
-      "dem": "Erica Gillum"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "019",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Roland Gutierrez",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Roland Gutierrez",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "Primary runoff results pending",
-          "dem": "Roland Gutierrez"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 598383,
-      "rural_pct": 27.6,
-      "town_pct": 16.1,
-      "suburban_pct": 21.5,
-      "urban_pct": 34.9,
-      "income_brackets": {
-        "lt_50k": 30.1,
-        "between_50_100k": 26.6,
-        "gt_150k": 25.2,
-        "unknown_pct": 18.2
-      },
-      "college_pct": 18.1,
-      "post_grad_pct": 6.8,
-      "education_unknown_pct": 31.8,
-      "white_pct": 27.1,
-      "hispanic_pct": 53.4,
-      "black_pct": 6.0,
-      "asian_pct": 2.0,
-      "other_pct": 11.6
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 55.4,
-        "rep_pct": 44.6,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 10.8,
-      "latest_leg": 10.8,
-      "gov_2022": 11.7,
-      "pres_2024": 1.7
-    },
-    "pres_2024_margin": 1.7,
-    "gov_2022_margin": 11.7,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 331140,
-      "gov_2022": 216699,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Primary runoff results pending",
-      "dem": "Roland Gutierrez"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "020",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Juan Hinojosa",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Juan Hinojosa",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 496843,
-      "rural_pct": 7.8,
-      "town_pct": 5.3,
-      "suburban_pct": 21.3,
-      "urban_pct": 65.6,
-      "income_brackets": {
-        "lt_50k": 38.8,
-        "between_50_100k": 25.4,
-        "gt_150k": 19.0,
-        "unknown_pct": 16.9
-      },
-      "college_pct": 20.9,
-      "post_grad_pct": 7.5,
-      "education_unknown_pct": 31.0,
-      "white_pct": 16.6,
-      "hispanic_pct": 71.2,
-      "black_pct": 1.6,
-      "asian_pct": 1.2,
-      "other_pct": 9.4
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 100.0,
-        "rep_pct": 0.0,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 100.0,
-      "latest_leg": 100.0,
-      "gov_2022": 9.0,
-      "pres_2024": -3.9
-    },
-    "pres_2024_margin": -3.9,
-    "gov_2022_margin": 9.0,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 251856,
-      "gov_2022": 176111,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "021",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Judith Zaffirini",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Judith Zaffirini",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "Julie Dahlberg",
-          "dem": "Judith Zaffirini"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 559508,
-      "rural_pct": 32.5,
-      "town_pct": 11.9,
-      "suburban_pct": 8.8,
-      "urban_pct": 46.8,
-      "income_brackets": {
-        "lt_50k": 30.4,
-        "between_50_100k": 25.6,
-        "gt_150k": 23.6,
-        "unknown_pct": 20.4
-      },
-      "college_pct": 19.6,
-      "post_grad_pct": 6.4,
-      "education_unknown_pct": 33.6,
-      "white_pct": 30.6,
-      "hispanic_pct": 54.0,
-      "black_pct": 2.6,
-      "asian_pct": 1.5,
-      "other_pct": 11.3
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 61.6,
-        "rep_pct": 35.9,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 25.6,
-      "latest_leg": 25.6,
-      "gov_2022": 16.8,
-      "pres_2024": 2.9
-    },
-    "pres_2024_margin": 2.9,
-    "gov_2022_margin": 16.8,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 313154,
-      "gov_2022": 219433,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Julie Dahlberg",
-      "dem": "Judith Zaffirini"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "022",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Brian Birdwell",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Brian Birdwell",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "David Cook",
-          "dem": "Amy Martinez-Salas"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 615099,
-      "rural_pct": 30.4,
-      "town_pct": 10.6,
-      "suburban_pct": 30.2,
-      "urban_pct": 28.8,
-      "income_brackets": {
-        "lt_50k": 23.0,
-        "between_50_100k": 27.4,
-        "gt_150k": 34.3,
-        "unknown_pct": 15.3
-      },
-      "college_pct": 20.7,
-      "post_grad_pct": 9.0,
-      "education_unknown_pct": 26.9,
-      "white_pct": 56.0,
-      "hispanic_pct": 14.9,
-      "black_pct": 14.4,
-      "asian_pct": 3.7,
-      "other_pct": 11.1
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 0.0,
-        "rep_pct": 74.3,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -48.5,
-      "latest_leg": -48.5,
-      "gov_2022": -29.6,
-      "pres_2024": -28.0
-    },
-    "pres_2024_margin": -28.0,
-    "gov_2022_margin": -29.6,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 398445,
-      "gov_2022": 284026,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "David Cook",
-      "dem": "Amy Martinez-Salas"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "023",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Royce West",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Royce West",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 559873,
-      "rural_pct": 1.7,
-      "town_pct": 0.0,
-      "suburban_pct": 39.8,
-      "urban_pct": 58.6,
-      "income_brackets": {
-        "lt_50k": 29.8,
-        "between_50_100k": 25.7,
-        "gt_150k": 27.4,
-        "unknown_pct": 17.2
-      },
-      "college_pct": 18.7,
-      "post_grad_pct": 7.5,
-      "education_unknown_pct": 29.3,
-      "white_pct": 21.9,
-      "hispanic_pct": 23.2,
-      "black_pct": 41.2,
-      "asian_pct": 3.3,
-      "other_pct": 10.5
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 100.0,
-        "rep_pct": 0.0,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 100.0,
-      "latest_leg": 100.0,
-      "gov_2022": 54.3,
-      "pres_2024": 46.2
-    },
-    "pres_2024_margin": 46.2,
-    "gov_2022_margin": 54.3,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 312829,
-      "gov_2022": 223313,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "024",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Pete Flores",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Pete Flores",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Pete Flores",
-          "dem": "Joe P. Herrera"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 641039,
-      "rural_pct": 36.4,
-      "town_pct": 12.6,
-      "suburban_pct": 26.3,
-      "urban_pct": 24.7,
-      "income_brackets": {
-        "lt_50k": 20.6,
-        "between_50_100k": 27.5,
-        "gt_150k": 35.2,
-        "unknown_pct": 16.7
-      },
-      "college_pct": 19.3,
-      "post_grad_pct": 9.0,
-      "education_unknown_pct": 29.0,
-      "white_pct": 55.9,
-      "hispanic_pct": 17.5,
-      "black_pct": 11.1,
-      "asian_pct": 3.6,
-      "other_pct": 12.1
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 35.7,
-        "rep_pct": 64.3,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -28.6,
-      "latest_leg": -28.6,
-      "gov_2022": -26.3,
-      "pres_2024": -24.9
-    },
-    "pres_2024_margin": -24.9,
-    "gov_2022_margin": -26.3,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 410340,
-      "gov_2022": 297339,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Pete Flores",
-      "dem": "Joe P. Herrera"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "025",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Donna Campbell",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Donna Campbell",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 738056,
-      "rural_pct": 39.4,
-      "town_pct": 4.2,
-      "suburban_pct": 26.3,
-      "urban_pct": 30.1,
-      "income_brackets": {
-        "lt_50k": 10.3,
-        "between_50_100k": 19.8,
-        "gt_150k": 57.7,
-        "unknown_pct": 12.2
-      },
-      "college_pct": 24.3,
-      "post_grad_pct": 14.0,
-      "education_unknown_pct": 23.5,
-      "white_pct": 62.4,
-      "hispanic_pct": 20.6,
-      "black_pct": 3.0,
-      "asian_pct": 3.5,
-      "other_pct": 10.6
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 36.4,
-        "rep_pct": 63.6,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -27.1,
-      "latest_leg": -27.1,
-      "gov_2022": -21.5,
-      "pres_2024": -21.8
-    },
-    "pres_2024_margin": -21.8,
-    "gov_2022_margin": -21.5,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 528653,
-      "gov_2022": 397073,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "026",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Jose Menendez",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Jose Menendez",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "Jose Menendez"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 524107,
-      "rural_pct": 0.3,
-      "town_pct": 0.0,
-      "suburban_pct": 13.3,
-      "urban_pct": 86.4,
-      "income_brackets": {
-        "lt_50k": 32.8,
-        "between_50_100k": 28.4,
-        "gt_150k": 23.1,
-        "unknown_pct": 15.7
-      },
-      "college_pct": 19.1,
-      "post_grad_pct": 8.6,
-      "education_unknown_pct": 28.6,
-      "white_pct": 28.7,
-      "hispanic_pct": 54.4,
-      "black_pct": 4.5,
-      "asian_pct": 2.2,
-      "other_pct": 10.2
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 66.5,
-        "rep_pct": 33.5,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 33.1,
-      "latest_leg": 33.1,
-      "gov_2022": 31.9,
-      "pres_2024": 22.5
-    },
-    "pres_2024_margin": 22.5,
-    "gov_2022_margin": 31.9,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 297919,
-      "gov_2022": 218166,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "Jose Menendez"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "027",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Adam Hinojosa",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Adam Hinojosa",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 518841,
-      "rural_pct": 16.1,
-      "town_pct": 11.5,
-      "suburban_pct": 38.6,
-      "urban_pct": 32.9,
-      "income_brackets": {
-        "lt_50k": 41.7,
-        "between_50_100k": 23.4,
-        "gt_150k": 15.3,
-        "unknown_pct": 19.6
-      },
-      "college_pct": 20.5,
-      "post_grad_pct": 6.6,
-      "education_unknown_pct": 33.5,
-      "white_pct": 17.3,
-      "hispanic_pct": 71.2,
-      "black_pct": 1.3,
-      "asian_pct": 0.8,
-      "other_pct": 9.4
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 48.3,
-        "rep_pct": 49.4,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -1.1,
-      "latest_leg": -1.1,
-      "gov_2022": 0.7,
-      "pres_2024": -11.8
-    },
-    "pres_2024_margin": -11.8,
-    "gov_2022_margin": 0.7,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 261543,
-      "gov_2022": 179275,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "028",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Charles Perry",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Charles Perry",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Charles Perry",
-          "dem": "Riley Rodriquez"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 562276,
-      "rural_pct": 31.2,
-      "town_pct": 15.4,
-      "suburban_pct": 2.0,
-      "urban_pct": 51.3,
-      "income_brackets": {
-        "lt_50k": 29.4,
-        "between_50_100k": 26.4,
-        "gt_150k": 26.2,
-        "unknown_pct": 18.0
-      },
-      "college_pct": 19.6,
-      "post_grad_pct": 8.4,
-      "education_unknown_pct": 29.1,
-      "white_pct": 59.8,
-      "hispanic_pct": 22.8,
-      "black_pct": 4.9,
-      "asian_pct": 1.4,
-      "other_pct": 11.1
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -100.0,
-      "latest_leg": -100.0,
-      "gov_2022": -55.1,
-      "pres_2024": -51.6
-    },
-    "pres_2024_margin": -51.6,
-    "gov_2022_margin": -55.1,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 354473,
-      "gov_2022": 250204,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Charles Perry",
-      "dem": "Riley Rodriquez"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "029",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Cesar Blanco",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Cesar Blanco",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 545158,
-      "rural_pct": 12.8,
-      "town_pct": 4.1,
-      "suburban_pct": 14.0,
-      "urban_pct": 69.2,
-      "income_brackets": {
-        "lt_50k": 34.8,
-        "between_50_100k": 27.1,
-        "gt_150k": 20.3,
-        "unknown_pct": 17.9
-      },
-      "college_pct": 21.4,
-      "post_grad_pct": 7.6,
-      "education_unknown_pct": 30.4,
-      "white_pct": 16.2,
-      "hispanic_pct": 70.5,
-      "black_pct": 1.8,
-      "asian_pct": 1.3,
-      "other_pct": 10.2
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 100.0,
-        "rep_pct": 0.0,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 100.0,
-      "latest_leg": 100.0,
-      "gov_2022": 25.2,
-      "pres_2024": 12.7
-    },
-    "pres_2024_margin": 12.7,
-    "gov_2022_margin": 25.2,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 268866,
-      "gov_2022": 179064,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "030",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Brent Hagenbuch",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Brent Hagenbuch",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 693720,
-      "rural_pct": 35.2,
-      "town_pct": 9.5,
-      "suburban_pct": 33.3,
-      "urban_pct": 22.0,
-      "income_brackets": {
-        "lt_50k": 15.8,
-        "between_50_100k": 23.1,
-        "gt_150k": 45.1,
-        "unknown_pct": 16.0
-      },
-      "college_pct": 21.4,
-      "post_grad_pct": 10.1,
-      "education_unknown_pct": 28.3,
-      "white_pct": 62.9,
-      "hispanic_pct": 10.7,
-      "black_pct": 7.0,
-      "asian_pct": 6.7,
-      "other_pct": 12.7
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 35.0,
-        "rep_pct": 65.0,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -30.1,
-      "latest_leg": -30.1,
-      "gov_2022": -27.3,
-      "pres_2024": -27.3
-    },
-    "pres_2024_margin": -27.3,
-    "gov_2022_margin": -27.3,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 463827,
-      "gov_2022": 317843,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    }
-  },
-  {
-    "state_fips": "48",
-    "district_id": "031",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Kevin Sparks",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Kevin Sparks",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Kevin Sparks",
-          "dem": "John Betancourt"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 506012,
-      "rural_pct": 31.8,
-      "town_pct": 20.1,
-      "suburban_pct": 4.4,
-      "urban_pct": 43.6,
-      "income_brackets": {
-        "lt_50k": 27.9,
-        "between_50_100k": 25.8,
-        "gt_150k": 27.5,
-        "unknown_pct": 18.8
-      },
-      "college_pct": 18.9,
-      "post_grad_pct": 7.2,
-      "education_unknown_pct": 31.1,
-      "white_pct": 52.3,
-      "hispanic_pct": 30.9,
-      "black_pct": 4.2,
-      "asian_pct": 1.5,
-      "other_pct": 11.0
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -100.0,
-      "latest_leg": -100.0,
-      "gov_2022": -65.0,
-      "pres_2024": -61.5
-    },
-    "pres_2024_margin": -61.5,
-    "gov_2022_margin": -65.0,
-    "ussen_2022_margin": null,
-    "top_ticket_totals": {
-      "pres_2024": 301301,
-      "gov_2022": 207896,
-      "ussen_2022": 0
-    },
-    "candidates_2026": {
-      "rep": "Kevin Sparks",
-      "dem": "John Betancourt"
-    }
+   }
   }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "002",
+  "district_name": "",
+  "tier": 3,
+  "incumbent": {
+   "name": "Bob Hall",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Bob Hall",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Bob Hall",
+     "dem": "Keenen Colbert"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 630381,
+   "rural_pct": 31.4,
+   "town_pct": 10.5,
+   "suburban_pct": 44.7,
+   "urban_pct": 13.4,
+   "income_brackets": {
+    "lt_50k": 18.1,
+    "between_50_100k": 26.6,
+    "gt_150k": 40.6,
+    "unknown_pct": 14.8
+   },
+   "college_pct": 21.1,
+   "post_grad_pct": 9.8,
+   "education_unknown_pct": 27.0,
+   "white_pct": 54.3,
+   "hispanic_pct": 16.8,
+   "black_pct": 11.6,
+   "asian_pct": 5.8,
+   "other_pct": 11.5
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 38.1,
+    "rep_pct": 61.9,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -23.8,
+   "latest_leg": -23.8,
+   "gov_2022": -19.8,
+   "pres_2024": -20.3,
+   "model_rslc_all": 26.0,
+   "model_rslc_hm": 33.4
+  },
+  "pres_2024_margin": -20.3,
+  "gov_2022_margin": -19.8,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 405493,
+   "gov_2022": 284434,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Bob Hall",
+   "dem": "Keenen Colbert"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 56.1
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.8
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 30.1
+      }
+     ],
+     "margin": 26.0,
+     "gop_framework": 56.1,
+     "unaligned": 13.8,
+     "dem_framework": 30.1
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 61.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.9
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 27.8
+      }
+     ],
+     "margin": 33.4,
+     "gop_framework": 61.3,
+     "unaligned": 10.9,
+     "dem_framework": 27.8
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "003",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Robert Nichols",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Robert Nichols",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Trent Ashby",
+     "dem": "Bobby Tillman"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 628139,
+   "rural_pct": 55.7,
+   "town_pct": 19.7,
+   "suburban_pct": 13.1,
+   "urban_pct": 11.5,
+   "income_brackets": {
+    "lt_50k": 32.8,
+    "between_50_100k": 29.1,
+    "gt_150k": 21.5,
+    "unknown_pct": 16.5
+   },
+   "college_pct": 18.4,
+   "post_grad_pct": 7.4,
+   "education_unknown_pct": 29.4,
+   "white_pct": 64.3,
+   "hispanic_pct": 9.3,
+   "black_pct": 15.6,
+   "asian_pct": 1.4,
+   "other_pct": 9.4
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 21.2,
+    "rep_pct": 77.4,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -56.3,
+   "latest_leg": -56.3,
+   "gov_2022": -54.0,
+   "pres_2024": -52.7,
+   "model_rslc_all": 57.4,
+   "model_rslc_hm": 66.4
+  },
+  "pres_2024_margin": -52.7,
+  "gov_2022_margin": -54.0,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 391170,
+   "gov_2022": 266980,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Trent Ashby",
+   "dem": "Bobby Tillman"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 74.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 8.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 17.3
+      }
+     ],
+     "margin": 57.4,
+     "gop_framework": 74.7,
+     "unaligned": 8.1,
+     "dem_framework": 17.3
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 81.0
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 4.3
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 14.6
+      }
+     ],
+     "margin": 66.4,
+     "gop_framework": 81.0,
+     "unaligned": 4.3,
+     "dem_framework": 14.6
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "004",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Brett Ligon",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Brett Ligon",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Brett Ligon",
+     "dem": "Ron Angeletti"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 663682,
+   "rural_pct": 27.5,
+   "town_pct": 6.2,
+   "suburban_pct": 39.2,
+   "urban_pct": 27.1,
+   "income_brackets": {
+    "lt_50k": 17.1,
+    "between_50_100k": 24.3,
+    "gt_150k": 43.6,
+    "unknown_pct": 14.9
+   },
+   "college_pct": 21.5,
+   "post_grad_pct": 9.6,
+   "education_unknown_pct": 26.9,
+   "white_pct": 57.5,
+   "hispanic_pct": 17.9,
+   "black_pct": 10.3,
+   "asian_pct": 3.1,
+   "other_pct": 11.2
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 30.1,
+    "rep_pct": 69.9,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -39.9,
+   "latest_leg": -39.9,
+   "gov_2022": -36.2,
+   "pres_2024": -34.0,
+   "model_rslc_all": 26.1,
+   "model_rslc_hm": 38.2
+  },
+  "pres_2024_margin": -34.0,
+  "gov_2022_margin": -36.2,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 422990,
+   "gov_2022": 293176,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Brett Ligon",
+   "dem": "Ron Angeletti"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 55.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 14.3
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 29.8
+      }
+     ],
+     "margin": 26.1,
+     "gop_framework": 55.9,
+     "unaligned": 14.3,
+     "dem_framework": 29.8
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 63.4
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 11.3
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 25.3
+      }
+     ],
+     "margin": 38.2,
+     "gop_framework": 63.4,
+     "unaligned": 11.3,
+     "dem_framework": 25.3
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "005",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Charles Schwertner",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Charles Schwertner",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Charles Schwertner",
+     "dem": "Paul Thomasson"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 635778,
+   "rural_pct": 49.6,
+   "town_pct": 9.5,
+   "suburban_pct": 8.9,
+   "urban_pct": 32.0,
+   "income_brackets": {
+    "lt_50k": 18.7,
+    "between_50_100k": 25.0,
+    "gt_150k": 39.1,
+    "unknown_pct": 17.1
+   },
+   "college_pct": 20.9,
+   "post_grad_pct": 10.1,
+   "education_unknown_pct": 29.1,
+   "white_pct": 61.0,
+   "hispanic_pct": 16.4,
+   "black_pct": 7.2,
+   "asian_pct": 3.4,
+   "other_pct": 12.1
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 0.0,
+    "rep_pct": 71.6,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -43.1,
+   "latest_leg": -43.1,
+   "gov_2022": -23.1,
+   "pres_2024": -23.4,
+   "model_rslc_all": 19.4,
+   "model_rslc_hm": 29.1
+  },
+  "pres_2024_margin": -23.4,
+  "gov_2022_margin": -23.1,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 428108,
+   "gov_2022": 299588,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Charles Schwertner",
+   "dem": "Paul Thomasson"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 51.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 15.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 32.6
+      }
+     ],
+     "margin": 19.4,
+     "gop_framework": 51.9,
+     "unaligned": 15.5,
+     "dem_framework": 32.6
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 58.5
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 12.2
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 29.3
+      }
+     ],
+     "margin": 29.1,
+     "gop_framework": 58.5,
+     "unaligned": 12.2,
+     "dem_framework": 29.3
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "006",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Carol Alvarado",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Carol Alvarado",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 418377,
+   "rural_pct": 0.7,
+   "town_pct": 0.0,
+   "suburban_pct": 42.1,
+   "urban_pct": 57.2,
+   "income_brackets": {
+    "lt_50k": 40.0,
+    "between_50_100k": 27.0,
+    "gt_150k": 16.3,
+    "unknown_pct": 16.7
+   },
+   "college_pct": 20.4,
+   "post_grad_pct": 4.9,
+   "education_unknown_pct": 30.1,
+   "white_pct": 17.9,
+   "hispanic_pct": 55.3,
+   "black_pct": 14.5,
+   "asian_pct": 2.9,
+   "other_pct": 9.4
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 63.0,
+    "rep_pct": 37.0,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 26.0,
+   "latest_leg": 26.0,
+   "gov_2022": 34.7,
+   "pres_2024": 18.5,
+   "model_rslc_all": -34.6,
+   "model_rslc_hm": -31.6
+  },
+  "pres_2024_margin": 18.5,
+  "gov_2022_margin": 34.7,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 197710,
+   "gov_2022": 129387,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 22.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 19.7
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 57.5
+      }
+     ],
+     "margin": -34.6,
+     "gop_framework": 22.9,
+     "unaligned": 19.7,
+     "dem_framework": 57.5
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 26.8
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 14.8
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 58.4
+      }
+     ],
+     "margin": -31.6,
+     "gop_framework": 26.8,
+     "unaligned": 14.8,
+     "dem_framework": 58.4
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "007",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Paul Bettencourt",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Paul Bettencourt",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 628125,
+   "rural_pct": 12.3,
+   "town_pct": 0.0,
+   "suburban_pct": 78.2,
+   "urban_pct": 9.5,
+   "income_brackets": {
+    "lt_50k": 11.6,
+    "between_50_100k": 22.3,
+    "gt_150k": 53.0,
+    "unknown_pct": 13.0
+   },
+   "college_pct": 24.1,
+   "post_grad_pct": 10.7,
+   "education_unknown_pct": 25.5,
+   "white_pct": 51.5,
+   "hispanic_pct": 21.2,
+   "black_pct": 8.8,
+   "asian_pct": 8.2,
+   "other_pct": 10.4
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 36.6,
+    "rep_pct": 63.4,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -26.8,
+   "latest_leg": -26.8,
+   "gov_2022": -21.4,
+   "pres_2024": -21.0,
+   "model_rslc_all": 9.5,
+   "model_rslc_hm": 20.0
+  },
+  "pres_2024_margin": -21.0,
+  "gov_2022_margin": -21.4,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 406522,
+   "gov_2022": 288422,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 46.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 17.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 36.7
+      }
+     ],
+     "margin": 9.5,
+     "gop_framework": 46.3,
+     "unaligned": 17.0,
+     "dem_framework": 36.7
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 52.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 14.6
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 32.7
+      }
+     ],
+     "margin": 20.0,
+     "gop_framework": 52.7,
+     "unaligned": 14.6,
+     "dem_framework": 32.7
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "008",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Angela Paxton",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Angela Paxton",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 694046,
+   "rural_pct": 26.8,
+   "town_pct": 4.6,
+   "suburban_pct": 43.2,
+   "urban_pct": 25.4,
+   "income_brackets": {
+    "lt_50k": 11.3,
+    "between_50_100k": 19.8,
+    "gt_150k": 54.9,
+    "unknown_pct": 14.0
+   },
+   "college_pct": 23.3,
+   "post_grad_pct": 12.2,
+   "education_unknown_pct": 26.7,
+   "white_pct": 59.7,
+   "hispanic_pct": 10.5,
+   "black_pct": 7.1,
+   "asian_pct": 10.3,
+   "other_pct": 12.5
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 40.6,
+    "rep_pct": 59.4,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -18.7,
+   "latest_leg": -18.7,
+   "gov_2022": -18.3,
+   "pres_2024": -18.5,
+   "model_rslc_all": 25.1,
+   "model_rslc_hm": 29.9
+  },
+  "pres_2024_margin": -18.5,
+  "gov_2022_margin": -18.3,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 479017,
+   "gov_2022": 337673,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 53.8
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 17.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 28.7
+      }
+     ],
+     "margin": 25.1,
+     "gop_framework": 53.8,
+     "unaligned": 17.5,
+     "dem_framework": 28.7
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 57.4
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 15.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 27.5
+      }
+     ],
+     "margin": 29.9,
+     "gop_framework": 57.4,
+     "unaligned": 15.1,
+     "dem_framework": 27.5
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "009",
+  "district_name": "",
+  "tier": 1,
+  "incumbent": {
+   "name": "Taylor Rehmet",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Taylor Rehmet",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "Leigh Wambsganss",
+     "dem": "Taylor Rehmet"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 611147,
+   "rural_pct": 6.0,
+   "town_pct": 0.1,
+   "suburban_pct": 43.3,
+   "urban_pct": 50.7,
+   "income_brackets": {
+    "lt_50k": 18.1,
+    "between_50_100k": 23.9,
+    "gt_150k": 43.7,
+    "unknown_pct": 14.2
+   },
+   "college_pct": 21.8,
+   "post_grad_pct": 9.7,
+   "education_unknown_pct": 26.2,
+   "white_pct": 57.4,
+   "hispanic_pct": 18.6,
+   "black_pct": 7.6,
+   "asian_pct": 5.0,
+   "other_pct": 11.4
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 40.0,
+    "rep_pct": 60.0,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -20.1,
+   "latest_leg": -20.1,
+   "gov_2022": -16.4,
+   "pres_2024": -17.4,
+   "model_rslc_all": 8.9,
+   "model_rslc_hm": 19.4
+  },
+  "pres_2024_margin": -17.4,
+  "gov_2022_margin": -16.4,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 398010,
+   "gov_2022": 281625,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Leigh Wambsganss",
+   "dem": "Taylor Rehmet"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 45.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 17.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 37.0
+      }
+     ],
+     "margin": 8.9,
+     "gop_framework": 45.9,
+     "unaligned": 17.0,
+     "dem_framework": 37.0
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 52.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 14.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 33.2
+      }
+     ],
+     "margin": 19.4,
+     "gop_framework": 52.7,
+     "unaligned": 14.1,
+     "dem_framework": 33.2
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "010",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Phil King",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Phil King",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 598749,
+   "rural_pct": 25.9,
+   "town_pct": 11.1,
+   "suburban_pct": 15.8,
+   "urban_pct": 47.2,
+   "income_brackets": {
+    "lt_50k": 23.9,
+    "between_50_100k": 27.4,
+    "gt_150k": 34.3,
+    "unknown_pct": 14.4
+   },
+   "college_pct": 20.7,
+   "post_grad_pct": 9.3,
+   "education_unknown_pct": 25.9,
+   "white_pct": 54.5,
+   "hispanic_pct": 16.4,
+   "black_pct": 16.3,
+   "asian_pct": 2.4,
+   "other_pct": 10.3
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 38.3,
+    "rep_pct": 61.7,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -23.4,
+   "latest_leg": -23.4,
+   "gov_2022": -22.2,
+   "pres_2024": -21.8,
+   "model_rslc_all": 25.9,
+   "model_rslc_hm": 36.6
+  },
+  "pres_2024_margin": -21.8,
+  "gov_2022_margin": -22.2,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 384998,
+   "gov_2022": 277412,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 57.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 11.3
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 31.4
+      }
+     ],
+     "margin": 25.9,
+     "gop_framework": 57.3,
+     "unaligned": 11.3,
+     "dem_framework": 31.4
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 64.2
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 8.2
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 27.6
+      }
+     ],
+     "margin": 36.6,
+     "gop_framework": 64.2,
+     "unaligned": 8.2,
+     "dem_framework": 27.6
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "011",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Mayes Middleton",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Mayes Middleton",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Dennis Paul",
+     "dem": "Shannon Dicely"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 618606,
+   "rural_pct": 13.2,
+   "town_pct": 4.4,
+   "suburban_pct": 72.8,
+   "urban_pct": 9.3,
+   "income_brackets": {
+    "lt_50k": 16.3,
+    "between_50_100k": 24.1,
+    "gt_150k": 45.2,
+    "unknown_pct": 14.5
+   },
+   "college_pct": 21.6,
+   "post_grad_pct": 10.9,
+   "education_unknown_pct": 26.1,
+   "white_pct": 52.5,
+   "hispanic_pct": 20.9,
+   "black_pct": 11.0,
+   "asian_pct": 5.7,
+   "other_pct": 9.8
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 0.0,
+    "rep_pct": 100.0,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -100.0,
+   "latest_leg": -100.0,
+   "gov_2022": -18.9,
+   "pres_2024": -21.1,
+   "model_rslc_all": 9.5,
+   "model_rslc_hm": 18.6
+  },
+  "pres_2024_margin": -21.1,
+  "gov_2022_margin": -18.9,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 389498,
+   "gov_2022": 279735,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Dennis Paul",
+   "dem": "Shannon Dicely"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 45.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 17.6
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 36.4
+      }
+     ],
+     "margin": 9.5,
+     "gop_framework": 45.9,
+     "unaligned": 17.6,
+     "dem_framework": 36.4
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 52.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 14.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 33.7
+      }
+     ],
+     "margin": 18.6,
+     "gop_framework": 52.3,
+     "unaligned": 14.1,
+     "dem_framework": 33.7
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "012",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Tan Parker",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Tan Parker",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 666882,
+   "rural_pct": 18.0,
+   "town_pct": 3.3,
+   "suburban_pct": 55.2,
+   "urban_pct": 23.5,
+   "income_brackets": {
+    "lt_50k": 11.0,
+    "between_50_100k": 18.8,
+    "gt_150k": 57.2,
+    "unknown_pct": 13.0
+   },
+   "college_pct": 24.3,
+   "post_grad_pct": 13.2,
+   "education_unknown_pct": 24.7,
+   "white_pct": 62.8,
+   "hispanic_pct": 11.9,
+   "black_pct": 5.8,
+   "asian_pct": 8.2,
+   "other_pct": 11.2
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 38.6,
+    "rep_pct": 61.4,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -22.7,
+   "latest_leg": -22.7,
+   "gov_2022": -18.1,
+   "pres_2024": -18.4,
+   "model_rslc_all": 19.2,
+   "model_rslc_hm": 25.8
+  },
+  "pres_2024_margin": -18.4,
+  "gov_2022_margin": -18.1,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 468574,
+   "gov_2022": 351679,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 51.8
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 15.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 32.6
+      }
+     ],
+     "margin": 19.2,
+     "gop_framework": 51.8,
+     "unaligned": 15.5,
+     "dem_framework": 32.6
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 56.0
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.7
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 30.3
+      }
+     ],
+     "margin": 25.8,
+     "gop_framework": 56.0,
+     "unaligned": 13.7,
+     "dem_framework": 30.3
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "013",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Borris Miles",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Borris Miles",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "Borris Miles"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 488994,
+   "rural_pct": 2.5,
+   "town_pct": 0.0,
+   "suburban_pct": 22.6,
+   "urban_pct": 74.9,
+   "income_brackets": {
+    "lt_50k": 33.2,
+    "between_50_100k": 24.5,
+    "gt_150k": 24.2,
+    "unknown_pct": 18.1
+   },
+   "college_pct": 19.4,
+   "post_grad_pct": 8.7,
+   "education_unknown_pct": 32.1,
+   "white_pct": 15.6,
+   "hispanic_pct": 20.8,
+   "black_pct": 44.2,
+   "asian_pct": 9.2,
+   "other_pct": 10.1
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 100.0,
+    "rep_pct": 0.0,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 100.0,
+   "latest_leg": 100.0,
+   "gov_2022": 56.8,
+   "pres_2024": 47.6,
+   "model_rslc_all": -61.4,
+   "model_rslc_hm": -57.9
+  },
+  "pres_2024_margin": 47.6,
+  "gov_2022_margin": 56.8,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 262070,
+   "gov_2022": 181326,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "Borris Miles"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 13.1
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 12.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 74.4
+      }
+     ],
+     "margin": -61.4,
+     "gop_framework": 13.1,
+     "unaligned": 12.5,
+     "dem_framework": 74.4
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 16.1
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 9.9
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 74.0
+      }
+     ],
+     "margin": -57.9,
+     "gop_framework": 16.1,
+     "unaligned": 9.9,
+     "dem_framework": 74.0
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "014",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Sarah Eckhardt",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Sarah Eckhardt",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 671571,
+   "rural_pct": 8.0,
+   "town_pct": 1.7,
+   "suburban_pct": 16.9,
+   "urban_pct": 73.4,
+   "income_brackets": {
+    "lt_50k": 13.4,
+    "between_50_100k": 19.8,
+    "gt_150k": 49.4,
+    "unknown_pct": 17.4
+   },
+   "college_pct": 21.6,
+   "post_grad_pct": 12.2,
+   "education_unknown_pct": 28.3,
+   "white_pct": 56.8,
+   "hispanic_pct": 17.9,
+   "black_pct": 6.1,
+   "asian_pct": 7.2,
+   "other_pct": 12.1
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 100.0,
+    "rep_pct": 0.0,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 100.0,
+   "latest_leg": 100.0,
+   "gov_2022": 53.8,
+   "pres_2024": 46.2,
+   "model_rslc_all": -58.6,
+   "model_rslc_hm": -57.2
+  },
+  "pres_2024_margin": 46.2,
+  "gov_2022_margin": 53.8,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 439539,
+   "gov_2022": 352771,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 14.2
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 72.8
+      }
+     ],
+     "margin": -58.6,
+     "gop_framework": 14.2,
+     "unaligned": 13.0,
+     "dem_framework": 72.8
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 15.8
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 11.2
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 73.0
+      }
+     ],
+     "margin": -57.2,
+     "gop_framework": 15.8,
+     "unaligned": 11.2,
+     "dem_framework": 73.0
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "015",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Molly Cook",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Molly Cook",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 556198,
+   "rural_pct": 2.5,
+   "town_pct": 0.0,
+   "suburban_pct": 38.6,
+   "urban_pct": 58.9,
+   "income_brackets": {
+    "lt_50k": 20.0,
+    "between_50_100k": 23.2,
+    "gt_150k": 41.9,
+    "unknown_pct": 14.9
+   },
+   "college_pct": 21.9,
+   "post_grad_pct": 11.5,
+   "education_unknown_pct": 27.1,
+   "white_pct": 39.0,
+   "hispanic_pct": 24.6,
+   "black_pct": 19.1,
+   "asian_pct": 7.7,
+   "other_pct": 9.7
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 61.9,
+    "rep_pct": 38.1,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 23.8,
+   "latest_leg": 23.8,
+   "gov_2022": 30.9,
+   "pres_2024": 25.4,
+   "model_rslc_all": -37.4,
+   "model_rslc_hm": -30.3
+  },
+  "pres_2024_margin": 25.4,
+  "gov_2022_margin": 30.9,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 336271,
+   "gov_2022": 247542,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 23.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 14.8
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 61.3
+      }
+     ],
+     "margin": -37.4,
+     "gop_framework": 23.9,
+     "unaligned": 14.8,
+     "dem_framework": 61.3
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 28.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 58.6
+      }
+     ],
+     "margin": -30.3,
+     "gop_framework": 28.3,
+     "unaligned": 13.1,
+     "dem_framework": 58.6
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "016",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Nathan Johnson",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Nathan Johnson",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 465527,
+   "rural_pct": 0.7,
+   "town_pct": 0.0,
+   "suburban_pct": 17.9,
+   "urban_pct": 81.4,
+   "income_brackets": {
+    "lt_50k": 26.6,
+    "between_50_100k": 23.9,
+    "gt_150k": 32.5,
+    "unknown_pct": 17.0
+   },
+   "college_pct": 20.2,
+   "post_grad_pct": 9.0,
+   "education_unknown_pct": 29.4,
+   "white_pct": 39.5,
+   "hispanic_pct": 29.6,
+   "black_pct": 14.7,
+   "asian_pct": 4.7,
+   "other_pct": 11.5
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 100.0,
+    "rep_pct": 0.0,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 100.0,
+   "latest_leg": 100.0,
+   "gov_2022": 25.1,
+   "pres_2024": 18.4,
+   "model_rslc_all": -29.7,
+   "model_rslc_hm": -22.7
+  },
+  "pres_2024_margin": 18.4,
+  "gov_2022_margin": 25.1,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 267066,
+   "gov_2022": 194897,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 26.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 16.9
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 56.4
+      }
+     ],
+     "margin": -29.7,
+     "gop_framework": 26.7,
+     "unaligned": 16.9,
+     "dem_framework": 56.4
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 31.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.4
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 54.6
+      }
+     ],
+     "margin": -22.7,
+     "gop_framework": 31.9,
+     "unaligned": 13.4,
+     "dem_framework": 54.6
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "017",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Joan Huffman",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Joan Huffman",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 588526,
+   "rural_pct": 25.9,
+   "town_pct": 7.6,
+   "suburban_pct": 32.8,
+   "urban_pct": 33.6,
+   "income_brackets": {
+    "lt_50k": 15.0,
+    "between_50_100k": 21.2,
+    "gt_150k": 48.9,
+    "unknown_pct": 14.9
+   },
+   "college_pct": 22.9,
+   "post_grad_pct": 12.1,
+   "education_unknown_pct": 28.2,
+   "white_pct": 52.2,
+   "hispanic_pct": 18.1,
+   "black_pct": 8.6,
+   "asian_pct": 10.2,
+   "other_pct": 10.9
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 35.8,
+    "rep_pct": 64.2,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -28.3,
+   "latest_leg": -28.3,
+   "gov_2022": -25.0,
+   "pres_2024": -22.8,
+   "model_rslc_all": 12.9,
+   "model_rslc_hm": 20.4
+  },
+  "pres_2024_margin": -22.8,
+  "gov_2022_margin": -25.0,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 385280,
+   "gov_2022": 283582,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 48.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 15.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 35.8
+      }
+     ],
+     "margin": 12.9,
+     "gop_framework": 48.7,
+     "unaligned": 15.5,
+     "dem_framework": 35.8
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 53.8
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 12.9
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 33.3
+      }
+     ],
+     "margin": 20.4,
+     "gop_framework": 53.8,
+     "unaligned": 12.9,
+     "dem_framework": 33.3
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "018",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Lois Kolkhorst",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Lois Kolkhorst",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Lois Kolkhorst",
+     "dem": "Erica Gillum"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 652993,
+   "rural_pct": 43.3,
+   "town_pct": 10.8,
+   "suburban_pct": 34.1,
+   "urban_pct": 11.6,
+   "income_brackets": {
+    "lt_50k": 18.5,
+    "between_50_100k": 25.3,
+    "gt_150k": 40.2,
+    "unknown_pct": 16.0
+   },
+   "college_pct": 21.7,
+   "post_grad_pct": 9.5,
+   "education_unknown_pct": 29.4,
+   "white_pct": 47.0,
+   "hispanic_pct": 20.4,
+   "black_pct": 11.5,
+   "asian_pct": 10.1,
+   "other_pct": 11.0
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 33.8,
+    "rep_pct": 66.2,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -32.3,
+   "latest_leg": -32.3,
+   "gov_2022": -28.7,
+   "pres_2024": -26.6,
+   "model_rslc_all": 17.8,
+   "model_rslc_hm": 26.7
+  },
+  "pres_2024_margin": -26.6,
+  "gov_2022_margin": -28.7,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 413478,
+   "gov_2022": 290000,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Lois Kolkhorst",
+   "dem": "Erica Gillum"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 51.4
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 15.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 33.5
+      }
+     ],
+     "margin": 17.8,
+     "gop_framework": 51.4,
+     "unaligned": 15.1,
+     "dem_framework": 33.5
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 57.4
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 11.8
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 30.7
+      }
+     ],
+     "margin": 26.7,
+     "gop_framework": 57.4,
+     "unaligned": 11.8,
+     "dem_framework": 30.7
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "019",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Roland Gutierrez",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Roland Gutierrez",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "Primary runoff results pending",
+     "dem": "Roland Gutierrez"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 598383,
+   "rural_pct": 27.6,
+   "town_pct": 16.1,
+   "suburban_pct": 21.5,
+   "urban_pct": 34.9,
+   "income_brackets": {
+    "lt_50k": 30.1,
+    "between_50_100k": 26.6,
+    "gt_150k": 25.2,
+    "unknown_pct": 18.2
+   },
+   "college_pct": 18.1,
+   "post_grad_pct": 6.8,
+   "education_unknown_pct": 31.8,
+   "white_pct": 27.1,
+   "hispanic_pct": 53.4,
+   "black_pct": 6.0,
+   "asian_pct": 2.0,
+   "other_pct": 11.6
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 55.4,
+    "rep_pct": 44.6,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 10.8,
+   "latest_leg": 10.8,
+   "gov_2022": 11.7,
+   "pres_2024": 1.7,
+   "model_rslc_all": -23.1,
+   "model_rslc_hm": -16.1
+  },
+  "pres_2024_margin": 1.7,
+  "gov_2022_margin": 11.7,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 331140,
+   "gov_2022": 216699,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Primary runoff results pending",
+   "dem": "Roland Gutierrez"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 29.5
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 17.8
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 52.6
+      }
+     ],
+     "margin": -23.1,
+     "gop_framework": 29.5,
+     "unaligned": 17.8,
+     "dem_framework": 52.6
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 35.0
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.9
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 51.1
+      }
+     ],
+     "margin": -16.1,
+     "gop_framework": 35.0,
+     "unaligned": 13.9,
+     "dem_framework": 51.1
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "020",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Juan Hinojosa",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Juan Hinojosa",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 496843,
+   "rural_pct": 7.8,
+   "town_pct": 5.3,
+   "suburban_pct": 21.3,
+   "urban_pct": 65.6,
+   "income_brackets": {
+    "lt_50k": 38.8,
+    "between_50_100k": 25.4,
+    "gt_150k": 19.0,
+    "unknown_pct": 16.9
+   },
+   "college_pct": 20.9,
+   "post_grad_pct": 7.5,
+   "education_unknown_pct": 31.0,
+   "white_pct": 16.6,
+   "hispanic_pct": 71.2,
+   "black_pct": 1.6,
+   "asian_pct": 1.2,
+   "other_pct": 9.4
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 100.0,
+    "rep_pct": 0.0,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 100.0,
+   "latest_leg": 100.0,
+   "gov_2022": 9.0,
+   "pres_2024": -3.9,
+   "model_rslc_all": -30.0,
+   "model_rslc_hm": -26.0
+  },
+  "pres_2024_margin": -3.9,
+  "gov_2022_margin": 9.0,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 251856,
+   "gov_2022": 176111,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 25.2
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 19.7
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 55.2
+      }
+     ],
+     "margin": -30.0,
+     "gop_framework": 25.2,
+     "unaligned": 19.7,
+     "dem_framework": 55.2
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 30.0
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 14.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 56.0
+      }
+     ],
+     "margin": -26.0,
+     "gop_framework": 30.0,
+     "unaligned": 14.0,
+     "dem_framework": 56.0
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "021",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Judith Zaffirini",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Judith Zaffirini",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "Julie Dahlberg",
+     "dem": "Judith Zaffirini"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 559508,
+   "rural_pct": 32.5,
+   "town_pct": 11.9,
+   "suburban_pct": 8.8,
+   "urban_pct": 46.8,
+   "income_brackets": {
+    "lt_50k": 30.4,
+    "between_50_100k": 25.6,
+    "gt_150k": 23.6,
+    "unknown_pct": 20.4
+   },
+   "college_pct": 19.6,
+   "post_grad_pct": 6.4,
+   "education_unknown_pct": 33.6,
+   "white_pct": 30.6,
+   "hispanic_pct": 54.0,
+   "black_pct": 2.6,
+   "asian_pct": 1.5,
+   "other_pct": 11.3
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 61.6,
+    "rep_pct": 35.9,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 25.6,
+   "latest_leg": 25.6,
+   "gov_2022": 16.8,
+   "pres_2024": 2.9,
+   "model_rslc_all": -42.2,
+   "model_rslc_hm": -41.6
+  },
+  "pres_2024_margin": 2.9,
+  "gov_2022_margin": 16.8,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 313154,
+   "gov_2022": 219433,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Julie Dahlberg",
+   "dem": "Judith Zaffirini"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 20.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 16.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 62.9
+      }
+     ],
+     "margin": -42.2,
+     "gop_framework": 20.7,
+     "unaligned": 16.5,
+     "dem_framework": 62.9
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 23.2
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 12.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 64.8
+      }
+     ],
+     "margin": -41.6,
+     "gop_framework": 23.2,
+     "unaligned": 12.0,
+     "dem_framework": 64.8
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "022",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Brian Birdwell",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Brian Birdwell",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "David Cook",
+     "dem": "Amy Martinez-Salas"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 615099,
+   "rural_pct": 30.4,
+   "town_pct": 10.6,
+   "suburban_pct": 30.2,
+   "urban_pct": 28.8,
+   "income_brackets": {
+    "lt_50k": 23.0,
+    "between_50_100k": 27.4,
+    "gt_150k": 34.3,
+    "unknown_pct": 15.3
+   },
+   "college_pct": 20.7,
+   "post_grad_pct": 9.0,
+   "education_unknown_pct": 26.9,
+   "white_pct": 56.0,
+   "hispanic_pct": 14.9,
+   "black_pct": 14.4,
+   "asian_pct": 3.7,
+   "other_pct": 11.1
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 0.0,
+    "rep_pct": 74.3,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -48.5,
+   "latest_leg": -48.5,
+   "gov_2022": -29.6,
+   "pres_2024": -28.0,
+   "model_rslc_all": 35.4,
+   "model_rslc_hm": 45.6
+  },
+  "pres_2024_margin": -28.0,
+  "gov_2022_margin": -29.6,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 398445,
+   "gov_2022": 284026,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "David Cook",
+   "dem": "Amy Martinez-Salas"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 61.0
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 25.6
+      }
+     ],
+     "margin": 35.4,
+     "gop_framework": 61.0,
+     "unaligned": 13.5,
+     "dem_framework": 25.6
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 68.1
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 9.4
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 22.5
+      }
+     ],
+     "margin": 45.6,
+     "gop_framework": 68.1,
+     "unaligned": 9.4,
+     "dem_framework": 22.5
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "023",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Royce West",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Royce West",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 559873,
+   "rural_pct": 1.7,
+   "town_pct": 0.0,
+   "suburban_pct": 39.8,
+   "urban_pct": 58.6,
+   "income_brackets": {
+    "lt_50k": 29.8,
+    "between_50_100k": 25.7,
+    "gt_150k": 27.4,
+    "unknown_pct": 17.2
+   },
+   "college_pct": 18.7,
+   "post_grad_pct": 7.5,
+   "education_unknown_pct": 29.3,
+   "white_pct": 21.9,
+   "hispanic_pct": 23.2,
+   "black_pct": 41.2,
+   "asian_pct": 3.3,
+   "other_pct": 10.5
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 100.0,
+    "rep_pct": 0.0,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 100.0,
+   "latest_leg": 100.0,
+   "gov_2022": 54.3,
+   "pres_2024": 46.2,
+   "model_rslc_all": -54.9,
+   "model_rslc_hm": -52.1
+  },
+  "pres_2024_margin": 46.2,
+  "gov_2022_margin": 54.3,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 312829,
+   "gov_2022": 223313,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 15.8
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 70.7
+      }
+     ],
+     "margin": -54.9,
+     "gop_framework": 15.8,
+     "unaligned": 13.5,
+     "dem_framework": 70.7
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 18.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.6
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 70.8
+      }
+     ],
+     "margin": -52.1,
+     "gop_framework": 18.7,
+     "unaligned": 10.6,
+     "dem_framework": 70.8
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "024",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Pete Flores",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Pete Flores",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Pete Flores",
+     "dem": "Joe P. Herrera"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 641039,
+   "rural_pct": 36.4,
+   "town_pct": 12.6,
+   "suburban_pct": 26.3,
+   "urban_pct": 24.7,
+   "income_brackets": {
+    "lt_50k": 20.6,
+    "between_50_100k": 27.5,
+    "gt_150k": 35.2,
+    "unknown_pct": 16.7
+   },
+   "college_pct": 19.3,
+   "post_grad_pct": 9.0,
+   "education_unknown_pct": 29.0,
+   "white_pct": 55.9,
+   "hispanic_pct": 17.5,
+   "black_pct": 11.1,
+   "asian_pct": 3.6,
+   "other_pct": 12.1
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 35.7,
+    "rep_pct": 64.3,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -28.6,
+   "latest_leg": -28.6,
+   "gov_2022": -26.3,
+   "pres_2024": -24.9,
+   "model_rslc_all": 33.1,
+   "model_rslc_hm": 40.6
+  },
+  "pres_2024_margin": -24.9,
+  "gov_2022_margin": -26.3,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 410340,
+   "gov_2022": 297339,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Pete Flores",
+   "dem": "Joe P. Herrera"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 59.4
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 14.4
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 26.2
+      }
+     ],
+     "margin": 33.1,
+     "gop_framework": 59.4,
+     "unaligned": 14.4,
+     "dem_framework": 26.2
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 65.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 24.7
+      }
+     ],
+     "margin": 40.6,
+     "gop_framework": 65.3,
+     "unaligned": 10.0,
+     "dem_framework": 24.7
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "025",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Donna Campbell",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Donna Campbell",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 738056,
+   "rural_pct": 39.4,
+   "town_pct": 4.2,
+   "suburban_pct": 26.3,
+   "urban_pct": 30.1,
+   "income_brackets": {
+    "lt_50k": 10.3,
+    "between_50_100k": 19.8,
+    "gt_150k": 57.7,
+    "unknown_pct": 12.2
+   },
+   "college_pct": 24.3,
+   "post_grad_pct": 14.0,
+   "education_unknown_pct": 23.5,
+   "white_pct": 62.4,
+   "hispanic_pct": 20.6,
+   "black_pct": 3.0,
+   "asian_pct": 3.5,
+   "other_pct": 10.6
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 36.4,
+    "rep_pct": 63.6,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -27.1,
+   "latest_leg": -27.1,
+   "gov_2022": -21.5,
+   "pres_2024": -21.8,
+   "model_rslc_all": 21.8,
+   "model_rslc_hm": 25.9
+  },
+  "pres_2024_margin": -21.8,
+  "gov_2022_margin": -21.5,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 528653,
+   "gov_2022": 397073,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 53.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 15.2
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 31.5
+      }
+     ],
+     "margin": 21.8,
+     "gop_framework": 53.3,
+     "unaligned": 15.2,
+     "dem_framework": 31.5
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 56.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.4
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 30.3
+      }
+     ],
+     "margin": 25.9,
+     "gop_framework": 56.3,
+     "unaligned": 13.4,
+     "dem_framework": 30.3
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "026",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Jose Menendez",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Jose Menendez",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "Jose Menendez"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 524107,
+   "rural_pct": 0.3,
+   "town_pct": 0.0,
+   "suburban_pct": 13.3,
+   "urban_pct": 86.4,
+   "income_brackets": {
+    "lt_50k": 32.8,
+    "between_50_100k": 28.4,
+    "gt_150k": 23.1,
+    "unknown_pct": 15.7
+   },
+   "college_pct": 19.1,
+   "post_grad_pct": 8.6,
+   "education_unknown_pct": 28.6,
+   "white_pct": 28.7,
+   "hispanic_pct": 54.4,
+   "black_pct": 4.5,
+   "asian_pct": 2.2,
+   "other_pct": 10.2
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 66.5,
+    "rep_pct": 33.5,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 33.1,
+   "latest_leg": 33.1,
+   "gov_2022": 31.9,
+   "pres_2024": 22.5,
+   "model_rslc_all": -41.3,
+   "model_rslc_hm": -34.4
+  },
+  "pres_2024_margin": 22.5,
+  "gov_2022_margin": 31.9,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 297919,
+   "gov_2022": 218166,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "Jose Menendez"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 21.1
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 16.4
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 62.5
+      }
+     ],
+     "margin": -41.3,
+     "gop_framework": 21.1,
+     "unaligned": 16.4,
+     "dem_framework": 62.5
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 26.5
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 12.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 60.9
+      }
+     ],
+     "margin": -34.4,
+     "gop_framework": 26.5,
+     "unaligned": 12.5,
+     "dem_framework": 60.9
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "027",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Adam Hinojosa",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Adam Hinojosa",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 518841,
+   "rural_pct": 16.1,
+   "town_pct": 11.5,
+   "suburban_pct": 38.6,
+   "urban_pct": 32.9,
+   "income_brackets": {
+    "lt_50k": 41.7,
+    "between_50_100k": 23.4,
+    "gt_150k": 15.3,
+    "unknown_pct": 19.6
+   },
+   "college_pct": 20.5,
+   "post_grad_pct": 6.6,
+   "education_unknown_pct": 33.5,
+   "white_pct": 17.3,
+   "hispanic_pct": 71.2,
+   "black_pct": 1.3,
+   "asian_pct": 0.8,
+   "other_pct": 9.4
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 48.3,
+    "rep_pct": 49.4,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -1.1,
+   "latest_leg": -1.1,
+   "gov_2022": 0.7,
+   "pres_2024": -11.8,
+   "model_rslc_all": -19.0,
+   "model_rslc_hm": -13.1
+  },
+  "pres_2024_margin": -11.8,
+  "gov_2022_margin": 0.7,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 261543,
+   "gov_2022": 179275,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 30.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 19.6
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 49.7
+      }
+     ],
+     "margin": -19.0,
+     "gop_framework": 30.7,
+     "unaligned": 19.6,
+     "dem_framework": 49.7
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 37.0
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 50.1
+      }
+     ],
+     "margin": -13.1,
+     "gop_framework": 37.0,
+     "unaligned": 13.0,
+     "dem_framework": 50.1
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "028",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Charles Perry",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Charles Perry",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Charles Perry",
+     "dem": "Riley Rodriquez"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 562276,
+   "rural_pct": 31.2,
+   "town_pct": 15.4,
+   "suburban_pct": 2.0,
+   "urban_pct": 51.3,
+   "income_brackets": {
+    "lt_50k": 29.4,
+    "between_50_100k": 26.4,
+    "gt_150k": 26.2,
+    "unknown_pct": 18.0
+   },
+   "college_pct": 19.6,
+   "post_grad_pct": 8.4,
+   "education_unknown_pct": 29.1,
+   "white_pct": 59.8,
+   "hispanic_pct": 22.8,
+   "black_pct": 4.9,
+   "asian_pct": 1.4,
+   "other_pct": 11.1
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 0.0,
+    "rep_pct": 100.0,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -100.0,
+   "latest_leg": -100.0,
+   "gov_2022": -55.1,
+   "pres_2024": -51.6,
+   "model_rslc_all": 50.6,
+   "model_rslc_hm": 63.0
+  },
+  "pres_2024_margin": -51.6,
+  "gov_2022_margin": -55.1,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 354473,
+   "gov_2022": 250204,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Charles Perry",
+   "dem": "Riley Rodriquez"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 68.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 13.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 18.2
+      }
+     ],
+     "margin": 50.6,
+     "gop_framework": 68.7,
+     "unaligned": 13.1,
+     "dem_framework": 18.2
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 77.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 7.6
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 14.7
+      }
+     ],
+     "margin": 63.0,
+     "gop_framework": 77.7,
+     "unaligned": 7.6,
+     "dem_framework": 14.7
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "029",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Cesar Blanco",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Cesar Blanco",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 545158,
+   "rural_pct": 12.8,
+   "town_pct": 4.1,
+   "suburban_pct": 14.0,
+   "urban_pct": 69.2,
+   "income_brackets": {
+    "lt_50k": 34.8,
+    "between_50_100k": 27.1,
+    "gt_150k": 20.3,
+    "unknown_pct": 17.9
+   },
+   "college_pct": 21.4,
+   "post_grad_pct": 7.6,
+   "education_unknown_pct": 30.4,
+   "white_pct": 16.2,
+   "hispanic_pct": 70.5,
+   "black_pct": 1.8,
+   "asian_pct": 1.3,
+   "other_pct": 10.2
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 100.0,
+    "rep_pct": 0.0,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 100.0,
+   "latest_leg": 100.0,
+   "gov_2022": 25.2,
+   "pres_2024": 12.7,
+   "model_rslc_all": -42.4,
+   "model_rslc_hm": -39.1
+  },
+  "pres_2024_margin": 12.7,
+  "gov_2022_margin": 25.2,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 268866,
+   "gov_2022": 179064,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 19.6
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 18.4
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 62.0
+      }
+     ],
+     "margin": -42.4,
+     "gop_framework": 19.6,
+     "unaligned": 18.4,
+     "dem_framework": 62.0
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 23.2
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 14.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 62.3
+      }
+     ],
+     "margin": -39.1,
+     "gop_framework": 23.2,
+     "unaligned": 14.5,
+     "dem_framework": 62.3
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "030",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Brent Hagenbuch",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Brent Hagenbuch",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 693720,
+   "rural_pct": 35.2,
+   "town_pct": 9.5,
+   "suburban_pct": 33.3,
+   "urban_pct": 22.0,
+   "income_brackets": {
+    "lt_50k": 15.8,
+    "between_50_100k": 23.1,
+    "gt_150k": 45.1,
+    "unknown_pct": 16.0
+   },
+   "college_pct": 21.4,
+   "post_grad_pct": 10.1,
+   "education_unknown_pct": 28.3,
+   "white_pct": 62.9,
+   "hispanic_pct": 10.7,
+   "black_pct": 7.0,
+   "asian_pct": 6.7,
+   "other_pct": 12.7
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 35.0,
+    "rep_pct": 65.0,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -30.1,
+   "latest_leg": -30.1,
+   "gov_2022": -27.3,
+   "pres_2024": -27.3,
+   "model_rslc_all": 36.9,
+   "model_rslc_hm": 42.6
+  },
+  "pres_2024_margin": -27.3,
+  "gov_2022_margin": -27.3,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 463827,
+   "gov_2022": 317843,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 61.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 14.3
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 24.4
+      }
+     ],
+     "margin": 36.9,
+     "gop_framework": 61.3,
+     "unaligned": 14.3,
+     "dem_framework": 24.4
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 65.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 11.9
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 22.7
+      }
+     ],
+     "margin": 42.6,
+     "gop_framework": 65.3,
+     "unaligned": 11.9,
+     "dem_framework": 22.7
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "48",
+  "district_id": "031",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Kevin Sparks",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Kevin Sparks",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Kevin Sparks",
+     "dem": "John Betancourt"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 506012,
+   "rural_pct": 31.8,
+   "town_pct": 20.1,
+   "suburban_pct": 4.4,
+   "urban_pct": 43.6,
+   "income_brackets": {
+    "lt_50k": 27.9,
+    "between_50_100k": 25.8,
+    "gt_150k": 27.5,
+    "unknown_pct": 18.8
+   },
+   "college_pct": 18.9,
+   "post_grad_pct": 7.2,
+   "education_unknown_pct": 31.1,
+   "white_pct": 52.3,
+   "hispanic_pct": 30.9,
+   "black_pct": 4.2,
+   "asian_pct": 1.5,
+   "other_pct": 11.0
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 0.0,
+    "rep_pct": 100.0,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -100.0,
+   "latest_leg": -100.0,
+   "gov_2022": -65.0,
+   "pres_2024": -61.5,
+   "model_rslc_all": 55.4,
+   "model_rslc_hm": 70.0
+  },
+  "pres_2024_margin": -61.5,
+  "gov_2022_margin": -65.0,
+  "ussen_2022_margin": null,
+  "top_ticket_totals": {
+   "pres_2024": 301301,
+   "gov_2022": 207896,
+   "ussen_2022": 0
+  },
+  "candidates_2026": {
+   "rep": "Kevin Sparks",
+   "dem": "John Betancourt"
+  },
+  "models": {
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 71.8
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 11.7
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 16.4
+      }
+     ],
+     "margin": 55.4,
+     "gop_framework": 71.8,
+     "unaligned": 11.7,
+     "dem_framework": 16.4
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 82.0
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 6.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 12.0
+      }
+     ],
+     "margin": 70.0,
+     "gop_framework": 82.0,
+     "unaligned": 6.0,
+     "dem_framework": 12.0
+    }
+   }
+  }
+ }
 ]

@@ -1560,7 +1560,7 @@ body.projection-active .chamber-buttons {
 
 .target-row {
   cursor: pointer;
-  transition: transform 140ms ease, background 140ms ease, opacity 140ms ease;
+  transition: background 140ms ease, box-shadow 140ms ease, opacity 140ms ease;
 }
 .target-table td.candidate-cell {
   white-space: nowrap;
@@ -1602,9 +1602,11 @@ body.projection-active .chamber-buttons {
   padding-bottom: 0.22rem;
 }
 
+/* Hover feedback is background + inset ring only. No transform: scaling a <tr>
+   renders inconsistently across browsers (the "jiggle"), and a lift on the
+   first row of a tier group drags its rowspanned tier button along with it. */
 .target-row:hover,
 .target-row.is-hovered {
-  transform: translateY(-1px) scale(1.01);
   background: rgba(255, 255, 255, 0.03);
 }
 
@@ -1614,7 +1616,6 @@ body.projection-active .chamber-buttons {
 }
 
 .target-row:has(.target-tier-group-cell:hover) {
-  transform: none;
   background: transparent;
 }
 
@@ -1740,7 +1741,12 @@ body.projection-active .chamber-buttons {
   padding-right: 0.22rem !important;
 }
 
+/* The tier button is a rowspan cell that belongs to the group's FIRST row, so a
+   translucent background lets that row's :hover highlight paint through the
+   whole tier block. Opaque equivalent of the 2% white overlay on the table's
+   #121a22 — looks identical, but blocks the row background behind it. */
 .target-tier-group-cell {
+  background: #171f26;
   vertical-align: middle !important;
   pointer-events: auto;
   cursor: pointer;

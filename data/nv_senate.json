@@ -1,3824 +1,3824 @@
 [
-  {
-    "state_fips": "32",
-    "district_id": "001",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Michelee Crawford",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Michelee Crawford",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 120415,
-      "rural_pct": 4.8,
-      "town_pct": 0.0,
-      "suburban_pct": 89.1,
-      "urban_pct": 5.3,
-      "income_brackets": {
-        "lt_50k": 16.7,
-        "between_50_100k": 30.4,
-        "gt_150k": 29.8,
-        "unknown_pct": 23.1
-      },
-      "college_pct": 12.8,
-      "post_grad_pct": 4.4,
-      "education_unknown_pct": 33.5,
-      "white_pct": 38.7,
-      "hispanic_pct": 28.1,
-      "black_pct": 22.3,
-      "asian_pct": 6.8,
-      "other_pct": 4.1
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 59.0,
-        "rep_pct": 41.0,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 17.9,
-      "latest_leg": 17.9,
-      "gov_2022": 18.8,
-      "ussen_2022": 20.5,
-      "pres_2024": 15.6,
-      "model_lombardo_all": -17.5,
-      "model_lombardo_hm": -20.3
-    },
-    "pres_2024_margin": 15.6,
-    "gov_2022_margin": 18.8,
-    "ussen_2022_margin": 20.5,
-    "top_ticket_totals": {
-      "pres_2024": 71133,
-      "gov_2022": 44096,
-      "ussen_2022": 44205
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 28.4
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.6
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 7.3
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 8.7
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.4
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.9
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 45.6
-            }
-          ],
-          "margin": -17.5,
-          "lombardo_base": 28.4,
-          "gop_likely": 2.6,
-          "gop_trust_target": 7.3,
-          "conflicted_middle": 8.7,
-          "dem_trust_target": 4.4,
-          "dem_likely": 2.9,
-          "ford_base": 45.6
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 30.7
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.8
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.3
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 6.2
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.1
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.0
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 50.8
-            }
-          ],
-          "margin": -20.3,
-          "lombardo_base": 30.7,
-          "gop_likely": 1.8,
-          "gop_trust_target": 4.3,
-          "conflicted_middle": 6.2,
-          "dem_trust_target": 4.1,
-          "dem_likely": 2.0,
-          "ford_base": 50.8
-        }
-      }
-    }
+ {
+  "state_fips": "32",
+  "district_id": "001",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Michelee Crawford",
+   "party": "D"
   },
-  {
-    "state_fips": "32",
-    "district_id": "002",
-    "district_name": "",
-    "tier": null,
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
     "incumbent": {
-      "name": "Edgar Flores",
-      "party": "D"
+     "name": "Michelee Crawford",
+     "party": "D"
     },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Edgar Flores",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "Edgar Flores"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 83418,
-      "rural_pct": 0.0,
-      "town_pct": 0.0,
-      "suburban_pct": 44.5,
-      "urban_pct": 55.1,
-      "income_brackets": {
-        "lt_50k": 43.4,
-        "between_50_100k": 15.2,
-        "gt_150k": 5.8,
-        "unknown_pct": 35.6
-      },
-      "college_pct": 8.4,
-      "post_grad_pct": 1.7,
-      "education_unknown_pct": 45.9,
-      "white_pct": 25.5,
-      "hispanic_pct": 49.2,
-      "black_pct": 18.1,
-      "asian_pct": 3.0,
-      "other_pct": 4.2
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 69.9,
-        "rep_pct": 30.1,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 39.9,
-      "latest_leg": 39.9,
-      "gov_2022": 38.0,
-      "ussen_2022": 41.7,
-      "pres_2024": 30.5,
-      "model_lombardo_all": -38.3,
-      "model_lombardo_hm": -42.7
-    },
-    "pres_2024_margin": 30.5,
-    "gov_2022_margin": 38.0,
-    "ussen_2022_margin": 41.7,
-    "top_ticket_totals": {
-      "pres_2024": 32753,
-      "gov_2022": 18145,
-      "ussen_2022": 18193
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "Edgar Flores"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 17.6
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.9
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 5.1
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 9.5
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 8.1
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.9
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 54.9
-            }
-          ],
-          "margin": -38.3,
-          "lombardo_base": 17.6,
-          "gop_likely": 1.9,
-          "gop_trust_target": 5.1,
-          "conflicted_middle": 9.5,
-          "dem_trust_target": 8.1,
-          "dem_likely": 2.9,
-          "ford_base": 54.9
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 19.6
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.5
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 3.3
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 5.4
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 6.4
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.9
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 61.9
-            }
-          ],
-          "margin": -42.7,
-          "lombardo_base": 19.6,
-          "gop_likely": 1.5,
-          "gop_trust_target": 3.3,
-          "conflicted_middle": 5.4,
-          "dem_trust_target": 6.4,
-          "dem_likely": 1.9,
-          "ford_base": 61.9
-        }
-      }
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
     }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 120415,
+   "rural_pct": 4.8,
+   "town_pct": 0.0,
+   "suburban_pct": 89.1,
+   "urban_pct": 5.3,
+   "income_brackets": {
+    "lt_50k": 16.7,
+    "between_50_100k": 30.4,
+    "gt_150k": 29.8,
+    "unknown_pct": 23.1
+   },
+   "college_pct": 12.8,
+   "post_grad_pct": 4.4,
+   "education_unknown_pct": 33.5,
+   "white_pct": 38.7,
+   "hispanic_pct": 28.1,
+   "black_pct": 22.3,
+   "asian_pct": 6.8,
+   "other_pct": 4.1
   },
-  {
-    "state_fips": "32",
-    "district_id": "003",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Rochelle Nguyen",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Rochelle Nguyen",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 99068,
-      "rural_pct": 0.0,
-      "town_pct": 0.0,
-      "suburban_pct": 10.9,
-      "urban_pct": 88.1,
-      "income_brackets": {
-        "lt_50k": 30.2,
-        "between_50_100k": 24.0,
-        "gt_150k": 19.6,
-        "unknown_pct": 26.1
-      },
-      "college_pct": 12.1,
-      "post_grad_pct": 5.2,
-      "education_unknown_pct": 37.9,
-      "white_pct": 44.6,
-      "hispanic_pct": 31.3,
-      "black_pct": 13.9,
-      "asian_pct": 6.0,
-      "other_pct": 4.3
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 54.8,
-        "rep_pct": 41.2,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 13.7,
-      "latest_leg": 13.7,
-      "gov_2022": 12.9,
-      "ussen_2022": 15.1,
-      "pres_2024": 9.9,
-      "model_lombardo_all": -16.0,
-      "model_lombardo_hm": -16.7
-    },
-    "pres_2024_margin": 9.9,
-    "gov_2022_margin": 12.9,
-    "ussen_2022_margin": 15.1,
-    "top_ticket_totals": {
-      "pres_2024": 55621,
-      "gov_2022": 37438,
-      "ussen_2022": 37555
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 30.1
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.0
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 5.4
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 8.6
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 5.8
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.4
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 45.7
-            }
-          ],
-          "margin": -16.0,
-          "lombardo_base": 30.1,
-          "gop_likely": 2.0,
-          "gop_trust_target": 5.4,
-          "conflicted_middle": 8.6,
-          "dem_trust_target": 5.8,
-          "dem_likely": 2.4,
-          "ford_base": 45.7
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 33.2
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.6
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 3.2
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 5.7
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.8
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.8
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 49.7
-            }
-          ],
-          "margin": -16.7,
-          "lombardo_base": 33.2,
-          "gop_likely": 1.6,
-          "gop_trust_target": 3.2,
-          "conflicted_middle": 5.7,
-          "dem_trust_target": 4.8,
-          "dem_likely": 1.8,
-          "ford_base": 49.7
-        }
-      }
-    }
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 59.0,
+    "rep_pct": 41.0,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 17.9,
+   "latest_leg": 17.9,
+   "gov_2022": 18.8,
+   "ussen_2022": 20.5,
+   "pres_2024": 15.6,
+   "model_lombardo_all": -16.4,
+   "model_lombardo_hm": -20.5
   },
-  {
-    "state_fips": "32",
-    "district_id": "004",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Dina Neal",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Dina Neal",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 99987,
-      "rural_pct": 0.0,
-      "town_pct": 0.0,
-      "suburban_pct": 72.5,
-      "urban_pct": 26.9,
-      "income_brackets": {
-        "lt_50k": 35.7,
-        "between_50_100k": 25.1,
-        "gt_150k": 10.8,
-        "unknown_pct": 28.4
-      },
-      "college_pct": 9.7,
-      "post_grad_pct": 2.6,
-      "education_unknown_pct": 39.8,
-      "white_pct": 24.0,
-      "hispanic_pct": 37.5,
-      "black_pct": 30.9,
-      "asian_pct": 4.0,
-      "other_pct": 3.6
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 100.0,
-        "rep_pct": 0.0,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 100.0,
-      "latest_leg": 100.0,
-      "gov_2022": 40.0,
-      "ussen_2022": 41.9,
-      "pres_2024": 33.9,
-      "model_lombardo_all": -38.1,
-      "model_lombardo_hm": -42.7
-    },
-    "pres_2024_margin": 33.9,
-    "gov_2022_margin": 40.0,
-    "ussen_2022_margin": 41.9,
-    "top_ticket_totals": {
-      "pres_2024": 48015,
-      "gov_2022": 28672,
-      "ussen_2022": 28781
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 19.5
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.1
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 5.5
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 7.3
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 5.8
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.8
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 56.9
-            }
-          ],
-          "margin": -38.1,
-          "lombardo_base": 19.5,
-          "gop_likely": 2.1,
-          "gop_trust_target": 5.5,
-          "conflicted_middle": 7.3,
-          "dem_trust_target": 5.8,
-          "dem_likely": 2.8,
-          "ford_base": 56.9
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 21.1
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.6
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 2.9
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 4.5
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.5
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.0
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 63.4
-            }
-          ],
-          "margin": -42.7,
-          "lombardo_base": 21.1,
-          "gop_likely": 1.6,
-          "gop_trust_target": 2.9,
-          "conflicted_middle": 4.5,
-          "dem_trust_target": 4.5,
-          "dem_likely": 2.0,
-          "ford_base": 63.4
-        }
-      }
-    }
+  "pres_2024_margin": 15.6,
+  "gov_2022_margin": 18.8,
+  "ussen_2022_margin": 20.5,
+  "top_ticket_totals": {
+   "pres_2024": 71133,
+   "gov_2022": 44096,
+   "ussen_2022": 44205
   },
-  {
-    "state_fips": "32",
-    "district_id": "005",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Carrie Buck",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Carrie Buck",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 128876,
-      "rural_pct": 2.1,
-      "town_pct": 0.0,
-      "suburban_pct": 0.1,
-      "urban_pct": 96.6,
-      "income_brackets": {
-        "lt_50k": 18.8,
-        "between_50_100k": 24.5,
-        "gt_150k": 34.5,
-        "unknown_pct": 22.2
-      },
-      "college_pct": 15.2,
-      "post_grad_pct": 6.9,
-      "education_unknown_pct": 32.7,
-      "white_pct": 61.4,
-      "hispanic_pct": 19.8,
-      "black_pct": 6.3,
-      "asian_pct": 7.6,
-      "other_pct": 5.0
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 46.5,
-        "rep_pct": 53.5,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -6.9,
-      "latest_leg": -6.9,
-      "gov_2022": -2.3,
-      "ussen_2022": -0.1,
-      "pres_2024": -4.8,
-      "model_lombardo_all": 4.1,
-      "model_lombardo_hm": 3.7
-    },
-    "pres_2024_margin": -4.8,
-    "gov_2022_margin": -2.3,
-    "ussen_2022_margin": -0.1,
-    "top_ticket_totals": {
-      "pres_2024": 82966,
-      "gov_2022": 56672,
-      "ussen_2022": 56788
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 39.0
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.7
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 7.3
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 9.3
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.1
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.3
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 35.3
-            }
-          ],
-          "margin": 4.1,
-          "lombardo_base": 39.0,
-          "gop_likely": 2.7,
-          "gop_trust_target": 7.3,
-          "conflicted_middle": 9.3,
-          "dem_trust_target": 4.1,
-          "dem_likely": 2.3,
-          "ford_base": 35.3
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 42.3
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.0
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.8
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 6.7
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 3.6
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.8
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 38.8
-            }
-          ],
-          "margin": 3.7,
-          "lombardo_base": 42.3,
-          "gop_likely": 2.0,
-          "gop_trust_target": 4.8,
-          "conflicted_middle": 6.7,
-          "dem_trust_target": 3.6,
-          "dem_likely": 1.8,
-          "ford_base": 38.8
-        }
-      }
-    }
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
   },
-  {
-    "state_fips": "32",
-    "district_id": "006",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Nicole Cannizzaro",
-      "party": "D"
-    },
-    "members": [
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
       {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Nicole Cannizzaro",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 116511,
-      "rural_pct": 1.2,
-      "town_pct": 0.0,
-      "suburban_pct": 1.3,
-      "urban_pct": 96.1,
-      "income_brackets": {
-        "lt_50k": 19.0,
-        "between_50_100k": 27.9,
-        "gt_150k": 31.6,
-        "unknown_pct": 21.5
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 22.2
       },
-      "college_pct": 15.4,
-      "post_grad_pct": 7.9,
-      "education_unknown_pct": 32.8,
-      "white_pct": 56.7,
-      "hispanic_pct": 22.9,
-      "black_pct": 8.2,
-      "asian_pct": 7.6,
-      "other_pct": 4.6
-    },
-    "elections": [
       {
-        "year": 2024,
-        "dem_pct": 51.7,
-        "rep_pct": 45.5,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 6.2,
-      "latest_leg": 6.2,
-      "gov_2022": 6.1,
-      "ussen_2022": 8.5,
-      "pres_2024": 3.7,
-      "model_lombardo_all": -5.2,
-      "model_lombardo_hm": -5.7
-    },
-    "pres_2024_margin": 3.7,
-    "gov_2022_margin": 6.1,
-    "ussen_2022_margin": 8.5,
-    "top_ticket_totals": {
-      "pres_2024": 74754,
-      "gov_2022": 53785,
-      "ussen_2022": 53927
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 35.2
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.2
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 6.4
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 8.9
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.7
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.4
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 40.2
-            }
-          ],
-          "margin": -5.2,
-          "lombardo_base": 35.2,
-          "gop_likely": 2.2,
-          "gop_trust_target": 6.4,
-          "conflicted_middle": 8.9,
-          "dem_trust_target": 4.7,
-          "dem_likely": 2.4,
-          "ford_base": 40.2
-        }
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.4
       },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 38.0
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.7
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.2
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 6.4
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.2
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.0
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 43.4
-            }
-          ],
-          "margin": -5.7,
-          "lombardo_base": 38.0,
-          "gop_likely": 1.7,
-          "gop_trust_target": 4.2,
-          "conflicted_middle": 6.4,
-          "dem_trust_target": 4.2,
-          "dem_likely": 2.0,
-          "ford_base": 43.4
-        }
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 15.0
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 13.9
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 5.5
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 3.6
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 37.4
       }
+     ],
+     "margin": -16.4,
+     "lombardo_base": 22.2,
+     "republicans_bring_home": 2.4,
+     "persuasion_trusts_reps": 15.0,
+     "conflicted_middle": 13.9,
+     "persuasion_trusts_dems": 5.5,
+     "likelier_democrat_voters": 3.6,
+     "ford_base": 37.4
     }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "007",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Roberta Lange",
-      "party": "D"
-    },
-    "members": [
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
       {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Roberta Lange",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 105576,
-      "rural_pct": 0.0,
-      "town_pct": 0.0,
-      "suburban_pct": 44.0,
-      "urban_pct": 55.3,
-      "income_brackets": {
-        "lt_50k": 30.9,
-        "between_50_100k": 27.5,
-        "gt_150k": 13.9,
-        "unknown_pct": 27.7
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 30.6
       },
-      "college_pct": 11.6,
-      "post_grad_pct": 4.0,
-      "education_unknown_pct": 40.6,
-      "white_pct": 42.5,
-      "hispanic_pct": 34.0,
-      "black_pct": 12.5,
-      "asian_pct": 6.4,
-      "other_pct": 4.6
-    },
-    "elections": [
       {
-        "year": 2024,
-        "dem_pct": 58.4,
-        "rep_pct": 41.6,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 16.8,
-      "latest_leg": 16.8,
-      "gov_2022": 22.1,
-      "ussen_2022": 24.1,
-      "pres_2024": 15.1,
-      "model_lombardo_all": -19.8,
-      "model_lombardo_hm": -23.2
-    },
-    "pres_2024_margin": 15.1,
-    "gov_2022_margin": 22.1,
-    "ussen_2022_margin": 24.1,
-    "top_ticket_totals": {
-      "pres_2024": 53994,
-      "gov_2022": 35225,
-      "ussen_2022": 35351
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 27.4
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.2
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 6.6
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 8.7
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 5.5
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.5
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 46.9
-            }
-          ],
-          "margin": -19.8,
-          "lombardo_base": 27.4,
-          "gop_likely": 2.2,
-          "gop_trust_target": 6.6,
-          "conflicted_middle": 8.7,
-          "dem_trust_target": 5.5,
-          "dem_likely": 2.5,
-          "ford_base": 46.9
-        }
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.9
       },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 29.5
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.8
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 3.7
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 5.7
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.7
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.9
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 52.6
-            }
-          ],
-          "margin": -23.2,
-          "lombardo_base": 29.5,
-          "gop_likely": 1.8,
-          "gop_trust_target": 3.7,
-          "conflicted_middle": 5.7,
-          "dem_trust_target": 4.7,
-          "dem_likely": 1.9,
-          "ford_base": 52.6
-        }
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 4.2
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 6.3
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.1
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.0
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 50.9
       }
+     ],
+     "margin": -20.5,
+     "lombardo_base": 30.6,
+     "republicans_bring_home": 1.9,
+     "persuasion_trusts_reps": 4.2,
+     "conflicted_middle": 6.3,
+     "persuasion_trusts_dems": 4.1,
+     "likelier_democrat_voters": 2.0,
+     "ford_base": 50.9
     }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "008",
-    "district_name": "",
-    "tier": 1,
-    "incumbent": {
-      "name": "Marilyn Dondero Loop",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Marilyn Dondero Loop",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "Marilyn Dondero Loop"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 116291,
-      "rural_pct": 0.0,
-      "town_pct": 0.0,
-      "suburban_pct": 49.5,
-      "urban_pct": 49.0,
-      "income_brackets": {
-        "lt_50k": 14.3,
-        "between_50_100k": 22.3,
-        "gt_150k": 41.2,
-        "unknown_pct": 22.1
-      },
-      "college_pct": 16.7,
-      "post_grad_pct": 8.6,
-      "education_unknown_pct": 33.9,
-      "white_pct": 58.7,
-      "hispanic_pct": 16.5,
-      "black_pct": 6.4,
-      "asian_pct": 13.2,
-      "other_pct": 5.3
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 50.7,
-        "rep_pct": 49.3,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 1.4,
-      "latest_leg": 1.4,
-      "gov_2022": 1.3,
-      "ussen_2022": 3.6,
-      "pres_2024": -2.2,
-      "model_lombardo_all": 0.5,
-      "model_lombardo_hm": -0.3
-    },
-    "pres_2024_margin": -2.2,
-    "gov_2022_margin": 1.3,
-    "ussen_2022_margin": 3.6,
-    "top_ticket_totals": {
-      "pres_2024": 76410,
-      "gov_2022": 53739,
-      "ussen_2022": 53799
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "Marilyn Dondero Loop"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 37.0
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.6
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 6.7
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 9.8
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.7
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.7
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 36.4
-            }
-          ],
-          "margin": 0.5,
-          "lombardo_base": 37.0,
-          "gop_likely": 2.6,
-          "gop_trust_target": 6.7,
-          "conflicted_middle": 9.8,
-          "dem_trust_target": 4.7,
-          "dem_likely": 2.7,
-          "ford_base": 36.4
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 40.0
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.9
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.5
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 7.1
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.2
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.1
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 40.1
-            }
-          ],
-          "margin": -0.3,
-          "lombardo_base": 40.0,
-          "gop_likely": 1.9,
-          "gop_trust_target": 4.5,
-          "conflicted_middle": 7.1,
-          "dem_trust_target": 4.2,
-          "dem_likely": 2.1,
-          "ford_base": 40.1
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "009",
-    "district_name": "",
-    "tier": 3,
-    "incumbent": {
-      "name": "Melanie Scheible",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Melanie Scheible",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "Maria Thompson",
-          "dem": "Melanie Scheible"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 114120,
-      "rural_pct": 3.2,
-      "town_pct": 0.0,
-      "suburban_pct": 95.7,
-      "urban_pct": 0.2,
-      "income_brackets": {
-        "lt_50k": 16.4,
-        "between_50_100k": 25.8,
-        "gt_150k": 34.1,
-        "unknown_pct": 23.7
-      },
-      "college_pct": 14.1,
-      "post_grad_pct": 6.2,
-      "education_unknown_pct": 36.5,
-      "white_pct": 47.6,
-      "hispanic_pct": 21.9,
-      "black_pct": 8.0,
-      "asian_pct": 17.6,
-      "other_pct": 4.8
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 53.5,
-        "rep_pct": 46.5,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 6.9,
-      "latest_leg": 6.9,
-      "gov_2022": 9.6,
-      "ussen_2022": 11.1,
-      "pres_2024": 2.6,
-      "model_lombardo_all": -7.3,
-      "model_lombardo_hm": -9.7
-    },
-    "pres_2024_margin": 2.6,
-    "gov_2022_margin": 9.6,
-    "ussen_2022_margin": 11.1,
-    "top_ticket_totals": {
-      "pres_2024": 68067,
-      "gov_2022": 43525,
-      "ussen_2022": 43594
-    },
-    "candidates_2026": {
-      "rep": "Maria Thompson",
-      "dem": "Melanie Scheible"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 32.6
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.4
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 7.3
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 10.3
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 5.1
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 3.1
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 39.2
-            }
-          ],
-          "margin": -7.3,
-          "lombardo_base": 32.6,
-          "gop_likely": 2.4,
-          "gop_trust_target": 7.3,
-          "conflicted_middle": 10.3,
-          "dem_trust_target": 5.1,
-          "dem_likely": 3.1,
-          "ford_base": 39.2
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 35.0
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.8
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.7
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 7.4
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.6
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.3
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 44.2
-            }
-          ],
-          "margin": -9.7,
-          "lombardo_base": 35.0,
-          "gop_likely": 1.8,
-          "gop_trust_target": 4.7,
-          "conflicted_middle": 7.4,
-          "dem_trust_target": 4.6,
-          "dem_likely": 2.3,
-          "ford_base": 44.2
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "010",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Fabian Do\u00f1ate",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Fabian Do\u00f1ate",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "Fabian Do\u00f1ate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 100175,
-      "rural_pct": 0.0,
-      "town_pct": 0.0,
-      "suburban_pct": 36.5,
-      "urban_pct": 62.7,
-      "income_brackets": {
-        "lt_50k": 31.2,
-        "between_50_100k": 19.2,
-        "gt_150k": 17.3,
-        "unknown_pct": 32.3
-      },
-      "college_pct": 11.0,
-      "post_grad_pct": 4.4,
-      "education_unknown_pct": 45.2,
-      "white_pct": 42.3,
-      "hispanic_pct": 26.3,
-      "black_pct": 17.9,
-      "asian_pct": 8.7,
-      "other_pct": 4.9
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 55.5,
-        "rep_pct": 40.8,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 14.7,
-      "latest_leg": 14.7,
-      "gov_2022": 15.4,
-      "ussen_2022": 17.5,
-      "pres_2024": 10.5,
-      "model_lombardo_all": -17.1,
-      "model_lombardo_hm": -18.5
-    },
-    "pres_2024_margin": 10.5,
-    "gov_2022_margin": 15.4,
-    "ussen_2022_margin": 17.5,
-    "top_ticket_totals": {
-      "pres_2024": 47104,
-      "gov_2022": 30038,
-      "ussen_2022": 30121
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "Fabian Do\u00f1ate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 28.5
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.0
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 5.7
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 9.6
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 6.5
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 3.6
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 44.0
-            }
-          ],
-          "margin": -17.1,
-          "lombardo_base": 28.5,
-          "gop_likely": 2.0,
-          "gop_trust_target": 5.7,
-          "conflicted_middle": 9.6,
-          "dem_trust_target": 6.5,
-          "dem_likely": 3.6,
-          "ford_base": 44.0
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 31.5
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.6
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 3.7
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 6.3
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 5.3
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.5
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 49.1
-            }
-          ],
-          "margin": -18.5,
-          "lombardo_base": 31.5,
-          "gop_likely": 1.6,
-          "gop_trust_target": 3.7,
-          "conflicted_middle": 6.3,
-          "dem_trust_target": 5.3,
-          "dem_likely": 2.5,
-          "ford_base": 49.1
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "011",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Lori Rogich",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Lori Rogich",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 127552,
-      "rural_pct": 7.7,
-      "town_pct": 0.0,
-      "suburban_pct": 91.2,
-      "urban_pct": 0.2,
-      "income_brackets": {
-        "lt_50k": 11.4,
-        "between_50_100k": 22.3,
-        "gt_150k": 43.3,
-        "unknown_pct": 23.0
-      },
-      "college_pct": 14.4,
-      "post_grad_pct": 5.7,
-      "education_unknown_pct": 35.1,
-      "white_pct": 46.2,
-      "hispanic_pct": 21.6,
-      "black_pct": 7.7,
-      "asian_pct": 19.3,
-      "other_pct": 5.1
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 49.3,
-        "rep_pct": 50.7,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -1.4,
-      "latest_leg": -1.4,
-      "gov_2022": 6.1,
-      "ussen_2022": 8.0,
-      "pres_2024": -0.4,
-      "model_lombardo_all": -3.2,
-      "model_lombardo_hm": -7.0
-    },
-    "pres_2024_margin": -0.4,
-    "gov_2022_margin": 6.1,
-    "ussen_2022_margin": 8.0,
-    "top_ticket_totals": {
-      "pres_2024": 78184,
-      "gov_2022": 46580,
-      "ussen_2022": 46637
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 34.2
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.7
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 8.1
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 10.6
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.2
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 3.1
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 37.0
-            }
-          ],
-          "margin": -3.2,
-          "lombardo_base": 34.2,
-          "gop_likely": 2.7,
-          "gop_trust_target": 8.1,
-          "conflicted_middle": 10.6,
-          "dem_trust_target": 4.2,
-          "dem_likely": 3.1,
-          "ford_base": 37.0
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 36.1
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.8
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 5.5
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 7.9
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.0
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.4
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 42.5
-            }
-          ],
-          "margin": -7.0,
-          "lombardo_base": 36.1,
-          "gop_likely": 1.8,
-          "gop_trust_target": 5.5,
-          "conflicted_middle": 7.9,
-          "dem_trust_target": 4.0,
-          "dem_likely": 2.4,
-          "ford_base": 42.5
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "012",
-    "district_name": "",
-    "tier": 2,
-    "incumbent": {
-      "name": "Julie Pazina",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Julie Pazina",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "Rafael Arroyo-Montalvo",
-          "dem": "Julie Pazina"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 120955,
-      "rural_pct": 0.6,
-      "town_pct": 0.0,
-      "suburban_pct": 37.1,
-      "urban_pct": 61.1,
-      "income_brackets": {
-        "lt_50k": 14.3,
-        "between_50_100k": 26.5,
-        "gt_150k": 37.2,
-        "unknown_pct": 22.0
-      },
-      "college_pct": 15.0,
-      "post_grad_pct": 6.3,
-      "education_unknown_pct": 33.4,
-      "white_pct": 55.7,
-      "hispanic_pct": 21.5,
-      "black_pct": 6.2,
-      "asian_pct": 11.6,
-      "other_pct": 4.9
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 52.5,
-        "rep_pct": 47.5,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 4.9,
-      "latest_leg": 4.9,
-      "gov_2022": 5.1,
-      "ussen_2022": 7.5,
-      "pres_2024": 0.4,
-      "model_lombardo_all": -2.1,
-      "model_lombardo_hm": -3.7
-    },
-    "pres_2024_margin": 0.4,
-    "gov_2022_margin": 5.1,
-    "ussen_2022_margin": 7.5,
-    "top_ticket_totals": {
-      "pres_2024": 77064,
-      "gov_2022": 52339,
-      "ussen_2022": 52416
-    },
-    "candidates_2026": {
-      "rep": "Rafael Arroyo-Montalvo",
-      "dem": "Julie Pazina"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 35.8
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.7
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 7.5
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 9.5
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.0
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.8
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 37.8
-            }
-          ],
-          "margin": -2.1,
-          "lombardo_base": 35.8,
-          "gop_likely": 2.7,
-          "gop_trust_target": 7.5,
-          "conflicted_middle": 9.5,
-          "dem_trust_target": 4.0,
-          "dem_likely": 2.8,
-          "ford_base": 37.8
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 38.5
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.0
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.8
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 6.9
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 3.6
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.1
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 42.1
-            }
-          ],
-          "margin": -3.7,
-          "lombardo_base": 38.5,
-          "gop_likely": 2.0,
-          "gop_trust_target": 4.8,
-          "conflicted_middle": 6.9,
-          "dem_trust_target": 3.6,
-          "dem_likely": 2.1,
-          "ford_base": 42.1
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "013",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Skip Daly",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Skip Daly",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "Matthew Buehler",
-          "dem": "Skip Daly"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 95957,
-      "rural_pct": 0.2,
-      "town_pct": 0.0,
-      "suburban_pct": 43.0,
-      "urban_pct": 55.6,
-      "income_brackets": {
-        "lt_50k": 29.7,
-        "between_50_100k": 21.0,
-        "gt_150k": 17.3,
-        "unknown_pct": 32.0
-      },
-      "college_pct": 10.8,
-      "post_grad_pct": 4.2,
-      "education_unknown_pct": 42.0,
-      "white_pct": 58.4,
-      "hispanic_pct": 27.8,
-      "black_pct": 3.7,
-      "asian_pct": 5.0,
-      "other_pct": 5.1
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 61.6,
-        "rep_pct": 38.4,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 23.1,
-      "latest_leg": 23.1,
-      "gov_2022": 22.9,
-      "ussen_2022": 25.7,
-      "pres_2024": 18.9,
-      "model_lombardo_all": -17.3,
-      "model_lombardo_hm": -19.3
-    },
-    "pres_2024_margin": 18.9,
-    "gov_2022_margin": 22.9,
-    "ussen_2022_margin": 25.7,
-    "top_ticket_totals": {
-      "pres_2024": 57133,
-      "gov_2022": 39062,
-      "ussen_2022": 39134
-    },
-    "candidates_2026": {
-      "rep": "Matthew Buehler",
-      "dem": "Skip Daly"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 28.9
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.5
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.8
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 10.1
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 7.0
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.5
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 45.2
-            }
-          ],
-          "margin": -17.3,
-          "lombardo_base": 28.9,
-          "gop_likely": 1.5,
-          "gop_trust_target": 4.8,
-          "conflicted_middle": 10.1,
-          "dem_trust_target": 7.0,
-          "dem_likely": 2.5,
-          "ford_base": 45.2
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 31.3
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.1
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 3.4
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 7.2
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 5.2
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.8
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 49.9
-            }
-          ],
-          "margin": -19.3,
-          "lombardo_base": 31.3,
-          "gop_likely": 1.1,
-          "gop_trust_target": 3.4,
-          "conflicted_middle": 7.2,
-          "dem_trust_target": 5.2,
-          "dem_likely": 1.8,
-          "ford_base": 49.9
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "014",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Ira Hansen",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Ira Hansen",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Ira Hansen",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 120121,
-      "rural_pct": 22.0,
-      "town_pct": 8.3,
-      "suburban_pct": 52.6,
-      "urban_pct": 15.2,
-      "income_brackets": {
-        "lt_50k": 14.1,
-        "between_50_100k": 23.8,
-        "gt_150k": 37.7,
-        "unknown_pct": 24.5
-      },
-      "college_pct": 14.8,
-      "post_grad_pct": 6.3,
-      "education_unknown_pct": 33.3,
-      "white_pct": 69.5,
-      "hispanic_pct": 18.0,
-      "black_pct": 2.4,
-      "asian_pct": 4.0,
-      "other_pct": 6.0
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -100.0,
-      "latest_leg": -100.0,
-      "gov_2022": -23.5,
-      "ussen_2022": -20.7,
-      "pres_2024": -23.1,
-      "model_lombardo_all": 26.4,
-      "model_lombardo_hm": 28.5
-    },
-    "pres_2024_margin": -23.1,
-    "gov_2022_margin": -23.5,
-    "ussen_2022_margin": -20.7,
-    "top_ticket_totals": {
-      "pres_2024": 85501,
-      "gov_2022": 62737,
-      "ussen_2022": 62776
-    },
-    "candidates_2026": {
-      "rep": "Ira Hansen",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 51.5
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.9
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 5.7
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 8.7
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 3.3
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.5
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 26.5
-            }
-          ],
-          "margin": 26.4,
-          "lombardo_base": 51.5,
-          "gop_likely": 2.9,
-          "gop_trust_target": 5.7,
-          "conflicted_middle": 8.7,
-          "dem_trust_target": 3.3,
-          "dem_likely": 1.5,
-          "ford_base": 26.5
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 55.5
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.3
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.1
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 6.2
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 2.7
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.1
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 28.2
-            }
-          ],
-          "margin": 28.5,
-          "lombardo_base": 55.5,
-          "gop_likely": 2.3,
-          "gop_trust_target": 4.1,
-          "conflicted_middle": 6.2,
-          "dem_trust_target": 2.7,
-          "dem_likely": 1.1,
-          "ford_base": 28.2
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "015",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Angie Taylor",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Angie Taylor",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 108734,
-      "rural_pct": 1.0,
-      "town_pct": 0.0,
-      "suburban_pct": 16.2,
-      "urban_pct": 80.8,
-      "income_brackets": {
-        "lt_50k": 19.4,
-        "between_50_100k": 21.2,
-        "gt_150k": 34.1,
-        "unknown_pct": 25.4
-      },
-      "college_pct": 13.8,
-      "post_grad_pct": 7.7,
-      "education_unknown_pct": 33.8,
-      "white_pct": 67.2,
-      "hispanic_pct": 20.4,
-      "black_pct": 2.5,
-      "asian_pct": 5.2,
-      "other_pct": 4.8
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 54.2,
-        "rep_pct": 44.4,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": 9.7,
-      "latest_leg": 9.7,
-      "gov_2022": 14.4,
-      "ussen_2022": 17.7,
-      "pres_2024": 12.3,
-      "model_lombardo_all": -7.1,
-      "model_lombardo_hm": -7.8
-    },
-    "pres_2024_margin": 12.3,
-    "gov_2022_margin": 14.4,
-    "ussen_2022_margin": 17.7,
-    "top_ticket_totals": {
-      "pres_2024": 75265,
-      "gov_2022": 56035,
-      "ussen_2022": 56115
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 34.3
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.8
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 5.0
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 10.7
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 5.1
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.3
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 40.9
-            }
-          ],
-          "margin": -7.1,
-          "lombardo_base": 34.3,
-          "gop_likely": 1.8,
-          "gop_trust_target": 5.0,
-          "conflicted_middle": 10.7,
-          "dem_trust_target": 5.1,
-          "dem_likely": 2.3,
-          "ford_base": 40.9
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 36.8
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.4
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 3.6
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 7.9
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.3
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.7
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 44.3
-            }
-          ],
-          "margin": -7.8,
-          "lombardo_base": 36.8,
-          "gop_likely": 1.4,
-          "gop_trust_target": 3.6,
-          "conflicted_middle": 7.9,
-          "dem_trust_target": 4.3,
-          "dem_likely": 1.7,
-          "ford_base": 44.3
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "016",
-    "district_name": "",
-    "tier": 3,
-    "incumbent": {
-      "name": "Lisa Krasner",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Lisa Krasner",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Lisa Krasner",
-          "dem": "Chrystal Roll"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 127253,
-      "rural_pct": 13.2,
-      "town_pct": 8.1,
-      "suburban_pct": 15.0,
-      "urban_pct": 61.5,
-      "income_brackets": {
-        "lt_50k": 13.0,
-        "between_50_100k": 18.1,
-        "gt_150k": 40.8,
-        "unknown_pct": 28.1
-      },
-      "college_pct": 16.2,
-      "post_grad_pct": 9.1,
-      "education_unknown_pct": 37.1,
-      "white_pct": 74.3,
-      "hispanic_pct": 12.9,
-      "black_pct": 1.8,
-      "asian_pct": 4.3,
-      "other_pct": 6.6
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 39.7,
-        "rep_pct": 60.3,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -20.7,
-      "latest_leg": -20.7,
-      "gov_2022": -12.2,
-      "ussen_2022": -9.0,
-      "pres_2024": -10.4,
-      "model_lombardo_all": 16.8,
-      "model_lombardo_hm": 18.1
-    },
-    "pres_2024_margin": -10.4,
-    "gov_2022_margin": -12.2,
-    "ussen_2022_margin": -9.0,
-    "top_ticket_totals": {
-      "pres_2024": 93159,
-      "gov_2022": 72676,
-      "ussen_2022": 72760
-    },
-    "candidates_2026": {
-      "rep": "Lisa Krasner",
-      "dem": "Chrystal Roll"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 45.8
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.4
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.8
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 11.2
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.6
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.7
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 29.7
-            }
-          ],
-          "margin": 16.8,
-          "lombardo_base": 45.8,
-          "gop_likely": 2.4,
-          "gop_trust_target": 4.8,
-          "conflicted_middle": 11.2,
-          "dem_trust_target": 4.6,
-          "dem_likely": 1.7,
-          "ford_base": 29.7
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 49.2
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.8
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 3.7
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 8.5
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.0
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.3
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 31.6
-            }
-          ],
-          "margin": 18.1,
-          "lombardo_base": 49.2,
-          "gop_likely": 1.8,
-          "gop_trust_target": 3.7,
-          "conflicted_middle": 8.5,
-          "dem_trust_target": 4.0,
-          "dem_likely": 1.3,
-          "ford_base": 31.6
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "017",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Robin Titus",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Robin Titus",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Robin Titus",
-          "dem": "Lynne Ballatore"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 130718,
-      "rural_pct": 39.8,
-      "town_pct": 55.7,
-      "suburban_pct": 3.4,
-      "urban_pct": 0.0,
-      "income_brackets": {
-        "lt_50k": 19.6,
-        "between_50_100k": 26.2,
-        "gt_150k": 25.6,
-        "unknown_pct": 28.7
-      },
-      "college_pct": 13.7,
-      "post_grad_pct": 5.9,
-      "education_unknown_pct": 38.4,
-      "white_pct": 77.1,
-      "hispanic_pct": 12.0,
-      "black_pct": 2.0,
-      "asian_pct": 2.0,
-      "other_pct": 6.8
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -100.0,
-      "latest_leg": -100.0,
-      "gov_2022": -40.5,
-      "ussen_2022": -38.6,
-      "pres_2024": -40.9,
-      "model_lombardo_all": 45.4,
-      "model_lombardo_hm": 47.7
-    },
-    "pres_2024_margin": -40.9,
-    "gov_2022_margin": -40.5,
-    "ussen_2022_margin": -38.6,
-    "top_ticket_totals": {
-      "pres_2024": 87190,
-      "gov_2022": 66335,
-      "ussen_2022": 66377
-    },
-    "candidates_2026": {
-      "rep": "Robin Titus",
-      "dem": "Lynne Ballatore"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 61.0
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 3.2
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 6.0
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 8.5
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 2.4
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 0.9
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 17.9
-            }
-          ],
-          "margin": 45.4,
-          "lombardo_base": 61.0,
-          "gop_likely": 3.2,
-          "gop_trust_target": 6.0,
-          "conflicted_middle": 8.5,
-          "dem_trust_target": 2.4,
-          "dem_likely": 0.9,
-          "ford_base": 17.9
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 64.5
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.9
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.8
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 6.2
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 2.0
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 0.8
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 18.9
-            }
-          ],
-          "margin": 47.7,
-          "lombardo_base": 64.5,
-          "gop_likely": 2.9,
-          "gop_trust_target": 4.8,
-          "conflicted_middle": 6.2,
-          "dem_trust_target": 2.0,
-          "dem_likely": 0.8,
-          "ford_base": 18.9
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "018",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "John Steinbeck",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "John Steinbeck",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 126409,
-      "rural_pct": 2.3,
-      "town_pct": 0.0,
-      "suburban_pct": 27.3,
-      "urban_pct": 69.1,
-      "income_brackets": {
-        "lt_50k": 12.2,
-        "between_50_100k": 25.2,
-        "gt_150k": 42.6,
-        "unknown_pct": 20.1
-      },
-      "college_pct": 15.6,
-      "post_grad_pct": 6.7,
-      "education_unknown_pct": 29.9,
-      "white_pct": 60.5,
-      "hispanic_pct": 19.8,
-      "black_pct": 9.0,
-      "asian_pct": 6.3,
-      "other_pct": 4.5
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 43.1,
-        "rep_pct": 56.9,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -13.8,
-      "latest_leg": -13.8,
-      "gov_2022": -7.2,
-      "ussen_2022": -4.9,
-      "pres_2024": -8.3,
-      "model_lombardo_all": 6.3,
-      "model_lombardo_hm": 6.9
-    },
-    "pres_2024_margin": -8.3,
-    "gov_2022_margin": -7.2,
-    "ussen_2022_margin": -4.9,
-    "top_ticket_totals": {
-      "pres_2024": 84363,
-      "gov_2022": 57165,
-      "ussen_2022": 57271
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 40.4
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.8
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 6.5
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 9.1
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.4
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.6
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 34.3
-            }
-          ],
-          "margin": 6.3,
-          "lombardo_base": 40.4,
-          "gop_likely": 2.8,
-          "gop_trust_target": 6.5,
-          "conflicted_middle": 9.1,
-          "dem_trust_target": 4.4,
-          "dem_likely": 2.6,
-          "ford_base": 34.3
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 44.2
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.0
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.3
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 6.5
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 3.8
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.0
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 37.3
-            }
-          ],
-          "margin": 6.9,
-          "lombardo_base": 44.2,
-          "gop_likely": 2.0,
-          "gop_trust_target": 4.3,
-          "conflicted_middle": 6.5,
-          "dem_trust_target": 3.8,
-          "dem_likely": 2.0,
-          "ford_base": 37.3
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "019",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "John Ellison",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "John Ellison",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "No candidate",
-          "dem": "No candidate"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2028,
-    "demographics": {
-      "population": 132289,
-      "rural_pct": 44.9,
-      "town_pct": 41.0,
-      "suburban_pct": 0.3,
-      "urban_pct": 12.6,
-      "income_brackets": {
-        "lt_50k": 18.7,
-        "between_50_100k": 22.6,
-        "gt_150k": 28.2,
-        "unknown_pct": 30.5
-      },
-      "college_pct": 13.4,
-      "post_grad_pct": 5.5,
-      "education_unknown_pct": 40.9,
-      "white_pct": 68.7,
-      "hispanic_pct": 15.1,
-      "black_pct": 4.2,
-      "asian_pct": 4.8,
-      "other_pct": 7.2
-    },
-    "elections": [
-      {
-        "year": 2024,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2024": -100.0,
-      "latest_leg": -100.0,
-      "gov_2022": -39.0,
-      "ussen_2022": -37.2,
-      "pres_2024": -37.6,
-      "model_lombardo_all": 36.4,
-      "model_lombardo_hm": 39.9
-    },
-    "pres_2024_margin": -37.6,
-    "gov_2022_margin": -39.0,
-    "ussen_2022_margin": -37.2,
-    "top_ticket_totals": {
-      "pres_2024": 82188,
-      "gov_2022": 57039,
-      "ussen_2022": 57066
-    },
-    "candidates_2026": {
-      "rep": "No candidate",
-      "dem": "No candidate"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 55.1
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 3.6
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 6.5
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 9.0
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 3.5
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.7
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 20.6
-            }
-          ],
-          "margin": 36.4,
-          "lombardo_base": 55.1,
-          "gop_likely": 3.6,
-          "gop_trust_target": 6.5,
-          "conflicted_middle": 9.0,
-          "dem_trust_target": 3.5,
-          "dem_likely": 1.7,
-          "ford_base": 20.6
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 59.6
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 3.1
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 5.3
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 6.3
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 2.8
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.3
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 21.5
-            }
-          ],
-          "margin": 39.9,
-          "lombardo_base": 59.6,
-          "gop_likely": 3.1,
-          "gop_trust_target": 5.3,
-          "conflicted_middle": 6.3,
-          "dem_trust_target": 2.8,
-          "dem_likely": 1.3,
-          "ford_base": 21.5
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "020",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "Jeff Stone",
-      "party": "R"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "Jeff Stone",
-          "party": "R"
-        },
-        "candidates": {
-          "rep": "Danielle Gallant",
-          "dem": "Calvin Sandoval"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 137743,
-      "rural_pct": 19.4,
-      "town_pct": 24.2,
-      "suburban_pct": 0.7,
-      "urban_pct": 54.3,
-      "income_brackets": {
-        "lt_50k": 13.5,
-        "between_50_100k": 24.1,
-        "gt_150k": 41.7,
-        "unknown_pct": 20.7
-      },
-      "college_pct": 17.7,
-      "post_grad_pct": 10.0,
-      "education_unknown_pct": 31.2,
-      "white_pct": 71.6,
-      "hispanic_pct": 13.8,
-      "black_pct": 3.1,
-      "asian_pct": 6.6,
-      "other_pct": 4.8
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 35.6,
-        "rep_pct": 61.7,
-        "winner": "R"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": -26.1,
-      "latest_leg": -26.1,
-      "gov_2022": -22.4,
-      "ussen_2022": -20.6,
-      "pres_2024": -22.7,
-      "model_lombardo_all": 23.4,
-      "model_lombardo_hm": 24.5
-    },
-    "pres_2024_margin": -22.7,
-    "gov_2022_margin": -22.4,
-    "ussen_2022_margin": -20.6,
-    "top_ticket_totals": {
-      "pres_2024": 99553,
-      "gov_2022": 73761,
-      "ussen_2022": 73871
-    },
-    "candidates_2026": {
-      "rep": "Danielle Gallant",
-      "dem": "Calvin Sandoval"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 49.1
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.8
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 6.3
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 9.5
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 3.8
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.8
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 26.7
-            }
-          ],
-          "margin": 23.4,
-          "lombardo_base": 49.1,
-          "gop_likely": 2.8,
-          "gop_trust_target": 6.3,
-          "conflicted_middle": 9.5,
-          "dem_trust_target": 3.8,
-          "dem_likely": 1.8,
-          "ford_base": 26.7
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 52.6
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.2
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 4.6
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 7.1
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 3.3
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.5
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 28.8
-            }
-          ],
-          "margin": 24.5,
-          "lombardo_base": 52.6,
-          "gop_likely": 2.2,
-          "gop_trust_target": 4.6,
-          "conflicted_middle": 7.1,
-          "dem_trust_target": 3.3,
-          "dem_likely": 1.5,
-          "ford_base": 28.8
-        }
-      }
-    }
-  },
-  {
-    "state_fips": "32",
-    "district_id": "021",
-    "district_name": "",
-    "tier": null,
-    "incumbent": {
-      "name": "James Ohrenschall",
-      "party": "D"
-    },
-    "members": [
-      {
-        "seat": 1,
-        "seat_label": "",
-        "incumbent": {
-          "name": "James Ohrenschall",
-          "party": "D"
-        },
-        "candidates": {
-          "rep": "Al Rojas",
-          "dem": "James Ohrenschall"
-        }
-      }
-    ],
-    "candidate_seats_up": 1,
-    "next_election": 2026,
-    "demographics": {
-      "population": 100786,
-      "rural_pct": 6.5,
-      "town_pct": 0.0,
-      "suburban_pct": 76.5,
-      "urban_pct": 16.4,
-      "income_brackets": {
-        "lt_50k": 30.5,
-        "between_50_100k": 24.8,
-        "gt_150k": 18.9,
-        "unknown_pct": 25.8
-      },
-      "college_pct": 12.2,
-      "post_grad_pct": 4.3,
-      "education_unknown_pct": 37.2,
-      "white_pct": 35.8,
-      "hispanic_pct": 43.8,
-      "black_pct": 10.3,
-      "asian_pct": 5.8,
-      "other_pct": 4.4
-    },
-    "elections": [
-      {
-        "year": 2022,
-        "dem_pct": 55.8,
-        "rep_pct": 44.2,
-        "winner": "D"
-      }
-    ],
-    "view_margins": {
-      "leg_2022": 11.6,
-      "latest_leg": 11.6,
-      "gov_2022": 14.1,
-      "ussen_2022": 15.9,
-      "pres_2024": 8.9,
-      "model_lombardo_all": -15.8,
-      "model_lombardo_hm": -16.0
-    },
-    "pres_2024_margin": 8.9,
-    "gov_2022_margin": 14.1,
-    "ussen_2022_margin": 15.9,
-    "top_ticket_totals": {
-      "pres_2024": 53965,
-      "gov_2022": 33641,
-      "ussen_2022": 33744
-    },
-    "candidates_2026": {
-      "rep": "Al Rojas",
-      "dem": "James Ohrenschall"
-    },
-    "models": {
-      "model_lombardo_all": {
-        "label": "Lombardo (All)",
-        "family": "Lombardo",
-        "variant": "All",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 29.5
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 2.4
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 6.1
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 8.9
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 5.4
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 2.2
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 45.5
-            }
-          ],
-          "margin": -15.8,
-          "lombardo_base": 29.5,
-          "gop_likely": 2.4,
-          "gop_trust_target": 6.1,
-          "conflicted_middle": 8.9,
-          "dem_trust_target": 5.4,
-          "dem_likely": 2.2,
-          "ford_base": 45.5
-        }
-      },
-      "model_lombardo_hm": {
-        "label": "Lombardo (H+M)",
-        "family": "Lombardo",
-        "variant": "H+M",
-        "affinity": {
-          "segments": [
-            {
-              "key": "lombardo_base",
-              "label": "Lombardo Base",
-              "value": 33.2
-            },
-            {
-              "key": "gop_likely",
-              "label": "GOP Likely",
-              "value": 1.9
-            },
-            {
-              "key": "gop_trust_target",
-              "label": "GOP Trust Target",
-              "value": 3.6
-            },
-            {
-              "key": "conflicted_middle",
-              "label": "Conflicted Middle",
-              "value": 5.8
-            },
-            {
-              "key": "dem_trust_target",
-              "label": "Dem Trust Target",
-              "value": 4.5
-            },
-            {
-              "key": "dem_likely",
-              "label": "Dem Likely",
-              "value": 1.7
-            },
-            {
-              "key": "ford_base",
-              "label": "Ford Base",
-              "value": 49.4
-            }
-          ],
-          "margin": -16.0,
-          "lombardo_base": 33.2,
-          "gop_likely": 1.9,
-          "gop_trust_target": 3.6,
-          "conflicted_middle": 5.8,
-          "dem_trust_target": 4.5,
-          "dem_likely": 1.7,
-          "ford_base": 49.4
-        }
-      }
-    }
+   }
   }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "002",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Edgar Flores",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Edgar Flores",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "Edgar Flores"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 83418,
+   "rural_pct": 0.0,
+   "town_pct": 0.0,
+   "suburban_pct": 44.5,
+   "urban_pct": 55.1,
+   "income_brackets": {
+    "lt_50k": 43.4,
+    "between_50_100k": 15.2,
+    "gt_150k": 5.8,
+    "unknown_pct": 35.6
+   },
+   "college_pct": 8.4,
+   "post_grad_pct": 1.7,
+   "education_unknown_pct": 45.9,
+   "white_pct": 25.5,
+   "hispanic_pct": 49.2,
+   "black_pct": 18.1,
+   "asian_pct": 3.0,
+   "other_pct": 4.2
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 69.9,
+    "rep_pct": 30.1,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 39.9,
+   "latest_leg": 39.9,
+   "gov_2022": 38.0,
+   "ussen_2022": 41.7,
+   "pres_2024": 30.5,
+   "model_lombardo_all": -30.6,
+   "model_lombardo_hm": -42.6
+  },
+  "pres_2024_margin": 30.5,
+  "gov_2022_margin": 38.0,
+  "ussen_2022_margin": 41.7,
+  "top_ticket_totals": {
+   "pres_2024": 32753,
+   "gov_2022": 18145,
+   "ussen_2022": 18193
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "Edgar Flores"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 12.4
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.5
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 10.8
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 18.6
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 12.3
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.9
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 41.6
+      }
+     ],
+     "margin": -30.6,
+     "lombardo_base": 12.4,
+     "republicans_bring_home": 1.5,
+     "persuasion_trusts_reps": 10.8,
+     "conflicted_middle": 18.6,
+     "persuasion_trusts_dems": 12.3,
+     "likelier_democrat_voters": 2.9,
+     "ford_base": 41.6
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 19.6
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.5
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 3.3
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 5.4
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 6.4
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.9
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 61.9
+      }
+     ],
+     "margin": -42.6,
+     "lombardo_base": 19.6,
+     "republicans_bring_home": 1.5,
+     "persuasion_trusts_reps": 3.3,
+     "conflicted_middle": 5.4,
+     "persuasion_trusts_dems": 6.4,
+     "likelier_democrat_voters": 1.9,
+     "ford_base": 61.9
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "003",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Rochelle Nguyen",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Rochelle Nguyen",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 99068,
+   "rural_pct": 0.0,
+   "town_pct": 0.0,
+   "suburban_pct": 10.9,
+   "urban_pct": 88.1,
+   "income_brackets": {
+    "lt_50k": 30.2,
+    "between_50_100k": 24.0,
+    "gt_150k": 19.6,
+    "unknown_pct": 26.1
+   },
+   "college_pct": 12.1,
+   "post_grad_pct": 5.2,
+   "education_unknown_pct": 37.9,
+   "white_pct": 44.6,
+   "hispanic_pct": 31.3,
+   "black_pct": 13.9,
+   "asian_pct": 6.0,
+   "other_pct": 4.3
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 54.8,
+    "rep_pct": 41.2,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 13.7,
+   "latest_leg": 13.7,
+   "gov_2022": 12.9,
+   "ussen_2022": 15.1,
+   "pres_2024": 9.9,
+   "model_lombardo_all": -16.8,
+   "model_lombardo_hm": -16.8
+  },
+  "pres_2024_margin": 9.9,
+  "gov_2022_margin": 12.9,
+  "ussen_2022_margin": 15.1,
+  "top_ticket_totals": {
+   "pres_2024": 55621,
+   "gov_2022": 37438,
+   "ussen_2022": 37555
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 22.0
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.8
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 11.8
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 15.6
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 8.1
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.7
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 37.9
+      }
+     ],
+     "margin": -16.8,
+     "lombardo_base": 22.0,
+     "republicans_bring_home": 1.8,
+     "persuasion_trusts_reps": 11.8,
+     "conflicted_middle": 15.6,
+     "persuasion_trusts_dems": 8.1,
+     "likelier_democrat_voters": 2.7,
+     "ford_base": 37.9
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 33.1
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.6
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 3.2
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 5.7
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.8
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.8
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 49.7
+      }
+     ],
+     "margin": -16.8,
+     "lombardo_base": 33.1,
+     "republicans_bring_home": 1.6,
+     "persuasion_trusts_reps": 3.2,
+     "conflicted_middle": 5.7,
+     "persuasion_trusts_dems": 4.8,
+     "likelier_democrat_voters": 1.8,
+     "ford_base": 49.7
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "004",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Dina Neal",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Dina Neal",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 99987,
+   "rural_pct": 0.0,
+   "town_pct": 0.0,
+   "suburban_pct": 72.5,
+   "urban_pct": 26.9,
+   "income_brackets": {
+    "lt_50k": 35.7,
+    "between_50_100k": 25.1,
+    "gt_150k": 10.8,
+    "unknown_pct": 28.4
+   },
+   "college_pct": 9.7,
+   "post_grad_pct": 2.6,
+   "education_unknown_pct": 39.8,
+   "white_pct": 24.0,
+   "hispanic_pct": 37.5,
+   "black_pct": 30.9,
+   "asian_pct": 4.0,
+   "other_pct": 3.6
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 100.0,
+    "rep_pct": 0.0,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 100.0,
+   "latest_leg": 100.0,
+   "gov_2022": 40.0,
+   "ussen_2022": 41.9,
+   "pres_2024": 33.9,
+   "model_lombardo_all": -32.1,
+   "model_lombardo_hm": -42.6
+  },
+  "pres_2024_margin": 33.9,
+  "gov_2022_margin": 40.0,
+  "ussen_2022_margin": 41.9,
+  "top_ticket_totals": {
+   "pres_2024": 48015,
+   "gov_2022": 28672,
+   "ussen_2022": 28781
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 14.0
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.9
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 12.3
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 14.6
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 9.2
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 3.0
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 45.0
+      }
+     ],
+     "margin": -32.1,
+     "lombardo_base": 14.0,
+     "republicans_bring_home": 1.9,
+     "persuasion_trusts_reps": 12.3,
+     "conflicted_middle": 14.6,
+     "persuasion_trusts_dems": 9.2,
+     "likelier_democrat_voters": 3.0,
+     "ford_base": 45.0
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 21.1
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.6
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 2.9
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 4.5
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.5
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.0
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 63.3
+      }
+     ],
+     "margin": -42.6,
+     "lombardo_base": 21.1,
+     "republicans_bring_home": 1.6,
+     "persuasion_trusts_reps": 2.9,
+     "conflicted_middle": 4.5,
+     "persuasion_trusts_dems": 4.5,
+     "likelier_democrat_voters": 2.0,
+     "ford_base": 63.3
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "005",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Carrie Buck",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Carrie Buck",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 128876,
+   "rural_pct": 2.1,
+   "town_pct": 0.0,
+   "suburban_pct": 0.1,
+   "urban_pct": 96.6,
+   "income_brackets": {
+    "lt_50k": 18.8,
+    "between_50_100k": 24.5,
+    "gt_150k": 34.5,
+    "unknown_pct": 22.2
+   },
+   "college_pct": 15.2,
+   "post_grad_pct": 6.9,
+   "education_unknown_pct": 32.7,
+   "white_pct": 61.4,
+   "hispanic_pct": 19.8,
+   "black_pct": 6.3,
+   "asian_pct": 7.6,
+   "other_pct": 5.0
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 46.5,
+    "rep_pct": 53.5,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -6.9,
+   "latest_leg": -6.9,
+   "gov_2022": -2.3,
+   "ussen_2022": -0.1,
+   "pres_2024": -4.8,
+   "model_lombardo_all": 1.3,
+   "model_lombardo_hm": 3.8
+  },
+  "pres_2024_margin": -4.8,
+  "gov_2022_margin": -2.3,
+  "ussen_2022_margin": -0.1,
+  "top_ticket_totals": {
+   "pres_2024": 82966,
+   "gov_2022": 56672,
+   "ussen_2022": 56788
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 31.4
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.6
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 13.2
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 14.6
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 5.3
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.8
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 30.0
+      }
+     ],
+     "margin": 1.3,
+     "lombardo_base": 31.4,
+     "republicans_bring_home": 2.6,
+     "persuasion_trusts_reps": 13.2,
+     "conflicted_middle": 14.6,
+     "persuasion_trusts_dems": 5.3,
+     "likelier_democrat_voters": 2.8,
+     "ford_base": 30.0
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 42.3
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.0
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 4.8
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 6.7
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 3.6
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.8
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 38.8
+      }
+     ],
+     "margin": 3.8,
+     "lombardo_base": 42.3,
+     "republicans_bring_home": 2.0,
+     "persuasion_trusts_reps": 4.8,
+     "conflicted_middle": 6.7,
+     "persuasion_trusts_dems": 3.6,
+     "likelier_democrat_voters": 1.8,
+     "ford_base": 38.8
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "006",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Nicole Cannizzaro",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Nicole Cannizzaro",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 116511,
+   "rural_pct": 1.2,
+   "town_pct": 0.0,
+   "suburban_pct": 1.3,
+   "urban_pct": 96.1,
+   "income_brackets": {
+    "lt_50k": 19.0,
+    "between_50_100k": 27.9,
+    "gt_150k": 31.6,
+    "unknown_pct": 21.5
+   },
+   "college_pct": 15.4,
+   "post_grad_pct": 7.9,
+   "education_unknown_pct": 32.8,
+   "white_pct": 56.7,
+   "hispanic_pct": 22.9,
+   "black_pct": 8.2,
+   "asian_pct": 7.6,
+   "other_pct": 4.6
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 51.7,
+    "rep_pct": 45.5,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 6.2,
+   "latest_leg": 6.2,
+   "gov_2022": 6.1,
+   "ussen_2022": 8.5,
+   "pres_2024": 3.7,
+   "model_lombardo_all": -7.1,
+   "model_lombardo_hm": -6.0
+  },
+  "pres_2024_margin": 3.7,
+  "gov_2022_margin": 6.1,
+  "ussen_2022_margin": 8.5,
+  "top_ticket_totals": {
+   "pres_2024": 74754,
+   "gov_2022": 53785,
+   "ussen_2022": 53927
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 28.2
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.2
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 12.6
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 13.6
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 5.7
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 3.0
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 34.6
+      }
+     ],
+     "margin": -7.1,
+     "lombardo_base": 28.2,
+     "republicans_bring_home": 2.2,
+     "persuasion_trusts_reps": 12.6,
+     "conflicted_middle": 13.6,
+     "persuasion_trusts_dems": 5.7,
+     "likelier_democrat_voters": 3.0,
+     "ford_base": 34.6
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 37.9
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.7
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 4.2
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 6.4
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.3
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.0
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 43.5
+      }
+     ],
+     "margin": -6.0,
+     "lombardo_base": 37.9,
+     "republicans_bring_home": 1.7,
+     "persuasion_trusts_reps": 4.2,
+     "conflicted_middle": 6.4,
+     "persuasion_trusts_dems": 4.3,
+     "likelier_democrat_voters": 2.0,
+     "ford_base": 43.5
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "007",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Roberta Lange",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Roberta Lange",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 105576,
+   "rural_pct": 0.0,
+   "town_pct": 0.0,
+   "suburban_pct": 44.0,
+   "urban_pct": 55.3,
+   "income_brackets": {
+    "lt_50k": 30.9,
+    "between_50_100k": 27.5,
+    "gt_150k": 13.9,
+    "unknown_pct": 27.7
+   },
+   "college_pct": 11.6,
+   "post_grad_pct": 4.0,
+   "education_unknown_pct": 40.6,
+   "white_pct": 42.5,
+   "hispanic_pct": 34.0,
+   "black_pct": 12.5,
+   "asian_pct": 6.4,
+   "other_pct": 4.6
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 58.4,
+    "rep_pct": 41.6,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 16.8,
+   "latest_leg": 16.8,
+   "gov_2022": 22.1,
+   "ussen_2022": 24.1,
+   "pres_2024": 15.1,
+   "model_lombardo_all": -17.5,
+   "model_lombardo_hm": -23.5
+  },
+  "pres_2024_margin": 15.1,
+  "gov_2022_margin": 22.1,
+  "ussen_2022_margin": 24.1,
+  "top_ticket_totals": {
+   "pres_2024": 53994,
+   "gov_2022": 35225,
+   "ussen_2022": 35351
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 20.5
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.1
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 14.3
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 15.8
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 7.3
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.8
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 37.2
+      }
+     ],
+     "margin": -17.5,
+     "lombardo_base": 20.5,
+     "republicans_bring_home": 2.1,
+     "persuasion_trusts_reps": 14.3,
+     "conflicted_middle": 15.8,
+     "persuasion_trusts_dems": 7.3,
+     "likelier_democrat_voters": 2.8,
+     "ford_base": 37.2
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 29.4
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.7
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 3.7
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 5.7
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.8
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.9
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 52.8
+      }
+     ],
+     "margin": -23.5,
+     "lombardo_base": 29.4,
+     "republicans_bring_home": 1.7,
+     "persuasion_trusts_reps": 3.7,
+     "conflicted_middle": 5.7,
+     "persuasion_trusts_dems": 4.8,
+     "likelier_democrat_voters": 1.9,
+     "ford_base": 52.8
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "008",
+  "district_name": "",
+  "tier": 1,
+  "incumbent": {
+   "name": "Marilyn Dondero Loop",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Marilyn Dondero Loop",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "Marilyn Dondero Loop"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 116291,
+   "rural_pct": 0.0,
+   "town_pct": 0.0,
+   "suburban_pct": 49.5,
+   "urban_pct": 49.0,
+   "income_brackets": {
+    "lt_50k": 14.3,
+    "between_50_100k": 22.3,
+    "gt_150k": 41.2,
+    "unknown_pct": 22.1
+   },
+   "college_pct": 16.7,
+   "post_grad_pct": 8.6,
+   "education_unknown_pct": 33.9,
+   "white_pct": 58.7,
+   "hispanic_pct": 16.5,
+   "black_pct": 6.4,
+   "asian_pct": 13.2,
+   "other_pct": 5.3
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 50.7,
+    "rep_pct": 49.3,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 1.4,
+   "latest_leg": 1.4,
+   "gov_2022": 1.3,
+   "ussen_2022": 3.6,
+   "pres_2024": -2.2,
+   "model_lombardo_all": -2.0,
+   "model_lombardo_hm": -0.4
+  },
+  "pres_2024_margin": -2.2,
+  "gov_2022_margin": 1.3,
+  "ussen_2022_margin": 3.6,
+  "top_ticket_totals": {
+   "pres_2024": 76410,
+   "gov_2022": 53739,
+   "ussen_2022": 53799
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "Marilyn Dondero Loop"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 30.0
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.6
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 12.3
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 14.9
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 5.6
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 3.3
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 31.3
+      }
+     ],
+     "margin": -2.0,
+     "lombardo_base": 30.0,
+     "republicans_bring_home": 2.6,
+     "persuasion_trusts_reps": 12.3,
+     "conflicted_middle": 14.9,
+     "persuasion_trusts_dems": 5.6,
+     "likelier_democrat_voters": 3.3,
+     "ford_base": 31.3
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 39.9
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.9
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 4.5
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 7.1
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.2
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.1
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 40.2
+      }
+     ],
+     "margin": -0.4,
+     "lombardo_base": 39.9,
+     "republicans_bring_home": 1.9,
+     "persuasion_trusts_reps": 4.5,
+     "conflicted_middle": 7.1,
+     "persuasion_trusts_dems": 4.2,
+     "likelier_democrat_voters": 2.1,
+     "ford_base": 40.2
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "009",
+  "district_name": "",
+  "tier": 3,
+  "incumbent": {
+   "name": "Melanie Scheible",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Melanie Scheible",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "Maria Thompson",
+     "dem": "Melanie Scheible"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 114120,
+   "rural_pct": 3.2,
+   "town_pct": 0.0,
+   "suburban_pct": 95.7,
+   "urban_pct": 0.2,
+   "income_brackets": {
+    "lt_50k": 16.4,
+    "between_50_100k": 25.8,
+    "gt_150k": 34.1,
+    "unknown_pct": 23.7
+   },
+   "college_pct": 14.1,
+   "post_grad_pct": 6.2,
+   "education_unknown_pct": 36.5,
+   "white_pct": 47.6,
+   "hispanic_pct": 21.9,
+   "black_pct": 8.0,
+   "asian_pct": 17.6,
+   "other_pct": 4.8
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 53.5,
+    "rep_pct": 46.5,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 6.9,
+   "latest_leg": 6.9,
+   "gov_2022": 9.6,
+   "ussen_2022": 11.1,
+   "pres_2024": 2.6,
+   "model_lombardo_all": -7.6,
+   "model_lombardo_hm": -9.7
+  },
+  "pres_2024_margin": 2.6,
+  "gov_2022_margin": 9.6,
+  "ussen_2022_margin": 11.1,
+  "top_ticket_totals": {
+   "pres_2024": 68067,
+   "gov_2022": 43525,
+   "ussen_2022": 43594
+  },
+  "candidates_2026": {
+   "rep": "Maria Thompson",
+   "dem": "Melanie Scheible"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 25.9
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.4
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 14.6
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 15.6
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 5.8
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 3.7
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 32.1
+      }
+     ],
+     "margin": -7.6,
+     "lombardo_base": 25.9,
+     "republicans_bring_home": 2.4,
+     "persuasion_trusts_reps": 14.6,
+     "conflicted_middle": 15.6,
+     "persuasion_trusts_dems": 5.8,
+     "likelier_democrat_voters": 3.7,
+     "ford_base": 32.1
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 35.0
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.8
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 4.7
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 7.4
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.6
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.3
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 44.2
+      }
+     ],
+     "margin": -9.7,
+     "lombardo_base": 35.0,
+     "republicans_bring_home": 1.8,
+     "persuasion_trusts_reps": 4.7,
+     "conflicted_middle": 7.4,
+     "persuasion_trusts_dems": 4.6,
+     "likelier_democrat_voters": 2.3,
+     "ford_base": 44.2
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "010",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Fabian Doñate",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Fabian Doñate",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "Fabian Doñate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 100175,
+   "rural_pct": 0.0,
+   "town_pct": 0.0,
+   "suburban_pct": 36.5,
+   "urban_pct": 62.7,
+   "income_brackets": {
+    "lt_50k": 31.2,
+    "between_50_100k": 19.2,
+    "gt_150k": 17.3,
+    "unknown_pct": 32.3
+   },
+   "college_pct": 11.0,
+   "post_grad_pct": 4.4,
+   "education_unknown_pct": 45.2,
+   "white_pct": 42.3,
+   "hispanic_pct": 26.3,
+   "black_pct": 17.9,
+   "asian_pct": 8.7,
+   "other_pct": 4.9
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 55.5,
+    "rep_pct": 40.8,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 14.7,
+   "latest_leg": 14.7,
+   "gov_2022": 15.4,
+   "ussen_2022": 17.5,
+   "pres_2024": 10.5,
+   "model_lombardo_all": -17.4,
+   "model_lombardo_hm": -18.4
+  },
+  "pres_2024_margin": 10.5,
+  "gov_2022_margin": 15.4,
+  "ussen_2022_margin": 17.5,
+  "top_ticket_totals": {
+   "pres_2024": 47104,
+   "gov_2022": 30038,
+   "ussen_2022": 30121
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "Fabian Doñate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 20.0
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.8
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 12.1
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 17.2
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 9.6
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 4.3
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 35.0
+      }
+     ],
+     "margin": -17.4,
+     "lombardo_base": 20.0,
+     "republicans_bring_home": 1.8,
+     "persuasion_trusts_reps": 12.1,
+     "conflicted_middle": 17.2,
+     "persuasion_trusts_dems": 9.6,
+     "likelier_democrat_voters": 4.3,
+     "ford_base": 35.0
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 31.5
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.6
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 3.7
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 6.4
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 5.3
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.5
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 49.0
+      }
+     ],
+     "margin": -18.4,
+     "lombardo_base": 31.5,
+     "republicans_bring_home": 1.6,
+     "persuasion_trusts_reps": 3.7,
+     "conflicted_middle": 6.4,
+     "persuasion_trusts_dems": 5.3,
+     "likelier_democrat_voters": 2.5,
+     "ford_base": 49.0
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "011",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Lori Rogich",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Lori Rogich",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 127552,
+   "rural_pct": 7.7,
+   "town_pct": 0.0,
+   "suburban_pct": 91.2,
+   "urban_pct": 0.2,
+   "income_brackets": {
+    "lt_50k": 11.4,
+    "between_50_100k": 22.3,
+    "gt_150k": 43.3,
+    "unknown_pct": 23.0
+   },
+   "college_pct": 14.4,
+   "post_grad_pct": 5.7,
+   "education_unknown_pct": 35.1,
+   "white_pct": 46.2,
+   "hispanic_pct": 21.6,
+   "black_pct": 7.7,
+   "asian_pct": 19.3,
+   "other_pct": 5.1
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 49.3,
+    "rep_pct": 50.7,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -1.4,
+   "latest_leg": -1.4,
+   "gov_2022": 6.1,
+   "ussen_2022": 8.0,
+   "pres_2024": -0.4,
+   "model_lombardo_all": -3.9,
+   "model_lombardo_hm": -7.1
+  },
+  "pres_2024_margin": -0.4,
+  "gov_2022_margin": 6.1,
+  "ussen_2022_margin": 8.0,
+  "top_ticket_totals": {
+   "pres_2024": 78184,
+   "gov_2022": 46580,
+   "ussen_2022": 46637
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 27.5
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.6
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 15.2
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 15.7
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.9
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 3.6
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 30.4
+      }
+     ],
+     "margin": -3.9,
+     "lombardo_base": 27.5,
+     "republicans_bring_home": 2.6,
+     "persuasion_trusts_reps": 15.2,
+     "conflicted_middle": 15.7,
+     "persuasion_trusts_dems": 4.9,
+     "likelier_democrat_voters": 3.6,
+     "ford_base": 30.4
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 36.0
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.8
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 5.5
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 7.9
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.0
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.4
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 42.5
+      }
+     ],
+     "margin": -7.1,
+     "lombardo_base": 36.0,
+     "republicans_bring_home": 1.8,
+     "persuasion_trusts_reps": 5.5,
+     "conflicted_middle": 7.9,
+     "persuasion_trusts_dems": 4.0,
+     "likelier_democrat_voters": 2.4,
+     "ford_base": 42.5
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "012",
+  "district_name": "",
+  "tier": 2,
+  "incumbent": {
+   "name": "Julie Pazina",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Julie Pazina",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "Rafael Arroyo-Montalvo",
+     "dem": "Julie Pazina"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 120955,
+   "rural_pct": 0.6,
+   "town_pct": 0.0,
+   "suburban_pct": 37.1,
+   "urban_pct": 61.1,
+   "income_brackets": {
+    "lt_50k": 14.3,
+    "between_50_100k": 26.5,
+    "gt_150k": 37.2,
+    "unknown_pct": 22.0
+   },
+   "college_pct": 15.0,
+   "post_grad_pct": 6.3,
+   "education_unknown_pct": 33.4,
+   "white_pct": 55.7,
+   "hispanic_pct": 21.5,
+   "black_pct": 6.2,
+   "asian_pct": 11.6,
+   "other_pct": 4.9
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 52.5,
+    "rep_pct": 47.5,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 4.9,
+   "latest_leg": 4.9,
+   "gov_2022": 5.1,
+   "ussen_2022": 7.5,
+   "pres_2024": 0.4,
+   "model_lombardo_all": -3.2,
+   "model_lombardo_hm": -3.8
+  },
+  "pres_2024_margin": 0.4,
+  "gov_2022_margin": 5.1,
+  "ussen_2022_margin": 7.5,
+  "top_ticket_totals": {
+   "pres_2024": 77064,
+   "gov_2022": 52339,
+   "ussen_2022": 52416
+  },
+  "candidates_2026": {
+   "rep": "Rafael Arroyo-Montalvo",
+   "dem": "Julie Pazina"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 28.9
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.7
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 13.9
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 14.9
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.9
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 3.5
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 31.3
+      }
+     ],
+     "margin": -3.2,
+     "lombardo_base": 28.9,
+     "republicans_bring_home": 2.7,
+     "persuasion_trusts_reps": 13.9,
+     "conflicted_middle": 14.9,
+     "persuasion_trusts_dems": 4.9,
+     "likelier_democrat_voters": 3.5,
+     "ford_base": 31.3
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 38.5
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.0
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 4.8
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 6.8
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 3.6
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.1
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 42.1
+      }
+     ],
+     "margin": -3.8,
+     "lombardo_base": 38.5,
+     "republicans_bring_home": 2.0,
+     "persuasion_trusts_reps": 4.8,
+     "conflicted_middle": 6.8,
+     "persuasion_trusts_dems": 3.6,
+     "likelier_democrat_voters": 2.1,
+     "ford_base": 42.1
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "013",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Skip Daly",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Skip Daly",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "Matthew Buehler",
+     "dem": "Skip Daly"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 95957,
+   "rural_pct": 0.2,
+   "town_pct": 0.0,
+   "suburban_pct": 43.0,
+   "urban_pct": 55.6,
+   "income_brackets": {
+    "lt_50k": 29.7,
+    "between_50_100k": 21.0,
+    "gt_150k": 17.3,
+    "unknown_pct": 32.0
+   },
+   "college_pct": 10.8,
+   "post_grad_pct": 4.2,
+   "education_unknown_pct": 42.0,
+   "white_pct": 58.4,
+   "hispanic_pct": 27.8,
+   "black_pct": 3.7,
+   "asian_pct": 5.0,
+   "other_pct": 5.1
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 61.6,
+    "rep_pct": 38.4,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 23.1,
+   "latest_leg": 23.1,
+   "gov_2022": 22.9,
+   "ussen_2022": 25.7,
+   "pres_2024": 18.9,
+   "model_lombardo_all": -15.1,
+   "model_lombardo_hm": -19.5
+  },
+  "pres_2024_margin": 18.9,
+  "gov_2022_margin": 22.9,
+  "ussen_2022_margin": 25.7,
+  "top_ticket_totals": {
+   "pres_2024": 57133,
+   "gov_2022": 39062,
+   "ussen_2022": 39134
+  },
+  "candidates_2026": {
+   "rep": "Matthew Buehler",
+   "dem": "Skip Daly"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 22.9
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.5
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 10.3
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 16.2
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 9.5
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 3.0
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 36.6
+      }
+     ],
+     "margin": -15.1,
+     "lombardo_base": 22.9,
+     "republicans_bring_home": 1.5,
+     "persuasion_trusts_reps": 10.3,
+     "conflicted_middle": 16.2,
+     "persuasion_trusts_dems": 9.5,
+     "likelier_democrat_voters": 3.0,
+     "ford_base": 36.6
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 31.2
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.1
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 3.4
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 7.2
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 5.2
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.8
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 50.1
+      }
+     ],
+     "margin": -19.5,
+     "lombardo_base": 31.2,
+     "republicans_bring_home": 1.1,
+     "persuasion_trusts_reps": 3.4,
+     "conflicted_middle": 7.2,
+     "persuasion_trusts_dems": 5.2,
+     "likelier_democrat_voters": 1.8,
+     "ford_base": 50.1
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "014",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Ira Hansen",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Ira Hansen",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Ira Hansen",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 120121,
+   "rural_pct": 22.0,
+   "town_pct": 8.3,
+   "suburban_pct": 52.6,
+   "urban_pct": 15.2,
+   "income_brackets": {
+    "lt_50k": 14.1,
+    "between_50_100k": 23.8,
+    "gt_150k": 37.7,
+    "unknown_pct": 24.5
+   },
+   "college_pct": 14.8,
+   "post_grad_pct": 6.3,
+   "education_unknown_pct": 33.3,
+   "white_pct": 69.5,
+   "hispanic_pct": 18.0,
+   "black_pct": 2.4,
+   "asian_pct": 4.0,
+   "other_pct": 6.0
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 0.0,
+    "rep_pct": 100.0,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -100.0,
+   "latest_leg": -100.0,
+   "gov_2022": -23.5,
+   "ussen_2022": -20.7,
+   "pres_2024": -23.1,
+   "model_lombardo_all": 21.6,
+   "model_lombardo_hm": 28.5
+  },
+  "pres_2024_margin": -23.1,
+  "gov_2022_margin": -23.5,
+  "ussen_2022_margin": -20.7,
+  "top_ticket_totals": {
+   "pres_2024": 85501,
+   "gov_2022": 62737,
+   "ussen_2022": 62776
+  },
+  "candidates_2026": {
+   "rep": "Ira Hansen",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 43.7
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 3.0
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 10.2
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 13.7
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.1
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.7
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 23.5
+      }
+     ],
+     "margin": 21.6,
+     "lombardo_base": 43.7,
+     "republicans_bring_home": 3.0,
+     "persuasion_trusts_reps": 10.2,
+     "conflicted_middle": 13.7,
+     "persuasion_trusts_dems": 4.1,
+     "likelier_democrat_voters": 1.7,
+     "ford_base": 23.5
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 55.5
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.3
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 4.1
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 6.2
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 2.7
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.1
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 28.2
+      }
+     ],
+     "margin": 28.5,
+     "lombardo_base": 55.5,
+     "republicans_bring_home": 2.3,
+     "persuasion_trusts_reps": 4.1,
+     "conflicted_middle": 6.2,
+     "persuasion_trusts_dems": 2.7,
+     "likelier_democrat_voters": 1.1,
+     "ford_base": 28.2
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "015",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Angie Taylor",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Angie Taylor",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 108734,
+   "rural_pct": 1.0,
+   "town_pct": 0.0,
+   "suburban_pct": 16.2,
+   "urban_pct": 80.8,
+   "income_brackets": {
+    "lt_50k": 19.4,
+    "between_50_100k": 21.2,
+    "gt_150k": 34.1,
+    "unknown_pct": 25.4
+   },
+   "college_pct": 13.8,
+   "post_grad_pct": 7.7,
+   "education_unknown_pct": 33.8,
+   "white_pct": 67.2,
+   "hispanic_pct": 20.4,
+   "black_pct": 2.5,
+   "asian_pct": 5.2,
+   "other_pct": 4.8
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 54.2,
+    "rep_pct": 44.4,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": 9.7,
+   "latest_leg": 9.7,
+   "gov_2022": 14.4,
+   "ussen_2022": 17.7,
+   "pres_2024": 12.3,
+   "model_lombardo_all": -6.7,
+   "model_lombardo_hm": -7.7
+  },
+  "pres_2024_margin": 12.3,
+  "gov_2022_margin": 14.4,
+  "ussen_2022_margin": 17.7,
+  "top_ticket_totals": {
+   "pres_2024": 75265,
+   "gov_2022": 56035,
+   "ussen_2022": 56115
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 29.0
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.0
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 9.7
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 15.3
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 6.2
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.8
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 35.0
+      }
+     ],
+     "margin": -6.7,
+     "lombardo_base": 29.0,
+     "republicans_bring_home": 2.0,
+     "persuasion_trusts_reps": 9.7,
+     "conflicted_middle": 15.3,
+     "persuasion_trusts_dems": 6.2,
+     "likelier_democrat_voters": 2.8,
+     "ford_base": 35.0
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 36.9
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.4
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 3.6
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 7.9
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.3
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.7
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 44.2
+      }
+     ],
+     "margin": -7.7,
+     "lombardo_base": 36.9,
+     "republicans_bring_home": 1.4,
+     "persuasion_trusts_reps": 3.6,
+     "conflicted_middle": 7.9,
+     "persuasion_trusts_dems": 4.3,
+     "likelier_democrat_voters": 1.7,
+     "ford_base": 44.2
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "016",
+  "district_name": "",
+  "tier": 3,
+  "incumbent": {
+   "name": "Lisa Krasner",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Lisa Krasner",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Lisa Krasner",
+     "dem": "Chrystal Roll"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 127253,
+   "rural_pct": 13.2,
+   "town_pct": 8.1,
+   "suburban_pct": 15.0,
+   "urban_pct": 61.5,
+   "income_brackets": {
+    "lt_50k": 13.0,
+    "between_50_100k": 18.1,
+    "gt_150k": 40.8,
+    "unknown_pct": 28.1
+   },
+   "college_pct": 16.2,
+   "post_grad_pct": 9.1,
+   "education_unknown_pct": 37.1,
+   "white_pct": 74.3,
+   "hispanic_pct": 12.9,
+   "black_pct": 1.8,
+   "asian_pct": 4.3,
+   "other_pct": 6.6
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 39.7,
+    "rep_pct": 60.3,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -20.7,
+   "latest_leg": -20.7,
+   "gov_2022": -12.2,
+   "ussen_2022": -9.0,
+   "pres_2024": -10.4,
+   "model_lombardo_all": 13.8,
+   "model_lombardo_hm": 18.0
+  },
+  "pres_2024_margin": -10.4,
+  "gov_2022_margin": -12.2,
+  "ussen_2022_margin": -9.0,
+  "top_ticket_totals": {
+   "pres_2024": 93159,
+   "gov_2022": 72676,
+   "ussen_2022": 72760
+  },
+  "candidates_2026": {
+   "rep": "Lisa Krasner",
+   "dem": "Chrystal Roll"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 39.7
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.3
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 8.8
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 15.5
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 5.4
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.1
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 26.2
+      }
+     ],
+     "margin": 13.8,
+     "lombardo_base": 39.7,
+     "republicans_bring_home": 2.3,
+     "persuasion_trusts_reps": 8.8,
+     "conflicted_middle": 15.5,
+     "persuasion_trusts_dems": 5.4,
+     "likelier_democrat_voters": 2.1,
+     "ford_base": 26.2
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 49.2
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.8
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 3.7
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 8.5
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.0
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.3
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 31.6
+      }
+     ],
+     "margin": 18.0,
+     "lombardo_base": 49.2,
+     "republicans_bring_home": 1.8,
+     "persuasion_trusts_reps": 3.7,
+     "conflicted_middle": 8.5,
+     "persuasion_trusts_dems": 4.0,
+     "likelier_democrat_voters": 1.3,
+     "ford_base": 31.6
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "017",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Robin Titus",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Robin Titus",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Robin Titus",
+     "dem": "Lynne Ballatore"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 130718,
+   "rural_pct": 39.8,
+   "town_pct": 55.7,
+   "suburban_pct": 3.4,
+   "urban_pct": 0.0,
+   "income_brackets": {
+    "lt_50k": 19.6,
+    "between_50_100k": 26.2,
+    "gt_150k": 25.6,
+    "unknown_pct": 28.7
+   },
+   "college_pct": 13.7,
+   "post_grad_pct": 5.9,
+   "education_unknown_pct": 38.4,
+   "white_pct": 77.1,
+   "hispanic_pct": 12.0,
+   "black_pct": 2.0,
+   "asian_pct": 2.0,
+   "other_pct": 6.8
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 0.0,
+    "rep_pct": 100.0,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -100.0,
+   "latest_leg": -100.0,
+   "gov_2022": -40.5,
+   "ussen_2022": -38.6,
+   "pres_2024": -40.9,
+   "model_lombardo_all": 37.0,
+   "model_lombardo_hm": 47.9
+  },
+  "pres_2024_margin": -40.9,
+  "gov_2022_margin": -40.5,
+  "ussen_2022_margin": -38.6,
+  "top_ticket_totals": {
+   "pres_2024": 87190,
+   "gov_2022": 66335,
+   "ussen_2022": 66377
+  },
+  "candidates_2026": {
+   "rep": "Robin Titus",
+   "dem": "Lynne Ballatore"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 50.5
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 3.4
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 11.2
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 14.5
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 3.6
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.1
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 15.7
+      }
+     ],
+     "margin": 37.0,
+     "lombardo_base": 50.5,
+     "republicans_bring_home": 3.4,
+     "persuasion_trusts_reps": 11.2,
+     "conflicted_middle": 14.5,
+     "persuasion_trusts_dems": 3.6,
+     "likelier_democrat_voters": 1.1,
+     "ford_base": 15.7
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 64.6
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.9
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 4.8
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 6.2
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 2.0
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 0.8
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 18.8
+      }
+     ],
+     "margin": 47.9,
+     "lombardo_base": 64.6,
+     "republicans_bring_home": 2.9,
+     "persuasion_trusts_reps": 4.8,
+     "conflicted_middle": 6.2,
+     "persuasion_trusts_dems": 2.0,
+     "likelier_democrat_voters": 0.8,
+     "ford_base": 18.8
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "018",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "John Steinbeck",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "John Steinbeck",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 126409,
+   "rural_pct": 2.3,
+   "town_pct": 0.0,
+   "suburban_pct": 27.3,
+   "urban_pct": 69.1,
+   "income_brackets": {
+    "lt_50k": 12.2,
+    "between_50_100k": 25.2,
+    "gt_150k": 42.6,
+    "unknown_pct": 20.1
+   },
+   "college_pct": 15.6,
+   "post_grad_pct": 6.7,
+   "education_unknown_pct": 29.9,
+   "white_pct": 60.5,
+   "hispanic_pct": 19.8,
+   "black_pct": 9.0,
+   "asian_pct": 6.3,
+   "other_pct": 4.5
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 43.1,
+    "rep_pct": 56.9,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -13.8,
+   "latest_leg": -13.8,
+   "gov_2022": -7.2,
+   "ussen_2022": -4.9,
+   "pres_2024": -8.3,
+   "model_lombardo_all": 2.9,
+   "model_lombardo_hm": 7.0
+  },
+  "pres_2024_margin": -8.3,
+  "gov_2022_margin": -7.2,
+  "ussen_2022_margin": -4.9,
+  "top_ticket_totals": {
+   "pres_2024": 84363,
+   "gov_2022": 57165,
+   "ussen_2022": 57271
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 33.2
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.7
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 11.9
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 13.9
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 5.3
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 3.2
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 29.8
+      }
+     ],
+     "margin": 2.9,
+     "lombardo_base": 33.2,
+     "republicans_bring_home": 2.7,
+     "persuasion_trusts_reps": 11.9,
+     "conflicted_middle": 13.9,
+     "persuasion_trusts_dems": 5.3,
+     "likelier_democrat_voters": 3.2,
+     "ford_base": 29.8
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 44.2
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.0
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 4.3
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 6.5
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 3.8
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.9
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 37.3
+      }
+     ],
+     "margin": 7.0,
+     "lombardo_base": 44.2,
+     "republicans_bring_home": 2.0,
+     "persuasion_trusts_reps": 4.3,
+     "conflicted_middle": 6.5,
+     "persuasion_trusts_dems": 3.8,
+     "likelier_democrat_voters": 1.9,
+     "ford_base": 37.3
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "019",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "John Ellison",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "John Ellison",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "No candidate",
+     "dem": "No candidate"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2028,
+  "demographics": {
+   "population": 132289,
+   "rural_pct": 44.9,
+   "town_pct": 41.0,
+   "suburban_pct": 0.3,
+   "urban_pct": 12.6,
+   "income_brackets": {
+    "lt_50k": 18.7,
+    "between_50_100k": 22.6,
+    "gt_150k": 28.2,
+    "unknown_pct": 30.5
+   },
+   "college_pct": 13.4,
+   "post_grad_pct": 5.5,
+   "education_unknown_pct": 40.9,
+   "white_pct": 68.7,
+   "hispanic_pct": 15.1,
+   "black_pct": 4.2,
+   "asian_pct": 4.8,
+   "other_pct": 7.2
+  },
+  "elections": [
+   {
+    "year": 2024,
+    "dem_pct": 0.0,
+    "rep_pct": 100.0,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2024": -100.0,
+   "latest_leg": -100.0,
+   "gov_2022": -39.0,
+   "ussen_2022": -37.2,
+   "pres_2024": -37.6,
+   "model_lombardo_all": 29.1,
+   "model_lombardo_hm": 39.8
+  },
+  "pres_2024_margin": -37.6,
+  "gov_2022_margin": -39.0,
+  "ussen_2022_margin": -37.2,
+  "top_ticket_totals": {
+   "pres_2024": 82188,
+   "gov_2022": 57039,
+   "ussen_2022": 57066
+  },
+  "candidates_2026": {
+   "rep": "No candidate",
+   "dem": "No candidate"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 44.8
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 3.6
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 12.4
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 15.3
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.5
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.0
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 17.4
+      }
+     ],
+     "margin": 29.1,
+     "lombardo_base": 44.8,
+     "republicans_bring_home": 3.6,
+     "persuasion_trusts_reps": 12.4,
+     "conflicted_middle": 15.3,
+     "persuasion_trusts_dems": 4.5,
+     "likelier_democrat_voters": 2.0,
+     "ford_base": 17.4
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 59.5
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 3.1
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 5.3
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 6.3
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 2.8
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.3
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 21.6
+      }
+     ],
+     "margin": 39.8,
+     "lombardo_base": 59.5,
+     "republicans_bring_home": 3.1,
+     "persuasion_trusts_reps": 5.3,
+     "conflicted_middle": 6.3,
+     "persuasion_trusts_dems": 2.8,
+     "likelier_democrat_voters": 1.3,
+     "ford_base": 21.6
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "020",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "Jeff Stone",
+   "party": "R"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "Jeff Stone",
+     "party": "R"
+    },
+    "candidates": {
+     "rep": "Danielle Gallant",
+     "dem": "Calvin Sandoval"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 137743,
+   "rural_pct": 19.4,
+   "town_pct": 24.2,
+   "suburban_pct": 0.7,
+   "urban_pct": 54.3,
+   "income_brackets": {
+    "lt_50k": 13.5,
+    "between_50_100k": 24.1,
+    "gt_150k": 41.7,
+    "unknown_pct": 20.7
+   },
+   "college_pct": 17.7,
+   "post_grad_pct": 10.0,
+   "education_unknown_pct": 31.2,
+   "white_pct": 71.6,
+   "hispanic_pct": 13.8,
+   "black_pct": 3.1,
+   "asian_pct": 6.6,
+   "other_pct": 4.8
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 35.6,
+    "rep_pct": 61.7,
+    "winner": "R"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": -26.1,
+   "latest_leg": -26.1,
+   "gov_2022": -22.4,
+   "ussen_2022": -20.6,
+   "pres_2024": -22.7,
+   "model_lombardo_all": 19.4,
+   "model_lombardo_hm": 24.4
+  },
+  "pres_2024_margin": -22.7,
+  "gov_2022_margin": -22.4,
+  "ussen_2022_margin": -20.6,
+  "top_ticket_totals": {
+   "pres_2024": 99553,
+   "gov_2022": 73761,
+   "ussen_2022": 73871
+  },
+  "candidates_2026": {
+   "rep": "Danielle Gallant",
+   "dem": "Calvin Sandoval"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 42.4
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.9
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 11.1
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 13.3
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.5
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.1
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 23.7
+      }
+     ],
+     "margin": 19.4,
+     "lombardo_base": 42.4,
+     "republicans_bring_home": 2.9,
+     "persuasion_trusts_reps": 11.1,
+     "conflicted_middle": 13.3,
+     "persuasion_trusts_dems": 4.5,
+     "likelier_democrat_voters": 2.1,
+     "ford_base": 23.7
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 52.5
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.2
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 4.5
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 7.1
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 3.4
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.5
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 28.9
+      }
+     ],
+     "margin": 24.4,
+     "lombardo_base": 52.5,
+     "republicans_bring_home": 2.2,
+     "persuasion_trusts_reps": 4.5,
+     "conflicted_middle": 7.1,
+     "persuasion_trusts_dems": 3.4,
+     "likelier_democrat_voters": 1.5,
+     "ford_base": 28.9
+    }
+   }
+  }
+ },
+ {
+  "state_fips": "32",
+  "district_id": "021",
+  "district_name": "",
+  "tier": null,
+  "incumbent": {
+   "name": "James Ohrenschall",
+   "party": "D"
+  },
+  "members": [
+   {
+    "seat": 1,
+    "seat_label": "",
+    "incumbent": {
+     "name": "James Ohrenschall",
+     "party": "D"
+    },
+    "candidates": {
+     "rep": "Al Rojas",
+     "dem": "James Ohrenschall"
+    }
+   }
+  ],
+  "candidate_seats_up": 1,
+  "next_election": 2026,
+  "demographics": {
+   "population": 100786,
+   "rural_pct": 6.5,
+   "town_pct": 0.0,
+   "suburban_pct": 76.5,
+   "urban_pct": 16.4,
+   "income_brackets": {
+    "lt_50k": 30.5,
+    "between_50_100k": 24.8,
+    "gt_150k": 18.9,
+    "unknown_pct": 25.8
+   },
+   "college_pct": 12.2,
+   "post_grad_pct": 4.3,
+   "education_unknown_pct": 37.2,
+   "white_pct": 35.8,
+   "hispanic_pct": 43.8,
+   "black_pct": 10.3,
+   "asian_pct": 5.8,
+   "other_pct": 4.4
+  },
+  "elections": [
+   {
+    "year": 2022,
+    "dem_pct": 55.8,
+    "rep_pct": 44.2,
+    "winner": "D"
+   }
+  ],
+  "view_margins": {
+   "leg_2022": 11.6,
+   "latest_leg": 11.6,
+   "gov_2022": 14.1,
+   "ussen_2022": 15.9,
+   "pres_2024": 8.9,
+   "model_lombardo_all": -16.3,
+   "model_lombardo_hm": -15.9
+  },
+  "pres_2024_margin": 8.9,
+  "gov_2022_margin": 14.1,
+  "ussen_2022_margin": 15.9,
+  "top_ticket_totals": {
+   "pres_2024": 53965,
+   "gov_2022": 33641,
+   "ussen_2022": 33744
+  },
+  "candidates_2026": {
+   "rep": "Al Rojas",
+   "dem": "James Ohrenschall"
+  },
+  "models": {
+   "model_lombardo_all": {
+    "label": "Lombardo (All)",
+    "family": "Lombardo",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 21.4
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 2.2
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 13.3
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 15.9
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 7.3
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 2.2
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 37.7
+      }
+     ],
+     "margin": -16.3,
+     "lombardo_base": 21.4,
+     "republicans_bring_home": 2.2,
+     "persuasion_trusts_reps": 13.3,
+     "conflicted_middle": 15.9,
+     "persuasion_trusts_dems": 7.3,
+     "likelier_democrat_voters": 2.2,
+     "ford_base": 37.7
+    }
+   },
+   "model_lombardo_hm": {
+    "label": "Lombardo (H+M)",
+    "family": "Lombardo",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "lombardo_base",
+       "label": "Lombardo Base",
+       "value": 33.2
+      },
+      {
+       "key": "republicans_bring_home",
+       "label": "Republicans Bring Home",
+       "value": 1.9
+      },
+      {
+       "key": "persuasion_trusts_reps",
+       "label": "Persuasion Trusts Reps",
+       "value": 3.6
+      },
+      {
+       "key": "conflicted_middle",
+       "label": "Conflicted Middle",
+       "value": 5.8
+      },
+      {
+       "key": "persuasion_trusts_dems",
+       "label": "Persuasion Trusts Dems",
+       "value": 4.5
+      },
+      {
+       "key": "likelier_democrat_voters",
+       "label": "Likelier Democrat Voters",
+       "value": 1.7
+      },
+      {
+       "key": "ford_base",
+       "label": "Ford Base",
+       "value": 49.3
+      }
+     ],
+     "margin": -15.9,
+     "lombardo_base": 33.2,
+     "republicans_bring_home": 1.9,
+     "persuasion_trusts_reps": 3.6,
+     "conflicted_middle": 5.8,
+     "persuasion_trusts_dems": 4.5,
+     "likelier_democrat_voters": 1.7,
+     "ford_base": 49.3
+    }
+   }
+  }
+ }
 ]

@@ -57,14 +57,24 @@ const projectionSliderFill = document.getElementById("projectionSliderFill");
 const projectionSliderThumb = document.getElementById("projectionSliderThumb");
 
 const MODEL_VIEW_META = {
-  model_hrcc_hm:      { label: "HRCC (H+M)", order: 0, tableTop: "HRCC", tableBottom: "H+M" },
-  model_hrcc_all:     { label: "HRCC (All)", order: 1, tableTop: "HRCC", tableBottom: "All" },
-  model_rslc_vi:      { label: "RSLC (VI)",  order: 2, tableTop: "RSLC", tableBottom: "VI"  },
-  model_rslc_hm:      { label: "RSLC (H+M)", order: 3, tableTop: "RSLC", tableBottom: "H+M" },
-  model_rslc_all:     { label: "RSLC (All)", order: 4, tableTop: "RSLC", tableBottom: "All" },
-  model_rga_all:      { label: "RGA (All)",  order: 5, tableTop: "RGA",  tableBottom: "All" },
-  model_lombardo_hm:  { label: "Lom (H+M)",  order: 6, tableTop: "Lom",  tableBottom: "H+M" },
-  model_lombardo_all: { label: "Lom (All)",   order: 7, tableTop: "Lom",  tableBottom: "All" },
+  model_hrcc_hm:      { label: "HRCC (H+M)", order: 0,  tableTop: "HRCC", tableBottom: "H+M" },
+  model_hrcc_all:     { label: "HRCC (All)", order: 1,  tableTop: "HRCC", tableBottom: "All" },
+  model_rslc_vi:      { label: "RSLC (VI)",  order: 2,  tableTop: "RSLC", tableBottom: "VI"  },
+  model_rslc_hm:      { label: "RSLC (H+M)", order: 3,  tableTop: "RSLC", tableBottom: "H+M" },
+  model_rslc_all:     { label: "RSLC (All)", order: 4,  tableTop: "RSLC", tableBottom: "All" },
+  // Oregon runs two models side by side rather than two variants of one, so these are
+  // distinct families whose "variant" slot names the ballot question instead.
+  model_rslcleg_all:  { label: "RSLC Leg",   order: 5,  tableTop: "RSLC", tableBottom: "Leg" },
+  model_rslcgov_all:  { label: "RSLC Gov",   order: 6,  tableTop: "RSLC", tableBottom: "Gov" },
+  model_rga_hm:       { label: "RGA (H+M)",  order: 7,  tableTop: "RGA",  tableBottom: "H+M" },
+  model_rga_all:      { label: "RGA (All)",  order: 8,  tableTop: "RGA",  tableBottom: "All" },
+  model_lombardo_hm:  { label: "Lom (H+M)",  order: 9,  tableTop: "Lom",  tableBottom: "H+M" },
+  model_lombardo_all: { label: "Lom (All)",  order: 10, tableTop: "Lom",  tableBottom: "All" },
+  model_raga_hm:      { label: "RAGA (H+M)", order: 11, tableTop: "RAGA", tableBottom: "H+M" },
+  model_raga_all:     { label: "RAGA (All)", order: 12, tableTop: "RAGA", tableBottom: "All" },
+  // National fallback for states with no state-specific model. Ordered last so a
+  // dedicated model always wins when a state somehow has both.
+  model_drnatl_all:   { label: "DR Natl",    order: 13, tableTop: "DR",   tableBottom: "Natl" },
 };
 
 const MODEL_SEGMENT_COLOR_CLASSES = {
@@ -96,6 +106,18 @@ const MODEL_SEGMENT_COLOR_CLASSES = {
     "color-model-dem-soft",
     "color-model-dem-base",
   ],
+  // Kansas ships the same nine-universe ladder as the RSLC models.
+  RAGA: [
+    "color-model-rslc-1",
+    "color-model-rslc-2",
+    "color-model-rslc-3",
+    "color-model-rslc-4",
+    "color-model-rslc-5",
+    "color-model-rslc-6",
+    "color-model-rslc-7",
+    "color-model-rslc-8",
+    "color-model-rslc-9",
+  ],
   LOMBARDO: [
     "color-model-gop-base",
     "color-model-gop-target",
@@ -117,7 +139,27 @@ const RGA_SEVEN_BUCKET_COLOR_CLASSES = [
   "color-model-dem-base",
 ];
 
-const BUILD_VERSION = "20260723a";
+// Used by any model whose affinity collapses to GOP / Unaligned / Dem.
+const THREE_BUCKET_COLOR_CLASSES = [
+  "color-model-gop-base",
+  "color-model-swing",
+  "color-model-dem-base",
+];
+
+// Model families stored as GOP-minus-Dem, which must be negated to reach the Dem-positive
+// convention every other margin in the app uses. HRCC is the exception — it is already
+// stored Dem-positive — so adding a family here without checking its sign will invert it.
+const MODEL_GOP_POSITIVE_PREFIXES = [
+  "model_rslc_",
+  "model_rslcleg_",
+  "model_rslcgov_",
+  "model_rga_",
+  "model_raga_",
+  "model_lombardo_",
+  "model_drnatl_",
+];
+
+const BUILD_VERSION = "20260813a";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -4763,9 +4805,15 @@ function affinitySegmentsForModel(model) {
   if (!affinity || typeof affinity !== "object") return [];
   if (Array.isArray(affinity.segments) && affinity.segments.length) {
     const familyKey = String(model?.family || "").trim().toUpperCase();
-    const palette = familyKey === "RGA" && affinity.segments.length === 7
-      ? RGA_SEVEN_BUCKET_COLOR_CLASSES
-      : (MODEL_SEGMENT_COLOR_CLASSES[familyKey] || []);
+    // Framework-flag and score-based models (VA, TX, and the national fallback) resolve to
+    // GOP / Unaligned / Dem rather than a full audience ladder. Give those a red-grey-blue
+    // ramp instead of the first three steps of a family palette, which would read as three
+    // shades of the same colour.
+    const palette = affinity.segments.length === 3
+      ? THREE_BUCKET_COLOR_CLASSES
+      : familyKey === "RGA" && affinity.segments.length === 7
+        ? RGA_SEVEN_BUCKET_COLOR_CLASSES
+        : (MODEL_SEGMENT_COLOR_CLASSES[familyKey] || []);
     return affinity.segments.map((segment, idx) => ({
       label: segment?.label || `Bucket ${idx + 1}`,
       value: typeof segment?.value === "number" ? segment.value : Number(segment?.value || 0),
@@ -5243,7 +5291,7 @@ function getMarginForView(rec, view) {
 
   if (rec.view_margins && typeof rec.view_margins[view] === "number") {
     margin = rec.view_margins[view];
-    if (String(view).startsWith("model_rslc_") || String(view).startsWith("model_rga_") || String(view).startsWith("model_lombardo_")) {
+    if (MODEL_GOP_POSITIVE_PREFIXES.some((prefix) => String(view).startsWith(prefix))) {
       margin = -margin;
     }
     cache[view] = margin;

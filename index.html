@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Legislative District Map</title>
+  <title>RSLC District Explorer</title>
+  <!-- Square, transparent-padded copy of RSLC Logo.png so the tab icon isn't squished -->
+  <link rel="icon" type="image/png" href="data/favicon.png" />
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   />
-  <link rel="stylesheet" href="style.css?v=20260609a" />
+  <link rel="stylesheet" href="style.css?v=20260813a" />
   <script>
     (function () {
       var expires = localStorage.getItem("rslc_auth_expires");
@@ -22,7 +24,7 @@
 </head>
 <body>
   <header class="topbar">
-    <h1>State Legislative District Explorer</h1>
+    <h1>RSLC District Explorer</h1>
     <div class="topbar-layout">
       <div class="topbar-left">
         <div class="controls-row controls-row-primary">
@@ -109,7 +111,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"></script>
-  <script type="module" src="app.js?v=20260609a"></script>
+  <script type="module" src="app.js?v=20260813a"></script>
 </body>
 </html>
 
