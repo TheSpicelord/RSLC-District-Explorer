@@ -1842,6 +1842,9 @@ body.projection-active .chamber-buttons {
 
 .national-overview-table {
   width: 100%;
+  /* Brighter than the shared .target-table frame, which is nearly invisible against the
+     sidebar at this table's size. */
+  border: 2px solid #46566a;
 }
 
 .national-overview-table th,
@@ -1862,7 +1865,6 @@ body.projection-active .chamber-buttons {
 
 .national-overview-table .national-state-top {
   padding: 0;
-  border-bottom: 1px solid var(--border);
 }
 
 /* Headers sit at the same 0.9rem as the body rows above. */
@@ -1917,14 +1919,17 @@ body.projection-active .chamber-buttons {
    removed re-shifts both lists. Bordering all four sides needs no column arithmetic. */
 .national-overview-table th,
 .national-overview-table td {
-  border: 1px solid var(--border);
+  border: 1px solid #3a4655;
 }
 
-/* Margin cells already carry the black rule every coloured margin column uses; give the
-   header the same one so the column reads as a single block rather than a boxed body
-   sitting under an unboxed head. */
-.national-overview-table th.national-margin-head {
-  border: 1px solid #000 !important;
+/* The MARGIN column is boxed in black, like the coloured columns in the target tables.
+   It has to be 2px: under border-collapse, equal-width borders tie and the tie breaks
+   toward the cell further left/up, so a 1px black edge loses to its grey neighbour on the
+   left and top and wins on the right and bottom — the half-black box. Wider always wins,
+   so 2px closes the column on all four sides. */
+.national-overview-table th.national-margin-head,
+.national-overview-table td.margin-cell {
+  border: 2px solid #000 !important;
 }
 
 /* The spacer between the chambers draws no rules of its own; the vertical lines on either
