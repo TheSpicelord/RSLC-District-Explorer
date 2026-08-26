@@ -162,7 +162,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260826c";
+const BUILD_VERSION = "20260826d";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -205,19 +205,29 @@ map.getPane("stateHoverPane").style.zIndex = 454;
 map.createPane("districtNumberPane");
 map.getPane("districtNumberPane").style.zIndex = 452;
 
-const ESRI_CANVAS_BASE = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas";
+// CARTO now gates these tiles and serves an "API KEY REQUIRED" watermark
+// without one. Tiles still render fully, so the map stays usable while
+// unkeyed. Request a free key at https://carto.com/basemaps/apikey (no
+// account needed, 5M tiles/month) and set it here to drop the watermark.
+const CARTO_BASEMAP_KEY = "";
 
-L.tileLayer(`${ESRI_CANVAS_BASE}/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
+function cartoTileUrl(style) {
+  const url = `https://{s}.basemaps.cartocdn.com/${style}/{z}/{x}/{y}{r}.png`;
+  return CARTO_BASEMAP_KEY ? `${url}?key=${CARTO_BASEMAP_KEY}` : url;
+}
+
+L.tileLayer(cartoTileUrl("dark_nolabels"), {
   maxZoom: 18,
-  className: "basemap-dark",
-  attribution: "&copy; Esri",
+  subdomains: "abcd",
+  attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
 }).addTo(map);
 
-L.tileLayer(`${ESRI_CANVAS_BASE}/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, {
+L.tileLayer(cartoTileUrl("dark_only_labels"), {
   pane: "placeLabelPane",
   maxZoom: 18,
   minZoom: 13,
-  attribution: "&copy; Esri",
+  subdomains: "abcd",
+  attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
   interactive: false,
 }).addTo(map);
 
