@@ -162,7 +162,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260813d";
+const BUILD_VERSION = "20260826a";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -205,18 +205,18 @@ map.getPane("stateHoverPane").style.zIndex = 454;
 map.createPane("districtNumberPane");
 map.getPane("districtNumberPane").style.zIndex = 452;
 
-L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png", {
+const ESRI_CANVAS_BASE = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas";
+
+L.tileLayer(`${ESRI_CANVAS_BASE}/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
   maxZoom: 18,
-  subdomains: "abcd",
-  attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
+  attribution: "&copy; Esri",
 }).addTo(map);
 
-L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png", {
+L.tileLayer(`${ESRI_CANVAS_BASE}/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, {
   pane: "placeLabelPane",
   maxZoom: 18,
   minZoom: 13,
-  subdomains: "abcd",
-  attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
+  attribution: "&copy; Esri",
   interactive: false,
 }).addTo(map);
 
