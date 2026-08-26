@@ -605,6 +605,12 @@ body.projection-active .chamber-buttons {
   background: #10161d;
 }
 
+/* Esri's dark canvas is a mid charcoal; darken it to the near-black the
+   district fills were tuned against. Base layer only — labels stay bright. */
+.basemap-dark {
+  filter: brightness(0.18);
+}
+
 .leaflet-container:focus {
   outline: none;
 }

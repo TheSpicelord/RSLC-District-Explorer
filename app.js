@@ -162,7 +162,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260826b";
+const BUILD_VERSION = "20260826c";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -209,6 +209,7 @@ const ESRI_CANVAS_BASE = "https://server.arcgisonline.com/ArcGIS/rest/services/C
 
 L.tileLayer(`${ESRI_CANVAS_BASE}/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
   maxZoom: 18,
+  className: "basemap-dark",
   attribution: "&copy; Esri",
 }).addTo(map);
 
