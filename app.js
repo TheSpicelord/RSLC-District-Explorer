@@ -162,7 +162,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260826d";
+const BUILD_VERSION = "20260830a";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -205,11 +205,10 @@ map.getPane("stateHoverPane").style.zIndex = 454;
 map.createPane("districtNumberPane");
 map.getPane("districtNumberPane").style.zIndex = 452;
 
-// CARTO now gates these tiles and serves an "API KEY REQUIRED" watermark
-// without one. Tiles still render fully, so the map stays usable while
-// unkeyed. Request a free key at https://carto.com/basemaps/apikey (no
-// account needed, 5M tiles/month) and set it here to drop the watermark.
-const CARTO_BASEMAP_KEY = "";
+// CARTO basemap tiles require an API key (free tier: 5M tiles/month,
+// from https://carto.com/basemaps/apikey). Keys are meant to ship in
+// client-side code; without one CARTO serves an "API KEY REQUIRED" watermark.
+const CARTO_BASEMAP_KEY = "cb1_26g4_1_e39fbf4c3a45e5c2692d6e09";
 
 function cartoTileUrl(style) {
   const url = `https://{s}.basemaps.cartocdn.com/${style}/{z}/{x}/{y}{r}.png`;
