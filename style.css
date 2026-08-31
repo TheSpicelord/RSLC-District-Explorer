@@ -1842,9 +1842,11 @@ body.projection-active .chamber-buttons {
 
 .national-overview-table {
   width: 100%;
-  /* Brighter than the shared .target-table frame, which is nearly invisible against the
-     sidebar at this table's size. */
-  border: 2px solid #46566a;
+  /* ABEV-Tracker-style framing: keep .target-table's quiet outer border, but square
+     corners — the 8px radius + overflow:hidden clips the collapsed borders unevenly. */
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
 }
 
 .national-overview-table th,
@@ -1913,23 +1915,42 @@ body.projection-active .chamber-buttons {
   background: rgba(255, 255, 255, 0.05);
 }
 
-/* Full grid on every cell, like the target tables. Positional (nth-child) rules were
-   fragile here: the second header row has no gap cell — the spacer is a rowspan from row
-   one — so its columns sit one place earlier than the body's, and every column added or
-   removed re-shifts both lists. Bordering all four sides needs no column arithmetic. */
-.national-overview-table th,
-.national-overview-table td {
-  border: 1px solid #3a4655;
+/* ABEV-Tracker-style bordering: no full grid. Rows separate with .target-table's
+   border-bottom, thin vertical lines bracket each chamber's column group, and the
+   MARGIN columns keep the shared 1px black box (td.margin-cell rule above); the
+   header gets the same box so the column reads as one piece. */
+.national-overview-table th.national-vline-left,
+.national-overview-table td.national-vline-left {
+  border-left: 1px solid var(--border);
 }
 
-/* The MARGIN column is boxed in black, like the coloured columns in the target tables.
-   It has to be 2px: under border-collapse, equal-width borders tie and the tie breaks
-   toward the cell further left/up, so a 1px black edge loses to its grey neighbour on the
-   left and top and wins on the right and bottom — the half-black box. Wider always wins,
-   so 2px closes the column on all four sides. */
-.national-overview-table th.national-margin-head,
-.national-overview-table td.margin-cell {
-  border: 2px solid #000 !important;
+.national-overview-table th.national-vline-right,
+.national-overview-table td.national-vline-right {
+  border-right: 1px solid var(--border);
+}
+
+/* Top/bottom black only, so the header blends into the band while the column of
+   boxed margin cells below stays framed. The right edge keeps the grey group
+   line — Margin is each chamber group's last column, and dropping it left a hole
+   in the group's bracket (the table frame overrides it on the outer table edge). */
+.national-overview-table th.national-margin-head {
+  border: 1px solid #000 !important;
+  border-left: none !important;
+  border-right: 1px solid var(--border) !important;
+}
+
+/* ABEV's dark header band, with normal letter casing instead of the shared
+   .target-table all-caps. */
+.national-overview-table th {
+  background: #1b232d;
+  text-transform: none;
+  letter-spacing: 0.2px;
+}
+
+/* Keep the header band continuous across the chamber-group spacer (body gap cells
+   stay transparent). */
+.national-overview-table thead .national-gap-col {
+  background: #1b232d;
 }
 
 /* The spacer between the chambers draws no rules of its own; the vertical lines on either

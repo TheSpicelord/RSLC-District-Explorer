@@ -162,7 +162,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260830a";
+const BUILD_VERSION = "20260830e";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -1695,12 +1695,12 @@ function nationalOverviewHtml() {
       return `
         <tr class="target-row state-select-row" data-state-key="${escapeHtml(row.stateKey)}">
           <td class="national-state-cell">${escapeHtml(row.stateName)}</td>
-          <td class="national-seat-value national-seat-col">${lower.rep}</td>
+          <td class="national-seat-value national-seat-col national-vline-left">${lower.rep}</td>
           <td class="national-seat-value national-seat-col">${lower.dem}</td>
           <td class="national-seat-value national-seat-col">${lower.other}</td>
           <td class="margin-cell" style="background:${nationalOverviewMarginColor(lowerMargin)}">${escapeHtml(formatSignedRMargin(lowerMargin))}</td>
           <td class="national-gap-cell"></td>
-          <td class="national-seat-value national-seat-col">${upper.rep}</td>
+          <td class="national-seat-value national-seat-col national-vline-left">${upper.rep}</td>
           <td class="national-seat-value national-seat-col">${upper.dem}</td>
           <td class="national-seat-value national-seat-col">${upper.other}</td>
           <td class="margin-cell" style="background:${nationalOverviewMarginColor(upperMargin)}">${escapeHtml(formatSignedRMargin(upperMargin))}</td>
@@ -1715,20 +1715,20 @@ function nationalOverviewHtml() {
         <thead>
           <tr>
             <th class="national-state-top"></th>
-            <th colspan="4" class="national-section-head">Lower Chamber</th>
+            <th colspan="4" class="national-section-head national-vline-left national-vline-right">Lower Chamber</th>
             <th class="national-gap-col" rowspan="2"></th>
-            <th colspan="4" class="national-section-head">Upper Chamber</th>
+            <th colspan="4" class="national-section-head national-vline-left national-vline-right">Upper Chamber</th>
           </tr>
           <tr>
             <th class="national-state-head">State</th>
-            <th class="national-sortable national-seat-head" data-sort-key="lower_rep">GOP<br/>Seats${nationalSortIndicator("lower_rep")}</th>
+            <th class="national-sortable national-seat-head national-vline-left" data-sort-key="lower_rep">GOP<br/>Seats${nationalSortIndicator("lower_rep")}</th>
             <th class="national-sortable national-seat-head" data-sort-key="lower_dem">Dem<br/>Seats${nationalSortIndicator("lower_dem")}</th>
             <th class="national-sortable national-seat-head" data-sort-key="lower_other">Ind<br/>Seats${nationalSortIndicator("lower_other")}</th>
-            <th class="national-sortable national-margin-head" data-sort-key="lower_margin">MARGIN${nationalSortIndicator("lower_margin")}</th>
-            <th class="national-sortable national-seat-head" data-sort-key="upper_rep">GOP<br/>Seats${nationalSortIndicator("upper_rep")}</th>
+            <th class="national-sortable national-margin-head" data-sort-key="lower_margin">Margin${nationalSortIndicator("lower_margin")}</th>
+            <th class="national-sortable national-seat-head national-vline-left" data-sort-key="upper_rep">GOP<br/>Seats${nationalSortIndicator("upper_rep")}</th>
             <th class="national-sortable national-seat-head" data-sort-key="upper_dem">Dem<br/>Seats${nationalSortIndicator("upper_dem")}</th>
             <th class="national-sortable national-seat-head" data-sort-key="upper_other">Ind<br/>Seats${nationalSortIndicator("upper_other")}</th>
-            <th class="national-sortable national-margin-head" data-sort-key="upper_margin">MARGIN${nationalSortIndicator("upper_margin")}</th>
+            <th class="national-sortable national-margin-head" data-sort-key="upper_margin">Margin${nationalSortIndicator("upper_margin")}</th>
           </tr>
         </thead>
         <tbody>
