@@ -621,7 +621,11 @@ body.projection-active .chamber-buttons {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 0.9rem;
+  /* No top padding: .sidebar is the scrollport, and a sticky header offsets from
+     the scrollport's content edge, so padding-top here becomes a gap that rows
+     scroll through above the stuck All Districts header. The inset is restored
+     on the h2 below, which leaves the resting appearance identical. */
+  padding: 0 0.9rem 0.9rem;
   min-width: 340px;
   width: max-content;
   max-width: 50vw;
@@ -646,6 +650,8 @@ body.projection-active .chamber-buttons {
 }
 
 .sidebar h2 {
+  /* Stands in for the top padding .sidebar can no longer carry - see above. */
+  padding-top: 0.9rem;
   margin: 0 0 0.6rem 0;
   transition: color 160ms ease, text-shadow 160ms ease;
 }
@@ -2030,7 +2036,9 @@ body.projection-active .chamber-buttons {
    overflow other than visible makes the table its own scrollport - the header
    would then stick to the table's own top edge and scroll away with it, so
    sticky would appear to do nothing at all. The scrollport has to be .sidebar,
-   which is what actually scrolls, so this table opts out of the clipping. */
+   which is what actually scrolls, so this table opts out of the clipping.
+   .sidebar also has to carry no top padding, or the header pins below it and
+   rows scroll through the gap - see the padding note on .sidebar. */
 .all-districts-table-wrap .target-table {
   overflow: visible;
 }
