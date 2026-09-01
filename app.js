@@ -62,9 +62,12 @@ const controlsRowSecondary = document.querySelector(".controls-row-secondary");
 const MODEL_VIEW_META = {
   model_hrcc_hm:      { label: "HRCC (H+M)", order: 0,  tableTop: "HRCC", tableBottom: "H+M" },
   model_hrcc_all:     { label: "HRCC (All)", order: 1,  tableTop: "HRCC", tableBottom: "All" },
-  model_rslc_vi:      { label: "RSLC (VI)",  order: 2,  tableTop: "RSLC", tableBottom: "VI"  },
-  model_rslc_hm:      { label: "RSLC (H+M)", order: 3,  tableTop: "RSLC", tableBottom: "H+M" },
-  model_rslc_all:     { label: "RSLC (All)", order: 4,  tableTop: "RSLC", tableBottom: "All" },
+  // Michigan is the only state carrying all three; column order is H+M, All, VI.
+  // Both the key order (which drives table columns) and `order` (which drives the
+  // map-view list) have to agree, or the two read differently.
+  model_rslc_hm:      { label: "RSLC (H+M)", order: 2,  tableTop: "RSLC", tableBottom: "H+M" },
+  model_rslc_all:     { label: "RSLC (All)", order: 3,  tableTop: "RSLC", tableBottom: "All" },
+  model_rslc_vi:      { label: "RSLC (VI)",  order: 4,  tableTop: "RSLC", tableBottom: "VI"  },
   // Alaska's model frames the 2026 U.S. Senate race (Sullivan vs Peltola) rather than a
   // legislative ballot, so it is kept as its own family instead of being folded into
   // RSLC — the header has to say which question the margin answers.
@@ -180,7 +183,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260901a";
+const BUILD_VERSION = "20260901b";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
