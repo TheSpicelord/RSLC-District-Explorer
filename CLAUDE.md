@@ -24,7 +24,58 @@ python scripts/generate_chamber_jsons.py --states TX,FL,GA
 python scripts/validate_chamber_jsons.py
 ```
 
-Python scripts use only built-in libraries — no pip installs needed.
+The generator and validator use only built-in libraries. The model builders need
+`pyodbc` (SQL Server) and `openpyxl` (workbook-sourced models).
+
+## Model Margins
+
+Modeling numbers are **not** in the election workbook — they are built straight into the
+chamber JSONs by three scripts, all of which must run **after**
+`generate_chamber_jsons.py` (it rebuilds chamber files from the workbook and drops
+anything they wrote).
+
+```bash
+python scripts/build_model_margins.py --states ALL   # dedicated state models (SQL, VPN)
+python scripts/build_national_margins.py             # DR Natl fallback for the rest
+python scripts/build_michigan_vi.py                  # MI Vote Intent (workbook)
+python scripts/build_kansas_margins.py               # KS (workbook)
+```
+
+Every model stores **GOP minus Dem** as a share of all modeled voters in the district;
+`app.js` negates the families listed in `MODEL_GOP_POSITIVE_PREFIXES` on display to reach
+the Dem-positive convention used everywhere else. **Adding a family without adding it to
+that list silently inverts its sign.** A new family also needs a `MODEL_VIEW_META` entry
+(column header + ordering) and, if its ladder is not 3 or 9 buckets,
+`MODEL_SEGMENT_COLOR_CLASSES`.
+
+Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
+
+| Mode | Margin from | Used by |
+|---|---|---|
+| `universe` | universe ranges (`gop=[..]`, `dem=[..]`) — or `framework_col` when set | NV, PA, AZ, GA, **WI**, **MI**, NJ, **AK** |
+| `flags` | 0/1 audience columns | VA, TX, IA, OR |
+| `score` | continuous support scores | (none currently) |
+
+- **Bucket ranges are per-model, not conventional.** Most run 1–2 rep / 6–7 dem, but GA
+  runs to 9 universes (Dem base 8–9) and NJ/MI use three-deep bases (1–3 / 7–9).
+- **`framework_col` beats a universe range.** The Aug 2026 WI/MI refreshes and the AK
+  model carry an explicit framework column beside the ladder. WI and MI do *not* number
+  their universes the same way — "Available Dems" is 7 (Pers) in WI, 6 (Dem) in MI — so a
+  range right for one mis-buckets the other. The ladder still drives the affinity
+  breakdown; the aggregator warns if a universe ever spans two frameworks.
+- **Turnout variants** come either from a bin column (`turnout_col`, with `all_values` /
+  `hm_values`) or from flag columns (`turnout_cols` / `all_cols`). "All" is rarely the
+  whole table: GA and WI/MI use H/M/L only, and IA/AK exclude rows carrying no turnout
+  flag at all.
+- **`resolve_names`** routes a state through the shared resolver in `district_ids.py`
+  instead of the integer district path. Alaska needs it: its senate districts are letters
+  the voter file only spells out ("DISTRICT A" → `00A`).
+- **`EXTERNAL_MODELS`** (Kansas) and `ON_HOLD` are both treated as "has a dedicated
+  model" by `build_national_margins.py`, so the fallback never overwrites them. Omitting a
+  state there is how it silently inherits national numbers.
+- **`NATIONAL_EXCLUDE`** = AK, HI: the national audiences carry a ~47 point systematic
+  bias in states with unusual party registration, so the number is left blank rather than
+  shown. AK now has a dedicated model, so this is only a second guard for it.
 
 ## Architecture
 
@@ -42,8 +93,15 @@ data/
   target_districts.json         # Strategic target district tiers
   shapes/                       # ZIP shapefiles (Leaflet/shpjs)
 scripts/
-  generate_chamber_jsons.py     # Excel → JSON
+  generate_chamber_jsons.py     # Excel → JSON (run first; drops model data)
   validate_chamber_jsons.py     # Validation
+  db.py                         # SQL Server connection helper (VPN required)
+  db_probe.py                   # Connection test / table + column listing
+  district_ids.py               # Voter-file district → chamber district_id resolver
+  build_model_margins.py        # Dedicated state models from SQL
+  build_national_margins.py     # DR Natl fallback for states without one
+  build_michigan_vi.py          # MI Vote Intent from workbook
+  build_kansas_margins.py       # KS from workbook
 ```
 
 ## Key Concepts

@@ -32,6 +32,7 @@ import sys
 from pathlib import Path
 
 from db import connect, load_config
+from district_ids import make_resolver
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
@@ -94,21 +95,32 @@ MODELS = {
         turnout_col="bin_turnout", all_values=["L", "M", "H"], hm_values=["H", "M"],
         drop_families=["rga"],
     ),
+    # Wisconsin and Michigan share the Aug 2026 refresh format: a Framework column
+    # ("Rep"/"Pers"/"Dem") alongside the universe ladder. The margin comes from
+    # Framework rather than a universe range, because the two tables do NOT number
+    # their universes the same way — WI puts "Available Dems" at 7 (Pers), MI at 6
+    # (Dem) — so a hardcoded gop/dem range that is right for one is wrong for the
+    # other. Framework is nested exactly inside universenumber in both tables
+    # (verified: every universe maps to a single Framework value), so the ladder
+    # still drives the affinity breakdown.
     "WI": dict(
-        mode="universe", table="RGA_WI_ExchangeData_20260131",
-        family="rga", family_label="RGA",
+        mode="universe", table="RSLC_WI_Exchange_20260819",
+        family="rslc", family_label="RSLC",
         univ_col="universenumber", name_col="universename",
-        gop=[1, 2], dem=[7, 8],
+        framework_col="Framework", framework_gop=["Rep"], framework_dem=["Dem"],
+        turnout_col="bin_turnout", all_values=["H", "M", "L"], hm_values=["H", "M"],
+        drop_families=["rga"],
     ),
     "MI": dict(
-        # Vote Intent was modeled separately and is NOT reproducible from universe counts,
-        # so model_rslc_vi is preserved from the workbook. Only H+M is built from SQL.
-        mode="universe", table="RSLC_MI_R1_Exchange_20260304",
+        # Vote Intent is modeled separately and is NOT reproducible from universe
+        # counts, so model_rslc_vi is preserved here and built by
+        # build_michigan_vi.py from the Vote Intent workbook.
+        mode="universe", table="RSLC_MI_R2_Exchange_20260805",
         family="rslc", family_label="RSLC",
-        univ_col="universenumber", name_col="Universename",
-        gop=[1, 2, 3], dem=[7, 8, 9],
-        turnout_col="bin_turnout", hm_values=["H", "M"],
-        variants=["hm"], preserve=["model_rslc_vi"],
+        univ_col="universenumber", name_col="universename",
+        framework_col="Framework", framework_gop=["Rep"], framework_dem=["Dem"],
+        turnout_col="bin_turnout", all_values=["H", "M", "L"], hm_values=["H", "M"],
+        preserve=["model_rslc_vi"],
     ),
     "NJ": dict(
         mode="universe", table="RSLC_NJ_Transfer_20250712",
@@ -140,6 +152,21 @@ MODELS = {
         flag_true="1", flag_quoted=False,
         turnout_cols=["turnout_high", "turnout_mid"], turnout_quoted=False,
         all_cols=["turnout_high", "turnout_mid", "turnout_low"],
+    ),
+    # Alaska's DSP model for the 2026 U.S. Senate race, shared with the ABEV Tracker.
+    # Same nine-universe ladder as WI/MI but with a framework column named for the
+    # candidates, and turnout as three flag columns rather than a bin. resolve_names
+    # is required: AK senate districts are letters ("DISTRICT A" -> "00A"), which the
+    # integer district path cannot produce.
+    "AK": dict(
+        mode="universe", table="ak_scores_audiences_20260721", schema="vs",
+        family="rslcak", family_label="RSLC AK",
+        univ_col="universenumber", name_col="universename",
+        framework_col="framework", framework_gop=["Sullivan"], framework_dem=["Peltola"],
+        turnout_cols=["flag_turnout_high", "flag_turnout_mid"],
+        all_cols=["flag_turnout_high", "flag_turnout_mid", "flag_turnout_low"],
+        turnout_quoted=False,
+        resolve_names=True,
     ),
     # Oregon carries two models side by side rather than two variants of one: the
     # legislative ballot and the governor ballot are different questions, so they get
@@ -177,25 +204,77 @@ VARIANT_LABEL = {"all": "All", "hm": "H+M"}
 # Fetch: one query per state, covering both chambers and both variants at once.
 # ---------------------------------------------------------------------------
 
+def table_ref(cfg):
+    """Bracketed table name, with a non-dbo schema when the model declares one (AK)."""
+    schema = cfg.get("schema")
+    return f"[{schema}].[{cfg['table']}]" if schema else f"[{cfg['table']}]"
+
+
+def flag_or(cols, quoted):
+    """`m.[a] = 1 OR m.[b] = 1` for a list of flag columns, or None if there are none."""
+    if not cols:
+        return None
+    lit = "'1'" if quoted else "1"
+    return " OR ".join(f"m.[{c}] = {lit}" for c in cols)
+
+
 def fetch_universe(cur, state, cfg):
-    # Models without a turnout bin get only the "All" variant, so there is nothing to
-    # group by — a literal NULL in GROUP BY is a SQL Server error.
-    has_turnout = bool(cfg.get("turnout_col"))
-    turnout = f"m.[{cfg['turnout_col']}]" if has_turnout else "NULL"
-    group_extra = f", {turnout}" if has_turnout else ""
+    """One row per district x universe x turnout x framework, as dicts.
+
+    Turnout arrives either as a single bin column (`turnout_col`, e.g. bin_turnout) or
+    as separate 0/1 flag columns (`turnout_cols` / `all_cols`, which is how the Alaska
+    model carries it). Both are reduced here to `tb` (H+M member) and `av` (All member)
+    so the aggregator has one shape to read.
+    """
+    # Models without any turnout split get only the "All" variant, so there is nothing
+    # to group by — a literal NULL in GROUP BY is a SQL Server error.
+    bin_col = cfg.get("turnout_col")
+    tq = cfg.get("turnout_quoted", False)
+    hm_expr = flag_or(cfg.get("turnout_cols"), tq)
+    av_expr = flag_or(cfg.get("all_cols"), tq)
+
+    if bin_col:
+        tb_sel, av_sel = f"m.[{bin_col}]", "NULL"
+    else:
+        tb_sel = f"CASE WHEN {hm_expr} THEN 1 ELSE 0 END" if hm_expr else "NULL"
+        av_sel = f"CASE WHEN {av_expr} THEN 1 ELSE 0 END" if av_expr else "NULL"
+
+    fw_col = cfg.get("framework_col")
+    fw_sel = f"m.[{fw_col}]" if fw_col else "NULL"
+
+    # Only real column expressions may appear in GROUP BY; NULL placeholders may not.
+    group_extra = "".join(f", {e}" for e in (tb_sel, av_sel, fw_sel) if e != "NULL")
+
+    resolving = bool(cfg.get("resolve_names"))
+    name_cols = (""", v.StateLegUpperDistrict_Proper, v.StateLegLowerDistrict_Proper,
+               v.StateLegLowerSubDistrict""" if resolving else "")
+
     sql = f"""
-        SELECT v.StateLegUpperDistrict, v.StateLegLowerDistrict,
-               m.[{cfg['univ_col']}] AS u, {turnout} AS tb,
+        SELECT v.StateLegUpperDistrict, v.StateLegLowerDistrict{name_cols},
+               m.[{cfg['univ_col']}] AS u, {tb_sel} AS tb, {av_sel} AS av,
+               {fw_sel} AS fw,
                {f"MIN(m.[{cfg['name_col']}])" if cfg.get('name_col') else "''"} AS nm,
                COUNT(*) AS cnt
         FROM voterfile_2026 v
-        JOIN [{cfg['table']}] m ON {JOIN.format(col=cfg.get('regid_col', 'dt_regid'))}
+        JOIN {table_ref(cfg)} m ON {JOIN.format(col=cfg.get('regid_col', 'dt_regid'))}
         WHERE v.State = ?
-        GROUP BY v.StateLegUpperDistrict, v.StateLegLowerDistrict,
+        GROUP BY v.StateLegUpperDistrict, v.StateLegLowerDistrict{name_cols},
                  m.[{cfg['univ_col']}]{group_extra}
     """
     cur.execute(sql, state)
-    return cur.fetchall()
+
+    out = []
+    for r in cur.fetchall():
+        i = 5 if resolving else 2
+        out.append({
+            "upper_n": r[0], "lower_n": r[1],
+            "upper_proper": r[2] if resolving else "",
+            "lower_proper": r[3] if resolving else "",
+            "lower_sub": r[4] if resolving else "",
+            "u": r[i], "tb": r[i + 1], "av": r[i + 2],
+            "fw": r[i + 3], "nm": r[i + 4], "cnt": r[i + 5],
+        })
+    return out
 
 
 def fetch_flags(cur, state, cfg):
@@ -267,6 +346,22 @@ def district_of(row, idx):
     return d if d > 0 else None
 
 
+def resolve_district(row, chamber, resolve):
+    """Dict-row district key: an int for the usual zero-padded chambers, or the chamber
+    file's own district_id string when the model asked for name resolution (AK senate,
+    whose districts are letters the voter file only spells out as "DISTRICT A")."""
+    n_key = "upper_n" if chamber == "senate" else "lower_n"
+    try:
+        n = int(row[n_key])
+    except (TypeError, ValueError):
+        n = 0
+    if resolve is None:
+        return n if n > 0 else None
+    proper = row["upper_proper"] if chamber == "senate" else row["lower_proper"]
+    sub = "" if chamber == "senate" else row["lower_sub"]
+    return resolve(n, proper, sub)
+
+
 def variant_bins(cfg, variant):
     """Turnout bins a variant counts, or None for 'everything in the table'.
 
@@ -278,20 +373,59 @@ def variant_bins(cfg, variant):
     return set(str(v) for v in vals) if vals else None
 
 
-def agg_universe(rows, chamber, variant, cfg):
-    idx = CHAMBER_IDX[chamber]
+def universe_row_passes(row, variant, cfg):
+    """Is this row inside the variant's turnout subset?"""
+    if cfg.get("turnout_cols") or cfg.get("all_cols"):
+        # Flag-carried turnout: tb marks H+M membership, av marks All membership.
+        # A model with no all_cols treats every row as in "All".
+        if variant == "hm":
+            return bool(row["tb"])
+        return bool(row["av"]) if cfg.get("all_cols") else True
     allowed = variant_bins(cfg, variant)
+    return allowed is None or str(row["tb"]) in allowed
+
+
+def agg_universe(rows, chamber, variant, cfg, resolve=None):
+    """district -> (segments, margin, n).
+
+    The universe ladder always drives the affinity breakdown. The margin comes from
+    the Framework column when the model has one, and from the gop/dem universe ranges
+    otherwise — see the WI/MI note in MODELS for why the newer tables need Framework.
+    """
+    fw_gop = set(cfg.get("framework_gop") or [])
+    fw_dem = set(cfg.get("framework_dem") or [])
+    use_framework = bool(cfg.get("framework_col"))
+
     counts, labels = {}, {}
+    fw_counts = {}          # district -> {"gop": n, "dem": n}
+    univ_frameworks = {}    # universe -> set of framework values seen (consistency check)
+
     for row in rows:
-        d, u, tb, nm, cnt = district_of(row, idx), row[2], row[3], row[4], row[5]
+        d = resolve_district(row, chamber, resolve)
+        u = row["u"]
         if d is None or u is None:
             continue
-        if allowed is not None and str(tb) not in allowed:
+        if not universe_row_passes(row, variant, cfg):
             continue
-        u = int(u)
-        counts.setdefault(d, {})[u] = counts.setdefault(d, {}).get(u, 0) + int(cnt)
-        nm = (str(nm).strip() if nm else "") or f"Universe {u}"
+        u, cnt = int(u), int(row["cnt"])
+        counts.setdefault(d, {})[u] = counts.setdefault(d, {}).get(u, 0) + cnt
+        nm = (str(row["nm"]).strip() if row["nm"] else "") or f"Universe {u}"
         labels.setdefault(u, nm)
+
+        if use_framework:
+            fw = str(row["fw"]).strip() if row["fw"] is not None else ""
+            univ_frameworks.setdefault(u, set()).add(fw)
+            side = "gop" if fw in fw_gop else "dem" if fw in fw_dem else None
+            if side:
+                fw_counts.setdefault(d, {"gop": 0, "dem": 0})[side] += cnt
+
+    # The affinity ladder is only a faithful picture of the margin while each universe
+    # sits wholly inside one framework. Say so loudly rather than shipping a breakdown
+    # that disagrees with the number beside it.
+    mixed = sorted(u for u, fws in univ_frameworks.items() if len(fws) > 1)
+    if mixed:
+        print(f"    WARNING: universes span multiple frameworks: {mixed} "
+              f"(margin still taken from {cfg['framework_col']})")
 
     out = {}
     for d, c in counts.items():
@@ -303,13 +437,17 @@ def agg_universe(rows, chamber, variant, cfg):
              "value": round(100.0 * c.get(u, 0) / total, 1)}
             for u in sorted(labels)
         ]
-        gop = sum(100.0 * c.get(u, 0) / total for u in cfg["gop"])
-        dem = sum(100.0 * c.get(u, 0) / total for u in cfg["dem"])
+        if use_framework:
+            f = fw_counts.get(d, {"gop": 0, "dem": 0})
+            gop, dem = 100.0 * f["gop"] / total, 100.0 * f["dem"] / total
+        else:
+            gop = sum(100.0 * c.get(u, 0) / total for u in cfg["gop"])
+            dem = sum(100.0 * c.get(u, 0) / total for u in cfg["dem"])
         out[d] = (segments, round(gop - dem, 1), total)
     return out
 
 
-def agg_flags(rows, chamber, variant, cfg):
+def agg_flags(rows, chamber, variant, cfg, resolve=None):
     # Row layout: 0 upper, 1 lower, 2 gop, 3 dem, 4 hm flag, 5 all flag, 6 count
     idx = CHAMBER_IDX[chamber]
     tally = {}
@@ -343,7 +481,7 @@ def agg_flags(rows, chamber, variant, cfg):
     return out
 
 
-def agg_score(rows, chamber, variant, cfg):
+def agg_score(rows, chamber, variant, cfg, resolve=None):
     idx = CHAMBER_IDX[chamber]
     tally = {}
     for row in rows:
@@ -386,6 +524,21 @@ def chamber_path(state, chamber):
     return DATA_DIR / f"{FILE_STEM.get(state, state.lower())}_{chamber}.json"
 
 
+def record_keys(rec):
+    """The keys a results table might hold this district under: the raw district_id
+    string (name-resolved models, e.g. AK senate "00A") and its integer form (every
+    other chamber, whose aggregators key on int)."""
+    raw = rec.get("district_id")
+    if raw is None:
+        return []
+    keys = [str(raw)]
+    try:
+        keys.append(int(raw))
+    except (ValueError, TypeError):
+        pass
+    return keys
+
+
 def patch_chamber(state, chamber, cfg, results, dry_run=False):
     path = chamber_path(state, chamber)
     recs = json.loads(path.read_text(encoding="utf-8"))
@@ -400,9 +553,8 @@ def patch_chamber(state, chamber, cfg, results, dry_run=False):
 
     hits = 0
     for rec in recs:
-        try:
-            d = int(rec["district_id"])
-        except (KeyError, ValueError, TypeError):
+        keys = record_keys(rec)
+        if not keys:
             continue
 
         vm = rec.setdefault("view_margins", {})
@@ -414,9 +566,10 @@ def patch_chamber(state, chamber, cfg, results, dry_run=False):
 
         matched = False
         for variant, table in results.items():
-            if d not in table:
+            hit = next((k for k in keys if k in table), None)
+            if hit is None:
                 continue
-            segments, margin, _n = table[d]
+            segments, margin, _n = table[hit]
             view = f"model_{family}_{variant}"
             affinity = {"segments": segments, "margin": margin}
             for s in segments:
@@ -437,7 +590,7 @@ def patch_chamber(state, chamber, cfg, results, dry_run=False):
     if not dry_run:
         path.write_text(json.dumps(recs, indent=1, ensure_ascii=False), encoding="utf-8")
 
-    sample = sorted(results[list(results)[0]].items())[:3]
+    sample = sorted(results[list(results)[0]].items(), key=lambda kv: str(kv[0]))[:3]
     detail = ", ".join(f"{d}:{m:+.1f}" for d, (_s, m, _n) in sample)
     print(f"    {chamber:<7} {hits:>3}/{len(recs):<4} districts   {detail}"
           + ("   (dry run)" if dry_run else ""))
@@ -476,9 +629,14 @@ def main():
                 rows = FETCHERS[cfg["mode"]](cur, state, cfg)
                 agg = AGGREGATORS[cfg["mode"]]
                 for chamber in ("house", "senate"):
-                    if not chamber_path(state, chamber).exists():
+                    path = chamber_path(state, chamber)
+                    if not path.exists():
                         continue
-                    results = {v: agg(rows, chamber, v, cfg) for v in variants}
+                    resolve = None
+                    if cfg.get("resolve_names"):
+                        recs = json.loads(path.read_text(encoding="utf-8"))
+                        resolve = make_resolver(state, chamber, recs)
+                    results = {v: agg(rows, chamber, v, cfg, resolve) for v in variants}
                     patch_chamber(state, chamber, cfg, results, dry_run=args.dry_run)
 
 

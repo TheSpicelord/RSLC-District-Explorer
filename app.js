@@ -65,19 +65,24 @@ const MODEL_VIEW_META = {
   model_rslc_vi:      { label: "RSLC (VI)",  order: 2,  tableTop: "RSLC", tableBottom: "VI"  },
   model_rslc_hm:      { label: "RSLC (H+M)", order: 3,  tableTop: "RSLC", tableBottom: "H+M" },
   model_rslc_all:     { label: "RSLC (All)", order: 4,  tableTop: "RSLC", tableBottom: "All" },
+  // Alaska's model frames the 2026 U.S. Senate race (Sullivan vs Peltola) rather than a
+  // legislative ballot, so it is kept as its own family instead of being folded into
+  // RSLC — the header has to say which question the margin answers.
+  model_rslcak_hm:    { label: "RSLC AK (H+M)", order: 5, tableTop: "AK", tableBottom: "H+M" },
+  model_rslcak_all:   { label: "RSLC AK (All)", order: 6, tableTop: "AK", tableBottom: "All" },
   // Oregon runs two models side by side rather than two variants of one, so these are
   // distinct families whose "variant" slot names the ballot question instead.
-  model_rslcleg_all:  { label: "RSLC Leg",   order: 5,  tableTop: "RSLC", tableBottom: "Leg" },
-  model_rslcgov_all:  { label: "RSLC Gov",   order: 6,  tableTop: "RSLC", tableBottom: "Gov" },
-  model_rga_hm:       { label: "RGA (H+M)",  order: 7,  tableTop: "RGA",  tableBottom: "H+M" },
-  model_rga_all:      { label: "RGA (All)",  order: 8,  tableTop: "RGA",  tableBottom: "All" },
-  model_lombardo_hm:  { label: "Lom (H+M)",  order: 9,  tableTop: "Lom",  tableBottom: "H+M" },
-  model_lombardo_all: { label: "Lom (All)",  order: 10, tableTop: "Lom",  tableBottom: "All" },
-  model_raga_hm:      { label: "RAGA (H+M)", order: 11, tableTop: "RAGA", tableBottom: "H+M" },
-  model_raga_all:     { label: "RAGA (All)", order: 12, tableTop: "RAGA", tableBottom: "All" },
+  model_rslcleg_all:  { label: "RSLC Leg",   order: 7,  tableTop: "RSLC", tableBottom: "Leg" },
+  model_rslcgov_all:  { label: "RSLC Gov",   order: 8,  tableTop: "RSLC", tableBottom: "Gov" },
+  model_rga_hm:       { label: "RGA (H+M)",  order: 9,  tableTop: "RGA",  tableBottom: "H+M" },
+  model_rga_all:      { label: "RGA (All)",  order: 10, tableTop: "RGA",  tableBottom: "All" },
+  model_lombardo_hm:  { label: "Lom (H+M)",  order: 11, tableTop: "Lom",  tableBottom: "H+M" },
+  model_lombardo_all: { label: "Lom (All)",  order: 12, tableTop: "Lom",  tableBottom: "All" },
+  model_raga_hm:      { label: "RAGA (H+M)", order: 13, tableTop: "RAGA", tableBottom: "H+M" },
+  model_raga_all:     { label: "RAGA (All)", order: 14, tableTop: "RAGA", tableBottom: "All" },
   // National fallback for states with no state-specific model. Ordered last so a
   // dedicated model always wins when a state somehow has both.
-  model_drnatl_all:   { label: "DR Natl",    order: 13, tableTop: "DR",   tableBottom: "Natl" },
+  model_drnatl_all:   { label: "DR Natl",    order: 15, tableTop: "DR",   tableBottom: "Natl" },
 };
 
 const MODEL_SEGMENT_COLOR_CLASSES = {
@@ -121,6 +126,18 @@ const MODEL_SEGMENT_COLOR_CLASSES = {
     "color-model-rslc-8",
     "color-model-rslc-9",
   ],
+  // Alaska ships the same nine-universe ladder as the RSLC models.
+  "RSLC AK": [
+    "color-model-rslc-1",
+    "color-model-rslc-2",
+    "color-model-rslc-3",
+    "color-model-rslc-4",
+    "color-model-rslc-5",
+    "color-model-rslc-6",
+    "color-model-rslc-7",
+    "color-model-rslc-8",
+    "color-model-rslc-9",
+  ],
   LOMBARDO: [
     "color-model-gop-base",
     "color-model-gop-target",
@@ -154,6 +171,7 @@ const THREE_BUCKET_COLOR_CLASSES = [
 // stored Dem-positive — so adding a family here without checking its sign will invert it.
 const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_rslc_",
+  "model_rslcak_",
   "model_rslcleg_",
   "model_rslcgov_",
   "model_rga_",
@@ -162,7 +180,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260830e";
+const BUILD_VERSION = "20260901a";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -2302,25 +2320,14 @@ function targetDistrictsSectionHtml(targets) {
     </div>
   `;
 }
-function modelFamilyFromViewKey(view) {
-  const m = String(view).match(/^model_(.+)_(all|hm|vi)$/);
-  return m ? m[1] : null;
-}
-
 function districtModelColumns(rows = []) {
   const columns = [];
-  // If a model family has VI data, only show the VI column (suppress All and H+M for that family)
-  const familiesWithVI = new Set();
-  for (const view of Object.keys(MODEL_VIEW_META)) {
-    if (!view.endsWith("_vi")) continue;
-    if (rows.some((row) => typeof getMarginForView(row?.rec, view) === "number")) {
-      familiesWithVI.add(modelFamilyFromViewKey(view));
-    }
-  }
+  // Every variant a district actually carries gets its own column. Vote Intent used to
+  // suppress All and H+M for its family, which made sense when Michigan was the only
+  // state with VI and only H+M was built alongside it; the R2 refresh builds all three,
+  // and they answer different questions, so all three are shown.
   for (const view of Object.keys(MODEL_VIEW_META)) {
     if (!rows.some((row) => typeof getMarginForView(row?.rec, view) === "number")) continue;
-    const family = modelFamilyFromViewKey(view);
-    if (family && familiesWithVI.has(family) && !view.endsWith("_vi")) continue;
     const meta = parseModelViewKey(view);
     if (!meta) continue;
     columns.push({ type: "margin", view, labelTop: meta.tableTop, labelBottom: meta.tableBottom });
@@ -4872,7 +4879,10 @@ function modelingPanelHtml(rec) {
           affinitySegments,
           {
             normalizeTo100: true,
-            legendColumns: String(model?.family || "").trim().toUpperCase() === "RSLC" ? 3 : 2,
+            // Alaska ships the same nine-universe ladder as RSLC and needs the same
+            // three-column legend; the other families keep two.
+            legendColumns: ["RSLC", "RSLC AK"].includes(
+              String(model?.family || "").trim().toUpperCase()) ? 3 : 2,
           }
         )
       );
