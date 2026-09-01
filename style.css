@@ -2021,6 +2021,42 @@ body.projection-active .chamber-buttons {
   width: auto;
 }
 
+/* Sticky header, All Districts table only.
+   Deliberately not applied to the target tables: those are short, and three of
+   them sit side by side in columns, so a stuck header would hang over whichever
+   neighbour is still scrolling.
+
+   .target-table sets overflow:hidden (to clip its border-radius), and an
+   overflow other than visible makes the table its own scrollport - the header
+   would then stick to the table's own top edge and scroll away with it, so
+   sticky would appear to do nothing at all. The scrollport has to be .sidebar,
+   which is what actually scrolls, so this table opts out of the clipping. */
+.all-districts-table-wrap .target-table {
+  overflow: visible;
+}
+
+.all-districts-table-wrap .target-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  /* th is otherwise transparent; without an opaque fill the rows would show
+     through it as they pass underneath. Matches .target-table's own background,
+     so the header looks unchanged when it is not stuck. */
+  background: #121a22;
+  /* border-collapse:collapse paints cell borders on the table rather than on the
+     cell, so a stuck header leaves its rules behind. Redraw them as inset
+     shadows, which travel with the sticky element. */
+  box-shadow: inset 0 -1px 0 var(--border);
+}
+
+.all-districts-table-wrap .target-table thead th.target-col-margin {
+  box-shadow: inset 0 0 0 1px #000;
+}
+
+.all-districts-table-wrap .target-table thead th.target-gap-col {
+  box-shadow: none;
+}
+
 #details > .detail-section + .detail-section {
   margin-top: 0.9rem;
   padding-top: 0.9rem;
