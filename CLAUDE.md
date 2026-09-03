@@ -114,6 +114,35 @@ scripts/
 
 **Render Tokens** — async operations use tokens (e.g., `state.detailsRenderToken`) to cancel stale renders. Increment token before async work, check on completion.
 
+## Shapefiles
+
+`data/shapes/senate.zip` is **not** a stock Census file. It is
+`cb_2024_us_sldu_500k` with Michigan's 38 districts replaced by the **Crane A1**
+remedial plan - the map the MICRC adopted 2024-06-26 and the federal court
+approved 2024-07-26 in *Agee v. Benson*, first used in the **2026** election.
+
+Census cannot supply this yet. Its SLDU files are keyed to the legislative
+session in effect (`LSY`), and Michigan senators elected in 2022 sit through
+2026 under the old *Linden* map, so `cb_2024`, `cb_2025` and `tl_2025` all still
+carry Linden. Crane A1 should appear in the 2027-session vintage.
+
+Michigan geometry comes from the state's own Michigan Geographic Framework
+layer, `Remedial_State_Senate_2021` (ArcGIS org `dxRQUfTDNtfqZ301`, owner
+`michigan_admin`), pulled in NAD83 to match the Census `.prj` and simplified
+with `mapshaper -simplify 8% keep-shapes` to ~20.4k vertices - the Census 500k
+level (20.6k). Simplification is topology-aware, so shared borders stay
+coincident: the 38 districts still tile with zero overlap.
+
+Every non-Michigan feature is byte-identical to the Census original, and all
+attributes are untouched, so `GEOID`/`SLDUST`/`NAMELSAD` joins are unaffected -
+district *numbers* did not change, only boundaries. `ALAND`/`AWATER` are now
+stale for Michigan; nothing reads them.
+
+Rebuild only matters if the underlying Census file is refreshed - re-splice
+rather than dropping in a new `cb_*` wholesale, or Michigan silently reverts to
+Linden. To confirm which map a file holds: Crane A1 differs from Linden in
+exactly 14 districts (1, 2, 3, 5-11, 13, 23, 24, 38); the other 24 are identical.
+
 ## Special Cases to Know
 
 | Case | Behavior |
