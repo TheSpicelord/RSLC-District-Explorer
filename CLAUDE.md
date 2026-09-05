@@ -27,6 +27,33 @@ python scripts/validate_chamber_jsons.py
 The generator and validator use only built-in libraries. The model builders need
 `pyodbc` (SQL Server) and `openpyxl` (workbook-sourced models).
 
+**`--states` regenerates only those files, and wipes their model margins** — the
+generator rebuilds a chamber from the workbook, which has no modeling in it. Always
+follow a partial regeneration with whichever model builder owns those states (for a
+fallback state, `build_national_margins.py --states NC`), or they silently lose their
+`model_*` view margins. Re-running the national builder moves a few districts by 0.1-0.2
+at the rounding boundary; that is noise, not a real shift.
+
+### Retired district lines (`LEG_REDISTRICTED`)
+
+`LEG_REDISTRICTED` in `generate_chamber_jsons.py` drops a state/year pair of
+**legislative** results — both the `leg_<year>` margin and that year's entry in
+`elections`, so it also stays out of `latest_leg`.
+
+The distinction that matters: a *statewide* race can be re-aggregated onto any map from
+precinct results, so `gov_2022` / `ussen_2022` / `pres_2024` survive a redraw and are
+kept. A *legislative* race cannot — those candidates ran in districts that no longer
+exist, so the number would be attached to a district number that now means something
+else entirely.
+
+Currently `NC: {2022}` (2022 ran on the SL 2022-2 / SL 2022-4 interim maps, replaced
+2023-10-25 by SL 2023-146 / SL 2023-149 — the lines used in 2024 and again in 2026) and
+`WI: {2022}` as a no-op guard, since the workbook happens to carry no 2022 WI legislative
+data today. A state left with a single leg year renders that year as an explicit N/A
+column plus a footnote in the ABEV Tracker, driven by its `LEG_REDISTRICTING_NOTES` entry
+in that project's `modules/config.js` — **keep the two in sync**, or the dropped year
+just quietly disappears with no explanation on screen.
+
 ## Model Margins
 
 Modeling numbers are **not** in the election workbook — they are built straight into the

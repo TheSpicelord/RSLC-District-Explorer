@@ -47,12 +47,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 42.8,
     "rep_pct": 57.2,
@@ -60,7 +54,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -14.4,
    "latest_leg": -14.4,
    "ussen_2022": -19.1,
@@ -158,12 +151,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 41.8,
     "rep_pct": 56.0,
@@ -171,12 +158,11 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -14.2,
    "latest_leg": -14.2,
    "ussen_2022": -26.7,
    "pres_2024": -16.1,
-   "model_drnatl_all": 4.2
+   "model_drnatl_all": 4.3
   },
   "pres_2024_margin": -16.1,
   "gov_2022_margin": null,
@@ -210,13 +196,13 @@
       {
        "key": "dem_legislative",
        "label": "Dem Legislative",
-       "value": 45.0
+       "value": 44.9
       }
      ],
-     "margin": 4.2,
+     "margin": 4.3,
      "gop_legislative": 49.2,
      "unaligned": 5.8,
-     "dem_legislative": 45.0
+     "dem_legislative": 44.9
     }
    }
   }
@@ -269,12 +255,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 47.5,
-    "rep_pct": 52.5,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 0.0,
     "rep_pct": 100.0,
@@ -282,12 +262,11 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -5.1,
    "leg_2024": -100.0,
    "latest_leg": -100.0,
    "ussen_2022": -22.3,
    "pres_2024": -19.6,
-   "model_drnatl_all": 15.8
+   "model_drnatl_all": 15.9
   },
   "pres_2024_margin": -19.6,
   "gov_2022_margin": null,
@@ -321,13 +300,13 @@
       {
        "key": "dem_legislative",
        "label": "Dem Legislative",
-       "value": 39.3
+       "value": 39.2
       }
      ],
-     "margin": 15.8,
+     "margin": 15.9,
      "gop_legislative": 55.1,
      "unaligned": 5.7,
-     "dem_legislative": 39.3
+     "dem_legislative": 39.2
     }
    }
   }
@@ -380,12 +359,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 42.5,
-    "rep_pct": 57.5,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 44.9,
     "rep_pct": 55.1,
@@ -393,7 +366,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -15.0,
    "leg_2024": -10.2,
    "latest_leg": -10.2,
    "ussen_2022": -12.8,
@@ -491,12 +463,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 52.2,
-    "rep_pct": 47.8,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 55.1,
     "rep_pct": 44.9,
@@ -504,7 +470,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 4.5,
    "leg_2024": 10.2,
    "latest_leg": 10.2,
    "ussen_2022": -11.4,
@@ -602,12 +567,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 30.4,
     "rep_pct": 69.6,
@@ -615,7 +574,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -39.3,
    "latest_leg": -39.3,
    "ussen_2022": -35.4,
@@ -713,12 +671,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 49.0,
-    "rep_pct": 51.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 43.7,
     "rep_pct": 52.2,
@@ -726,7 +678,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -1.9,
    "leg_2024": -8.5,
    "latest_leg": -8.5,
    "ussen_2022": -11.2,
@@ -824,12 +775,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 40.1,
     "rep_pct": 59.9,
@@ -837,7 +782,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -19.8,
    "latest_leg": -19.8,
    "ussen_2022": -21.5,
@@ -866,7 +810,7 @@
       {
        "key": "gop_legislative",
        "label": "GOP Legislative",
-       "value": 55.8
+       "value": 55.9
       },
       {
        "key": "unaligned",
@@ -880,7 +824,7 @@
       }
      ],
      "margin": 21.2,
-     "gop_legislative": 55.8,
+     "gop_legislative": 55.9,
      "unaligned": 9.5,
      "dem_legislative": 34.7
     }
@@ -935,12 +879,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 35.0,
     "rep_pct": 65.0,
@@ -948,7 +886,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -30.1,
    "latest_leg": -30.1,
    "ussen_2022": -31.7,
@@ -987,13 +924,13 @@
       {
        "key": "dem_legislative",
        "label": "Dem Legislative",
-       "value": 37.2
+       "value": 37.1
       }
      ],
      "margin": 18.2,
      "gop_legislative": 55.4,
      "unaligned": 7.5,
-     "dem_legislative": 37.2
+     "dem_legislative": 37.1
     }
    }
   }
@@ -1046,12 +983,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 36.1,
-    "rep_pct": 63.9,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 37.6,
     "rep_pct": 58.7,
@@ -1059,7 +990,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -27.8,
    "leg_2024": -21.1,
    "latest_leg": -21.1,
    "ussen_2022": -42.1,
@@ -1088,7 +1018,7 @@
       {
        "key": "gop_legislative",
        "label": "GOP Legislative",
-       "value": 55.0
+       "value": 54.9
       },
       {
        "key": "unaligned",
@@ -1098,13 +1028,13 @@
       {
        "key": "dem_legislative",
        "label": "Dem Legislative",
-       "value": 38.0
+       "value": 38.1
       }
      ],
      "margin": 16.9,
-     "gop_legislative": 55.0,
+     "gop_legislative": 54.9,
      "unaligned": 7.0,
-     "dem_legislative": 38.0
+     "dem_legislative": 38.1
     }
    }
   }
@@ -1157,12 +1087,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 45.2,
-    "rep_pct": 54.8,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 48.7,
     "rep_pct": 51.3,
@@ -1170,7 +1094,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -9.7,
    "leg_2024": -2.6,
    "latest_leg": -2.6,
    "ussen_2022": -9.3,
@@ -1268,12 +1191,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 36.6,
-    "rep_pct": 63.4,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 38.5,
     "rep_pct": 61.7,
@@ -1281,7 +1198,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -26.9,
    "leg_2024": -23.3,
    "latest_leg": -23.3,
    "ussen_2022": -28.8,
@@ -1379,12 +1295,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 62.3,
-    "rep_pct": 34.3,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 50.2,
     "rep_pct": 46.1,
@@ -1392,7 +1302,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 28.1,
    "leg_2024": 4.1,
    "latest_leg": 4.1,
    "ussen_2022": -14.6,
@@ -1490,12 +1399,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 69.0,
-    "rep_pct": 28.2,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 73.5,
     "rep_pct": 23.6,
@@ -1503,7 +1406,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 40.8,
    "leg_2024": 49.8,
    "latest_leg": 49.8,
    "ussen_2022": 35.5,
@@ -1601,12 +1503,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 67.5,
-    "rep_pct": 29.3,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 65.9,
     "rep_pct": 30.2,
@@ -1614,7 +1510,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 38.2,
    "leg_2024": 35.7,
    "latest_leg": 35.7,
    "ussen_2022": 25.5,
@@ -1712,12 +1607,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 65.2,
-    "rep_pct": 30.7,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 100.0,
     "rep_pct": 0.0,
@@ -1725,7 +1614,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 34.5,
    "leg_2024": 100.0,
    "latest_leg": 100.0,
    "ussen_2022": 22.4,
@@ -1823,12 +1711,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 51.8,
-    "rep_pct": 46.0,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 74.4,
     "rep_pct": 0.0,
@@ -1836,7 +1718,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 5.9,
    "leg_2024": 74.4,
    "latest_leg": 74.4,
    "ussen_2022": 15.6,
@@ -1934,12 +1815,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 51.4,
-    "rep_pct": 46.0,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 48.5,
     "rep_pct": 48.4,
@@ -1947,12 +1822,11 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 5.4,
    "leg_2024": 0.1,
    "latest_leg": 0.1,
    "ussen_2022": -13.0,
    "pres_2024": -0.5,
-   "model_drnatl_all": -1.4
+   "model_drnatl_all": -1.5
   },
   "pres_2024_margin": -0.5,
   "gov_2022_margin": null,
@@ -1976,7 +1850,7 @@
       {
        "key": "gop_legislative",
        "label": "GOP Legislative",
-       "value": 45.3
+       "value": 45.2
       },
       {
        "key": "unaligned",
@@ -1989,8 +1863,8 @@
        "value": 46.7
       }
      ],
-     "margin": -1.4,
-     "gop_legislative": 45.3,
+     "margin": -1.5,
+     "gop_legislative": 45.2,
      "unaligned": 8.1,
      "dem_legislative": 46.7
     }
@@ -2045,12 +1919,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 52.7,
-    "rep_pct": 47.3,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 62.9,
     "rep_pct": 33.9,
@@ -2058,7 +1926,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 5.4,
    "leg_2024": 29.0,
    "latest_leg": 29.0,
    "ussen_2022": 27.8,
@@ -2092,7 +1959,7 @@
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 6.5
+       "value": 6.4
       },
       {
        "key": "dem_legislative",
@@ -2102,7 +1969,7 @@
      ],
      "margin": -42.6,
      "gop_legislative": 25.5,
-     "unaligned": 6.5,
+     "unaligned": 6.4,
      "dem_legislative": 68.1
     }
    }
@@ -2156,12 +2023,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 72.8,
-    "rep_pct": 27.2,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 72.3,
     "rep_pct": 27.7,
@@ -2169,12 +2030,11 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 45.7,
    "leg_2024": 44.6,
    "latest_leg": 44.6,
    "ussen_2022": 26.5,
    "pres_2024": 43.9,
-   "model_drnatl_all": -44.4
+   "model_drnatl_all": -44.3
   },
   "pres_2024_margin": 43.9,
   "gov_2022_margin": null,
@@ -2211,7 +2071,7 @@
        "value": 68.4
       }
      ],
-     "margin": -44.4,
+     "margin": -44.3,
      "gop_legislative": 24.1,
      "unaligned": 7.5,
      "dem_legislative": 68.4
@@ -2267,12 +2127,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 45.4,
-    "rep_pct": 54.6,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 37.2,
     "rep_pct": 62.8,
@@ -2280,7 +2134,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -9.3,
    "leg_2024": -25.5,
    "latest_leg": -25.5,
    "ussen_2022": -25.5,
@@ -2309,7 +2162,7 @@
       {
        "key": "gop_legislative",
        "label": "GOP Legislative",
-       "value": 53.6
+       "value": 53.7
       },
       {
        "key": "unaligned",
@@ -2319,13 +2172,13 @@
       {
        "key": "dem_legislative",
        "label": "Dem Legislative",
-       "value": 37.6
+       "value": 37.5
       }
      ],
      "margin": 16.1,
-     "gop_legislative": 53.6,
+     "gop_legislative": 53.7,
      "unaligned": 8.8,
-     "dem_legislative": 37.6
+     "dem_legislative": 37.5
     }
    }
   }
@@ -2378,12 +2231,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 78.4,
-    "rep_pct": 19.6,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 86.0,
     "rep_pct": 0.0,
@@ -2391,7 +2238,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 58.9,
    "leg_2024": 86.0,
    "latest_leg": 86.0,
    "ussen_2022": 51.3,
@@ -2489,12 +2335,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 67.3,
-    "rep_pct": 32.7,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 65.8,
     "rep_pct": 34.2,
@@ -2502,12 +2342,11 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 34.6,
    "leg_2024": 31.7,
    "latest_leg": 31.7,
    "ussen_2022": 3.3,
    "pres_2024": 29.9,
-   "model_drnatl_all": -34.5
+   "model_drnatl_all": -34.4
   },
   "pres_2024_margin": 29.9,
   "gov_2022_margin": null,
@@ -2544,7 +2383,7 @@
        "value": 63.5
       }
      ],
-     "margin": -34.5,
+     "margin": -34.4,
      "gop_legislative": 29.0,
      "unaligned": 7.5,
      "dem_legislative": 63.5
@@ -2600,12 +2439,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 41.7,
-    "rep_pct": 58.3,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 41.3,
     "rep_pct": 58.7,
@@ -2613,7 +2446,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -16.6,
    "leg_2024": -17.5,
    "latest_leg": -17.5,
    "ussen_2022": -17.8,
@@ -2647,7 +2479,7 @@
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 11.5
+       "value": 11.4
       },
       {
        "key": "dem_legislative",
@@ -2657,7 +2489,7 @@
      ],
      "margin": -26.4,
      "gop_legislative": 31.1,
-     "unaligned": 11.5,
+     "unaligned": 11.4,
      "dem_legislative": 57.5
     }
    }
@@ -2711,12 +2543,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 37.2,
-    "rep_pct": 62.8,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 39.8,
     "rep_pct": 60.2,
@@ -2724,7 +2550,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -25.6,
    "leg_2024": -20.5,
    "latest_leg": -20.5,
    "ussen_2022": -21.9,
@@ -2822,12 +2647,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 85.2,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 41.1,
     "rep_pct": 54.1,
@@ -2835,7 +2654,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -70.4,
    "leg_2024": -13.0,
    "latest_leg": -13.0,
    "ussen_2022": -32.0,
@@ -2864,7 +2682,7 @@
       {
        "key": "gop_legislative",
        "label": "GOP Legislative",
-       "value": 54.7
+       "value": 54.6
       },
       {
        "key": "unaligned",
@@ -2874,13 +2692,13 @@
       {
        "key": "dem_legislative",
        "label": "Dem Legislative",
-       "value": 39.1
+       "value": 39.2
       }
      ],
      "margin": 15.5,
-     "gop_legislative": 54.7,
+     "gop_legislative": 54.6,
      "unaligned": 6.2,
-     "dem_legislative": 39.1
+     "dem_legislative": 39.2
     }
    }
   }
@@ -2933,12 +2751,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 54.5,
-    "rep_pct": 45.5,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 60.8,
     "rep_pct": 39.2,
@@ -2946,7 +2758,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 9.0,
    "leg_2024": 21.6,
    "latest_leg": 21.6,
    "ussen_2022": 11.4,
@@ -3044,12 +2855,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 73.0,
-    "rep_pct": 27.0,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 100.0,
     "rep_pct": 0.0,
@@ -3057,7 +2862,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 46.1,
    "leg_2024": 100.0,
    "latest_leg": 100.0,
    "ussen_2022": 45.3,
@@ -3086,12 +2890,12 @@
       {
        "key": "gop_legislative",
        "label": "GOP Legislative",
-       "value": 15.9
+       "value": 16.0
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 5.8
+       "value": 5.7
       },
       {
        "key": "dem_legislative",
@@ -3100,8 +2904,8 @@
       }
      ],
      "margin": -62.4,
-     "gop_legislative": 15.9,
-     "unaligned": 5.8,
+     "gop_legislative": 16.0,
+     "unaligned": 5.7,
      "dem_legislative": 78.3
     }
    }
@@ -3155,12 +2959,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 27.0,
-    "rep_pct": 73.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 31.4,
     "rep_pct": 68.6,
@@ -3168,7 +2966,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -46.1,
    "leg_2024": -37.1,
    "latest_leg": -37.1,
    "ussen_2022": -42.4,
@@ -3197,7 +2994,7 @@
       {
        "key": "gop_legislative",
        "label": "GOP Legislative",
-       "value": 61.0
+       "value": 61.1
       },
       {
        "key": "unaligned",
@@ -3207,13 +3004,13 @@
       {
        "key": "dem_legislative",
        "label": "Dem Legislative",
-       "value": 34.5
+       "value": 34.4
       }
      ],
      "margin": 26.6,
-     "gop_legislative": 61.0,
+     "gop_legislative": 61.1,
      "unaligned": 4.5,
-     "dem_legislative": 34.5
+     "dem_legislative": 34.4
     }
    }
   }
@@ -3266,12 +3063,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 23.4,
-    "rep_pct": 76.6,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 24.7,
     "rep_pct": 72.6,
@@ -3279,7 +3070,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -53.2,
    "leg_2024": -48.0,
    "latest_leg": -48.0,
    "ussen_2022": -50.9,
@@ -3377,12 +3167,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 37.4,
     "rep_pct": 62.4,
@@ -3390,7 +3174,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -25.0,
    "latest_leg": -25.0,
    "ussen_2022": -20.4,
@@ -3488,12 +3271,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 59.3,
-    "rep_pct": 40.7,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 69.0,
     "rep_pct": 28.2,
@@ -3501,12 +3278,11 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 18.6,
    "leg_2024": 40.8,
    "latest_leg": 40.8,
    "ussen_2022": 38.9,
    "pres_2024": 39.5,
-   "model_drnatl_all": -43.9
+   "model_drnatl_all": -44.0
   },
   "pres_2024_margin": 39.5,
   "gov_2022_margin": null,
@@ -3543,7 +3319,7 @@
        "value": 68.7
       }
      ],
-     "margin": -43.9,
+     "margin": -44.0,
      "gop_legislative": 24.8,
      "unaligned": 6.5,
      "dem_legislative": 68.7
@@ -3599,12 +3375,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 26.7,
-    "rep_pct": 73.3,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 29.0,
     "rep_pct": 71.0,
@@ -3612,7 +3382,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -46.5,
    "leg_2024": -42.0,
    "latest_leg": -42.0,
    "ussen_2022": -43.5,
@@ -3710,12 +3479,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 43.1,
-    "rep_pct": 56.9,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 44.2,
     "rep_pct": 52.9,
@@ -3723,7 +3486,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -13.8,
    "leg_2024": -8.7,
    "latest_leg": -8.7,
    "ussen_2022": -26.6,
@@ -3821,12 +3583,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 36.7,
     "rep_pct": 63.3,
@@ -3834,7 +3590,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -26.7,
    "latest_leg": -26.7,
    "ussen_2022": -27.9,
@@ -3873,13 +3628,13 @@
       {
        "key": "dem_legislative",
        "label": "Dem Legislative",
-       "value": 31.4
+       "value": 31.5
       }
      ],
      "margin": 27.9,
      "gop_legislative": 59.4,
      "unaligned": 9.2,
-     "dem_legislative": 31.4
+     "dem_legislative": 31.5
     }
    }
   }
@@ -3932,12 +3687,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 21.0,
     "rep_pct": 79.0,
@@ -3945,12 +3694,11 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -58.0,
    "latest_leg": -58.0,
    "ussen_2022": -63.6,
    "pres_2024": -58.0,
-   "model_drnatl_all": 61.0
+   "model_drnatl_all": 60.9
   },
   "pres_2024_margin": -58.0,
   "gov_2022_margin": null,
@@ -3987,7 +3735,7 @@
        "value": 18.0
       }
      ],
-     "margin": 61.0,
+     "margin": 60.9,
      "gop_legislative": 79.0,
      "unaligned": 3.0,
      "dem_legislative": 18.0
@@ -4043,12 +3791,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 35.3,
     "rep_pct": 64.7,
@@ -4056,7 +3798,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -29.5,
    "latest_leg": -29.5,
    "ussen_2022": -29.5,
@@ -4154,12 +3895,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 100.0,
-    "rep_pct": 0.0,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 100.0,
     "rep_pct": 0.0,
@@ -4167,12 +3902,11 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 100.0,
    "leg_2024": 100.0,
    "latest_leg": 100.0,
    "ussen_2022": 33.9,
    "pres_2024": 36.8,
-   "model_drnatl_all": -33.9
+   "model_drnatl_all": -34.0
   },
   "pres_2024_margin": 36.8,
   "gov_2022_margin": null,
@@ -4196,7 +3930,7 @@
       {
        "key": "gop_legislative",
        "label": "GOP Legislative",
-       "value": 29.7
+       "value": 29.6
       },
       {
        "key": "unaligned",
@@ -4206,13 +3940,13 @@
       {
        "key": "dem_legislative",
        "label": "Dem Legislative",
-       "value": 63.5
+       "value": 63.6
       }
      ],
-     "margin": -33.9,
-     "gop_legislative": 29.7,
+     "margin": -34.0,
+     "gop_legislative": 29.6,
      "unaligned": 6.8,
-     "dem_legislative": 63.5
+     "dem_legislative": 63.6
     }
    }
   }
@@ -4265,12 +3999,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 63.9,
-    "rep_pct": 36.1,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 100.0,
     "rep_pct": 0.0,
@@ -4278,7 +4006,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 27.7,
    "leg_2024": 100.0,
    "latest_leg": 100.0,
    "ussen_2022": 33.9,
@@ -4376,12 +4103,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 67.2,
-    "rep_pct": 32.8,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 100.0,
     "rep_pct": 0.0,
@@ -4389,7 +4110,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 34.4,
    "leg_2024": 100.0,
    "latest_leg": 100.0,
    "ussen_2022": 52.4,
@@ -4487,12 +4207,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 66.5,
-    "rep_pct": 33.5,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 100.0,
     "rep_pct": 0.0,
@@ -4500,7 +4214,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 33.0,
    "leg_2024": 100.0,
    "latest_leg": 100.0,
    "ussen_2022": 56.7,
@@ -4598,12 +4311,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 55.0,
-    "rep_pct": 45.0,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 50.1,
     "rep_pct": 49.9,
@@ -4611,12 +4318,11 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 9.9,
    "leg_2024": 0.2,
    "latest_leg": 0.2,
    "ussen_2022": 1.9,
    "pres_2024": 6.5,
-   "model_drnatl_all": 6.8
+   "model_drnatl_all": 6.9
   },
   "pres_2024_margin": 6.5,
   "gov_2022_margin": null,
@@ -4653,7 +4359,7 @@
        "value": 42.5
       }
      ],
-     "margin": 6.8,
+     "margin": 6.9,
      "gop_legislative": 49.3,
      "unaligned": 8.2,
      "dem_legislative": 42.5
@@ -4709,12 +4415,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 38.2,
     "rep_pct": 61.8,
@@ -4722,12 +4422,11 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -23.6,
    "latest_leg": -23.6,
    "ussen_2022": -25.4,
    "pres_2024": -22.1,
-   "model_drnatl_all": 19.0
+   "model_drnatl_all": 18.9
   },
   "pres_2024_margin": -22.1,
   "gov_2022_margin": null,
@@ -4764,7 +4463,7 @@
        "value": 37.1
       }
      ],
-     "margin": 19.0,
+     "margin": 18.9,
      "gop_legislative": 56.0,
      "unaligned": 6.9,
      "dem_legislative": 37.1
@@ -4820,12 +4519,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 27.5,
     "rep_pct": 72.5,
@@ -4833,7 +4526,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -45.0,
    "latest_leg": -45.0,
    "ussen_2022": -41.7,
@@ -4931,12 +4623,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 29.7,
     "rep_pct": 70.3,
@@ -4944,7 +4630,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -40.6,
    "latest_leg": -40.6,
    "ussen_2022": -42.3,
@@ -5042,12 +4727,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 39.8,
-    "rep_pct": 60.2,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 34.8,
     "rep_pct": 65.2,
@@ -5055,7 +4734,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -20.5,
    "leg_2024": -30.5,
    "latest_leg": -30.5,
    "ussen_2022": -38.9,
@@ -5153,12 +4831,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 0.0,
-    "rep_pct": 100.0,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 35.8,
     "rep_pct": 64.2,
@@ -5166,7 +4838,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -100.0,
    "leg_2024": -28.3,
    "latest_leg": -28.3,
    "ussen_2022": -36.7,
@@ -5195,7 +4866,7 @@
       {
        "key": "gop_legislative",
        "label": "GOP Legislative",
-       "value": 64.6
+       "value": 64.7
       },
       {
        "key": "unaligned",
@@ -5209,7 +4880,7 @@
       }
      ],
      "margin": 35.5,
-     "gop_legislative": 64.6,
+     "gop_legislative": 64.7,
      "unaligned": 6.2,
      "dem_legislative": 29.2
     }
@@ -5264,12 +4935,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 35.2,
-    "rep_pct": 64.8,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 36.0,
     "rep_pct": 63.9,
@@ -5277,7 +4942,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -29.6,
    "leg_2024": -27.9,
    "latest_leg": -27.9,
    "ussen_2022": -32.7,
@@ -5375,12 +5039,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 65.7,
-    "rep_pct": 34.3,
-    "winner": "D"
-   },
-   {
     "year": 2024,
     "dem_pct": 69.1,
     "rep_pct": 30.9,
@@ -5388,7 +5046,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": 31.4,
    "leg_2024": 38.1,
    "latest_leg": 38.1,
    "ussen_2022": 25.4,
@@ -5417,7 +5074,7 @@
       {
        "key": "gop_legislative",
        "label": "GOP Legislative",
-       "value": 28.0
+       "value": 28.1
       },
       {
        "key": "unaligned",
@@ -5431,7 +5088,7 @@
       }
      ],
      "margin": -32.2,
-     "gop_legislative": 28.0,
+     "gop_legislative": 28.1,
      "unaligned": 11.7,
      "dem_legislative": 60.3
     }
@@ -5486,12 +5143,6 @@
   },
   "elections": [
    {
-    "year": 2022,
-    "dem_pct": 33.8,
-    "rep_pct": 66.2,
-    "winner": "R"
-   },
-   {
     "year": 2024,
     "dem_pct": 33.5,
     "rep_pct": 66.5,
@@ -5499,7 +5150,6 @@
    }
   ],
   "view_margins": {
-   "leg_2022": -32.5,
    "leg_2024": -33.1,
    "latest_leg": -33.1,
    "ussen_2022": -28.6,

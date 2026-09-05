@@ -353,6 +353,30 @@ LEG_ELECTION_COLS = {
     2025: {"total": "BE", "rep_pct": "BF", "dem_pct": "BG", "margin": "BI"},
 }
 
+# Legislative results a state's CURRENT district lines can't carry.
+#
+# A statewide race (the TOP_TICKET_COLS below) can be re-aggregated onto any map
+# from precinct results, which is why WI and NC keep gov_2022 / ussen_2022. A
+# legislative race cannot: those candidates ran in districts that no longer
+# exist, so the number belongs to a district number that now means something
+# else. Dropping it here removes both the leg_<year> margin and that year's
+# entry in `elections`, and keeps it out of `latest_leg`.
+#
+# The site treats a state with only one leg year as a redraw when
+# LEG_REDISTRICTING_NOTES has an entry for it (RSLC-ABEV-Tracker/modules/
+# config.js), rendering the missing year as an explicit N/A column plus a
+# footnote rather than silently showing one column.
+LEG_REDISTRICTED = {
+    # 2022 ran on the court-supervised interim maps (SL 2022-2 Senate,
+    # SL 2022-4 House). The General Assembly replaced both on 2023-10-25 with
+    # SL 2023-146 / SL 2023-149 - the lines used in 2024 and again in 2026.
+    "NC": {2022},
+    # No-op guard: the workbook currently carries no 2022 legislative data for
+    # WI at all. Listed so that if it ever does, it is dropped rather than shown
+    # against the post-2023 map.
+    "WI": {2022},
+}
+
 TOP_TICKET_COLS = {
     "gov_2022": {"total": "Q", "rep_pct": "R", "dem_pct": "S", "margin": "U"},
     "ussen_2022": {"total": "Y", "rep_pct": "Z", "dem_pct": "AA", "margin": "AC"},
@@ -805,7 +829,10 @@ def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str, ti
         elections = []
         view_margins = {}
         leg_margins = {}
+        redistricted_years = LEG_REDISTRICTED.get(state_abbr, frozenset())
         for year, cols in sorted(LEG_ELECTION_COLS.items()):
+            if year in redistricted_years:
+                continue  # results belong to district lines this state no longer uses
             tot = num(val(row, cols["total"]))
             rep = pct(val(row, cols["rep_pct"]))
             dem = pct(val(row, cols["dem_pct"]))
