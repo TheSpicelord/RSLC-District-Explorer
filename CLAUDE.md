@@ -6,7 +6,20 @@ Interactive web app for exploring U.S. state legislative districts — built for
 
 - **No build step** — pure ES6 modules, serve directly from any static host
 - Open `index.html` in a browser or serve via a local HTTP server (required for module loading)
-- Cache busting: HTML uses `?v=BUILD_VERSION` query params on JS/CSS imports — bump when deploying
+- Cache busting: `?v=BUILD_VERSION` in **three** places, all of which must be bumped together — `index.html`'s CSS/JS tags, the `BUILD_VERSION` constant in `app.js`, and **`app.js`'s own `./modules/*.js` import specifiers**
+  - **The module specifiers are the easy one to forget, and forgetting it is fatal, not cosmetic.**
+    `index.html` busts `app.js`, but a bare `import ... from "./modules/config.js"` is a
+    *separate* URL with no version on it, so the browser happily pairs a fresh `app.js`
+    with a cached `modules/*.js`. If that release added a new export, the import fails,
+    `app.js` never parses, and its imports are never even fetched — the page renders
+    blank, with no partial degradation to hint at what happened. That is exactly what
+    `STATE_DATA_NOTES` did on 2026-09-08: the request log showed `index.html`, `style.css`,
+    `app.js`, and then nothing at all.
+  - Diagnosis is quick: if the server log stops after `app.js` and never requests
+    `modules/config.js`, it is this. A hard refresh clears it locally, but shipping the
+    fix requires a **version bump**, because the broken `app.js` is itself cached under
+    the old version and would otherwise keep being served.
+
 - Hosted on GitHub Pages (see `CNAME`)
 
 ## Data Pipeline
