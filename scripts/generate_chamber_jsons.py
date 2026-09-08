@@ -375,6 +375,19 @@ LEG_REDISTRICTED = {
     # WI at all. Listed so that if it ever does, it is dropped rather than shown
     # against the post-2023 map.
     "WI": {2022},
+    # NO MICHIGAN ENTRY - deliberately. Agee v. Benson was a PARTIAL redraw, and
+    # this list is all-or-nothing per year, so an "MI": {2022} entry here wipes
+    # leg_2022 from all 110 house and all 38 senate districts including the ones
+    # whose lines never moved. That is exactly what it did between 2026-09-05 and
+    # the fix later that day: the 2022 Leg column went blank statewide.
+    #
+    # The workbook already handles Michigan correctly, district by district: it
+    # carries leg_2022 for 96 of 110 house seats (all but 1-14) and 24 of 38
+    # senate seats (all but 1-11, 13, 23, 24). Those omissions match the
+    # redrawn districts, so leaving Michigan out of this list is not an
+    # oversight - it is the workbook being more precise than this mechanism.
+    # The ABEV Tracker mirrors the same per-district lists in
+    # HISTORY_STALE_DISTRICTS; keep the two in step.
 }
 
 TOP_TICKET_COLS = {

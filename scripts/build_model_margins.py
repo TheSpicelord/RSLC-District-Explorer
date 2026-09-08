@@ -145,13 +145,24 @@ MODELS = {
         turnout_cols=["RSLC TX High Turnout Voters", "RSLC TX Mid Turnout Voters"],
         turnout_quoted=True,
     ),
+    # Iowa V2 (2026-09-05) replaces the V1 candidate file, which was a persuasion
+    # subset: 354,382 rows to V2's 2,148,056, one per dt_regid, against roughly
+    # 2.2M registered Iowans. V2 carries a full 9-universe ladder, so this moved
+    # from flags mode to universe mode and from the "rga" family to "rslc".
+    # Bucket 1-2 / 8-9 like GA, whose ladder is the same shape with mirrored
+    # names, and NOT on the framework_* flags beside it: framework_lahn is
+    # universe 1 alone while framework_sand spans 7-9, so the flags drop universe
+    # 2 "Republican Targets" (262,135 voters) into persuasion while keeping the
+    # mirror-image Dem universe - worth 7.9 points of margin on the 2024 absentee
+    # feed. Shared with the ABEV Tracker's STATE_MODELS["IA"]; keep the two in step.
     "IA": dict(
-        mode="flags", table="ia_scores_audiences_20260731",
-        family="rga", family_label="RGA",
-        gop_cols=["framework_lahn"], dem_cols=["framework_sand"],
-        flag_true="1", flag_quoted=False,
+        mode="universe", table="IA_scores_audiences_20260731_V2", schema="vs",
+        family="rslc", family_label="RSLC",
+        univ_col="universenumber", name_col="universename",
+        gop=[1, 2], dem=[8, 9],
         turnout_cols=["turnout_high", "turnout_mid"], turnout_quoted=False,
         all_cols=["turnout_high", "turnout_mid", "turnout_low"],
+        drop_families=["rga"],
     ),
     # Alaska's DSP model for the 2026 U.S. Senate race, shared with the ABEV Tracker.
     # Same nine-universe ladder as WI/MI but with a framework column named for the

@@ -37,6 +37,8 @@ at the rounding boundary; that is noise, not a real shift.
 ### Retired district lines (`LEG_REDISTRICTED`)
 
 `LEG_REDISTRICTED` in `generate_chamber_jsons.py` drops a state/year pair of
+
+**`LEG_REDISTRICTED` is all-or-nothing per year, so it is the wrong tool for a PARTIAL redraw.** Michigan is the cautionary case: an `"MI": {2022}` entry on 2026-09-05 blanked `leg_2022` for all 110 house and 38 senate districts, including the 96 and 24 the *Agee v. Benson* remedy never touched. Michigan is deliberately absent from the list now - the workbook itself carries `leg_2022` only for the seats that survived, which is more precise than this mechanism can be. Before adding a state here, check whether the redraw actually reached every district; if it did not, let the workbook's own per-district coverage do the work and mirror it in the ABEV Tracker's `HISTORY_STALE_DISTRICTS`.
 **legislative** results — both the `leg_<year>` margin and that year's entry in
 `elections`, so it also stays out of `latest_leg`.
 
@@ -68,6 +70,20 @@ python scripts/build_michigan_vi.py                  # MI Vote Intent (workbook)
 python scripts/build_kansas_margins.py               # KS (workbook)
 ```
 
+**A partial regeneration needs the same full set, not just `build_model_margins.py`.**
+`generate_chamber_jsons.py --states MI` drops *every* `model_*` key for that state and
+refills it from the election workbook's modeling sheet, which carries stale hand-copied
+numbers. Re-running only `build_model_margins.py` restores `model_rslc_all` /
+`model_rslc_hm` and leaves the workbook's stale value sitting in `model_rslc_vi`, which
+looks plausible and is wrong - this happened on 2026-09-05 and shifted all 148 MI
+districts (HD 001 read -57.0 against the correct -61.3) until `build_michigan_vi.py` was
+run. **Michigan needs `build_michigan_vi.py` and Kansas needs `build_kansas_margins.py`
+every time either is regenerated.** The source of truth for MI Vote Intent is
+`data/Michigan Vote Intent District Margins.xlsx`, sheet `VoteIntent2026`, column
+`netframework` (GOP minus Dem as a fraction, scaled to points); it is modelled separately
+and is NOT reproducible from the universe counts in the exchange table. To verify a
+regeneration, diff `model_rslc_vi` against that sheet rather than eyeballing samples.
+
 Every model stores **GOP minus Dem** as a share of all modeled voters in the district;
 `app.js` negates the families listed in `MODEL_GOP_POSITIVE_PREFIXES` on display to reach
 the Dem-positive convention used everywhere else. **Adding a family without adding it to
@@ -79,12 +95,23 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
 
 | Mode | Margin from | Used by |
 |---|---|---|
-| `universe` | universe ranges (`gop=[..]`, `dem=[..]`) — or `framework_col` when set | NV, PA, AZ, GA, **WI**, **MI**, NJ, **AK** |
-| `flags` | 0/1 audience columns | VA, TX, IA, OR |
+| `universe` | universe ranges (`gop=[..]`, `dem=[..]`) — or `framework_col` when set | NV, PA, AZ, GA, **WI**, **MI**, NJ, **AK**, **IA** |
+| `flags` | 0/1 audience columns | VA, TX, OR |
 | `score` | continuous support scores | (none currently) |
 
 - **Bucket ranges are per-model, not conventional.** Most run 1–2 rep / 6–7 dem, but GA
-  runs to 9 universes (Dem base 8–9) and NJ/MI use three-deep bases (1–3 / 7–9).
+  and **IA** run to 9 universes (Dem base 8–9) and NJ/MI use three-deep bases (1–3 / 7–9).
+- **IA moved from `flags` to `universe` on 2026-09-05** with the `_V2` refresh
+  (`vs.IA_scores_audiences_20260731_V2`), and from the `rga` family to `rslc`. V1 was a
+  persuasion subset — 354,382 rows to V2's 2,148,056, one per `dt_regid`, against roughly
+  2.2M registered Iowans. **Do not bucket IA on its `framework_*` flags** even though V2
+  still carries them beside the ladder: they are asymmetric, `framework_lahn` covering
+  universe 1 alone (Lahn Base) while `framework_sand` spans 7–9, so they drop universe 2
+  "Republican Targets" (262,135 voters) into persuasion while keeping the mirror-image Dem
+  universe. On the 2024 absentee feed that is worth 7.9 points of margin. The ladder's
+  names mirror cleanly (1 Lahn Base / 2 Republican Targets … 8 Democrat Targets / 9 Sand
+  Base), so IA takes GA's 1–2 / 8–9 split. `drop_families=["rga"]` clears the stale V1
+  `model_rga_*` keys. Shared with the ABEV Tracker's `STATE_MODELS["IA"]`.
 - **`framework_col` beats a universe range.** The Aug 2026 WI/MI refreshes and the AK
   model carry an explicit framework column beside the ladder. WI and MI do *not* number
   their universes the same way — "Available Dems" is 7 (Pers) in WI, 6 (Dem) in MI — so a
