@@ -62,9 +62,19 @@ exist, so the number would be attached to a district number that now means somet
 else entirely.
 
 Currently `NC: {2022}` (2022 ran on the SL 2022-2 / SL 2022-4 interim maps, replaced
-2023-10-25 by SL 2023-146 / SL 2023-149 — the lines used in 2024 and again in 2026) and
-`WI: {2022}` as a no-op guard, since the workbook happens to carry no 2022 WI legislative
-data today. A state left with a single leg year renders that year as an explicit N/A
+2023-10-25 by SL 2023-146 / SL 2023-149 — the lines used in 2024 and again in 2026),
+`MT: {2022}` (Montana's commission did not adopt its post-2020-census maps until
+2023-02-22, too late for that cycle, so 2022 ran on the old 2013 districts and 2024 was
+the first vote on the current lines — note the district *numbers* are identical either
+way, 100 house / 50 senate, so a stale 2022 row looks perfectly normal), and `WI: {2022}`
+as a no-op guard, since the workbook happens to carry no 2022 WI legislative data today.
+
+Dropping a year can leave a district with **no** legislative margin at all where terms are
+staggered: Montana's senate elects half its seats each cycle, so removing 2022 left the 25
+districts last up that year with neither `leg_2022` nor `leg_2024`, and no `latest_leg`.
+That is correct — their only result belongs to a different map — and it is what the
+generator's "N rows with no latest legislative margin" warning is reporting. WI senate (17
+rows) and Michigan senate (14) are the same situation. A state left with a single leg year renders that year as an explicit N/A
 column plus a footnote in the ABEV Tracker, driven by its `LEG_REDISTRICTING_NOTES` entry
 in that project's `modules/config.js` — **keep the two in sync**, or the dropped year
 just quietly disappears with no explanation on screen.

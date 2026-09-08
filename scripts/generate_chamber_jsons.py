@@ -371,6 +371,11 @@ LEG_REDISTRICTED = {
     # SL 2022-4 House). The General Assembly replaced both on 2023-10-25 with
     # SL 2023-146 / SL 2023-149 - the lines used in 2024 and again in 2026.
     "NC": {2022},
+    # Montana's commission missed the 2022 cycle: its post-2020-census maps were
+    # not adopted until 2023-02-22 and were first used in 2024, so 2022 ran on the
+    # old 2013 districts. The workbook already has no MT *house* 2022, but it does
+    # carry leg_2022 for the 25 senate districts that were up that year.
+    "MT": {2022},
     # No-op guard: the workbook currently carries no 2022 legislative data for
     # WI at all. Listed so that if it ever does, it is dropped rather than shown
     # against the post-2023 map.
