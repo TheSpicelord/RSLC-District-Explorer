@@ -59,8 +59,8 @@
    "gov_2022": -22.0,
    "ussen_2022": -57.6,
    "pres_2024": -49.8,
-   "model_raga_all": 38.2,
-   "model_raga_hm": 38.9
+   "model_raga_all": 49.9,
+   "model_raga_hm": 50.1
   },
   "pres_2024_margin": -49.8,
   "gov_2022_margin": -22.0,
@@ -84,12 +84,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 61.5
+       "value": 61.9
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 12.0
+       "value": 11.5
       },
       {
        "key": "trump_2024_overperform",
@@ -109,7 +109,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.1
+       "value": 0.8
       },
       {
        "key": "available_democrats",
@@ -124,19 +124,19 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 19.4
+       "value": 19.8
       }
      ],
-     "margin": 38.2,
-     "kobach_base": 61.5,
-     "republican_targets": 12.0,
+     "margin": 49.9,
+     "kobach_base": 61.9,
+     "republican_targets": 11.5,
      "trump_2024_overperform": 1.0,
      "message_targets": 0.6,
      "core_persuasion": 0.6,
-     "vulnerable_middle": 1.1,
+     "vulnerable_middle": 0.8,
      "available_democrats": 1.8,
      "democrat_targets": 2.0,
-     "mann_base": 19.4
+     "mann_base": 19.8
     }
    },
    "model_raga_hm": {
@@ -191,7 +191,7 @@
        "value": 20.6
       }
      ],
-     "margin": 38.9,
+     "margin": 50.1,
      "kobach_base": 62.4,
      "republican_targets": 11.2,
      "trump_2024_overperform": 0.9,
@@ -265,8 +265,8 @@
    "gov_2022": 69.3,
    "ussen_2022": 56.1,
    "pres_2024": 57.3,
-   "model_raga_all": -66.9,
-   "model_raga_hm": -70.5
+   "model_raga_all": -59.5,
+   "model_raga_hm": -61.9
   },
   "pres_2024_margin": 57.3,
   "gov_2022_margin": 69.3,
@@ -290,12 +290,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 10.5
+       "value": 10.1
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 9.5
+       "value": 8.9
       },
       {
        "key": "trump_2024_overperform",
@@ -310,39 +310,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.5
+       "value": 0.6
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.3
+       "value": 1.2
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 3.2
+       "value": 2.9
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 73.0
+       "value": 74.4
       }
      ],
-     "margin": -66.9,
-     "kobach_base": 10.5,
-     "republican_targets": 9.5,
+     "margin": -59.5,
+     "kobach_base": 10.1,
+     "republican_targets": 8.9,
      "trump_2024_overperform": 1.0,
      "message_targets": 0.4,
-     "core_persuasion": 0.5,
-     "vulnerable_middle": 0.5,
-     "available_democrats": 1.3,
-     "democrat_targets": 3.2,
-     "mann_base": 73.0
+     "core_persuasion": 0.6,
+     "vulnerable_middle": 0.4,
+     "available_democrats": 1.2,
+     "democrat_targets": 2.9,
+     "mann_base": 74.4
     }
    },
    "model_raga_hm": {
@@ -354,7 +354,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 9.3
+       "value": 9.4
       },
       {
        "key": "republican_targets",
@@ -397,8 +397,8 @@
        "value": 77.0
       }
      ],
-     "margin": -70.5,
-     "kobach_base": 9.3,
+     "margin": -61.9,
+     "kobach_base": 9.4,
      "republican_targets": 8.5,
      "trump_2024_overperform": 0.9,
      "message_targets": 0.4,
@@ -471,8 +471,8 @@
    "gov_2022": 8.9,
    "ussen_2022": -20.6,
    "pres_2024": -13.4,
-   "model_raga_all": -4.3,
-   "model_raga_hm": -6.2
+   "model_raga_all": 10.7,
+   "model_raga_hm": 8.6
   },
   "pres_2024_margin": -13.4,
   "gov_2022_margin": 8.9,
@@ -496,12 +496,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 38.0
+       "value": 38.6
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 15.5
+       "value": 15.0
       },
       {
        "key": "trump_2024_overperform",
@@ -516,39 +516,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.2
+       "value": 0.9
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.3
+       "value": 0.9
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.8
+       "value": 1.7
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.2
+       "value": 2.1
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 38.3
+       "value": 39.1
       }
      ],
-     "margin": -4.3,
-     "kobach_base": 38.0,
-     "republican_targets": 15.5,
+     "margin": 10.7,
+     "kobach_base": 38.6,
+     "republican_targets": 15.0,
      "trump_2024_overperform": 1.1,
      "message_targets": 0.5,
-     "core_persuasion": 1.2,
-     "vulnerable_middle": 1.3,
-     "available_democrats": 1.8,
-     "democrat_targets": 2.2,
-     "mann_base": 38.3
+     "core_persuasion": 0.9,
+     "vulnerable_middle": 0.9,
+     "available_democrats": 1.7,
+     "democrat_targets": 2.1,
+     "mann_base": 39.1
     }
    },
    "model_raga_hm": {
@@ -600,10 +600,10 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 41.1
+       "value": 41.2
       }
      ],
-     "margin": -6.2,
+     "margin": 8.6,
      "kobach_base": 37.8,
      "republican_targets": 14.8,
      "trump_2024_overperform": 1.1,
@@ -612,7 +612,7 @@
      "vulnerable_middle": 0.7,
      "available_democrats": 1.4,
      "democrat_targets": 1.4,
-     "mann_base": 41.1
+     "mann_base": 41.2
     }
    }
   }
@@ -677,8 +677,8 @@
    "gov_2022": 57.7,
    "ussen_2022": 47.6,
    "pres_2024": 42.3,
-   "model_raga_all": -48.5,
-   "model_raga_hm": -62.2
+   "model_raga_all": -49.7,
+   "model_raga_hm": -57.9
   },
   "pres_2024_margin": 42.3,
   "gov_2022_margin": 57.7,
@@ -702,17 +702,17 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 21.3
+       "value": 18.6
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 6.2
+       "value": 5.5
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 0.9
+       "value": 0.8
       },
       {
        "key": "message_targets",
@@ -722,12 +722,12 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.1
+       "value": 0.6
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "available_democrats",
@@ -737,24 +737,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.7
+       "value": 2.6
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 65.9
+       "value": 70.0
       }
      ],
-     "margin": -48.5,
-     "kobach_base": 21.3,
-     "republican_targets": 6.2,
-     "trump_2024_overperform": 0.9,
+     "margin": -49.7,
+     "kobach_base": 18.6,
+     "republican_targets": 5.5,
+     "trump_2024_overperform": 0.8,
      "message_targets": 0.2,
-     "core_persuasion": 1.1,
-     "vulnerable_middle": 0.6,
+     "core_persuasion": 0.6,
+     "vulnerable_middle": 0.5,
      "available_democrats": 1.2,
-     "democrat_targets": 2.7,
-     "mann_base": 65.9
+     "democrat_targets": 2.6,
+     "mann_base": 70.0
     }
    },
    "model_raga_hm": {
@@ -766,12 +766,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 15.7
+       "value": 15.6
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 4.4
+       "value": 4.5
       },
       {
        "key": "trump_2024_overperform",
@@ -806,19 +806,19 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 75.7
+       "value": 75.8
       }
      ],
-     "margin": -62.2,
-     "kobach_base": 15.7,
-     "republican_targets": 4.4,
+     "margin": -57.9,
+     "kobach_base": 15.6,
+     "republican_targets": 4.5,
      "trump_2024_overperform": 0.8,
      "message_targets": 0.2,
      "core_persuasion": 0.6,
      "vulnerable_middle": 0.5,
      "available_democrats": 0.8,
      "democrat_targets": 1.4,
-     "mann_base": 75.7
+     "mann_base": 75.8
     }
    }
   }
@@ -883,8 +883,8 @@
    "gov_2022": 8.8,
    "ussen_2022": -13.5,
    "pres_2024": -8.6,
-   "model_raga_all": -2.5,
-   "model_raga_hm": -6.9
+   "model_raga_all": 6.1,
+   "model_raga_hm": 3.0
   },
   "pres_2024_margin": -8.6,
   "gov_2022_margin": 8.8,
@@ -908,12 +908,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 41.2
+       "value": 40.7
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 11.4
+       "value": 10.7
       },
       {
        "key": "trump_2024_overperform",
@@ -933,7 +933,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.7
+       "value": 0.5
       },
       {
        "key": "available_democrats",
@@ -943,24 +943,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.0
+       "value": 1.8
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 40.3
+       "value": 41.9
       }
      ],
-     "margin": -2.5,
-     "kobach_base": 41.2,
-     "republican_targets": 11.4,
+     "margin": 6.1,
+     "kobach_base": 40.7,
+     "republican_targets": 10.7,
      "trump_2024_overperform": 1.3,
      "message_targets": 0.7,
      "core_persuasion": 0.8,
-     "vulnerable_middle": 0.7,
+     "vulnerable_middle": 0.5,
      "available_democrats": 1.5,
-     "democrat_targets": 2.0,
-     "mann_base": 40.3
+     "democrat_targets": 1.8,
+     "mann_base": 41.9
     }
    },
    "model_raga_hm": {
@@ -992,7 +992,7 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.9
+       "value": 1.0
       },
       {
        "key": "vulnerable_middle",
@@ -1015,12 +1015,12 @@
        "value": 44.4
       }
      ],
-     "margin": -6.9,
+     "margin": 3.0,
      "kobach_base": 39.9,
      "republican_targets": 10.0,
      "trump_2024_overperform": 1.3,
      "message_targets": 0.7,
-     "core_persuasion": 0.9,
+     "core_persuasion": 1.0,
      "vulnerable_middle": 0.4,
      "available_democrats": 1.2,
      "democrat_targets": 1.3,
@@ -1089,8 +1089,8 @@
    "gov_2022": 37.0,
    "ussen_2022": 23.5,
    "pres_2024": 22.4,
-   "model_raga_all": -29.7,
-   "model_raga_hm": -39.2
+   "model_raga_all": -27.6,
+   "model_raga_hm": -33.2
   },
   "pres_2024_margin": 22.4,
   "gov_2022_margin": 37.0,
@@ -1114,27 +1114,27 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 29.7
+       "value": 27.9
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 7.6
+       "value": 6.8
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.5
+       "value": 1.4
       },
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 0.3
+       "value": 0.4
       },
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.9
+       "value": 0.6
       },
       {
        "key": "vulnerable_middle",
@@ -1149,24 +1149,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.5
+       "value": 2.4
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 55.9
+       "value": 58.8
       }
      ],
-     "margin": -29.7,
-     "kobach_base": 29.7,
-     "republican_targets": 7.6,
-     "trump_2024_overperform": 1.5,
-     "message_targets": 0.3,
-     "core_persuasion": 0.9,
+     "margin": -27.6,
+     "kobach_base": 27.9,
+     "republican_targets": 6.8,
+     "trump_2024_overperform": 1.4,
+     "message_targets": 0.4,
+     "core_persuasion": 0.6,
      "vulnerable_middle": 0.5,
      "available_democrats": 1.1,
-     "democrat_targets": 2.5,
-     "mann_base": 55.9
+     "democrat_targets": 2.4,
+     "mann_base": 58.8
     }
    },
    "model_raga_hm": {
@@ -1178,7 +1178,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 26.0
+       "value": 25.9
       },
       {
        "key": "republican_targets",
@@ -1221,8 +1221,8 @@
        "value": 63.0
       }
      ],
-     "margin": -39.2,
-     "kobach_base": 26.0,
+     "margin": -33.2,
+     "kobach_base": 25.9,
      "republican_targets": 6.2,
      "trump_2024_overperform": 1.2,
      "message_targets": 0.4,
@@ -1295,8 +1295,8 @@
    "gov_2022": 42.8,
    "ussen_2022": 25.2,
    "pres_2024": 32.1,
-   "model_raga_all": -36.7,
-   "model_raga_hm": -37.4
+   "model_raga_all": -29.9,
+   "model_raga_hm": -30.0
   },
   "pres_2024_margin": 32.1,
   "gov_2022_margin": 42.8,
@@ -1320,7 +1320,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 25.9
+       "value": 26.1
       },
       {
        "key": "republican_targets",
@@ -1340,39 +1340,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.7
+       "value": 1.4
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.6
+       "value": 1.1
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 3.2
+       "value": 3.0
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.6
+       "value": 2.3
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 56.8
+       "value": 57.9
       }
      ],
-     "margin": -36.7,
-     "kobach_base": 25.9,
+     "margin": -29.9,
+     "kobach_base": 26.1,
      "republican_targets": 7.1,
      "trump_2024_overperform": 0.7,
      "message_targets": 0.4,
-     "core_persuasion": 1.7,
-     "vulnerable_middle": 1.6,
-     "available_democrats": 3.2,
-     "democrat_targets": 2.6,
-     "mann_base": 56.8
+     "core_persuasion": 1.4,
+     "vulnerable_middle": 1.1,
+     "available_democrats": 3.0,
+     "democrat_targets": 2.3,
+     "mann_base": 57.9
     }
    },
    "model_raga_hm": {
@@ -1427,7 +1427,7 @@
        "value": 58.8
       }
      ],
-     "margin": -37.4,
+     "margin": -30.0,
      "kobach_base": 25.8,
      "republican_targets": 7.5,
      "trump_2024_overperform": 0.7,
@@ -1501,8 +1501,8 @@
    "gov_2022": 29.2,
    "ussen_2022": 10.3,
    "pres_2024": 20.8,
-   "model_raga_all": -28.2,
-   "model_raga_hm": -28.4
+   "model_raga_all": -21.0,
+   "model_raga_hm": -20.3
   },
   "pres_2024_margin": 20.8,
   "gov_2022_margin": 29.2,
@@ -1526,7 +1526,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 30.4
+       "value": 30.5
       },
       {
        "key": "republican_targets",
@@ -1546,39 +1546,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.1
+       "value": 0.9
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.4
+       "value": 0.9
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.2
+       "value": 1.9
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 3.0
+       "value": 2.7
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 53.4
+       "value": 54.5
       }
      ],
-     "margin": -28.2,
-     "kobach_base": 30.4,
+     "margin": -21.0,
+     "kobach_base": 30.5,
      "republican_targets": 7.6,
      "trump_2024_overperform": 0.6,
      "message_targets": 0.3,
-     "core_persuasion": 1.1,
-     "vulnerable_middle": 1.4,
-     "available_democrats": 2.2,
-     "democrat_targets": 3.0,
-     "mann_base": 53.4
+     "core_persuasion": 0.9,
+     "vulnerable_middle": 0.9,
+     "available_democrats": 1.9,
+     "democrat_targets": 2.7,
+     "mann_base": 54.5
     }
    },
    "model_raga_hm": {
@@ -1633,7 +1633,7 @@
        "value": 55.0
       }
      ],
-     "margin": -28.4,
+     "margin": -20.3,
      "kobach_base": 30.4,
      "republican_targets": 8.1,
      "trump_2024_overperform": 0.6,
@@ -1707,8 +1707,8 @@
    "gov_2022": 3.0,
    "ussen_2022": -17.9,
    "pres_2024": -14.8,
-   "model_raga_all": 2.7,
-   "model_raga_hm": 0.6
+   "model_raga_all": 15.2,
+   "model_raga_hm": 13.2
   },
   "pres_2024_margin": -14.8,
   "gov_2022_margin": 3.0,
@@ -1732,12 +1732,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 43.1
+       "value": 43.2
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 13.3
+       "value": 13.0
       },
       {
        "key": "trump_2024_overperform",
@@ -1752,12 +1752,12 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.8
+       "value": 0.7
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.2
+       "value": 0.9
       },
       {
        "key": "available_democrats",
@@ -1772,19 +1772,19 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 36.6
+       "value": 37.4
       }
      ],
-     "margin": 2.7,
-     "kobach_base": 43.1,
-     "republican_targets": 13.3,
+     "margin": 15.2,
+     "kobach_base": 43.2,
+     "republican_targets": 13.0,
      "trump_2024_overperform": 0.9,
      "message_targets": 0.5,
-     "core_persuasion": 0.8,
-     "vulnerable_middle": 1.2,
+     "core_persuasion": 0.7,
+     "vulnerable_middle": 0.9,
      "available_democrats": 1.8,
      "democrat_targets": 1.8,
-     "mann_base": 36.6
+     "mann_base": 37.4
     }
    },
    "model_raga_hm": {
@@ -1801,7 +1801,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 12.5
+       "value": 12.6
       },
       {
        "key": "trump_2024_overperform",
@@ -1839,9 +1839,9 @@
        "value": 39.0
       }
      ],
-     "margin": 0.6,
+     "margin": 13.2,
      "kobach_base": 42.6,
-     "republican_targets": 12.5,
+     "republican_targets": 12.6,
      "trump_2024_overperform": 0.9,
      "message_targets": 0.5,
      "core_persuasion": 0.8,
@@ -1913,8 +1913,8 @@
    "gov_2022": 16.1,
    "ussen_2022": -3.5,
    "pres_2024": 2.8,
-   "model_raga_all": -15.0,
-   "model_raga_hm": -15.9
+   "model_raga_all": -3.6,
+   "model_raga_hm": -3.7
   },
   "pres_2024_margin": 2.8,
   "gov_2022_margin": 16.1,
@@ -1943,7 +1943,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 11.9
+       "value": 11.8
       },
       {
        "key": "trump_2024_overperform",
@@ -1963,34 +1963,34 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.9
+       "value": 0.6
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.2
+       "value": 2.1
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.3
+       "value": 2.1
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 45.6
+       "value": 46.4
       }
      ],
-     "margin": -15.0,
+     "margin": -3.6,
      "kobach_base": 35.1,
-     "republican_targets": 11.9,
+     "republican_targets": 11.8,
      "trump_2024_overperform": 0.9,
      "message_targets": 0.6,
      "core_persuasion": 0.5,
-     "vulnerable_middle": 0.9,
-     "available_democrats": 2.2,
-     "democrat_targets": 2.3,
-     "mann_base": 45.6
+     "vulnerable_middle": 0.6,
+     "available_democrats": 2.1,
+     "democrat_targets": 2.1,
+     "mann_base": 46.4
     }
    },
    "model_raga_hm": {
@@ -2027,7 +2027,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.5
+       "value": 0.6
       },
       {
        "key": "available_democrats",
@@ -2042,19 +2042,19 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 47.2
+       "value": 47.3
       }
      ],
-     "margin": -15.9,
+     "margin": -3.7,
      "kobach_base": 34.7,
      "republican_targets": 12.2,
      "trump_2024_overperform": 0.8,
      "message_targets": 0.6,
      "core_persuasion": 0.6,
-     "vulnerable_middle": 0.5,
+     "vulnerable_middle": 0.6,
      "available_democrats": 1.8,
      "democrat_targets": 1.5,
-     "mann_base": 47.2
+     "mann_base": 47.3
     }
    }
   }
@@ -2119,8 +2119,8 @@
    "gov_2022": 8.9,
    "ussen_2022": -11.3,
    "pres_2024": 2.6,
-   "model_raga_all": -15.2,
-   "model_raga_hm": -13.6
+   "model_raga_all": -1.1,
+   "model_raga_hm": 0.7
   },
   "pres_2024_margin": 2.6,
   "gov_2022_margin": 8.9,
@@ -2144,32 +2144,32 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 33.6
+       "value": 34.4
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 13.6
+       "value": 13.5
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 0.7
+       "value": 0.6
       },
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.2
+       "value": 1.1
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.5
+       "value": 1.1
       },
       {
        "key": "available_democrats",
@@ -2179,24 +2179,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.7
+       "value": 1.5
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 44.5
+       "value": 44.9
       }
      ],
-     "margin": -15.2,
-     "kobach_base": 33.6,
-     "republican_targets": 13.6,
-     "trump_2024_overperform": 0.7,
-     "message_targets": 0.5,
-     "core_persuasion": 1.2,
-     "vulnerable_middle": 1.5,
+     "margin": -1.1,
+     "kobach_base": 34.4,
+     "republican_targets": 13.5,
+     "trump_2024_overperform": 0.6,
+     "message_targets": 0.4,
+     "core_persuasion": 1.1,
+     "vulnerable_middle": 1.1,
      "available_democrats": 2.6,
-     "democrat_targets": 1.7,
-     "mann_base": 44.5
+     "democrat_targets": 1.5,
+     "mann_base": 44.9
     }
    },
    "model_raga_hm": {
@@ -2208,7 +2208,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 34.4
+       "value": 34.5
       },
       {
        "key": "republican_targets",
@@ -2251,8 +2251,8 @@
        "value": 44.3
       }
      ],
-     "margin": -13.6,
-     "kobach_base": 34.4,
+     "margin": 0.7,
+     "kobach_base": 34.5,
      "republican_targets": 14.3,
      "trump_2024_overperform": 0.6,
      "message_targets": 0.4,
@@ -2325,8 +2325,8 @@
    "gov_2022": -31.2,
    "ussen_2022": -55.5,
    "pres_2024": -52.6,
-   "model_raga_all": 43.8,
-   "model_raga_hm": 45.4
+   "model_raga_all": 54.2,
+   "model_raga_hm": 54.4
   },
   "pres_2024_margin": -52.6,
   "gov_2022_margin": -31.2,
@@ -2350,17 +2350,17 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 64.8
+       "value": 65.9
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 9.5
+       "value": 9.2
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 0.9
+       "value": 0.8
       },
       {
        "key": "message_targets",
@@ -2370,39 +2370,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.5
+       "value": 1.1
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.6
+       "value": 1.2
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.9
+       "value": 1.8
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.9
+       "value": 1.8
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 17.2
+       "value": 17.4
       }
      ],
-     "margin": 43.8,
-     "kobach_base": 64.8,
-     "republican_targets": 9.5,
-     "trump_2024_overperform": 0.9,
+     "margin": 54.2,
+     "kobach_base": 65.9,
+     "republican_targets": 9.2,
+     "trump_2024_overperform": 0.8,
      "message_targets": 0.8,
-     "core_persuasion": 1.5,
-     "vulnerable_middle": 1.6,
-     "available_democrats": 1.9,
-     "democrat_targets": 1.9,
-     "mann_base": 17.2
+     "core_persuasion": 1.1,
+     "vulnerable_middle": 1.2,
+     "available_democrats": 1.8,
+     "democrat_targets": 1.8,
+     "mann_base": 17.4
     }
    },
    "model_raga_hm": {
@@ -2454,10 +2454,10 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 18.5
+       "value": 18.4
       }
      ],
-     "margin": 45.4,
+     "margin": 54.4,
      "kobach_base": 66.6,
      "republican_targets": 8.9,
      "trump_2024_overperform": 0.8,
@@ -2466,7 +2466,7 @@
      "vulnerable_middle": 0.7,
      "available_democrats": 1.3,
      "democrat_targets": 1.4,
-     "mann_base": 18.5
+     "mann_base": 18.4
     }
    }
   }
@@ -2531,8 +2531,8 @@
    "gov_2022": -20.8,
    "ussen_2022": -37.4,
    "pres_2024": -38.9,
-   "model_raga_all": 22.6,
-   "model_raga_hm": 21.3
+   "model_raga_all": 34.3,
+   "model_raga_hm": 33.0
   },
   "pres_2024_margin": -38.9,
   "gov_2022_margin": -20.8,
@@ -2556,17 +2556,17 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 53.3
+       "value": 53.8
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 12.9
+       "value": 11.9
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.7
+       "value": 1.6
       },
       {
        "key": "message_targets",
@@ -2581,34 +2581,34 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.5
+       "value": 1.4
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.9
+       "value": 2.8
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 26.4
+       "value": 27.2
       }
      ],
-     "margin": 22.6,
-     "kobach_base": 53.3,
-     "republican_targets": 12.9,
-     "trump_2024_overperform": 1.7,
+     "margin": 34.3,
+     "kobach_base": 53.8,
+     "republican_targets": 11.9,
+     "trump_2024_overperform": 1.6,
      "message_targets": 0.5,
      "core_persuasion": 0.5,
-     "vulnerable_middle": 0.5,
-     "available_democrats": 1.5,
-     "democrat_targets": 2.9,
-     "mann_base": 26.4
+     "vulnerable_middle": 0.4,
+     "available_democrats": 1.4,
+     "democrat_targets": 2.8,
+     "mann_base": 27.2
     }
    },
    "model_raga_hm": {
@@ -2660,10 +2660,10 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 29.3
+       "value": 29.2
       }
      ],
-     "margin": 21.3,
+     "margin": 33.0,
      "kobach_base": 53.4,
      "republican_targets": 11.6,
      "trump_2024_overperform": 1.5,
@@ -2672,7 +2672,7 @@
      "vulnerable_middle": 0.3,
      "available_democrats": 0.9,
      "democrat_targets": 2.0,
-     "mann_base": 29.3
+     "mann_base": 29.2
     }
    }
   }
@@ -2737,8 +2737,8 @@
    "gov_2022": -22.7,
    "ussen_2022": -53.4,
    "pres_2024": -45.5,
-   "model_raga_all": 41.1,
-   "model_raga_hm": 42.9
+   "model_raga_all": 51.3,
+   "model_raga_hm": 51.8
   },
   "pres_2024_margin": -45.5,
   "gov_2022_margin": -22.7,
@@ -2762,12 +2762,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 63.9
+       "value": 65.0
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 9.3
+       "value": 8.9
       },
       {
        "key": "trump_2024_overperform",
@@ -2777,44 +2777,44 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 0.5
+       "value": 0.6
       },
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.1
+       "value": 0.9
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.3
+       "value": 0.9
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.1
+       "value": 1.9
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.7
+       "value": 2.6
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 18.0
+       "value": 18.2
       }
      ],
-     "margin": 41.1,
-     "kobach_base": 63.9,
-     "republican_targets": 9.3,
+     "margin": 51.3,
+     "kobach_base": 65.0,
+     "republican_targets": 8.9,
      "trump_2024_overperform": 1.1,
-     "message_targets": 0.5,
-     "core_persuasion": 1.1,
-     "vulnerable_middle": 1.3,
-     "available_democrats": 2.1,
-     "democrat_targets": 2.7,
-     "mann_base": 18.0
+     "message_targets": 0.6,
+     "core_persuasion": 0.9,
+     "vulnerable_middle": 0.9,
+     "available_democrats": 1.9,
+     "democrat_targets": 2.6,
+     "mann_base": 18.2
     }
    },
    "model_raga_hm": {
@@ -2851,7 +2851,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.7
+       "value": 0.6
       },
       {
        "key": "available_democrats",
@@ -2869,13 +2869,13 @@
        "value": 18.9
       }
      ],
-     "margin": 42.9,
+     "margin": 51.8,
      "kobach_base": 65.4,
      "republican_targets": 8.8,
      "trump_2024_overperform": 1.1,
      "message_targets": 0.7,
      "core_persuasion": 0.9,
-     "vulnerable_middle": 0.7,
+     "vulnerable_middle": 0.6,
      "available_democrats": 1.5,
      "democrat_targets": 2.0,
      "mann_base": 18.9
@@ -2943,8 +2943,8 @@
    "gov_2022": -32.5,
    "ussen_2022": -50.3,
    "pres_2024": -48.9,
-   "model_raga_all": 38.4,
-   "model_raga_hm": 40.2
+   "model_raga_all": 50.3,
+   "model_raga_hm": 51.4
   },
   "pres_2024_margin": -48.9,
   "gov_2022_margin": -32.5,
@@ -2968,12 +2968,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 61.5
+       "value": 62.5
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 11.7
+       "value": 11.0
       },
       {
        "key": "trump_2024_overperform",
@@ -2983,44 +2983,44 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 0.7
+       "value": 0.8
       },
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.8
+       "value": 0.7
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.0
+       "value": 0.8
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.8
+       "value": 1.7
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.7
+       "value": 2.5
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 18.6
+       "value": 18.9
       }
      ],
-     "margin": 38.4,
-     "kobach_base": 61.5,
-     "republican_targets": 11.7,
+     "margin": 50.3,
+     "kobach_base": 62.5,
+     "republican_targets": 11.0,
      "trump_2024_overperform": 1.2,
-     "message_targets": 0.7,
-     "core_persuasion": 0.8,
-     "vulnerable_middle": 1.0,
-     "available_democrats": 1.8,
-     "democrat_targets": 2.7,
-     "mann_base": 18.6
+     "message_targets": 0.8,
+     "core_persuasion": 0.7,
+     "vulnerable_middle": 0.8,
+     "available_democrats": 1.7,
+     "democrat_targets": 2.5,
+     "mann_base": 18.9
     }
    },
    "model_raga_hm": {
@@ -3037,7 +3037,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 11.2
+       "value": 11.1
       },
       {
        "key": "trump_2024_overperform",
@@ -3067,7 +3067,7 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.7
+       "value": 1.8
       },
       {
        "key": "mann_base",
@@ -3075,15 +3075,15 @@
        "value": 19.8
       }
      ],
-     "margin": 40.2,
+     "margin": 51.4,
      "kobach_base": 63.0,
-     "republican_targets": 11.2,
+     "republican_targets": 11.1,
      "trump_2024_overperform": 1.0,
      "message_targets": 0.9,
      "core_persuasion": 0.7,
      "vulnerable_middle": 0.5,
      "available_democrats": 1.2,
-     "democrat_targets": 1.7,
+     "democrat_targets": 1.8,
      "mann_base": 19.8
     }
    }
@@ -3149,8 +3149,8 @@
    "gov_2022": -7.4,
    "ussen_2022": -32.0,
    "pres_2024": -21.5,
-   "model_raga_all": 10.9,
-   "model_raga_hm": 12.0
+   "model_raga_all": 22.6,
+   "model_raga_hm": 24.2
   },
   "pres_2024_margin": -21.5,
   "gov_2022_margin": -7.4,
@@ -3174,12 +3174,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 47.7
+       "value": 47.8
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 12.4
+       "value": 12.0
       },
       {
        "key": "trump_2024_overperform",
@@ -3199,34 +3199,34 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.7
+       "value": 0.5
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.0
+       "value": 1.9
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.4
+       "value": 2.3
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 32.3
+       "value": 33.0
       }
      ],
-     "margin": 10.9,
-     "kobach_base": 47.7,
-     "republican_targets": 12.4,
+     "margin": 22.6,
+     "kobach_base": 47.8,
+     "republican_targets": 12.0,
      "trump_2024_overperform": 0.9,
      "message_targets": 0.5,
      "core_persuasion": 1.0,
-     "vulnerable_middle": 0.7,
-     "available_democrats": 2.0,
-     "democrat_targets": 2.4,
-     "mann_base": 32.3
+     "vulnerable_middle": 0.5,
+     "available_democrats": 1.9,
+     "democrat_targets": 2.3,
+     "mann_base": 33.0
     }
    },
    "model_raga_hm": {
@@ -3238,7 +3238,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 48.4
+       "value": 48.3
       },
       {
        "key": "republican_targets",
@@ -3248,7 +3248,7 @@
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 0.9
+       "value": 1.0
       },
       {
        "key": "message_targets",
@@ -3281,10 +3281,10 @@
        "value": 33.4
       }
      ],
-     "margin": 12.0,
-     "kobach_base": 48.4,
+     "margin": 24.2,
+     "kobach_base": 48.3,
      "republican_targets": 12.3,
-     "trump_2024_overperform": 0.9,
+     "trump_2024_overperform": 1.0,
      "message_targets": 0.5,
      "core_persuasion": 1.1,
      "vulnerable_middle": 0.4,
@@ -3355,8 +3355,8 @@
    "gov_2022": 5.7,
    "ussen_2022": -30.9,
    "pres_2024": -19.3,
-   "model_raga_all": 11.4,
-   "model_raga_hm": 14.5
+   "model_raga_all": 21.4,
+   "model_raga_hm": 23.9
   },
   "pres_2024_margin": -19.3,
   "gov_2022_margin": 5.7,
@@ -3380,12 +3380,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 48.8
+       "value": 50.1
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 10.1
+       "value": 9.0
       },
       {
        "key": "trump_2024_overperform",
@@ -3400,39 +3400,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.1
+       "value": 0.8
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.3
+       "value": 1.0
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.9
+       "value": 2.6
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 4.5
+       "value": 4.2
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 30.0
+       "value": 30.8
       }
      ],
-     "margin": 11.4,
-     "kobach_base": 48.8,
-     "republican_targets": 10.1,
+     "margin": 21.4,
+     "kobach_base": 50.1,
+     "republican_targets": 9.0,
      "trump_2024_overperform": 0.8,
      "message_targets": 0.6,
-     "core_persuasion": 1.1,
-     "vulnerable_middle": 1.3,
-     "available_democrats": 2.9,
-     "democrat_targets": 4.5,
-     "mann_base": 30.0
+     "core_persuasion": 0.8,
+     "vulnerable_middle": 1.0,
+     "available_democrats": 2.6,
+     "democrat_targets": 4.2,
+     "mann_base": 30.8
     }
    },
    "model_raga_hm": {
@@ -3487,7 +3487,7 @@
        "value": 31.7
       }
      ],
-     "margin": 14.5,
+     "margin": 23.9,
      "kobach_base": 51.1,
      "republican_targets": 9.3,
      "trump_2024_overperform": 0.9,
@@ -3561,8 +3561,8 @@
    "gov_2022": -6.0,
    "ussen_2022": -41.1,
    "pres_2024": -32.8,
-   "model_raga_all": 21.7,
-   "model_raga_hm": 21.6
+   "model_raga_all": 37.0,
+   "model_raga_hm": 35.8
   },
   "pres_2024_margin": -32.8,
   "gov_2022_margin": -6.0,
@@ -3586,37 +3586,37 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 51.1
+       "value": 51.9
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 15.1
+       "value": 14.8
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.1
+       "value": 1.0
       },
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 0.7
+       "value": 0.8
       },
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.2
+       "value": 0.8
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.4
+       "value": 1.0
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.3
+       "value": 2.2
       },
       {
        "key": "democrat_targets",
@@ -3626,19 +3626,19 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 24.7
+       "value": 25.2
       }
      ],
-     "margin": 21.7,
-     "kobach_base": 51.1,
-     "republican_targets": 15.1,
-     "trump_2024_overperform": 1.1,
-     "message_targets": 0.7,
-     "core_persuasion": 1.2,
-     "vulnerable_middle": 1.4,
-     "available_democrats": 2.3,
+     "margin": 37.0,
+     "kobach_base": 51.9,
+     "republican_targets": 14.8,
+     "trump_2024_overperform": 1.0,
+     "message_targets": 0.8,
+     "core_persuasion": 0.8,
+     "vulnerable_middle": 1.0,
+     "available_democrats": 2.2,
      "democrat_targets": 2.3,
-     "mann_base": 24.7
+     "mann_base": 25.2
     }
    },
    "model_raga_hm": {
@@ -3693,7 +3693,7 @@
        "value": 26.7
       }
      ],
-     "margin": 21.6,
+     "margin": 35.8,
      "kobach_base": 52.0,
      "republican_targets": 14.2,
      "trump_2024_overperform": 1.0,
@@ -3767,8 +3767,8 @@
    "gov_2022": 47.3,
    "ussen_2022": 21.6,
    "pres_2024": 27.8,
-   "model_raga_all": -46.3,
-   "model_raga_hm": -49.6
+   "model_raga_all": -31.1,
+   "model_raga_hm": -33.1
   },
   "pres_2024_margin": 27.8,
   "gov_2022_margin": 47.3,
@@ -3792,12 +3792,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 16.2
+       "value": 16.0
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 17.9
+       "value": 16.8
       },
       {
        "key": "trump_2024_overperform",
@@ -3817,34 +3817,34 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.8
+       "value": 0.7
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.2
+       "value": 2.1
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 4.4
+       "value": 4.1
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 55.9
+       "value": 57.7
       }
      ],
-     "margin": -46.3,
-     "kobach_base": 16.2,
-     "republican_targets": 17.9,
+     "margin": -31.1,
+     "kobach_base": 16.0,
+     "republican_targets": 16.8,
      "trump_2024_overperform": 1.6,
      "message_targets": 0.4,
      "core_persuasion": 0.6,
-     "vulnerable_middle": 0.8,
-     "available_democrats": 2.2,
-     "democrat_targets": 4.4,
-     "mann_base": 55.9
+     "vulnerable_middle": 0.7,
+     "available_democrats": 2.1,
+     "democrat_targets": 4.1,
+     "mann_base": 57.7
     }
    },
    "model_raga_hm": {
@@ -3871,7 +3871,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "core_persuasion",
@@ -3896,19 +3896,19 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 60.4
+       "value": 60.5
       }
      ],
-     "margin": -49.6,
+     "margin": -33.1,
      "kobach_base": 15.4,
      "republican_targets": 16.5,
      "trump_2024_overperform": 1.5,
-     "message_targets": 0.5,
+     "message_targets": 0.4,
      "core_persuasion": 0.6,
      "vulnerable_middle": 0.5,
      "available_democrats": 1.6,
      "democrat_targets": 2.9,
-     "mann_base": 60.4
+     "mann_base": 60.5
     }
    }
   }
@@ -3973,8 +3973,8 @@
    "gov_2022": 15.9,
    "ussen_2022": -18.5,
    "pres_2024": -4.7,
-   "model_raga_all": -6.7,
-   "model_raga_hm": -4.8
+   "model_raga_all": 7.2,
+   "model_raga_hm": 8.2
   },
   "pres_2024_margin": -4.7,
   "gov_2022_margin": 15.9,
@@ -3998,7 +3998,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 37.9
+       "value": 38.8
       },
       {
        "key": "republican_targets",
@@ -4018,39 +4018,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.1
+       "value": 0.8
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.8
+       "value": 1.2
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.4
+       "value": 2.2
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 3.2
+       "value": 2.8
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 38.9
+       "value": 39.6
       }
      ],
-     "margin": -6.7,
-     "kobach_base": 37.9,
+     "margin": 7.2,
+     "kobach_base": 38.8,
      "republican_targets": 13.0,
      "trump_2024_overperform": 1.2,
      "message_targets": 0.5,
-     "core_persuasion": 1.1,
-     "vulnerable_middle": 1.8,
-     "available_democrats": 2.4,
-     "democrat_targets": 3.2,
-     "mann_base": 38.9
+     "core_persuasion": 0.8,
+     "vulnerable_middle": 1.2,
+     "available_democrats": 2.2,
+     "democrat_targets": 2.8,
+     "mann_base": 39.6
     }
    },
    "model_raga_hm": {
@@ -4067,7 +4067,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 12.9
+       "value": 13.0
       },
       {
        "key": "trump_2024_overperform",
@@ -4105,9 +4105,9 @@
        "value": 40.2
       }
      ],
-     "margin": -4.8,
+     "margin": 8.2,
      "kobach_base": 39.4,
-     "republican_targets": 12.9,
+     "republican_targets": 13.0,
      "trump_2024_overperform": 1.2,
      "message_targets": 0.5,
      "core_persuasion": 0.8,
@@ -4179,8 +4179,8 @@
    "gov_2022": 31.3,
    "ussen_2022": 13.8,
    "pres_2024": 20.2,
-   "model_raga_all": -27.5,
-   "model_raga_hm": -29.2
+   "model_raga_all": -20.5,
+   "model_raga_hm": -20.6
   },
   "pres_2024_margin": 20.2,
   "gov_2022_margin": 31.3,
@@ -4204,12 +4204,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 30.8
+       "value": 30.3
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 8.4
+       "value": 8.3
       },
       {
        "key": "trump_2024_overperform",
@@ -4224,39 +4224,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.0
+       "value": 0.7
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.3
+       "value": 2.1
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 3.0
+       "value": 2.8
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 52.9
+       "value": 54.2
       }
      ],
-     "margin": -27.5,
-     "kobach_base": 30.8,
-     "republican_targets": 8.4,
+     "margin": -20.5,
+     "kobach_base": 30.3,
+     "republican_targets": 8.3,
      "trump_2024_overperform": 0.9,
      "message_targets": 0.4,
-     "core_persuasion": 0.5,
-     "vulnerable_middle": 1.0,
-     "available_democrats": 2.3,
-     "democrat_targets": 3.0,
-     "mann_base": 52.9
+     "core_persuasion": 0.4,
+     "vulnerable_middle": 0.7,
+     "available_democrats": 2.1,
+     "democrat_targets": 2.8,
+     "mann_base": 54.2
     }
    },
    "model_raga_hm": {
@@ -4311,7 +4311,7 @@
        "value": 55.7
       }
      ],
-     "margin": -29.2,
+     "margin": -20.6,
      "kobach_base": 29.9,
      "republican_targets": 8.6,
      "trump_2024_overperform": 0.9,
@@ -4385,8 +4385,8 @@
    "gov_2022": 21.4,
    "ussen_2022": -10.5,
    "pres_2024": 1.8,
-   "model_raga_all": -11.7,
-   "model_raga_hm": -12.2
+   "model_raga_all": -2.0,
+   "model_raga_hm": -1.3
   },
   "pres_2024_margin": 1.8,
   "gov_2022_margin": 21.4,
@@ -4410,59 +4410,59 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 36.9
+       "value": 37.2
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 10.6
+       "value": 10.1
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.1
+       "value": 1.0
       },
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 0.4
+       "value": 0.5
       },
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.9
+       "value": 0.8
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.5
+       "value": 1.1
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.7
+       "value": 2.6
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 5.3
+       "value": 5.0
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 40.5
+       "value": 41.7
       }
      ],
-     "margin": -11.7,
-     "kobach_base": 36.9,
-     "republican_targets": 10.6,
-     "trump_2024_overperform": 1.1,
-     "message_targets": 0.4,
-     "core_persuasion": 0.9,
-     "vulnerable_middle": 1.5,
-     "available_democrats": 2.7,
-     "democrat_targets": 5.3,
-     "mann_base": 40.5
+     "margin": -2.0,
+     "kobach_base": 37.2,
+     "republican_targets": 10.1,
+     "trump_2024_overperform": 1.0,
+     "message_targets": 0.5,
+     "core_persuasion": 0.8,
+     "vulnerable_middle": 1.1,
+     "available_democrats": 2.6,
+     "democrat_targets": 5.0,
+     "mann_base": 41.7
     }
    },
    "model_raga_hm": {
@@ -4474,7 +4474,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 36.8
+       "value": 36.9
       },
       {
        "key": "republican_targets",
@@ -4514,11 +4514,11 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 43.2
+       "value": 43.1
       }
      ],
-     "margin": -12.2,
-     "kobach_base": 36.8,
+     "margin": -1.3,
+     "kobach_base": 36.9,
      "republican_targets": 10.7,
      "trump_2024_overperform": 1.1,
      "message_targets": 0.6,
@@ -4526,7 +4526,7 @@
      "vulnerable_middle": 1.0,
      "available_democrats": 2.3,
      "democrat_targets": 3.4,
-     "mann_base": 43.2
+     "mann_base": 43.1
     }
    }
   }
@@ -4591,8 +4591,8 @@
    "gov_2022": 7.2,
    "ussen_2022": -11.2,
    "pres_2024": -2.7,
-   "model_raga_all": -5.4,
-   "model_raga_hm": -6.3
+   "model_raga_all": 2.4,
+   "model_raga_hm": 2.6
   },
   "pres_2024_margin": -2.7,
   "gov_2022_margin": 7.2,
@@ -4616,7 +4616,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 41.8
+       "value": 41.4
       },
       {
        "key": "republican_targets",
@@ -4636,39 +4636,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.7
+       "value": 0.5
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.5
+       "value": 1.4
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.0
+       "value": 1.8
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 43.6
+       "value": 44.6
       }
      ],
-     "margin": -5.4,
-     "kobach_base": 41.8,
+     "margin": 2.4,
+     "kobach_base": 41.4,
      "republican_targets": 8.8,
      "trump_2024_overperform": 0.6,
      "message_targets": 0.5,
-     "core_persuasion": 0.5,
-     "vulnerable_middle": 0.7,
-     "available_democrats": 1.5,
-     "democrat_targets": 2.0,
-     "mann_base": 43.6
+     "core_persuasion": 0.4,
+     "vulnerable_middle": 0.5,
+     "available_democrats": 1.4,
+     "democrat_targets": 1.8,
+     "mann_base": 44.6
     }
    },
    "model_raga_hm": {
@@ -4680,7 +4680,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 41.4
+       "value": 41.3
       },
       {
        "key": "republican_targets",
@@ -4710,7 +4710,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.2
+       "value": 1.1
       },
       {
        "key": "democrat_targets",
@@ -4723,14 +4723,14 @@
        "value": 45.3
       }
      ],
-     "margin": -6.3,
-     "kobach_base": 41.4,
+     "margin": 2.6,
+     "kobach_base": 41.3,
      "republican_targets": 8.9,
      "trump_2024_overperform": 0.7,
      "message_targets": 0.5,
      "core_persuasion": 0.5,
      "vulnerable_middle": 0.4,
-     "available_democrats": 1.2,
+     "available_democrats": 1.1,
      "democrat_targets": 1.2,
      "mann_base": 45.3
     }
@@ -4797,8 +4797,8 @@
    "gov_2022": -12.1,
    "ussen_2022": -47.4,
    "pres_2024": -38.2,
-   "model_raga_all": 26.2,
-   "model_raga_hm": 29.4
+   "model_raga_all": 38.4,
+   "model_raga_hm": 41.0
   },
   "pres_2024_margin": -38.2,
   "gov_2022_margin": -12.1,
@@ -4822,17 +4822,17 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 55.7
+       "value": 56.5
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 11.8
+       "value": 11.3
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.3
+       "value": 1.2
       },
       {
        "key": "message_targets",
@@ -4842,12 +4842,12 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "available_democrats",
@@ -4857,7 +4857,7 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 3.3
+       "value": 3.1
       },
       {
        "key": "mann_base",
@@ -4865,15 +4865,15 @@
        "value": 24.6
       }
      ],
-     "margin": 26.2,
-     "kobach_base": 55.7,
-     "republican_targets": 11.8,
-     "trump_2024_overperform": 1.3,
+     "margin": 38.4,
+     "kobach_base": 56.5,
+     "republican_targets": 11.3,
+     "trump_2024_overperform": 1.2,
      "message_targets": 0.5,
-     "core_persuasion": 0.6,
-     "vulnerable_middle": 0.6,
+     "core_persuasion": 0.5,
+     "vulnerable_middle": 0.5,
      "available_democrats": 1.6,
-     "democrat_targets": 3.3,
+     "democrat_targets": 3.1,
      "mann_base": 24.6
     }
    },
@@ -4911,7 +4911,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "available_democrats",
@@ -4929,13 +4929,13 @@
        "value": 24.6
       }
      ],
-     "margin": 29.4,
+     "margin": 41.0,
      "kobach_base": 57.5,
      "republican_targets": 11.6,
      "trump_2024_overperform": 1.2,
      "message_targets": 0.6,
      "core_persuasion": 0.6,
-     "vulnerable_middle": 0.5,
+     "vulnerable_middle": 0.4,
      "available_democrats": 1.3,
      "democrat_targets": 2.2,
      "mann_base": 24.6
@@ -5003,8 +5003,8 @@
    "gov_2022": 28.4,
    "ussen_2022": 7.2,
    "pres_2024": 12.8,
-   "model_raga_all": -24.9,
-   "model_raga_hm": -29.9
+   "model_raga_all": -14.2,
+   "model_raga_hm": -16.5
   },
   "pres_2024_margin": 12.8,
   "gov_2022_margin": 28.4,
@@ -5028,12 +5028,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 28.8
+       "value": 28.2
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 13.9
+       "value": 13.1
       },
       {
        "key": "trump_2024_overperform",
@@ -5048,39 +5048,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.9
+       "value": 0.7
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.5
+       "value": 1.4
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 5.0
+       "value": 4.8
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 47.2
+       "value": 49.3
       }
      ],
-     "margin": -24.9,
-     "kobach_base": 28.8,
-     "republican_targets": 13.9,
+     "margin": -14.2,
+     "kobach_base": 28.2,
+     "republican_targets": 13.1,
      "trump_2024_overperform": 1.7,
      "message_targets": 0.5,
-     "core_persuasion": 0.9,
-     "vulnerable_middle": 0.5,
-     "available_democrats": 1.5,
-     "democrat_targets": 5.0,
-     "mann_base": 47.2
+     "core_persuasion": 0.7,
+     "vulnerable_middle": 0.4,
+     "available_democrats": 1.4,
+     "democrat_targets": 4.8,
+     "mann_base": 49.3
     }
    },
    "model_raga_hm": {
@@ -5135,7 +5135,7 @@
        "value": 52.2
       }
      ],
-     "margin": -29.9,
+     "margin": -16.5,
      "kobach_base": 26.7,
      "republican_targets": 13.4,
      "trump_2024_overperform": 1.6,
@@ -5209,8 +5209,8 @@
    "gov_2022": -20.4,
    "ussen_2022": -46.2,
    "pres_2024": -40.1,
-   "model_raga_all": 29.8,
-   "model_raga_hm": 28.4
+   "model_raga_all": 40.8,
+   "model_raga_hm": 39.8
   },
   "pres_2024_margin": -40.1,
   "gov_2022_margin": -20.4,
@@ -5234,7 +5234,71 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 57.8
+       "value": 57.9
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 11.2
+      },
+      {
+       "key": "trump_2024_overperform",
+       "label": "Trump 2024 Overperform",
+       "value": 0.9
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 0.6
+      },
+      {
+       "key": "core_persuasion",
+       "label": "Core Persuasion",
+       "value": 0.7
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.4
+      },
+      {
+       "key": "available_democrats",
+       "label": "Available Democrats",
+       "value": 1.5
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.8
+      },
+      {
+       "key": "mann_base",
+       "label": "Mann Base",
+       "value": 24.0
+      }
+     ],
+     "margin": 40.8,
+     "kobach_base": 57.9,
+     "republican_targets": 11.2,
+     "trump_2024_overperform": 0.9,
+     "message_targets": 0.6,
+     "core_persuasion": 0.7,
+     "vulnerable_middle": 0.4,
+     "available_democrats": 1.5,
+     "democrat_targets": 2.8,
+     "mann_base": 24.0
+    }
+   },
+   "model_raga_hm": {
+    "label": "RAGA (H+M)",
+    "family": "RAGA",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "kobach_base",
+       "label": "Kobach Base",
+       "value": 57.1
       },
       {
        "key": "republican_targets",
@@ -5250,70 +5314,6 @@
        "key": "message_targets",
        "label": "Message Targets",
        "value": 0.6
-      },
-      {
-       "key": "core_persuasion",
-       "label": "Core Persuasion",
-       "value": 0.8
-      },
-      {
-       "key": "vulnerable_middle",
-       "label": "Vulnerable Middle",
-       "value": 0.5
-      },
-      {
-       "key": "available_democrats",
-       "label": "Available Democrats",
-       "value": 1.5
-      },
-      {
-       "key": "democrat_targets",
-       "label": "Democrat Targets",
-       "value": 2.8
-      },
-      {
-       "key": "mann_base",
-       "label": "Mann Base",
-       "value": 23.7
-      }
-     ],
-     "margin": 29.8,
-     "kobach_base": 57.8,
-     "republican_targets": 11.4,
-     "trump_2024_overperform": 0.9,
-     "message_targets": 0.6,
-     "core_persuasion": 0.8,
-     "vulnerable_middle": 0.5,
-     "available_democrats": 1.5,
-     "democrat_targets": 2.8,
-     "mann_base": 23.7
-    }
-   },
-   "model_raga_hm": {
-    "label": "RAGA (H+M)",
-    "family": "RAGA",
-    "variant": "H+M",
-    "affinity": {
-     "segments": [
-      {
-       "key": "kobach_base",
-       "label": "Kobach Base",
-       "value": 57.2
-      },
-      {
-       "key": "republican_targets",
-       "label": "Republican Targets",
-       "value": 11.4
-      },
-      {
-       "key": "trump_2024_overperform",
-       "label": "Trump 2024 Overperform",
-       "value": 0.9
-      },
-      {
-       "key": "message_targets",
-       "label": "Message Targets",
-       "value": 0.7
       },
       {
        "key": "core_persuasion",
@@ -5341,11 +5341,11 @@
        "value": 25.5
       }
      ],
-     "margin": 28.4,
-     "kobach_base": 57.2,
+     "margin": 39.8,
+     "kobach_base": 57.1,
      "republican_targets": 11.4,
      "trump_2024_overperform": 0.9,
-     "message_targets": 0.7,
+     "message_targets": 0.6,
      "core_persuasion": 0.8,
      "vulnerable_middle": 0.3,
      "available_democrats": 1.2,
@@ -5415,8 +5415,8 @@
    "gov_2022": -2.3,
    "ussen_2022": -27.9,
    "pres_2024": -20.9,
-   "model_raga_all": 12.7,
-   "model_raga_hm": 12.0
+   "model_raga_all": 21.2,
+   "model_raga_hm": 21.1
   },
   "pres_2024_margin": -20.9,
   "gov_2022_margin": -2.3,
@@ -5445,7 +5445,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 9.2
+       "value": 8.9
       },
       {
        "key": "trump_2024_overperform",
@@ -5465,7 +5465,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.4
+       "value": 0.3
       },
       {
        "key": "available_democrats",
@@ -5480,19 +5480,19 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 33.1
+       "value": 33.7
       }
      ],
-     "margin": 12.7,
+     "margin": 21.2,
      "kobach_base": 50.5,
-     "republican_targets": 9.2,
+     "republican_targets": 8.9,
      "trump_2024_overperform": 1.0,
      "message_targets": 0.4,
      "core_persuasion": 0.7,
-     "vulnerable_middle": 0.4,
+     "vulnerable_middle": 0.3,
      "available_democrats": 1.4,
      "democrat_targets": 3.2,
-     "mann_base": 33.1
+     "mann_base": 33.7
     }
    },
    "model_raga_hm": {
@@ -5547,7 +5547,7 @@
        "value": 34.9
       }
      ],
-     "margin": 12.0,
+     "margin": 21.1,
      "kobach_base": 50.2,
      "republican_targets": 9.2,
      "trump_2024_overperform": 0.9,
@@ -5621,8 +5621,8 @@
    "gov_2022": 4.7,
    "ussen_2022": -20.3,
    "pres_2024": -17.2,
-   "model_raga_all": 5.4,
-   "model_raga_hm": 2.0
+   "model_raga_all": 14.4,
+   "model_raga_hm": 12.5
   },
   "pres_2024_margin": -17.2,
   "gov_2022_margin": 4.7,
@@ -5646,17 +5646,17 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 45.8
+       "value": 45.3
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 11.0
+       "value": 10.5
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.4
+       "value": 1.5
       },
       {
        "key": "message_targets",
@@ -5676,7 +5676,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.8
+       "value": 1.7
       },
       {
        "key": "democrat_targets",
@@ -5686,19 +5686,19 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 34.6
+       "value": 35.7
       }
      ],
-     "margin": 5.4,
-     "kobach_base": 45.8,
-     "republican_targets": 11.0,
-     "trump_2024_overperform": 1.4,
+     "margin": 14.4,
+     "kobach_base": 45.3,
+     "republican_targets": 10.5,
+     "trump_2024_overperform": 1.5,
      "message_targets": 0.3,
      "core_persuasion": 0.5,
      "vulnerable_middle": 0.5,
-     "available_democrats": 1.8,
+     "available_democrats": 1.7,
      "democrat_targets": 4.0,
-     "mann_base": 34.6
+     "mann_base": 35.7
     }
    },
    "model_raga_hm": {
@@ -5750,10 +5750,10 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 38.2
+       "value": 38.1
       }
      ],
-     "margin": 2.0,
+     "margin": 12.5,
      "kobach_base": 44.4,
      "republican_targets": 10.5,
      "trump_2024_overperform": 1.4,
@@ -5762,7 +5762,7 @@
      "vulnerable_middle": 0.3,
      "available_democrats": 1.2,
      "democrat_targets": 3.0,
-     "mann_base": 38.2
+     "mann_base": 38.1
     }
    }
   }
@@ -5827,8 +5827,8 @@
    "gov_2022": 51.1,
    "ussen_2022": 34.4,
    "pres_2024": 37.2,
-   "model_raga_all": -43.5,
-   "model_raga_hm": -49.2
+   "model_raga_all": -39.5,
+   "model_raga_hm": -41.7
   },
   "pres_2024_margin": 37.2,
   "gov_2022_margin": 51.1,
@@ -5852,17 +5852,17 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 23.2
+       "value": 21.8
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 8.1
+       "value": 7.4
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 0.9
+       "value": 1.0
       },
       {
        "key": "message_targets",
@@ -5872,39 +5872,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.4
+       "value": 0.3
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.4
+       "value": 2.3
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 6.8
+       "value": 6.5
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 57.5
+       "value": 60.1
       }
      ],
-     "margin": -43.5,
-     "kobach_base": 23.2,
-     "republican_targets": 8.1,
-     "trump_2024_overperform": 0.9,
+     "margin": -39.5,
+     "kobach_base": 21.8,
+     "republican_targets": 7.4,
+     "trump_2024_overperform": 1.0,
      "message_targets": 0.2,
-     "core_persuasion": 0.4,
-     "vulnerable_middle": 0.5,
-     "available_democrats": 2.4,
-     "democrat_targets": 6.8,
-     "mann_base": 57.5
+     "core_persuasion": 0.3,
+     "vulnerable_middle": 0.4,
+     "available_democrats": 2.3,
+     "democrat_targets": 6.5,
+     "mann_base": 60.1
     }
    },
    "model_raga_hm": {
@@ -5916,7 +5916,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 20.7
+       "value": 20.8
       },
       {
        "key": "republican_targets",
@@ -5959,8 +5959,8 @@
        "value": 64.2
       }
      ],
-     "margin": -49.2,
-     "kobach_base": 20.7,
+     "margin": -41.7,
+     "kobach_base": 20.8,
      "republican_targets": 7.5,
      "trump_2024_overperform": 0.9,
      "message_targets": 0.3,
@@ -6033,8 +6033,8 @@
    "gov_2022": 0.1,
    "ussen_2022": -23.2,
    "pres_2024": -14.5,
-   "model_raga_all": 5.4,
-   "model_raga_hm": 4.1
+   "model_raga_all": 15.4,
+   "model_raga_hm": 15.0
   },
   "pres_2024_margin": -14.5,
   "gov_2022_margin": 0.1,
@@ -6063,7 +6063,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 11.0
+       "value": 10.6
       },
       {
        "key": "trump_2024_overperform",
@@ -6083,34 +6083,34 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.6
+       "value": 0.4
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.6
+       "value": 1.5
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 3.2
+       "value": 3.0
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 35.7
+       "value": 36.6
       }
      ],
-     "margin": 5.4,
+     "margin": 15.4,
      "kobach_base": 45.9,
-     "republican_targets": 11.0,
+     "republican_targets": 10.6,
      "trump_2024_overperform": 0.9,
      "message_targets": 0.4,
      "core_persuasion": 0.6,
-     "vulnerable_middle": 0.6,
-     "available_democrats": 1.6,
-     "democrat_targets": 3.2,
-     "mann_base": 35.7
+     "vulnerable_middle": 0.4,
+     "available_democrats": 1.5,
+     "democrat_targets": 3.0,
+     "mann_base": 36.6
     }
    },
    "model_raga_hm": {
@@ -6165,7 +6165,7 @@
        "value": 38.1
       }
      ],
-     "margin": 4.1,
+     "margin": 15.0,
      "kobach_base": 45.5,
      "republican_targets": 10.8,
      "trump_2024_overperform": 0.9,
@@ -6239,8 +6239,8 @@
    "gov_2022": -6.6,
    "ussen_2022": -33.7,
    "pres_2024": -26.0,
-   "model_raga_all": 20.2,
-   "model_raga_hm": 20.1
+   "model_raga_all": 28.4,
+   "model_raga_hm": 28.2
   },
   "pres_2024_margin": -26.0,
   "gov_2022_margin": -6.6,
@@ -6264,12 +6264,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 54.1
+       "value": 54.4
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 8.4
+       "value": 8.2
       },
       {
        "key": "trump_2024_overperform",
@@ -6284,39 +6284,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.9
+       "value": 0.8
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.2
+       "value": 0.9
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.0
+       "value": 1.9
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 3.2
+       "value": 3.1
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 28.7
+       "value": 29.2
       }
      ],
-     "margin": 20.2,
-     "kobach_base": 54.1,
-     "republican_targets": 8.4,
+     "margin": 28.4,
+     "kobach_base": 54.4,
+     "republican_targets": 8.2,
      "trump_2024_overperform": 0.9,
      "message_targets": 0.6,
-     "core_persuasion": 0.9,
-     "vulnerable_middle": 1.2,
-     "available_democrats": 2.0,
-     "democrat_targets": 3.2,
-     "mann_base": 28.7
+     "core_persuasion": 0.8,
+     "vulnerable_middle": 0.9,
+     "available_democrats": 1.9,
+     "democrat_targets": 3.1,
+     "mann_base": 29.2
     }
    },
    "model_raga_hm": {
@@ -6363,15 +6363,15 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.3
+       "value": 2.4
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 30.3
+       "value": 30.4
       }
      ],
-     "margin": 20.1,
+     "margin": 28.2,
      "kobach_base": 54.4,
      "republican_targets": 8.2,
      "trump_2024_overperform": 0.9,
@@ -6379,8 +6379,8 @@
      "core_persuasion": 0.9,
      "vulnerable_middle": 0.7,
      "available_democrats": 1.6,
-     "democrat_targets": 2.3,
-     "mann_base": 30.3
+     "democrat_targets": 2.4,
+     "mann_base": 30.4
     }
    }
   }
@@ -6445,8 +6445,8 @@
    "gov_2022": -19.3,
    "ussen_2022": -48.9,
    "pres_2024": -45.9,
-   "model_raga_all": 37.4,
-   "model_raga_hm": 38.1
+   "model_raga_all": 46.8,
+   "model_raga_hm": 46.8
   },
   "pres_2024_margin": -45.9,
   "gov_2022_margin": -19.3,
@@ -6470,12 +6470,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 62.3
+       "value": 63.0
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 9.0
+       "value": 8.7
       },
       {
        "key": "trump_2024_overperform",
@@ -6490,12 +6490,12 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.1
+       "value": 1.0
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.1
+       "value": 0.8
       },
       {
        "key": "available_democrats",
@@ -6505,24 +6505,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 3.4
+       "value": 3.2
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 19.5
+       "value": 19.8
       }
      ],
-     "margin": 37.4,
-     "kobach_base": 62.3,
-     "republican_targets": 9.0,
+     "margin": 46.8,
+     "kobach_base": 63.0,
+     "republican_targets": 8.7,
      "trump_2024_overperform": 0.9,
      "message_targets": 0.7,
-     "core_persuasion": 1.1,
-     "vulnerable_middle": 1.1,
+     "core_persuasion": 1.0,
+     "vulnerable_middle": 0.8,
      "available_democrats": 1.9,
-     "democrat_targets": 3.4,
-     "mann_base": 19.5
+     "democrat_targets": 3.2,
+     "mann_base": 19.8
     }
    },
    "model_raga_hm": {
@@ -6569,7 +6569,7 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.3
+       "value": 2.4
       },
       {
        "key": "mann_base",
@@ -6577,7 +6577,7 @@
        "value": 21.1
       }
      ],
-     "margin": 38.1,
+     "margin": 46.8,
      "kobach_base": 63.1,
      "republican_targets": 8.7,
      "trump_2024_overperform": 0.8,
@@ -6585,7 +6585,7 @@
      "core_persuasion": 1.0,
      "vulnerable_middle": 0.6,
      "available_democrats": 1.5,
-     "democrat_targets": 2.3,
+     "democrat_targets": 2.4,
      "mann_base": 21.1
     }
    }
@@ -6651,8 +6651,8 @@
    "gov_2022": -29.7,
    "ussen_2022": -67.8,
    "pres_2024": -58.2,
-   "model_raga_all": 47.7,
-   "model_raga_hm": 51.9
+   "model_raga_all": 57.9,
+   "model_raga_hm": 60.6
   },
   "pres_2024_margin": -58.2,
   "gov_2022_margin": -29.7,
@@ -6676,12 +6676,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 66.8
+       "value": 68.1
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 8.7
+       "value": 8.4
       },
       {
        "key": "trump_2024_overperform",
@@ -6696,39 +6696,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 2.3
+       "value": 2.0
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.2
+       "value": 0.9
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.2
+       "value": 2.1
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 3.5
+       "value": 3.1
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 13.3
+       "value": 13.5
       }
      ],
-     "margin": 47.7,
-     "kobach_base": 66.8,
-     "republican_targets": 8.7,
+     "margin": 57.9,
+     "kobach_base": 68.1,
+     "republican_targets": 8.4,
      "trump_2024_overperform": 0.9,
      "message_targets": 1.0,
-     "core_persuasion": 2.3,
-     "vulnerable_middle": 1.2,
-     "available_democrats": 2.2,
-     "democrat_targets": 3.5,
-     "mann_base": 13.3
+     "core_persuasion": 2.0,
+     "vulnerable_middle": 0.9,
+     "available_democrats": 2.1,
+     "democrat_targets": 3.1,
+     "mann_base": 13.5
     }
    },
    "model_raga_hm": {
@@ -6745,7 +6745,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 8.7
+       "value": 8.6
       },
       {
        "key": "trump_2024_overperform",
@@ -6783,9 +6783,9 @@
        "value": 13.8
       }
      ],
-     "margin": 51.9,
+     "margin": 60.6,
      "kobach_base": 69.2,
-     "republican_targets": 8.7,
+     "republican_targets": 8.6,
      "trump_2024_overperform": 0.8,
      "message_targets": 1.2,
      "core_persuasion": 2.1,
@@ -6857,8 +6857,8 @@
    "gov_2022": -16.2,
    "ussen_2022": -48.5,
    "pres_2024": -40.0,
-   "model_raga_all": 32.0,
-   "model_raga_hm": 34.0
+   "model_raga_all": 42.2,
+   "model_raga_hm": 43.7
   },
   "pres_2024_margin": -40.0,
   "gov_2022_margin": -16.2,
@@ -6882,17 +6882,17 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 58.9
+       "value": 59.8
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 9.7
+       "value": 9.3
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.3
+       "value": 1.2
       },
       {
        "key": "message_targets",
@@ -6902,12 +6902,12 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.4
+       "value": 1.2
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.1
+       "value": 0.9
       },
       {
        "key": "available_democrats",
@@ -6917,24 +6917,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 3.9
+       "value": 3.5
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 21.1
+       "value": 21.5
       }
      ],
-     "margin": 32.0,
-     "kobach_base": 58.9,
-     "republican_targets": 9.7,
-     "trump_2024_overperform": 1.3,
+     "margin": 42.2,
+     "kobach_base": 59.8,
+     "republican_targets": 9.3,
+     "trump_2024_overperform": 1.2,
      "message_targets": 0.7,
-     "core_persuasion": 1.4,
-     "vulnerable_middle": 1.1,
+     "core_persuasion": 1.2,
+     "vulnerable_middle": 0.9,
      "available_democrats": 1.9,
-     "democrat_targets": 3.9,
-     "mann_base": 21.1
+     "democrat_targets": 3.5,
+     "mann_base": 21.5
     }
    },
    "model_raga_hm": {
@@ -6989,7 +6989,7 @@
        "value": 22.1
       }
      ],
-     "margin": 34.0,
+     "margin": 43.7,
      "kobach_base": 60.2,
      "republican_targets": 9.6,
      "trump_2024_overperform": 1.2,
@@ -7063,8 +7063,8 @@
    "gov_2022": 10.0,
    "ussen_2022": -9.4,
    "pres_2024": -1.6,
-   "model_raga_all": -12.9,
-   "model_raga_hm": -11.9
+   "model_raga_all": 1.2,
+   "model_raga_hm": 2.9
   },
   "pres_2024_margin": -1.6,
   "gov_2022_margin": 10.0,
@@ -7088,17 +7088,17 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 34.7
+       "value": 35.0
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 14.3
+       "value": 14.0
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.2
+       "value": 1.1
       },
       {
        "key": "message_targets",
@@ -7113,34 +7113,34 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.8
+       "value": 0.6
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.9
+       "value": 2.7
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.7
+       "value": 1.5
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 43.0
+       "value": 43.6
       }
      ],
-     "margin": -12.9,
-     "kobach_base": 34.7,
-     "republican_targets": 14.3,
-     "trump_2024_overperform": 1.2,
+     "margin": 1.2,
+     "kobach_base": 35.0,
+     "republican_targets": 14.0,
+     "trump_2024_overperform": 1.1,
      "message_targets": 0.7,
      "core_persuasion": 0.8,
-     "vulnerable_middle": 0.8,
-     "available_democrats": 2.9,
-     "democrat_targets": 1.7,
-     "mann_base": 43.0
+     "vulnerable_middle": 0.6,
+     "available_democrats": 2.7,
+     "democrat_targets": 1.5,
+     "mann_base": 43.6
     }
    },
    "model_raga_hm": {
@@ -7157,7 +7157,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 15.0
+       "value": 14.9
       },
       {
        "key": "trump_2024_overperform",
@@ -7195,9 +7195,9 @@
        "value": 43.6
       }
      ],
-     "margin": -11.9,
+     "margin": 2.9,
      "kobach_base": 35.0,
-     "republican_targets": 15.0,
+     "republican_targets": 14.9,
      "trump_2024_overperform": 1.1,
      "message_targets": 0.6,
      "core_persuasion": 0.9,
@@ -7269,8 +7269,8 @@
    "gov_2022": -38.0,
    "ussen_2022": -72.0,
    "pres_2024": -64.2,
-   "model_raga_all": 56.6,
-   "model_raga_hm": 60.0
+   "model_raga_all": 66.7,
+   "model_raga_hm": 69.1
   },
   "pres_2024_margin": -64.2,
   "gov_2022_margin": -38.0,
@@ -7294,12 +7294,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 72.1
+       "value": 73.2
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 9.5
+       "value": 8.8
       },
       {
        "key": "trump_2024_overperform",
@@ -7309,12 +7309,12 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 0.7
+       "value": 0.8
       },
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "vulnerable_middle",
@@ -7324,29 +7324,29 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.6
+       "value": 1.5
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.5
+       "value": 2.4
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 11.5
+       "value": 11.4
       }
      ],
-     "margin": 56.6,
-     "kobach_base": 72.1,
-     "republican_targets": 9.5,
+     "margin": 66.7,
+     "kobach_base": 73.2,
+     "republican_targets": 8.8,
      "trump_2024_overperform": 0.6,
-     "message_targets": 0.7,
-     "core_persuasion": 0.6,
+     "message_targets": 0.8,
+     "core_persuasion": 0.5,
      "vulnerable_middle": 0.8,
-     "available_democrats": 1.6,
-     "democrat_targets": 2.5,
-     "mann_base": 11.5
+     "available_democrats": 1.5,
+     "democrat_targets": 2.4,
+     "mann_base": 11.4
     }
    },
    "model_raga_hm": {
@@ -7401,7 +7401,7 @@
        "value": 11.5
       }
      ],
-     "margin": 60.0,
+     "margin": 69.1,
      "kobach_base": 74.1,
      "republican_targets": 9.1,
      "trump_2024_overperform": 0.5,
@@ -7475,8 +7475,8 @@
    "gov_2022": -1.4,
    "ussen_2022": -20.9,
    "pres_2024": -17.5,
-   "model_raga_all": 8.9,
-   "model_raga_hm": 8.3
+   "model_raga_all": 18.7,
+   "model_raga_hm": 17.9
   },
   "pres_2024_margin": -17.5,
   "gov_2022_margin": -1.4,
@@ -7500,12 +7500,12 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 48.0
+       "value": 48.3
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 9.9
+       "value": 9.8
       },
       {
        "key": "trump_2024_overperform",
@@ -7520,39 +7520,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.0
+       "value": 0.8
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.0
+       "value": 0.6
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.8
+       "value": 1.6
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.7
+       "value": 1.6
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 35.6
+       "value": 36.2
       }
      ],
-     "margin": 8.9,
-     "kobach_base": 48.0,
-     "republican_targets": 9.9,
+     "margin": 18.7,
+     "kobach_base": 48.3,
+     "republican_targets": 9.8,
      "trump_2024_overperform": 0.6,
      "message_targets": 0.4,
-     "core_persuasion": 1.0,
-     "vulnerable_middle": 1.0,
-     "available_democrats": 1.8,
-     "democrat_targets": 1.7,
-     "mann_base": 35.6
+     "core_persuasion": 0.8,
+     "vulnerable_middle": 0.6,
+     "available_democrats": 1.6,
+     "democrat_targets": 1.6,
+     "mann_base": 36.2
     }
    },
    "model_raga_hm": {
@@ -7604,10 +7604,10 @@
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 37.5
+       "value": 37.4
       }
      ],
-     "margin": 8.3,
+     "margin": 17.9,
      "kobach_base": 48.2,
      "republican_targets": 9.5,
      "trump_2024_overperform": 0.6,
@@ -7616,7 +7616,7 @@
      "vulnerable_middle": 0.4,
      "available_democrats": 1.3,
      "democrat_targets": 1.1,
-     "mann_base": 37.5
+     "mann_base": 37.4
     }
    }
   }
@@ -7681,8 +7681,8 @@
    "gov_2022": -29.7,
    "ussen_2022": -59.4,
    "pres_2024": -49.5,
-   "model_raga_all": 32.7,
-   "model_raga_hm": 40.3
+   "model_raga_all": 45.2,
+   "model_raga_hm": 51.1
   },
   "pres_2024_margin": -49.5,
   "gov_2022_margin": -29.7,
@@ -7706,59 +7706,59 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 58.3
+       "value": 59.9
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 11.6
+       "value": 10.8
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.3
+       "value": 1.2
       },
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 0.6
+       "value": 0.7
       },
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.7
+       "value": 1.3
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.9
+       "value": 0.7
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 2.5
+       "value": 2.3
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 5.3
+       "value": 5.1
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 17.8
+       "value": 18.1
       }
      ],
-     "margin": 32.7,
-     "kobach_base": 58.3,
-     "republican_targets": 11.6,
-     "trump_2024_overperform": 1.3,
-     "message_targets": 0.6,
-     "core_persuasion": 1.7,
-     "vulnerable_middle": 0.9,
-     "available_democrats": 2.5,
-     "democrat_targets": 5.3,
-     "mann_base": 17.8
+     "margin": 45.2,
+     "kobach_base": 59.9,
+     "republican_targets": 10.8,
+     "trump_2024_overperform": 1.2,
+     "message_targets": 0.7,
+     "core_persuasion": 1.3,
+     "vulnerable_middle": 0.7,
+     "available_democrats": 2.3,
+     "democrat_targets": 5.1,
+     "mann_base": 18.1
     }
    },
    "model_raga_hm": {
@@ -7813,7 +7813,7 @@
        "value": 18.0
       }
      ],
-     "margin": 40.3,
+     "margin": 51.1,
      "kobach_base": 62.9,
      "republican_targets": 10.7,
      "trump_2024_overperform": 1.2,
@@ -7887,8 +7887,8 @@
    "gov_2022": -34.0,
    "ussen_2022": -65.2,
    "pres_2024": -53.7,
-   "model_raga_all": 39.4,
-   "model_raga_hm": 47.6
+   "model_raga_all": 52.7,
+   "model_raga_hm": 59.7
   },
   "pres_2024_margin": -53.7,
   "gov_2022_margin": -34.0,
@@ -7912,17 +7912,17 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 62.0
+       "value": 63.2
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 12.6
+       "value": 11.8
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.4
+       "value": 1.3
       },
       {
        "key": "message_targets",
@@ -7932,12 +7932,12 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "available_democrats",
@@ -7947,7 +7947,7 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 5.5
+       "value": 5.2
       },
       {
        "key": "mann_base",
@@ -7955,15 +7955,15 @@
        "value": 15.3
       }
      ],
-     "margin": 39.4,
-     "kobach_base": 62.0,
-     "republican_targets": 12.6,
-     "trump_2024_overperform": 1.4,
+     "margin": 52.7,
+     "kobach_base": 63.2,
+     "republican_targets": 11.8,
+     "trump_2024_overperform": 1.3,
      "message_targets": 0.4,
-     "core_persuasion": 0.5,
-     "vulnerable_middle": 0.6,
+     "core_persuasion": 0.4,
+     "vulnerable_middle": 0.5,
      "available_democrats": 1.8,
-     "democrat_targets": 5.5,
+     "democrat_targets": 5.2,
      "mann_base": 15.3
     }
    },
@@ -7981,7 +7981,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 12.1
+       "value": 12.2
       },
       {
        "key": "trump_2024_overperform",
@@ -8019,9 +8019,9 @@
        "value": 15.0
       }
      ],
-     "margin": 47.6,
+     "margin": 59.7,
      "kobach_base": 66.6,
-     "republican_targets": 12.1,
+     "republican_targets": 12.2,
      "trump_2024_overperform": 1.2,
      "message_targets": 0.5,
      "core_persuasion": 0.4,
@@ -8093,8 +8093,8 @@
    "gov_2022": -36.1,
    "ussen_2022": -68.6,
    "pres_2024": -61.1,
-   "model_raga_all": 45.5,
-   "model_raga_hm": 48.9
+   "model_raga_all": 58.2,
+   "model_raga_hm": 60.4
   },
   "pres_2024_margin": -61.1,
   "gov_2022_margin": -36.1,
@@ -8118,17 +8118,17 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 65.0
+       "value": 66.0
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 11.7
+       "value": 11.4
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.5
+       "value": 1.4
       },
       {
        "key": "message_targets",
@@ -8138,39 +8138,39 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 1.1
+       "value": 0.9
       },
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.7
+       "value": 0.6
       },
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.6
+       "value": 1.4
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 4.2
+       "value": 3.8
       },
       {
        "key": "mann_base",
        "label": "Mann Base",
-       "value": 13.8
+       "value": 13.9
       }
      ],
-     "margin": 45.5,
-     "kobach_base": 65.0,
-     "republican_targets": 11.7,
-     "trump_2024_overperform": 1.5,
+     "margin": 58.2,
+     "kobach_base": 66.0,
+     "republican_targets": 11.4,
+     "trump_2024_overperform": 1.4,
      "message_targets": 0.6,
-     "core_persuasion": 1.1,
-     "vulnerable_middle": 0.7,
-     "available_democrats": 1.6,
-     "democrat_targets": 4.2,
-     "mann_base": 13.8
+     "core_persuasion": 0.9,
+     "vulnerable_middle": 0.6,
+     "available_democrats": 1.4,
+     "democrat_targets": 3.8,
+     "mann_base": 13.9
     }
    },
    "model_raga_hm": {
@@ -8182,7 +8182,7 @@
       {
        "key": "kobach_base",
        "label": "Kobach Base",
-       "value": 67.0
+       "value": 67.1
       },
       {
        "key": "republican_targets",
@@ -8225,8 +8225,8 @@
        "value": 14.4
       }
      ],
-     "margin": 48.9,
-     "kobach_base": 67.0,
+     "margin": 60.4,
+     "kobach_base": 67.1,
      "republican_targets": 11.4,
      "trump_2024_overperform": 1.4,
      "message_targets": 0.7,

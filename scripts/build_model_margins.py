@@ -95,6 +95,20 @@ MODELS = {
         turnout_col="bin_turnout", all_values=["L", "M", "H"], hm_values=["H", "M"],
         drop_families=["rga"],
     ),
+    "KS": dict(
+        # Replaces the dropped-in Kansas workbook (build_kansas_margins.py, deleted
+        # 2026-09-08) now that the model exists in SQL. Same 9-universe RAGA ladder
+        # (Kobach Base .. Mann Base) and the same two variants, so the view keys are
+        # unchanged — but the NUMBERS MOVED: the SQL model correlates r=0.99 with the
+        # workbook and runs ~3-6 points more Republican, so it is a different cut of
+        # the model rather than a reformatting of the same one. Bases are three-deep
+        # on the Dem side only: 1-2 GOP, 7-9 Dem.
+        mode="universe", table="RAGA_KS_Exchange_20260708",
+        family="raga", family_label="RAGA",
+        univ_col="universenumber", name_col="universename",
+        gop=[1, 2], dem=[7, 8, 9],
+        turnout_col="bin_turnout", all_values=["H", "M", "L"], hm_values=["H", "M"],
+    ),
     # Wisconsin and Michigan share the Aug 2026 refresh format: a Framework column
     # ("Rep"/"Pers"/"Dem") alongside the universe ladder. The margin comes from
     # Framework rather than a universe range, because the two tables do NOT number
@@ -205,8 +219,11 @@ MODELS = {
 ON_HOLD = set()
 
 # States whose model does not come from SQL at all, so build_national_margins must still
-# skip them. Kansas is supplied as a dropped-in workbook (see build_kansas_margins.py).
-EXTERNAL_MODELS = {"KS"}
+# skip them. Empty since 2026-09-08, when Kansas moved from a dropped-in workbook to
+# RAGA_KS_Exchange_20260708 in MODELS above. Kept because the mechanism is the only
+# thing standing between a workbook-sourced state and the national fallback quietly
+# overwriting it.
+EXTERNAL_MODELS = set()
 
 VARIANT_LABEL = {"all": "All", "hm": "H+M"}
 

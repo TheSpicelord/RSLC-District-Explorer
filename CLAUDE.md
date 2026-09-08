@@ -67,7 +67,6 @@ anything they wrote).
 python scripts/build_model_margins.py --states ALL   # dedicated state models (SQL, VPN)
 python scripts/build_national_margins.py             # DR Natl fallback for the rest
 python scripts/build_michigan_vi.py                  # MI Vote Intent (workbook)
-python scripts/build_kansas_margins.py               # KS (workbook)
 ```
 
 **A partial regeneration needs the same full set, not just `build_model_margins.py`.**
@@ -95,12 +94,17 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
 
 | Mode | Margin from | Used by |
 |---|---|---|
-| `universe` | universe ranges (`gop=[..]`, `dem=[..]`) — or `framework_col` when set | NV, PA, AZ, GA, **WI**, **MI**, NJ, **AK**, **IA** |
+| `universe` | universe ranges (`gop=[..]`, `dem=[..]`) — or `framework_col` when set | NV, PA, AZ, GA, **KS**, **WI**, **MI**, NJ, **AK**, **IA** |
 | `flags` | 0/1 audience columns | VA, TX, OR |
 | `score` | continuous support scores | (none currently) |
 
 - **Bucket ranges are per-model, not conventional.** Most run 1–2 rep / 6–7 dem, but GA
   and **IA** run to 9 universes (Dem base 8–9) and NJ/MI use three-deep bases (1–3 / 7–9).
+  **KS is the one asymmetric ladder**: 1–2 GOP against 7–9 Dem, as specified by the model's
+  owner. Universe 7 "Available Democrats" counts as Dem while its mirror, universe 3
+  "Trump 2024 Overperform", counts as neither — worth roughly 1.6 points of margin toward
+  the Dem side against a symmetric split. Deliberate, not a typo; see the IA note above for
+  the version of this that *was* a bug.
 - **IA moved from `flags` to `universe` on 2026-09-05** with the `_V2` refresh
   (`vs.IA_scores_audiences_20260731_V2`), and from the `rga` family to `rslc`. V1 was a
   persuasion subset — 354,382 rows to V2's 2,148,056, one per `dt_regid`, against roughly
@@ -124,9 +128,26 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
 - **`resolve_names`** routes a state through the shared resolver in `district_ids.py`
   instead of the integer district path. Alaska needs it: its senate districts are letters
   the voter file only spells out ("DISTRICT A" → `00A`).
-- **`EXTERNAL_MODELS`** (Kansas) and `ON_HOLD` are both treated as "has a dedicated
-  model" by `build_national_margins.py`, so the fallback never overwrites them. Omitting a
-  state there is how it silently inherits national numbers.
+- **`EXTERNAL_MODELS`** and `ON_HOLD` are both treated as "has a dedicated model" by
+  `build_national_margins.py`, so the fallback never overwrites them. Omitting a state
+  there is how it silently inherits national numbers. `EXTERNAL_MODELS` is **empty** since
+  2026-09-08 — Kansas was its only member — but the mechanism stays, because it is the
+  only thing standing between a workbook-sourced state and the national fallback.
+
+### Kansas moved from workbook to SQL (2026-09-08)
+
+`build_kansas_margins.py` is **deleted** and `data/Kansas Model.xlsx` is out of the
+pipeline; KS is now a normal `MODELS` entry reading `RAGA_KS_Exchange_20260708`. Same
+9-universe RAGA ladder, same `model_raga_all` / `model_raga_hm` view keys, same two
+variants — so nothing in `app.js` changed.
+
+**The numbers moved, and by a lot.** The SQL model runs about **10 points more Republican**
+than the workbook did (house mean +10.1 "All" / +10.6 "H+M"; senate +10.2 / +10.5; range
+−2.8 to +22.3). It is not a reformatting of the same cut: no `bin_turnout` subset
+reproduces the workbook, and neither does weighting by `turnout2026score` (the gap only
+narrows to ~8). District *ranking* is nearly identical (r = 0.99) — only the level differs,
+so these are two vintages of one model. The builder was deleted rather than left in place
+because re-running it would silently walk every Kansas district back ~10 points.
 - **`NATIONAL_EXCLUDE`** = AK, HI: the national audiences carry a ~47 point systematic
   bias in states with unusual party registration, so the number is left blank rather than
   shown. AK now has a dedicated model, so this is only a second guard for it.
