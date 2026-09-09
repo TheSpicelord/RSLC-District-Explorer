@@ -131,6 +131,22 @@ def floterial_margins(by_district):
     return out
 
 
+def is_floterial(abbr, chamber, district_id):
+    """Is this district a New Hampshire floterial?
+
+    Consumers need this because floterial and base districts OVERLAP: a New
+    Hampshire voter is counted once in a base district and again in the floterial
+    above it, so adding up a house district column double-counts by design and
+    lands well above the statewide total. Statewide figures are computed
+    per-voter and never by summing districts, so they are unaffected - but
+    anything that does sum districts must skip these.
+    """
+    if abbr != "NH" or chamber != "house":
+        return False
+    text = str(district_id).strip()
+    return (text.zfill(3) if text.isdigit() else text) in FLOTERIAL_PARTS
+
+
 def floterial_counts(dmap, tlmap, stats, buckets):
     """Synthesize floterial entries from base-district COUNTS (the ABEV shape).
 

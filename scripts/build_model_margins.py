@@ -175,6 +175,51 @@ MODELS = {
             drop_families=["drnatl"],
         ),
     ],
+    # Ohio: three races off one audience file, the same shape as NH and OR - each
+    # race is its own FAMILY so they sit side by side as columns, with the
+    # "variant" slot naming the race. Published as "OH".
+    #
+    # NOTE the governor columns are gov_ballot_ramaswamy_audience /
+    # gov_ballot_acton_audience - NO `named_` infix, unlike the senate pair. The
+    # file also carries cong_ballot_COMBINED_rep/dem beside the generic pair used
+    # here; the generic ballot is the one specified, and it is also what the ABEV
+    # Tracker buckets Ohio on.
+    #
+    # All three pairs are mutually exclusive (zero rows carry both) and none is
+    # exhaustive: 7.9% of voters are in neither senate audience, 7.9% neither
+    # governor, 9.4% neither congressional. Those land in "Unaligned".
+    #
+    # Same VS schema and rnc_reg_id join column as NH. Joins 7,882,801 of
+    # 7,962,550 Ohio voters (99.0%).
+    "OH": [
+        dict(
+            mode="flags", schema="VS", table="OH_Audiences_20260812",
+            regid_col="rnc_reg_id",
+            family="ohsen", family_label="OH US Sen",
+            gop_cols=["sen_ballot_named_husted_audience"],
+            dem_cols=["sen_ballot_named_brown_audience"],
+            flag_true="1", flag_quoted=False,
+            drop_families=["drnatl"],
+        ),
+        dict(
+            mode="flags", schema="VS", table="OH_Audiences_20260812",
+            regid_col="rnc_reg_id",
+            family="ohgov", family_label="OH Gov",
+            gop_cols=["gov_ballot_ramaswamy_audience"],
+            dem_cols=["gov_ballot_acton_audience"],
+            flag_true="1", flag_quoted=False,
+            drop_families=["drnatl"],
+        ),
+        dict(
+            mode="flags", schema="VS", table="OH_Audiences_20260812",
+            regid_col="rnc_reg_id",
+            family="ohcon", family_label="OH Con",
+            gop_cols=["cong_ballot_generic_rep_audience"],
+            dem_cols=["cong_ballot_generic_dem_audience"],
+            flag_true="1", flag_quoted=False,
+            drop_families=["drnatl"],
+        ),
+    ],
     "NJ": dict(
         mode="universe", table="RSLC_NJ_Transfer_20250712",
         family="rslc", family_label="RSLC",

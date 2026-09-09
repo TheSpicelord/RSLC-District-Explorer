@@ -148,6 +148,24 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
   `hm_values`) or from flag columns (`turnout_cols` / `all_cols`). "All" is rarely the
   whole table: GA and WI/MI use H/M/L only, and IA/AK exclude rows carrying no turnout
   flag at all.
+### Ohio: three races off one file ("OH")
+
+Same shape as NH and Oregon — `VS.OH_Audiences_20260812`, one table, three *families*:
+`model_ohsen_all` ("OH / US Sen", Husted vs Brown), `model_ohgov_all` ("OH / Gov",
+Ramaswamy vs Acton) and `model_ohcon_all` ("OH / Con", the generic congressional ballot).
+
+- **The governor columns have no `named_` infix** — they are `gov_ballot_ramaswamy_audience`
+  and `gov_ballot_acton_audience`, unlike the senate pair's `sen_ballot_named_*`. The file
+  also carries `cong_ballot_combined_rep/dem` beside the generic pair; **generic** is what
+  both projects use.
+- All three pairs are mutually exclusive (zero rows carry both) and none is exhaustive:
+  7.9% are in neither senate audience, 7.9% neither governor, 9.4% neither congressional.
+  Those land in "Unaligned".
+- Same `VS` schema, `rnc_reg_id` join column and `nvarchar(MAX)` index problem as NH. Joins
+  **7,882,801 of 7,962,550** Ohio voters (99.0%). 99/99 house and 33/33 senate.
+- **The ABEV Tracker buckets Ohio on the CONGRESSIONAL ballot**, so an Ohio lean there
+  matches this project's "OH Con" column, not its Sen or Gov ones.
+
 ### New Hampshire: two races off one file ("SUN")
 
 NH follows the **Oregon** pattern — one audience table, two *families* rather than two
