@@ -33,6 +33,7 @@ from pathlib import Path
 
 from db import connect, load_config
 from district_ids import make_resolver
+from nh_floterials import floterial_margins
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
@@ -703,6 +704,15 @@ def main():
                         recs = json.loads(path.read_text(encoding="utf-8"))
                         resolve = make_resolver(state, chamber, recs)
                     results = {v: agg(rows, chamber, v, cfg, resolve) for v in variants}
+                    # New Hampshire's floterial districts overlay whole base
+                    # districts and so are never present in the source; they are
+                    # aggregated from their constituents instead. See
+                    # nh_floterials.py for the mapping and how it was validated.
+                    if state == "NH" and chamber == "house":
+                        for variant, by_district in results.items():
+                            built = floterial_margins(by_district)
+                            by_district.update(built)
+                        print(f"    +{len(built)} floterial districts aggregated from their base districts")
                     patch_chamber(state, chamber, cfg, results, dry_run=args.dry_run)
 
 

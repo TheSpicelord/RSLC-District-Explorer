@@ -166,11 +166,25 @@ names the race: `model_sunsen_all` ("SUN / US Sen") and `model_sungov_all` ("SUN
   `fetch_flags` and `fetch_score` hardcoded `JOIN [{table}]` and never honoured `schema`
   (only `fetch_universe` went through `table_ref()`, which is why AK worked). Both now use
   `table_ref()`. It joins **100%** of the NH voter file, 916,682 of 916,682.
-- **Coverage is 164 of 203 house districts, and that is the ceiling, not a defect.** The 39
-  missing are NH's **floterial** districts, which overlay base districts; a voter belongs to
-  a base district *and* a floterial, but `voterfile_2026.StateLegLowerDistrict` holds one
-  value, so a floterial can never be populated from it. The national fallback covered
-  exactly the same 164, so every NH model has this limit. Senate is complete at 24/24.
+- **Floterial districts are COMPUTED, so the house is complete at 203/203.** A floterial has
+  no territory of its own — it overlays whole base districts and elects extra members across
+  them — and `voterfile_2026.StateLegLowerDistrict` holds one value per voter, so it can
+  never be read directly. `scripts/nh_floterials.py` holds the mapping and synthesises them
+  from their constituents; the builder calls it for NH house only. Margin and each segment
+  share are **n-weighted means**, which is exact rather than approximate: those numbers are
+  already per-voter shares, so `sum(n_k * x_k) / sum(n_k)` equals pooling the voters and
+  recomputing. A floterial is only built when **every** constituent is present.
+  - The mapping was derived **geometrically**, not typed: the state's floterial boundaries
+    reprojected onto the Census base districts, taking a base district as a constituent at
+    >=80% area containment. Four checks had to agree before it was used — all 39 ids exist
+    in `nh_house.json`; no base district is claimed twice; **seats reconcile exactly at
+    342 + 58 = 400**, the true size of the NH House; and each floterial's constituents cover
+    98.3–100% of its polygon (median 99.9%) with <=0.7% spill. Re-run the module as a script
+    to regenerate after a redraw, and re-copy it to the ABEV Tracker, which keeps its own
+    identical copy rather than importing across projects.
+  - Verified after building: every floterial margin lies inside its constituents' min/max,
+    which is the invariant an n-weighted mean must satisfy, and segment shares sum to 100.
+  - Senate is complete at 24/24 and needs none of this — NH floterials are house-only.
 - Sanity check that held: the mean across senate districts (Sen −4.3, Gov +6.1) reproduces
   the statewide net computed straight off the table (−4.2, +6.4).
 - `drop_families=["drnatl"]` clears the national fallback NH used to carry. **No state
