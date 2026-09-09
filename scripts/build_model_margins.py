@@ -136,6 +136,44 @@ MODELS = {
         turnout_col="bin_turnout", all_values=["H", "M", "L"], hm_values=["H", "M"],
         preserve=["model_rslc_vi"],
     ),
+    # New Hampshire runs two races off one audience file, the way Oregon runs two
+    # ballots: each is its own FAMILY whose "variant" slot names the race, so the
+    # two appear side by side as columns rather than as turnout variants of one
+    # model. Published as "SUN".
+    #
+    # The two audiences are mutually exclusive - verified, zero rows carry both -
+    # but they are NOT exhaustive: 9.2% of voters (84,322) are in neither Senate
+    # audience and 9.7% (88,727) in neither Governor audience. Those land in
+    # "Unaligned", which is what agg_flags already does with a row that is neither
+    # GOP nor Dem, so the margin is right either way.
+    #
+    # Note the regid column is `rnc_reg_id`, not dt_regid, and the table lives in
+    # the VS schema - it is the first flags-mode model outside dbo, which is why
+    # fetch_flags/fetch_score now go through table_ref().  It joins 100% of the NH
+    # voter file (916,682 of 916,682).
+    "NH": [
+        dict(
+            mode="flags", schema="VS", table="NH_Audiences_20260812",
+            regid_col="rnc_reg_id",
+            family="sunsen", family_label="SUN US Sen",
+            gop_cols=["sen_ballot_named_sununu_audience"],
+            dem_cols=["sen_ballot_named_pappas_audience"],
+            flag_true="1", flag_quoted=False,
+            # NH was on the national fallback until now. No state carries both a
+            # dedicated model and drnatl - all 26 dedicated-model files drop it -
+            # so clear the stale keys rather than leave a third column behind.
+            drop_families=["drnatl"],
+        ),
+        dict(
+            mode="flags", schema="VS", table="NH_Audiences_20260812",
+            regid_col="rnc_reg_id",
+            family="sungov", family_label="SUN Gov",
+            gop_cols=["gov_ballot_named_ayotte_audience"],
+            dem_cols=["gov_ballot_named_dem_audience"],
+            flag_true="1", flag_quoted=False,
+            drop_families=["drnatl"],
+        ),
+    ],
     "NJ": dict(
         mode="universe", table="RSLC_NJ_Transfer_20250712",
         family="rslc", family_label="RSLC",
@@ -334,7 +372,7 @@ def fetch_flags(cur, state, cfg):
                {av_sel} AS av,
                COUNT(*) AS cnt
         FROM voterfile_2026 v
-        JOIN [{cfg['table']}] m ON {JOIN.format(col=cfg.get('regid_col', 'dt_regid'))}
+        JOIN {table_ref(cfg)} m ON {JOIN.format(col=cfg.get('regid_col', 'dt_regid'))}
         WHERE v.State = ?
         GROUP BY v.StateLegUpperDistrict, v.StateLegLowerDistrict,
                  CASE WHEN {gop} THEN 1 ELSE 0 END,
@@ -350,7 +388,7 @@ def fetch_score(cur, state, cfg):
                SUM(CAST(m.[{cfg['rep_col']}] AS float)) AS r,
                SUM(CAST(m.[{cfg['dem_col']}] AS float)) AS d
         FROM voterfile_2026 v
-        JOIN [{cfg['table']}] m ON {JOIN.format(col=cfg.get('regid_col', 'dt_regid'))}
+        JOIN {table_ref(cfg)} m ON {JOIN.format(col=cfg.get('regid_col', 'dt_regid'))}
         WHERE v.State = ?
         GROUP BY v.StateLegUpperDistrict, v.StateLegLowerDistrict
     """

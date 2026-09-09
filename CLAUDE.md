@@ -118,7 +118,7 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
 | Mode | Margin from | Used by |
 |---|---|---|
 | `universe` | universe ranges (`gop=[..]`, `dem=[..]`) — or `framework_col` when set | NV, PA, AZ, GA, **KS**, **WI**, **MI**, NJ, **AK**, **IA** |
-| `flags` | 0/1 audience columns | VA, TX, OR |
+| `flags` | 0/1 audience columns | VA, TX, OR, **NH** |
 | `score` | continuous support scores | (none currently) |
 
 - **Bucket ranges are per-model, not conventional.** Most run 1–2 rep / 6–7 dem, but GA
@@ -148,6 +148,38 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
   `hm_values`) or from flag columns (`turnout_cols` / `all_cols`). "All" is rarely the
   whole table: GA and WI/MI use H/M/L only, and IA/AK exclude rows carrying no turnout
   flag at all.
+### New Hampshire: two races off one file ("SUN")
+
+NH follows the **Oregon** pattern — one audience table, two *families* rather than two
+turnout variants of one, so the races sit side by side as columns and the "variant" slot
+names the race: `model_sunsen_all` ("SUN / US Sen") and `model_sungov_all` ("SUN / Gov").
+
+- Senate ballot: `sen_ballot_named_sununu_audience` vs `sen_ballot_named_pappas_audience`.
+  Governor: `gov_ballot_named_ayotte_audience` vs `gov_ballot_named_dem_audience`.
+- The pairs are mutually exclusive (**zero** rows carry both) but **not exhaustive**:
+  **9.2%** of voters are in neither Senate audience and **9.7%** in neither Governor one.
+  Those land in "Unaligned", which is what `agg_flags` already does with a row that is
+  neither, so the margin is unaffected — but do not describe this model as having no
+  persuasion bucket. The affinity bar is GOP Framework / Unaligned / Dem Framework.
+- **The regid column is `rnc_reg_id`, not `dt_regid`,** and the table lives in the **`VS`**
+  schema. It is the first flags-mode model outside `dbo`, which exposed a real gap:
+  `fetch_flags` and `fetch_score` hardcoded `JOIN [{table}]` and never honoured `schema`
+  (only `fetch_universe` went through `table_ref()`, which is why AK worked). Both now use
+  `table_ref()`. It joins **100%** of the NH voter file, 916,682 of 916,682.
+- **Coverage is 164 of 203 house districts, and that is the ceiling, not a defect.** The 39
+  missing are NH's **floterial** districts, which overlay base districts; a voter belongs to
+  a base district *and* a floterial, but `voterfile_2026.StateLegLowerDistrict` holds one
+  value, so a floterial can never be populated from it. The national fallback covered
+  exactly the same 164, so every NH model has this limit. Senate is complete at 24/24.
+- Sanity check that held: the mean across senate districts (Sen −4.3, Gov +6.1) reproduces
+  the statewide net computed straight off the table (−4.2, +6.4).
+- `drop_families=["drnatl"]` clears the national fallback NH used to carry. **No state
+  carries both a dedicated model and `drnatl`** — all 26 dedicated-model files drop it —
+  so leaving it would have shown a third column only New Hampshire has.
+- **The ABEV Tracker deliberately does NOT have this model yet.** Which of the two races
+  should classify absentee ballots is an open decision; add it to `STATE_MODELS` there once
+  it is made.
+
 - **`resolve_names`** routes a state through the shared resolver in `district_ids.py`
   instead of the integer district path. Alaska needs it: its senate districts are letters
   the voter file only spells out ("DISTRICT A" → `00A`).

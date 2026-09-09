@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260908c";
+import { requireAuth } from "./modules/auth.js?v=20260909a";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -20,7 +20,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260908c";
+} from "./modules/config.js?v=20260909a";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -43,8 +43,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260908c";
-import { state } from "./modules/state.js?v=20260908c";
+} from "./modules/dom.js?v=20260909a";
+import { state } from "./modules/state.js?v=20260909a";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -77,15 +77,19 @@ const MODEL_VIEW_META = {
   // distinct families whose "variant" slot names the ballot question instead.
   model_rslcleg_all:  { label: "RSLC Leg",   order: 7,  tableTop: "RSLC", tableBottom: "Leg" },
   model_rslcgov_all:  { label: "RSLC Gov",   order: 8,  tableTop: "RSLC", tableBottom: "Gov" },
-  model_rga_hm:       { label: "RGA (H+M)",  order: 9,  tableTop: "RGA",  tableBottom: "H+M" },
-  model_rga_all:      { label: "RGA (All)",  order: 10, tableTop: "RGA",  tableBottom: "All" },
-  model_lombardo_hm:  { label: "Lom (H+M)",  order: 11, tableTop: "Lom",  tableBottom: "H+M" },
-  model_lombardo_all: { label: "Lom (All)",  order: 12, tableTop: "Lom",  tableBottom: "All" },
-  model_raga_hm:      { label: "RAGA (H+M)", order: 13, tableTop: "RAGA", tableBottom: "H+M" },
-  model_raga_all:     { label: "RAGA (All)", order: 14, tableTop: "RAGA", tableBottom: "All" },
+  // New Hampshire, same shape as Oregon: one audience file, two races, so each is
+  // its own family and the "variant" slot names the race rather than a turnout cut.
+  model_sunsen_all:   { label: "SUN US Sen", order: 9,  tableTop: "SUN",  tableBottom: "US Sen" },
+  model_sungov_all:   { label: "SUN Gov",    order: 10, tableTop: "SUN",  tableBottom: "Gov" },
+  model_rga_hm:       { label: "RGA (H+M)",  order: 11,  tableTop: "RGA",  tableBottom: "H+M" },
+  model_rga_all:      { label: "RGA (All)",  order: 12, tableTop: "RGA",  tableBottom: "All" },
+  model_lombardo_hm:  { label: "Lom (H+M)",  order: 13, tableTop: "Lom",  tableBottom: "H+M" },
+  model_lombardo_all: { label: "Lom (All)",  order: 14, tableTop: "Lom",  tableBottom: "All" },
+  model_raga_hm:      { label: "RAGA (H+M)", order: 15, tableTop: "RAGA", tableBottom: "H+M" },
+  model_raga_all:     { label: "RAGA (All)", order: 16, tableTop: "RAGA", tableBottom: "All" },
   // National fallback for states with no state-specific model. Ordered last so a
   // dedicated model always wins when a state somehow has both.
-  model_drnatl_all:   { label: "DR Natl",    order: 15, tableTop: "DR",   tableBottom: "Natl" },
+  model_drnatl_all:   { label: "DR Natl",    order: 17, tableTop: "DR",   tableBottom: "Natl" },
 };
 
 const MODEL_SEGMENT_COLOR_CLASSES = {
@@ -177,13 +181,15 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_rslcak_",
   "model_rslcleg_",
   "model_rslcgov_",
+  "model_sunsen_",
+  "model_sungov_",
   "model_rga_",
   "model_raga_",
   "model_lombardo_",
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260908c";
+const BUILD_VERSION = "20260909a";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();

@@ -59,7 +59,8 @@
    "gov_2022": -25.9,
    "ussen_2022": 0.4,
    "pres_2024": -8.9,
-   "model_drnatl_all": 21.9
+   "model_sunsen_all": 7.0,
+   "model_sungov_all": 21.5
   },
   "pres_2024_margin": -8.9,
   "gov_2022_margin": -25.9,
@@ -74,32 +75,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 55.0
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 48.1
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 11.9
+       "value": 10.8
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 33.1
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 41.1
       }
      ],
-     "margin": 21.9,
-     "gop_legislative": 55.0,
-     "unaligned": 11.9,
-     "dem_legislative": 33.1
+     "margin": 7.0,
+     "gop_framework": 48.1,
+     "unaligned": 10.8,
+     "dem_framework": 41.1
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 55.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 9.8
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 34.4
+      }
+     ],
+     "margin": 21.5,
+     "gop_framework": 55.9,
+     "unaligned": 9.8,
+     "dem_framework": 34.4
     }
    }
   }
@@ -164,7 +193,8 @@
    "gov_2022": -29.1,
    "ussen_2022": -1.2,
    "pres_2024": -5.1,
-   "model_drnatl_all": 17.0
+   "model_sunsen_all": 7.9,
+   "model_sungov_all": 19.2
   },
   "pres_2024_margin": -5.1,
   "gov_2022_margin": -29.1,
@@ -179,32 +209,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 53.5
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 49.4
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 9.9
+       "value": 9.1
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 36.5
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 41.5
       }
      ],
-     "margin": 17.0,
-     "gop_legislative": 53.5,
-     "unaligned": 9.9,
-     "dem_legislative": 36.5
+     "margin": 7.9,
+     "gop_framework": 49.4,
+     "unaligned": 9.1,
+     "dem_framework": 41.5
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 54.6
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 35.4
+      }
+     ],
+     "margin": 19.2,
+     "gop_framework": 54.6,
+     "unaligned": 10.0,
+     "dem_framework": 35.4
     }
    }
   }
@@ -269,7 +327,8 @@
    "gov_2022": -25.8,
    "ussen_2022": -0.3,
    "pres_2024": -4.5,
-   "model_drnatl_all": 14.8
+   "model_sunsen_all": 3.0,
+   "model_sungov_all": 18.8
   },
   "pres_2024_margin": -4.5,
   "gov_2022_margin": -25.8,
@@ -284,32 +343,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 51.4
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 46.3
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 12.1
+       "value": 10.4
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 36.6
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 43.3
       }
      ],
-     "margin": 14.8,
-     "gop_legislative": 51.4,
-     "unaligned": 12.1,
-     "dem_legislative": 36.6
+     "margin": 3.0,
+     "gop_framework": 46.3,
+     "unaligned": 10.4,
+     "dem_framework": 43.3
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 54.1
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 35.4
+      }
+     ],
+     "margin": 18.8,
+     "gop_framework": 54.1,
+     "unaligned": 10.5,
+     "dem_framework": 35.4
     }
    }
   }
@@ -374,7 +461,8 @@
    "gov_2022": 2.9,
    "ussen_2022": 28.1,
    "pres_2024": 21.1,
-   "model_drnatl_all": -21.2
+   "model_sunsen_all": -25.8,
+   "model_sungov_all": -17.7
   },
   "pres_2024_margin": 21.1,
   "gov_2022_margin": 2.9,
@@ -389,32 +477,60 @@
    "dem": "David Watters"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 33.3
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 33.1
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 12.1
+       "value": 7.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 54.5
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 58.9
       }
      ],
-     "margin": -21.2,
-     "gop_legislative": 33.3,
-     "unaligned": 12.1,
-     "dem_legislative": 54.5
+     "margin": -25.8,
+     "gop_framework": 33.1,
+     "unaligned": 7.9,
+     "dem_framework": 58.9
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 36.1
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 53.8
+      }
+     ],
+     "margin": -17.7,
+     "gop_framework": 36.1,
+     "unaligned": 10.1,
+     "dem_framework": 53.8
     }
    }
   }
@@ -479,7 +595,8 @@
    "gov_2022": 21.0,
    "ussen_2022": 42.5,
    "pres_2024": 38.7,
-   "model_drnatl_all": -36.7
+   "model_sunsen_all": -43.0,
+   "model_sungov_all": -33.3
   },
   "pres_2024_margin": 38.7,
   "gov_2022_margin": 21.0,
@@ -494,32 +611,60 @@
    "dem": "Suzanne Prentiss"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 26.9
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 25.0
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 9.4
+       "value": 7.0
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 63.6
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 68.0
       }
      ],
-     "margin": -36.7,
-     "gop_legislative": 26.9,
-     "unaligned": 9.4,
-     "dem_legislative": 63.6
+     "margin": -43.0,
+     "gop_framework": 25.0,
+     "unaligned": 7.0,
+     "dem_framework": 68.0
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 29.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 8.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 62.6
+      }
+     ],
+     "margin": -33.3,
+     "gop_framework": 29.3,
+     "unaligned": 8.1,
+     "dem_framework": 62.6
     }
    }
   }
@@ -584,7 +729,8 @@
    "gov_2022": -30.2,
    "ussen_2022": -6.2,
    "pres_2024": -11.2,
-   "model_drnatl_all": 21.7
+   "model_sunsen_all": 10.0,
+   "model_sungov_all": 22.9
   },
   "pres_2024_margin": -11.2,
   "gov_2022_margin": -30.2,
@@ -599,32 +745,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 54.8
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 50.0
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 12.1
+       "value": 10.1
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 33.1
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 40.0
       }
      ],
-     "margin": 21.7,
-     "gop_legislative": 54.8,
-     "unaligned": 12.1,
-     "dem_legislative": 33.1
+     "margin": 10.0,
+     "gop_framework": 50.0,
+     "unaligned": 10.1,
+     "dem_framework": 40.0
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 56.3
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.3
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 33.4
+      }
+     ],
+     "margin": 22.9,
+     "gop_framework": 56.3,
+     "unaligned": 10.3,
+     "dem_framework": 33.4
     }
    }
   }
@@ -689,7 +863,8 @@
    "gov_2022": -21.4,
    "ussen_2022": 1.3,
    "pres_2024": -6.8,
-   "model_drnatl_all": 9.3
+   "model_sunsen_all": 2.9,
+   "model_sungov_all": 17.2
   },
   "pres_2024_margin": -6.8,
   "gov_2022_margin": -21.4,
@@ -704,16 +879,44 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 49.3
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 46.2
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.4
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 43.4
+      }
+     ],
+     "margin": 2.9,
+     "gop_framework": 46.2,
+     "unaligned": 10.4,
+     "dem_framework": 43.4
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 53.3
       },
       {
        "key": "unaligned",
@@ -721,15 +924,15 @@
        "value": 10.6
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 40.0
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 36.1
       }
      ],
-     "margin": 9.3,
-     "gop_legislative": 49.3,
+     "margin": 17.2,
+     "gop_framework": 53.3,
      "unaligned": 10.6,
-     "dem_legislative": 40.0
+     "dem_framework": 36.1
     }
    }
   }
@@ -794,7 +997,8 @@
    "gov_2022": -27.1,
    "ussen_2022": -4.9,
    "pres_2024": -11.5,
-   "model_drnatl_all": 18.7
+   "model_sunsen_all": 10.4,
+   "model_sungov_all": 22.3
   },
   "pres_2024_margin": -11.5,
   "gov_2022_margin": -27.1,
@@ -809,32 +1013,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 53.6
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 49.5
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 11.5
+       "value": 11.3
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 34.9
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 39.1
       }
      ],
-     "margin": 18.7,
-     "gop_legislative": 53.6,
-     "unaligned": 11.5,
-     "dem_legislative": 34.9
+     "margin": 10.4,
+     "gop_framework": 49.5,
+     "unaligned": 11.3,
+     "dem_framework": 39.1
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 56.0
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.4
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 33.7
+      }
+     ],
+     "margin": 22.3,
+     "gop_framework": 56.0,
+     "unaligned": 10.4,
+     "dem_framework": 33.7
     }
    }
   }
@@ -899,7 +1131,8 @@
    "gov_2022": -21.0,
    "ussen_2022": 4.3,
    "pres_2024": -0.9,
-   "model_drnatl_all": 11.3
+   "model_sunsen_all": 3.5,
+   "model_sungov_all": 13.7
   },
   "pres_2024_margin": -0.9,
   "gov_2022_margin": -21.0,
@@ -914,32 +1147,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 49.4
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 47.3
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 12.4
+       "value": 8.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 38.1
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 43.8
       }
      ],
-     "margin": 11.3,
-     "gop_legislative": 49.4,
-     "unaligned": 12.4,
-     "dem_legislative": 38.1
+     "margin": 3.5,
+     "gop_framework": 47.3,
+     "unaligned": 8.9,
+     "dem_framework": 43.8
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 51.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 38.2
+      }
+     ],
+     "margin": 13.7,
+     "gop_framework": 51.9,
+     "unaligned": 10.0,
+     "dem_framework": 38.2
     }
    }
   }
@@ -1004,7 +1265,8 @@
    "gov_2022": 14.9,
    "ussen_2022": 33.8,
    "pres_2024": 24.3,
-   "model_drnatl_all": -26.9
+   "model_sunsen_all": -32.6,
+   "model_sungov_all": -21.9
   },
   "pres_2024_margin": 24.3,
   "gov_2022_margin": 14.9,
@@ -1019,32 +1281,60 @@
    "dem": "Donovan Fenton"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 31.5
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 29.9
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 10.0
+       "value": 7.6
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 58.4
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 62.5
       }
      ],
-     "margin": -26.9,
-     "gop_legislative": 31.5,
-     "unaligned": 10.0,
-     "dem_legislative": 58.4
+     "margin": -32.6,
+     "gop_framework": 29.9,
+     "unaligned": 7.6,
+     "dem_framework": 62.5
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 34.6
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 8.8
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 56.6
+      }
+     ],
+     "margin": -21.9,
+     "gop_framework": 34.6,
+     "unaligned": 8.8,
+     "dem_framework": 56.6
     }
    }
   }
@@ -1109,7 +1399,8 @@
    "gov_2022": -16.6,
    "ussen_2022": 10.7,
    "pres_2024": 6.0,
-   "model_drnatl_all": 4.1
+   "model_sunsen_all": -1.4,
+   "model_sungov_all": 10.4
   },
   "pres_2024_margin": 6.0,
   "gov_2022_margin": -16.6,
@@ -1124,32 +1415,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 44.6
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 44.3
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 14.8
+       "value": 9.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 40.6
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 45.8
       }
      ],
-     "margin": 4.1,
-     "gop_legislative": 44.6,
-     "unaligned": 14.8,
-     "dem_legislative": 40.6
+     "margin": -1.4,
+     "gop_framework": 44.3,
+     "unaligned": 9.9,
+     "dem_framework": 45.8
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 49.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.7
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 39.4
+      }
+     ],
+     "margin": 10.4,
+     "gop_framework": 49.9,
+     "unaligned": 10.7,
+     "dem_framework": 39.4
     }
    }
   }
@@ -1214,7 +1533,8 @@
    "gov_2022": -18.4,
    "ussen_2022": 5.6,
    "pres_2024": 0.7,
-   "model_drnatl_all": -0.5
+   "model_sunsen_all": 1.7,
+   "model_sungov_all": 11.4
   },
   "pres_2024_margin": 0.7,
   "gov_2022_margin": -18.4,
@@ -1229,32 +1549,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 44.3
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 46.1
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 10.8
+       "value": 9.6
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 44.9
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 44.3
       }
      ],
-     "margin": -0.5,
-     "gop_legislative": 44.3,
-     "unaligned": 10.8,
-     "dem_legislative": 44.9
+     "margin": 1.7,
+     "gop_framework": 46.1,
+     "unaligned": 9.6,
+     "dem_framework": 44.3
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 50.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 9.9
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 39.3
+      }
+     ],
+     "margin": 11.4,
+     "gop_framework": 50.7,
+     "unaligned": 9.9,
+     "dem_framework": 39.3
     }
    }
   }
@@ -1319,7 +1667,8 @@
    "gov_2022": -3.9,
    "ussen_2022": 21.3,
    "pres_2024": 13.5,
-   "model_drnatl_all": -21.6
+   "model_sunsen_all": -20.5,
+   "model_sungov_all": -13.6
   },
   "pres_2024_margin": 13.5,
   "gov_2022_margin": -3.9,
@@ -1334,32 +1683,60 @@
    "dem": "Cindy Rosenwald"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 33.5
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 35.4
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 11.4
+       "value": 8.8
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 55.1
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 55.9
       }
      ],
-     "margin": -21.6,
-     "gop_legislative": 33.5,
-     "unaligned": 11.4,
-     "dem_legislative": 55.1
+     "margin": -20.5,
+     "gop_framework": 35.4,
+     "unaligned": 8.8,
+     "dem_framework": 55.9
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 38.2
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 51.7
+      }
+     ],
+     "margin": -13.6,
+     "gop_framework": 38.2,
+     "unaligned": 10.1,
+     "dem_framework": 51.7
     }
    }
   }
@@ -1424,7 +1801,8 @@
    "gov_2022": -32.1,
    "ussen_2022": -5.1,
    "pres_2024": -8.7,
-   "model_drnatl_all": 12.8
+   "model_sunsen_all": 11.2,
+   "model_sungov_all": 20.4
   },
   "pres_2024_margin": -8.7,
   "gov_2022_margin": -32.1,
@@ -1439,32 +1817,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 48.5
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 50.7
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 15.7
+       "value": 9.7
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 35.8
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 39.6
       }
      ],
-     "margin": 12.8,
-     "gop_legislative": 48.5,
-     "unaligned": 15.7,
-     "dem_legislative": 35.8
+     "margin": 11.2,
+     "gop_framework": 50.7,
+     "unaligned": 9.7,
+     "dem_framework": 39.6
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 54.9
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.6
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 34.5
+      }
+     ],
+     "margin": 20.4,
+     "gop_framework": 54.9,
+     "unaligned": 10.6,
+     "dem_framework": 34.5
     }
    }
   }
@@ -1529,7 +1935,8 @@
    "gov_2022": 8.4,
    "ussen_2022": 33.2,
    "pres_2024": 25.2,
-   "model_drnatl_all": -23.7
+   "model_sunsen_all": -26.1,
+   "model_sungov_all": -18.6
   },
   "pres_2024_margin": 25.2,
   "gov_2022_margin": 8.4,
@@ -1544,32 +1951,60 @@
    "dem": "Tara Reardon"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 33.3
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 33.6
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 9.6
+       "value": 6.7
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 57.0
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 59.7
       }
      ],
-     "margin": -23.7,
-     "gop_legislative": 33.3,
-     "unaligned": 9.6,
-     "dem_legislative": 57.0
+     "margin": -26.1,
+     "gop_framework": 33.6,
+     "unaligned": 6.7,
+     "dem_framework": 59.7
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 36.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 8.1
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 55.2
+      }
+     ],
+     "margin": -18.6,
+     "gop_framework": 36.7,
+     "unaligned": 8.1,
+     "dem_framework": 55.2
     }
    }
   }
@@ -1634,7 +2069,8 @@
    "gov_2022": -27.8,
    "ussen_2022": -0.1,
    "pres_2024": -5.3,
-   "model_drnatl_all": 8.3
+   "model_sunsen_all": 6.5,
+   "model_sungov_all": 16.5
   },
   "pres_2024_margin": -5.3,
   "gov_2022_margin": -27.8,
@@ -1649,32 +2085,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 47.6
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 48.5
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 13.1
+       "value": 9.6
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 39.3
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 41.9
       }
      ],
-     "margin": 8.3,
-     "gop_legislative": 47.6,
-     "unaligned": 13.1,
-     "dem_legislative": 39.3
+     "margin": 6.5,
+     "gop_framework": 48.5,
+     "unaligned": 9.6,
+     "dem_framework": 41.9
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 53.4
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 9.7
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 36.9
+      }
+     ],
+     "margin": 16.5,
+     "gop_framework": 53.4,
+     "unaligned": 9.7,
+     "dem_framework": 36.9
     }
    }
   }
@@ -1739,7 +2203,8 @@
    "gov_2022": -27.8,
    "ussen_2022": -5.3,
    "pres_2024": -13.0,
-   "model_drnatl_all": 17.1
+   "model_sunsen_all": 13.3,
+   "model_sungov_all": 24.5
   },
   "pres_2024_margin": -13.0,
   "gov_2022_margin": -27.8,
@@ -1754,16 +2219,44 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 53.3
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 51.4
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.6
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 38.0
+      }
+     ],
+     "margin": 13.3,
+     "gop_framework": 51.4,
+     "unaligned": 10.6,
+     "dem_framework": 38.0
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 57.0
       },
       {
        "key": "unaligned",
@@ -1771,15 +2264,15 @@
        "value": 10.5
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 36.2
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 32.5
       }
      ],
-     "margin": 17.1,
-     "gop_legislative": 53.3,
+     "margin": 24.5,
+     "gop_framework": 57.0,
      "unaligned": 10.5,
-     "dem_legislative": 36.2
+     "dem_framework": 32.5
     }
    }
   }
@@ -1844,7 +2337,8 @@
    "gov_2022": -22.6,
    "ussen_2022": 6.7,
    "pres_2024": -0.0,
-   "model_drnatl_all": -2.8
+   "model_sunsen_all": -6.9,
+   "model_sungov_all": -0.3
   },
   "pres_2024_margin": -0.0,
   "gov_2022_margin": -22.6,
@@ -1859,32 +2353,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 41.4
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 41.8
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 14.4
+       "value": 9.5
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 44.2
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 48.7
       }
      ],
-     "margin": -2.8,
-     "gop_legislative": 41.4,
-     "unaligned": 14.4,
-     "dem_legislative": 44.2
+     "margin": -6.9,
+     "gop_framework": 41.8,
+     "unaligned": 9.5,
+     "dem_framework": 48.7
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 44.4
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.9
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 44.7
+      }
+     ],
+     "margin": -0.3,
+     "gop_framework": 44.4,
+     "unaligned": 10.9,
+     "dem_framework": 44.7
     }
    }
   }
@@ -1949,7 +2471,8 @@
    "gov_2022": -33.0,
    "ussen_2022": -6.9,
    "pres_2024": -13.0,
-   "model_drnatl_all": 16.7
+   "model_sunsen_all": 16.4,
+   "model_sungov_all": 26.8
   },
   "pres_2024_margin": -13.0,
   "gov_2022_margin": -33.0,
@@ -1964,32 +2487,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 50.9
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 53.0
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 15.0
+       "value": 10.3
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 34.1
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 36.6
       }
      ],
-     "margin": 16.7,
-     "gop_legislative": 50.9,
-     "unaligned": 15.0,
-     "dem_legislative": 34.1
+     "margin": 16.4,
+     "gop_framework": 53.0,
+     "unaligned": 10.3,
+     "dem_framework": 36.6
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 58.6
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 9.7
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 31.7
+      }
+     ],
+     "margin": 26.8,
+     "gop_framework": 58.6,
+     "unaligned": 9.7,
+     "dem_framework": 31.7
     }
    }
   }
@@ -2054,7 +2605,8 @@
    "gov_2022": -7.7,
    "ussen_2022": 19.4,
    "pres_2024": 9.3,
-   "model_drnatl_all": -18.6
+   "model_sunsen_all": -21.8,
+   "model_sungov_all": -15.1
   },
   "pres_2024_margin": 9.3,
   "gov_2022_margin": -7.7,
@@ -2069,32 +2621,60 @@
    "dem": "Patrick Long"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 34.9
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 34.5
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 11.5
+       "value": 9.2
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 53.6
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 56.3
       }
      ],
-     "margin": -18.6,
-     "gop_legislative": 34.9,
-     "unaligned": 11.5,
-     "dem_legislative": 53.6
+     "margin": -21.8,
+     "gop_framework": 34.5,
+     "unaligned": 9.2,
+     "dem_framework": 56.3
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 37.2
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 10.5
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 52.3
+      }
+     ],
+     "margin": -15.1,
+     "gop_framework": 37.2,
+     "unaligned": 10.5,
+     "dem_framework": 52.3
     }
    }
   }
@@ -2159,7 +2739,8 @@
    "gov_2022": 21.0,
    "ussen_2022": 44.4,
    "pres_2024": 37.3,
-   "model_drnatl_all": -42.0
+   "model_sunsen_all": -43.7,
+   "model_sungov_all": -38.1
   },
   "pres_2024_margin": 37.3,
   "gov_2022_margin": 21.0,
@@ -2174,32 +2755,60 @@
    "dem": "Rebecca Kwoka"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 24.4
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 25.5
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 9.2
+       "value": 5.4
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 66.4
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 69.2
       }
      ],
-     "margin": -42.0,
-     "gop_legislative": 24.4,
-     "unaligned": 9.2,
-     "dem_legislative": 66.4
+     "margin": -43.7,
+     "gop_framework": 25.5,
+     "unaligned": 5.4,
+     "dem_framework": 69.2
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 27.7
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 6.6
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 65.7
+      }
+     ],
+     "margin": -38.1,
+     "gop_framework": 27.7,
+     "unaligned": 6.6,
+     "dem_framework": 65.7
     }
    }
   }
@@ -2264,7 +2873,8 @@
    "gov_2022": -38.1,
    "ussen_2022": -14.3,
    "pres_2024": -19.8,
-   "model_drnatl_all": 17.7
+   "model_sunsen_all": 19.5,
+   "model_sungov_all": 30.8
   },
   "pres_2024_margin": -19.8,
   "gov_2022_margin": -38.1,
@@ -2279,32 +2889,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 51.0
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 54.2
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 15.8
+       "value": 11.0
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 33.2
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 34.7
       }
      ],
-     "margin": 17.7,
-     "gop_legislative": 51.0,
-     "unaligned": 15.8,
-     "dem_legislative": 33.2
+     "margin": 19.5,
+     "gop_framework": 54.2,
+     "unaligned": 11.0,
+     "dem_framework": 34.7
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 60.6
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 9.6
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 29.8
+      }
+     ],
+     "margin": 30.8,
+     "gop_framework": 60.6,
+     "unaligned": 9.6,
+     "dem_framework": 29.8
     }
    }
   }
@@ -2369,7 +3007,8 @@
    "gov_2022": -33.1,
    "ussen_2022": -11.1,
    "pres_2024": -16.3,
-   "model_drnatl_all": 21.8
+   "model_sunsen_all": 17.0,
+   "model_sungov_all": 30.7
   },
   "pres_2024_margin": -16.3,
   "gov_2022_margin": -33.1,
@@ -2384,32 +3023,60 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 53.4
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 53.1
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 15.0
+       "value": 10.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 31.6
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 36.1
       }
      ],
-     "margin": 21.8,
-     "gop_legislative": 53.4,
-     "unaligned": 15.0,
-     "dem_legislative": 31.6
+     "margin": 17.0,
+     "gop_framework": 53.1,
+     "unaligned": 10.9,
+     "dem_framework": 36.1
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 60.4
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 9.8
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 29.7
+      }
+     ],
+     "margin": 30.7,
+     "gop_framework": 60.4,
+     "unaligned": 9.8,
+     "dem_framework": 29.7
     }
    }
   }
@@ -2474,7 +3141,8 @@
    "gov_2022": -3.3,
    "ussen_2022": 19.8,
    "pres_2024": 17.8,
-   "model_drnatl_all": -7.8
+   "model_sunsen_all": -12.7,
+   "model_sungov_all": -1.9
   },
   "pres_2024_margin": 17.8,
   "gov_2022_margin": -3.3,
@@ -2489,32 +3157,60 @@
    "dem": "Debra Altschiller"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_sunsen_all": {
+    "label": "SUN US Sen (All)",
+    "family": "SUN US Sen",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
+       "key": "gop_framework",
+       "label": "GOP Framework",
        "value": 40.5
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 11.1
+       "value": 6.4
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 48.3
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 53.2
       }
      ],
-     "margin": -7.8,
-     "gop_legislative": 40.5,
-     "unaligned": 11.1,
-     "dem_legislative": 48.3
+     "margin": -12.7,
+     "gop_framework": 40.5,
+     "unaligned": 6.4,
+     "dem_framework": 53.2
+    }
+   },
+   "model_sungov_all": {
+    "label": "SUN Gov (All)",
+    "family": "SUN Gov",
+    "variant": "All",
+    "affinity": {
+     "segments": [
+      {
+       "key": "gop_framework",
+       "label": "GOP Framework",
+       "value": 45.1
+      },
+      {
+       "key": "unaligned",
+       "label": "Unaligned",
+       "value": 8.0
+      },
+      {
+       "key": "dem_framework",
+       "label": "Dem Framework",
+       "value": 46.9
+      }
+     ],
+     "margin": -1.9,
+     "gop_framework": 45.1,
+     "unaligned": 8.0,
+     "dem_framework": 46.9
     }
    }
   }
