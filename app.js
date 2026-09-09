@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260909c";
+import { requireAuth } from "./modules/auth.js?v=20260909d";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -20,7 +20,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260909c";
+} from "./modules/config.js?v=20260909d";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -43,8 +43,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260909c";
-import { state } from "./modules/state.js?v=20260909c";
+} from "./modules/dom.js?v=20260909d";
+import { state } from "./modules/state.js?v=20260909d";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -196,7 +196,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260909c";
+const BUILD_VERSION = "20260909d";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();

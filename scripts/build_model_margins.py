@@ -80,11 +80,21 @@ MODELS = {
         turnout_col="bin_turnout", hm_values=["H", "M"],
         drop_families=["hrcc"],
     ),
+    # Arizona moved to the Aug 2026 refresh on 2026-09-09, replacing
+    # RGA_AZ_R2_Exchange_20260121 (RGA family, universes 1-2 / 6-7). Same format
+    # as the WI/MI refreshes: an explicit Framework column beside a 9-universe
+    # ladder, so the margin comes from Framework rather than a universe range.
+    # That matters here - the old range was 6-7 for Dem, but this ladder puts
+    # "Available Dems" at 7 and the Democrat base at 9, so the old range would
+    # have missed universes 8 and 9 entirely.
+    # drop_families clears the stale model_rga_* keys.
     "AZ": dict(
-        mode="universe", table="RGA_AZ_R2_Exchange_20260121",
-        family="rga", family_label="RGA",
+        mode="universe", table="RSLC_AZ_Exchange_20260819",
+        family="rslc", family_label="RSLC",
         univ_col="universenumber", name_col="universename",
-        gop=[1, 2], dem=[6, 7],
+        framework_col="Framework", framework_gop=["Rep"], framework_dem=["Dem"],
+        turnout_col="bin_turnout", all_values=["H", "M", "L"], hm_values=["H", "M"],
+        drop_families=["rga"],
     ),
     "GA": dict(
         # Replaces the older RGA_GA_R1 model; 9 universes rather than 7, so the Dem base

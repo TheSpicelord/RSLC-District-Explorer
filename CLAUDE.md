@@ -139,8 +139,13 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
   names mirror cleanly (1 Lahn Base / 2 Republican Targets … 8 Democrat Targets / 9 Sand
   Base), so IA takes GA's 1–2 / 8–9 split. `drop_families=["rga"]` clears the stale V1
   `model_rga_*` keys. Shared with the ABEV Tracker's `STATE_MODELS["IA"]`.
-- **`framework_col` beats a universe range.** The Aug 2026 WI/MI refreshes and the AK
-  model carry an explicit framework column beside the ladder. WI and MI do *not* number
+- **`framework_col` beats a universe range.** The Aug 2026 WI/MI/**AZ** refreshes and the AK
+  model carry an explicit framework column beside the ladder. **Arizona is the sharpest
+  example of why it matters**: it moved to `RSLC_AZ_Exchange_20260819` on 2026-09-09 from a
+  config that used universes 6–7 for Dem, but the new ladder puts "Available Dems" at 7 and
+  the Democrat base at **9**, so that range would have dropped universes 8 and 9 — over 2.2M
+  Democrat-framework voters — into persuasion. It also changed family (`rga` → `rslc`), so
+  `drop_families=["rga"]` clears the stale keys. WI and MI do *not* number
   their universes the same way — "Available Dems" is 7 (Pers) in WI, 6 (Dem) in MI — so a
   range right for one mis-buckets the other. The ladder still drives the affinity
   breakdown; the aggregator warns if a universe ever spans two frameworks.

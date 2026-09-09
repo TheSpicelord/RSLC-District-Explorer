@@ -66,7 +66,8 @@
    "gov_2022": -27.6,
    "ussen_2022": -24.2,
    "pres_2024": -33.5,
-   "model_rga_all": 32.1
+   "model_rslc_all": 32.1,
+   "model_rslc_hm": 33.2
   },
   "pres_2024_margin": -33.5,
   "gov_2022_margin": -27.6,
@@ -81,56 +82,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 56.2
+       "value": 61.0
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.6
+       "value": 2.4
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 8.4
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.0
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.0
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.0
+       "value": 1.7
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.0
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.5
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 3.6
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.5
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 23.2
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.1
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 26.8
       }
      ],
      "margin": 32.1,
-     "republican_base": 56.2,
-     "republican_targets": 2.6,
-     "trust_targets": 8.4,
-     "stubborn_middle": 2.0,
-     "vulnerable_targets": 4.0,
-     "likelier_democrats": 3.6,
-     "hobbs_base": 23.2
+     "republican_base": 61.0,
+     "republican_targets": 2.4,
+     "2024_trump_overperform": 2.0,
+     "message_targets": 1.0,
+     "stubborn_middle": 1.7,
+     "vulnerable_middle": 0.5,
+     "available_dems": 2.5,
+     "democrat_targets": 2.1,
+     "democrat_base": 26.8
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 62.2
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.2
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.6
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 0.9
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.6
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.3
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.9
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.7
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 27.6
+      }
+     ],
+     "margin": 33.2,
+     "republican_base": 62.2,
+     "republican_targets": 2.2,
+     "2024_trump_overperform": 1.6,
+     "message_targets": 0.9,
+     "stubborn_middle": 1.6,
+     "vulnerable_middle": 0.3,
+     "available_dems": 1.9,
+     "democrat_targets": 1.7,
+     "democrat_base": 27.6
     }
    }
   }
@@ -202,7 +279,8 @@
    "gov_2022": 1.8,
    "ussen_2022": 5.8,
    "pres_2024": -5.5,
-   "model_rga_all": -3.4
+   "model_rslc_all": -1.2,
+   "model_rslc_hm": -0.5
   },
   "pres_2024_margin": -5.5,
   "gov_2022_margin": 1.8,
@@ -217,56 +295,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 39.4
+       "value": 42.2
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.1
+       "value": 3.1
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 7.8
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 3.0
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.8
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.0
+       "value": 1.6
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 5.0
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.8
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 4.9
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.3
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 39.9
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.3
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 41.9
       }
      ],
-     "margin": -3.4,
-     "republican_base": 39.4,
-     "republican_targets": 2.1,
-     "trust_targets": 7.8,
-     "stubborn_middle": 1.0,
-     "vulnerable_targets": 5.0,
-     "likelier_democrats": 4.9,
-     "hobbs_base": 39.9
+     "margin": -1.2,
+     "republican_base": 42.2,
+     "republican_targets": 3.1,
+     "2024_trump_overperform": 3.0,
+     "message_targets": 1.8,
+     "stubborn_middle": 1.6,
+     "vulnerable_middle": 1.8,
+     "available_dems": 2.3,
+     "democrat_targets": 2.3,
+     "democrat_base": 41.9
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 43.8
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.6
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.4
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.5
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.6
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.2
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.0
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 43.2
+      }
+     ],
+     "margin": -0.5,
+     "republican_base": 43.8,
+     "republican_targets": 2.6,
+     "2024_trump_overperform": 2.4,
+     "message_targets": 1.5,
+     "stubborn_middle": 1.6,
+     "vulnerable_middle": 1.2,
+     "available_dems": 1.8,
+     "democrat_targets": 2.0,
+     "democrat_base": 43.2
     }
    }
   }
@@ -338,7 +492,8 @@
    "gov_2022": -19.6,
    "ussen_2022": -16.4,
    "pres_2024": -24.4,
-   "model_rga_all": 19.0
+   "model_rslc_all": 21.1,
+   "model_rslc_hm": 21.7
   },
   "pres_2024_margin": -24.4,
   "gov_2022_margin": -19.6,
@@ -353,56 +508,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 49.9
+       "value": 53.5
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 1.9
+       "value": 2.9
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 10.1
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.4
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.5
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.6
+       "value": 2.8
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 3.6
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.5
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 4.1
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.2
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 28.7
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.7
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 30.4
       }
      ],
-     "margin": 19.0,
-     "republican_base": 49.9,
-     "republican_targets": 1.9,
-     "trust_targets": 10.1,
-     "stubborn_middle": 1.6,
-     "vulnerable_targets": 3.6,
-     "likelier_democrats": 4.1,
-     "hobbs_base": 28.7
+     "margin": 21.1,
+     "republican_base": 53.5,
+     "republican_targets": 2.9,
+     "2024_trump_overperform": 2.4,
+     "message_targets": 1.5,
+     "stubborn_middle": 2.8,
+     "vulnerable_middle": 1.5,
+     "available_dems": 2.2,
+     "democrat_targets": 2.7,
+     "democrat_base": 30.4
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 54.5
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.8
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.0
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.5
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.8
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.9
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.9
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.5
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 31.2
+      }
+     ],
+     "margin": 21.7,
+     "republican_base": 54.5,
+     "republican_targets": 2.8,
+     "2024_trump_overperform": 2.0,
+     "message_targets": 1.5,
+     "stubborn_middle": 2.8,
+     "vulnerable_middle": 0.9,
+     "available_dems": 1.9,
+     "democrat_targets": 2.5,
+     "democrat_base": 31.2
     }
    }
   }
@@ -474,7 +705,8 @@
    "gov_2022": 3.9,
    "ussen_2022": 7.0,
    "pres_2024": -3.5,
-   "model_rga_all": -2.6
+   "model_rslc_all": -0.9,
+   "model_rslc_hm": -0.5
   },
   "pres_2024_margin": -3.5,
   "gov_2022_margin": 3.9,
@@ -489,56 +721,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 40.7
+       "value": 41.9
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 1.6
+       "value": 3.6
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 8.1
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.2
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.7
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.2
+       "value": 2.3
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 3.6
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.9
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 4.6
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.5
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 40.2
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.4
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 41.5
       }
      ],
-     "margin": -2.6,
-     "republican_base": 40.7,
-     "republican_targets": 1.6,
-     "trust_targets": 8.1,
-     "stubborn_middle": 1.2,
-     "vulnerable_targets": 3.6,
-     "likelier_democrats": 4.6,
-     "hobbs_base": 40.2
+     "margin": -0.9,
+     "republican_base": 41.9,
+     "republican_targets": 3.6,
+     "2024_trump_overperform": 2.2,
+     "message_targets": 1.7,
+     "stubborn_middle": 2.3,
+     "vulnerable_middle": 1.9,
+     "available_dems": 2.5,
+     "democrat_targets": 2.4,
+     "democrat_base": 41.5
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 43.0
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 3.2
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.9
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.7
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.3
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.1
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.0
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.3
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 42.4
+      }
+     ],
+     "margin": -0.5,
+     "republican_base": 43.0,
+     "republican_targets": 3.2,
+     "2024_trump_overperform": 1.9,
+     "message_targets": 1.7,
+     "stubborn_middle": 2.3,
+     "vulnerable_middle": 1.1,
+     "available_dems": 2.0,
+     "democrat_targets": 2.3,
+     "democrat_base": 42.4
     }
    }
   }
@@ -610,7 +918,8 @@
    "gov_2022": 44.4,
    "ussen_2022": 47.0,
    "pres_2024": 36.3,
-   "model_rga_all": -43.6
+   "model_rslc_all": -43.5,
+   "model_rslc_hm": -43.4
   },
   "pres_2024_margin": 36.3,
   "gov_2022_margin": 44.4,
@@ -625,56 +934,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 21.7
+       "value": 21.5
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 1.3
+       "value": 3.0
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 5.0
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.8
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.0
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 0.8
+       "value": 1.6
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.7
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 2.1
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 7.2
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.1
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 59.4
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.1
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 63.8
       }
      ],
-     "margin": -43.6,
-     "republican_base": 21.7,
-     "republican_targets": 1.3,
-     "trust_targets": 5.0,
-     "stubborn_middle": 0.8,
-     "vulnerable_targets": 4.7,
-     "likelier_democrats": 7.2,
-     "hobbs_base": 59.4
+     "margin": -43.5,
+     "republican_base": 21.5,
+     "republican_targets": 3.0,
+     "2024_trump_overperform": 1.8,
+     "message_targets": 2.0,
+     "stubborn_middle": 1.6,
+     "vulnerable_middle": 2.1,
+     "available_dems": 2.1,
+     "democrat_targets": 2.1,
+     "democrat_base": 63.8
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 22.4
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.6
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.7
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.7
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.5
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.6
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.6
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 65.1
+      }
+     ],
+     "margin": -43.4,
+     "republican_base": 22.4,
+     "republican_targets": 2.6,
+     "2024_trump_overperform": 1.7,
+     "message_targets": 1.7,
+     "stubborn_middle": 1.5,
+     "vulnerable_middle": 1.6,
+     "available_dems": 1.6,
+     "democrat_targets": 1.8,
+     "democrat_base": 65.1
     }
    }
   }
@@ -746,7 +1131,8 @@
    "gov_2022": 36.7,
    "ussen_2022": 41.3,
    "pres_2024": 27.1,
-   "model_rga_all": -30.6
+   "model_rslc_all": -32.0,
+   "model_rslc_hm": -35.5
   },
   "pres_2024_margin": 27.1,
   "gov_2022_margin": 36.7,
@@ -761,56 +1147,132 @@
    "dem": "Theresa Hatathlie"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 23.5
+       "value": 25.7
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 4.8
+       "value": 3.9
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 6.0
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.2
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.8
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 0.9
+       "value": 1.4
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 5.7
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 3.4
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 10.9
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 0.6
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 48.1
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.1
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 58.9
       }
      ],
-     "margin": -30.6,
-     "republican_base": 23.5,
-     "republican_targets": 4.8,
-     "trust_targets": 6.0,
-     "stubborn_middle": 0.9,
-     "vulnerable_targets": 5.7,
-     "likelier_democrats": 10.9,
-     "hobbs_base": 48.1
+     "margin": -32.0,
+     "republican_base": 25.7,
+     "republican_targets": 3.9,
+     "2024_trump_overperform": 2.2,
+     "message_targets": 1.8,
+     "stubborn_middle": 1.4,
+     "vulnerable_middle": 3.4,
+     "available_dems": 0.6,
+     "democrat_targets": 2.1,
+     "democrat_base": 58.9
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 25.6
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 3.4
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.7
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.4
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.1
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 2.4
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 0.4
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 62.2
+      }
+     ],
+     "margin": -35.5,
+     "republican_base": 25.6,
+     "republican_targets": 3.4,
+     "2024_trump_overperform": 1.7,
+     "message_targets": 1.4,
+     "stubborn_middle": 1.1,
+     "vulnerable_middle": 2.4,
+     "available_dems": 0.4,
+     "democrat_targets": 1.8,
+     "democrat_base": 62.2
     }
    }
   }
@@ -882,7 +1344,8 @@
    "gov_2022": -24.0,
    "ussen_2022": -19.5,
    "pres_2024": -29.6,
-   "model_rga_all": 24.1
+   "model_rslc_all": 26.7,
+   "model_rslc_hm": 28.8
   },
   "pres_2024_margin": -29.6,
   "gov_2022_margin": -24.0,
@@ -897,56 +1360,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 52.1
+       "value": 57.1
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.7
+       "value": 3.0
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 8.2
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.3
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.6
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
+       "value": 1.4
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.2
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.1
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 29.5
+      }
+     ],
+     "margin": 26.7,
+     "republican_base": 57.1,
+     "republican_targets": 3.0,
+     "2024_trump_overperform": 2.3,
+     "message_targets": 1.6,
+     "stubborn_middle": 1.4,
+     "vulnerable_middle": 1.2,
+     "available_dems": 2.1,
+     "democrat_targets": 1.8,
+     "democrat_base": 29.5
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 59.1
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.6
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.9
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.4
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.3
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.8
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
        "value": 1.6
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.6
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.4
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 4.7
-      },
-      {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 26.0
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 29.9
       }
      ],
-     "margin": 24.1,
-     "republican_base": 52.1,
-     "republican_targets": 2.7,
-     "trust_targets": 8.2,
-     "stubborn_middle": 1.6,
-     "vulnerable_targets": 4.6,
-     "likelier_democrats": 4.7,
-     "hobbs_base": 26.0
+     "margin": 28.8,
+     "republican_base": 59.1,
+     "republican_targets": 2.6,
+     "2024_trump_overperform": 1.9,
+     "message_targets": 1.4,
+     "stubborn_middle": 1.3,
+     "vulnerable_middle": 0.8,
+     "available_dems": 1.6,
+     "democrat_targets": 1.4,
+     "democrat_base": 29.9
     }
    }
   }
@@ -1018,7 +1557,8 @@
    "gov_2022": 29.7,
    "ussen_2022": 33.0,
    "pres_2024": 19.6,
-   "model_rga_all": -30.4
+   "model_rslc_all": -28.5,
+   "model_rslc_hm": -28.2
   },
   "pres_2024_margin": 19.6,
   "gov_2022_margin": 29.7,
@@ -1033,56 +1573,132 @@
    "dem": "Lauren Kuby"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 26.3
+       "value": 26.9
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 1.7
+       "value": 4.0
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 7.2
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.1
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.7
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 0.8
+       "value": 2.0
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 5.5
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 2.8
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 6.9
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.1
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 51.5
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.0
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 55.3
       }
      ],
-     "margin": -30.4,
-     "republican_base": 26.3,
-     "republican_targets": 1.7,
-     "trust_targets": 7.2,
-     "stubborn_middle": 0.8,
-     "vulnerable_targets": 5.5,
-     "likelier_democrats": 6.9,
-     "hobbs_base": 51.5
+     "margin": -28.5,
+     "republican_base": 26.9,
+     "republican_targets": 4.0,
+     "2024_trump_overperform": 2.1,
+     "message_targets": 2.7,
+     "stubborn_middle": 2.0,
+     "vulnerable_middle": 2.8,
+     "available_dems": 2.1,
+     "democrat_targets": 2.0,
+     "democrat_base": 55.3
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 28.7
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 3.3
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.9
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.2
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.8
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.9
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.6
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 56.8
+      }
+     ],
+     "margin": -28.2,
+     "republican_base": 28.7,
+     "republican_targets": 3.3,
+     "2024_trump_overperform": 1.9,
+     "message_targets": 2.2,
+     "stubborn_middle": 1.8,
+     "vulnerable_middle": 1.9,
+     "available_dems": 1.6,
+     "democrat_targets": 1.8,
+     "democrat_base": 56.8
     }
    }
   }
@@ -1154,7 +1770,8 @@
    "gov_2022": 8.0,
    "ussen_2022": 12.2,
    "pres_2024": 3.0,
-   "model_rga_all": -15.0
+   "model_rslc_all": -10.0,
+   "model_rslc_hm": -7.0
   },
   "pres_2024_margin": 3.0,
   "gov_2022_margin": 8.0,
@@ -1169,56 +1786,132 @@
    "dem": "Kiana Sears"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 34.3
+       "value": 37.7
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 1.8
+       "value": 3.5
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 6.5
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.5
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.9
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 0.9
+       "value": 1.4
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 5.3
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.8
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 6.7
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.7
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 44.5
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.4
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 46.0
       }
      ],
-     "margin": -15.0,
-     "republican_base": 34.3,
-     "republican_targets": 1.8,
-     "trust_targets": 6.5,
-     "stubborn_middle": 0.9,
-     "vulnerable_targets": 5.3,
-     "likelier_democrats": 6.7,
-     "hobbs_base": 44.5
+     "margin": -10.0,
+     "republican_base": 37.7,
+     "republican_targets": 3.5,
+     "2024_trump_overperform": 2.5,
+     "message_targets": 1.9,
+     "stubborn_middle": 1.4,
+     "vulnerable_middle": 1.8,
+     "available_dems": 2.7,
+     "democrat_targets": 2.4,
+     "democrat_base": 46.0
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 40.3
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 3.0
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.2
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.6
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.3
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.3
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.0
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.0
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 46.3
+      }
+     ],
+     "margin": -7.0,
+     "republican_base": 40.3,
+     "republican_targets": 3.0,
+     "2024_trump_overperform": 2.2,
+     "message_targets": 1.6,
+     "stubborn_middle": 1.3,
+     "vulnerable_middle": 1.3,
+     "available_dems": 2.0,
+     "democrat_targets": 2.0,
+     "democrat_base": 46.3
     }
    }
   }
@@ -1290,7 +1983,8 @@
    "gov_2022": -15.9,
    "ussen_2022": -11.6,
    "pres_2024": -20.8,
-   "model_rga_all": 14.9
+   "model_rslc_all": 16.0,
+   "model_rslc_hm": 18.1
   },
   "pres_2024_margin": -20.8,
   "gov_2022_margin": -15.9,
@@ -1305,16 +1999,16 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 47.5
+       "value": 52.0
       },
       {
        "key": "republican_targets",
@@ -1322,39 +2016,115 @@
        "value": 2.5
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 8.3
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.4
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.5
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.8
+       "value": 1.7
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.8
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.5
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 4.7
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.7
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 30.4
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.9
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 32.9
       }
      ],
-     "margin": 14.9,
-     "republican_base": 47.5,
+     "margin": 16.0,
+     "republican_base": 52.0,
      "republican_targets": 2.5,
-     "trust_targets": 8.3,
-     "stubborn_middle": 1.8,
-     "vulnerable_targets": 4.8,
-     "likelier_democrats": 4.7,
-     "hobbs_base": 30.4
+     "2024_trump_overperform": 2.4,
+     "message_targets": 1.5,
+     "stubborn_middle": 1.7,
+     "vulnerable_middle": 1.5,
+     "available_dems": 2.7,
+     "democrat_targets": 2.9,
+     "democrat_base": 32.9
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 53.8
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.3
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.1
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.4
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.7
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.9
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.1
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.4
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 33.3
+      }
+     ],
+     "margin": 18.1,
+     "republican_base": 53.8,
+     "republican_targets": 2.3,
+     "2024_trump_overperform": 2.1,
+     "message_targets": 1.4,
+     "stubborn_middle": 1.7,
+     "vulnerable_middle": 0.9,
+     "available_dems": 2.1,
+     "democrat_targets": 2.4,
+     "democrat_base": 33.3
     }
    }
   }
@@ -1426,7 +2196,8 @@
    "gov_2022": 49.9,
    "ussen_2022": 53.9,
    "pres_2024": 39.7,
-   "model_rga_all": -48.0
+   "model_rslc_all": -49.9,
+   "model_rslc_hm": -52.3
   },
   "pres_2024_margin": 39.7,
   "gov_2022_margin": 49.9,
@@ -1441,56 +2212,132 @@
    "dem": "Catherine Miranda"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 16.4
+       "value": 17.4
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.1
+       "value": 3.0
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 7.7
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.6
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.0
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 0.8
+       "value": 1.5
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 6.5
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 3.2
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 6.7
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.6
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 59.9
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 3.4
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 65.3
       }
      ],
-     "margin": -48.0,
-     "republican_base": 16.4,
-     "republican_targets": 2.1,
-     "trust_targets": 7.7,
-     "stubborn_middle": 0.8,
-     "vulnerable_targets": 6.5,
-     "likelier_democrats": 6.7,
-     "hobbs_base": 59.9
+     "margin": -49.9,
+     "republican_base": 17.4,
+     "republican_targets": 3.0,
+     "2024_trump_overperform": 2.6,
+     "message_targets": 2.0,
+     "stubborn_middle": 1.5,
+     "vulnerable_middle": 3.2,
+     "available_dems": 1.6,
+     "democrat_targets": 3.4,
+     "democrat_base": 65.3
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 17.8
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.6
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.0
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.5
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.3
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 2.2
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.2
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.6
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 68.9
+      }
+     ],
+     "margin": -52.3,
+     "republican_base": 17.8,
+     "republican_targets": 2.6,
+     "2024_trump_overperform": 2.0,
+     "message_targets": 1.5,
+     "stubborn_middle": 1.3,
+     "vulnerable_middle": 2.2,
+     "available_dems": 1.2,
+     "democrat_targets": 2.6,
+     "democrat_base": 68.9
     }
    }
   }
@@ -1562,7 +2409,8 @@
    "gov_2022": 21.7,
    "ussen_2022": 25.1,
    "pres_2024": 15.8,
-   "model_rga_all": -22.8
+   "model_rslc_all": -21.2,
+   "model_rslc_hm": -20.8
   },
   "pres_2024_margin": 15.8,
   "gov_2022_margin": 21.7,
@@ -1577,56 +2425,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 31.0
+       "value": 32.9
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 1.5
+       "value": 2.9
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 7.0
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.1
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.5
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.0
+       "value": 1.8
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.1
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.8
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 5.8
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.1
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 49.5
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.7
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 52.1
       }
      ],
-     "margin": -22.8,
-     "republican_base": 31.0,
-     "republican_targets": 1.5,
-     "trust_targets": 7.0,
-     "stubborn_middle": 1.0,
-     "vulnerable_targets": 4.1,
-     "likelier_democrats": 5.8,
-     "hobbs_base": 49.5
+     "margin": -21.2,
+     "republican_base": 32.9,
+     "republican_targets": 2.9,
+     "2024_trump_overperform": 2.1,
+     "message_targets": 1.5,
+     "stubborn_middle": 1.8,
+     "vulnerable_middle": 1.8,
+     "available_dems": 2.1,
+     "democrat_targets": 2.7,
+     "democrat_base": 52.1
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 34.0
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.5
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.7
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.4
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.8
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.2
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.5
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 53.1
+      }
+     ],
+     "margin": -20.8,
+     "republican_base": 34.0,
+     "republican_targets": 2.5,
+     "2024_trump_overperform": 1.7,
+     "message_targets": 1.4,
+     "stubborn_middle": 1.8,
+     "vulnerable_middle": 1.2,
+     "available_dems": 1.8,
+     "democrat_targets": 2.5,
+     "democrat_base": 53.1
     }
    }
   }
@@ -1698,7 +2622,8 @@
    "gov_2022": 3.9,
    "ussen_2022": 7.9,
    "pres_2024": -1.2,
-   "model_rga_all": -6.8
+   "model_rslc_all": -4.0,
+   "model_rslc_hm": -2.3
   },
   "pres_2024_margin": -1.2,
   "gov_2022_margin": 3.9,
@@ -1713,56 +2638,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 37.5
+       "value": 41.1
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 1.9
+       "value": 3.0
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 8.2
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.7
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.3
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.3
+       "value": 1.9
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.8
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.8
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 5.2
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.2
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 41.1
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.8
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 43.1
       }
      ],
-     "margin": -6.8,
-     "republican_base": 37.5,
-     "republican_targets": 1.9,
-     "trust_targets": 8.2,
-     "stubborn_middle": 1.3,
-     "vulnerable_targets": 4.8,
-     "likelier_democrats": 5.2,
-     "hobbs_base": 41.1
+     "margin": -4.0,
+     "republican_base": 41.1,
+     "republican_targets": 3.0,
+     "2024_trump_overperform": 2.7,
+     "message_targets": 1.3,
+     "stubborn_middle": 1.9,
+     "vulnerable_middle": 1.8,
+     "available_dems": 2.2,
+     "democrat_targets": 2.8,
+     "democrat_base": 43.1
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 43.0
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.6
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.1
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.2
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.0
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.1
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.5
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 43.6
+      }
+     ],
+     "margin": -2.3,
+     "republican_base": 43.0,
+     "republican_targets": 2.6,
+     "2024_trump_overperform": 2.1,
+     "message_targets": 1.2,
+     "stubborn_middle": 2.0,
+     "vulnerable_middle": 1.1,
+     "available_dems": 1.8,
+     "democrat_targets": 2.5,
+     "democrat_base": 43.6
     }
    }
   }
@@ -1834,7 +2835,8 @@
    "gov_2022": -12.9,
    "ussen_2022": -9.1,
    "pres_2024": -18.2,
-   "model_rga_all": 11.3
+   "model_rslc_all": 11.3,
+   "model_rslc_hm": 12.7
   },
   "pres_2024_margin": -18.2,
   "gov_2022_margin": -12.9,
@@ -1849,56 +2851,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 45.4
+       "value": 48.3
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.3
+       "value": 2.6
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 9.8
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 4.0
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.5
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.7
+       "value": 2.0
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.7
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 2.1
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 4.2
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.1
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 32.1
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 3.2
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 34.2
       }
      ],
      "margin": 11.3,
-     "republican_base": 45.4,
-     "republican_targets": 2.3,
-     "trust_targets": 9.8,
-     "stubborn_middle": 1.7,
-     "vulnerable_targets": 4.7,
-     "likelier_democrats": 4.2,
-     "hobbs_base": 32.1
+     "republican_base": 48.3,
+     "republican_targets": 2.6,
+     "2024_trump_overperform": 4.0,
+     "message_targets": 1.5,
+     "stubborn_middle": 2.0,
+     "vulnerable_middle": 2.1,
+     "available_dems": 2.1,
+     "democrat_targets": 3.2,
+     "democrat_base": 34.2
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 50.1
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.4
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 3.1
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.4
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.0
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.3
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.8
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 35.2
+      }
+     ],
+     "margin": 12.7,
+     "republican_base": 50.1,
+     "republican_targets": 2.4,
+     "2024_trump_overperform": 3.1,
+     "message_targets": 1.4,
+     "stubborn_middle": 2.0,
+     "vulnerable_middle": 1.3,
+     "available_dems": 1.8,
+     "democrat_targets": 2.8,
+     "democrat_base": 35.2
     }
    }
   }
@@ -1970,7 +3048,8 @@
    "gov_2022": -25.5,
    "ussen_2022": -21.2,
    "pres_2024": -30.4,
-   "model_rga_all": 21.4
+   "model_rslc_all": 23.7,
+   "model_rslc_hm": 25.3
   },
   "pres_2024_margin": -30.4,
   "gov_2022_margin": -25.5,
@@ -1985,16 +3064,16 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 49.1
+       "value": 54.6
       },
       {
        "key": "republican_targets",
@@ -2002,39 +3081,115 @@
        "value": 2.8
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 10.3
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 3.3
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.8
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
+       "value": 1.8
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.9
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.9
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 29.0
+      }
+     ],
+     "margin": 23.7,
+     "republican_base": 54.6,
+     "republican_targets": 2.8,
+     "2024_trump_overperform": 3.3,
+     "message_targets": 1.8,
+     "stubborn_middle": 1.8,
+     "vulnerable_middle": 1.9,
+     "available_dems": 1.8,
+     "democrat_targets": 2.9,
+     "democrat_base": 29.0
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 56.3
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.5
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.7
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
        "value": 1.7
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 5.5
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.9
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 4.4
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.3
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 26.2
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.5
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.4
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 29.6
       }
      ],
-     "margin": 21.4,
-     "republican_base": 49.1,
-     "republican_targets": 2.8,
-     "trust_targets": 10.3,
-     "stubborn_middle": 1.7,
-     "vulnerable_targets": 5.5,
-     "likelier_democrats": 4.4,
-     "hobbs_base": 26.2
+     "margin": 25.3,
+     "republican_base": 56.3,
+     "republican_targets": 2.5,
+     "2024_trump_overperform": 2.7,
+     "message_targets": 1.7,
+     "stubborn_middle": 1.9,
+     "vulnerable_middle": 1.3,
+     "available_dems": 1.5,
+     "democrat_targets": 2.4,
+     "democrat_base": 29.6
     }
    }
   }
@@ -2106,7 +3261,8 @@
    "gov_2022": -3.7,
    "ussen_2022": 1.6,
    "pres_2024": -9.4,
-   "model_rga_all": -0.7
+   "model_rslc_all": 2.6,
+   "model_rslc_hm": 2.8
   },
   "pres_2024_margin": -9.4,
   "gov_2022_margin": -3.7,
@@ -2121,56 +3277,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 39.0
+       "value": 44.2
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.6
+       "value": 3.1
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 9.0
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 3.0
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.8
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.3
+       "value": 1.6
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 6.0
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.6
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 5.5
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.2
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 36.7
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.0
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 40.4
       }
      ],
-     "margin": -0.7,
-     "republican_base": 39.0,
-     "republican_targets": 2.6,
-     "trust_targets": 9.0,
-     "stubborn_middle": 1.3,
-     "vulnerable_targets": 6.0,
-     "likelier_democrats": 5.5,
-     "hobbs_base": 36.7
+     "margin": 2.6,
+     "republican_base": 44.2,
+     "republican_targets": 3.1,
+     "2024_trump_overperform": 3.0,
+     "message_targets": 1.8,
+     "stubborn_middle": 1.6,
+     "vulnerable_middle": 1.6,
+     "available_dems": 2.2,
+     "democrat_targets": 2.0,
+     "democrat_base": 40.4
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 45.7
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.4
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.4
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.6
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.5
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.1
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.7
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.6
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 42.0
+      }
+     ],
+     "margin": 2.8,
+     "republican_base": 45.7,
+     "republican_targets": 2.4,
+     "2024_trump_overperform": 2.4,
+     "message_targets": 1.6,
+     "stubborn_middle": 1.5,
+     "vulnerable_middle": 1.1,
+     "available_dems": 1.7,
+     "democrat_targets": 1.6,
+     "democrat_base": 42.0
     }
    }
   }
@@ -2242,7 +3474,8 @@
    "gov_2022": 0.3,
    "ussen_2022": 5.1,
    "pres_2024": -3.9,
-   "model_rga_all": -1.1
+   "model_rslc_all": -1.0,
+   "model_rslc_hm": -1.3
   },
   "pres_2024_margin": -3.9,
   "gov_2022_margin": 0.3,
@@ -2257,56 +3490,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 40.7
+       "value": 43.4
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 1.8
+       "value": 2.3
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 8.5
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 3.0
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.4
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.1
+       "value": 1.8
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.2
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.3
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 4.3
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.0
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 39.4
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.5
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 43.1
       }
      ],
-     "margin": -1.1,
-     "republican_base": 40.7,
-     "republican_targets": 1.8,
-     "trust_targets": 8.5,
-     "stubborn_middle": 1.1,
-     "vulnerable_targets": 4.2,
-     "likelier_democrats": 4.3,
-     "hobbs_base": 39.4
+     "margin": -1.0,
+     "republican_base": 43.4,
+     "republican_targets": 2.3,
+     "2024_trump_overperform": 3.0,
+     "message_targets": 1.4,
+     "stubborn_middle": 1.8,
+     "vulnerable_middle": 1.3,
+     "available_dems": 2.0,
+     "democrat_targets": 1.5,
+     "democrat_base": 43.1
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 44.2
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 1.9
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.4
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.4
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.9
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.8
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.4
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 44.3
+      }
+     ],
+     "margin": -1.3,
+     "republican_base": 44.2,
+     "republican_targets": 1.9,
+     "2024_trump_overperform": 2.4,
+     "message_targets": 1.4,
+     "stubborn_middle": 1.9,
+     "vulnerable_middle": 0.8,
+     "available_dems": 1.8,
+     "democrat_targets": 1.4,
+     "democrat_base": 44.3
     }
    }
   }
@@ -2378,7 +3687,8 @@
    "gov_2022": 28.5,
    "ussen_2022": 32.6,
    "pres_2024": 23.9,
-   "model_rga_all": -28.8
+   "model_rslc_all": -29.8,
+   "model_rslc_hm": -30.5
   },
   "pres_2024_margin": 23.9,
   "gov_2022_margin": 28.5,
@@ -2393,56 +3703,132 @@
    "dem": "Priya Sundareshan"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 28.1
+       "value": 28.9
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 1.4
+       "value": 2.6
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 6.6
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.4
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.7
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
+       "value": 1.6
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.5
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.9
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.1
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 58.3
+      }
+     ],
+     "margin": -29.8,
+     "republican_base": 28.9,
+     "republican_targets": 2.6,
+     "2024_trump_overperform": 2.4,
+     "message_targets": 1.7,
+     "stubborn_middle": 1.6,
+     "vulnerable_middle": 1.5,
+     "available_dems": 1.9,
+     "democrat_targets": 1.1,
+     "democrat_base": 58.3
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 29.6
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.2
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.0
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.5
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.5
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
        "value": 0.9
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.8
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.5
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 5.9
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.0
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 52.4
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 59.7
       }
      ],
-     "margin": -28.8,
-     "republican_base": 28.1,
-     "republican_targets": 1.4,
-     "trust_targets": 6.6,
-     "stubborn_middle": 0.9,
-     "vulnerable_targets": 4.8,
-     "likelier_democrats": 5.9,
-     "hobbs_base": 52.4
+     "margin": -30.5,
+     "republican_base": 29.6,
+     "republican_targets": 2.2,
+     "2024_trump_overperform": 2.0,
+     "message_targets": 1.5,
+     "stubborn_middle": 1.5,
+     "vulnerable_middle": 0.9,
+     "available_dems": 1.5,
+     "democrat_targets": 1.0,
+     "democrat_base": 59.7
     }
    }
   }
@@ -2514,7 +3900,8 @@
    "gov_2022": -16.9,
    "ussen_2022": -11.2,
    "pres_2024": -22.9,
-   "model_rga_all": 15.9
+   "model_rslc_all": 18.0,
+   "model_rslc_hm": 18.7
   },
   "pres_2024_margin": -22.9,
   "gov_2022_margin": -16.9,
@@ -2529,16 +3916,80 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 48.6
+       "value": 53.0
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.7
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.8
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.4
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.3
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.1
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.9
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 34.0
+      }
+     ],
+     "margin": 18.0,
+     "republican_base": 53.0,
+     "republican_targets": 2.7,
+     "2024_trump_overperform": 2.8,
+     "message_targets": 1.4,
+     "stubborn_middle": 1.3,
+     "vulnerable_middle": 1.1,
+     "available_dems": 1.9,
+     "democrat_targets": 1.8,
+     "democrat_base": 34.0
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 54.1
       },
       {
        "key": "republican_targets",
@@ -2546,39 +3997,51 @@
        "value": 2.3
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 7.6
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.3
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.3
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
+       "value": 1.3
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.7
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.5
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
        "value": 1.4
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 5.0
-      },
-      {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 5.1
-      },
-      {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 30.0
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 35.0
       }
      ],
-     "margin": 15.9,
-     "republican_base": 48.6,
+     "margin": 18.7,
+     "republican_base": 54.1,
      "republican_targets": 2.3,
-     "trust_targets": 7.6,
-     "stubborn_middle": 1.4,
-     "vulnerable_targets": 5.0,
-     "likelier_democrats": 5.1,
-     "hobbs_base": 30.0
+     "2024_trump_overperform": 2.3,
+     "message_targets": 1.3,
+     "stubborn_middle": 1.3,
+     "vulnerable_middle": 0.7,
+     "available_dems": 1.5,
+     "democrat_targets": 1.4,
+     "democrat_base": 35.0
     }
    }
   }
@@ -2650,7 +4113,8 @@
    "gov_2022": 54.0,
    "ussen_2022": 58.0,
    "pres_2024": 43.0,
-   "model_rga_all": -48.2
+   "model_rslc_all": -53.6,
+   "model_rslc_hm": -56.9
   },
   "pres_2024_margin": 43.0,
   "gov_2022_margin": 54.0,
@@ -2665,56 +4129,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 16.9
+       "value": 14.7
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
+       "value": 3.7
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
        "value": 1.7
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 5.4
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.5
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.0
+       "value": 1.8
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 8.4
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 3.6
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 7.3
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.5
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 59.4
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.5
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 69.0
       }
      ],
-     "margin": -48.2,
-     "republican_base": 16.9,
-     "republican_targets": 1.7,
-     "trust_targets": 5.4,
-     "stubborn_middle": 1.0,
-     "vulnerable_targets": 8.4,
-     "likelier_democrats": 7.3,
-     "hobbs_base": 59.4
+     "margin": -53.6,
+     "republican_base": 14.7,
+     "republican_targets": 3.7,
+     "2024_trump_overperform": 1.7,
+     "message_targets": 2.5,
+     "stubborn_middle": 1.8,
+     "vulnerable_middle": 3.6,
+     "available_dems": 1.5,
+     "democrat_targets": 1.5,
+     "democrat_base": 69.0
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 15.0
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.8
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.4
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.9
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.4
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 2.6
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 0.9
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.2
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 72.7
+      }
+     ],
+     "margin": -56.9,
+     "republican_base": 15.0,
+     "republican_targets": 2.8,
+     "2024_trump_overperform": 1.4,
+     "message_targets": 1.9,
+     "stubborn_middle": 1.4,
+     "vulnerable_middle": 2.6,
+     "available_dems": 0.9,
+     "democrat_targets": 1.2,
+     "democrat_base": 72.7
     }
    }
   }
@@ -2786,7 +4326,8 @@
    "gov_2022": 29.3,
    "ussen_2022": 34.3,
    "pres_2024": 18.2,
-   "model_rga_all": -28.7
+   "model_rslc_all": -29.6,
+   "model_rslc_hm": -32.3
   },
   "pres_2024_margin": 18.2,
   "gov_2022_margin": 29.3,
@@ -2801,56 +4342,132 @@
    "dem": "Rosanna Gabaldón"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 25.1
+       "value": 26.9
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.1
+       "value": 3.1
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 7.6
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.6
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.3
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.0
+       "value": 1.9
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 8.4
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 3.7
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 6.0
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.2
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 49.9
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.5
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 56.9
       }
      ],
-     "margin": -28.7,
-     "republican_base": 25.1,
-     "republican_targets": 2.1,
-     "trust_targets": 7.6,
-     "stubborn_middle": 1.0,
-     "vulnerable_targets": 8.4,
-     "likelier_democrats": 6.0,
-     "hobbs_base": 49.9
+     "margin": -29.6,
+     "republican_base": 26.9,
+     "republican_targets": 3.1,
+     "2024_trump_overperform": 2.6,
+     "message_targets": 2.3,
+     "stubborn_middle": 1.9,
+     "vulnerable_middle": 3.7,
+     "available_dems": 1.2,
+     "democrat_targets": 1.5,
+     "democrat_base": 56.9
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 27.5
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.3
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.2
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.8
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.5
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 2.6
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 0.8
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.2
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 60.1
+      }
+     ],
+     "margin": -32.3,
+     "republican_base": 27.5,
+     "republican_targets": 2.3,
+     "2024_trump_overperform": 2.2,
+     "message_targets": 1.8,
+     "stubborn_middle": 1.5,
+     "vulnerable_middle": 2.6,
+     "available_dems": 0.8,
+     "democrat_targets": 1.2,
+     "democrat_base": 60.1
     }
    }
   }
@@ -2922,7 +4539,8 @@
    "gov_2022": 30.7,
    "ussen_2022": 35.7,
    "pres_2024": 21.1,
-   "model_rga_all": -33.2
+   "model_rslc_all": -33.4,
+   "model_rslc_hm": -36.1
   },
   "pres_2024_margin": 21.1,
   "gov_2022_margin": 30.7,
@@ -2937,16 +4555,80 @@
    "dem": "Eva Diaz"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 21.5
+       "value": 24.5
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 3.1
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 3.1
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.2
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.0
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 4.2
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.3
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.7
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 56.9
+      }
+     ],
+     "margin": -33.4,
+     "republican_base": 24.5,
+     "republican_targets": 3.1,
+     "2024_trump_overperform": 3.1,
+     "message_targets": 2.2,
+     "stubborn_middle": 2.0,
+     "vulnerable_middle": 4.2,
+     "available_dems": 1.3,
+     "democrat_targets": 2.7,
+     "democrat_base": 56.9
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 25.5
       },
       {
        "key": "republican_targets",
@@ -2954,39 +4636,51 @@
        "value": 2.2
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 9.6
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.2
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.6
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.0
+       "value": 1.7
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 8.7
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 2.9
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 4.8
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 0.9
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 52.2
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.2
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 60.7
       }
      ],
-     "margin": -33.2,
-     "republican_base": 21.5,
+     "margin": -36.1,
+     "republican_base": 25.5,
      "republican_targets": 2.2,
-     "trust_targets": 9.6,
-     "stubborn_middle": 1.0,
-     "vulnerable_targets": 8.7,
-     "likelier_democrats": 4.8,
-     "hobbs_base": 52.2
+     "2024_trump_overperform": 2.2,
+     "message_targets": 1.6,
+     "stubborn_middle": 1.7,
+     "vulnerable_middle": 2.9,
+     "available_dems": 0.9,
+     "democrat_targets": 2.2,
+     "democrat_base": 60.7
     }
    }
   }
@@ -3058,7 +4752,8 @@
    "gov_2022": 10.5,
    "ussen_2022": 16.1,
    "pres_2024": 1.8,
-   "model_rga_all": -12.7
+   "model_rslc_all": -12.1,
+   "model_rslc_hm": -13.8
   },
   "pres_2024_margin": 1.8,
   "gov_2022_margin": 10.5,
@@ -3073,56 +4768,132 @@
    "dem": "Brian Fernandez"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 31.2
+       "value": 33.8
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.5
+       "value": 3.8
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 9.7
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 3.7
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.4
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.1
+       "value": 2.4
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 9.1
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 4.4
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 5.0
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.0
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 41.4
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.0
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 46.6
       }
      ],
-     "margin": -12.7,
-     "republican_base": 31.2,
-     "republican_targets": 2.5,
-     "trust_targets": 9.7,
-     "stubborn_middle": 1.1,
-     "vulnerable_targets": 9.1,
-     "likelier_democrats": 5.0,
-     "hobbs_base": 41.4
+     "margin": -12.1,
+     "republican_base": 33.8,
+     "republican_targets": 3.8,
+     "2024_trump_overperform": 3.7,
+     "message_targets": 2.4,
+     "stubborn_middle": 2.4,
+     "vulnerable_middle": 4.4,
+     "available_dems": 1.0,
+     "democrat_targets": 2.0,
+     "democrat_base": 46.6
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 35.2
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 3.0
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.9
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.9
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.0
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 3.0
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 0.7
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.7
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 49.5
+      }
+     ],
+     "margin": -13.8,
+     "republican_base": 35.2,
+     "republican_targets": 3.0,
+     "2024_trump_overperform": 2.9,
+     "message_targets": 1.9,
+     "stubborn_middle": 2.0,
+     "vulnerable_middle": 3.0,
+     "available_dems": 0.7,
+     "democrat_targets": 1.7,
+     "democrat_base": 49.5
     }
    }
   }
@@ -3194,7 +4965,8 @@
    "gov_2022": 31.3,
    "ussen_2022": 36.1,
    "pres_2024": 20.4,
-   "model_rga_all": -34.0
+   "model_rslc_all": -32.9,
+   "model_rslc_hm": -33.2
   },
   "pres_2024_margin": 20.4,
   "gov_2022_margin": 31.3,
@@ -3209,56 +4981,132 @@
    "dem": "Analise Ortiz"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 22.3
+       "value": 24.5
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.1
+       "value": 3.1
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 7.4
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.6
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.6
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.1
+       "value": 2.0
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 8.7
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 4.6
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 6.5
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.9
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 51.9
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 3.1
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 55.5
       }
      ],
-     "margin": -34.0,
-     "republican_base": 22.3,
-     "republican_targets": 2.1,
-     "trust_targets": 7.4,
-     "stubborn_middle": 1.1,
-     "vulnerable_targets": 8.7,
-     "likelier_democrats": 6.5,
-     "hobbs_base": 51.9
+     "margin": -32.9,
+     "republican_base": 24.5,
+     "republican_targets": 3.1,
+     "2024_trump_overperform": 2.6,
+     "message_targets": 2.6,
+     "stubborn_middle": 2.0,
+     "vulnerable_middle": 4.6,
+     "available_dems": 1.9,
+     "democrat_targets": 3.1,
+     "democrat_base": 55.5
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 26.4
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.4
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.1
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.2
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.7
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 3.1
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.3
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.4
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 58.3
+      }
+     ],
+     "margin": -33.2,
+     "republican_base": 26.4,
+     "republican_targets": 2.4,
+     "2024_trump_overperform": 2.1,
+     "message_targets": 2.2,
+     "stubborn_middle": 1.7,
+     "vulnerable_middle": 3.1,
+     "available_dems": 1.3,
+     "democrat_targets": 2.4,
+     "democrat_base": 58.3
     }
    }
   }
@@ -3330,7 +5178,8 @@
    "gov_2022": -26.9,
    "ussen_2022": -21.1,
    "pres_2024": -29.3,
-   "model_rga_all": 14.4
+   "model_rslc_all": 18.2,
+   "model_rslc_hm": 21.7
   },
   "pres_2024_margin": -29.3,
   "gov_2022_margin": -26.9,
@@ -3345,56 +5194,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 46.9
+       "value": 52.8
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.0
+       "value": 2.7
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 8.9
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 3.2
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.2
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
+       "value": 1.4
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.5
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.3
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.8
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 32.1
+      }
+     ],
+     "margin": 18.2,
+     "republican_base": 52.8,
+     "republican_targets": 2.7,
+     "2024_trump_overperform": 3.2,
+     "message_targets": 1.2,
+     "stubborn_middle": 1.4,
+     "vulnerable_middle": 1.5,
+     "available_dems": 2.3,
+     "democrat_targets": 2.8,
+     "democrat_base": 32.1
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 55.5
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.3
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.6
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.1
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.4
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.0
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
        "value": 1.8
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 5.8
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.1
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 5.6
-      },
-      {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 28.9
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 32.3
       }
      ],
-     "margin": 14.4,
-     "republican_base": 46.9,
-     "republican_targets": 2.0,
-     "trust_targets": 8.9,
-     "stubborn_middle": 1.8,
-     "vulnerable_targets": 5.8,
-     "likelier_democrats": 5.6,
-     "hobbs_base": 28.9
+     "margin": 21.7,
+     "republican_base": 55.5,
+     "republican_targets": 2.3,
+     "2024_trump_overperform": 2.6,
+     "message_targets": 1.1,
+     "stubborn_middle": 1.4,
+     "vulnerable_middle": 1.0,
+     "available_dems": 1.8,
+     "democrat_targets": 2.1,
+     "democrat_base": 32.3
     }
    }
   }
@@ -3466,7 +5391,8 @@
    "gov_2022": 39.6,
    "ussen_2022": 44.0,
    "pres_2024": 28.7,
-   "model_rga_all": -40.0
+   "model_rslc_all": -41.3,
+   "model_rslc_hm": -41.9
   },
   "pres_2024_margin": 28.7,
   "gov_2022_margin": 39.6,
@@ -3481,56 +5407,132 @@
    "dem": "Flavio Bravo"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 20.2
+       "value": 20.4
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.0
+       "value": 3.2
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 5.6
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.8
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.8
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 0.9
+       "value": 2.1
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 9.1
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 4.8
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 7.6
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.0
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 54.6
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 3.4
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 59.5
       }
      ],
-     "margin": -40.0,
-     "republican_base": 20.2,
-     "republican_targets": 2.0,
-     "trust_targets": 5.6,
-     "stubborn_middle": 0.9,
-     "vulnerable_targets": 9.1,
-     "likelier_democrats": 7.6,
-     "hobbs_base": 54.6
+     "margin": -41.3,
+     "republican_base": 20.4,
+     "republican_targets": 3.2,
+     "2024_trump_overperform": 1.8,
+     "message_targets": 2.8,
+     "stubborn_middle": 2.1,
+     "vulnerable_middle": 4.8,
+     "available_dems": 2.0,
+     "democrat_targets": 3.4,
+     "democrat_base": 59.5
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 21.6
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.8
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.6
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 2.5
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.7
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 3.6
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.4
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.5
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 62.4
+      }
+     ],
+     "margin": -41.9,
+     "republican_base": 21.6,
+     "republican_targets": 2.8,
+     "2024_trump_overperform": 1.6,
+     "message_targets": 2.5,
+     "stubborn_middle": 1.7,
+     "vulnerable_middle": 3.6,
+     "available_dems": 1.4,
+     "democrat_targets": 2.5,
+     "democrat_base": 62.4
     }
    }
   }
@@ -3602,7 +5604,8 @@
    "gov_2022": -5.0,
    "ussen_2022": -0.4,
    "pres_2024": -11.3,
-   "model_rga_all": 0.3
+   "model_rslc_all": 4.7,
+   "model_rslc_hm": 5.8
   },
   "pres_2024_margin": -11.3,
   "gov_2022_margin": -5.0,
@@ -3617,56 +5620,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 41.2
+       "value": 45.2
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.1
+       "value": 3.3
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 7.9
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 3.1
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.6
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 0.9
+       "value": 1.4
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.9
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.7
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 5.0
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.0
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 38.0
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.6
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 39.3
       }
      ],
-     "margin": 0.3,
-     "republican_base": 41.2,
-     "republican_targets": 2.1,
-     "trust_targets": 7.9,
-     "stubborn_middle": 0.9,
-     "vulnerable_targets": 4.9,
-     "likelier_democrats": 5.0,
-     "hobbs_base": 38.0
+     "margin": 4.7,
+     "republican_base": 45.2,
+     "republican_targets": 3.3,
+     "2024_trump_overperform": 3.1,
+     "message_targets": 1.6,
+     "stubborn_middle": 1.4,
+     "vulnerable_middle": 1.7,
+     "available_dems": 2.0,
+     "democrat_targets": 2.6,
+     "democrat_base": 39.3
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 47.1
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.7
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.4
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.4
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.3
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.1
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.5
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.1
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 40.3
+      }
+     ],
+     "margin": 5.8,
+     "republican_base": 47.1,
+     "republican_targets": 2.7,
+     "2024_trump_overperform": 2.4,
+     "message_targets": 1.4,
+     "stubborn_middle": 1.3,
+     "vulnerable_middle": 1.1,
+     "available_dems": 1.5,
+     "democrat_targets": 2.1,
+     "democrat_base": 40.3
     }
    }
   }
@@ -3738,7 +5817,8 @@
    "gov_2022": -17.7,
    "ussen_2022": -13.7,
    "pres_2024": -23.1,
-   "model_rga_all": 20.1
+   "model_rslc_all": 20.0,
+   "model_rslc_hm": 20.8
   },
   "pres_2024_margin": -23.1,
   "gov_2022_margin": -17.7,
@@ -3753,56 +5833,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 50.5
+       "value": 54.3
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.5
+       "value": 2.3
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 8.7
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.3
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.3
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.6
+       "value": 2.2
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 3.9
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.1
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 3.9
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.2
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 29.0
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.7
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 31.6
       }
      ],
-     "margin": 20.1,
-     "republican_base": 50.5,
-     "republican_targets": 2.5,
-     "trust_targets": 8.7,
-     "stubborn_middle": 1.6,
-     "vulnerable_targets": 3.9,
-     "likelier_democrats": 3.9,
-     "hobbs_base": 29.0
+     "margin": 20.0,
+     "republican_base": 54.3,
+     "republican_targets": 2.3,
+     "2024_trump_overperform": 2.3,
+     "message_targets": 1.3,
+     "stubborn_middle": 2.2,
+     "vulnerable_middle": 1.1,
+     "available_dems": 2.2,
+     "democrat_targets": 2.7,
+     "democrat_base": 31.6
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 55.3
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.1
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.9
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.2
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.2
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.7
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.9
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.3
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 32.3
+      }
+     ],
+     "margin": 20.8,
+     "republican_base": 55.3,
+     "republican_targets": 2.1,
+     "2024_trump_overperform": 1.9,
+     "message_targets": 1.2,
+     "stubborn_middle": 2.2,
+     "vulnerable_middle": 0.7,
+     "available_dems": 1.9,
+     "democrat_targets": 2.3,
+     "democrat_base": 32.3
     }
    }
   }
@@ -3874,7 +6030,8 @@
    "gov_2022": -12.8,
    "ussen_2022": -8.2,
    "pres_2024": -18.3,
-   "model_rga_all": 8.5
+   "model_rslc_all": 11.8,
+   "model_rslc_hm": 12.8
   },
   "pres_2024_margin": -18.3,
   "gov_2022_margin": -12.8,
@@ -3889,56 +6046,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 44.4
+       "value": 48.6
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.0
+       "value": 3.3
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 8.8
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 3.0
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.7
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.4
+       "value": 1.7
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 5.3
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.5
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 5.2
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.3
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 32.8
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.7
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 35.1
       }
      ],
-     "margin": 8.5,
-     "republican_base": 44.4,
-     "republican_targets": 2.0,
-     "trust_targets": 8.8,
-     "stubborn_middle": 1.4,
-     "vulnerable_targets": 5.3,
-     "likelier_democrats": 5.2,
-     "hobbs_base": 32.8
+     "margin": 11.8,
+     "republican_base": 48.6,
+     "republican_targets": 3.3,
+     "2024_trump_overperform": 3.0,
+     "message_targets": 1.7,
+     "stubborn_middle": 1.7,
+     "vulnerable_middle": 1.5,
+     "available_dems": 2.3,
+     "democrat_targets": 2.7,
+     "democrat_base": 35.1
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 50.4
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 2.7
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.5
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.6
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.7
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 1.0
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.8
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 2.3
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 36.1
+      }
+     ],
+     "margin": 12.8,
+     "republican_base": 50.4,
+     "republican_targets": 2.7,
+     "2024_trump_overperform": 2.5,
+     "message_targets": 1.6,
+     "stubborn_middle": 1.7,
+     "vulnerable_middle": 1.0,
+     "available_dems": 1.8,
+     "democrat_targets": 2.3,
+     "democrat_base": 36.1
     }
    }
   }
@@ -4010,7 +6243,8 @@
    "gov_2022": -49.3,
    "ussen_2022": -45.4,
    "pres_2024": -55.1,
-   "model_rga_all": 48.3
+   "model_rslc_all": 52.5,
+   "model_rslc_hm": 55.0
   },
   "pres_2024_margin": -55.1,
   "gov_2022_margin": -49.3,
@@ -4025,56 +6259,132 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rga_all": {
-    "label": "RGA (All)",
-    "family": "RGA",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "republican_base",
        "label": "Republican Base",
-       "value": 63.0
+       "value": 70.2
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 3.4
+       "value": 3.6
       },
       {
-       "key": "trust_targets",
-       "label": "Trust Targets",
-       "value": 8.7
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 2.2
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 1.1
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.1
+       "value": 1.0
       },
       {
-       "key": "vulnerable_targets",
-       "label": "Vulnerable Targets",
-       "value": 4.8
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.6
       },
       {
-       "key": "likelier_democrats",
-       "label": "Likelier Democrats",
-       "value": 3.6
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 2.4
       },
       {
-       "key": "hobbs_base",
-       "label": "Hobbs Base",
-       "value": 14.4
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.7
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 17.2
       }
      ],
-     "margin": 48.3,
-     "republican_base": 63.0,
-     "republican_targets": 3.4,
-     "trust_targets": 8.7,
-     "stubborn_middle": 2.1,
-     "vulnerable_targets": 4.8,
-     "likelier_democrats": 3.6,
-     "hobbs_base": 14.4
+     "margin": 52.5,
+     "republican_base": 70.2,
+     "republican_targets": 3.6,
+     "2024_trump_overperform": 2.2,
+     "message_targets": 1.1,
+     "stubborn_middle": 1.0,
+     "vulnerable_middle": 0.6,
+     "available_dems": 2.4,
+     "democrat_targets": 1.7,
+     "democrat_base": 17.2
+    }
+   },
+   "model_rslc_hm": {
+    "label": "RSLC (H+M)",
+    "family": "RSLC",
+    "variant": "H+M",
+    "affinity": {
+     "segments": [
+      {
+       "key": "republican_base",
+       "label": "Republican Base",
+       "value": 72.3
+      },
+      {
+       "key": "republican_targets",
+       "label": "Republican Targets",
+       "value": 3.2
+      },
+      {
+       "key": "2024_trump_overperform",
+       "label": "2024 Trump Overperform",
+       "value": 1.8
+      },
+      {
+       "key": "message_targets",
+       "label": "Message Targets",
+       "value": 0.9
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.9
+      },
+      {
+       "key": "vulnerable_middle",
+       "label": "Vulnerable Middle",
+       "value": 0.3
+      },
+      {
+       "key": "available_dems",
+       "label": "Available Dems",
+       "value": 1.5
+      },
+      {
+       "key": "democrat_targets",
+       "label": "Democrat Targets",
+       "value": 1.1
+      },
+      {
+       "key": "democrat_base",
+       "label": "Democrat Base",
+       "value": 17.9
+      }
+     ],
+     "margin": 55.0,
+     "republican_base": 72.3,
+     "republican_targets": 3.2,
+     "2024_trump_overperform": 1.8,
+     "message_targets": 0.9,
+     "stubborn_middle": 0.9,
+     "vulnerable_middle": 0.3,
+     "available_dems": 1.5,
+     "democrat_targets": 1.1,
+     "democrat_base": 17.9
     }
    }
   }
