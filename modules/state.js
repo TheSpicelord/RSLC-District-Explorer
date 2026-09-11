@@ -45,6 +45,7 @@ export const state = {
   cdFilterMode: false,
   statewideMode: false,
   statewideDataByFips: new Map(),
+  pollingData: null,
   suspendPopupCloseOverview: false,
   targetDistrictsMode: false,
   targetFilters: {

@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260909d";
+import { requireAuth } from "./modules/auth.js?v=20260911a";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -7,6 +7,7 @@ import {
   BASE_ZOOM_SNAP,
   CD_TARGETS_JSON_URL,
   STATEWIDES_JSON_URL,
+  POLLING_JSON_URL,
   CHAMBER_INDEX_URLS,
   COUNTY_LABEL_MIN_ZOOM,
   CTRL_FINE_ZOOM_SNAP,
@@ -20,7 +21,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260909d";
+} from "./modules/config.js?v=20260911a";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -43,8 +44,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260909d";
-import { state } from "./modules/state.js?v=20260909d";
+} from "./modules/dom.js?v=20260911a";
+import { state } from "./modules/state.js?v=20260911a";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -196,7 +197,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260909d";
+const BUILD_VERSION = "20260911a";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -302,6 +303,10 @@ async function init() {
 
   loadStatewides().catch((_err) => {
     // Keep app responsive if statewide data fails.
+  });
+
+  loadPolling().catch((_err) => {
+    // Keep app responsive if polling data fails.
   });
 
   targetsPromise
@@ -3280,6 +3285,19 @@ async function loadStatewides() {
   }
 }
 
+async function loadPolling() {
+  try {
+    const response = await fetch(withCacheBust(POLLING_JSON_URL));
+    if (!response.ok) return;
+    const data = await response.json();
+    if (data && typeof data === "object") {
+      state.pollingData = data;
+    }
+  } catch (_err) {
+    // Polling data unavailable — district panels show "No polling data."
+  }
+}
+
 const STATEWIDE_OFFICE_SORT = [
   /^gov(ernor)?$/i,
   /lt\.?\s*gov|lieutenant\s+gov/i,
@@ -4975,10 +4993,7 @@ function detailHtml(properties, joinInfo, rec) {
     { label: "Other", value: raceOther, colorClass: "color-race-other" },
   ]);
   const modelingPanel = modelingPanelHtml(rec);
-  const pollingPanel = `
-    <div class="detail-section-title centered-section-title large-section-title">Polling</div>
-    <div class="detail-row">No polling data.</div>
-  `;
+  const pollingPanel = pollingPanelHtml(rec);
   const demographicsPanel = `
     <div class="detail-section-title centered-section-title large-section-title">Demographics</div>
     ${metroChart}
@@ -5014,6 +5029,63 @@ function detailHtml(properties, joinInfo, rec) {
       </div>
     </div>
   `;
+}
+
+const POLLING_BALLOT_ORDER = ["leg", "leg_informed", "gov", "ussen", "sos"];
+
+function pollingLeadHtml(r, d) {
+  if (!Number.isFinite(r) || !Number.isFinite(d)) return "";
+  const diff = Math.round((r - d) * 10) / 10;
+  if (diff === 0) return `<span class="polling-lead">Even</span>`;
+  const cls = diff > 0 ? "margin-r" : "margin-d";
+  const label = `${diff > 0 ? "R" : "D"}+${Math.abs(diff).toFixed(1)}`;
+  return `<span class="polling-lead ${cls}">${label}</span>`;
+}
+
+function pollingEntryHtml(entry) {
+  const parts = [];
+  const heading = [entry.label, entry.source].filter(Boolean).join(" · ");
+  if (heading) parts.push(`<div class="polling-poll-heading">${escapeHtml(heading)}</div>`);
+
+  const ballots = entry.ballots || {};
+  const rows = POLLING_BALLOT_ORDER.filter((key) => ballots[key]);
+  if (rows.length) {
+    const hasLib = rows.some((key) => Number.isFinite(ballots[key].l));
+    const head = `<tr><th></th><th>R</th><th>D</th>${hasLib ? "<th>L</th>" : ""}<th>Und</th><th></th></tr>`;
+    const body = rows
+      .map((key) => {
+        const b = ballots[key];
+        const num = (v) => (Number.isFinite(v) ? v.toFixed(1) : "—");
+        return `<tr><td class="polling-ballot-name">${escapeHtml(b.label)}</td><td>${num(b.r)}</td><td>${num(b.d)}</td>${hasLib ? `<td>${num(b.l)}</td>` : ""}<td>${num(b.u)}</td><td>${pollingLeadHtml(b.r, b.d)}</td></tr>`;
+      })
+      .join("");
+    parts.push(`<table class="polling-table"><thead>${head}</thead><tbody>${body}</tbody></table>`);
+  }
+
+  const images = entry.images || {};
+  const imageRows = ["trump", "gop_cand", "dem_cand"]
+    .filter((key) => images[key])
+    .map((key) => {
+      const im = images[key];
+      const num = (v) => (Number.isFinite(v) ? v.toFixed(1) : "—");
+      return `<div class="polling-image-row"><span class="polling-ballot-name">${escapeHtml(im.label)}</span><span>+${num(im.pos)} / −${num(im.neg)}</span></div>`;
+    });
+  if (imageRows.length) parts.push(imageRows.join(""));
+
+  if (entry.top_issue) parts.push(`<div class="polling-top-issue">Top issues: ${escapeHtml(entry.top_issue)}</div>`);
+  if (entry.note) parts.push(`<div class="polling-note">${escapeHtml(entry.note)}</div>`);
+  return `<div class="polling-entry">${parts.join("")}</div>`;
+}
+
+function pollingPanelHtml(rec) {
+  const title = `<div class="detail-section-title centered-section-title large-section-title">Polling</div>`;
+  const byChamber = state.pollingData?.[state.chamber];
+  const key = rec ? `${rec.state_fips}|${rec.district_id}` : "";
+  const entries = byChamber?.[key];
+  if (!Array.isArray(entries) || !entries.length) {
+    return `${title}<div class="detail-row">No polling data.</div>`;
+  }
+  return title + entries.map((entry) => pollingEntryHtml(entry)).join("");
 }
 
 function districtTitle(properties, joinInfo, rec = null) {

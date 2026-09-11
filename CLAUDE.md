@@ -79,6 +79,29 @@ column plus a footnote in the ABEV Tracker, driven by its `LEG_REDISTRICTING_NOT
 in that project's `modules/config.js` — **keep the two in sync**, or the dropped year
 just quietly disappears with no explanation on screen.
 
+## Polling
+
+`data/polling.json` feeds the district detail panel's Polling section (left half of the
+split row; districts without an entry show "No polling data."). It is built by
+`scripts/build_polling_json.py` from `data/2025-26 Polling Tracker.xlsx` — an internal
+workbook that is **deliberately untracked** (like `scripts/db_config.ini`): only the
+published MI toplines in polling.json go to the public repo, not the full multi-state
+tracker. Keys are the app's join keys (`"26|044"`) under `house` / `senate`; each district
+holds a list of poll entries (ballot toplines R/D/L/U, candidate/Trump images, top issue).
+Margin-only mentions that live outside the tracker's table (the SRCC SD-35 note) are kept
+in the script's `EXTRA_ENTRIES` by hand. Currently MI only — 14 tier-1 battlegrounds
+polled Aug 2026 plus the SD-35 note; add a per-tab builder to the script for new states.
+
+### Michigan 2026 candidates (post-primary)
+
+The workbook's MI candidate columns (SLDL/SLDU `BT`/`BU`) were filled 2026-09-11 with the
+certified general-election field from the Aug 4 primary — Ballotpedia lists cross-checked
+against the polling tracker's battleground names (all 14 agreed). All 148 districts are
+R-vs-D contested. Incumbent nominees are written with the incumbent column's exact string
+(`BS`), because the asterisk in the app's candidate display comes from a case-insensitive
+**exact** name match between the two columns — 102 districts carry it. SD-35's incumbent
+was updated from "Vacant" to Chedrick Greene (D), who won the May 2026 special.
+
 ## Model Margins
 
 Modeling numbers are **not** in the election workbook — they are built straight into the
