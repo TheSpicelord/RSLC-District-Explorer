@@ -2442,6 +2442,18 @@ html.auth-pending main {
   text-align: right;
 }
 
+/* Without explicit widths the label column absorbs every spare pixel of the
+   100%-wide table, leaving a gutter between the label and the R column. */
+.polling-table th.polling-num-head,
+.polling-table td.polling-num {
+  width: 12%;
+}
+
+.polling-table th.target-col-margin,
+.polling-table td.margin-cell {
+  width: 17%;
+}
+
 .polling-table th.target-col-margin {
   text-align: center;
 }
