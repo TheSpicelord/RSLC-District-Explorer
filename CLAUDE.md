@@ -92,6 +92,14 @@ Margin-only mentions that live outside the tracker's table (the SRCC SD-35 note)
 in the script's `EXTRA_ENTRIES` by hand. Currently MI only — 14 tier-1 battlegrounds
 polled Aug 2026 plus the SD-35 note; add a per-tab builder to the script for new states.
 
+Both panel tables borrow `.target-table`'s chrome and the overview margin cells, so the
+ballot margins use the shared `marginColor` scale (R-positive, saturating at ±10) and read
+identically to a chamber overview row. **Image margins deliberately do NOT**: a red image
+bar would collide with Republican red, so `pollingImageMarginColor` runs green-to-maroon
+over ±20 instead. Toplines are rounded to whole numbers and only margins keep a decimal.
+A polled district also widens the left half of the split row (`.split-two-col-polling`),
+because the tables overflow the divider at the default 50/50.
+
 ### Michigan 2026 candidates (post-primary)
 
 The workbook's MI candidate columns (SLDL/SLDU `BT`/`BU`) were filled 2026-09-11 with the

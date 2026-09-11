@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260911a";
+import { requireAuth } from "./modules/auth.js?v=20260911d";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -21,7 +21,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260911a";
+} from "./modules/config.js?v=20260911d";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -44,8 +44,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260911a";
-import { state } from "./modules/state.js?v=20260911a";
+} from "./modules/dom.js?v=20260911d";
+import { state } from "./modules/state.js?v=20260911d";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -197,7 +197,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260911a";
+const BUILD_VERSION = "20260911d";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -5023,7 +5023,7 @@ function detailHtml(properties, joinInfo, rec) {
     </div>
 
     <div class="detail-section">
-      <div class="split-two-col">
+      <div class="split-two-col${pollingEntriesForRecord(rec) ? " split-two-col-polling" : ""}">
         <div class="split-col-left">${pollingPanel}</div>
         <div class="split-col-right">${demographicsPanel}</div>
       </div>
@@ -5033,33 +5033,42 @@ function detailHtml(properties, joinInfo, rec) {
 
 const POLLING_BALLOT_ORDER = ["leg", "leg_informed", "gov", "ussen", "sos"];
 
-function pollingLeadHtml(r, d) {
-  if (!Number.isFinite(r) || !Number.isFinite(d)) return "";
-  const diff = Math.round((r - d) * 10) / 10;
-  if (diff === 0) return `<span class="polling-lead">Even</span>`;
-  const cls = diff > 0 ? "margin-r" : "margin-d";
-  const label = `${diff > 0 ? "R" : "D"}+${Math.abs(diff).toFixed(1)}`;
-  return `<span class="polling-lead ${cls}">${label}</span>`;
+function pollingEntriesForRecord(rec) {
+  const byChamber = state.pollingData?.[state.chamber];
+  const key = rec ? `${rec.state_fips}|${rec.district_id}` : "";
+  const entries = byChamber?.[key];
+  return Array.isArray(entries) && entries.length ? entries : null;
+}
+
+function pollingImageMarginColor(margin) {
+  if (Math.abs(margin) < 0.0001) return "#f0f2f5";
+  if (margin > 0) return interpolateHex("#d7f5e2", "#19c558", Math.min(margin, 20) / 20);
+  return interpolateHex("#f3d2d6", "#8a2033", Math.min(Math.abs(margin), 20) / 20);
 }
 
 function pollingEntryHtml(entry) {
   const parts = [];
   const heading = [entry.label, entry.source].filter(Boolean).join(" · ");
-  if (heading) parts.push(`<div class="polling-poll-heading">${escapeHtml(heading)}</div>`);
+  if (heading) parts.push(`<div class="detail-subtitle centered-subtitle chart-header polling-poll-heading">${escapeHtml(heading)}</div>`);
 
   const ballots = entry.ballots || {};
   const rows = POLLING_BALLOT_ORDER.filter((key) => ballots[key]);
   if (rows.length) {
     const hasLib = rows.some((key) => Number.isFinite(ballots[key].l));
-    const head = `<tr><th></th><th>R</th><th>D</th>${hasLib ? "<th>L</th>" : ""}<th>Und</th><th></th></tr>`;
+    const head = `<tr><th>Ballot</th><th class="polling-num-head">R</th><th class="polling-num-head">D</th>${hasLib ? '<th class="polling-num-head">L</th>' : ""}<th class="polling-num-head">Und</th><th class="target-col-margin">Margin</th></tr>`;
     const body = rows
       .map((key) => {
         const b = ballots[key];
-        const num = (v) => (Number.isFinite(v) ? v.toFixed(1) : "—");
-        return `<tr><td class="polling-ballot-name">${escapeHtml(b.label)}</td><td>${num(b.r)}</td><td>${num(b.d)}</td>${hasLib ? `<td>${num(b.l)}</td>` : ""}<td>${num(b.u)}</td><td>${pollingLeadHtml(b.r, b.d)}</td></tr>`;
+        const num = (v) => (Number.isFinite(v) ? String(Math.round(v)) : "—");
+        const hasMargin = Number.isFinite(b.r) && Number.isFinite(b.d);
+        const demMargin = hasMargin ? b.d - b.r : null;
+        const marginCell = hasMargin
+          ? `<td class="margin-cell" style="background:${marginColor(demMargin)}">${escapeHtml(formatSignedRMargin(demMargin))}</td>`
+          : `<td class="margin-cell margin-cell-na">—</td>`;
+        return `<tr><td class="polling-ballot-name">${escapeHtml(b.label)}</td><td class="polling-num">${num(b.r)}</td><td class="polling-num">${num(b.d)}</td>${hasLib ? `<td class="polling-num">${num(b.l)}</td>` : ""}<td class="polling-num">${num(b.u)}</td>${marginCell}</tr>`;
       })
       .join("");
-    parts.push(`<table class="polling-table"><thead>${head}</thead><tbody>${body}</tbody></table>`);
+    parts.push(`<table class="target-table polling-table"><thead>${head}</thead><tbody>${body}</tbody></table>`);
   }
 
   const images = entry.images || {};
@@ -5067,10 +5076,19 @@ function pollingEntryHtml(entry) {
     .filter((key) => images[key])
     .map((key) => {
       const im = images[key];
-      const num = (v) => (Number.isFinite(v) ? v.toFixed(1) : "—");
-      return `<div class="polling-image-row"><span class="polling-ballot-name">${escapeHtml(im.label)}</span><span>+${num(im.pos)} / −${num(im.neg)}</span></div>`;
+      const num = (v) => (Number.isFinite(v) ? String(Math.round(v)) : "—");
+      const label = String(im.label || "").replace(/\s*Image$/i, "");
+      const hasMargin = Number.isFinite(im.pos) && Number.isFinite(im.neg);
+      const netMargin = hasMargin ? im.pos - im.neg : null;
+      const marginCell = hasMargin
+        ? `<td class="margin-cell" style="background:${pollingImageMarginColor(netMargin)}">${netMargin >= 0 ? "+" : "-"}${Math.abs(netMargin).toFixed(1)}%</td>`
+        : `<td class="margin-cell margin-cell-na">—</td>`;
+      return `<tr><td class="polling-ballot-name">${escapeHtml(label)}</td><td class="polling-num">${num(im.pos)}</td><td class="polling-num">${num(im.neg)}</td><td class="polling-num">${num(im.u)}</td>${marginCell}</tr>`;
     });
-  if (imageRows.length) parts.push(imageRows.join(""));
+  if (imageRows.length) {
+    const head = `<tr><th>Image</th><th class="polling-num-head">+</th><th class="polling-num-head">−</th><th class="polling-num-head">Und</th><th class="target-col-margin">Margin</th></tr>`;
+    parts.push(`<table class="target-table polling-table"><thead>${head}</thead><tbody>${imageRows.join("")}</tbody></table>`);
+  }
 
   if (entry.top_issue) parts.push(`<div class="polling-top-issue">Top issues: ${escapeHtml(entry.top_issue)}</div>`);
   if (entry.note) parts.push(`<div class="polling-note">${escapeHtml(entry.note)}</div>`);
@@ -5079,10 +5097,8 @@ function pollingEntryHtml(entry) {
 
 function pollingPanelHtml(rec) {
   const title = `<div class="detail-section-title centered-section-title large-section-title">Polling</div>`;
-  const byChamber = state.pollingData?.[state.chamber];
-  const key = rec ? `${rec.state_fips}|${rec.district_id}` : "";
-  const entries = byChamber?.[key];
-  if (!Array.isArray(entries) || !entries.length) {
+  const entries = pollingEntriesForRecord(rec);
+  if (!entries) {
     return `${title}<div class="detail-row">No polling data.</div>`;
   }
   return title + entries.map((entry) => pollingEntryHtml(entry)).join("");

@@ -2414,52 +2414,40 @@ html.auth-pending main {
   margin-bottom: 10px;
 }
 
+/* Font/colour come from the shared .detail-subtitle chart-header pair used by the
+   Demographics subheads; only the spacing is polling-specific. */
 .polling-poll-heading {
-  font-weight: 600;
-  font-size: 12px;
-  margin: 2px 0 4px;
-  opacity: 0.85;
+  margin-top: 0.2rem;
+  margin-bottom: 0.35rem;
 }
 
+/* Polled districts get a wider left column so the tables clear the divider. */
+.split-two-col-polling {
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+}
+
+/* Shares .target-table's chrome; these tweaks keep it compact in the panel. */
 .polling-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 11.5px;
   margin-bottom: 6px;
 }
 
-.polling-table th {
-  text-align: right;
-  font-weight: 600;
-  opacity: 0.65;
-  padding: 1px 4px;
-}
-
+.polling-table th,
 .polling-table td {
+  font-size: 0.78rem;
+  padding: 0.22rem 0.3rem;
+}
+
+.polling-table th.polling-num-head,
+.polling-table td.polling-num {
   text-align: right;
-  padding: 1px 4px;
-  white-space: nowrap;
 }
 
-.polling-table td.polling-ballot-name,
-.polling-table th:first-child {
-  text-align: left;
-  padding-left: 0;
+.polling-table th.target-col-margin {
+  text-align: center;
 }
 
-.polling-ballot-name {
-  opacity: 0.8;
-}
-
-.polling-lead {
-  font-weight: 700;
-}
-
-.polling-image-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11.5px;
-  padding: 1px 0;
+.polling-table td.polling-ballot-name {
+  opacity: 0.85;
 }
 
 .polling-top-issue,
