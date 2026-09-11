@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260911d";
+import { requireAuth } from "./modules/auth.js?v=20260911e";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -21,7 +21,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260911d";
+} from "./modules/config.js?v=20260911e";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -44,8 +44,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260911d";
-import { state } from "./modules/state.js?v=20260911d";
+} from "./modules/dom.js?v=20260911e";
+import { state } from "./modules/state.js?v=20260911e";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -197,7 +197,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260911d";
+const BUILD_VERSION = "20260911e";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -5055,7 +5055,7 @@ function pollingEntryHtml(entry) {
   const rows = POLLING_BALLOT_ORDER.filter((key) => ballots[key]);
   if (rows.length) {
     const hasLib = rows.some((key) => Number.isFinite(ballots[key].l));
-    const head = `<tr><th>Ballot</th><th class="polling-num-head">R</th><th class="polling-num-head">D</th>${hasLib ? '<th class="polling-num-head">L</th>' : ""}<th class="polling-num-head">Und</th><th class="target-col-margin">Margin</th></tr>`;
+    const head = `<tr><th>Ballot</th><th class="polling-num-head">R</th><th class="polling-num-head">D</th>${hasLib ? '<th class="polling-num-head">L</th>' : ""}<th class="polling-num-head polling-und-head">Und</th><th class="target-col-margin">Margin</th></tr>`;
     const body = rows
       .map((key) => {
         const b = ballots[key];
@@ -5065,7 +5065,7 @@ function pollingEntryHtml(entry) {
         const marginCell = hasMargin
           ? `<td class="margin-cell" style="background:${marginColor(demMargin)}">${escapeHtml(formatSignedRMargin(demMargin))}</td>`
           : `<td class="margin-cell margin-cell-na">—</td>`;
-        return `<tr><td class="polling-ballot-name">${escapeHtml(b.label)}</td><td class="polling-num">${num(b.r)}</td><td class="polling-num">${num(b.d)}</td>${hasLib ? `<td class="polling-num">${num(b.l)}</td>` : ""}<td class="polling-num">${num(b.u)}</td>${marginCell}</tr>`;
+        return `<tr><td class="polling-ballot-name">${escapeHtml(b.label)}</td><td class="polling-num">${num(b.r)}</td><td class="polling-num">${num(b.d)}</td>${hasLib ? `<td class="polling-num">${num(b.l)}</td>` : ""}<td class="polling-num polling-und">${num(b.u)}</td>${marginCell}</tr>`;
       })
       .join("");
     parts.push(`<table class="target-table polling-table"><thead>${head}</thead><tbody>${body}</tbody></table>`);
@@ -5083,10 +5083,10 @@ function pollingEntryHtml(entry) {
       const marginCell = hasMargin
         ? `<td class="margin-cell" style="background:${pollingImageMarginColor(netMargin)}">${netMargin >= 0 ? "+" : "-"}${Math.abs(netMargin).toFixed(1)}%</td>`
         : `<td class="margin-cell margin-cell-na">—</td>`;
-      return `<tr><td class="polling-ballot-name">${escapeHtml(label)}</td><td class="polling-num">${num(im.pos)}</td><td class="polling-num">${num(im.neg)}</td><td class="polling-num">${num(im.u)}</td>${marginCell}</tr>`;
+      return `<tr><td class="polling-ballot-name">${escapeHtml(label)}</td><td class="polling-num">${num(im.pos)}</td><td class="polling-num">${num(im.neg)}</td><td class="polling-num polling-und">${num(im.u)}</td>${marginCell}</tr>`;
     });
   if (imageRows.length) {
-    const head = `<tr><th>Image</th><th class="polling-num-head">+</th><th class="polling-num-head">−</th><th class="polling-num-head">Und</th><th class="target-col-margin">Margin</th></tr>`;
+    const head = `<tr><th>Image</th><th class="polling-num-head">+</th><th class="polling-num-head">−</th><th class="polling-num-head polling-und-head">Und</th><th class="target-col-margin">Margin</th></tr>`;
     parts.push(`<table class="target-table polling-table"><thead>${head}</thead><tbody>${imageRows.join("")}</tbody></table>`);
   }
 

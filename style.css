@@ -2446,6 +2446,13 @@ html.auth-pending main {
   text-align: center;
 }
 
+/* Und sits next to the margin cell; centring it keeps the two from crowding. */
+.polling-table th.polling-und-head,
+.polling-table td.polling-und {
+  text-align: center;
+  padding-right: 0.45rem;
+}
+
 .polling-table td.polling-ballot-name {
   opacity: 0.85;
 }
