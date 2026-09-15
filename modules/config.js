@@ -87,5 +87,17 @@ export const STATE_NAME_TO_ABBR = {
   "DISTRICT OF COLUMBIA": "DC",
 };
 
+// Per-district footnotes, shown as an {i} marker beside the 2026 candidate rows.
+// Keyed by join key ("stateFips|districtId") - the same format used everywhere else.
+// For the rare case a candidate list is accurate but misleading on its face; keep
+// each note to one sentence.
+export const DISTRICT_NOTES = {
+  // Merski, the Democratic incumbent, also won the Republican nomination on
+  // write-in votes. Listing him in both columns would read as a two-party field
+  // and suppress his incumbent asterisk on the R side, so the GOP column is left
+  // empty and this note carries the explanation.
+  "42|002": "Merski won the GOP nomination as a write-in candidate, but remains primarily a Democrat.",
+};
+
 export const OVERSEAS_TERRITORY_FIPS = new Set(["60", "66", "69", "72", "78"]);
 export const OVERSEAS_TERRITORY_ABBR = new Set(["AS", "GU", "MP", "PR", "VI"]);

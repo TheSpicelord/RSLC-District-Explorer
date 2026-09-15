@@ -2475,3 +2475,29 @@ html.auth-pending main {
   opacity: 0.75;
   margin-top: 4px;
 }
+
+/* ── Per-district footnote ({i} beside the 2026 candidate rows) ──────────── */
+
+.district-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: #9ba9b9;
+}
+
+.district-note-icon {
+  flex: 0 0 auto;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid #6c7a8a;
+  color: #c8d4e2;
+  font-size: 9px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 12px;
+  text-align: center;
+}

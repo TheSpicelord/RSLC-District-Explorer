@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260911f";
+import { requireAuth } from "./modules/auth.js?v=20260915a";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -6,6 +6,7 @@ import {
   BASE_WHEEL_PX_PER_ZOOM_LEVEL,
   BASE_ZOOM_SNAP,
   CD_TARGETS_JSON_URL,
+  DISTRICT_NOTES,
   STATEWIDES_JSON_URL,
   POLLING_JSON_URL,
   CHAMBER_INDEX_URLS,
@@ -21,7 +22,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260911f";
+} from "./modules/config.js?v=20260915a";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -44,8 +45,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260911f";
-import { state } from "./modules/state.js?v=20260911f";
+} from "./modules/dom.js?v=20260915a";
+import { state } from "./modules/state.js?v=20260915a";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -197,7 +198,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260911f";
+const BUILD_VERSION = "20260915a";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -5154,6 +5155,12 @@ function incumbentRowsForDetail(rec) {
     .join("");
 }
 
+function districtNoteHtml(rec) {
+  const note = DISTRICT_NOTES[`${rec?.state_fips}|${rec?.district_id}`];
+  if (!note) return "";
+  return `<div class="district-note"><span class="district-note-icon" aria-hidden="true">i</span><span>${escapeHtml(note)}</span></div>`;
+}
+
 function candidateRowsForDetail(rec) {
   if (!recordIsUpIn2026(rec)) {
     return '<div class="candidate-party-cell candidate-party-unavailable">Not up in 2026</div>';
@@ -5190,7 +5197,7 @@ function candidateRowsForDetail(rec) {
         </div>
       `;
     })
-    .join("");
+    .join("") + districtNoteHtml(rec);
 }
 function incumbentDisplayForMember(member) {
   if (!hasIncumbentForMember(member)) return "Vacant";

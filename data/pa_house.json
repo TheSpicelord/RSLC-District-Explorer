@@ -66,7 +66,7 @@
    "gov_2022": 46.4,
    "ussen_2022": 37.1,
    "pres_2024": 24.2,
-   "model_rslc_all": -32.0,
+   "model_rslc_all": -31.9,
    "model_rslc_hm": -33.8
   },
   "pres_2024_margin": 24.2,
@@ -91,7 +91,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 29.2
+       "value": 29.3
       },
       {
        "key": "rep_bring_home",
@@ -124,8 +124,8 @@
        "value": 63.1
       }
      ],
-     "margin": -32.0,
-     "rep_base": 29.2,
+     "margin": -31.9,
+     "rep_base": 29.3,
      "rep_bring_home": 3.4,
      "prime_persuasion": 1.3,
      "stubborn_middle": 1.2,
@@ -148,7 +148,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 2.7
+       "value": 2.6
       },
       {
        "key": "prime_persuasion",
@@ -168,22 +168,22 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.2
+       "value": 1.1
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 64.7
+       "value": 64.6
       }
      ],
      "margin": -33.8,
      "rep_base": 29.4,
-     "rep_bring_home": 2.7,
+     "rep_bring_home": 2.6,
      "prime_persuasion": 1.0,
      "stubborn_middle": 1.0,
      "dem_peel": 0.1,
-     "dems_going_home": 1.2,
-     "dem_base": 64.7
+     "dems_going_home": 1.1,
+     "dem_base": 64.6
     }
    }
   }
@@ -280,7 +280,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 39.1
+       "value": 39.0
       },
       {
        "key": "rep_bring_home",
@@ -314,7 +314,7 @@
       }
      ],
      "margin": -11.3,
-     "rep_base": 39.1,
+     "rep_base": 39.0,
      "rep_bring_home": 3.5,
      "prime_persuasion": 1.7,
      "stubborn_middle": 1.8,
@@ -740,7 +740,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 35.7
+       "value": 35.8
       }
      ],
      "margin": 23.5,
@@ -750,7 +750,7 @@
      "stubborn_middle": 2.2,
      "dem_peel": 0.1,
      "dems_going_home": 0.9,
-     "dem_base": 35.7
+     "dem_base": 35.8
     }
    }
   }
@@ -872,12 +872,12 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.0
+       "value": 0.9
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 36.0
+       "value": 36.1
       }
      ],
      "margin": 21.4,
@@ -886,8 +886,8 @@
      "prime_persuasion": 1.5,
      "stubborn_middle": 2.8,
      "dem_peel": 0.3,
-     "dems_going_home": 1.0,
-     "dem_base": 36.0
+     "dems_going_home": 0.9,
+     "dem_base": 36.1
     }
    },
    "model_rslc_hm": {
@@ -1012,7 +1012,7 @@
    "ussen_2022": -25.7,
    "pres_2024": -34.7,
    "model_rslc_all": 29.9,
-   "model_rslc_hm": 32.1
+   "model_rslc_hm": 32.2
   },
   "pres_2024_margin": -34.7,
   "gov_2022_margin": -16.8,
@@ -1121,7 +1121,7 @@
        "value": 31.2
       }
      ],
-     "margin": 32.1,
+     "margin": 32.2,
      "rep_base": 61.3,
      "rep_bring_home": 3.4,
      "prime_persuasion": 1.3,
@@ -1152,7 +1152,7 @@
     },
     "candidates": {
      "rep": "Parke Wentling",
-     "dem": "No candidate"
+     "dem": "Christopher Ford"
     }
    }
   ],
@@ -1200,8 +1200,8 @@
    "gov_2022": -4.4,
    "ussen_2022": -8.1,
    "pres_2024": -17.6,
-   "model_rslc_all": 9.6,
-   "model_rslc_hm": 9.8
+   "model_rslc_all": 9.5,
+   "model_rslc_hm": 9.7
   },
   "pres_2024_margin": -17.6,
   "gov_2022_margin": -4.4,
@@ -1213,7 +1213,7 @@
   },
   "candidates_2026": {
    "rep": "Parke Wentling",
-   "dem": "No candidate"
+   "dem": "Christopher Ford"
   },
   "models": {
    "model_rslc_all": {
@@ -1250,22 +1250,22 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 2.0
+       "value": 2.1
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 40.8
+       "value": 40.9
       }
      ],
-     "margin": 9.6,
+     "margin": 9.5,
      "rep_base": 46.4,
      "rep_bring_home": 6.1,
      "prime_persuasion": 2.3,
      "stubborn_middle": 2.2,
      "dem_peel": 0.2,
-     "dems_going_home": 2.0,
-     "dem_base": 40.8
+     "dems_going_home": 2.1,
+     "dem_base": 40.9
     }
    },
    "model_rslc_hm": {
@@ -1310,7 +1310,7 @@
        "value": 41.5
       }
      ],
-     "margin": 9.8,
+     "margin": 9.7,
      "rep_base": 47.8,
      "rep_bring_home": 5.4,
      "prime_persuasion": 1.5,
@@ -1613,7 +1613,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 2.3
+       "value": 2.4
       },
       {
        "key": "stubborn_middle",
@@ -1633,17 +1633,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 36.0
+       "value": 36.1
       }
      ],
      "margin": 21.5,
      "rep_base": 53.3,
      "rep_bring_home": 5.4,
-     "prime_persuasion": 2.3,
+     "prime_persuasion": 2.4,
      "stubborn_middle": 1.5,
      "dem_peel": 0.3,
      "dems_going_home": 1.1,
-     "dem_base": 36.0
+     "dem_base": 36.1
     }
    },
    "model_rslc_hm": {
@@ -1685,7 +1685,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 37.0
+       "value": 37.1
       }
      ],
      "margin": 20.3,
@@ -1695,7 +1695,7 @@
      "stubborn_middle": 1.3,
      "dem_peel": 0.2,
      "dems_going_home": 1.1,
-     "dem_base": 37.0
+     "dem_base": 37.1
     }
    }
   }
@@ -1768,7 +1768,7 @@
    "ussen_2022": 87.5,
    "pres_2024": 82.4,
    "model_rslc_all": -79.1,
-   "model_rslc_hm": -88.6
+   "model_rslc_hm": -88.7
   },
   "pres_2024_margin": 82.4,
   "gov_2022_margin": 90.7,
@@ -1844,7 +1844,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 3.9
+       "value": 3.8
       },
       {
        "key": "rep_bring_home",
@@ -1864,7 +1864,7 @@
       {
        "key": "dem_peel",
        "label": "Dem Peel",
-       "value": 0.3
+       "value": 0.4
       },
       {
        "key": "dems_going_home",
@@ -1877,12 +1877,12 @@
        "value": 93.0
       }
      ],
-     "margin": -88.6,
-     "rep_base": 3.9,
+     "margin": -88.7,
+     "rep_base": 3.8,
      "rep_bring_home": 1.1,
      "prime_persuasion": 0.1,
      "stubborn_middle": 0.9,
-     "dem_peel": 0.3,
+     "dem_peel": 0.4,
      "dems_going_home": 0.6,
      "dem_base": 93.0
     }
@@ -2033,7 +2033,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 62.8
+       "value": 62.9
       },
       {
        "key": "rep_bring_home",
@@ -2067,7 +2067,7 @@
       }
      ],
      "margin": 34.2,
-     "rep_base": 62.8,
+     "rep_base": 62.9,
      "rep_bring_home": 3.1,
      "prime_persuasion": 0.8,
      "stubborn_middle": 1.4,
@@ -2146,7 +2146,7 @@
    "ussen_2022": -15.4,
    "pres_2024": -18.4,
    "model_rslc_all": 13.7,
-   "model_rslc_hm": 15.9
+   "model_rslc_hm": 16.0
   },
   "pres_2024_margin": -18.4,
   "gov_2022_margin": 0.4,
@@ -2252,17 +2252,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 37.7
+       "value": 37.6
       }
      ],
-     "margin": 15.9,
+     "margin": 16.0,
      "rep_base": 51.4,
      "rep_bring_home": 4.1,
      "prime_persuasion": 0.8,
      "stubborn_middle": 4.1,
      "dem_peel": 0.2,
      "dems_going_home": 1.9,
-     "dem_base": 37.7
+     "dem_base": 37.6
     }
    }
   }
@@ -2335,7 +2335,7 @@
    "ussen_2022": -2.4,
    "pres_2024": -4.7,
    "model_rslc_all": -1.5,
-   "model_rslc_hm": 4.6
+   "model_rslc_hm": 4.7
   },
   "pres_2024_margin": -4.7,
   "gov_2022_margin": 4.9,
@@ -2359,7 +2359,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 42.3
+       "value": 42.4
       },
       {
        "key": "rep_bring_home",
@@ -2389,17 +2389,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 46.7
+       "value": 46.6
       }
      ],
      "margin": -1.5,
-     "rep_base": 42.3,
+     "rep_base": 42.4,
      "rep_bring_home": 4.3,
      "prime_persuasion": 0.7,
      "stubborn_middle": 3.8,
      "dem_peel": 0.7,
      "dems_going_home": 1.5,
-     "dem_base": 46.7
+     "dem_base": 46.6
     }
    },
    "model_rslc_hm": {
@@ -2441,17 +2441,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 44.1
+       "value": 44.0
       }
      ],
-     "margin": 4.6,
+     "margin": 4.7,
      "rep_base": 47.2,
      "rep_bring_home": 3.0,
      "prime_persuasion": 0.6,
      "stubborn_middle": 3.2,
      "dem_peel": 0.4,
      "dems_going_home": 1.5,
-     "dem_base": 44.1
+     "dem_base": 44.0
     }
    }
   }
@@ -2475,7 +2475,7 @@
     },
     "candidates": {
      "rep": "Roman Kozak",
-     "dem": "No candidate"
+     "dem": "Bradley Young"
     }
    }
   ],
@@ -2536,7 +2536,7 @@
   },
   "candidates_2026": {
    "rep": "Roman Kozak",
-   "dem": "No candidate"
+   "dem": "Bradley Young"
   },
   "models": {
    "model_rslc_all": {
@@ -2630,7 +2630,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 37.6
+       "value": 37.5
       }
      ],
      "margin": 19.7,
@@ -2640,7 +2640,7 @@
      "stubborn_middle": 1.4,
      "dem_peel": 0.2,
      "dems_going_home": 1.1,
-     "dem_base": 37.6
+     "dem_base": 37.5
     }
    }
   }
@@ -2663,7 +2663,7 @@
      "party": "R"
     },
     "candidates": {
-     "rep": "Joshua Kail",
+     "rep": "Josh Kail",
      "dem": "Sydney Speicher"
     }
    }
@@ -2712,7 +2712,7 @@
    "gov_2022": -8.8,
    "ussen_2022": -20.2,
    "pres_2024": -34.7,
-   "model_rslc_all": 27.1,
+   "model_rslc_all": 27.2,
    "model_rslc_hm": 23.8
   },
   "pres_2024_margin": -34.7,
@@ -2724,7 +2724,7 @@
    "ussen_2022": 29923
   },
   "candidates_2026": {
-   "rep": "Joshua Kail",
+   "rep": "Josh Kail",
    "dem": "Sydney Speicher"
   },
   "models": {
@@ -2770,7 +2770,7 @@
        "value": 33.0
       }
      ],
-     "margin": 27.1,
+     "margin": 27.2,
      "rep_base": 56.6,
      "rep_bring_home": 4.5,
      "prime_persuasion": 2.7,
@@ -2901,7 +2901,7 @@
    "gov_2022": 16.9,
    "ussen_2022": 6.7,
    "pres_2024": -7.5,
-   "model_rslc_all": 1.0,
+   "model_rslc_all": 0.9,
    "model_rslc_hm": -4.9
   },
   "pres_2024_margin": -7.5,
@@ -2959,7 +2959,7 @@
        "value": 45.9
       }
      ],
-     "margin": 1.0,
+     "margin": 0.9,
      "rep_base": 43.8,
      "rep_bring_home": 4.3,
      "prime_persuasion": 2.2,
@@ -3090,8 +3090,8 @@
    "gov_2022": -32.9,
    "ussen_2022": -39.4,
    "pres_2024": -47.1,
-   "model_rslc_all": 44.7,
-   "model_rslc_hm": 45.5
+   "model_rslc_all": 44.8,
+   "model_rslc_hm": 45.6
   },
   "pres_2024_margin": -47.1,
   "gov_2022_margin": -32.9,
@@ -3148,7 +3148,7 @@
        "value": 24.0
       }
      ],
-     "margin": 44.7,
+     "margin": 44.8,
      "rep_base": 65.5,
      "rep_bring_home": 4.4,
      "prime_persuasion": 2.1,
@@ -3167,7 +3167,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 67.3
+       "value": 67.4
       },
       {
        "key": "rep_bring_home",
@@ -3200,8 +3200,8 @@
        "value": 24.5
       }
      ],
-     "margin": 45.5,
-     "rep_base": 67.3,
+     "margin": 45.6,
+     "rep_base": 67.4,
      "rep_bring_home": 3.8,
      "prime_persuasion": 1.3,
      "stubborn_middle": 1.9,
@@ -3575,7 +3575,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 84.2
+       "value": 84.3
       }
      ],
      "margin": -71.8,
@@ -3585,7 +3585,7 @@
      "stubborn_middle": 1.1,
      "dem_peel": 0.3,
      "dems_going_home": 0.7,
-     "dem_base": 84.2
+     "dem_base": 84.3
     }
    }
   }
@@ -3608,7 +3608,7 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Joseph Aguglia",
      "dem": "Emily Kinkead"
     }
    }
@@ -3669,7 +3669,7 @@
    "ussen_2022": 29599
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Joseph Aguglia",
    "dem": "Emily Kinkead"
   },
   "models": {
@@ -3923,12 +3923,12 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 28.7
+       "value": 28.8
       },
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 2.8
+       "value": 2.7
       },
       {
        "key": "prime_persuasion",
@@ -3943,7 +3943,7 @@
       {
        "key": "dem_peel",
        "label": "Dem Peel",
-       "value": 0.4
+       "value": 0.5
       },
       {
        "key": "dems_going_home",
@@ -3957,11 +3957,11 @@
       }
      ],
      "margin": -33.2,
-     "rep_base": 28.7,
-     "rep_bring_home": 2.8,
+     "rep_base": 28.8,
+     "rep_bring_home": 2.7,
      "prime_persuasion": 1.2,
      "stubborn_middle": 2.1,
-     "dem_peel": 0.4,
+     "dem_peel": 0.5,
      "dems_going_home": 1.8,
      "dem_base": 62.9
     }
@@ -4035,7 +4035,7 @@
    "gov_2022": 38.5,
    "ussen_2022": 33.8,
    "pres_2024": 17.5,
-   "model_rslc_all": -23.6,
+   "model_rslc_all": -23.7,
    "model_rslc_hm": -33.9
   },
   "pres_2024_margin": 17.5,
@@ -4090,17 +4090,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 59.0
+       "value": 59.1
       }
      ],
-     "margin": -23.6,
+     "margin": -23.7,
      "rep_base": 30.4,
      "rep_bring_home": 5.9,
      "prime_persuasion": 2.6,
      "stubborn_middle": 1.0,
      "dem_peel": 0.2,
      "dems_going_home": 0.8,
-     "dem_base": 59.0
+     "dem_base": 59.1
     }
    },
    "model_rslc_hm": {
@@ -4127,7 +4127,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.1
+       "value": 1.0
       },
       {
        "key": "dem_peel",
@@ -4149,7 +4149,7 @@
      "rep_base": 28.1,
      "rep_bring_home": 3.3,
      "prime_persuasion": 2.0,
-     "stubborn_middle": 1.1,
+     "stubborn_middle": 1.0,
      "dem_peel": 0.3,
      "dems_going_home": 0.8,
      "dem_base": 64.5
@@ -4224,7 +4224,7 @@
    "gov_2022": 79.5,
    "ussen_2022": 70.9,
    "pres_2024": 63.9,
-   "model_rslc_all": -68.5,
+   "model_rslc_all": -68.6,
    "model_rslc_hm": -76.5
   },
   "pres_2024_margin": 63.9,
@@ -4264,7 +4264,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 5.0
+       "value": 5.1
       },
       {
        "key": "dem_peel",
@@ -4282,11 +4282,11 @@
        "value": 76.1
       }
      ],
-     "margin": -68.5,
+     "margin": -68.6,
      "rep_base": 9.7,
      "rep_bring_home": 1.9,
      "prime_persuasion": 1.4,
-     "stubborn_middle": 5.0,
+     "stubborn_middle": 5.1,
      "dem_peel": 1.8,
      "dems_going_home": 4.1,
      "dem_base": 76.1
@@ -4326,12 +4326,12 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 2.9
+       "value": 2.8
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 82.9
+       "value": 83.0
       }
      ],
      "margin": -76.5,
@@ -4340,8 +4340,8 @@
      "prime_persuasion": 0.6,
      "stubborn_middle": 3.0,
      "dem_peel": 1.3,
-     "dems_going_home": 2.9,
-     "dem_base": 82.9
+     "dems_going_home": 2.8,
+     "dem_base": 83.0
     }
    }
   }
@@ -4414,7 +4414,7 @@
    "ussen_2022": 83.0,
    "pres_2024": 77.5,
    "model_rslc_all": -76.8,
-   "model_rslc_hm": -83.2
+   "model_rslc_hm": -83.1
   },
   "pres_2024_margin": 77.5,
   "gov_2022_margin": 86.1,
@@ -4438,7 +4438,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 8.8
+       "value": 8.9
       },
       {
        "key": "rep_bring_home",
@@ -4472,7 +4472,7 @@
       }
      ],
      "margin": -76.8,
-     "rep_base": 8.8,
+     "rep_base": 8.9,
      "rep_bring_home": 1.2,
      "prime_persuasion": 0.7,
      "stubborn_middle": 1.8,
@@ -4490,7 +4490,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 6.4
+       "value": 6.5
       },
       {
        "key": "rep_bring_home",
@@ -4520,17 +4520,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 89.8
+       "value": 89.7
       }
      ],
-     "margin": -83.2,
-     "rep_base": 6.4,
+     "margin": -83.1,
+     "rep_base": 6.5,
      "rep_bring_home": 1.0,
      "prime_persuasion": 0.5,
      "stubborn_middle": 1.1,
      "dem_peel": 0.4,
      "dems_going_home": 0.8,
-     "dem_base": 89.8
+     "dem_base": 89.7
     }
    }
   }
@@ -4637,7 +4637,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 2.0
+       "value": 2.1
       },
       {
        "key": "stubborn_middle",
@@ -4663,7 +4663,7 @@
      "margin": -15.3,
      "rep_base": 36.4,
      "rep_bring_home": 3.4,
-     "prime_persuasion": 2.0,
+     "prime_persuasion": 2.1,
      "stubborn_middle": 2.4,
      "dem_peel": 0.5,
      "dems_going_home": 0.8,
@@ -4742,7 +4742,7 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Samantha Horosky",
      "dem": "Paul Friel"
     }
    }
@@ -4803,7 +4803,7 @@
    "ussen_2022": 31533
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Samantha Horosky",
    "dem": "Paul Friel"
   },
   "models": {
@@ -4980,8 +4980,8 @@
    "gov_2022": 42.2,
    "ussen_2022": 31.1,
    "pres_2024": 20.8,
-   "model_rslc_all": -24.1,
-   "model_rslc_hm": -30.8
+   "model_rslc_all": -24.2,
+   "model_rslc_hm": -30.9
   },
   "pres_2024_margin": 20.8,
   "gov_2022_margin": 42.2,
@@ -5005,7 +5005,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 32.9
+       "value": 32.8
       },
       {
        "key": "rep_bring_home",
@@ -5035,17 +5035,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 58.9
+       "value": 59.0
       }
      ],
-     "margin": -24.1,
-     "rep_base": 32.9,
+     "margin": -24.2,
+     "rep_base": 32.8,
      "rep_bring_home": 3.0,
      "prime_persuasion": 1.4,
      "stubborn_middle": 2.1,
      "dem_peel": 0.6,
      "dems_going_home": 1.1,
-     "dem_base": 58.9
+     "dem_base": 59.0
     }
    },
    "model_rslc_hm": {
@@ -5087,17 +5087,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 62.0
+       "value": 62.1
       }
      ],
-     "margin": -30.8,
+     "margin": -30.9,
      "rep_base": 29.9,
      "rep_bring_home": 2.7,
      "prime_persuasion": 1.2,
      "stubborn_middle": 2.2,
      "dem_peel": 0.5,
      "dems_going_home": 1.4,
-     "dem_base": 62.0
+     "dem_base": 62.1
     }
    }
   }
@@ -5169,8 +5169,8 @@
    "gov_2022": 11.8,
    "ussen_2022": -3.4,
    "pres_2024": -7.5,
-   "model_rslc_all": -1.9,
-   "model_rslc_hm": -2.2
+   "model_rslc_all": -1.8,
+   "model_rslc_hm": -2.1
   },
   "pres_2024_margin": -7.5,
   "gov_2022_margin": 11.8,
@@ -5194,7 +5194,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 37.9
+       "value": 38.0
       },
       {
        "key": "rep_bring_home",
@@ -5227,8 +5227,8 @@
        "value": 41.7
       }
      ],
-     "margin": -1.9,
-     "rep_base": 37.9,
+     "margin": -1.8,
+     "rep_base": 38.0,
      "rep_bring_home": 6.1,
      "prime_persuasion": 1.8,
      "stubborn_middle": 7.0,
@@ -5279,7 +5279,7 @@
        "value": 41.3
       }
      ],
-     "margin": -2.2,
+     "margin": -2.1,
      "rep_base": 39.1,
      "rep_bring_home": 4.9,
      "prime_persuasion": 1.8,
@@ -5358,8 +5358,8 @@
    "gov_2022": 30.3,
    "ussen_2022": 16.8,
    "pres_2024": 15.0,
-   "model_rslc_all": -20.2,
-   "model_rslc_hm": -19.8
+   "model_rslc_all": -20.1,
+   "model_rslc_hm": -19.7
   },
   "pres_2024_margin": 15.0,
   "gov_2022_margin": 30.3,
@@ -5416,7 +5416,7 @@
        "value": 54.3
       }
      ],
-     "margin": -20.2,
+     "margin": -20.1,
      "rep_base": 30.0,
      "rep_bring_home": 6.5,
      "prime_persuasion": 0.6,
@@ -5435,7 +5435,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 32.4
+       "value": 32.5
       },
       {
        "key": "rep_bring_home",
@@ -5468,8 +5468,8 @@
        "value": 54.2
       }
      ],
-     "margin": -19.8,
-     "rep_base": 32.4,
+     "margin": -19.7,
+     "rep_base": 32.5,
      "rep_bring_home": 4.5,
      "prime_persuasion": 0.6,
      "stubborn_middle": 4.8,
@@ -5498,7 +5498,7 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Libby Blackburn",
      "dem": "Arvind Venkat"
     }
    }
@@ -5548,7 +5548,7 @@
    "ussen_2022": 10.2,
    "pres_2024": 7.7,
    "model_rslc_all": -12.9,
-   "model_rslc_hm": -13.8
+   "model_rslc_hm": -13.9
   },
   "pres_2024_margin": 7.7,
   "gov_2022_margin": 25.1,
@@ -5559,7 +5559,7 @@
    "ussen_2022": 34105
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Libby Blackburn",
    "dem": "Arvind Venkat"
   },
   "models": {
@@ -5624,7 +5624,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 36.4
+       "value": 36.3
       },
       {
        "key": "rep_bring_home",
@@ -5657,8 +5657,8 @@
        "value": 50.6
       }
      ],
-     "margin": -13.8,
-     "rep_base": 36.4,
+     "margin": -13.9,
+     "rep_base": 36.3,
      "rep_bring_home": 3.4,
      "prime_persuasion": 1.0,
      "stubborn_middle": 5.1,
@@ -5813,7 +5813,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 29.3
+       "value": 29.2
       },
       {
        "key": "rep_bring_home",
@@ -5843,17 +5843,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 52.2
+       "value": 52.3
       }
      ],
      "margin": -23.2,
-     "rep_base": 29.3,
+     "rep_base": 29.2,
      "rep_bring_home": 5.0,
      "prime_persuasion": 0.5,
      "stubborn_middle": 5.9,
      "dem_peel": 1.8,
      "dems_going_home": 5.2,
-     "dem_base": 52.2
+     "dem_base": 52.3
     }
    }
   }
@@ -5876,7 +5876,7 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Gary Motor",
      "dem": "Joe McAndrew"
     }
    }
@@ -5937,7 +5937,7 @@
    "ussen_2022": 29677
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Gary Motor",
    "dem": "Joe McAndrew"
   },
   "models": {
@@ -6115,7 +6115,7 @@
    "ussen_2022": 13.5,
    "pres_2024": 4.3,
    "model_rslc_all": -11.3,
-   "model_rslc_hm": -16.0
+   "model_rslc_hm": -15.9
   },
   "pres_2024_margin": 4.3,
   "gov_2022_margin": 26.6,
@@ -6154,7 +6154,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 4.3
+       "value": 4.2
       },
       {
        "key": "dem_peel",
@@ -6176,7 +6176,7 @@
      "rep_base": 36.5,
      "rep_bring_home": 4.3,
      "prime_persuasion": 1.3,
-     "stubborn_middle": 4.3,
+     "stubborn_middle": 4.2,
      "dem_peel": 1.5,
      "dems_going_home": 3.2,
      "dem_base": 48.9
@@ -6221,17 +6221,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 50.6
+       "value": 50.5
       }
      ],
-     "margin": -16.0,
+     "margin": -15.9,
      "rep_base": 35.2,
      "rep_bring_home": 3.6,
      "prime_persuasion": 1.1,
      "stubborn_middle": 4.1,
      "dem_peel": 1.3,
      "dems_going_home": 4.2,
-     "dem_base": 50.6
+     "dem_base": 50.5
     }
    }
   }
@@ -6304,7 +6304,7 @@
    "ussen_2022": 66.8,
    "pres_2024": 62.4,
    "model_rslc_all": -65.4,
-   "model_rslc_hm": -68.1
+   "model_rslc_hm": -68.2
   },
   "pres_2024_margin": 62.4,
   "gov_2022_margin": 72.2,
@@ -6413,7 +6413,7 @@
        "value": 81.4
       }
      ],
-     "margin": -68.1,
+     "margin": -68.2,
      "rep_base": 13.4,
      "rep_bring_home": 1.3,
      "prime_persuasion": 0.5,
@@ -6547,7 +6547,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 58.8
+       "value": 58.9
       }
      ],
      "margin": -25.0,
@@ -6557,7 +6557,7 @@
      "stubborn_middle": 2.5,
      "dem_peel": 0.4,
      "dems_going_home": 0.8,
-     "dem_base": 58.8
+     "dem_base": 58.9
     }
    },
    "model_rslc_hm": {
@@ -6594,7 +6594,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 0.8
+       "value": 0.7
       },
       {
        "key": "dem_base",
@@ -6608,7 +6608,7 @@
      "prime_persuasion": 2.2,
      "stubborn_middle": 3.7,
      "dem_peel": 0.4,
-     "dems_going_home": 0.8,
+     "dems_going_home": 0.7,
      "dem_base": 60.3
     }
    }
@@ -6681,8 +6681,8 @@
    "gov_2022": 49.4,
    "ussen_2022": 41.8,
    "pres_2024": 28.5,
-   "model_rslc_all": -31.2,
-   "model_rslc_hm": -42.1
+   "model_rslc_all": -31.4,
+   "model_rslc_hm": -42.2
   },
   "pres_2024_margin": 28.5,
   "gov_2022_margin": 49.4,
@@ -6706,12 +6706,12 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 29.5
+       "value": 29.4
       },
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 3.2
+       "value": 3.1
       },
       {
        "key": "prime_persuasion",
@@ -6739,9 +6739,9 @@
        "value": 63.2
       }
      ],
-     "margin": -31.2,
-     "rep_base": 29.5,
-     "rep_bring_home": 3.2,
+     "margin": -31.4,
+     "rep_base": 29.4,
+     "rep_bring_home": 3.1,
      "prime_persuasion": 1.2,
      "stubborn_middle": 1.8,
      "dem_peel": 0.5,
@@ -6768,7 +6768,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.9
+       "value": 1.0
       },
       {
        "key": "stubborn_middle",
@@ -6791,10 +6791,10 @@
        "value": 68.7
       }
      ],
-     "margin": -42.1,
+     "margin": -42.2,
      "rep_base": 25.0,
      "rep_bring_home": 2.3,
-     "prime_persuasion": 0.9,
+     "prime_persuasion": 1.0,
      "stubborn_middle": 1.9,
      "dem_peel": 0.4,
      "dems_going_home": 0.8,
@@ -6870,8 +6870,8 @@
    "gov_2022": -12.3,
    "ussen_2022": -24.5,
    "pres_2024": -25.4,
-   "model_rslc_all": 24.6,
-   "model_rslc_hm": 27.2
+   "model_rslc_all": 24.7,
+   "model_rslc_hm": 27.1
   },
   "pres_2024_margin": -25.4,
   "gov_2022_margin": -12.3,
@@ -6895,7 +6895,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 56.5
+       "value": 56.6
       },
       {
        "key": "rep_bring_home",
@@ -6928,8 +6928,8 @@
        "value": 33.2
       }
      ],
-     "margin": 24.6,
-     "rep_base": 56.5,
+     "margin": 24.7,
+     "rep_base": 56.6,
      "rep_bring_home": 2.7,
      "prime_persuasion": 1.3,
      "stubborn_middle": 4.6,
@@ -6980,7 +6980,7 @@
        "value": 32.2
       }
      ],
-     "margin": 27.2,
+     "margin": 27.1,
      "rep_base": 58.8,
      "rep_bring_home": 2.0,
      "prime_persuasion": 1.0,
@@ -7010,7 +7010,7 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Stone Sobieralski",
      "dem": "John Inglis"
     }
    }
@@ -7071,7 +7071,7 @@
    "ussen_2022": 28537
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Stone Sobieralski",
    "dem": "John Inglis"
   },
   "models": {
@@ -7094,7 +7094,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 2.9
+       "value": 2.8
       },
       {
        "key": "stubborn_middle",
@@ -7120,7 +7120,7 @@
      "margin": -7.9,
      "rep_base": 38.3,
      "rep_bring_home": 4.6,
-     "prime_persuasion": 2.9,
+     "prime_persuasion": 2.8,
      "stubborn_middle": 2.9,
      "dem_peel": 0.5,
      "dems_going_home": 0.6,
@@ -7249,7 +7249,7 @@
    "ussen_2022": -6.1,
    "pres_2024": -19.1,
    "model_rslc_all": 12.7,
-   "model_rslc_hm": 8.0
+   "model_rslc_hm": 7.9
   },
   "pres_2024_margin": -19.1,
   "gov_2022_margin": 5.5,
@@ -7355,17 +7355,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 41.9
+       "value": 42.0
       }
      ],
-     "margin": 8.0,
+     "margin": 7.9,
      "rep_base": 47.3,
      "rep_bring_home": 3.8,
      "prime_persuasion": 1.8,
      "stubborn_middle": 3.3,
      "dem_peel": 0.7,
      "dems_going_home": 1.2,
-     "dem_base": 41.9
+     "dem_base": 42.0
     }
    }
   }
@@ -7437,8 +7437,8 @@
    "gov_2022": 12.2,
    "ussen_2022": -2.4,
    "pres_2024": -5.9,
-   "model_rslc_all": 1.6,
-   "model_rslc_hm": 0.8
+   "model_rslc_all": 1.5,
+   "model_rslc_hm": 0.7
   },
   "pres_2024_margin": -5.9,
   "gov_2022_margin": 12.2,
@@ -7467,7 +7467,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 4.7
+       "value": 4.6
       },
       {
        "key": "prime_persuasion",
@@ -7495,9 +7495,9 @@
        "value": 44.0
       }
      ],
-     "margin": 1.6,
+     "margin": 1.5,
      "rep_base": 42.3,
-     "rep_bring_home": 4.7,
+     "rep_bring_home": 4.6,
      "prime_persuasion": 1.3,
      "stubborn_middle": 5.5,
      "dem_peel": 0.8,
@@ -7547,7 +7547,7 @@
        "value": 44.9
       }
      ],
-     "margin": 0.8,
+     "margin": 0.7,
      "rep_base": 43.6,
      "rep_bring_home": 3.5,
      "prime_persuasion": 0.9,
@@ -7626,7 +7626,7 @@
    "gov_2022": 13.2,
    "ussen_2022": -1.5,
    "pres_2024": -4.9,
-   "model_rslc_all": -0.2,
+   "model_rslc_all": -0.3,
    "model_rslc_hm": 4.5
   },
   "pres_2024_margin": -4.9,
@@ -7684,7 +7684,7 @@
        "value": 46.4
       }
      ],
-     "margin": -0.2,
+     "margin": -0.3,
      "rep_base": 45.0,
      "rep_bring_home": 2.7,
      "prime_persuasion": 1.2,
@@ -7703,7 +7703,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 47.9
+       "value": 47.8
       },
       {
        "key": "rep_bring_home",
@@ -7737,7 +7737,7 @@
       }
      ],
      "margin": 4.5,
-     "rep_base": 47.9,
+     "rep_base": 47.8,
      "rep_bring_home": 2.3,
      "prime_persuasion": 1.1,
      "stubborn_middle": 2.9,
@@ -7815,7 +7815,7 @@
    "gov_2022": 46.1,
    "ussen_2022": 34.1,
    "pres_2024": 29.6,
-   "model_rslc_all": -33.1,
+   "model_rslc_all": -33.2,
    "model_rslc_hm": -36.3
   },
   "pres_2024_margin": 29.6,
@@ -7870,17 +7870,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 61.7
+       "value": 61.8
       }
      ],
-     "margin": -33.1,
+     "margin": -33.2,
      "rep_base": 26.6,
      "rep_bring_home": 3.6,
      "prime_persuasion": 1.0,
      "stubborn_middle": 4.8,
      "dem_peel": 0.6,
      "dems_going_home": 1.6,
-     "dem_base": 61.7
+     "dem_base": 61.8
     }
    },
    "model_rslc_hm": {
@@ -7892,7 +7892,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 26.4
+       "value": 26.3
       },
       {
        "key": "rep_bring_home",
@@ -7922,17 +7922,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 63.5
+       "value": 63.6
       }
      ],
      "margin": -36.3,
-     "rep_base": 26.4,
+     "rep_base": 26.3,
      "rep_bring_home": 2.6,
      "prime_persuasion": 0.8,
      "stubborn_middle": 4.4,
      "dem_peel": 0.5,
      "dems_going_home": 1.7,
-     "dem_base": 63.5
+     "dem_base": 63.6
     }
    }
   }
@@ -8004,8 +8004,8 @@
    "gov_2022": -19.8,
    "ussen_2022": -30.7,
    "pres_2024": -33.1,
-   "model_rslc_all": 29.6,
-   "model_rslc_hm": 35.0
+   "model_rslc_all": 29.5,
+   "model_rslc_hm": 34.9
   },
   "pres_2024_margin": -33.1,
   "gov_2022_margin": -19.8,
@@ -8062,7 +8062,7 @@
        "value": 32.0
       }
      ],
-     "margin": 29.6,
+     "margin": 29.5,
      "rep_base": 59.4,
      "rep_bring_home": 3.0,
      "prime_persuasion": 1.6,
@@ -8111,17 +8111,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 29.7
+       "value": 29.8
       }
      ],
-     "margin": 35.0,
+     "margin": 34.9,
      "rep_base": 62.7,
      "rep_bring_home": 2.7,
      "prime_persuasion": 1.3,
      "stubborn_middle": 2.8,
      "dem_peel": 0.1,
      "dems_going_home": 0.7,
-     "dem_base": 29.7
+     "dem_base": 29.8
     }
    }
   }
@@ -8193,8 +8193,8 @@
    "gov_2022": 16.0,
    "ussen_2022": 2.8,
    "pres_2024": -3.8,
-   "model_rslc_all": -1.8,
-   "model_rslc_hm": -4.5
+   "model_rslc_all": -1.7,
+   "model_rslc_hm": -4.6
   },
   "pres_2024_margin": -3.8,
   "gov_2022_margin": 16.0,
@@ -8228,12 +8228,12 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.4
+       "value": 1.5
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 5.1
+       "value": 5.0
       },
       {
        "key": "dem_peel",
@@ -8243,22 +8243,22 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 2.1
+       "value": 2.0
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 45.2
+       "value": 45.1
       }
      ],
-     "margin": -1.8,
+     "margin": -1.7,
      "rep_base": 40.7,
      "rep_bring_home": 4.7,
-     "prime_persuasion": 1.4,
-     "stubborn_middle": 5.1,
+     "prime_persuasion": 1.5,
+     "stubborn_middle": 5.0,
      "dem_peel": 0.9,
-     "dems_going_home": 2.1,
-     "dem_base": 45.2
+     "dems_going_home": 2.0,
+     "dem_base": 45.1
     }
    },
    "model_rslc_hm": {
@@ -8285,7 +8285,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 4.4
+       "value": 4.3
       },
       {
        "key": "dem_peel",
@@ -8300,17 +8300,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 46.5
+       "value": 46.6
       }
      ],
-     "margin": -4.5,
+     "margin": -4.6,
      "rep_base": 40.8,
      "rep_bring_home": 3.9,
      "prime_persuasion": 1.2,
-     "stubborn_middle": 4.4,
+     "stubborn_middle": 4.3,
      "dem_peel": 0.7,
      "dems_going_home": 2.6,
-     "dem_base": 46.5
+     "dem_base": 46.6
     }
    }
   }
@@ -8382,7 +8382,7 @@
    "gov_2022": 27.3,
    "ussen_2022": 15.4,
    "pres_2024": 3.9,
-   "model_rslc_all": -11.7,
+   "model_rslc_all": -11.8,
    "model_rslc_hm": -16.5
   },
   "pres_2024_margin": 3.9,
@@ -8407,7 +8407,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 36.3
+       "value": 36.2
       },
       {
        "key": "rep_bring_home",
@@ -8440,8 +8440,8 @@
        "value": 51.3
       }
      ],
-     "margin": -11.7,
-     "rep_base": 36.3,
+     "margin": -11.8,
+     "rep_base": 36.2,
      "rep_bring_home": 4.0,
      "prime_persuasion": 2.1,
      "stubborn_middle": 4.7,
@@ -8606,7 +8606,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.4
+       "value": 1.3
       },
       {
        "key": "stubborn_middle",
@@ -8632,7 +8632,7 @@
      "margin": 10.2,
      "rep_base": 47.4,
      "rep_bring_home": 4.4,
-     "prime_persuasion": 1.4,
+     "prime_persuasion": 1.3,
      "stubborn_middle": 4.6,
      "dem_peel": 0.6,
      "dems_going_home": 1.4,
@@ -8815,7 +8815,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 39.2
+       "value": 39.3
       }
      ],
      "margin": 15.5,
@@ -8825,7 +8825,7 @@
      "stubborn_middle": 2.5,
      "dem_peel": 0.2,
      "dems_going_home": 0.9,
-     "dem_base": 39.2
+     "dem_base": 39.3
     }
    },
    "model_rslc_hm": {
@@ -8949,8 +8949,8 @@
    "gov_2022": -2.5,
    "ussen_2022": -13.3,
    "pres_2024": -24.7,
-   "model_rslc_all": 18.4,
-   "model_rslc_hm": 16.2
+   "model_rslc_all": 18.5,
+   "model_rslc_hm": 16.4
   },
   "pres_2024_margin": -24.7,
   "gov_2022_margin": -2.5,
@@ -8974,7 +8974,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 52.1
+       "value": 52.2
       },
       {
        "key": "rep_bring_home",
@@ -9004,17 +9004,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 37.3
+       "value": 37.2
       }
      ],
-     "margin": 18.4,
-     "rep_base": 52.1,
+     "margin": 18.5,
+     "rep_base": 52.2,
      "rep_bring_home": 4.3,
      "prime_persuasion": 1.9,
      "stubborn_middle": 3.0,
      "dem_peel": 0.6,
      "dems_going_home": 0.8,
-     "dem_base": 37.3
+     "dem_base": 37.2
     }
    },
    "model_rslc_hm": {
@@ -9041,7 +9041,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.2
+       "value": 2.3
       },
       {
        "key": "dem_peel",
@@ -9056,17 +9056,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 39.1
+       "value": 39.0
       }
      ],
-     "margin": 16.2,
+     "margin": 16.4,
      "rep_base": 52.7,
      "rep_bring_home": 3.5,
      "prime_persuasion": 1.3,
-     "stubborn_middle": 2.2,
+     "stubborn_middle": 2.3,
      "dem_peel": 0.3,
      "dems_going_home": 0.9,
-     "dem_base": 39.1
+     "dem_base": 39.0
     }
    }
   }
@@ -9139,7 +9139,7 @@
    "ussen_2022": 38.5,
    "pres_2024": 30.0,
    "model_rslc_all": -36.0,
-   "model_rslc_hm": -36.4
+   "model_rslc_hm": -36.3
   },
   "pres_2024_margin": 30.0,
   "gov_2022_margin": 45.3,
@@ -9163,7 +9163,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 27.4
+       "value": 27.5
       },
       {
        "key": "rep_bring_home",
@@ -9188,7 +9188,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.3
+       "value": 1.2
       },
       {
        "key": "dem_base",
@@ -9197,12 +9197,12 @@
       }
      ],
      "margin": -36.0,
-     "rep_base": 27.4,
+     "rep_base": 27.5,
      "rep_bring_home": 3.4,
      "prime_persuasion": 1.2,
      "stubborn_middle": 1.0,
      "dem_peel": 0.2,
-     "dems_going_home": 1.3,
+     "dems_going_home": 1.2,
      "dem_base": 65.6
     }
    },
@@ -9220,7 +9220,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 2.8
+       "value": 2.7
       },
       {
        "key": "prime_persuasion",
@@ -9248,9 +9248,9 @@
        "value": 66.2
       }
      ],
-     "margin": -36.4,
+     "margin": -36.3,
      "rep_base": 28.1,
-     "rep_bring_home": 2.8,
+     "rep_bring_home": 2.7,
      "prime_persuasion": 0.9,
      "stubborn_middle": 0.9,
      "dem_peel": 0.2,
@@ -9328,7 +9328,7 @@
    "ussen_2022": -19.8,
    "pres_2024": -36.8,
    "model_rslc_all": 27.8,
-   "model_rslc_hm": 22.0
+   "model_rslc_hm": 22.1
   },
   "pres_2024_margin": -36.8,
   "gov_2022_margin": -9.8,
@@ -9352,7 +9352,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 54.6
+       "value": 54.7
       },
       {
        "key": "rep_bring_home",
@@ -9386,7 +9386,7 @@
       }
      ],
      "margin": 27.8,
-     "rep_base": 54.6,
+     "rep_base": 54.7,
      "rep_bring_home": 5.9,
      "prime_persuasion": 3.9,
      "stubborn_middle": 2.4,
@@ -9434,17 +9434,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 35.1
+       "value": 35.0
       }
      ],
-     "margin": 22.0,
+     "margin": 22.1,
      "rep_base": 53.4,
      "rep_bring_home": 4.9,
      "prime_persuasion": 2.7,
      "stubborn_middle": 2.5,
      "dem_peel": 0.3,
      "dems_going_home": 1.2,
-     "dem_base": 35.1
+     "dem_base": 35.0
     }
    }
   }
@@ -9705,8 +9705,8 @@
    "gov_2022": -18.0,
    "ussen_2022": -27.0,
    "pres_2024": -42.5,
-   "model_rslc_all": 34.6,
-   "model_rslc_hm": 28.7
+   "model_rslc_all": 34.7,
+   "model_rslc_hm": 28.8
   },
   "pres_2024_margin": -42.5,
   "gov_2022_margin": -18.0,
@@ -9760,17 +9760,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 29.6
+       "value": 29.5
       }
      ],
-     "margin": 34.6,
+     "margin": 34.7,
      "rep_base": 59.2,
      "rep_bring_home": 5.5,
      "prime_persuasion": 3.4,
      "stubborn_middle": 1.5,
      "dem_peel": 0.2,
      "dems_going_home": 0.6,
-     "dem_base": 29.6
+     "dem_base": 29.5
     }
    },
    "model_rslc_hm": {
@@ -9782,7 +9782,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 57.4
+       "value": 57.5
       },
       {
        "key": "rep_bring_home",
@@ -9812,17 +9812,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 32.9
+       "value": 32.8
       }
      ],
-     "margin": 28.7,
-     "rep_base": 57.4,
+     "margin": 28.8,
+     "rep_base": 57.5,
      "rep_bring_home": 4.8,
      "prime_persuasion": 2.6,
      "stubborn_middle": 1.5,
      "dem_peel": 0.2,
      "dems_going_home": 0.7,
-     "dem_base": 32.9
+     "dem_base": 32.8
     }
    }
   }
@@ -9846,7 +9846,7 @@
     },
     "candidates": {
      "rep": "No candidate",
-     "dem": "Steven Malagari"
+     "dem": "Steve Malagari"
     }
    }
   ],
@@ -9894,8 +9894,8 @@
    "gov_2022": 27.8,
    "ussen_2022": 19.1,
    "pres_2024": 10.8,
-   "model_rslc_all": -16.7,
-   "model_rslc_hm": -16.5
+   "model_rslc_all": -16.8,
+   "model_rslc_hm": -16.6
   },
   "pres_2024_margin": 10.8,
   "gov_2022_margin": 27.8,
@@ -9907,7 +9907,7 @@
   },
   "candidates_2026": {
    "rep": "No candidate",
-   "dem": "Steven Malagari"
+   "dem": "Steve Malagari"
   },
   "models": {
    "model_rslc_all": {
@@ -9919,7 +9919,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 34.8
+       "value": 34.7
       },
       {
        "key": "rep_bring_home",
@@ -9952,8 +9952,8 @@
        "value": 54.4
       }
      ],
-     "margin": -16.7,
-     "rep_base": 34.8,
+     "margin": -16.8,
+     "rep_base": 34.7,
      "rep_bring_home": 4.2,
      "prime_persuasion": 0.9,
      "stubborn_middle": 3.7,
@@ -9971,7 +9971,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 35.8
+       "value": 35.7
       },
       {
        "key": "rep_bring_home",
@@ -10004,8 +10004,8 @@
        "value": 54.6
       }
      ],
-     "margin": -16.5,
-     "rep_base": 35.8,
+     "margin": -16.6,
+     "rep_base": 35.7,
      "rep_bring_home": 3.8,
      "prime_persuasion": 0.9,
      "stubborn_middle": 3.0,
@@ -10083,7 +10083,7 @@
    "gov_2022": 52.4,
    "ussen_2022": 43.0,
    "pres_2024": 35.8,
-   "model_rslc_all": -41.8,
+   "model_rslc_all": -41.9,
    "model_rslc_hm": -41.1
   },
   "pres_2024_margin": 35.8,
@@ -10141,7 +10141,7 @@
        "value": 68.0
       }
      ],
-     "margin": -41.8,
+     "margin": -41.9,
      "rep_base": 23.6,
      "rep_bring_home": 3.5,
      "prime_persuasion": 0.6,
@@ -10175,7 +10175,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.0
+       "value": 1.9
       },
       {
        "key": "dem_peel",
@@ -10197,7 +10197,7 @@
      "rep_base": 24.8,
      "rep_bring_home": 3.0,
      "prime_persuasion": 0.6,
-     "stubborn_middle": 2.0,
+     "stubborn_middle": 1.9,
      "dem_peel": 0.8,
      "dems_going_home": 1.0,
      "dem_base": 67.9
@@ -10223,7 +10223,7 @@
      "party": "R"
     },
     "candidates": {
-     "rep": "Jill Cooper",
+     "rep": "Jill N. Cooper",
      "dem": "Davon Magwood"
     }
    }
@@ -10284,7 +10284,7 @@
    "ussen_2022": 32104
   },
   "candidates_2026": {
-   "rep": "Jill Cooper",
+   "rep": "Jill N. Cooper",
    "dem": "Davon Magwood"
   },
   "models": {
@@ -10568,7 +10568,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 36.9
+       "value": 36.8
       }
      ],
      "margin": 21.0,
@@ -10578,7 +10578,7 @@
      "stubborn_middle": 1.9,
      "dem_peel": 0.3,
      "dems_going_home": 1.1,
-     "dem_base": 36.9
+     "dem_base": 36.8
     }
    }
   }
@@ -10651,7 +10651,7 @@
    "ussen_2022": -14.5,
    "pres_2024": -22.5,
    "model_rslc_all": 18.5,
-   "model_rslc_hm": 16.6
+   "model_rslc_hm": 16.5
   },
   "pres_2024_margin": -22.5,
   "gov_2022_margin": -1.1,
@@ -10675,7 +10675,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 53.4
+       "value": 53.3
       },
       {
        "key": "rep_bring_home",
@@ -10705,17 +10705,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 37.7
+       "value": 37.8
       }
      ],
      "margin": 18.5,
-     "rep_base": 53.4,
+     "rep_base": 53.3,
      "rep_bring_home": 3.8,
      "prime_persuasion": 1.6,
      "stubborn_middle": 2.2,
      "dem_peel": 0.4,
      "dems_going_home": 0.9,
-     "dem_base": 37.7
+     "dem_base": 37.8
     }
    },
    "model_rslc_hm": {
@@ -10732,7 +10732,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 3.1
+       "value": 3.2
       },
       {
        "key": "prime_persuasion",
@@ -10752,22 +10752,22 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.0
+       "value": 0.9
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 39.2
+       "value": 39.3
       }
      ],
-     "margin": 16.6,
+     "margin": 16.5,
      "rep_base": 53.6,
-     "rep_bring_home": 3.1,
+     "rep_bring_home": 3.2,
      "prime_persuasion": 1.1,
      "stubborn_middle": 1.7,
      "dem_peel": 0.2,
-     "dems_going_home": 1.0,
-     "dem_base": 39.2
+     "dems_going_home": 0.9,
+     "dem_base": 39.3
     }
    }
   }
@@ -10839,8 +10839,8 @@
    "gov_2022": -9.7,
    "ussen_2022": -21.5,
    "pres_2024": -34.0,
-   "model_rslc_all": 27.9,
-   "model_rslc_hm": 23.4
+   "model_rslc_all": 28.0,
+   "model_rslc_hm": 23.5
   },
   "pres_2024_margin": -34.0,
   "gov_2022_margin": -9.7,
@@ -10864,7 +10864,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 55.9
+       "value": 56.0
       },
       {
        "key": "rep_bring_home",
@@ -10879,7 +10879,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.4
+       "value": 2.3
       },
       {
        "key": "dem_peel",
@@ -10897,11 +10897,11 @@
        "value": 32.7
       }
      ],
-     "margin": 27.9,
-     "rep_base": 55.9,
+     "margin": 28.0,
+     "rep_base": 56.0,
      "rep_bring_home": 5.4,
      "prime_persuasion": 2.4,
-     "stubborn_middle": 2.4,
+     "stubborn_middle": 2.3,
      "dem_peel": 0.5,
      "dems_going_home": 0.7,
      "dem_base": 32.7
@@ -10916,7 +10916,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 55.2
+       "value": 55.3
       },
       {
        "key": "rep_bring_home",
@@ -10931,7 +10931,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.1
+       "value": 2.0
       },
       {
        "key": "dem_peel",
@@ -10946,17 +10946,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 35.4
+       "value": 35.3
       }
      ],
-     "margin": 23.4,
-     "rep_base": 55.2,
+     "margin": 23.5,
+     "rep_base": 55.3,
      "rep_bring_home": 4.4,
      "prime_persuasion": 1.8,
-     "stubborn_middle": 2.1,
+     "stubborn_middle": 2.0,
      "dem_peel": 0.4,
      "dems_going_home": 0.8,
-     "dem_base": 35.4
+     "dem_base": 35.3
     }
    }
   }
@@ -11217,8 +11217,8 @@
    "gov_2022": -14.7,
    "ussen_2022": -25.9,
    "pres_2024": -38.9,
-   "model_rslc_all": 33.4,
-   "model_rslc_hm": 31.0
+   "model_rslc_all": 33.5,
+   "model_rslc_hm": 31.2
   },
   "pres_2024_margin": -38.9,
   "gov_2022_margin": -14.7,
@@ -11242,17 +11242,17 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 59.2
+       "value": 59.3
       },
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 5.3
+       "value": 5.2
       },
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 2.4
+       "value": 2.5
       },
       {
        "key": "stubborn_middle",
@@ -11272,17 +11272,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 30.3
+       "value": 30.2
       }
      ],
-     "margin": 33.4,
-     "rep_base": 59.2,
-     "rep_bring_home": 5.3,
-     "prime_persuasion": 2.4,
+     "margin": 33.5,
+     "rep_base": 59.3,
+     "rep_bring_home": 5.2,
+     "prime_persuasion": 2.5,
      "stubborn_middle": 1.7,
      "dem_peel": 0.3,
      "dems_going_home": 0.8,
-     "dem_base": 30.3
+     "dem_base": 30.2
     }
    },
    "model_rslc_hm": {
@@ -11294,12 +11294,12 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 59.8
+       "value": 59.9
       },
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 4.2
+       "value": 4.1
       },
       {
        "key": "prime_persuasion",
@@ -11319,22 +11319,22 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 0.8
+       "value": 0.9
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 32.1
+       "value": 32.0
       }
      ],
-     "margin": 31.0,
-     "rep_base": 59.8,
-     "rep_bring_home": 4.2,
+     "margin": 31.2,
+     "rep_base": 59.9,
+     "rep_bring_home": 4.1,
      "prime_persuasion": 1.6,
      "stubborn_middle": 1.3,
      "dem_peel": 0.3,
-     "dems_going_home": 0.8,
-     "dem_base": 32.1
+     "dems_going_home": 0.9,
+     "dem_base": 32.0
     }
    }
   }
@@ -11441,7 +11441,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.1
+       "value": 1.0
       },
       {
        "key": "stubborn_middle",
@@ -11467,7 +11467,7 @@
      "margin": -25.9,
      "rep_base": 30.0,
      "rep_bring_home": 4.3,
-     "prime_persuasion": 1.1,
+     "prime_persuasion": 1.0,
      "stubborn_middle": 3.7,
      "dem_peel": 0.7,
      "dems_going_home": 2.4,
@@ -11595,8 +11595,8 @@
    "gov_2022": -11.9,
    "ussen_2022": -22.8,
    "pres_2024": -32.9,
-   "model_rslc_all": 29.4,
-   "model_rslc_hm": 28.7
+   "model_rslc_all": 29.5,
+   "model_rslc_hm": 28.8
   },
   "pres_2024_margin": -32.9,
   "gov_2022_margin": -11.9,
@@ -11635,7 +11635,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.4
+       "value": 2.3
       },
       {
        "key": "dem_peel",
@@ -11653,11 +11653,11 @@
        "value": 31.3
       }
      ],
-     "margin": 29.4,
+     "margin": 29.5,
      "rep_base": 55.7,
      "rep_bring_home": 6.6,
      "prime_persuasion": 2.5,
-     "stubborn_middle": 2.4,
+     "stubborn_middle": 2.3,
      "dem_peel": 0.1,
      "dems_going_home": 1.5,
      "dem_base": 31.3
@@ -11672,7 +11672,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 56.5
+       "value": 56.6
       },
       {
        "key": "rep_bring_home",
@@ -11702,17 +11702,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 32.5
+       "value": 32.4
       }
      ],
-     "margin": 28.7,
-     "rep_base": 56.5,
+     "margin": 28.8,
+     "rep_base": 56.6,
      "rep_bring_home": 6.1,
      "prime_persuasion": 1.8,
      "stubborn_middle": 1.6,
      "dem_peel": 0.1,
      "dems_going_home": 1.5,
-     "dem_base": 32.5
+     "dem_base": 32.4
     }
    }
   }
@@ -11784,8 +11784,8 @@
    "gov_2022": -36.9,
    "ussen_2022": -45.4,
    "pres_2024": -56.9,
-   "model_rslc_all": 50.6,
-   "model_rslc_hm": 52.7
+   "model_rslc_all": 50.7,
+   "model_rslc_hm": 52.8
   },
   "pres_2024_margin": -56.9,
   "gov_2022_margin": -36.9,
@@ -11824,7 +11824,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.3
+       "value": 1.2
       },
       {
        "key": "dem_peel",
@@ -11842,11 +11842,11 @@
        "value": 21.8
       }
      ],
-     "margin": 50.6,
+     "margin": 50.7,
      "rep_base": 66.9,
      "rep_bring_home": 6.5,
      "prime_persuasion": 2.6,
-     "stubborn_middle": 1.3,
+     "stubborn_middle": 1.2,
      "dem_peel": 0.1,
      "dems_going_home": 0.9,
      "dem_base": 21.8
@@ -11894,7 +11894,7 @@
        "value": 21.7
       }
      ],
-     "margin": 52.7,
+     "margin": 52.8,
      "rep_base": 69.5,
      "rep_bring_home": 5.8,
      "prime_persuasion": 1.4,
@@ -11973,7 +11973,7 @@
    "gov_2022": -24.5,
    "ussen_2022": -32.6,
    "pres_2024": -42.9,
-   "model_rslc_all": 39.0,
+   "model_rslc_all": 39.1,
    "model_rslc_hm": 42.3
   },
   "pres_2024_margin": -42.9,
@@ -11998,12 +11998,12 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 61.8
+       "value": 61.9
       },
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 5.3
+       "value": 5.2
       },
       {
        "key": "prime_persuasion",
@@ -12031,9 +12031,9 @@
        "value": 26.8
       }
      ],
-     "margin": 39.0,
-     "rep_base": 61.8,
-     "rep_bring_home": 5.3,
+     "margin": 39.1,
+     "rep_base": 61.9,
+     "rep_bring_home": 5.2,
      "prime_persuasion": 2.2,
      "stubborn_middle": 2.7,
      "dem_peel": 0.1,
@@ -12352,7 +12352,7 @@
    "ussen_2022": -52.6,
    "pres_2024": -59.8,
    "model_rslc_all": 54.5,
-   "model_rslc_hm": 56.7
+   "model_rslc_hm": 56.8
   },
   "pres_2024_margin": -59.8,
   "gov_2022_margin": -42.5,
@@ -12381,7 +12381,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 6.8
+       "value": 6.7
       },
       {
        "key": "prime_persuasion",
@@ -12406,17 +12406,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 19.6
+       "value": 19.5
       }
      ],
      "margin": 54.5,
      "rep_base": 68.5,
-     "rep_bring_home": 6.8,
+     "rep_bring_home": 6.7,
      "prime_persuasion": 2.3,
      "stubborn_middle": 1.6,
      "dem_peel": 0.1,
      "dems_going_home": 1.2,
-     "dem_base": 19.6
+     "dem_base": 19.5
     }
    },
    "model_rslc_hm": {
@@ -12428,7 +12428,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 71.3
+       "value": 71.4
       },
       {
        "key": "rep_bring_home",
@@ -12461,8 +12461,8 @@
        "value": 19.5
       }
      ],
-     "margin": 56.7,
-     "rep_base": 71.3,
+     "margin": 56.8,
+     "rep_base": 71.4,
      "rep_bring_home": 5.9,
      "prime_persuasion": 1.1,
      "stubborn_middle": 1.0,
@@ -12540,7 +12540,7 @@
    "gov_2022": -42.1,
    "ussen_2022": -45.3,
    "pres_2024": -51.8,
-   "model_rslc_all": 48.0,
+   "model_rslc_all": 48.1,
    "model_rslc_hm": 51.5
   },
   "pres_2024_margin": -51.8,
@@ -12595,17 +12595,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 22.6
+       "value": 22.7
       }
      ],
-     "margin": 48.0,
+     "margin": 48.1,
      "rep_base": 65.5,
      "rep_bring_home": 6.2,
      "prime_persuasion": 2.2,
      "stubborn_middle": 2.3,
      "dem_peel": 0.1,
      "dems_going_home": 1.0,
-     "dem_base": 22.6
+     "dem_base": 22.7
     }
    },
    "model_rslc_hm": {
@@ -12730,7 +12730,7 @@
    "ussen_2022": -48.1,
    "pres_2024": -53.3,
    "model_rslc_all": 52.3,
-   "model_rslc_hm": 54.5
+   "model_rslc_hm": 54.6
   },
   "pres_2024_margin": -53.3,
   "gov_2022_margin": -44.4,
@@ -12754,7 +12754,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 68.5
+       "value": 68.6
       },
       {
        "key": "rep_bring_home",
@@ -12788,7 +12788,7 @@
       }
      ],
      "margin": 52.3,
-     "rep_base": 68.5,
+     "rep_base": 68.6,
      "rep_bring_home": 4.6,
      "prime_persuasion": 2.2,
      "stubborn_middle": 3.6,
@@ -12839,7 +12839,7 @@
        "value": 20.1
       }
      ],
-     "margin": 54.5,
+     "margin": 54.6,
      "rep_base": 71.2,
      "rep_bring_home": 4.1,
      "prime_persuasion": 1.2,
@@ -12918,7 +12918,7 @@
    "gov_2022": -42.8,
    "ussen_2022": -52.6,
    "pres_2024": -59.1,
-   "model_rslc_all": 54.8,
+   "model_rslc_all": 54.9,
    "model_rslc_hm": 55.4
   },
   "pres_2024_margin": -59.1,
@@ -12976,7 +12976,7 @@
        "value": 18.9
       }
      ],
-     "margin": 54.8,
+     "margin": 54.9,
      "rep_base": 68.3,
      "rep_bring_home": 6.6,
      "prime_persuasion": 2.8,
@@ -13107,7 +13107,7 @@
    "gov_2022": 30.0,
    "ussen_2022": 19.1,
    "pres_2024": 14.3,
-   "model_rslc_all": -19.2,
+   "model_rslc_all": -19.3,
    "model_rslc_hm": -18.3
   },
   "pres_2024_margin": 14.3,
@@ -13165,7 +13165,7 @@
        "value": 55.6
       }
      ],
-     "margin": -19.2,
+     "margin": -19.3,
      "rep_base": 33.6,
      "rep_bring_home": 4.3,
      "prime_persuasion": 0.7,
@@ -13184,7 +13184,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 35.3
+       "value": 35.4
       },
       {
        "key": "rep_bring_home",
@@ -13218,7 +13218,7 @@
       }
      ],
      "margin": -18.3,
-     "rep_base": 35.3,
+     "rep_base": 35.4,
      "rep_bring_home": 3.2,
      "prime_persuasion": 0.6,
      "stubborn_middle": 3.5,
@@ -13485,8 +13485,8 @@
    "gov_2022": -7.4,
    "ussen_2022": -21.1,
    "pres_2024": -31.3,
-   "model_rslc_all": 20.4,
-   "model_rslc_hm": 20.0
+   "model_rslc_all": 20.3,
+   "model_rslc_hm": 20.1
   },
   "pres_2024_margin": -31.3,
   "gov_2022_margin": -7.4,
@@ -13543,7 +13543,7 @@
        "value": 34.8
       }
      ],
-     "margin": 20.4,
+     "margin": 20.3,
      "rep_base": 48.3,
      "rep_bring_home": 8.4,
      "prime_persuasion": 4.4,
@@ -13562,12 +13562,12 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 50.4
+       "value": 50.5
       },
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 7.0
+       "value": 6.9
       },
       {
        "key": "prime_persuasion",
@@ -13587,7 +13587,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.3
+       "value": 1.2
       },
       {
        "key": "dem_base",
@@ -13595,13 +13595,13 @@
        "value": 36.1
       }
      ],
-     "margin": 20.0,
-     "rep_base": 50.4,
-     "rep_bring_home": 7.0,
+     "margin": 20.1,
+     "rep_base": 50.5,
+     "rep_bring_home": 6.9,
      "prime_persuasion": 2.9,
      "stubborn_middle": 2.2,
      "dem_peel": 0.3,
-     "dems_going_home": 1.3,
+     "dems_going_home": 1.2,
      "dem_base": 36.1
     }
    }
@@ -13864,7 +13864,7 @@
    "ussen_2022": 14.5,
    "pres_2024": 8.9,
    "model_rslc_all": -13.4,
-   "model_rslc_hm": -11.9
+   "model_rslc_hm": -12.0
   },
   "pres_2024_margin": 8.9,
   "gov_2022_margin": 19.8,
@@ -13918,7 +13918,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 53.4
+       "value": 53.5
       }
      ],
      "margin": -13.4,
@@ -13928,7 +13928,7 @@
      "stubborn_middle": 3.0,
      "dem_peel": 0.4,
      "dems_going_home": 1.1,
-     "dem_base": 53.4
+     "dem_base": 53.5
     }
    },
    "model_rslc_hm": {
@@ -13940,7 +13940,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 39.4
+       "value": 39.3
       },
       {
        "key": "rep_bring_home",
@@ -13973,8 +13973,8 @@
        "value": 53.2
       }
      ],
-     "margin": -11.9,
-     "rep_base": 39.4,
+     "margin": -12.0,
+     "rep_base": 39.3,
      "rep_bring_home": 3.0,
      "prime_persuasion": 0.8,
      "stubborn_middle": 2.4,
@@ -14053,7 +14053,7 @@
    "ussen_2022": -39.4,
    "pres_2024": -48.4,
    "model_rslc_all": 42.0,
-   "model_rslc_hm": 41.9
+   "model_rslc_hm": 42.0
   },
   "pres_2024_margin": -48.4,
   "gov_2022_margin": -29.7,
@@ -14162,7 +14162,7 @@
        "value": 26.6
       }
      ],
-     "margin": 41.9,
+     "margin": 42.0,
      "rep_base": 64.1,
      "rep_bring_home": 5.5,
      "prime_persuasion": 1.7,
@@ -14318,7 +14318,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 62.5
+       "value": 62.6
       },
       {
        "key": "rep_bring_home",
@@ -14333,7 +14333,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.3
+       "value": 1.4
       },
       {
        "key": "dem_peel",
@@ -14352,10 +14352,10 @@
       }
      ],
      "margin": 35.2,
-     "rep_base": 62.5,
+     "rep_base": 62.6,
      "rep_bring_home": 3.6,
      "prime_persuasion": 1.4,
-     "stubborn_middle": 1.3,
+     "stubborn_middle": 1.4,
      "dem_peel": 0.1,
      "dems_going_home": 0.6,
      "dem_base": 30.4
@@ -14431,7 +14431,7 @@
    "ussen_2022": 20.5,
    "pres_2024": 16.1,
    "model_rslc_all": -23.0,
-   "model_rslc_hm": -19.9
+   "model_rslc_hm": -19.8
   },
   "pres_2024_margin": 16.1,
   "gov_2022_margin": 29.1,
@@ -14455,7 +14455,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 31.5
+       "value": 31.6
       },
       {
        "key": "rep_bring_home",
@@ -14480,7 +14480,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.1
+       "value": 1.0
       },
       {
        "key": "dem_base",
@@ -14489,12 +14489,12 @@
       }
      ],
      "margin": -23.0,
-     "rep_base": 31.5,
+     "rep_base": 31.6,
      "rep_bring_home": 4.0,
      "prime_persuasion": 1.4,
      "stubborn_middle": 4.1,
      "dem_peel": 0.4,
-     "dems_going_home": 1.1,
+     "dems_going_home": 1.0,
      "dem_base": 57.5
     }
    },
@@ -14532,22 +14532,22 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 0.9
+       "value": 0.8
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 56.6
+       "value": 56.5
       }
      ],
-     "margin": -19.9,
+     "margin": -19.8,
      "rep_base": 33.9,
      "rep_bring_home": 3.7,
      "prime_persuasion": 1.1,
      "stubborn_middle": 3.7,
      "dem_peel": 0.2,
-     "dems_going_home": 0.9,
-     "dem_base": 56.6
+     "dems_going_home": 0.8,
+     "dem_base": 56.5
     }
    }
   }
@@ -14644,7 +14644,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 74.8
+       "value": 74.9
       },
       {
        "key": "rep_bring_home",
@@ -14674,17 +14674,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 15.0
+       "value": 15.1
       }
      ],
      "margin": 64.3,
-     "rep_base": 74.8,
+     "rep_base": 74.9,
      "rep_bring_home": 5.5,
      "prime_persuasion": 2.5,
      "stubborn_middle": 1.0,
      "dem_peel": 0.1,
      "dems_going_home": 1.0,
-     "dem_base": 15.0
+     "dem_base": 15.1
     }
    },
    "model_rslc_hm": {
@@ -15032,7 +15032,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.8
+       "value": 1.9
       },
       {
        "key": "stubborn_middle",
@@ -15052,17 +15052,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 21.5
+       "value": 21.4
       }
      ],
      "margin": 50.1,
      "rep_base": 66.1,
      "rep_bring_home": 6.5,
-     "prime_persuasion": 1.8,
+     "prime_persuasion": 1.9,
      "stubborn_middle": 3.1,
      "dem_peel": 0.1,
      "dems_going_home": 1.0,
-     "dem_base": 21.5
+     "dem_base": 21.4
     }
    },
    "model_rslc_hm": {
@@ -15074,7 +15074,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 69.6
+       "value": 69.7
       },
       {
        "key": "rep_bring_home",
@@ -15108,7 +15108,7 @@
       }
      ],
      "margin": 53.9,
-     "rep_base": 69.6,
+     "rep_base": 69.7,
      "rep_bring_home": 5.7,
      "prime_persuasion": 1.1,
      "stubborn_middle": 2.0,
@@ -15186,8 +15186,8 @@
    "gov_2022": -40.0,
    "ussen_2022": -47.4,
    "pres_2024": -54.5,
-   "model_rslc_all": 50.1,
-   "model_rslc_hm": 53.3
+   "model_rslc_all": 50.2,
+   "model_rslc_hm": 53.4
   },
   "pres_2024_margin": -54.5,
   "gov_2022_margin": -40.0,
@@ -15244,7 +15244,7 @@
        "value": 22.0
       }
      ],
-     "margin": 50.1,
+     "margin": 50.2,
      "rep_base": 68.0,
      "rep_bring_home": 5.1,
      "prime_persuasion": 1.9,
@@ -15263,7 +15263,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 71.6
+       "value": 71.7
       },
       {
        "key": "rep_bring_home",
@@ -15296,8 +15296,8 @@
        "value": 21.2
       }
      ],
-     "margin": 53.3,
-     "rep_base": 71.6,
+     "margin": 53.4,
+     "rep_base": 71.7,
      "rep_bring_home": 3.9,
      "prime_persuasion": 1.2,
      "stubborn_middle": 1.1,
@@ -15410,7 +15410,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.8
+       "value": 1.7
       },
       {
        "key": "stubborn_middle",
@@ -15436,7 +15436,7 @@
      "margin": -11.2,
      "rep_base": 37.6,
      "rep_bring_home": 4.0,
-     "prime_persuasion": 1.8,
+     "prime_persuasion": 1.7,
      "stubborn_middle": 3.4,
      "dem_peel": 0.4,
      "dems_going_home": 0.8,
@@ -15452,7 +15452,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 42.7
+       "value": 42.6
       },
       {
        "key": "rep_bring_home",
@@ -15486,7 +15486,7 @@
       }
      ],
      "margin": -3.8,
-     "rep_base": 42.7,
+     "rep_base": 42.6,
      "rep_bring_home": 3.4,
      "prime_persuasion": 1.2,
      "stubborn_middle": 2.6,
@@ -15564,7 +15564,7 @@
    "gov_2022": -16.8,
    "ussen_2022": -23.9,
    "pres_2024": -26.9,
-   "model_rslc_all": 19.5,
+   "model_rslc_all": 19.4,
    "model_rslc_hm": 27.0
   },
   "pres_2024_margin": -26.9,
@@ -15622,7 +15622,7 @@
        "value": 37.0
       }
      ],
-     "margin": 19.5,
+     "margin": 19.4,
      "rep_base": 53.4,
      "rep_bring_home": 4.2,
      "prime_persuasion": 1.8,
@@ -15753,8 +15753,8 @@
    "gov_2022": -41.3,
    "ussen_2022": -49.2,
    "pres_2024": -54.1,
-   "model_rslc_all": 51.0,
-   "model_rslc_hm": 53.2
+   "model_rslc_all": 50.9,
+   "model_rslc_hm": 53.3
   },
   "pres_2024_margin": -54.1,
   "gov_2022_margin": -41.3,
@@ -15811,7 +15811,7 @@
        "value": 21.4
       }
      ],
-     "margin": 51.0,
+     "margin": 50.9,
      "rep_base": 68.0,
      "rep_bring_home": 5.1,
      "prime_persuasion": 2.2,
@@ -15863,7 +15863,7 @@
        "value": 21.2
       }
      ],
-     "margin": 53.2,
+     "margin": 53.3,
      "rep_base": 70.6,
      "rep_bring_home": 4.5,
      "prime_persuasion": 1.3,
@@ -15942,7 +15942,7 @@
    "gov_2022": -28.2,
    "ussen_2022": -36.7,
    "pres_2024": -41.6,
-   "model_rslc_all": 37.8,
+   "model_rslc_all": 37.7,
    "model_rslc_hm": 43.7
   },
   "pres_2024_margin": -41.6,
@@ -16000,7 +16000,7 @@
        "value": 27.3
       }
      ],
-     "margin": 37.8,
+     "margin": 37.7,
      "rep_base": 62.1,
      "rep_bring_home": 4.2,
      "prime_persuasion": 1.8,
@@ -16082,7 +16082,7 @@
      "party": "R"
     },
     "candidates": {
-     "rep": "Perry Stambaugh",
+     "rep": "Perry A. Stambaugh",
      "dem": "Wendy Morgan"
     }
    }
@@ -16143,7 +16143,7 @@
    "ussen_2022": 27599
   },
   "candidates_2026": {
-   "rep": "Perry Stambaugh",
+   "rep": "Perry A. Stambaugh",
    "dem": "Wendy Morgan"
   },
   "models": {
@@ -16166,7 +16166,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 2.1
+       "value": 2.0
       },
       {
        "key": "stubborn_middle",
@@ -16192,7 +16192,7 @@
      "margin": 50.7,
      "rep_base": 68.5,
      "rep_bring_home": 4.2,
-     "prime_persuasion": 2.1,
+     "prime_persuasion": 2.0,
      "stubborn_middle": 3.3,
      "dem_peel": 0.1,
      "dems_going_home": 1.0,
@@ -16320,8 +16320,8 @@
    "gov_2022": 6.2,
    "ussen_2022": -9.5,
    "pres_2024": -11.3,
-   "model_rslc_all": 8.2,
-   "model_rslc_hm": 12.1
+   "model_rslc_all": 8.1,
+   "model_rslc_hm": 12.0
   },
   "pres_2024_margin": -11.3,
   "gov_2022_margin": 6.2,
@@ -16360,7 +16360,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 3.7
+       "value": 3.6
       },
       {
        "key": "dem_peel",
@@ -16378,11 +16378,11 @@
        "value": 41.4
       }
      ],
-     "margin": 8.2,
+     "margin": 8.1,
      "rep_base": 48.5,
      "rep_bring_home": 3.0,
      "prime_persuasion": 1.3,
-     "stubborn_middle": 3.7,
+     "stubborn_middle": 3.6,
      "dem_peel": 0.3,
      "dems_going_home": 1.9,
      "dem_base": 41.4
@@ -16412,7 +16412,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 3.5
+       "value": 3.4
       },
       {
        "key": "dem_peel",
@@ -16430,11 +16430,11 @@
        "value": 39.6
       }
      ],
-     "margin": 12.1,
+     "margin": 12.0,
      "rep_base": 50.9,
      "rep_bring_home": 2.8,
      "prime_persuasion": 1.0,
-     "stubborn_middle": 3.5,
+     "stubborn_middle": 3.4,
      "dem_peel": 0.1,
      "dems_going_home": 2.1,
      "dem_base": 39.6
@@ -16460,7 +16460,7 @@
      "party": "R"
     },
     "candidates": {
-     "rep": "Primary results pending",
+     "rep": "Jeffrey Clark",
      "dem": "Sara Agerton"
     }
    }
@@ -16509,7 +16509,7 @@
    "gov_2022": 18.1,
    "ussen_2022": 3.0,
    "pres_2024": -0.9,
-   "model_rslc_all": -3.3,
+   "model_rslc_all": -3.4,
    "model_rslc_hm": 0.5
   },
   "pres_2024_margin": -0.9,
@@ -16521,7 +16521,7 @@
    "ussen_2022": 31711
   },
   "candidates_2026": {
-   "rep": "Primary results pending",
+   "rep": "Jeffrey Clark",
    "dem": "Sara Agerton"
   },
   "models": {
@@ -16534,7 +16534,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 43.6
+       "value": 43.5
       },
       {
        "key": "rep_bring_home",
@@ -16549,7 +16549,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.6
+       "value": 2.7
       },
       {
        "key": "dem_peel",
@@ -16567,11 +16567,11 @@
        "value": 48.0
       }
      ],
-     "margin": -3.3,
-     "rep_base": 43.6,
+     "margin": -3.4,
+     "rep_base": 43.5,
      "rep_bring_home": 2.8,
      "prime_persuasion": 1.0,
-     "stubborn_middle": 2.6,
+     "stubborn_middle": 2.7,
      "dem_peel": 0.3,
      "dems_going_home": 1.7,
      "dem_base": 48.0
@@ -16887,8 +16887,8 @@
    "gov_2022": -39.2,
    "ussen_2022": -45.9,
    "pres_2024": -48.9,
-   "model_rslc_all": 45.5,
-   "model_rslc_hm": 50.0
+   "model_rslc_all": 45.6,
+   "model_rslc_hm": 50.1
   },
   "pres_2024_margin": -48.9,
   "gov_2022_margin": -39.2,
@@ -16927,7 +16927,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 4.5
+       "value": 4.4
       },
       {
        "key": "dem_peel",
@@ -16942,17 +16942,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 23.1
+       "value": 23.0
       }
      ],
-     "margin": 45.5,
+     "margin": 45.6,
      "rep_base": 65.6,
      "rep_bring_home": 4.1,
      "prime_persuasion": 1.6,
-     "stubborn_middle": 4.5,
+     "stubborn_middle": 4.4,
      "dem_peel": 0.1,
      "dems_going_home": 1.1,
-     "dem_base": 23.1
+     "dem_base": 23.0
     }
    },
    "model_rslc_hm": {
@@ -16997,7 +16997,7 @@
        "value": 22.3
       }
      ],
-     "margin": 50.0,
+     "margin": 50.1,
      "rep_base": 69.7,
      "rep_bring_home": 3.3,
      "prime_persuasion": 1.2,
@@ -17076,8 +17076,8 @@
    "gov_2022": -12.7,
    "ussen_2022": -23.4,
    "pres_2024": -29.3,
-   "model_rslc_all": 27.3,
-   "model_rslc_hm": 28.3
+   "model_rslc_all": 27.4,
+   "model_rslc_hm": 28.4
   },
   "pres_2024_margin": -29.3,
   "gov_2022_margin": -12.7,
@@ -17106,7 +17106,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 3.8
+       "value": 3.9
       },
       {
        "key": "prime_persuasion",
@@ -17134,9 +17134,9 @@
        "value": 31.9
       }
      ],
-     "margin": 27.3,
+     "margin": 27.4,
      "rep_base": 56.6,
-     "rep_bring_home": 3.8,
+     "rep_bring_home": 3.9,
      "prime_persuasion": 1.7,
      "stubborn_middle": 4.5,
      "dem_peel": 0.2,
@@ -17186,7 +17186,7 @@
        "value": 32.5
       }
      ],
-     "margin": 28.3,
+     "margin": 28.4,
      "rep_base": 58.9,
      "rep_bring_home": 2.9,
      "prime_persuasion": 1.4,
@@ -17266,7 +17266,7 @@
    "ussen_2022": -28.7,
    "pres_2024": -34.2,
    "model_rslc_all": 30.2,
-   "model_rslc_hm": 34.0
+   "model_rslc_hm": 33.9
   },
   "pres_2024_margin": -34.2,
   "gov_2022_margin": -16.1,
@@ -17375,7 +17375,7 @@
        "value": 29.5
       }
      ],
-     "margin": 34.0,
+     "margin": 33.9,
      "rep_base": 62.3,
      "rep_bring_home": 2.3,
      "prime_persuasion": 1.1,
@@ -17455,7 +17455,7 @@
    "ussen_2022": -21.8,
    "pres_2024": -26.1,
    "model_rslc_all": 21.3,
-   "model_rslc_hm": 25.8
+   "model_rslc_hm": 25.9
   },
   "pres_2024_margin": -26.1,
   "gov_2022_margin": -10.0,
@@ -17564,7 +17564,7 @@
        "value": 34.5
       }
      ],
-     "margin": 25.8,
+     "margin": 25.9,
      "rep_base": 58.5,
      "rep_bring_home": 2.9,
      "prime_persuasion": 0.8,
@@ -17832,8 +17832,8 @@
    "gov_2022": 41.4,
    "ussen_2022": 29.7,
    "pres_2024": 23.8,
-   "model_rslc_all": -33.5,
-   "model_rslc_hm": -26.3
+   "model_rslc_all": -33.4,
+   "model_rslc_hm": -26.2
   },
   "pres_2024_margin": 23.8,
   "gov_2022_margin": 41.4,
@@ -17857,7 +17857,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 28.3
+       "value": 28.4
       },
       {
        "key": "rep_bring_home",
@@ -17890,8 +17890,8 @@
        "value": 64.1
       }
      ],
-     "margin": -33.5,
-     "rep_base": 28.3,
+     "margin": -33.4,
+     "rep_base": 28.4,
      "rep_bring_home": 3.5,
      "prime_persuasion": 1.3,
      "stubborn_middle": 1.1,
@@ -17942,7 +17942,7 @@
        "value": 60.5
       }
      ],
-     "margin": -26.3,
+     "margin": -26.2,
      "rep_base": 32.1,
      "rep_bring_home": 3.3,
      "prime_persuasion": 1.2,
@@ -18021,8 +18021,8 @@
    "gov_2022": 36.6,
    "ussen_2022": 24.9,
    "pres_2024": 21.2,
-   "model_rslc_all": -25.7,
-   "model_rslc_hm": -23.1
+   "model_rslc_all": -25.8,
+   "model_rslc_hm": -23.2
   },
   "pres_2024_margin": 21.2,
   "gov_2022_margin": 36.6,
@@ -18079,7 +18079,7 @@
        "value": 59.2
       }
      ],
-     "margin": -25.7,
+     "margin": -25.8,
      "rep_base": 32.2,
      "rep_bring_home": 3.0,
      "prime_persuasion": 1.1,
@@ -18131,7 +18131,7 @@
        "value": 58.0
       }
      ],
-     "margin": -23.1,
+     "margin": -23.2,
      "rep_base": 34.4,
      "rep_bring_home": 2.4,
      "prime_persuasion": 0.9,
@@ -18211,7 +18211,7 @@
    "ussen_2022": -15.6,
    "pres_2024": -15.5,
    "model_rslc_all": 13.1,
-   "model_rslc_hm": 16.9
+   "model_rslc_hm": 17.0
   },
   "pres_2024_margin": -15.5,
   "gov_2022_margin": -1.8,
@@ -18240,7 +18240,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 3.5
+       "value": 3.6
       },
       {
        "key": "prime_persuasion",
@@ -18270,7 +18270,7 @@
      ],
      "margin": 13.1,
      "rep_base": 50.3,
-     "rep_bring_home": 3.5,
+     "rep_bring_home": 3.6,
      "prime_persuasion": 1.3,
      "stubborn_middle": 3.7,
      "dem_peel": 0.3,
@@ -18320,7 +18320,7 @@
        "value": 37.6
       }
      ],
-     "margin": 16.9,
+     "margin": 17.0,
      "rep_base": 53.2,
      "rep_bring_home": 2.8,
      "prime_persuasion": 1.1,
@@ -18399,7 +18399,7 @@
    "gov_2022": -8.3,
    "ussen_2022": -21.4,
    "pres_2024": -24.2,
-   "model_rslc_all": 22.5,
+   "model_rslc_all": 22.4,
    "model_rslc_hm": 26.5
   },
   "pres_2024_margin": -24.2,
@@ -18424,7 +18424,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 56.0
+       "value": 55.9
       },
       {
        "key": "rep_bring_home",
@@ -18454,17 +18454,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 34.9
+       "value": 35.0
       }
      ],
-     "margin": 22.5,
-     "rep_base": 56.0,
+     "margin": 22.4,
+     "rep_base": 55.9,
      "rep_bring_home": 2.6,
      "prime_persuasion": 1.3,
      "stubborn_middle": 4.0,
      "dem_peel": 0.2,
      "dems_going_home": 1.1,
-     "dem_base": 34.9
+     "dem_base": 35.0
     }
    },
    "model_rslc_hm": {
@@ -18491,7 +18491,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 3.9
+       "value": 3.8
       },
       {
        "key": "dem_peel",
@@ -18513,7 +18513,7 @@
      "rep_base": 58.8,
      "rep_bring_home": 2.0,
      "prime_persuasion": 1.1,
-     "stubborn_middle": 3.9,
+     "stubborn_middle": 3.8,
      "dem_peel": 0.1,
      "dems_going_home": 0.9,
      "dem_base": 33.3
@@ -18665,7 +18665,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 67.1
+       "value": 67.2
       },
       {
        "key": "rep_bring_home",
@@ -18699,7 +18699,7 @@
       }
      ],
      "margin": 42.7,
-     "rep_base": 67.1,
+     "rep_base": 67.2,
      "rep_bring_home": 2.6,
      "prime_persuasion": 0.8,
      "stubborn_middle": 2.3,
@@ -18854,7 +18854,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 72.0
+       "value": 71.9
       },
       {
        "key": "rep_bring_home",
@@ -18888,7 +18888,7 @@
       }
      ],
      "margin": 52.2,
-     "rep_base": 72.0,
+     "rep_base": 71.9,
      "rep_bring_home": 2.2,
      "prime_persuasion": 0.9,
      "stubborn_middle": 2.8,
@@ -19107,7 +19107,7 @@
     },
     "candidates": {
      "rep": "Russell Diamond",
-     "dem": "No candidate"
+     "dem": "Matthew Duvall"
     }
    }
   ],
@@ -19155,7 +19155,7 @@
    "gov_2022": -23.5,
    "ussen_2022": -36.2,
    "pres_2024": -41.6,
-   "model_rslc_all": 38.6,
+   "model_rslc_all": 38.5,
    "model_rslc_hm": 43.5
   },
   "pres_2024_margin": -41.6,
@@ -19168,7 +19168,7 @@
   },
   "candidates_2026": {
    "rep": "Russell Diamond",
-   "dem": "No candidate"
+   "dem": "Matthew Duvall"
   },
   "models": {
    "model_rslc_all": {
@@ -19213,7 +19213,7 @@
        "value": 27.3
       }
      ],
-     "margin": 38.6,
+     "margin": 38.5,
      "rep_base": 63.2,
      "rep_bring_home": 3.5,
      "prime_persuasion": 1.6,
@@ -19295,7 +19295,7 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Cindi Ward",
      "dem": "Nathan Davidson"
     }
    }
@@ -19344,7 +19344,7 @@
    "gov_2022": 39.7,
    "ussen_2022": 28.6,
    "pres_2024": 24.4,
-   "model_rslc_all": -32.1,
+   "model_rslc_all": -32.2,
    "model_rslc_hm": -26.4
   },
   "pres_2024_margin": 24.4,
@@ -19356,7 +19356,7 @@
    "ussen_2022": 24018
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Cindi Ward",
    "dem": "Nathan Davidson"
   },
   "models": {
@@ -19369,7 +19369,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 30.3
+       "value": 30.2
       },
       {
        "key": "rep_bring_home",
@@ -19399,17 +19399,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 63.1
+       "value": 63.2
       }
      ],
-     "margin": -32.1,
-     "rep_base": 30.3,
+     "margin": -32.2,
+     "rep_base": 30.2,
      "rep_bring_home": 2.4,
      "prime_persuasion": 1.0,
      "stubborn_middle": 1.4,
      "dem_peel": 0.2,
      "dems_going_home": 1.6,
-     "dem_base": 63.1
+     "dem_base": 63.2
     }
    },
    "model_rslc_hm": {
@@ -19451,7 +19451,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 60.3
+       "value": 60.4
       }
      ],
      "margin": -26.4,
@@ -19461,7 +19461,7 @@
      "stubborn_middle": 1.4,
      "dem_peel": 0.1,
      "dems_going_home": 1.7,
-     "dem_base": 60.3
+     "dem_base": 60.4
     }
    }
   }
@@ -19620,7 +19620,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.8
+       "value": 0.7
       },
       {
        "key": "stubborn_middle",
@@ -19646,7 +19646,7 @@
      "margin": -29.7,
      "rep_base": 32.3,
      "rep_bring_home": 2.1,
-     "prime_persuasion": 0.8,
+     "prime_persuasion": 0.7,
      "stubborn_middle": 0.7,
      "dem_peel": 0.1,
      "dems_going_home": 0.7,
@@ -19722,7 +19722,7 @@
    "gov_2022": 39.2,
    "ussen_2022": 28.5,
    "pres_2024": 23.0,
-   "model_rslc_all": -27.4,
+   "model_rslc_all": -27.3,
    "model_rslc_hm": -24.4
   },
   "pres_2024_margin": 23.0,
@@ -19752,7 +19752,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 2.4
+       "value": 2.3
       },
       {
        "key": "prime_persuasion",
@@ -19780,9 +19780,9 @@
        "value": 61.1
       }
      ],
-     "margin": -27.4,
+     "margin": -27.3,
      "rep_base": 32.5,
-     "rep_bring_home": 2.4,
+     "rep_bring_home": 2.3,
      "prime_persuasion": 1.1,
      "stubborn_middle": 1.6,
      "dem_peel": 0.2,
@@ -19911,8 +19911,8 @@
    "gov_2022": 8.6,
    "ussen_2022": -4.3,
    "pres_2024": -9.8,
-   "model_rslc_all": 4.2,
-   "model_rslc_hm": 9.5
+   "model_rslc_all": 4.1,
+   "model_rslc_hm": 9.4
   },
   "pres_2024_margin": -9.8,
   "gov_2022_margin": 8.6,
@@ -19951,7 +19951,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.8
+       "value": 2.9
       },
       {
        "key": "dem_peel",
@@ -19969,11 +19969,11 @@
        "value": 44.1
       }
      ],
-     "margin": 4.2,
+     "margin": 4.1,
      "rep_base": 46.3,
      "rep_bring_home": 3.5,
      "prime_persuasion": 1.4,
-     "stubborn_middle": 2.8,
+     "stubborn_middle": 2.9,
      "dem_peel": 0.3,
      "dems_going_home": 1.5,
      "dem_base": 44.1
@@ -19988,7 +19988,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 50.2
+       "value": 50.1
       },
       {
        "key": "rep_bring_home",
@@ -20013,22 +20013,22 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.7
+       "value": 1.6
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 41.7
+       "value": 41.8
       }
      ],
-     "margin": 9.5,
-     "rep_base": 50.2,
+     "margin": 9.4,
+     "rep_base": 50.1,
      "rep_bring_home": 2.6,
      "prime_persuasion": 1.1,
      "stubborn_middle": 2.5,
      "dem_peel": 0.2,
-     "dems_going_home": 1.7,
-     "dem_base": 41.7
+     "dems_going_home": 1.6,
+     "dem_base": 41.8
     }
    }
   }
@@ -20101,7 +20101,7 @@
    "ussen_2022": -38.9,
    "pres_2024": -48.6,
    "model_rslc_all": 39.6,
-   "model_rslc_hm": 41.8
+   "model_rslc_hm": 41.9
   },
   "pres_2024_margin": -48.6,
   "gov_2022_margin": -28.7,
@@ -20150,7 +20150,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.2
+       "value": 1.1
       },
       {
        "key": "dem_base",
@@ -20164,7 +20164,7 @@
      "prime_persuasion": 2.7,
      "stubborn_middle": 1.3,
      "dem_peel": 0.3,
-     "dems_going_home": 1.2,
+     "dems_going_home": 1.1,
      "dem_base": 26.9
     }
    },
@@ -20202,7 +20202,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.2
+       "value": 1.1
       },
       {
        "key": "dem_base",
@@ -20210,13 +20210,13 @@
        "value": 26.7
       }
      ],
-     "margin": 41.8,
+     "margin": 41.9,
      "rep_base": 63.8,
      "rep_bring_home": 5.9,
      "prime_persuasion": 1.5,
      "stubborn_middle": 0.8,
      "dem_peel": 0.2,
-     "dems_going_home": 1.2,
+     "dems_going_home": 1.1,
      "dem_base": 26.7
     }
    }
@@ -20478,8 +20478,8 @@
    "gov_2022": -15.4,
    "ussen_2022": -23.5,
    "pres_2024": -31.0,
-   "model_rslc_all": 26.1,
-   "model_rslc_hm": 29.5
+   "model_rslc_all": 26.3,
+   "model_rslc_hm": 29.7
   },
   "pres_2024_margin": -31.0,
   "gov_2022_margin": -15.4,
@@ -20503,7 +20503,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 57.3
+       "value": 57.4
       },
       {
        "key": "rep_bring_home",
@@ -20533,17 +20533,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 34.3
+       "value": 34.2
       }
      ],
-     "margin": 26.1,
-     "rep_base": 57.3,
+     "margin": 26.3,
+     "rep_base": 57.4,
      "rep_bring_home": 3.9,
      "prime_persuasion": 1.8,
      "stubborn_middle": 1.6,
      "dem_peel": 0.3,
      "dems_going_home": 0.8,
-     "dem_base": 34.3
+     "dem_base": 34.2
     }
    },
    "model_rslc_hm": {
@@ -20555,7 +20555,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 60.4
+       "value": 60.5
       },
       {
        "key": "rep_bring_home",
@@ -20585,17 +20585,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 33.5
+       "value": 33.4
       }
      ],
-     "margin": 29.5,
-     "rep_base": 60.4,
+     "margin": 29.7,
+     "rep_base": 60.5,
      "rep_bring_home": 3.1,
      "prime_persuasion": 1.2,
      "stubborn_middle": 1.1,
      "dem_peel": 0.1,
      "dems_going_home": 0.5,
-     "dem_base": 33.5
+     "dem_base": 33.4
     }
    }
   }
@@ -20667,8 +20667,8 @@
    "gov_2022": -25.0,
    "ussen_2022": -31.4,
    "pres_2024": -40.2,
-   "model_rslc_all": 38.1,
-   "model_rslc_hm": 41.1
+   "model_rslc_all": 38.2,
+   "model_rslc_hm": 41.2
   },
   "pres_2024_margin": -40.2,
   "gov_2022_margin": -25.0,
@@ -20707,7 +20707,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.7
+       "value": 2.6
       },
       {
        "key": "dem_peel",
@@ -20725,11 +20725,11 @@
        "value": 27.6
       }
      ],
-     "margin": 38.1,
+     "margin": 38.2,
      "rep_base": 62.6,
      "rep_bring_home": 4.2,
      "prime_persuasion": 1.8,
-     "stubborn_middle": 2.7,
+     "stubborn_middle": 2.6,
      "dem_peel": 0.1,
      "dems_going_home": 1.0,
      "dem_base": 27.6
@@ -20744,7 +20744,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 65.3
+       "value": 65.4
       },
       {
        "key": "rep_bring_home",
@@ -20777,8 +20777,8 @@
        "value": 27.1
       }
      ],
-     "margin": 41.1,
-     "rep_base": 65.3,
+     "margin": 41.2,
+     "rep_base": 65.4,
      "rep_bring_home": 3.6,
      "prime_persuasion": 1.1,
      "stubborn_middle": 2.0,
@@ -20856,7 +20856,7 @@
    "gov_2022": -28.5,
    "ussen_2022": -34.0,
    "pres_2024": -42.1,
-   "model_rslc_all": 40.8,
+   "model_rslc_all": 40.9,
    "model_rslc_hm": 42.7
   },
   "pres_2024_margin": -42.1,
@@ -20881,7 +20881,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 63.8
+       "value": 63.9
       },
       {
        "key": "rep_bring_home",
@@ -20914,8 +20914,8 @@
        "value": 25.9
       }
      ],
-     "margin": 40.8,
-     "rep_base": 63.8,
+     "margin": 40.9,
+     "rep_base": 63.9,
      "rep_bring_home": 3.8,
      "prime_persuasion": 1.8,
      "stubborn_middle": 3.7,
@@ -21235,7 +21235,7 @@
    "ussen_2022": 19.5,
    "pres_2024": 6.4,
    "model_rslc_all": -9.3,
-   "model_rslc_hm": -17.4
+   "model_rslc_hm": -17.3
   },
   "pres_2024_margin": 6.4,
   "gov_2022_margin": 27.5,
@@ -21311,7 +21311,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 35.6
+       "value": 35.7
       },
       {
        "key": "rep_bring_home",
@@ -21341,17 +21341,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 55.9
+       "value": 55.8
       }
      ],
-     "margin": -17.4,
-     "rep_base": 35.6,
+     "margin": -17.3,
+     "rep_base": 35.7,
      "rep_bring_home": 4.3,
      "prime_persuasion": 0.9,
      "stubborn_middle": 1.8,
      "dem_peel": 0.2,
      "dems_going_home": 1.4,
-     "dem_base": 55.9
+     "dem_base": 55.8
     }
    }
   }
@@ -21423,7 +21423,7 @@
    "gov_2022": 26.3,
    "ussen_2022": 17.5,
    "pres_2024": 6.6,
-   "model_rslc_all": -10.3,
+   "model_rslc_all": -10.1,
    "model_rslc_hm": -17.0
   },
   "pres_2024_margin": 6.6,
@@ -21481,7 +21481,7 @@
        "value": 51.0
       }
      ],
-     "margin": -10.3,
+     "margin": -10.1,
      "rep_base": 37.8,
      "rep_bring_home": 4.7,
      "prime_persuasion": 1.4,
@@ -21613,7 +21613,7 @@
    "ussen_2022": 14.1,
    "pres_2024": 7.2,
    "model_rslc_all": -9.7,
-   "model_rslc_hm": -11.4
+   "model_rslc_hm": -11.5
   },
   "pres_2024_margin": 7.2,
   "gov_2022_margin": 18.6,
@@ -21637,7 +21637,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 37.8
+       "value": 37.9
       },
       {
        "key": "rep_bring_home",
@@ -21671,7 +21671,7 @@
       }
      ],
      "margin": -9.7,
-     "rep_base": 37.8,
+     "rep_base": 37.9,
      "rep_bring_home": 4.0,
      "prime_persuasion": 2.1,
      "stubborn_middle": 4.1,
@@ -21689,7 +21689,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 38.9
+       "value": 38.8
       },
       {
        "key": "rep_bring_home",
@@ -21722,8 +21722,8 @@
        "value": 52.2
       }
      ],
-     "margin": -11.4,
-     "rep_base": 38.9,
+     "margin": -11.5,
+     "rep_base": 38.8,
      "rep_bring_home": 3.1,
      "prime_persuasion": 1.7,
      "stubborn_middle": 3.0,
@@ -21802,7 +21802,7 @@
    "ussen_2022": -23.4,
    "pres_2024": -34.7,
    "model_rslc_all": 24.2,
-   "model_rslc_hm": 24.7
+   "model_rslc_hm": 24.6
   },
   "pres_2024_margin": -34.7,
   "gov_2022_margin": -13.1,
@@ -21856,7 +21856,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 35.2
+       "value": 35.3
       }
      ],
      "margin": 24.2,
@@ -21866,7 +21866,7 @@
      "stubborn_middle": 1.1,
      "dem_peel": 0.2,
      "dems_going_home": 0.7,
-     "dem_base": 35.2
+     "dem_base": 35.3
     }
    },
    "model_rslc_hm": {
@@ -21878,7 +21878,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 52.5
+       "value": 52.4
       },
       {
        "key": "rep_bring_home",
@@ -21911,8 +21911,8 @@
        "value": 35.3
       }
      ],
-     "margin": 24.7,
-     "rep_base": 52.5,
+     "margin": 24.6,
+     "rep_base": 52.4,
      "rep_bring_home": 8.2,
      "prime_persuasion": 1.9,
      "stubborn_middle": 1.3,
@@ -21991,7 +21991,7 @@
    "ussen_2022": -34.0,
    "pres_2024": -41.6,
    "model_rslc_all": 35.6,
-   "model_rslc_hm": 36.9
+   "model_rslc_hm": 36.8
   },
   "pres_2024_margin": -41.6,
   "gov_2022_margin": -24.9,
@@ -22100,7 +22100,7 @@
        "value": 29.3
       }
      ],
-     "margin": 36.9,
+     "margin": 36.8,
      "rep_base": 63.8,
      "rep_bring_home": 3.2,
      "prime_persuasion": 1.3,
@@ -22180,7 +22180,7 @@
    "ussen_2022": 5.0,
    "pres_2024": -7.5,
    "model_rslc_all": 2.9,
-   "model_rslc_hm": -3.9
+   "model_rslc_hm": -4.0
   },
   "pres_2024_margin": -7.5,
   "gov_2022_margin": 14.8,
@@ -22286,17 +22286,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 48.2
+       "value": 48.3
       }
      ],
-     "margin": -3.9,
+     "margin": -4.0,
      "rep_base": 42.1,
      "rep_bring_home": 3.4,
      "prime_persuasion": 1.2,
      "stubborn_middle": 3.5,
      "dem_peel": 0.4,
      "dems_going_home": 1.2,
-     "dem_base": 48.2
+     "dem_base": 48.3
     }
    }
   }
@@ -22369,7 +22369,7 @@
    "ussen_2022": -4.8,
    "pres_2024": -17.1,
    "model_rslc_all": 9.8,
-   "model_rslc_hm": 5.4
+   "model_rslc_hm": 5.5
   },
   "pres_2024_margin": -17.1,
   "gov_2022_margin": 5.5,
@@ -22403,7 +22403,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.7
+       "value": 1.8
       },
       {
        "key": "stubborn_middle",
@@ -22429,7 +22429,7 @@
      "margin": 9.8,
      "rep_base": 47.3,
      "rep_bring_home": 5.5,
-     "prime_persuasion": 1.7,
+     "prime_persuasion": 1.8,
      "stubborn_middle": 2.1,
      "dem_peel": 0.3,
      "dems_going_home": 0.6,
@@ -22445,7 +22445,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 46.8
+       "value": 46.9
       },
       {
        "key": "rep_bring_home",
@@ -22478,8 +22478,8 @@
        "value": 44.7
       }
      ],
-     "margin": 5.4,
-     "rep_base": 46.8,
+     "margin": 5.5,
+     "rep_base": 46.9,
      "rep_bring_home": 4.1,
      "prime_persuasion": 1.3,
      "stubborn_middle": 2.0,
@@ -22746,7 +22746,7 @@
    "gov_2022": 18.8,
    "ussen_2022": 9.1,
    "pres_2024": -1.7,
-   "model_rslc_all": -3.5,
+   "model_rslc_all": -3.4,
    "model_rslc_hm": -10.3
   },
   "pres_2024_margin": -1.7,
@@ -22804,7 +22804,7 @@
        "value": 48.7
       }
      ],
-     "margin": -3.5,
+     "margin": -3.4,
      "rep_base": 39.8,
      "rep_bring_home": 6.2,
      "prime_persuasion": 2.5,
@@ -22887,7 +22887,7 @@
     },
     "candidates": {
      "rep": "Doyle Heffley",
-     "dem": "No candidate"
+     "dem": "Christian Bartulovich"
     }
    }
   ],
@@ -22936,7 +22936,7 @@
    "ussen_2022": -22.8,
    "pres_2024": -34.8,
    "model_rslc_all": 29.6,
-   "model_rslc_hm": 28.3
+   "model_rslc_hm": 28.2
   },
   "pres_2024_margin": -34.8,
   "gov_2022_margin": -16.0,
@@ -22948,7 +22948,7 @@
   },
   "candidates_2026": {
    "rep": "Doyle Heffley",
-   "dem": "No candidate"
+   "dem": "Christian Bartulovich"
   },
   "models": {
    "model_rslc_all": {
@@ -23012,7 +23012,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 59.1
+       "value": 59.0
       },
       {
        "key": "rep_bring_home",
@@ -23045,8 +23045,8 @@
        "value": 33.5
       }
      ],
-     "margin": 28.3,
-     "rep_base": 59.1,
+     "margin": 28.2,
+     "rep_base": 59.0,
      "rep_bring_home": 4.0,
      "prime_persuasion": 1.1,
      "stubborn_middle": 0.9,
@@ -23231,7 +23231,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 33.9
+       "value": 33.8
       }
      ],
      "margin": 27.3,
@@ -23241,7 +23241,7 @@
      "stubborn_middle": 0.8,
      "dem_peel": 0.2,
      "dems_going_home": 1.2,
-     "dem_base": 33.9
+     "dem_base": 33.8
     }
    }
   }
@@ -23313,7 +23313,7 @@
    "gov_2022": -21.8,
    "ussen_2022": -29.8,
    "pres_2024": -38.6,
-   "model_rslc_all": 34.0,
+   "model_rslc_all": 33.9,
    "model_rslc_hm": 37.1
   },
   "pres_2024_margin": -38.6,
@@ -23371,7 +23371,7 @@
        "value": 30.3
       }
      ],
-     "margin": 34.0,
+     "margin": 33.9,
      "rep_base": 58.9,
      "rep_bring_home": 6.1,
      "prime_persuasion": 1.7,
@@ -23400,7 +23400,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.2
+       "value": 1.1
       },
       {
        "key": "stubborn_middle",
@@ -23420,17 +23420,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 29.3
+       "value": 29.4
       }
      ],
      "margin": 37.1,
      "rep_base": 62.2,
      "rep_bring_home": 5.1,
-     "prime_persuasion": 1.2,
+     "prime_persuasion": 1.1,
      "stubborn_middle": 1.4,
      "dem_peel": 0.1,
      "dems_going_home": 0.8,
-     "dem_base": 29.3
+     "dem_base": 29.4
     }
    }
   }
@@ -23502,8 +23502,8 @@
    "gov_2022": -5.1,
    "ussen_2022": -20.3,
    "pres_2024": -25.2,
-   "model_rslc_all": 22.3,
-   "model_rslc_hm": 25.3
+   "model_rslc_all": 22.2,
+   "model_rslc_hm": 25.2
   },
   "pres_2024_margin": -25.2,
   "gov_2022_margin": -5.1,
@@ -23527,7 +23527,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 56.1
+       "value": 56.0
       },
       {
        "key": "rep_bring_home",
@@ -23560,8 +23560,8 @@
        "value": 35.3
       }
      ],
-     "margin": 22.3,
-     "rep_base": 56.1,
+     "margin": 22.2,
+     "rep_base": 56.0,
      "rep_bring_home": 2.6,
      "prime_persuasion": 1.4,
      "stubborn_middle": 3.3,
@@ -23579,7 +23579,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 58.4
+       "value": 58.3
       },
       {
        "key": "rep_bring_home",
@@ -23609,17 +23609,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 34.1
+       "value": 34.2
       }
      ],
-     "margin": 25.3,
-     "rep_base": 58.4,
+     "margin": 25.2,
+     "rep_base": 58.3,
      "rep_bring_home": 2.2,
      "prime_persuasion": 1.1,
      "stubborn_middle": 3.0,
      "dem_peel": 0.1,
      "dems_going_home": 1.1,
-     "dem_base": 34.1
+     "dem_base": 34.2
     }
    }
   }
@@ -23691,8 +23691,8 @@
    "gov_2022": 24.2,
    "ussen_2022": 16.5,
    "pres_2024": 4.5,
-   "model_rslc_all": -11.7,
-   "model_rslc_hm": -14.0
+   "model_rslc_all": -11.8,
+   "model_rslc_hm": -14.1
   },
   "pres_2024_margin": 4.5,
   "gov_2022_margin": 24.2,
@@ -23716,7 +23716,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 36.9
+       "value": 36.8
       },
       {
        "key": "rep_bring_home",
@@ -23749,8 +23749,8 @@
        "value": 52.7
       }
      ],
-     "margin": -11.7,
-     "rep_base": 36.9,
+     "margin": -11.8,
+     "rep_base": 36.8,
      "rep_bring_home": 5.1,
      "prime_persuasion": 2.4,
      "stubborn_middle": 1.6,
@@ -23768,7 +23768,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 37.7
+       "value": 37.6
       },
       {
        "key": "rep_bring_home",
@@ -23801,8 +23801,8 @@
        "value": 54.4
       }
      ],
-     "margin": -14.0,
-     "rep_base": 37.7,
+     "margin": -14.1,
+     "rep_base": 37.6,
      "rep_bring_home": 3.7,
      "prime_persuasion": 1.7,
      "stubborn_middle": 1.3,
@@ -23881,7 +23881,7 @@
    "ussen_2022": 34.2,
    "pres_2024": 20.8,
    "model_rslc_all": -27.8,
-   "model_rslc_hm": -32.4
+   "model_rslc_hm": -32.3
   },
   "pres_2024_margin": 20.8,
   "gov_2022_margin": 39.5,
@@ -23935,7 +23935,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 60.3
+       "value": 60.4
       }
      ],
      "margin": -27.8,
@@ -23945,7 +23945,7 @@
      "stubborn_middle": 1.1,
      "dem_peel": 0.2,
      "dems_going_home": 1.5,
-     "dem_base": 60.3
+     "dem_base": 60.4
     }
    },
    "model_rslc_hm": {
@@ -23990,7 +23990,7 @@
        "value": 63.7
       }
      ],
-     "margin": -32.4,
+     "margin": -32.3,
      "rep_base": 28.2,
      "rep_bring_home": 4.3,
      "prime_persuasion": 1.4,
@@ -24070,7 +24070,7 @@
    "ussen_2022": -9.6,
    "pres_2024": -17.2,
    "model_rslc_all": 12.7,
-   "model_rslc_hm": 14.7
+   "model_rslc_hm": 14.6
   },
   "pres_2024_margin": -17.2,
   "gov_2022_margin": -1.0,
@@ -24104,7 +24104,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.2
+       "value": 1.1
       },
       {
        "key": "stubborn_middle",
@@ -24130,7 +24130,7 @@
      "margin": 12.7,
      "rep_base": 49.7,
      "rep_bring_home": 4.4,
-     "prime_persuasion": 1.2,
+     "prime_persuasion": 1.1,
      "stubborn_middle": 2.8,
      "dem_peel": 0.5,
      "dems_going_home": 1.1,
@@ -24176,17 +24176,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 39.8
+       "value": 39.9
       }
      ],
-     "margin": 14.7,
+     "margin": 14.6,
      "rep_base": 51.9,
      "rep_bring_home": 3.8,
      "prime_persuasion": 0.9,
      "stubborn_middle": 2.1,
      "dem_peel": 0.2,
      "dems_going_home": 1.2,
-     "dem_base": 39.8
+     "dem_base": 39.9
     }
    }
   }
@@ -24258,8 +24258,8 @@
    "gov_2022": 30.1,
    "ussen_2022": 20.1,
    "pres_2024": 12.9,
-   "model_rslc_all": -22.2,
-   "model_rslc_hm": -18.7
+   "model_rslc_all": -22.3,
+   "model_rslc_hm": -18.8
   },
   "pres_2024_margin": 12.9,
   "gov_2022_margin": 30.1,
@@ -24308,7 +24308,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.0
+       "value": 1.1
       },
       {
        "key": "dem_base",
@@ -24316,13 +24316,13 @@
        "value": 57.9
       }
      ],
-     "margin": -22.2,
+     "margin": -22.3,
      "rep_base": 32.1,
      "rep_bring_home": 4.6,
      "prime_persuasion": 1.4,
      "stubborn_middle": 2.0,
      "dem_peel": 0.9,
-     "dems_going_home": 1.0,
+     "dems_going_home": 1.1,
      "dem_base": 57.9
     }
    },
@@ -24368,7 +24368,7 @@
        "value": 56.5
       }
      ],
-     "margin": -18.7,
+     "margin": -18.8,
      "rep_base": 35.2,
      "rep_bring_home": 3.5,
      "prime_persuasion": 1.1,
@@ -24447,8 +24447,8 @@
    "gov_2022": -8.8,
    "ussen_2022": -17.0,
    "pres_2024": -27.5,
-   "model_rslc_all": 23.3,
-   "model_rslc_hm": 23.4
+   "model_rslc_all": 23.4,
+   "model_rslc_hm": 23.5
   },
   "pres_2024_margin": -27.5,
   "gov_2022_margin": -8.8,
@@ -24472,7 +24472,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 54.0
+       "value": 54.1
       },
       {
        "key": "rep_bring_home",
@@ -24505,8 +24505,8 @@
        "value": 35.4
       }
      ],
-     "margin": 23.3,
-     "rep_base": 54.0,
+     "margin": 23.4,
+     "rep_base": 54.1,
      "rep_bring_home": 5.2,
      "prime_persuasion": 2.0,
      "stubborn_middle": 2.1,
@@ -24524,7 +24524,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 55.3
+       "value": 55.4
       },
       {
        "key": "rep_bring_home",
@@ -24554,17 +24554,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 36.1
+       "value": 36.0
       }
      ],
-     "margin": 23.4,
-     "rep_base": 55.3,
+     "margin": 23.5,
+     "rep_base": 55.4,
      "rep_bring_home": 4.7,
      "prime_persuasion": 1.5,
      "stubborn_middle": 1.5,
      "dem_peel": 0.4,
      "dems_going_home": 0.6,
-     "dem_base": 36.1
+     "dem_base": 36.0
     }
    }
   }
@@ -24637,7 +24637,7 @@
    "ussen_2022": -4.2,
    "pres_2024": -10.2,
    "model_rslc_all": 5.7,
-   "model_rslc_hm": 5.6
+   "model_rslc_hm": 5.7
   },
   "pres_2024_margin": -10.2,
   "gov_2022_margin": 5.6,
@@ -24691,7 +24691,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 41.3
+       "value": 41.2
       }
      ],
      "margin": 5.7,
@@ -24701,7 +24701,7 @@
      "stubborn_middle": 5.1,
      "dem_peel": 0.6,
      "dems_going_home": 2.5,
-     "dem_base": 41.3
+     "dem_base": 41.2
     }
    },
    "model_rslc_hm": {
@@ -24728,7 +24728,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 4.2
+       "value": 4.3
       },
       {
        "key": "dem_peel",
@@ -24746,11 +24746,11 @@
        "value": 41.7
       }
      ],
-     "margin": 5.6,
+     "margin": 5.7,
      "rep_base": 46.3,
      "rep_bring_home": 3.8,
      "prime_persuasion": 0.9,
-     "stubborn_middle": 4.2,
+     "stubborn_middle": 4.3,
      "dem_peel": 0.3,
      "dems_going_home": 2.7,
      "dem_base": 41.7
@@ -25015,7 +25015,7 @@
    "ussen_2022": 19.2,
    "pres_2024": 7.5,
    "model_rslc_all": -12.6,
-   "model_rslc_hm": -16.9
+   "model_rslc_hm": -17.0
   },
   "pres_2024_margin": 7.5,
   "gov_2022_margin": 27.4,
@@ -25044,7 +25044,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 3.8
+       "value": 3.7
       },
       {
        "key": "prime_persuasion",
@@ -25069,17 +25069,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 54.0
+       "value": 53.9
       }
      ],
      "margin": -12.6,
      "rep_base": 38.4,
-     "rep_bring_home": 3.8,
+     "rep_bring_home": 3.7,
      "prime_persuasion": 1.4,
      "stubborn_middle": 1.4,
      "dem_peel": 0.3,
      "dems_going_home": 0.8,
-     "dem_base": 54.0
+     "dem_base": 53.9
     }
    },
    "model_rslc_hm": {
@@ -25124,7 +25124,7 @@
        "value": 56.3
       }
      ],
-     "margin": -16.9,
+     "margin": -17.0,
      "rep_base": 37.3,
      "rep_bring_home": 2.9,
      "prime_persuasion": 1.1,
@@ -25204,7 +25204,7 @@
    "ussen_2022": 23.1,
    "pres_2024": 12.9,
    "model_rslc_all": -20.6,
-   "model_rslc_hm": -22.1
+   "model_rslc_hm": -22.3
   },
   "pres_2024_margin": 12.9,
   "gov_2022_margin": 30.3,
@@ -25253,12 +25253,12 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 0.7
+       "value": 0.8
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 57.7
+       "value": 57.8
       }
      ],
      "margin": -20.6,
@@ -25267,8 +25267,8 @@
      "prime_persuasion": 1.3,
      "stubborn_middle": 1.8,
      "dem_peel": 0.5,
-     "dems_going_home": 0.7,
-     "dem_base": 57.7
+     "dems_going_home": 0.8,
+     "dem_base": 57.8
     }
    },
    "model_rslc_hm": {
@@ -25280,7 +25280,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 33.6
+       "value": 33.5
       },
       {
        "key": "rep_bring_home",
@@ -25295,7 +25295,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.7
+       "value": 1.8
       },
       {
        "key": "dem_peel",
@@ -25310,17 +25310,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 58.7
+       "value": 58.8
       }
      ],
-     "margin": -22.1,
-     "rep_base": 33.6,
+     "margin": -22.3,
+     "rep_base": 33.5,
      "rep_bring_home": 3.7,
      "prime_persuasion": 1.3,
-     "stubborn_middle": 1.7,
+     "stubborn_middle": 1.8,
      "dem_peel": 0.4,
      "dems_going_home": 0.7,
-     "dem_base": 58.7
+     "dem_base": 58.8
     }
    }
   }
@@ -25393,7 +25393,7 @@
    "ussen_2022": 32.0,
    "pres_2024": 25.8,
    "model_rslc_all": -32.7,
-   "model_rslc_hm": -34.4
+   "model_rslc_hm": -34.5
   },
   "pres_2024_margin": 25.8,
   "gov_2022_margin": 39.6,
@@ -25474,7 +25474,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 2.9
+       "value": 2.8
       },
       {
        "key": "prime_persuasion",
@@ -25502,9 +25502,9 @@
        "value": 63.5
       }
      ],
-     "margin": -34.4,
+     "margin": -34.5,
      "rep_base": 27.8,
-     "rep_bring_home": 2.9,
+     "rep_bring_home": 2.8,
      "prime_persuasion": 1.0,
      "stubborn_middle": 2.8,
      "dem_peel": 0.4,
@@ -25582,7 +25582,7 @@
    "ussen_2022": 18.5,
    "pres_2024": 11.4,
    "model_rslc_all": -18.3,
-   "model_rslc_hm": -20.1
+   "model_rslc_hm": -20.2
   },
   "pres_2024_margin": 11.4,
   "gov_2022_margin": 25.6,
@@ -25636,7 +25636,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 55.1
+       "value": 55.2
       }
      ],
      "margin": -18.3,
@@ -25646,7 +25646,7 @@
      "stubborn_middle": 3.2,
      "dem_peel": 0.6,
      "dems_going_home": 1.5,
-     "dem_base": 55.1
+     "dem_base": 55.2
     }
    },
    "model_rslc_hm": {
@@ -25688,17 +25688,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 56.4
+       "value": 56.5
       }
      ],
-     "margin": -20.1,
+     "margin": -20.2,
      "rep_base": 34.5,
      "rep_bring_home": 3.4,
      "prime_persuasion": 1.1,
      "stubborn_middle": 2.5,
      "dem_peel": 0.4,
      "dems_going_home": 1.6,
-     "dem_base": 56.4
+     "dem_base": 56.5
     }
    }
   }
@@ -25800,7 +25800,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 4.9
+       "value": 4.8
       },
       {
        "key": "prime_persuasion",
@@ -25830,7 +25830,7 @@
      ],
      "margin": -5.7,
      "rep_base": 38.2,
-     "rep_bring_home": 4.9,
+     "rep_bring_home": 4.8,
      "prime_persuasion": 1.6,
      "stubborn_middle": 5.7,
      "dem_peel": 0.9,
@@ -26036,7 +26036,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 51.9
+       "value": 51.8
       },
       {
        "key": "rep_bring_home",
@@ -26070,7 +26070,7 @@
       }
      ],
      "margin": 15.7,
-     "rep_base": 51.9,
+     "rep_base": 51.8,
      "rep_bring_home": 3.5,
      "prime_persuasion": 1.5,
      "stubborn_middle": 3.3,
@@ -26225,7 +26225,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 59.3
+       "value": 59.4
       },
       {
        "key": "rep_bring_home",
@@ -26259,7 +26259,7 @@
       }
      ],
      "margin": 29.8,
-     "rep_base": 59.3,
+     "rep_base": 59.4,
      "rep_bring_home": 2.7,
      "prime_persuasion": 2.1,
      "stubborn_middle": 3.4,
@@ -26337,8 +26337,8 @@
    "gov_2022": 26.4,
    "ussen_2022": 16.1,
    "pres_2024": 3.4,
-   "model_rslc_all": -8.9,
-   "model_rslc_hm": -13.6
+   "model_rslc_all": -8.8,
+   "model_rslc_hm": -13.5
   },
   "pres_2024_margin": 3.4,
   "gov_2022_margin": 26.4,
@@ -26392,17 +26392,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 51.0
+       "value": 50.9
       }
      ],
-     "margin": -8.9,
+     "margin": -8.8,
      "rep_base": 37.8,
      "rep_bring_home": 4.8,
      "prime_persuasion": 1.3,
      "stubborn_middle": 4.0,
      "dem_peel": 0.6,
      "dems_going_home": 0.5,
-     "dem_base": 51.0
+     "dem_base": 50.9
     }
    },
    "model_rslc_hm": {
@@ -26414,7 +26414,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 37.5
+       "value": 37.6
       },
       {
        "key": "rep_bring_home",
@@ -26447,8 +26447,8 @@
        "value": 54.0
       }
      ],
-     "margin": -13.6,
-     "rep_base": 37.5,
+     "margin": -13.5,
+     "rep_base": 37.6,
      "rep_bring_home": 3.5,
      "prime_persuasion": 1.0,
      "stubborn_middle": 3.1,
@@ -26526,7 +26526,7 @@
    "gov_2022": 29.3,
    "ussen_2022": 19.3,
    "pres_2024": 3.3,
-   "model_rslc_all": -5.8,
+   "model_rslc_all": -5.7,
    "model_rslc_hm": -14.9
   },
   "pres_2024_margin": 3.3,
@@ -26581,17 +26581,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 50.4
+       "value": 50.3
       }
      ],
-     "margin": -5.8,
+     "margin": -5.7,
      "rep_base": 41.0,
      "rep_bring_home": 4.2,
      "prime_persuasion": 1.4,
      "stubborn_middle": 2.2,
      "dem_peel": 0.3,
      "dems_going_home": 0.6,
-     "dem_base": 50.4
+     "dem_base": 50.3
     }
    },
    "model_rslc_hm": {
@@ -26716,7 +26716,7 @@
    "ussen_2022": 5.1,
    "pres_2024": -3.4,
    "model_rslc_all": -3.7,
-   "model_rslc_hm": -4.0
+   "model_rslc_hm": -4.1
   },
   "pres_2024_margin": -3.4,
   "gov_2022_margin": 18.4,
@@ -26770,7 +26770,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 47.0
+       "value": 47.1
       }
      ],
      "margin": -3.7,
@@ -26780,7 +26780,7 @@
      "stubborn_middle": 4.9,
      "dem_peel": 1.8,
      "dems_going_home": 1.0,
-     "dem_base": 47.0
+     "dem_base": 47.1
     }
    },
    "model_rslc_hm": {
@@ -26807,7 +26807,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 3.9
+       "value": 3.8
       },
       {
        "key": "dem_peel",
@@ -26825,11 +26825,11 @@
        "value": 48.0
       }
      ],
-     "margin": -4.0,
+     "margin": -4.1,
      "rep_base": 40.5,
      "rep_bring_home": 4.5,
      "prime_persuasion": 0.9,
-     "stubborn_middle": 3.9,
+     "stubborn_middle": 3.8,
      "dem_peel": 1.1,
      "dems_going_home": 1.1,
      "dem_base": 48.0
@@ -26904,8 +26904,8 @@
    "gov_2022": 10.9,
    "ussen_2022": -0.0,
    "pres_2024": -5.5,
-   "model_rslc_all": 1.5,
-   "model_rslc_hm": 2.6
+   "model_rslc_all": 1.6,
+   "model_rslc_hm": 2.7
   },
   "pres_2024_margin": -5.5,
   "gov_2022_margin": 10.9,
@@ -26929,7 +26929,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 41.9
+       "value": 42.0
       },
       {
        "key": "rep_bring_home",
@@ -26962,8 +26962,8 @@
        "value": 43.9
       }
      ],
-     "margin": 1.5,
-     "rep_base": 41.9,
+     "margin": 1.6,
+     "rep_base": 42.0,
      "rep_bring_home": 5.8,
      "prime_persuasion": 0.9,
      "stubborn_middle": 4.5,
@@ -27014,7 +27014,7 @@
        "value": 43.7
       }
      ],
-     "margin": 2.6,
+     "margin": 2.7,
      "rep_base": 44.4,
      "rep_bring_home": 4.5,
      "prime_persuasion": 0.8,
@@ -27094,7 +27094,7 @@
    "ussen_2022": 7.3,
    "pres_2024": -0.3,
    "model_rslc_all": -4.6,
-   "model_rslc_hm": -4.8
+   "model_rslc_hm": -4.7
   },
   "pres_2024_margin": -0.3,
   "gov_2022_margin": 21.4,
@@ -27200,17 +27200,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 48.0
+       "value": 47.9
       }
      ],
-     "margin": -4.8,
+     "margin": -4.7,
      "rep_base": 40.7,
      "rep_bring_home": 4.7,
      "prime_persuasion": 0.7,
      "stubborn_middle": 3.3,
      "dem_peel": 0.5,
      "dems_going_home": 2.2,
-     "dem_base": 48.0
+     "dem_base": 47.9
     }
    }
   }
@@ -27234,7 +27234,7 @@
     },
     "candidates": {
      "rep": "Craig Staats",
-     "dem": "Les Mavus"
+     "dem": "No candidate"
     }
    }
   ],
@@ -27282,7 +27282,7 @@
    "gov_2022": -0.1,
    "ussen_2022": -8.3,
    "pres_2024": -15.5,
-   "model_rslc_all": 12.6,
+   "model_rslc_all": 12.5,
    "model_rslc_hm": 13.8
   },
   "pres_2024_margin": -15.5,
@@ -27295,7 +27295,7 @@
   },
   "candidates_2026": {
    "rep": "Craig Staats",
-   "dem": "Les Mavus"
+   "dem": "No candidate"
   },
   "models": {
    "model_rslc_all": {
@@ -27312,7 +27312,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 5.6
+       "value": 5.5
       },
       {
        "key": "prime_persuasion",
@@ -27340,9 +27340,9 @@
        "value": 39.3
       }
      ],
-     "margin": 12.6,
+     "margin": 12.5,
      "rep_base": 48.0,
-     "rep_bring_home": 5.6,
+     "rep_bring_home": 5.5,
      "prime_persuasion": 0.9,
      "stubborn_middle": 4.0,
      "dem_peel": 0.6,
@@ -27369,7 +27369,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.9
+       "value": 0.8
       },
       {
        "key": "stubborn_middle",
@@ -27389,17 +27389,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 39.1
+       "value": 39.2
       }
      ],
      "margin": 13.8,
      "rep_base": 50.5,
      "rep_bring_home": 4.3,
-     "prime_persuasion": 0.9,
+     "prime_persuasion": 0.8,
      "stubborn_middle": 3.1,
      "dem_peel": 0.2,
      "dems_going_home": 1.9,
-     "dem_base": 39.1
+     "dem_base": 39.2
     }
    }
   }
@@ -27471,8 +27471,8 @@
    "gov_2022": 25.6,
    "ussen_2022": 16.6,
    "pres_2024": 10.0,
-   "model_rslc_all": -16.3,
-   "model_rslc_hm": -14.2
+   "model_rslc_all": -16.4,
+   "model_rslc_hm": -14.3
   },
   "pres_2024_margin": 10.0,
   "gov_2022_margin": 25.6,
@@ -27496,7 +27496,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 36.1
+       "value": 36.0
       },
       {
        "key": "rep_bring_home",
@@ -27529,8 +27529,8 @@
        "value": 55.5
       }
      ],
-     "margin": -16.3,
-     "rep_base": 36.1,
+     "margin": -16.4,
+     "rep_base": 36.0,
      "rep_bring_home": 4.0,
      "prime_persuasion": 0.7,
      "stubborn_middle": 2.3,
@@ -27581,7 +27581,7 @@
        "value": 54.5
       }
      ],
-     "margin": -14.2,
+     "margin": -14.3,
      "rep_base": 37.4,
      "rep_bring_home": 3.8,
      "prime_persuasion": 0.7,
@@ -27801,7 +27801,7 @@
     },
     "candidates": {
      "rep": "No candidate",
-     "dem": "Primary results pending"
+     "dem": "Megan Griffin-Shelley"
     }
    }
   ],
@@ -27850,7 +27850,7 @@
    "ussen_2022": 51.4,
    "pres_2024": 46.6,
    "model_rslc_all": -51.3,
-   "model_rslc_hm": -54.0
+   "model_rslc_hm": -53.9
   },
   "pres_2024_margin": 46.6,
   "gov_2022_margin": 64.8,
@@ -27862,7 +27862,7 @@
   },
   "candidates_2026": {
    "rep": "No candidate",
-   "dem": "Primary results pending"
+   "dem": "Megan Griffin-Shelley"
   },
   "models": {
    "model_rslc_all": {
@@ -27894,12 +27894,12 @@
       {
        "key": "dem_peel",
        "label": "Dem Peel",
-       "value": 3.0
+       "value": 3.1
       },
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 6.1
+       "value": 6.0
       },
       {
        "key": "dem_base",
@@ -27912,8 +27912,8 @@
      "rep_bring_home": 4.5,
      "prime_persuasion": 0.5,
      "stubborn_middle": 3.9,
-     "dem_peel": 3.0,
-     "dems_going_home": 6.1,
+     "dem_peel": 3.1,
+     "dems_going_home": 6.0,
      "dem_base": 65.9
     }
    },
@@ -27951,7 +27951,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 7.6
+       "value": 7.5
       },
       {
        "key": "dem_base",
@@ -27959,13 +27959,13 @@
        "value": 66.0
       }
      ],
-     "margin": -54.0,
+     "margin": -53.9,
      "rep_base": 16.6,
      "rep_bring_home": 3.0,
      "prime_persuasion": 0.4,
      "stubborn_middle": 4.0,
      "dem_peel": 2.4,
-     "dems_going_home": 7.6,
+     "dems_going_home": 7.5,
      "dem_base": 66.0
     }
    }
@@ -28038,8 +28038,8 @@
    "gov_2022": 54.0,
    "ussen_2022": 41.7,
    "pres_2024": 37.8,
-   "model_rslc_all": -43.5,
-   "model_rslc_hm": -44.7
+   "model_rslc_all": -43.6,
+   "model_rslc_hm": -44.6
   },
   "pres_2024_margin": 37.8,
   "gov_2022_margin": 54.0,
@@ -28088,7 +28088,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 3.1
+       "value": 3.0
       },
       {
        "key": "dem_base",
@@ -28096,13 +28096,13 @@
        "value": 65.6
       }
      ],
-     "margin": -43.5,
+     "margin": -43.6,
      "rep_base": 20.3,
      "rep_bring_home": 4.8,
      "prime_persuasion": 0.7,
      "stubborn_middle": 3.6,
      "dem_peel": 2.0,
-     "dems_going_home": 3.1,
+     "dems_going_home": 3.0,
      "dem_base": 65.6
     }
    },
@@ -28115,12 +28115,12 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 20.9
+       "value": 21.0
       },
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 3.8
+       "value": 3.7
       },
       {
        "key": "prime_persuasion",
@@ -28135,7 +28135,7 @@
       {
        "key": "dem_peel",
        "label": "Dem Peel",
-       "value": 1.5
+       "value": 1.4
       },
       {
        "key": "dems_going_home",
@@ -28148,12 +28148,12 @@
        "value": 65.3
       }
      ],
-     "margin": -44.7,
-     "rep_base": 20.9,
-     "rep_bring_home": 3.8,
+     "margin": -44.6,
+     "rep_base": 21.0,
+     "rep_bring_home": 3.7,
      "prime_persuasion": 0.7,
      "stubborn_middle": 3.8,
-     "dem_peel": 1.5,
+     "dem_peel": 1.4,
      "dems_going_home": 4.0,
      "dem_base": 65.3
     }
@@ -28228,7 +28228,7 @@
    "ussen_2022": 20.4,
    "pres_2024": 15.9,
    "model_rslc_all": -21.4,
-   "model_rslc_hm": -21.1
+   "model_rslc_hm": -21.2
   },
   "pres_2024_margin": 15.9,
   "gov_2022_margin": 31.1,
@@ -28282,7 +28282,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 56.1
+       "value": 56.2
       }
      ],
      "margin": -21.4,
@@ -28292,7 +28292,7 @@
      "stubborn_middle": 4.0,
      "dem_peel": 0.9,
      "dems_going_home": 1.7,
-     "dem_base": 56.1
+     "dem_base": 56.2
     }
    },
    "model_rslc_hm": {
@@ -28319,7 +28319,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 3.9
+       "value": 3.8
       },
       {
        "key": "dem_peel",
@@ -28334,17 +28334,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 55.9
+       "value": 56.0
       }
      ],
-     "margin": -21.1,
+     "margin": -21.2,
      "rep_base": 33.3,
      "rep_bring_home": 3.6,
      "prime_persuasion": 0.8,
-     "stubborn_middle": 3.9,
+     "stubborn_middle": 3.8,
      "dem_peel": 0.6,
      "dems_going_home": 2.0,
-     "dem_base": 55.9
+     "dem_base": 56.0
     }
    }
   }
@@ -28416,8 +28416,8 @@
    "gov_2022": 40.7,
    "ussen_2022": 26.0,
    "pres_2024": 21.4,
-   "model_rslc_all": -26.9,
-   "model_rslc_hm": -26.9
+   "model_rslc_all": -27.0,
+   "model_rslc_hm": -27.0
   },
   "pres_2024_margin": 21.4,
   "gov_2022_margin": 40.7,
@@ -28456,7 +28456,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 4.7
+       "value": 4.6
       },
       {
        "key": "dem_peel",
@@ -28474,11 +28474,11 @@
        "value": 58.3
       }
      ],
-     "margin": -26.9,
+     "margin": -27.0,
      "rep_base": 29.3,
      "rep_bring_home": 4.0,
      "prime_persuasion": 1.0,
-     "stubborn_middle": 4.7,
+     "stubborn_middle": 4.6,
      "dem_peel": 0.7,
      "dems_going_home": 2.0,
      "dem_base": 58.3
@@ -28493,7 +28493,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 31.1
+       "value": 31.0
       },
       {
        "key": "rep_bring_home",
@@ -28526,8 +28526,8 @@
        "value": 58.6
       }
      ],
-     "margin": -26.9,
-     "rep_base": 31.1,
+     "margin": -27.0,
+     "rep_base": 31.0,
      "rep_bring_home": 2.7,
      "prime_persuasion": 0.8,
      "stubborn_middle": 4.2,
@@ -28605,7 +28605,7 @@
    "gov_2022": 37.8,
    "ussen_2022": 24.8,
    "pres_2024": 17.1,
-   "model_rslc_all": -21.9,
+   "model_rslc_all": -21.8,
    "model_rslc_hm": -22.6
   },
   "pres_2024_margin": 17.1,
@@ -28635,7 +28635,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 4.7
+       "value": 4.6
       },
       {
        "key": "prime_persuasion",
@@ -28663,9 +28663,9 @@
        "value": 57.6
       }
      ],
-     "margin": -21.9,
+     "margin": -21.8,
      "rep_base": 31.9,
-     "rep_bring_home": 4.7,
+     "rep_bring_home": 4.6,
      "prime_persuasion": 0.7,
      "stubborn_middle": 3.3,
      "dem_peel": 1.1,
@@ -28794,8 +28794,8 @@
    "gov_2022": 50.4,
    "ussen_2022": 36.3,
    "pres_2024": 31.3,
-   "model_rslc_all": -35.4,
-   "model_rslc_hm": -36.9
+   "model_rslc_all": -35.6,
+   "model_rslc_hm": -37.1
   },
   "pres_2024_margin": 31.3,
   "gov_2022_margin": 50.4,
@@ -28849,17 +28849,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 63.8
+       "value": 63.9
       }
      ],
-     "margin": -35.4,
+     "margin": -35.6,
      "rep_base": 26.2,
      "rep_bring_home": 3.7,
      "prime_persuasion": 0.7,
      "stubborn_middle": 3.2,
      "dem_peel": 0.9,
      "dems_going_home": 1.5,
-     "dem_base": 63.8
+     "dem_base": 63.9
     }
    },
    "model_rslc_hm": {
@@ -28904,7 +28904,7 @@
        "value": 64.6
       }
      ],
-     "margin": -36.9,
+     "margin": -37.1,
      "rep_base": 26.5,
      "rep_bring_home": 2.9,
      "prime_persuasion": 0.6,
@@ -28983,8 +28983,8 @@
    "gov_2022": 70.4,
    "ussen_2022": 62.0,
    "pres_2024": 59.4,
-   "model_rslc_all": -62.2,
-   "model_rslc_hm": -63.8
+   "model_rslc_all": -62.3,
+   "model_rslc_hm": -63.9
   },
   "pres_2024_margin": 59.4,
   "gov_2022_margin": 70.4,
@@ -29038,17 +29038,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 78.4
+       "value": 78.5
       }
      ],
-     "margin": -62.2,
+     "margin": -62.3,
      "rep_base": 15.1,
      "rep_bring_home": 2.2,
      "prime_persuasion": 0.4,
      "stubborn_middle": 2.0,
      "dem_peel": 0.8,
      "dems_going_home": 1.1,
-     "dem_base": 78.4
+     "dem_base": 78.5
     }
    },
    "model_rslc_hm": {
@@ -29093,7 +29093,7 @@
        "value": 79.3
       }
      ],
-     "margin": -63.8,
+     "margin": -63.9,
      "rep_base": 15.1,
      "rep_bring_home": 1.6,
      "prime_persuasion": 0.3,
@@ -29173,7 +29173,7 @@
    "ussen_2022": 19.1,
    "pres_2024": 15.8,
    "model_rslc_all": -20.3,
-   "model_rslc_hm": -19.1
+   "model_rslc_hm": -19.0
   },
   "pres_2024_margin": 15.8,
   "gov_2022_margin": 28.2,
@@ -29222,7 +29222,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 2.4
+       "value": 2.5
       },
       {
        "key": "dem_base",
@@ -29236,7 +29236,7 @@
      "prime_persuasion": 0.6,
      "stubborn_middle": 4.1,
      "dem_peel": 0.7,
-     "dems_going_home": 2.4,
+     "dems_going_home": 2.5,
      "dem_base": 55.0
     }
    },
@@ -29249,7 +29249,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 34.8
+       "value": 34.9
       },
       {
        "key": "rep_bring_home",
@@ -29259,7 +29259,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "stubborn_middle",
@@ -29282,10 +29282,10 @@
        "value": 54.1
       }
      ],
-     "margin": -19.1,
-     "rep_base": 34.8,
+     "margin": -19.0,
+     "rep_base": 34.9,
      "rep_bring_home": 3.0,
-     "prime_persuasion": 0.6,
+     "prime_persuasion": 0.5,
      "stubborn_middle": 4.1,
      "dem_peel": 0.6,
      "dems_going_home": 2.8,
@@ -29361,8 +29361,8 @@
    "gov_2022": 33.1,
    "ussen_2022": 22.2,
    "pres_2024": 18.8,
-   "model_rslc_all": -22.4,
-   "model_rslc_hm": -21.4
+   "model_rslc_all": -22.3,
+   "model_rslc_hm": -21.3
   },
   "pres_2024_margin": 18.8,
   "gov_2022_margin": 33.1,
@@ -29419,7 +29419,7 @@
        "value": 56.2
       }
      ],
-     "margin": -22.4,
+     "margin": -22.3,
      "rep_base": 32.1,
      "rep_bring_home": 4.5,
      "prime_persuasion": 0.7,
@@ -29468,17 +29468,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 55.3
+       "value": 55.2
       }
      ],
-     "margin": -21.4,
+     "margin": -21.3,
      "rep_base": 33.5,
      "rep_bring_home": 3.7,
      "prime_persuasion": 0.6,
      "stubborn_middle": 3.2,
      "dem_peel": 0.4,
      "dems_going_home": 3.3,
-     "dem_base": 55.3
+     "dem_base": 55.2
     }
    }
   }
@@ -29551,7 +29551,7 @@
    "ussen_2022": 22.7,
    "pres_2024": 24.9,
    "model_rslc_all": -31.4,
-   "model_rslc_hm": -29.7
+   "model_rslc_hm": -29.6
   },
   "pres_2024_margin": 24.9,
   "gov_2022_margin": 35.8,
@@ -29660,7 +29660,7 @@
        "value": 54.0
       }
      ],
-     "margin": -29.7,
+     "margin": -29.6,
      "rep_base": 27.3,
      "rep_bring_home": 4.0,
      "prime_persuasion": 0.8,
@@ -29774,12 +29774,12 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.7
+       "value": 0.6
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 4.0
+       "value": 3.9
       },
       {
        "key": "dem_peel",
@@ -29789,7 +29789,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 2.4
+       "value": 2.3
       },
       {
        "key": "dem_base",
@@ -29800,10 +29800,10 @@
      "margin": -21.8,
      "rep_base": 31.7,
      "rep_bring_home": 4.7,
-     "prime_persuasion": 0.7,
-     "stubborn_middle": 4.0,
+     "prime_persuasion": 0.6,
+     "stubborn_middle": 3.9,
      "dem_peel": 0.7,
-     "dems_going_home": 2.4,
+     "dems_going_home": 2.3,
      "dem_base": 55.9
     }
    },
@@ -29879,7 +29879,7 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Michael Bannon",
      "dem": "Carol Kazeem"
     }
    }
@@ -29929,7 +29929,7 @@
    "ussen_2022": 40.8,
    "pres_2024": 36.7,
    "model_rslc_all": -40.7,
-   "model_rslc_hm": -32.0
+   "model_rslc_hm": -32.1
   },
   "pres_2024_margin": 36.7,
   "gov_2022_margin": 45.4,
@@ -29940,7 +29940,7 @@
    "ussen_2022": 18204
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Michael Bannon",
    "dem": "Carol Kazeem"
   },
   "models": {
@@ -29973,7 +29973,7 @@
       {
        "key": "dem_peel",
        "label": "Dem Peel",
-       "value": 0.0
+       "value": 0.1
       },
       {
        "key": "dems_going_home",
@@ -29991,7 +29991,7 @@
      "rep_bring_home": 1.2,
      "prime_persuasion": 0.9,
      "stubborn_middle": 1.7,
-     "dem_peel": 0.0,
+     "dem_peel": 0.1,
      "dems_going_home": 1.5,
      "dem_base": 67.5
     }
@@ -30005,7 +30005,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 31.6
+       "value": 31.5
       },
       {
        "key": "rep_bring_home",
@@ -30030,7 +30030,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.0
+       "value": 1.1
       },
       {
        "key": "dem_base",
@@ -30038,13 +30038,13 @@
        "value": 63.6
       }
      ],
-     "margin": -32.0,
-     "rep_base": 31.6,
+     "margin": -32.1,
+     "rep_base": 31.5,
      "rep_bring_home": 1.0,
      "prime_persuasion": 0.9,
      "stubborn_middle": 1.9,
      "dem_peel": 0.0,
-     "dems_going_home": 1.0,
+     "dems_going_home": 1.1,
      "dem_base": 63.6
     }
    }
@@ -30117,8 +30117,8 @@
    "gov_2022": 18.2,
    "ussen_2022": 5.7,
    "pres_2024": 5.4,
-   "model_rslc_all": -10.1,
-   "model_rslc_hm": -7.5
+   "model_rslc_all": -9.9,
+   "model_rslc_hm": -7.4
   },
   "pres_2024_margin": 5.4,
   "gov_2022_margin": 18.2,
@@ -30142,7 +30142,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 33.7
+       "value": 33.8
       },
       {
        "key": "rep_bring_home",
@@ -30175,8 +30175,8 @@
        "value": 49.4
       }
      ],
-     "margin": -10.1,
-     "rep_base": 33.7,
+     "margin": -9.9,
+     "rep_base": 33.8,
      "rep_bring_home": 8.2,
      "prime_persuasion": 0.6,
      "stubborn_middle": 4.7,
@@ -30194,7 +30194,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 36.6
+       "value": 36.7
       },
       {
        "key": "rep_bring_home",
@@ -30204,7 +30204,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "stubborn_middle",
@@ -30219,22 +30219,22 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 2.9
+       "value": 2.8
       },
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 47.7
+       "value": 47.6
       }
      ],
-     "margin": -7.5,
-     "rep_base": 36.6,
+     "margin": -7.4,
+     "rep_base": 36.7,
      "rep_bring_home": 6.4,
-     "prime_persuasion": 0.6,
+     "prime_persuasion": 0.5,
      "stubborn_middle": 5.2,
      "dem_peel": 0.7,
-     "dems_going_home": 2.9,
-     "dem_base": 47.7
+     "dems_going_home": 2.8,
+     "dem_base": 47.6
     }
    }
   }
@@ -30257,7 +30257,7 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "John Mancinelli",
      "dem": "Leanne Krueger"
     }
    }
@@ -30306,7 +30306,7 @@
    "gov_2022": 29.3,
    "ussen_2022": 20.0,
    "pres_2024": 12.8,
-   "model_rslc_all": -13.6,
+   "model_rslc_all": -13.7,
    "model_rslc_hm": -12.8
   },
   "pres_2024_margin": 12.8,
@@ -30318,7 +30318,7 @@
    "ussen_2022": 30375
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "John Mancinelli",
    "dem": "Leanne Krueger"
   },
   "models": {
@@ -30364,7 +30364,7 @@
        "value": 53.8
       }
      ],
-     "margin": -13.6,
+     "margin": -13.7,
      "rep_base": 39.0,
      "rep_bring_home": 2.6,
      "prime_persuasion": 0.7,
@@ -30398,7 +30398,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.7
+       "value": 2.6
       },
       {
        "key": "dem_peel",
@@ -30413,17 +30413,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 53.2
+       "value": 53.3
       }
      ],
      "margin": -12.8,
      "rep_base": 40.0,
      "rep_bring_home": 1.9,
      "prime_persuasion": 0.6,
-     "stubborn_middle": 2.7,
+     "stubborn_middle": 2.6,
      "dem_peel": 0.1,
      "dems_going_home": 1.5,
-     "dem_base": 53.2
+     "dem_base": 53.3
     }
    }
   }
@@ -30572,7 +30572,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 42.2
+       "value": 42.1
       },
       {
        "key": "rep_bring_home",
@@ -30606,7 +30606,7 @@
       }
      ],
      "margin": -11.0,
-     "rep_base": 42.2,
+     "rep_base": 42.1,
      "rep_bring_home": 1.5,
      "prime_persuasion": 0.5,
      "stubborn_middle": 1.1,
@@ -30684,8 +30684,8 @@
    "gov_2022": 38.8,
    "ussen_2022": 31.5,
    "pres_2024": 27.6,
-   "model_rslc_all": -30.7,
-   "model_rslc_hm": -28.2
+   "model_rslc_all": -30.9,
+   "model_rslc_hm": -28.5
   },
   "pres_2024_margin": 27.6,
   "gov_2022_margin": 38.8,
@@ -30709,7 +30709,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 32.0
+       "value": 31.8
       },
       {
        "key": "rep_bring_home",
@@ -30719,7 +30719,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.4
+       "value": 0.5
       },
       {
        "key": "stubborn_middle",
@@ -30739,17 +30739,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 64.2
+       "value": 64.3
       }
      ],
-     "margin": -30.7,
-     "rep_base": 32.0,
+     "margin": -30.9,
+     "rep_base": 31.8,
      "rep_bring_home": 1.9,
-     "prime_persuasion": 0.4,
+     "prime_persuasion": 0.5,
      "stubborn_middle": 0.8,
      "dem_peel": 0.4,
      "dems_going_home": 0.4,
-     "dem_base": 64.2
+     "dem_base": 64.3
     }
    },
    "model_rslc_hm": {
@@ -30761,7 +30761,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 33.3
+       "value": 33.1
       },
       {
        "key": "rep_bring_home",
@@ -30771,7 +30771,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.3
+       "value": 0.4
       },
       {
        "key": "stubborn_middle",
@@ -30791,17 +30791,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 63.1
+       "value": 63.2
       }
      ],
-     "margin": -28.2,
-     "rep_base": 33.3,
+     "margin": -28.5,
+     "rep_base": 33.1,
      "rep_bring_home": 1.9,
-     "prime_persuasion": 0.3,
+     "prime_persuasion": 0.4,
      "stubborn_middle": 0.8,
      "dem_peel": 0.3,
      "dems_going_home": 0.3,
-     "dem_base": 63.1
+     "dem_base": 63.2
     }
    }
   }
@@ -30873,8 +30873,8 @@
    "gov_2022": 67.6,
    "ussen_2022": 63.7,
    "pres_2024": 55.4,
-   "model_rslc_all": -53.8,
-   "model_rslc_hm": -61.6
+   "model_rslc_all": -54.0,
+   "model_rslc_hm": -61.8
   },
   "pres_2024_margin": 55.4,
   "gov_2022_margin": 67.6,
@@ -30898,7 +30898,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 20.0
+       "value": 19.9
       },
       {
        "key": "rep_bring_home",
@@ -30931,8 +30931,8 @@
        "value": 75.5
       }
      ],
-     "margin": -53.8,
-     "rep_base": 20.0,
+     "margin": -54.0,
+     "rep_base": 19.9,
      "rep_bring_home": 1.9,
      "prime_persuasion": 1.7,
      "stubborn_middle": 0.6,
@@ -30950,7 +30950,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 17.3
+       "value": 17.2
       },
       {
        "key": "rep_bring_home",
@@ -30980,17 +30980,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 79.9
+       "value": 80.0
       }
      ],
-     "margin": -61.6,
-     "rep_base": 17.3,
+     "margin": -61.8,
+     "rep_base": 17.2,
      "rep_bring_home": 1.2,
      "prime_persuasion": 0.9,
      "stubborn_middle": 0.4,
      "dem_peel": 0.0,
      "dems_going_home": 0.2,
-     "dem_base": 79.9
+     "dem_base": 80.0
     }
    }
   }
@@ -31169,7 +31169,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 54.1
+       "value": 54.2
       }
      ],
      "margin": -17.1,
@@ -31179,7 +31179,7 @@
      "stubborn_middle": 2.8,
      "dem_peel": 0.1,
      "dems_going_home": 2.7,
-     "dem_base": 54.1
+     "dem_base": 54.2
     }
    }
   }
@@ -31333,7 +31333,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 2.7
+       "value": 2.6
       },
       {
        "key": "prime_persuasion",
@@ -31363,7 +31363,7 @@
      ],
      "margin": -25.9,
      "rep_base": 32.7,
-     "rep_bring_home": 2.7,
+     "rep_bring_home": 2.6,
      "prime_persuasion": 0.6,
      "stubborn_middle": 2.6,
      "dem_peel": 0.2,
@@ -31517,7 +31517,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 30.8
+       "value": 30.7
       },
       {
        "key": "rep_bring_home",
@@ -31547,17 +31547,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 56.8
+       "value": 56.9
       }
      ],
      "margin": -26.6,
-     "rep_base": 30.8,
+     "rep_base": 30.7,
      "rep_bring_home": 2.8,
      "prime_persuasion": 0.6,
      "stubborn_middle": 4.8,
      "dem_peel": 1.0,
      "dems_going_home": 3.3,
-     "dem_base": 56.8
+     "dem_base": 56.9
     }
    }
   }
@@ -31706,7 +31706,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 30.9
+       "value": 31.0
       },
       {
        "key": "rep_bring_home",
@@ -31726,7 +31726,7 @@
       {
        "key": "dem_peel",
        "label": "Dem Peel",
-       "value": 0.9
+       "value": 0.8
       },
       {
        "key": "dems_going_home",
@@ -31740,11 +31740,11 @@
       }
      ],
      "margin": -21.8,
-     "rep_base": 30.9,
+     "rep_base": 31.0,
      "rep_bring_home": 4.6,
      "prime_persuasion": 1.1,
      "stubborn_middle": 5.2,
-     "dem_peel": 0.9,
+     "dem_peel": 0.8,
      "dems_going_home": 5.4,
      "dem_base": 51.9
     }
@@ -31925,7 +31925,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 32.0
+       "value": 32.1
       }
      ],
      "margin": 31.3,
@@ -31935,7 +31935,7 @@
      "stubborn_middle": 2.0,
      "dem_peel": 0.1,
      "dems_going_home": 0.8,
-     "dem_base": 32.0
+     "dem_base": 32.1
     }
    }
   }
@@ -32007,7 +32007,7 @@
    "gov_2022": 12.0,
    "ussen_2022": -3.3,
    "pres_2024": -14.6,
-   "model_rslc_all": 9.0,
+   "model_rslc_all": 8.9,
    "model_rslc_hm": 0.4
   },
   "pres_2024_margin": -14.6,
@@ -32065,7 +32065,7 @@
        "value": 40.3
       }
      ],
-     "margin": 9.0,
+     "margin": 8.9,
      "rep_base": 43.9,
      "rep_bring_home": 5.6,
      "prime_persuasion": 2.7,
@@ -32196,8 +32196,8 @@
    "gov_2022": -19.1,
    "ussen_2022": -30.4,
    "pres_2024": -37.9,
-   "model_rslc_all": 34.2,
-   "model_rslc_hm": 35.6
+   "model_rslc_all": 34.3,
+   "model_rslc_hm": 35.8
   },
   "pres_2024_margin": -37.9,
   "gov_2022_margin": -19.1,
@@ -32254,7 +32254,7 @@
        "value": 29.9
       }
      ],
-     "margin": 34.2,
+     "margin": 34.3,
      "rep_base": 60.6,
      "rep_bring_home": 4.3,
      "prime_persuasion": 1.8,
@@ -32303,17 +32303,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 29.9
+       "value": 29.8
       }
      ],
-     "margin": 35.6,
+     "margin": 35.8,
      "rep_base": 62.4,
      "rep_bring_home": 3.8,
      "prime_persuasion": 1.3,
      "stubborn_middle": 1.9,
      "dem_peel": 0.1,
      "dems_going_home": 0.7,
-     "dem_base": 29.9
+     "dem_base": 29.8
     }
    }
   }
@@ -32385,7 +32385,7 @@
    "gov_2022": 25.3,
    "ussen_2022": 10.8,
    "pres_2024": -0.8,
-   "model_rslc_all": -4.4,
+   "model_rslc_all": -4.5,
    "model_rslc_hm": -15.1
   },
   "pres_2024_margin": -0.8,
@@ -32443,7 +32443,7 @@
        "value": 46.5
       }
      ],
-     "margin": -4.4,
+     "margin": -4.5,
      "rep_base": 37.7,
      "rep_bring_home": 4.6,
      "prime_persuasion": 3.0,
@@ -32575,7 +32575,7 @@
    "ussen_2022": 14.1,
    "pres_2024": 5.1,
    "model_rslc_all": -7.0,
-   "model_rslc_hm": -18.3
+   "model_rslc_hm": -18.4
   },
   "pres_2024_margin": 5.1,
   "gov_2022_margin": 28.1,
@@ -32651,7 +32651,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 34.2
+       "value": 34.1
       },
       {
        "key": "rep_bring_home",
@@ -32661,7 +32661,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.7
+       "value": 1.6
       },
       {
        "key": "stubborn_middle",
@@ -32681,17 +32681,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 55.6
+       "value": 55.7
       }
      ],
-     "margin": -18.3,
-     "rep_base": 34.2,
+     "margin": -18.4,
+     "rep_base": 34.1,
      "rep_bring_home": 3.4,
-     "prime_persuasion": 1.7,
+     "prime_persuasion": 1.6,
      "stubborn_middle": 4.2,
      "dem_peel": 0.7,
      "dems_going_home": 0.3,
-     "dem_base": 55.6
+     "dem_base": 55.7
     }
    }
   }
@@ -32763,7 +32763,7 @@
    "gov_2022": 30.6,
    "ussen_2022": 16.7,
    "pres_2024": 3.1,
-   "model_rslc_all": -4.1,
+   "model_rslc_all": -4.3,
    "model_rslc_hm": -18.1
   },
   "pres_2024_margin": 3.1,
@@ -32788,7 +32788,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 38.8
+       "value": 38.7
       },
       {
        "key": "rep_bring_home",
@@ -32798,7 +32798,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 3.0
+       "value": 3.1
       },
       {
        "key": "stubborn_middle",
@@ -32818,17 +32818,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 47.9
+       "value": 48.0
       }
      ],
-     "margin": -4.1,
-     "rep_base": 38.8,
+     "margin": -4.3,
+     "rep_base": 38.7,
      "rep_bring_home": 5.2,
-     "prime_persuasion": 3.0,
+     "prime_persuasion": 3.1,
      "stubborn_middle": 4.1,
      "dem_peel": 0.7,
      "dems_going_home": 0.2,
-     "dem_base": 47.9
+     "dem_base": 48.0
     }
    },
    "model_rslc_hm": {
@@ -32840,7 +32840,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 34.6
+       "value": 34.5
       },
       {
        "key": "rep_bring_home",
@@ -32874,7 +32874,7 @@
       }
      ],
      "margin": -18.1,
-     "rep_base": 34.6,
+     "rep_base": 34.5,
      "rep_bring_home": 3.3,
      "prime_persuasion": 1.7,
      "stubborn_middle": 4.0,
@@ -32952,7 +32952,7 @@
    "gov_2022": 79.4,
    "ussen_2022": 73.2,
    "pres_2024": 67.3,
-   "model_rslc_all": -68.1,
+   "model_rslc_all": -68.2,
    "model_rslc_hm": -77.9
   },
   "pres_2024_margin": 67.3,
@@ -32977,7 +32977,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 8.7
+       "value": 8.6
       },
       {
        "key": "rep_bring_home",
@@ -33010,8 +33010,8 @@
        "value": 79.7
       }
      ],
-     "margin": -68.1,
-     "rep_base": 8.7,
+     "margin": -68.2,
+     "rep_base": 8.6,
      "rep_bring_home": 3.7,
      "prime_persuasion": 0.3,
      "stubborn_middle": 3.1,
@@ -33029,7 +33029,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 6.9
+       "value": 6.8
       },
       {
        "key": "rep_bring_home",
@@ -33063,7 +33063,7 @@
       }
      ],
      "margin": -77.9,
-     "rep_base": 6.9,
+     "rep_base": 6.8,
      "rep_bring_home": 2.1,
      "prime_persuasion": 0.2,
      "stubborn_middle": 2.0,
@@ -33093,7 +33093,7 @@
     },
     "candidates": {
      "rep": "Jack Rader",
-     "dem": "No candidate"
+     "dem": "Thomas Kucer"
     }
    }
   ],
@@ -33154,7 +33154,7 @@
   },
   "candidates_2026": {
    "rep": "Jack Rader",
-   "dem": "No candidate"
+   "dem": "Thomas Kucer"
   },
   "models": {
    "model_rslc_all": {
@@ -33218,7 +33218,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 50.5
+       "value": 50.6
       },
       {
        "key": "rep_bring_home",
@@ -33228,7 +33228,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.6
+       "value": 1.7
       },
       {
        "key": "stubborn_middle",
@@ -33243,7 +33243,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.4
+       "value": 1.3
       },
       {
        "key": "dem_base",
@@ -33252,12 +33252,12 @@
       }
      ],
      "margin": 14.4,
-     "rep_base": 50.5,
+     "rep_base": 50.6,
      "rep_bring_home": 4.3,
-     "prime_persuasion": 1.6,
+     "prime_persuasion": 1.7,
      "stubborn_middle": 2.8,
      "dem_peel": 0.2,
-     "dems_going_home": 1.4,
+     "dems_going_home": 1.3,
      "dem_base": 39.1
     }
    }
@@ -33407,7 +33407,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 28.8
+       "value": 28.7
       },
       {
        "key": "rep_bring_home",
@@ -33441,7 +33441,7 @@
       }
      ],
      "margin": -33.2,
-     "rep_base": 28.8,
+     "rep_base": 28.7,
      "rep_bring_home": 3.3,
      "prime_persuasion": 1.0,
      "stubborn_middle": 1.5,
@@ -33519,7 +33519,7 @@
    "gov_2022": 10.1,
    "ussen_2022": -5.6,
    "pres_2024": -12.8,
-   "model_rslc_all": 5.0,
+   "model_rslc_all": 5.1,
    "model_rslc_hm": 6.3
   },
   "pres_2024_margin": -12.8,
@@ -33577,7 +33577,7 @@
        "value": 42.7
       }
      ],
-     "margin": 5.0,
+     "margin": 5.1,
      "rep_base": 41.2,
      "rep_bring_home": 7.7,
      "prime_persuasion": 0.6,
@@ -33611,7 +33611,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 4.1
+       "value": 4.0
       },
       {
        "key": "dem_peel",
@@ -33633,7 +33633,7 @@
      "rep_base": 44.1,
      "rep_bring_home": 6.1,
      "prime_persuasion": 0.6,
-     "stubborn_middle": 4.1,
+     "stubborn_middle": 4.0,
      "dem_peel": 1.3,
      "dems_going_home": 1.3,
      "dem_base": 42.5
@@ -33709,7 +33709,7 @@
    "ussen_2022": 72.7,
    "pres_2024": 59.5,
    "model_rslc_all": -53.1,
-   "model_rslc_hm": -68.3
+   "model_rslc_hm": -68.5
   },
   "pres_2024_margin": 59.5,
   "gov_2022_margin": 75.7,
@@ -33733,7 +33733,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 17.2
+       "value": 17.1
       },
       {
        "key": "rep_bring_home",
@@ -33758,7 +33758,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.2
+       "value": 1.3
       },
       {
        "key": "dem_base",
@@ -33767,12 +33767,12 @@
       }
      ],
      "margin": -53.1,
-     "rep_base": 17.2,
+     "rep_base": 17.1,
      "rep_bring_home": 4.7,
      "prime_persuasion": 1.5,
      "stubborn_middle": 1.7,
      "dem_peel": 0.1,
-     "dems_going_home": 1.2,
+     "dems_going_home": 1.3,
      "dem_base": 73.7
     }
    },
@@ -33795,7 +33795,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.4
+       "value": 1.3
       },
       {
        "key": "stubborn_middle",
@@ -33815,17 +33815,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 82.1
+       "value": 82.2
       }
      ],
-     "margin": -68.3,
+     "margin": -68.5,
      "rep_base": 11.2,
      "rep_bring_home": 3.3,
-     "prime_persuasion": 1.4,
+     "prime_persuasion": 1.3,
      "stubborn_middle": 1.2,
      "dem_peel": 0.0,
      "dems_going_home": 0.8,
-     "dem_base": 82.1
+     "dem_base": 82.2
     }
    }
   }
@@ -33897,8 +33897,8 @@
    "gov_2022": 69.1,
    "ussen_2022": 66.7,
    "pres_2024": 46.7,
-   "model_rslc_all": -37.5,
-   "model_rslc_hm": -63.0
+   "model_rslc_all": -37.8,
+   "model_rslc_hm": -63.1
   },
   "pres_2024_margin": 46.7,
   "gov_2022_margin": 69.1,
@@ -33927,12 +33927,12 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 6.3
+       "value": 6.2
       },
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 5.0
+       "value": 4.9
       },
       {
        "key": "stubborn_middle",
@@ -33952,17 +33952,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 64.6
+       "value": 64.7
       }
      ],
-     "margin": -37.5,
+     "margin": -37.8,
      "rep_base": 21.4,
-     "rep_bring_home": 6.3,
-     "prime_persuasion": 5.0,
+     "rep_bring_home": 6.2,
+     "prime_persuasion": 4.9,
      "stubborn_middle": 2.0,
      "dem_peel": 0.1,
      "dems_going_home": 0.6,
-     "dem_base": 64.6
+     "dem_base": 64.7
     }
    },
    "model_rslc_hm": {
@@ -33974,7 +33974,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 14.1
+       "value": 14.0
       },
       {
        "key": "rep_bring_home",
@@ -34007,8 +34007,8 @@
        "value": 79.5
       }
      ],
-     "margin": -63.0,
-     "rep_base": 14.1,
+     "margin": -63.1,
+     "rep_base": 14.0,
      "rep_bring_home": 2.9,
      "prime_persuasion": 1.9,
      "stubborn_middle": 0.9,
@@ -34087,7 +34087,7 @@
    "ussen_2022": 87.1,
    "pres_2024": 79.6,
    "model_rslc_all": -75.8,
-   "model_rslc_hm": -86.4
+   "model_rslc_hm": -86.5
   },
   "pres_2024_margin": 79.6,
   "gov_2022_margin": 89.9,
@@ -34173,7 +34173,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.2
+       "value": 0.3
       },
       {
        "key": "stubborn_middle",
@@ -34183,7 +34183,7 @@
       {
        "key": "dem_peel",
        "label": "Dem Peel",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "dems_going_home",
@@ -34193,17 +34193,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 91.3
+       "value": 91.4
       }
      ],
-     "margin": -86.4,
+     "margin": -86.5,
      "rep_base": 4.4,
      "rep_bring_home": 1.3,
-     "prime_persuasion": 0.2,
+     "prime_persuasion": 0.3,
      "stubborn_middle": 1.2,
-     "dem_peel": 0.6,
+     "dem_peel": 0.5,
      "dems_going_home": 0.9,
-     "dem_base": 91.3
+     "dem_base": 91.4
     }
    }
   }
@@ -34275,7 +34275,7 @@
    "gov_2022": 84.4,
    "ussen_2022": 78.7,
    "pres_2024": 74.7,
-   "model_rslc_all": -75.1,
+   "model_rslc_all": -75.0,
    "model_rslc_hm": -82.4
   },
   "pres_2024_margin": 74.7,
@@ -34300,7 +34300,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 5.2
+       "value": 5.3
       },
       {
        "key": "rep_bring_home",
@@ -34333,8 +34333,8 @@
        "value": 84.0
       }
      ],
-     "margin": -75.1,
-     "rep_base": 5.2,
+     "margin": -75.0,
+     "rep_base": 5.3,
      "rep_bring_home": 4.1,
      "prime_persuasion": 0.2,
      "stubborn_middle": 2.8,
@@ -34352,7 +34352,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 4.1
+       "value": 4.2
       },
       {
        "key": "rep_bring_home",
@@ -34367,7 +34367,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 1.8
+       "value": 1.7
       },
       {
        "key": "dem_peel",
@@ -34386,10 +34386,10 @@
       }
      ],
      "margin": -82.4,
-     "rep_base": 4.1,
+     "rep_base": 4.2,
      "rep_bring_home": 2.9,
      "prime_persuasion": 0.1,
-     "stubborn_middle": 1.8,
+     "stubborn_middle": 1.7,
      "dem_peel": 1.7,
      "dems_going_home": 0.4,
      "dem_base": 89.0
@@ -34571,7 +34571,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 39.3
+       "value": 39.4
       }
      ],
      "margin": 15.0,
@@ -34581,7 +34581,7 @@
      "stubborn_middle": 2.5,
      "dem_peel": 0.3,
      "dems_going_home": 1.1,
-     "dem_base": 39.3
+     "dem_base": 39.4
     }
    }
   }
@@ -34653,8 +34653,8 @@
    "gov_2022": 56.1,
    "ussen_2022": 47.7,
    "pres_2024": 33.1,
-   "model_rslc_all": -30.4,
-   "model_rslc_hm": -51.5
+   "model_rslc_all": -30.6,
+   "model_rslc_hm": -51.6
   },
   "pres_2024_margin": 33.1,
   "gov_2022_margin": 56.1,
@@ -34678,12 +34678,12 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 24.1
+       "value": 24.0
       },
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 4.4
+       "value": 4.3
       },
       {
        "key": "prime_persuasion",
@@ -34693,7 +34693,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 8.6
+       "value": 8.5
       },
       {
        "key": "dem_peel",
@@ -34708,17 +34708,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 58.8
+       "value": 58.9
       }
      ],
-     "margin": -30.4,
-     "rep_base": 24.1,
-     "rep_bring_home": 4.4,
+     "margin": -30.6,
+     "rep_base": 24.0,
+     "rep_bring_home": 4.3,
      "prime_persuasion": 2.9,
-     "stubborn_middle": 8.6,
+     "stubborn_middle": 8.5,
      "dem_peel": 1.3,
      "dems_going_home": 0.1,
-     "dem_base": 58.8
+     "dem_base": 58.9
     }
    },
    "model_rslc_hm": {
@@ -34760,17 +34760,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 71.8
+       "value": 71.9
       }
      ],
-     "margin": -51.5,
+     "margin": -51.6,
      "rep_base": 18.0,
      "rep_bring_home": 2.4,
      "prime_persuasion": 1.3,
      "stubborn_middle": 5.5,
      "dem_peel": 0.9,
      "dems_going_home": 0.1,
-     "dem_base": 71.8
+     "dem_base": 71.9
     }
    }
   }
@@ -34842,7 +34842,7 @@
    "gov_2022": 48.7,
    "ussen_2022": 41.9,
    "pres_2024": 34.4,
-   "model_rslc_all": -35.5,
+   "model_rslc_all": -35.7,
    "model_rslc_hm": -45.9
   },
   "pres_2024_margin": 34.4,
@@ -34867,7 +34867,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 24.7
+       "value": 24.6
       },
       {
        "key": "rep_bring_home",
@@ -34897,17 +34897,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 63.0
+       "value": 63.1
       }
      ],
-     "margin": -35.5,
-     "rep_base": 24.7,
+     "margin": -35.7,
+     "rep_base": 24.6,
      "rep_bring_home": 2.9,
      "prime_persuasion": 3.9,
      "stubborn_middle": 4.6,
      "dem_peel": 0.9,
      "dems_going_home": 0.1,
-     "dem_base": 63.0
+     "dem_base": 63.1
     }
    },
    "model_rslc_hm": {
@@ -34929,12 +34929,12 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 1.7
+       "value": 1.6
       },
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 3.8
+       "value": 3.7
       },
       {
        "key": "dem_peel",
@@ -34955,8 +34955,8 @@
      "margin": -45.9,
      "rep_base": 22.2,
      "rep_bring_home": 1.8,
-     "prime_persuasion": 1.7,
-     "stubborn_middle": 3.8,
+     "prime_persuasion": 1.6,
+     "stubborn_middle": 3.7,
      "dem_peel": 0.8,
      "dems_going_home": 0.1,
      "dem_base": 69.7
@@ -35031,8 +35031,8 @@
    "gov_2022": 86.6,
    "ussen_2022": 83.8,
    "pres_2024": 76.2,
-   "model_rslc_all": -71.9,
-   "model_rslc_hm": -82.8
+   "model_rslc_all": -72.0,
+   "model_rslc_hm": -82.9
   },
   "pres_2024_margin": 76.2,
   "gov_2022_margin": 86.6,
@@ -35066,7 +35066,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.3
+       "value": 0.4
       },
       {
        "key": "stubborn_middle",
@@ -35086,17 +35086,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 84.0
+       "value": 84.1
       }
      ],
-     "margin": -71.9,
+     "margin": -72.0,
      "rep_base": 10.4,
      "rep_bring_home": 2.3,
-     "prime_persuasion": 0.3,
+     "prime_persuasion": 0.4,
      "stubborn_middle": 1.5,
      "dem_peel": 0.7,
      "dems_going_home": 0.6,
-     "dem_base": 84.0
+     "dem_base": 84.1
     }
    },
    "model_rslc_hm": {
@@ -35123,7 +35123,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 0.8
+       "value": 0.9
       },
       {
        "key": "dem_peel",
@@ -35141,11 +35141,11 @@
        "value": 90.4
       }
      ],
-     "margin": -82.8,
+     "margin": -82.9,
      "rep_base": 6.7,
      "rep_bring_home": 1.2,
      "prime_persuasion": 0.2,
-     "stubborn_middle": 0.8,
+     "stubborn_middle": 0.9,
      "dem_peel": 0.4,
      "dems_going_home": 0.3,
      "dem_base": 90.4
@@ -35221,7 +35221,7 @@
    "ussen_2022": -3.7,
    "pres_2024": -9.4,
    "model_rslc_all": 3.7,
-   "model_rslc_hm": 5.1
+   "model_rslc_hm": 5.2
   },
   "pres_2024_margin": -9.4,
   "gov_2022_margin": 6.5,
@@ -35275,7 +35275,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 43.1
+       "value": 43.0
       }
      ],
      "margin": 3.7,
@@ -35285,7 +35285,7 @@
      "stubborn_middle": 4.9,
      "dem_peel": 0.6,
      "dems_going_home": 1.7,
-     "dem_base": 43.1
+     "dem_base": 43.0
     }
    },
    "model_rslc_hm": {
@@ -35330,7 +35330,7 @@
        "value": 42.9
       }
      ],
-     "margin": 5.1,
+     "margin": 5.2,
      "rep_base": 45.7,
      "rep_bring_home": 4.2,
      "prime_persuasion": 1.1,
@@ -35410,7 +35410,7 @@
    "ussen_2022": 91.0,
    "pres_2024": 83.5,
    "model_rslc_all": -83.7,
-   "model_rslc_hm": -92.6
+   "model_rslc_hm": -92.5
   },
   "pres_2024_margin": 83.5,
   "gov_2022_margin": 92.8,
@@ -35434,7 +35434,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 5.1
+       "value": 5.2
       },
       {
        "key": "rep_bring_home",
@@ -35468,7 +35468,7 @@
       }
      ],
      "margin": -83.7,
-     "rep_base": 5.1,
+     "rep_base": 5.2,
      "rep_bring_home": 1.1,
      "prime_persuasion": 0.4,
      "stubborn_middle": 3.0,
@@ -35496,7 +35496,7 @@
       {
        "key": "prime_persuasion",
        "label": "Prime Persuasion",
-       "value": 0.2
+       "value": 0.1
       },
       {
        "key": "stubborn_middle",
@@ -35519,10 +35519,10 @@
        "value": 94.8
       }
      ],
-     "margin": -92.6,
+     "margin": -92.5,
      "rep_base": 2.5,
      "rep_bring_home": 0.5,
-     "prime_persuasion": 0.2,
+     "prime_persuasion": 0.1,
      "stubborn_middle": 1.1,
      "dem_peel": 0.3,
      "dems_going_home": 0.7,
@@ -35690,7 +35690,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 2.6
+       "value": 2.5
       },
       {
        "key": "dem_peel",
@@ -35705,17 +35705,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 52.4
+       "value": 52.5
       }
      ],
      "margin": -12.9,
      "rep_base": 38.6,
      "rep_bring_home": 2.8,
      "prime_persuasion": 1.5,
-     "stubborn_middle": 2.6,
+     "stubborn_middle": 2.5,
      "dem_peel": 0.1,
      "dems_going_home": 1.9,
-     "dem_base": 52.4
+     "dem_base": 52.5
     }
    }
   }
@@ -35787,7 +35787,7 @@
    "gov_2022": 94.2,
    "ussen_2022": 92.1,
    "pres_2024": 87.9,
-   "model_rslc_all": -79.5,
+   "model_rslc_all": -79.4,
    "model_rslc_hm": -91.1
   },
   "pres_2024_margin": 87.9,
@@ -35845,7 +35845,7 @@
        "value": 87.6
       }
      ],
-     "margin": -79.5,
+     "margin": -79.4,
      "rep_base": 8.5,
      "rep_bring_home": 1.0,
      "prime_persuasion": 0.8,
@@ -35864,7 +35864,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 3.8
+       "value": 3.7
       },
       {
        "key": "rep_bring_home",
@@ -35879,7 +35879,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 0.3
+       "value": 0.4
       },
       {
        "key": "dem_peel",
@@ -35898,10 +35898,10 @@
       }
      ],
      "margin": -91.1,
-     "rep_base": 3.8,
+     "rep_base": 3.7,
      "rep_bring_home": 0.4,
      "prime_persuasion": 0.3,
-     "stubborn_middle": 0.3,
+     "stubborn_middle": 0.4,
      "dem_peel": 0.0,
      "dems_going_home": 0.8,
      "dem_base": 94.4
@@ -36006,7 +36006,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 0.8
+       "value": 0.9
       },
       {
        "key": "prime_persuasion",
@@ -36036,7 +36036,7 @@
      ],
      "margin": -80.8,
      "rep_base": 7.8,
-     "rep_bring_home": 0.8,
+     "rep_bring_home": 0.9,
      "prime_persuasion": 1.2,
      "stubborn_middle": 0.6,
      "dem_peel": 0.1,
@@ -36083,7 +36083,7 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 94.1
+       "value": 94.0
       }
      ],
      "margin": -89.9,
@@ -36093,7 +36093,7 @@
      "stubborn_middle": 0.6,
      "dem_peel": 0.1,
      "dems_going_home": 0.3,
-     "dem_base": 94.1
+     "dem_base": 94.0
     }
    }
   }
@@ -36306,7 +36306,7 @@
     },
     "candidates": {
      "rep": "Catherine Wallen",
-     "dem": "No candidate"
+     "dem": "Todd Crawley"
     }
    }
   ],
@@ -36367,7 +36367,7 @@
   },
   "candidates_2026": {
    "rep": "Catherine Wallen",
-   "dem": "No candidate"
+   "dem": "Todd Crawley"
   },
   "models": {
    "model_rslc_all": {
@@ -36379,7 +36379,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 59.8
+       "value": 59.9
       },
       {
        "key": "rep_bring_home",
@@ -36413,7 +36413,7 @@
       }
      ],
      "margin": 34.8,
-     "rep_base": 59.8,
+     "rep_base": 59.9,
      "rep_bring_home": 4.8,
      "prime_persuasion": 1.8,
      "stubborn_middle": 3.6,
@@ -36543,8 +36543,8 @@
    "gov_2022": 68.7,
    "ussen_2022": 61.3,
    "pres_2024": 55.6,
-   "model_rslc_all": -56.9,
-   "model_rslc_hm": -66.9
+   "model_rslc_all": -57.0,
+   "model_rslc_hm": -67.0
   },
   "pres_2024_margin": 55.6,
   "gov_2022_margin": 68.7,
@@ -36583,7 +36583,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 4.9
+       "value": 4.8
       },
       {
        "key": "dem_peel",
@@ -36598,17 +36598,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 74.6
+       "value": 74.7
       }
      ],
-     "margin": -56.9,
+     "margin": -57.0,
      "rep_base": 15.3,
      "rep_bring_home": 2.7,
      "prime_persuasion": 0.8,
-     "stubborn_middle": 4.9,
+     "stubborn_middle": 4.8,
      "dem_peel": 1.5,
      "dems_going_home": 0.2,
-     "dem_base": 74.6
+     "dem_base": 74.7
     }
    },
    "model_rslc_hm": {
@@ -36650,17 +36650,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 81.1
+       "value": 81.2
       }
      ],
-     "margin": -66.9,
+     "margin": -67.0,
      "rep_base": 12.6,
      "rep_bring_home": 1.8,
      "prime_persuasion": 0.5,
      "stubborn_middle": 2.7,
      "dem_peel": 1.1,
      "dems_going_home": 0.2,
-     "dem_base": 81.1
+     "dem_base": 81.2
     }
    }
   }
@@ -36732,7 +36732,7 @@
    "gov_2022": 90.1,
    "ussen_2022": 86.6,
    "pres_2024": 83.9,
-   "model_rslc_all": -81.1,
+   "model_rslc_all": -81.0,
    "model_rslc_hm": -89.1
   },
   "pres_2024_margin": 83.9,
@@ -36787,17 +36787,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 87.9
+       "value": 87.8
       }
      ],
-     "margin": -81.1,
+     "margin": -81.0,
      "rep_base": 6.3,
      "rep_bring_home": 1.6,
      "prime_persuasion": 0.4,
      "stubborn_middle": 1.7,
      "dem_peel": 1.0,
      "dems_going_home": 1.2,
-     "dem_base": 87.9
+     "dem_base": 87.8
     }
    },
    "model_rslc_hm": {
@@ -36809,7 +36809,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 3.5
+       "value": 3.6
       },
       {
        "key": "rep_bring_home",
@@ -36843,7 +36843,7 @@
       }
      ],
      "margin": -89.1,
-     "rep_base": 3.5,
+     "rep_base": 3.6,
      "rep_bring_home": 1.0,
      "prime_persuasion": 0.1,
      "stubborn_middle": 1.0,
@@ -36921,8 +36921,8 @@
    "gov_2022": -15.7,
    "ussen_2022": -28.5,
    "pres_2024": -33.5,
-   "model_rslc_all": 27.1,
-   "model_rslc_hm": 31.5
+   "model_rslc_all": 27.2,
+   "model_rslc_hm": 31.6
   },
   "pres_2024_margin": -33.5,
   "gov_2022_margin": -15.7,
@@ -36976,17 +36976,17 @@
       {
        "key": "dem_base",
        "label": "Dem Base",
-       "value": 33.8
+       "value": 33.7
       }
      ],
-     "margin": 27.1,
+     "margin": 27.2,
      "rep_base": 58.5,
      "rep_bring_home": 3.2,
      "prime_persuasion": 1.4,
      "stubborn_middle": 2.1,
      "dem_peel": 0.2,
      "dems_going_home": 0.8,
-     "dem_base": 33.8
+     "dem_base": 33.7
     }
    },
    "model_rslc_hm": {
@@ -36998,7 +36998,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 61.6
+       "value": 61.7
       },
       {
        "key": "rep_bring_home",
@@ -37031,8 +37031,8 @@
        "value": 31.9
       }
      ],
-     "margin": 31.5,
-     "rep_base": 61.6,
+     "margin": 31.6,
+     "rep_base": 61.7,
      "rep_bring_home": 2.7,
      "prime_persuasion": 1.0,
      "stubborn_middle": 1.7,
@@ -37140,7 +37140,7 @@
       {
        "key": "rep_bring_home",
        "label": "Rep Bring Home",
-       "value": 4.7
+       "value": 4.6
       },
       {
        "key": "prime_persuasion",
@@ -37170,7 +37170,7 @@
      ],
      "margin": -56.6,
      "rep_base": 15.2,
-     "rep_bring_home": 4.7,
+     "rep_bring_home": 4.6,
      "prime_persuasion": 2.1,
      "stubborn_middle": 1.5,
      "dem_peel": 0.1,
@@ -37339,7 +37339,7 @@
       {
        "key": "stubborn_middle",
        "label": "Stubborn Middle",
-       "value": 0.4
+       "value": 0.5
       },
       {
        "key": "dem_peel",
@@ -37361,7 +37361,7 @@
      "rep_base": 8.8,
      "rep_bring_home": 1.4,
      "prime_persuasion": 0.7,
-     "stubborn_middle": 0.4,
+     "stubborn_middle": 0.5,
      "dem_peel": 0.0,
      "dems_going_home": 0.7,
      "dem_base": 87.8
@@ -37677,7 +37677,7 @@
    "gov_2022": 94.2,
    "ussen_2022": 92.2,
    "pres_2024": 89.5,
-   "model_rslc_all": -87.9,
+   "model_rslc_all": -87.8,
    "model_rslc_hm": -93.5
   },
   "pres_2024_margin": 89.5,
@@ -37702,7 +37702,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 4.3
+       "value": 4.4
       },
       {
        "key": "rep_bring_home",
@@ -37735,8 +37735,8 @@
        "value": 92.6
       }
      ],
-     "margin": -87.9,
-     "rep_base": 4.3,
+     "margin": -87.8,
+     "rep_base": 4.4,
      "rep_bring_home": 0.8,
      "prime_persuasion": 0.2,
      "stubborn_middle": 1.0,
@@ -37866,7 +37866,7 @@
    "gov_2022": 94.5,
    "ussen_2022": 93.0,
    "pres_2024": 88.9,
-   "model_rslc_all": -83.1,
+   "model_rslc_all": -83.0,
    "model_rslc_hm": -92.7
   },
   "pres_2024_margin": 88.9,
@@ -37916,7 +37916,7 @@
       {
        "key": "dems_going_home",
        "label": "Dems Going Home",
-       "value": 1.0
+       "value": 1.1
       },
       {
        "key": "dem_base",
@@ -37924,13 +37924,13 @@
        "value": 89.8
       }
      ],
-     "margin": -83.1,
+     "margin": -83.0,
      "rep_base": 6.8,
      "rep_bring_home": 1.0,
      "prime_persuasion": 0.8,
      "stubborn_middle": 0.6,
      "dem_peel": 0.1,
-     "dems_going_home": 1.0,
+     "dems_going_home": 1.1,
      "dem_base": 89.8
     }
    },
@@ -38055,7 +38055,7 @@
    "gov_2022": 52.2,
    "ussen_2022": 44.0,
    "pres_2024": 29.2,
-   "model_rslc_all": -22.8,
+   "model_rslc_all": -22.9,
    "model_rslc_hm": -45.0
   },
   "pres_2024_margin": 29.2,
@@ -38080,7 +38080,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 31.1
+       "value": 31.0
       },
       {
        "key": "rep_bring_home",
@@ -38113,8 +38113,8 @@
        "value": 57.9
       }
      ],
-     "margin": -22.8,
-     "rep_base": 31.1,
+     "margin": -22.9,
+     "rep_base": 31.0,
      "rep_bring_home": 4.2,
      "prime_persuasion": 4.1,
      "stubborn_middle": 2.4,
@@ -38245,7 +38245,7 @@
    "ussen_2022": 66.2,
    "pres_2024": 54.6,
    "model_rslc_all": -48.3,
-   "model_rslc_hm": -65.5
+   "model_rslc_hm": -65.6
   },
   "pres_2024_margin": 54.6,
   "gov_2022_margin": 71.4,
@@ -38321,7 +38321,7 @@
       {
        "key": "rep_base",
        "label": "Rep Base",
-       "value": 14.6
+       "value": 14.5
       },
       {
        "key": "rep_bring_home",
@@ -38354,8 +38354,8 @@
        "value": 81.6
       }
      ],
-     "margin": -65.5,
-     "rep_base": 14.6,
+     "margin": -65.6,
+     "rep_base": 14.5,
      "rep_bring_home": 1.8,
      "prime_persuasion": 0.9,
      "stubborn_middle": 0.7,

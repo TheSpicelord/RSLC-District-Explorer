@@ -110,6 +110,37 @@ R-vs-D contested. Incumbent nominees are written with the incumbent column's exa
 **exact** name match between the two columns — 102 districts carry it. SD-35's incumbent
 was updated from "Vacant" to Chedrick Greene (D), who won the May 2026 special.
 
+### Per-district notes (`DISTRICT_NOTES`)
+
+`DISTRICT_NOTES` in `modules/config.js` maps a join key (`"42|002"`) to a one-sentence
+footnote, rendered by `districtNoteHtml()` as a circled **i** beneath the 2026 candidate
+rows. It exists for the case where a candidate list is *accurate but misleading on its
+face*. The founding example is **PA HD-2**: Robert Merski, the Democratic incumbent, also
+won the **Republican** nomination on write-in votes. Listing him in both columns read as a
+two-party field and suppressed his incumbent asterisk on the R side (the asterisk test is
+`incumbent.party === party`), so the GOP column is deliberately left empty and the note
+carries the explanation. Keep notes to one sentence.
+
+### Candidate name spelling is load-bearing
+
+The app's incumbent asterisk comes from a **case-insensitive exact string match** between
+the workbook's Incumbent column (`BS`) and its candidate columns (`BT`/`BU`) - see
+`memberIsIncumbentNominee()`. A spelling variant silently demotes a sitting member to
+"challenger". When importing a certified candidate list, write the **workbook's** incumbent
+spelling rather than the ballot name wherever they denote the same person. The 2026-09-15
+MN/WI/PA import found four live cases already in the file (PA HD-15 Josh/Joshua Kail, HD-53
+Steve/Steven Malagari, HD-55 Jill N./Jill Cooper, HD-86 Perry A./Perry Stambaugh) and would
+have introduced three more from ballot names (PA HD-127 Manuel vs Manny Guzman Jr., HD-160
+Craig vs Wendell Craig Williams, MN SD-39 Mary Kunesh vs Mary Kunesh-Podein). Audit after
+any import by re-deriving the match rather than spot-checking.
+
+**Two Ballotpedia parsing traps**, both of which produce plausible-looking wrong nominees:
+*write-ins* are marked `(Write-in)` inside the candidate span and must be dropped (WI SD-27
+and PA HD-11 each had one that would otherwise have become the nominee), and *"Did not make
+the ballot"* names sit in a sibling `<div>`, not a `<span class="candidate">` - but that
+phrase also appears in the **primary** table lower down the page, so scope any check to the
+general-election table or legitimate nominees get falsely flagged.
+
 ## Model Margins
 
 Modeling numbers are **not** in the election workbook — they are built straight into the
