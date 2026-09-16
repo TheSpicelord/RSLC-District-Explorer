@@ -58,7 +58,7 @@
    "latest_leg": -100.0,
    "gov_2022": -57.7,
    "pres_2024": -54.1,
-   "model_rslc_all": 67.2,
+   "model_rslc_all": 67.1,
    "model_rslc_hm": 74.3
   },
   "pres_2024_margin": -54.1,
@@ -96,7 +96,7 @@
        "value": 12.3
       }
      ],
-     "margin": 67.2,
+     "margin": 67.1,
      "gop_framework": 79.5,
      "unaligned": 8.2,
      "dem_framework": 12.3
@@ -191,8 +191,8 @@
    "latest_leg": -23.8,
    "gov_2022": -19.8,
    "pres_2024": -20.3,
-   "model_rslc_all": 26.0,
-   "model_rslc_hm": 33.4
+   "model_rslc_all": 25.4,
+   "model_rslc_hm": 32.9
   },
   "pres_2024_margin": -20.3,
   "gov_2022_margin": -19.8,
@@ -216,23 +216,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 56.1
+       "value": 55.7
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 13.8
+       "value": 14.0
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 30.1
+       "value": 30.3
       }
      ],
-     "margin": 26.0,
-     "gop_framework": 56.1,
-     "unaligned": 13.8,
-     "dem_framework": 30.1
+     "margin": 25.4,
+     "gop_framework": 55.7,
+     "unaligned": 14.0,
+     "dem_framework": 30.3
     }
    },
    "model_rslc_hm": {
@@ -244,23 +244,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 61.3
+       "value": 61.0
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 10.9
+       "value": 11.0
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 27.8
+       "value": 28.1
       }
      ],
-     "margin": 33.4,
-     "gop_framework": 61.3,
-     "unaligned": 10.9,
-     "dem_framework": 27.8
+     "margin": 32.9,
+     "gop_framework": 61.0,
+     "unaligned": 11.0,
+     "dem_framework": 28.1
     }
    }
   }
@@ -349,7 +349,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 74.7
+       "value": 74.6
       },
       {
        "key": "unaligned",
@@ -363,7 +363,7 @@
       }
      ],
      "margin": 57.4,
-     "gop_framework": 74.7,
+     "gop_framework": 74.6,
      "unaligned": 8.1,
      "dem_framework": 17.3
     }
@@ -457,8 +457,8 @@
    "latest_leg": -39.9,
    "gov_2022": -36.2,
    "pres_2024": -34.0,
-   "model_rslc_all": 26.1,
-   "model_rslc_hm": 38.2
+   "model_rslc_all": 25.9,
+   "model_rslc_hm": 37.9
   },
   "pres_2024_margin": -34.0,
   "gov_2022_margin": -36.2,
@@ -482,7 +482,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 55.9
+       "value": 55.8
       },
       {
        "key": "unaligned",
@@ -492,13 +492,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 29.8
+       "value": 29.9
       }
      ],
-     "margin": 26.1,
-     "gop_framework": 55.9,
+     "margin": 25.9,
+     "gop_framework": 55.8,
      "unaligned": 14.3,
-     "dem_framework": 29.8
+     "dem_framework": 29.9
     }
    },
    "model_rslc_hm": {
@@ -510,7 +510,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 63.4
+       "value": 63.3
       },
       {
        "key": "unaligned",
@@ -520,13 +520,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 25.3
+       "value": 25.4
       }
      ],
-     "margin": 38.2,
-     "gop_framework": 63.4,
+     "margin": 37.9,
+     "gop_framework": 63.3,
      "unaligned": 11.3,
-     "dem_framework": 25.3
+     "dem_framework": 25.4
     }
    }
   }
@@ -590,7 +590,7 @@
    "latest_leg": -43.1,
    "gov_2022": -23.1,
    "pres_2024": -23.4,
-   "model_rslc_all": 19.4,
+   "model_rslc_all": 19.3,
    "model_rslc_hm": 29.1
   },
   "pres_2024_margin": -23.4,
@@ -628,7 +628,7 @@
        "value": 32.6
       }
      ],
-     "margin": 19.4,
+     "margin": 19.3,
      "gop_framework": 51.9,
      "unaligned": 15.5,
      "dem_framework": 32.6
@@ -643,7 +643,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 58.5
+       "value": 58.4
       },
       {
        "key": "unaligned",
@@ -653,13 +653,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 29.3
+       "value": 29.4
       }
      ],
      "margin": 29.1,
-     "gop_framework": 58.5,
+     "gop_framework": 58.4,
      "unaligned": 12.2,
-     "dem_framework": 29.3
+     "dem_framework": 29.4
     }
    }
   }
@@ -723,8 +723,8 @@
    "latest_leg": 26.0,
    "gov_2022": 34.7,
    "pres_2024": 18.5,
-   "model_rslc_all": -34.6,
-   "model_rslc_hm": -31.6
+   "model_rslc_all": -34.5,
+   "model_rslc_hm": -31.7
   },
   "pres_2024_margin": 18.5,
   "gov_2022_margin": 34.7,
@@ -748,23 +748,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 22.9
+       "value": 22.8
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 19.7
+       "value": 19.9
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 57.5
+       "value": 57.3
       }
      ],
-     "margin": -34.6,
-     "gop_framework": 22.9,
-     "unaligned": 19.7,
-     "dem_framework": 57.5
+     "margin": -34.5,
+     "gop_framework": 22.8,
+     "unaligned": 19.9,
+     "dem_framework": 57.3
     }
    },
    "model_rslc_hm": {
@@ -789,7 +789,7 @@
        "value": 58.4
       }
      ],
-     "margin": -31.6,
+     "margin": -31.7,
      "gop_framework": 26.8,
      "unaligned": 14.8,
      "dem_framework": 58.4
@@ -856,8 +856,8 @@
    "latest_leg": -26.8,
    "gov_2022": -21.4,
    "pres_2024": -21.0,
-   "model_rslc_all": 9.5,
-   "model_rslc_hm": 20.0
+   "model_rslc_all": 9.2,
+   "model_rslc_hm": 19.7
   },
   "pres_2024_margin": -21.0,
   "gov_2022_margin": -21.4,
@@ -881,23 +881,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 46.3
+       "value": 46.0
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 17.0
+       "value": 17.1
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 36.7
+       "value": 36.8
       }
      ],
-     "margin": 9.5,
-     "gop_framework": 46.3,
-     "unaligned": 17.0,
-     "dem_framework": 36.7
+     "margin": 9.2,
+     "gop_framework": 46.0,
+     "unaligned": 17.1,
+     "dem_framework": 36.8
     }
    },
    "model_rslc_hm": {
@@ -909,7 +909,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 52.7
+       "value": 52.5
       },
       {
        "key": "unaligned",
@@ -919,13 +919,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 32.7
+       "value": 32.9
       }
      ],
-     "margin": 20.0,
-     "gop_framework": 52.7,
+     "margin": 19.7,
+     "gop_framework": 52.5,
      "unaligned": 14.6,
-     "dem_framework": 32.7
+     "dem_framework": 32.9
     }
    }
   }
@@ -989,8 +989,8 @@
    "latest_leg": -18.7,
    "gov_2022": -18.3,
    "pres_2024": -18.5,
-   "model_rslc_all": 25.1,
-   "model_rslc_hm": 29.9
+   "model_rslc_all": 25.6,
+   "model_rslc_hm": 30.4
   },
   "pres_2024_margin": -18.5,
   "gov_2022_margin": -18.3,
@@ -1014,23 +1014,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 53.8
+       "value": 54.2
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 17.5
+       "value": 17.3
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 28.7
+       "value": 28.5
       }
      ],
-     "margin": 25.1,
-     "gop_framework": 53.8,
-     "unaligned": 17.5,
-     "dem_framework": 28.7
+     "margin": 25.6,
+     "gop_framework": 54.2,
+     "unaligned": 17.3,
+     "dem_framework": 28.5
     }
    },
    "model_rslc_hm": {
@@ -1042,23 +1042,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 57.4
+       "value": 57.7
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 15.1
+       "value": 15.0
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 27.5
+       "value": 27.3
       }
      ],
-     "margin": 29.9,
-     "gop_framework": 57.4,
-     "unaligned": 15.1,
-     "dem_framework": 27.5
+     "margin": 30.4,
+     "gop_framework": 57.7,
+     "unaligned": 15.0,
+     "dem_framework": 27.3
     }
    }
   }
@@ -1122,8 +1122,8 @@
    "latest_leg": -20.1,
    "gov_2022": -16.4,
    "pres_2024": -17.4,
-   "model_rslc_all": 8.9,
-   "model_rslc_hm": 19.4
+   "model_rslc_all": 14.7,
+   "model_rslc_hm": 25.1
   },
   "pres_2024_margin": -17.4,
   "gov_2022_margin": -16.4,
@@ -1147,23 +1147,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 45.9
+       "value": 48.8
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 17.0
+       "value": 17.1
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 37.0
+       "value": 34.1
       }
      ],
-     "margin": 8.9,
-     "gop_framework": 45.9,
-     "unaligned": 17.0,
-     "dem_framework": 37.0
+     "margin": 14.7,
+     "gop_framework": 48.8,
+     "unaligned": 17.1,
+     "dem_framework": 34.1
     }
    },
    "model_rslc_hm": {
@@ -1175,7 +1175,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 52.7
+       "value": 55.5
       },
       {
        "key": "unaligned",
@@ -1185,13 +1185,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 33.2
+       "value": 30.4
       }
      ],
-     "margin": 19.4,
-     "gop_framework": 52.7,
+     "margin": 25.1,
+     "gop_framework": 55.5,
      "unaligned": 14.1,
-     "dem_framework": 33.2
+     "dem_framework": 30.4
     }
    }
   }
@@ -1255,8 +1255,8 @@
    "latest_leg": -23.4,
    "gov_2022": -22.2,
    "pres_2024": -21.8,
-   "model_rslc_all": 25.9,
-   "model_rslc_hm": 36.6
+   "model_rslc_all": 21.6,
+   "model_rslc_hm": 32.6
   },
   "pres_2024_margin": -21.8,
   "gov_2022_margin": -22.2,
@@ -1280,23 +1280,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 57.3
+       "value": 54.8
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 11.3
+       "value": 12.0
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 31.4
+       "value": 33.2
       }
      ],
-     "margin": 25.9,
-     "gop_framework": 57.3,
-     "unaligned": 11.3,
-     "dem_framework": 31.4
+     "margin": 21.6,
+     "gop_framework": 54.8,
+     "unaligned": 12.0,
+     "dem_framework": 33.2
     }
    },
    "model_rslc_hm": {
@@ -1308,23 +1308,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 64.2
+       "value": 61.8
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 8.2
+       "value": 8.9
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 27.6
+       "value": 29.3
       }
      ],
-     "margin": 36.6,
-     "gop_framework": 64.2,
-     "unaligned": 8.2,
-     "dem_framework": 27.6
+     "margin": 32.6,
+     "gop_framework": 61.8,
+     "unaligned": 8.9,
+     "dem_framework": 29.3
     }
    }
   }
@@ -1388,8 +1388,8 @@
    "latest_leg": -100.0,
    "gov_2022": -18.9,
    "pres_2024": -21.1,
-   "model_rslc_all": 9.5,
-   "model_rslc_hm": 18.6
+   "model_rslc_all": 13.1,
+   "model_rslc_hm": 22.2
   },
   "pres_2024_margin": -21.1,
   "gov_2022_margin": -18.9,
@@ -1413,23 +1413,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 45.9
+       "value": 48.0
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 17.6
+       "value": 17.1
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 36.4
+       "value": 34.9
       }
      ],
-     "margin": 9.5,
-     "gop_framework": 45.9,
-     "unaligned": 17.6,
-     "dem_framework": 36.4
+     "margin": 13.1,
+     "gop_framework": 48.0,
+     "unaligned": 17.1,
+     "dem_framework": 34.9
     }
    },
    "model_rslc_hm": {
@@ -1441,7 +1441,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 52.3
+       "value": 54.0
       },
       {
        "key": "unaligned",
@@ -1451,13 +1451,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 33.7
+       "value": 31.8
       }
      ],
-     "margin": 18.6,
-     "gop_framework": 52.3,
+     "margin": 22.2,
+     "gop_framework": 54.0,
      "unaligned": 14.1,
-     "dem_framework": 33.7
+     "dem_framework": 31.8
     }
    }
   }
@@ -1546,7 +1546,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 51.8
+       "value": 51.9
       },
       {
        "key": "unaligned",
@@ -1560,7 +1560,7 @@
       }
      ],
      "margin": 19.2,
-     "gop_framework": 51.8,
+     "gop_framework": 51.9,
      "unaligned": 15.5,
      "dem_framework": 32.6
     }
@@ -1574,7 +1574,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 56.0
+       "value": 56.1
       },
       {
        "key": "unaligned",
@@ -1584,13 +1584,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 30.3
+       "value": 30.2
       }
      ],
      "margin": 25.8,
-     "gop_framework": 56.0,
+     "gop_framework": 56.1,
      "unaligned": 13.7,
-     "dem_framework": 30.3
+     "dem_framework": 30.2
     }
    }
   }
@@ -1654,8 +1654,8 @@
    "latest_leg": 100.0,
    "gov_2022": 56.8,
    "pres_2024": 47.6,
-   "model_rslc_all": -61.4,
-   "model_rslc_hm": -57.9
+   "model_rslc_all": -61.3,
+   "model_rslc_hm": -58.2
   },
   "pres_2024_margin": 47.6,
   "gov_2022_margin": 56.8,
@@ -1679,23 +1679,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 13.1
+       "value": 13.0
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 12.5
+       "value": 12.7
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 74.4
+       "value": 74.3
       }
      ],
-     "margin": -61.4,
-     "gop_framework": 13.1,
-     "unaligned": 12.5,
-     "dem_framework": 74.4
+     "margin": -61.3,
+     "gop_framework": 13.0,
+     "unaligned": 12.7,
+     "dem_framework": 74.3
     }
    },
    "model_rslc_hm": {
@@ -1707,7 +1707,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 16.1
+       "value": 16.0
       },
       {
        "key": "unaligned",
@@ -1717,13 +1717,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 74.0
+       "value": 74.1
       }
      ],
-     "margin": -57.9,
-     "gop_framework": 16.1,
+     "margin": -58.2,
+     "gop_framework": 16.0,
      "unaligned": 9.9,
-     "dem_framework": 74.0
+     "dem_framework": 74.1
     }
    }
   }
@@ -1787,8 +1787,8 @@
    "latest_leg": 100.0,
    "gov_2022": 53.8,
    "pres_2024": 46.2,
-   "model_rslc_all": -58.6,
-   "model_rslc_hm": -57.2
+   "model_rslc_all": -58.7,
+   "model_rslc_hm": -57.3
   },
   "pres_2024_margin": 46.2,
   "gov_2022_margin": 53.8,
@@ -1817,18 +1817,18 @@
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 13.0
+       "value": 12.9
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 72.8
+       "value": 72.9
       }
      ],
-     "margin": -58.6,
+     "margin": -58.7,
      "gop_framework": 14.2,
-     "unaligned": 13.0,
-     "dem_framework": 72.8
+     "unaligned": 12.9,
+     "dem_framework": 72.9
     }
    },
    "model_rslc_hm": {
@@ -1853,7 +1853,7 @@
        "value": 73.0
       }
      ],
-     "margin": -57.2,
+     "margin": -57.3,
      "gop_framework": 15.8,
      "unaligned": 11.2,
      "dem_framework": 73.0
@@ -1920,8 +1920,8 @@
    "latest_leg": 23.8,
    "gov_2022": 30.9,
    "pres_2024": 25.4,
-   "model_rslc_all": -37.4,
-   "model_rslc_hm": -30.3
+   "model_rslc_all": -37.6,
+   "model_rslc_hm": -30.7
   },
   "pres_2024_margin": 25.4,
   "gov_2022_margin": 30.9,
@@ -1945,12 +1945,12 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 23.9
+       "value": 23.7
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 14.8
+       "value": 15.0
       },
       {
        "key": "dem_framework",
@@ -1958,9 +1958,9 @@
        "value": 61.3
       }
      ],
-     "margin": -37.4,
-     "gop_framework": 23.9,
-     "unaligned": 14.8,
+     "margin": -37.6,
+     "gop_framework": 23.7,
+     "unaligned": 15.0,
      "dem_framework": 61.3
     }
    },
@@ -1973,7 +1973,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 28.3
+       "value": 28.1
       },
       {
        "key": "unaligned",
@@ -1983,13 +1983,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 58.6
+       "value": 58.8
       }
      ],
-     "margin": -30.3,
-     "gop_framework": 28.3,
+     "margin": -30.7,
+     "gop_framework": 28.1,
      "unaligned": 13.1,
-     "dem_framework": 58.6
+     "dem_framework": 58.8
     }
    }
   }
@@ -2054,7 +2054,7 @@
    "gov_2022": 25.1,
    "pres_2024": 18.4,
    "model_rslc_all": -29.7,
-   "model_rslc_hm": -22.7
+   "model_rslc_hm": -22.8
   },
   "pres_2024_margin": 18.4,
   "gov_2022_margin": 25.1,
@@ -2083,7 +2083,7 @@
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 16.9
+       "value": 17.0
       },
       {
        "key": "dem_framework",
@@ -2093,7 +2093,7 @@
      ],
      "margin": -29.7,
      "gop_framework": 26.7,
-     "unaligned": 16.9,
+     "unaligned": 17.0,
      "dem_framework": 56.4
     }
    },
@@ -2116,13 +2116,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 54.6
+       "value": 54.7
       }
      ],
-     "margin": -22.7,
+     "margin": -22.8,
      "gop_framework": 31.9,
      "unaligned": 13.4,
-     "dem_framework": 54.6
+     "dem_framework": 54.7
     }
    }
   }
@@ -2186,8 +2186,8 @@
    "latest_leg": -28.3,
    "gov_2022": -25.0,
    "pres_2024": -22.8,
-   "model_rslc_all": 12.9,
-   "model_rslc_hm": 20.4
+   "model_rslc_all": 12.7,
+   "model_rslc_hm": 20.3
   },
   "pres_2024_margin": -22.8,
   "gov_2022_margin": -25.0,
@@ -2211,12 +2211,12 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 48.7
+       "value": 48.6
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 15.5
+       "value": 15.6
       },
       {
        "key": "dem_framework",
@@ -2224,9 +2224,9 @@
        "value": 35.8
       }
      ],
-     "margin": 12.9,
-     "gop_framework": 48.7,
-     "unaligned": 15.5,
+     "margin": 12.7,
+     "gop_framework": 48.6,
+     "unaligned": 15.6,
      "dem_framework": 35.8
     }
    },
@@ -2239,7 +2239,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 53.8
+       "value": 53.7
       },
       {
        "key": "unaligned",
@@ -2249,13 +2249,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 33.3
+       "value": 33.4
       }
      ],
-     "margin": 20.4,
-     "gop_framework": 53.8,
+     "margin": 20.3,
+     "gop_framework": 53.7,
      "unaligned": 12.9,
-     "dem_framework": 33.3
+     "dem_framework": 33.4
     }
    }
   }
@@ -2319,8 +2319,8 @@
    "latest_leg": -32.3,
    "gov_2022": -28.7,
    "pres_2024": -26.6,
-   "model_rslc_all": 17.8,
-   "model_rslc_hm": 26.7
+   "model_rslc_all": 17.7,
+   "model_rslc_hm": 26.6
   },
   "pres_2024_margin": -26.6,
   "gov_2022_margin": -28.7,
@@ -2344,23 +2344,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 51.4
+       "value": 51.3
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 15.1
+       "value": 15.2
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 33.5
+       "value": 33.6
       }
      ],
-     "margin": 17.8,
-     "gop_framework": 51.4,
-     "unaligned": 15.1,
-     "dem_framework": 33.5
+     "margin": 17.7,
+     "gop_framework": 51.3,
+     "unaligned": 15.2,
+     "dem_framework": 33.6
     }
    },
    "model_rslc_hm": {
@@ -2382,13 +2382,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 30.7
+       "value": 30.8
       }
      ],
-     "margin": 26.7,
+     "margin": 26.6,
      "gop_framework": 57.4,
      "unaligned": 11.8,
-     "dem_framework": 30.7
+     "dem_framework": 30.8
     }
    }
   }
@@ -2411,7 +2411,7 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "Primary runoff results pending",
+     "rep": "Marcus Cardenas",
      "dem": "Roland Gutierrez"
     }
    }
@@ -2452,8 +2452,8 @@
    "latest_leg": 10.8,
    "gov_2022": 11.7,
    "pres_2024": 1.7,
-   "model_rslc_all": -23.1,
-   "model_rslc_hm": -16.1
+   "model_rslc_all": -23.2,
+   "model_rslc_hm": -16.2
   },
   "pres_2024_margin": 1.7,
   "gov_2022_margin": 11.7,
@@ -2464,7 +2464,7 @@
    "ussen_2022": 0
   },
   "candidates_2026": {
-   "rep": "Primary runoff results pending",
+   "rep": "Marcus Cardenas",
    "dem": "Roland Gutierrez"
   },
   "models": {
@@ -2487,13 +2487,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 52.6
+       "value": 52.7
       }
      ],
-     "margin": -23.1,
+     "margin": -23.2,
      "gop_framework": 29.5,
      "unaligned": 17.8,
-     "dem_framework": 52.6
+     "dem_framework": 52.7
     }
    },
    "model_rslc_hm": {
@@ -2518,7 +2518,7 @@
        "value": 51.1
       }
      ],
-     "margin": -16.1,
+     "margin": -16.2,
      "gop_framework": 35.0,
      "unaligned": 13.9,
      "dem_framework": 51.1
@@ -2586,7 +2586,7 @@
    "gov_2022": 9.0,
    "pres_2024": -3.9,
    "model_rslc_all": -30.0,
-   "model_rslc_hm": -26.0
+   "model_rslc_hm": -26.1
   },
   "pres_2024_margin": -3.9,
   "gov_2022_margin": 9.0,
@@ -2648,13 +2648,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 56.0
+       "value": 56.1
       }
      ],
-     "margin": -26.0,
+     "margin": -26.1,
      "gop_framework": 30.0,
      "unaligned": 14.0,
-     "dem_framework": 56.0
+     "dem_framework": 56.1
     }
    }
   }
@@ -2718,8 +2718,8 @@
    "latest_leg": 25.6,
    "gov_2022": 16.8,
    "pres_2024": 2.9,
-   "model_rslc_all": -42.2,
-   "model_rslc_hm": -41.6
+   "model_rslc_all": -42.1,
+   "model_rslc_hm": -41.5
   },
   "pres_2024_margin": 2.9,
   "gov_2022_margin": 16.8,
@@ -2748,18 +2748,18 @@
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 16.5
+       "value": 16.4
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 62.9
+       "value": 62.8
       }
      ],
-     "margin": -42.2,
+     "margin": -42.1,
      "gop_framework": 20.7,
-     "unaligned": 16.5,
-     "dem_framework": 62.9
+     "unaligned": 16.4,
+     "dem_framework": 62.8
     }
    },
    "model_rslc_hm": {
@@ -2771,7 +2771,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 23.2
+       "value": 23.3
       },
       {
        "key": "unaligned",
@@ -2784,8 +2784,8 @@
        "value": 64.8
       }
      ],
-     "margin": -41.6,
-     "gop_framework": 23.2,
+     "margin": -41.5,
+     "gop_framework": 23.3,
      "unaligned": 12.0,
      "dem_framework": 64.8
     }
@@ -2851,8 +2851,8 @@
    "latest_leg": -48.5,
    "gov_2022": -29.6,
    "pres_2024": -28.0,
-   "model_rslc_all": 35.4,
-   "model_rslc_hm": 45.6
+   "model_rslc_all": 32.7,
+   "model_rslc_hm": 42.9
   },
   "pres_2024_margin": -28.0,
   "gov_2022_margin": -29.6,
@@ -2876,23 +2876,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 61.0
+       "value": 59.5
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 13.5
+       "value": 13.7
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 25.6
+       "value": 26.8
       }
      ],
-     "margin": 35.4,
-     "gop_framework": 61.0,
-     "unaligned": 13.5,
-     "dem_framework": 25.6
+     "margin": 32.7,
+     "gop_framework": 59.5,
+     "unaligned": 13.7,
+     "dem_framework": 26.8
     }
    },
    "model_rslc_hm": {
@@ -2904,23 +2904,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 68.1
+       "value": 66.6
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 9.4
+       "value": 9.7
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 22.5
+       "value": 23.7
       }
      ],
-     "margin": 45.6,
-     "gop_framework": 68.1,
-     "unaligned": 9.4,
-     "dem_framework": 22.5
+     "margin": 42.9,
+     "gop_framework": 66.6,
+     "unaligned": 9.7,
+     "dem_framework": 23.7
     }
    }
   }
@@ -2984,8 +2984,8 @@
    "latest_leg": 100.0,
    "gov_2022": 54.3,
    "pres_2024": 46.2,
-   "model_rslc_all": -54.9,
-   "model_rslc_hm": -52.1
+   "model_rslc_all": -53.5,
+   "model_rslc_hm": -50.4
   },
   "pres_2024_margin": 46.2,
   "gov_2022_margin": 54.3,
@@ -3009,23 +3009,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 15.8
+       "value": 16.4
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 13.5
+       "value": 13.8
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 70.7
+       "value": 69.8
       }
      ],
-     "margin": -54.9,
-     "gop_framework": 15.8,
-     "unaligned": 13.5,
-     "dem_framework": 70.7
+     "margin": -53.5,
+     "gop_framework": 16.4,
+     "unaligned": 13.8,
+     "dem_framework": 69.8
     }
    },
    "model_rslc_hm": {
@@ -3037,23 +3037,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 18.7
+       "value": 19.3
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 10.6
+       "value": 10.9
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 70.8
+       "value": 69.7
       }
      ],
-     "margin": -52.1,
-     "gop_framework": 18.7,
-     "unaligned": 10.6,
-     "dem_framework": 70.8
+     "margin": -50.4,
+     "gop_framework": 19.3,
+     "unaligned": 10.9,
+     "dem_framework": 69.7
     }
    }
   }
@@ -3117,8 +3117,8 @@
    "latest_leg": -28.6,
    "gov_2022": -26.3,
    "pres_2024": -24.9,
-   "model_rslc_all": 33.1,
-   "model_rslc_hm": 40.6
+   "model_rslc_all": 33.0,
+   "model_rslc_hm": 40.5
   },
   "pres_2024_margin": -24.9,
   "gov_2022_margin": -26.3,
@@ -3142,7 +3142,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 59.4
+       "value": 59.3
       },
       {
        "key": "unaligned",
@@ -3152,13 +3152,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 26.2
+       "value": 26.3
       }
      ],
-     "margin": 33.1,
-     "gop_framework": 59.4,
+     "margin": 33.0,
+     "gop_framework": 59.3,
      "unaligned": 14.4,
-     "dem_framework": 26.2
+     "dem_framework": 26.3
     }
    },
    "model_rslc_hm": {
@@ -3170,7 +3170,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 65.3
+       "value": 65.2
       },
       {
        "key": "unaligned",
@@ -3183,8 +3183,8 @@
        "value": 24.7
       }
      ],
-     "margin": 40.6,
-     "gop_framework": 65.3,
+     "margin": 40.5,
+     "gop_framework": 65.2,
      "unaligned": 10.0,
      "dem_framework": 24.7
     }
@@ -3250,8 +3250,8 @@
    "latest_leg": -27.1,
    "gov_2022": -21.5,
    "pres_2024": -21.8,
-   "model_rslc_all": 21.8,
-   "model_rslc_hm": 25.9
+   "model_rslc_all": 21.7,
+   "model_rslc_hm": 25.8
   },
   "pres_2024_margin": -21.8,
   "gov_2022_margin": -21.5,
@@ -3285,13 +3285,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 31.5
+       "value": 31.6
       }
      ],
-     "margin": 21.8,
+     "margin": 21.7,
      "gop_framework": 53.3,
      "unaligned": 15.2,
-     "dem_framework": 31.5
+     "dem_framework": 31.6
     }
    },
    "model_rslc_hm": {
@@ -3303,7 +3303,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 56.3
+       "value": 56.2
       },
       {
        "key": "unaligned",
@@ -3313,13 +3313,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 30.3
+       "value": 30.4
       }
      ],
-     "margin": 25.9,
-     "gop_framework": 56.3,
+     "margin": 25.8,
+     "gop_framework": 56.2,
      "unaligned": 13.4,
-     "dem_framework": 30.3
+     "dem_framework": 30.4
     }
    }
   }
@@ -3384,7 +3384,7 @@
    "gov_2022": 31.9,
    "pres_2024": 22.5,
    "model_rslc_all": -41.3,
-   "model_rslc_hm": -34.4
+   "model_rslc_hm": -34.5
   },
   "pres_2024_margin": 22.5,
   "gov_2022_margin": 31.9,
@@ -3446,13 +3446,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 60.9
+       "value": 61.0
       }
      ],
-     "margin": -34.4,
+     "margin": -34.5,
      "gop_framework": 26.5,
      "unaligned": 12.5,
-     "dem_framework": 60.9
+     "dem_framework": 61.0
     }
    }
   }
@@ -3517,7 +3517,7 @@
    "gov_2022": 0.7,
    "pres_2024": -11.8,
    "model_rslc_all": -19.0,
-   "model_rslc_hm": -13.1
+   "model_rslc_hm": -13.0
   },
   "pres_2024_margin": -11.8,
   "gov_2022_margin": 0.7,
@@ -3574,18 +3574,18 @@
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 13.0
+       "value": 12.9
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 50.1
+       "value": 50.0
       }
      ],
-     "margin": -13.1,
+     "margin": -13.0,
      "gop_framework": 37.0,
-     "unaligned": 13.0,
-     "dem_framework": 50.1
+     "unaligned": 12.9,
+     "dem_framework": 50.0
     }
    }
   }
@@ -3674,7 +3674,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 68.7
+       "value": 68.8
       },
       {
        "key": "unaligned",
@@ -3688,7 +3688,7 @@
       }
      ],
      "margin": 50.6,
-     "gop_framework": 68.7,
+     "gop_framework": 68.8,
      "unaligned": 13.1,
      "dem_framework": 18.2
     }
@@ -3915,8 +3915,8 @@
    "latest_leg": -30.1,
    "gov_2022": -27.3,
    "pres_2024": -27.3,
-   "model_rslc_all": 36.9,
-   "model_rslc_hm": 42.6
+   "model_rslc_all": 36.3,
+   "model_rslc_hm": 41.9
   },
   "pres_2024_margin": -27.3,
   "gov_2022_margin": -27.3,
@@ -3940,23 +3940,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 61.3
+       "value": 60.9
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 14.3
+       "value": 14.5
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 24.4
+       "value": 24.6
       }
      ],
-     "margin": 36.9,
-     "gop_framework": 61.3,
-     "unaligned": 14.3,
-     "dem_framework": 24.4
+     "margin": 36.3,
+     "gop_framework": 60.9,
+     "unaligned": 14.5,
+     "dem_framework": 24.6
     }
    },
    "model_rslc_hm": {
@@ -3968,23 +3968,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 65.3
+       "value": 64.9
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 11.9
+       "value": 12.2
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 22.7
+       "value": 22.9
       }
      ],
-     "margin": 42.6,
-     "gop_framework": 65.3,
-     "unaligned": 11.9,
-     "dem_framework": 22.7
+     "margin": 41.9,
+     "gop_framework": 64.9,
+     "unaligned": 12.2,
+     "dem_framework": 22.9
     }
    }
   }
@@ -4048,8 +4048,8 @@
    "latest_leg": -100.0,
    "gov_2022": -65.0,
    "pres_2024": -61.5,
-   "model_rslc_all": 55.4,
-   "model_rslc_hm": 70.0
+   "model_rslc_all": 55.2,
+   "model_rslc_hm": 69.7
   },
   "pres_2024_margin": -61.5,
   "gov_2022_margin": -65.0,
@@ -4073,23 +4073,23 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 71.8
+       "value": 71.7
       },
       {
        "key": "unaligned",
        "label": "Unaligned",
-       "value": 11.7
+       "value": 11.8
       },
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 16.4
+       "value": 16.5
       }
      ],
-     "margin": 55.4,
-     "gop_framework": 71.8,
-     "unaligned": 11.7,
-     "dem_framework": 16.4
+     "margin": 55.2,
+     "gop_framework": 71.7,
+     "unaligned": 11.8,
+     "dem_framework": 16.5
     }
    },
    "model_rslc_hm": {
@@ -4101,7 +4101,7 @@
       {
        "key": "gop_framework",
        "label": "GOP Framework",
-       "value": 82.0
+       "value": 81.8
       },
       {
        "key": "unaligned",
@@ -4111,13 +4111,13 @@
       {
        "key": "dem_framework",
        "label": "Dem Framework",
-       "value": 12.0
+       "value": 12.1
       }
      ],
-     "margin": 70.0,
-     "gop_framework": 82.0,
+     "margin": 69.7,
+     "gop_framework": 81.8,
      "unaligned": 6.0,
-     "dem_framework": 12.0
+     "dem_framework": 12.1
     }
    }
   }

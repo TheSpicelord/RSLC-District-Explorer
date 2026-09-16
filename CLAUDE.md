@@ -121,6 +121,20 @@ two-party field and suppressed his incumbent asterisk on the R side (the asteris
 `incumbent.party === party`), so the GOP column is deliberately left empty and the note
 carries the explanation. Keep notes to one sentence.
 
+### Committed model margins can go STALE, not just missing
+
+The documented risk of a partial regeneration is *losing* model data. The mirror case bit
+on 2026-09-16: **Texas's committed margins were years-stale and materially wrong**, because
+nothing re-runs a builder when the vendor table changes underneath. `tx_house.json` had not
+been rebuilt since `36a50c5`, so rebuilding moved **84 house and 22 senate districts** -
+HD-98 from GOP+7.7 to GOP+30.0 in a seat Trump carried by 26.1 and the 2024 leg race by
+31.4, and HD-129 from GOP**-**4.3 (i.e. reading Dem-leaning) to GOP+5.6 in a seat Trump won
+by 17.7. The new numbers are the correct ones; the old ones had been on the site for months.
+Diffing a rebuild against a pre-regeneration snapshot is what caught it, so **take that
+snapshot before any regeneration and check the tail, not just the count** - GA drifted 11
+districts by at most 0.40 (ordinary rounding) while TX's median was a similar 0.65 but with
+a 22-point maximum. A periodic `build_model_margins.py --states ALL` would catch the rest.
+
 ### Candidate name spelling is load-bearing
 
 The app's incumbent asterisk comes from a **case-insensitive exact string match** between
@@ -134,12 +148,24 @@ have introduced three more from ballot names (PA HD-127 Manuel vs Manny Guzman J
 Craig vs Wendell Craig Williams, MN SD-39 Mary Kunesh vs Mary Kunesh-Podein). Audit after
 any import by re-deriving the match rather than spot-checking.
 
+A third class beyond spelling: **the workbook's incumbent itself goes stale.** The
+2026-09-16 six-state import found four, each verified against the *chamber's own roster*
+rather than Ballotpedia - NC HD-119 (Clampitt deceased 3/18/26, Ferguson appointed 4/16/26),
+NC SD-18 (Everitt resigned, Fatmi appointed), NC SD-23 (Meyer resigned, Garson appointed)
+and SC HD-57 (Lucas Atkinson switched D->R, per scstatehouse.gov). Ballotpedia signals these
+by marking the *new* person `(i)` while listing the old one under "Did not make the ballot".
+Left alone, three sitting members and a party-switcher would all have rendered as
+challengers. `INCUMBENT_UPDATES` in the import script records each with its reason.
+
 **Two Ballotpedia parsing traps**, both of which produce plausible-looking wrong nominees:
 *write-ins* are marked `(Write-in)` inside the candidate span and must be dropped (WI SD-27
 and PA HD-11 each had one that would otherwise have become the nominee), and *"Did not make
 the ballot"* names sit in a sibling `<div>`, not a `<span class="candidate">` - but that
 phrase also appears in the **primary** table lower down the page, so scope any check to the
-general-election table or legitimate nominees get falsely flagged.
+general-election table or legitimate nominees get falsely flagged. A third: the heading is
+inconsistent across pages - some read "general election 2026", others "general election,
+2026" - so match both or four states silently parse as zero districts. Lettered districts
+(MN house 1A/1B) need `([0-9]+[A-Z]?)`, not `(\d+)`.
 
 ## Model Margins
 
