@@ -813,6 +813,59 @@ def apply_modeling_rows(base_rows: List[dict], modeling_rows: Dict[Tuple[str, st
     return applied
 
 
+def load_existing_model_data(path: Path):
+    """district_id -> {"models":…, "view_margins":{model_*}} from the file on disk.
+
+    The chamber JSON already on disk is the ONLY place SQL-built model margins
+    live — the workbook's Modeling sheet carries hand-copied numbers that are
+    usually months stale. Reading them back lets a candidate-only regeneration
+    keep the real modelling instead of overwriting it with the workbook's.
+    """
+    if not path.exists():
+        return {}
+    try:
+        rows = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return {}
+    out = {}
+    for row in rows if isinstance(rows, list) else []:
+        district_id = normalize_district_id(row.get("district_id"))
+        if not district_id:
+            continue
+        margins = {k: v for k, v in (row.get("view_margins") or {}).items() if k.startswith("model_")}
+        models = row.get("models")
+        if margins or models:
+            out[district_id] = {"models": models, "view_margins": margins}
+    return out
+
+
+def apply_preserved_models(base_rows: List[dict], preserved: Dict[str, dict]):
+    """Put the on-disk model block back, REPLACING anything the workbook supplied.
+
+    Replacement rather than merge is deliberate: a state whose model family has
+    changed (PA dropped `hrcc` for `rslc`) would otherwise end up carrying both,
+    the stale family looking every bit as real as the live one.
+    """
+    if not base_rows or not preserved:
+        return 0
+    applied = 0
+    for row in base_rows:
+        district_id = normalize_district_id(row.get("district_id"))
+        keep = preserved.get(district_id)
+        if not keep:
+            continue
+        view_margins = row.setdefault("view_margins", {})
+        for key in [k for k in view_margins if k.startswith("model_")]:
+            del view_margins[key]
+        view_margins.update(keep["view_margins"])
+        if keep["models"] is not None:
+            row["models"] = keep["models"]
+        elif "models" in row:
+            del row["models"]
+        applied += 1
+    return applied
+
+
 def build_rows(sheet_rows: List[Tuple[int, Dict[int, str]]], state_abbr: str, tier_audit=None, sheet_name=""):
     out = []
     demo_cols = MAIN_SHEET_COLS["demographics"]
@@ -1338,6 +1391,13 @@ def main():
         default="data/state_chamber_names.json",
         help="Output path for chamber name metadata JSON",
     )
+    parser.add_argument(
+        "--models-from-workbook",
+        action="store_true",
+        help="Take model margins from the workbook's Modeling sheet instead of "
+             "preserving the SQL-built ones already on disk. Only for a deliberate "
+             "reset - the workbook's numbers are hand-copied and usually stale.",
+    )
     args = parser.parse_args()
 
     workbook = Path(args.workbook)
@@ -1380,8 +1440,26 @@ def main():
 
             out_name = OUTPUT_NAME.get((state_abbr, chamber), f"{state_abbr.lower()}_{chamber}.json")
             out_path = out_dir / out_name
+
+            # Keep the SQL-built modelling that is already on disk unless the
+            # caller explicitly asks for the workbook's version. Without this a
+            # candidate-only edit silently replaces every model margin with the
+            # Modeling sheet's stale hand-copied numbers, and the only repair is
+            # re-running the model builders for that state.
+            preserved_applied = 0
+            if not args.models_from_workbook:
+                preserved = load_existing_model_data(out_path)
+                preserved_applied = apply_preserved_models(rows, preserved)
+                missing = len(rows) - preserved_applied
+                if preserved and missing:
+                    print(f"  ** {state_abbr} {chamber}: {missing} district(s) have no preserved "
+                          f"model data (new district?) - run the model builder for this state.")
+            # indent=1 + ensure_ascii=False matches what build_model_margins and
+            # build_national_margins write. Before the three agreed, a regeneration
+            # reformatted every line, so a one-candidate edit showed up as a
+            # 38,000-line diff.
             with out_path.open("w", encoding="utf-8") as f:
-                json.dump(rows, f, indent=2)
+                json.dump(rows, f, indent=1, ensure_ascii=False)
                 f.write("\n")
 
             chamber_index[chamber].append(
@@ -1393,7 +1471,10 @@ def main():
                     "modelingApplied": modeling_applied,
                 }
             )
-            print(f"Wrote {out_path} rows={len(rows)} overrides={applied} modeling={modeling_applied}")
+            model_note = (f"modeling={modeling_applied} (from workbook)"
+                          if args.models_from_workbook
+                          else f"models-preserved={preserved_applied}")
+            print(f"Wrote {out_path} rows={len(rows)} overrides={applied} {model_note}")
 
     for chamber in ("house", "senate"):
         chamber_index[chamber].sort(key=lambda x: (x.get("state", ""), x.get("url", "")))

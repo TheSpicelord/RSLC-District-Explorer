@@ -40,12 +40,29 @@ python scripts/validate_chamber_jsons.py
 The generator and validator use only built-in libraries. The model builders need
 `pyodbc` (SQL Server) and `openpyxl` (workbook-sourced models).
 
-**`--states` regenerates only those files, and wipes their model margins** — the
-generator rebuilds a chamber from the workbook, which has no modeling in it. Always
-follow a partial regeneration with whichever model builder owns those states (for a
-fallback state, `build_national_margins.py --states NC`), or they silently lose their
-`model_*` view margins. Re-running the national builder moves a few districts by 0.1-0.2
-at the rounding boundary; that is noise, not a real shift.
+**A candidate-only edit no longer needs the model builders (changed 2026-09-16).**
+`generate_chamber_jsons.py` now reads the chamber JSON already on disk and puts its
+`model_*` margins and `models` block back after rebuilding from the workbook, so the
+normal loop is just *edit workbook → regenerate → done*. It reports `models-preserved=N`
+per file, and warns if any district has no preserved data (a genuinely new district, which
+does need a builder run).
+
+Preservation **replaces** rather than merges, which matters: the workbook's Modeling sheet
+still supplies its own stale `model_*` values, and a state whose family has changed (PA
+moved `hrcc` → `rslc`) would otherwise end up carrying both, the dead family looking every
+bit as real as the live one.
+
+Pass **`--models-from-workbook`** to get the old behaviour — take the Modeling sheet's
+numbers and drop what is on disk. That is a deliberate reset, not a routine option: those
+numbers are hand-copied and usually months stale.
+
+You still need the builders when the *modelling itself* should change — a refreshed vendor
+table, a new model family, a new district. Re-running the national builder moves a few
+districts by 0.1-0.2 at the rounding boundary; that is noise, not a real shift.
+
+All three writers now emit `indent=1, ensure_ascii=False` plus a trailing newline. Before
+they agreed, the generator's `indent=2` reformatted every line, so a one-candidate edit
+produced a 38,000-line diff that buried the actual change.
 
 ### Retired district lines (`LEG_REDISTRICTED`)
 
@@ -180,14 +197,14 @@ python scripts/build_national_margins.py             # DR Natl fallback for the 
 python scripts/build_michigan_vi.py                  # MI Vote Intent (workbook)
 ```
 
-**A partial regeneration needs the same full set, not just `build_model_margins.py`.**
-`generate_chamber_jsons.py --states MI` drops *every* `model_*` key for that state and
-refills it from the election workbook's modeling sheet, which carries stale hand-copied
-numbers. Re-running only `build_model_margins.py` restores `model_rslc_all` /
-`model_rslc_hm` and leaves the workbook's stale value sitting in `model_rslc_vi`, which
-looks plausible and is wrong - this happened on 2026-09-05 and shifted all 148 MI
-districts (HD 001 read -57.0 against the correct -61.3) until `build_michigan_vi.py` was
-run. **Michigan needs `build_michigan_vi.py` and Kansas needs `build_kansas_margins.py`
+**This USED to be the main footgun and is now handled**: `generate_chamber_jsons.py
+--states MI` once dropped every `model_*` key and refilled it from the workbook's stale
+modeling sheet, so re-running only `build_model_margins.py` restored `model_rslc_all` /
+`model_rslc_hm` while leaving a stale `model_rslc_vi` behind - plausible-looking and wrong.
+That shifted all 148 MI districts on 2026-09-05 (HD 001 read -57.0 against the correct
+-61.3). The generator now preserves what is on disk, so a regeneration keeps all three MI
+families intact; verified by regenerating MI/PA/TX/MN/NH and diffing every `model_*` value
+bit-for-bit. Run the builders when the modelling should actually change. **Michigan needs `build_michigan_vi.py` and Kansas needs `build_kansas_margins.py`
 every time either is regenerated.** The source of truth for MI Vote Intent is
 `data/Michigan Vote Intent District Margins.xlsx`, sheet `VoteIntent2026`, column
 `netframework` (GOP minus Dem as a fraction, scaled to points); it is modelled separately

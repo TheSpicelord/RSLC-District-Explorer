@@ -710,7 +710,7 @@ def patch_chamber(state, chamber, cfg, results, dry_run=False):
             rec.pop("models", None)
 
     if not dry_run:
-        path.write_text(json.dumps(recs, indent=1, ensure_ascii=False), encoding="utf-8")
+        path.write_text(json.dumps(recs, indent=1, ensure_ascii=False) + chr(10), encoding="utf-8")
 
     sample = sorted(results[list(results)[0]].items(), key=lambda kv: str(kv[0]))[:3]
     detail = ", ".join(f"{d}:{m:+.1f}" for d, (_s, m, _n) in sample)
