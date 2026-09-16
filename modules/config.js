@@ -97,6 +97,12 @@ export const DISTRICT_NOTES = {
   // and suppress his incumbent asterisk on the R side, so the GOP column is left
   // empty and this note carries the explanation.
   "42|002": "Merski won the GOP nomination as a write-in candidate, but remains primarily a Democrat.",
+  // Two AR HD-8 races share the Nov 3 ballot: a special for the rest of Austin
+  // McCollum's term, and the regular election for the next full term. Kara Armas
+  // holds the seat by appointment and is running in the special; her husband
+  // Brian is the Republican nominee for the full term, which is what this row
+  // records. Parker Stohlton (D) appears only in the special.
+  "05|008": "Brian Armas is the nominee for the full term; Kara Armas holds the seat by appointment and is running in the concurrent special election.",
 };
 
 export const OVERSEAS_TERRITORY_FIPS = new Set(["60", "66", "69", "72", "78"]);
