@@ -5,7 +5,7 @@
   "district_name": "",
   "tier": null,
   "incumbent": {
-   "name": "Steven Hefferman",
+   "name": "Steven Heffernan",
    "party": "R"
   },
   "members": [
@@ -13,13 +13,14 @@
     "seat": 1,
     "seat_label": "",
     "incumbent": {
-     "name": "Steven Hefferman",
+     "name": "Steven Heffernan",
      "party": "R"
     },
     "candidates": {
-     "rep": "Steven Hefferman",
-     "dem": "Ruth Hardy"
-    }
+     "rep": "Steven Heffernan",
+     "dem": "Hannah Sessions"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
@@ -29,9 +30,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "Hannah Sessions"
-    }
+     "rep": "Andrew Klein",
+     "dem": "Ruth Hardy"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -89,8 +91,8 @@
    "ussen_2022": 23137
   },
   "candidates_2026": {
-   "rep": "Steven Hefferman",
-   "dem": "Ruth Hardy"
+   "rep": "Steven Heffernan",
+   "dem": "Hannah Sessions"
   },
   "models": {
    "model_drnatl_all": {
@@ -141,9 +143,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Lawrence Whitmire",
      "dem": "Seth Bongartz"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
@@ -153,9 +156,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Josh Williams",
      "dem": "Robert Plunkett"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -213,7 +217,7 @@
    "ussen_2022": 19120
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Lawrence Whitmire",
    "dem": "Seth Bongartz"
   },
   "models": {
@@ -266,8 +270,9 @@
     },
     "candidates": {
      "rep": "Scott Beck",
-     "dem": "No candidate"
-    }
+     "dem": "David Roth"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 1,
@@ -326,7 +331,7 @@
   },
   "candidates_2026": {
    "rep": "Scott Beck",
-   "dem": "No candidate"
+   "dem": "David Roth"
   },
   "models": {
    "model_drnatl_all": {
@@ -377,9 +382,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "Martine Gulick"
-    }
+     "rep": "Louis Manno",
+     "dem": "Nikhil Goyal"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
@@ -390,8 +396,9 @@
     },
     "candidates": {
      "rep": "No candidate",
-     "dem": "Nikhil Goyal"
-    }
+     "dem": "Martine Gulick"
+    },
+    "up_2026": true
    },
    {
     "seat": 3,
@@ -402,8 +409,9 @@
     },
     "candidates": {
      "rep": "No candidate",
-     "dem": "Elaine Haney"
-    }
+     "dem": "Tanya Vyhovsky"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 3,
@@ -461,8 +469,8 @@
    "ussen_2022": 21549
   },
   "candidates_2026": {
-   "rep": "No candidate",
-   "dem": "Martine Gulick"
+   "rep": "Louis Manno",
+   "dem": "Nikhil Goyal"
   },
   "models": {
    "model_drnatl_all": {
@@ -513,9 +521,10 @@
      "party": "R"
     },
     "candidates": {
-     "rep": "Christopher Mattos",
-     "dem": "No candidate"
-    }
+     "rep": "Ashley Bartley",
+     "dem": "Irene Wrenner"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 1,
@@ -573,8 +582,8 @@
    "ussen_2022": 8661
   },
   "candidates_2026": {
-   "rep": "Christopher Mattos",
-   "dem": "No candidate"
+   "rep": "Ashley Bartley",
+   "dem": "Irene Wrenner"
   },
   "models": {
    "model_drnatl_all": {
@@ -625,9 +634,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Bruce Roy",
      "dem": "Thomas Chittenden"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
@@ -637,9 +647,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Javen Sears",
      "dem": "Virginia Lyons"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 3,
@@ -649,9 +660,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Rohan St. Marthe",
      "dem": "Kesha Ram Hinsdale"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 3,
@@ -709,7 +721,7 @@
    "ussen_2022": 35544
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Bruce Roy",
    "dem": "Thomas Chittenden"
   },
   "models": {
@@ -763,7 +775,8 @@
     "candidates": {
      "rep": "Russ Ingalls",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 1,
@@ -874,8 +887,9 @@
     },
     "candidates": {
      "rep": "Randy Brock",
-     "dem": "No candidate"
-    }
+     "dem": "Alexander Bobella"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
@@ -886,8 +900,9 @@
     },
     "candidates": {
      "rep": "Robert Norris",
-     "dem": "No candidate"
-    }
+     "dem": "Gregory Rainville"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -946,7 +961,7 @@
   },
   "candidates_2026": {
    "rep": "Randy Brock",
-   "dem": "No candidate"
+   "dem": "Alexander Bobella"
   },
   "models": {
    "model_drnatl_all": {
@@ -998,8 +1013,9 @@
     },
     "candidates": {
      "rep": "Patrick Brennan",
-     "dem": "No candidate"
-    }
+     "dem": "Kim Gleason"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 1,
@@ -1058,7 +1074,7 @@
   },
   "candidates_2026": {
    "rep": "Patrick Brennan",
-   "dem": "No candidate"
+   "dem": "Kim Gleason"
   },
   "models": {
    "model_drnatl_all": {
@@ -1111,7 +1127,8 @@
     "candidates": {
      "rep": "Richard Westman",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 1,
@@ -1222,8 +1239,9 @@
     },
     "candidates": {
      "rep": "John Benson",
-     "dem": "No candidate"
-    }
+     "dem": "Monique Priestley"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 1,
@@ -1282,7 +1300,7 @@
   },
   "candidates_2026": {
    "rep": "John Benson",
-   "dem": "No candidate"
+   "dem": "Monique Priestley"
   },
   "models": {
    "model_drnatl_all": {
@@ -1335,7 +1353,8 @@
     "candidates": {
      "rep": "John Morley",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 1,
@@ -1447,7 +1466,8 @@
     "candidates": {
      "rep": "Brian Collamore",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
@@ -1459,7 +1479,8 @@
     "candidates": {
      "rep": "David Weeks",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 3,
@@ -1471,7 +1492,8 @@
     "candidates": {
      "rep": "Terry Williams",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 3,
@@ -1581,9 +1603,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Rob LaClair",
      "dem": "Ann Cummings"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
@@ -1593,9 +1616,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Christopher Neddo",
      "dem": "Andrew Perchlik"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 3,
@@ -1605,9 +1629,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Peter Schmeeckle",
      "dem": "Anne Watson"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 3,
@@ -1665,7 +1690,7 @@
    "ussen_2022": 31739
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Rob LaClair",
    "dem": "Ann Cummings"
   },
   "models": {
@@ -1717,9 +1742,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Dale Gassett",
      "dem": "Wendy Harrison"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
@@ -1729,9 +1755,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Rusty Sage",
      "dem": "Nader Hashim"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -1789,7 +1816,7 @@
    "ussen_2022": 18155
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Dale Gassett",
    "dem": "Wendy Harrison"
   },
   "models": {
@@ -1842,8 +1869,9 @@
     },
     "candidates": {
      "rep": "Jonathan Gleason",
-     "dem": "Joe Major"
-    }
+     "dem": "Elizabeth Burrows"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
@@ -1853,9 +1881,10 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "Rebecca White"
-    }
+     "rep": "Andrea Murray",
+     "dem": "Joe Major"
+    },
+    "up_2026": true
    },
    {
     "seat": 3,
@@ -1865,12 +1894,13 @@
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "rep": "Jack Williams",
+     "dem": "Rebecca White"
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 2,
+  "candidate_seats_up": 3,
   "next_election": 2026,
   "demographics": {
    "population": 47782,
@@ -1926,7 +1956,7 @@
   },
   "candidates_2026": {
    "rep": "Jonathan Gleason",
-   "dem": "Joe Major"
+   "dem": "Elizabeth Burrows"
   },
   "models": {
    "model_drnatl_all": {

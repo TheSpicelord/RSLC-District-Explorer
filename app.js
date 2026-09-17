@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260917d";
+import { requireAuth } from "./modules/auth.js?v=20260917e";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -22,7 +22,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260917d";
+} from "./modules/config.js?v=20260917e";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -45,8 +45,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260917d";
-import { state } from "./modules/state.js?v=20260917d";
+} from "./modules/dom.js?v=20260917e";
+import { state } from "./modules/state.js?v=20260917e";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -198,7 +198,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260917d";
+const BUILD_VERSION = "20260917e";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -2844,9 +2844,11 @@ function candidateDisplayLines(rec, party, options = {}) {
     return `${seatPrefix}${withInc}${suffix}`;
   });
 
-  const anyNamed = raw.some((line) => !/^((Seat\s+\d+:\s+)?)?No candidate(\s*\([RD]\))?$/i.test(line));
-  if (!anyNamed) return raw;
-  return raw.filter((line) => !/^((Seat\s+\d+:\s+)?)?No candidate(\s*\([RD]\))?$/i.test(line));
+  const anyNamed = raw.some((line) => !NO_CANDIDATE_LINE_RE.test(line));
+  // Nobody from this party is running. Seat-labelled chambers say so per seat;
+  // an at-large district says it once instead of repeating "No candidate".
+  if (!anyNamed) return members.some((member) => !!member.seat_label) ? raw : raw.slice(0, 1);
+  return raw.filter((line) => !NO_CANDIDATE_LINE_RE.test(line));
 }
 
 function seatOrderedCandidateLines(rec) {
@@ -2870,8 +2872,12 @@ function seatOrderedCandidateLines(rec) {
   return lines;
 }
 
+// A blank candidate slot, with or without a seat prefix ("Seat 1", "Seat A",
+// "Position 2") and with or without a trailing party letter.
+const NO_CANDIDATE_LINE_RE = /^(?:[A-Za-z]+\s+[A-Za-z0-9]+:\s+)?No candidate(?:\s*\([RD]\))?$/i;
+
 function isNoCandidateLine(line) {
-  return /^((Seat\s+\d+:\s+)?)?No candidate(\s*\([RD]\))?$/i.test(String(line || "").trim());
+  return NO_CANDIDATE_LINE_RE.test(String(line || "").trim());
 }
 
 function mutedCandidateLineHtml(line) {

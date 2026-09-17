@@ -145,6 +145,20 @@ export const DISTRICT_NOTES = {
   "53|046|house": "WA's top-two primary left only Democrats on the ballot in Position 1; also running: Will Dreher.",
   "53|048|house": "WA's top-two primary left only Democrats on the ballot in Position 2; also running: Jessica Forsythe.",
   "46|027|house": "Only one major-party candidate for two seats; independents also on the ballot: Joe Flood, Elizabeth Lone Eagle, Evangeline Poor Bear, Jay Yohner.",
+  "50|E-C|house": "Kascenska holds both major-party nominations. Vermont candidates can win the other party's primary on write-ins.",
+  "50|F-5|house": "Hango and Laroche each hold both major-party nominations. Vermont candidates can win the other party's primary on write-ins.",
+  "50|F-6|house": "Gregoire holds both major-party nominations. Vermont candidates can win the other party's primary on write-ins.",
+  "50|F-7|house": "Demar holds both major-party nominations. Vermont candidates can win the other party's primary on write-ins.",
+  "50|O-L|house": "Higley and Menon each hold both major-party nominations. Vermont candidates can win the other party's primary on write-ins.",
+  "50|WA1|house": "Goslant and Herring each hold both major-party nominations. Independent incumbent Anne Donahue did not make the ballot.",
+  "50|ESX|senate": "Ingalls holds both major-party nominations. Vermont candidates can win the other party's primary on write-ins.",
+  "50|LAM|senate": "Westman holds both major-party nominations. Vermont candidates can win the other party's primary on write-ins.",
+  "50|ORL|senate": "Morley holds both major-party nominations. Vermont candidates can win the other party's primary on write-ins.",
+  "50|RUT|senate": "Collamore, Weeks and Williams each hold both major-party nominations. Vermont candidates can win the other party's primary on write-ins.",
+  "50|C15|house": "Independent incumbent Troy Headrick is seeking re-election outside both major parties, so he appears in neither column.",
+  "50|L-1|house": "Independent incumbent Jed Lipsky is the only candidate on the ballot; no major-party candidate filed.",
+  "50|W-2|house": "Independent incumbent Laura Sibilia is the only candidate on the ballot; no major-party candidate filed.",
+  "25|043|house": "Independent incumbent Susannah Whipps is the only candidate on the ballot; no major-party candidate filed.",
   // California's top-two primary can send two candidates of the SAME party to
   // the general, leaving the other party genuinely empty. The workbook has one
   // slot per party, so the second same-party candidate lives in these notes.
