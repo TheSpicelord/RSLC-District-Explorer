@@ -37,7 +37,51 @@ OUTPUT_NAME = {
 }
 
 SPECIAL_TAB_PATTERN = re.compile(r"^([A-Z]{2})\s+(SLDL|SLDU)$")
-SEAT_NUMBERED_TABS = {"ID SLDL", "WA SLDL", "WV SLDU"}
+# Chambers whose two seats are distinct races carry the state's own labels.
+# At-large tabs (AZ, ND, SD, VT, MD, NH) get none: their slot numbers are
+# workbook bookkeeping, not ballot positions, and the front end pools them.
+SEAT_LABELS = {
+    "ID SLDL": ("Seat A", "Seat B"),
+    "WA SLDL": ("Position 1", "Position 2"),
+    "WV SLDU": ("Seat 1", "Seat 2"),
+}
+
+
+def seat_label_for(tab_name: str, seat: int) -> str:
+    labels = SEAT_LABELS.get(tab_name)
+    if not labels:
+        return ""
+    return labels[seat - 1] if 1 <= seat <= len(labels) else f"Seat {seat}"
+
+
+def nd_regular_cycle_year(district_id: str) -> int:
+    """North Dakota elects whole districts every four years: odd-numbered
+    districts in 2026, even-numbered ones (and the 4A/4B subdistricts) in 2028."""
+    m = re.match(r"^0*(\d+)", str(district_id or ""))
+    if not m:
+        return 0
+    return 2026 if int(m.group(1)) % 2 == 1 else 2028
+
+
+def seats_up_for(tab_name: str, members: List[dict], district_id: str, next_election) -> List[int]:
+    """Which member slots are on the 2026 ballot for a per-state override row."""
+    seats = [int(m.get("seat") or 0) for m in members]
+    if tab_name == "WV SLDU":
+        # Staggered terms: one of the two senators per cycle, kept in slot 1.
+        return seats[:1]
+    if tab_name == "ND SLDL" and next_election == 2026 and nd_regular_cycle_year(district_id) != 2026:
+        # An off-cycle district flagged for 2026 is a one-seat special election
+        # (HD-20/26/42 in 2026). The seat up is the one whose candidate cells
+        # are filled; it is slot 2 when the appointee sits in slot 2.
+        filled = [
+            int(m.get("seat") or 0)
+            for m in members
+            if has_nonempty_candidate(m.get("candidates", {}).get("rep", ""))
+            or has_nonempty_candidate(m.get("candidates", {}).get("dem", ""))
+        ]
+        return filled[:1] or seats[:1]
+    # Everywhere else the whole district is on the ballot.
+    return seats
 
 NOISE_DISTRICT_WORDS = {
     "STATE",
@@ -172,7 +216,7 @@ def has_nonempty_candidate(value: str) -> bool:
     if not text:
         return False
     upper = text.upper()
-    return upper not in {"NO CANDIDATE", "UNKNOWN", "TBD"}
+    return upper not in {"NO CANDIDATE", "UNKNOWN", "TBD", "VACANT"}
 
 
 def party_norm(value: str) -> str:
@@ -1073,7 +1117,7 @@ def build_special_overrides(sheet_rows: List[Tuple[int, Dict[int, str]]], tab_na
             rep_name = candidate_value(row, rep_candidate_cols, seat) or "No candidate"
             dem_name = candidate_value(row, dem_candidate_cols, seat) or "No candidate"
 
-            seat_label = f"Seat {seat}" if tab_name in SEAT_NUMBERED_TABS else ""
+            seat_label = seat_label_for(tab_name, seat)
             members.append(
                 {
                     "seat": seat,
@@ -1089,28 +1133,15 @@ def build_special_overrides(sheet_rows: List[Tuple[int, Dict[int, str]]], tab_na
                 }
             )
 
-        populated_candidate_seats = set()
-        for seat in sorted(set(rep_candidate_cols.keys()) | set(dem_candidate_cols.keys())):
-            rep_value = candidate_value(row, rep_candidate_cols, seat)
-            dem_value = candidate_value(row, dem_candidate_cols, seat)
-            if has_nonempty_candidate(rep_value) or has_nonempty_candidate(dem_value):
-                populated_candidate_seats.add(seat)
-
-        if tab_name == "WV SLDU":
-            candidate_seats_up = 1
-        elif populated_candidate_seats:
-            candidate_seats_up = len(populated_candidate_seats)
-        elif len(rep_candidate_cols) <= 1 and len(dem_candidate_cols) <= 1:
-            candidate_seats_up = 1
-        else:
-            candidate_seats_up = len(populated_seats)
+        # Which seats are up is decided in apply_special_overrides, once the
+        # main-sheet row (and its next_election) is known.
         overrides.append(
             {
+                "tab_name": tab_name,
                 "raw_district": raw_district,
                 "district_ids": district_id_candidates(raw_district),
                 "district_name_norm": normalize_district_name_match(raw_district),
                 "members": members,
-                "candidate_seats_up": candidate_seats_up,
             }
         )
 
@@ -1167,21 +1198,29 @@ def apply_special_overrides(base_rows: List[dict], overrides: List[dict]):
         if not members:
             continue
 
-        primary = None
+        up_seats = seats_up_for(
+            str(ov.get("tab_name") or ""), members, str(target.get("district_id") or ""), target.get("next_election")
+        )
         for member in members:
-            if has_named_incumbent(member.get("incumbent", {}).get("name", "")):
-                primary = member
-                break
-        if primary is None:
-            primary = members[0]
+            member["up_2026"] = int(member.get("seat") or 0) in up_seats
+        up_members = [m for m in members if m["up_2026"]] or members
 
-        rep_primary = str(primary.get("candidates", {}).get("rep", "") or "").strip() or "No candidate"
-        dem_primary = str(primary.get("candidates", {}).get("dem", "") or "").strip() or "No candidate"
-        inc_name = str(primary.get("incumbent", {}).get("name", "") or "").strip() or "Vacant"
-        inc_party = party_norm(primary.get("incumbent", {}).get("party", ""))
+        # Flat fields for callers that do not read `members`: the incumbent is
+        # the first named one (preferring a seat that is up), the candidates are
+        # those of the first seat on the ballot.
+        def first_named(pool):
+            return next((m for m in pool if has_named_incumbent(m.get("incumbent", {}).get("name", ""))), None)
+
+        inc_member = first_named(up_members) or first_named(members) or up_members[0]
+        cand_member = up_members[0]
+
+        rep_primary = str(cand_member.get("candidates", {}).get("rep", "") or "").strip() or "No candidate"
+        dem_primary = str(cand_member.get("candidates", {}).get("dem", "") or "").strip() or "No candidate"
+        inc_name = str(inc_member.get("incumbent", {}).get("name", "") or "").strip() or "Vacant"
+        inc_party = party_norm(inc_member.get("incumbent", {}).get("party", ""))
 
         target["members"] = members
-        target["candidate_seats_up"] = int(ov.get("candidate_seats_up") or len(members) or 1)
+        target["candidate_seats_up"] = len(up_seats) or 1
         target["incumbent"] = {"name": inc_name, "party": inc_party}
         target["candidates_2026"] = {"rep": rep_primary, "dem": dem_primary}
         applied += 1

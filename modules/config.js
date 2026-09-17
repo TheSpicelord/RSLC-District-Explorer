@@ -131,6 +131,20 @@ export const DISTRICT_NOTES = {
   "53|032|senate": "WA's top-two primary left only Democrats on the ballot; also running: Cindy Ryu.",
   "53|037|senate": "WA's top-two primary left only Democrats on the ballot; also running: Chipalo Street.",
   "53|043|senate": "WA's top-two primary left only Democrats on the ballot; also running: Hannah Sabio-Howell.",
+  "53|004|house": "WA's top-two primary left only Republicans on the ballot in Position 1; also running: Hillary Pham.",
+  "53|011|house": "WA's top-two primary left only Democrats on the ballot in Position 1; also running: Ashley Fedan.",
+  "53|013|house": "WA's top-two primary left only Republicans on the ballot in Position 2; also running: Joshua Thompson.",
+  "53|021|house": "WA's top-two primary left only Democrats on the ballot in Position 1; also running: Jason Moon.",
+  "53|022|house": "WA's top-two primary left only Democrats on the ballot in Position 2; also running: Jamie Keenan-deVargas.",
+  "53|023|house": "WA's top-two primary left only Democrats on the ballot in Position 1; also running: Daria Ilgen.",
+  "53|029|house": "WA's top-two primary left only Democrats on the ballot in both positions; also running: Krista Perez (Position 1), Patrick Stickney (Position 2).",
+  "53|032|house": "WA's top-two primary left only Democrats on the ballot in both positions; also running: Keith Scully (Position 1), Imraan Siddiqi (Position 2).",
+  "53|034|house": "WA's top-two primary left only Democrats on the ballot in Position 2; also running: Mary Anito.",
+  "53|037|house": "WA's top-two primary left only Democrats on the ballot in Position 1; also running: Kelabe Tewolde.",
+  "53|043|house": "WA's top-two primary left only Democrats on the ballot in Position 1; also running: Alby Clendennin.",
+  "53|046|house": "WA's top-two primary left only Democrats on the ballot in Position 1; also running: Will Dreher.",
+  "53|048|house": "WA's top-two primary left only Democrats on the ballot in Position 2; also running: Jessica Forsythe.",
+  "46|027|house": "Only one major-party candidate for two seats; independents also on the ballot: Joe Flood, Elizabeth Lone Eagle, Evangeline Poor Bear, Jay Yohner.",
   // California's top-two primary can send two candidates of the SAME party to
   // the general, leaving the other party genuinely empty. The workbook has one
   // slot per party, so the second same-party candidate lives in these notes.

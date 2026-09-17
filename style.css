@@ -800,6 +800,23 @@ body.projection-active .chamber-buttons {
   color: #a9ceff;
 }
 
+/* At-large multi-member districts: one stacked list per party. */
+.candidate-party-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.24rem;
+  min-width: 0;
+}
+
+.candidate-stack-row-list {
+  align-items: start;
+}
+
+.incumbent-seat-note {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
 .candidate-party-cell {
   border: 1px solid #36485a;
   border-radius: 7px;

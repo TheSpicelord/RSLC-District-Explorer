@@ -172,6 +172,14 @@ def validate_rows(state_abbr: str, chamber: str, url: str, rows: List[dict]) -> 
         if len(members) > 1 and candidate_seats_up == 1:
             multi_member_one_seat_up_rows += 1
 
+        # When the generator flags seats, the count must agree with the flags.
+        if any(isinstance(member.get("up_2026"), bool) for member in members):
+            flagged_up = sum(1 for member in members if member.get("up_2026") is True)
+            if flagged_up != candidate_seats_up:
+                errors.append(
+                    f"{url} row {idx} has candidate_seats_up={candidate_seats_up} but {flagged_up} members flagged up_2026."
+                )
+
         if latest_leg_margin(row) is None:
             missing_latest_leg += 1
 
@@ -205,18 +213,27 @@ def validate_special_cases(
         if multi_member_rows == 0:
             errors.append(f"{url} expected multi-member districts but none were found.")
 
-    if (state_abbr, chamber) in {("ID", "house"), ("WA", "house")}:
+    expected_seat_labels = {
+        ("ID", "house"): ["Seat A", "Seat B"],
+        ("WA", "house"): ["Position 1", "Position 2"],
+    }
+    if (state_abbr, chamber) in expected_seat_labels:
+        expected = expected_seat_labels[(state_abbr, chamber)]
         bad_rows = []
         for row in rows:
             members = row.get("members") or []
             seat_labels = [str(member.get("seat_label") or "").strip() for member in members]
-            if len(members) != 2 or seat_labels != ["Seat 1", "Seat 2"]:
+            if len(members) != 2 or seat_labels != expected:
                 bad_rows.append(row.get("district_id"))
         if bad_rows:
-            errors.append(f"{url} expected all rows to have Seat 1/Seat 2 pairs; bad districts: {bad_rows[:8]}")
+            errors.append(f"{url} expected all rows to carry {expected}; bad districts: {bad_rows[:8]}")
 
     if (state_abbr, chamber) == ("WV", "senate") and multi_member_one_seat_up_rows == 0:
         errors.append(f"{url} expected at least one multi-member district with candidate_seats_up=1.")
+
+    # ND HD-20/26/42 are one-seat specials inside two-member districts in 2026.
+    if (state_abbr, chamber) == ("ND", "house") and multi_member_one_seat_up_rows == 0:
+        errors.append(f"{url} expected the one-seat special-election districts to have candidate_seats_up=1.")
 
     return errors
 

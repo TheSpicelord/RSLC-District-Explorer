@@ -11,27 +11,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Davina Duerr",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Maggie Wang",
      "dem": "Davina Duerr"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Shelley Kloba",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Cliff Moon",
      "dem": "Shelley Kloba"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -81,7 +83,7 @@
    "ussen_2022": 68854
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Maggie Wang",
    "dem": "Davina Duerr"
   },
   "models": {
@@ -127,7 +129,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Andrew Barkis",
      "party": "R"
@@ -135,19 +137,21 @@
     "candidates": {
      "rep": "Andrew Barkis",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Matt Marshall",
      "party": "R"
     },
     "candidates": {
      "rep": "Matt Marshall",
-     "dem": "No candidate"
-    }
+     "dem": "Angela Taylor"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -243,30 +247,32 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Natasha Hill",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Tony Kiepe",
      "dem": "Natasha Hill"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Timm Ormsby",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "rep": "Natalie Poulson",
+     "dem": "Luc Jasmin III"
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 1,
+  "candidate_seats_up": 2,
   "next_election": 2026,
   "demographics": {
    "population": 111344,
@@ -313,7 +319,7 @@
    "ussen_2022": 61506
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Tony Kiepe",
    "dem": "Natasha Hill"
   },
   "models": {
@@ -359,30 +365,32 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Suzanne Schmidt",
      "party": "R"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Trent Maier",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Rob Chase",
      "party": "R"
     },
     "candidates": {
      "rep": "Rob Chase",
-     "dem": "No candidate"
-    }
+     "dem": "Rob Tupper"
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 1,
+  "candidate_seats_up": 2,
   "next_election": 2026,
   "demographics": {
    "population": 124066,
@@ -429,7 +437,7 @@
    "ussen_2022": 66388
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Trent Maier",
    "dem": "No candidate"
   },
   "models": {
@@ -475,27 +483,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Zach Hall",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Michelle Bennett",
      "dem": "Zach Hall"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Lisa Callan",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Patrick Peacock",
      "dem": "Lisa Callan"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -545,7 +555,7 @@
    "ussen_2022": 72830
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Michelle Bennett",
    "dem": "Zach Hall"
   },
   "models": {
@@ -591,27 +601,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Mike Volz",
      "party": "R"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "rep": "Alan Nolan",
+     "dem": "Michaela Kelso"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Jenny Graham",
      "party": "R"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "rep": "Jonathan Bingle",
+     "dem": "Julia Payne"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -661,8 +673,8 @@
    "ussen_2022": 60780
   },
   "candidates_2026": {
-   "rep": "No candidate",
-   "dem": "No candidate"
+   "rep": "Alan Nolan",
+   "dem": "Michaela Kelso"
   },
   "models": {
    "model_drnatl_all": {
@@ -707,7 +719,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Andrew Engell",
      "party": "R"
@@ -715,11 +727,12 @@
     "candidates": {
      "rep": "Andrew Engell",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Hunter Abell",
      "party": "R"
@@ -727,7 +740,8 @@
     "candidates": {
      "rep": "Hunter Abell",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -823,7 +837,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Stephanie Barnard",
      "party": "R"
@@ -831,11 +845,12 @@
     "candidates": {
      "rep": "Stephanie Barnard",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "April Connors",
      "party": "R"
@@ -843,7 +858,8 @@
     "candidates": {
      "rep": "April Connors",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -939,7 +955,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Mary Dye",
      "party": "R"
@@ -947,19 +963,21 @@
     "candidates": {
      "rep": "Mary Dye",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Joe Schmick",
      "party": "R"
     },
     "candidates": {
      "rep": "Joe Schmick",
-     "dem": "No candidate"
-    }
+     "dem": "Karina Wallace"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -1055,27 +1073,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Clyde Shavers",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Robert Hicks",
      "dem": "Clyde Shavers"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Dave Paul",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Timothy Hazelo",
      "dem": "Dave Paul"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -1125,7 +1145,7 @@
    "ussen_2022": 75359
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Robert Hicks",
    "dem": "Clyde Shavers"
   },
   "models": {
@@ -1171,7 +1191,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "David Hackney",
      "party": "D"
@@ -1179,11 +1199,12 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "David Hackney"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Steve Bergquist",
      "party": "D"
@@ -1191,7 +1212,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Steve Bergquist"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -1287,27 +1309,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Brian Burnett",
      "party": "R"
     },
     "candidates": {
      "rep": "Brian Burnett",
-     "dem": "No candidate"
-    }
+     "dem": "Stacy Willoughby"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Mike Steele",
      "party": "R"
     },
     "candidates": {
      "rep": "Mike Steele",
-     "dem": "No candidate"
-    }
+     "dem": "Maggie Adams"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -1358,7 +1382,7 @@
   },
   "candidates_2026": {
    "rep": "Brian Burnett",
-   "dem": "No candidate"
+   "dem": "Stacy Willoughby"
   },
   "models": {
    "model_drnatl_all": {
@@ -1403,27 +1427,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Tom Dent",
      "party": "R"
     },
     "candidates": {
      "rep": "Tom Dent",
-     "dem": "No candidate"
-    }
+     "dem": "Juan Garcia"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Alex Ybarra",
      "party": "R"
     },
     "candidates": {
-     "rep": "Alex Ybarra",
+     "rep": "Deanna Martinez",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -1474,7 +1500,7 @@
   },
   "candidates_2026": {
    "rep": "Tom Dent",
-   "dem": "No candidate"
+   "dem": "Juan Garcia"
   },
   "models": {
    "model_drnatl_all": {
@@ -1519,27 +1545,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Gloria Mendoza",
      "party": "R"
     },
     "candidates": {
      "rep": "Gloria Mendoza",
-     "dem": "No candidate"
-    }
+     "dem": "Chelsea Dimas"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Deb Manjarrez",
      "party": "R"
     },
     "candidates": {
      "rep": "Deb Manjarrez",
-     "dem": "No candidate"
-    }
+     "dem": "Ezequiel Morfin"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -1590,7 +1618,7 @@
   },
   "candidates_2026": {
    "rep": "Gloria Mendoza",
-   "dem": "No candidate"
+   "dem": "Chelsea Dimas"
   },
   "models": {
    "model_drnatl_all": {
@@ -1635,30 +1663,32 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Chris Corry",
      "party": "R"
     },
     "candidates": {
      "rep": "Chris Corry",
-     "dem": "No candidate"
-    }
+     "dem": "Jack McEntire"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Jeremie Dufault",
      "party": "R"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Reedy Berg",
      "dem": "No candidate"
-    }
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 1,
+  "candidate_seats_up": 2,
   "next_election": 2026,
   "demographics": {
    "population": 102782,
@@ -1706,7 +1736,7 @@
   },
   "candidates_2026": {
    "rep": "Chris Corry",
-   "dem": "No candidate"
+   "dem": "Jack McEntire"
   },
   "models": {
    "model_drnatl_all": {
@@ -1751,27 +1781,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Mark Klicker",
      "party": "R"
     },
     "candidates": {
      "rep": "Mark Klicker",
-     "dem": "No candidate"
-    }
+     "dem": "Kyle Palmer"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Skyler Rude",
      "party": "R"
     },
     "candidates": {
      "rep": "Skyler Rude",
-     "dem": "No candidate"
-    }
+     "dem": "Derek Sarley"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -1822,7 +1854,7 @@
   },
   "candidates_2026": {
    "rep": "Mark Klicker",
-   "dem": "No candidate"
+   "dem": "Kyle Palmer"
   },
   "models": {
    "model_drnatl_all": {
@@ -1867,27 +1899,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Kevin Waters",
      "party": "R"
     },
     "candidates": {
      "rep": "Kevin Waters",
-     "dem": "No candidate"
-    }
+     "dem": "Ben Christly"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "David Stuebe",
      "party": "R"
     },
     "candidates": {
      "rep": "David Stuebe",
-     "dem": "No candidate"
-    }
+     "dem": "Diana Perez"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -1938,7 +1972,7 @@
   },
   "candidates_2026": {
    "rep": "Kevin Waters",
-   "dem": "No candidate"
+   "dem": "Ben Christly"
   },
   "models": {
    "model_drnatl_all": {
@@ -1983,27 +2017,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Stephanie McClintock",
      "party": "R"
     },
     "candidates": {
      "rep": "Stephanie McClintock",
-     "dem": "No candidate"
-    }
+     "dem": "Randi Knott"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "John Ley",
      "party": "R"
     },
     "candidates": {
      "rep": "John Ley",
-     "dem": "No candidate"
-    }
+     "dem": "Deken Letinich"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -2054,7 +2090,7 @@
   },
   "candidates_2026": {
    "rep": "Stephanie McClintock",
-   "dem": "No candidate"
+   "dem": "Randi Knott"
   },
   "models": {
    "model_drnatl_all": {
@@ -2099,27 +2135,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Jim Walsh",
      "party": "R"
     },
     "candidates": {
      "rep": "Jim Walsh",
-     "dem": "No candidate"
-    }
+     "dem": "Kevin Moynihan"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Joel McEntire",
      "party": "R"
     },
     "candidates": {
      "rep": "Joel McEntire",
-     "dem": "No candidate"
-    }
+     "dem": "Terry Carlson"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -2170,7 +2208,7 @@
   },
   "candidates_2026": {
    "rep": "Jim Walsh",
-   "dem": "No candidate"
+   "dem": "Kevin Moynihan"
   },
   "models": {
    "model_drnatl_all": {
@@ -2215,27 +2253,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Peter Abbarno",
      "party": "R"
     },
     "candidates": {
      "rep": "Peter Abbarno",
-     "dem": "No candidate"
-    }
+     "dem": "Andy Zahn"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Ed Orcutt",
      "party": "R"
     },
     "candidates": {
      "rep": "Ed Orcutt",
-     "dem": "No candidate"
-    }
+     "dem": "Evan Jones"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -2286,7 +2326,7 @@
   },
   "candidates_2026": {
    "rep": "Peter Abbarno",
-   "dem": "No candidate"
+   "dem": "Andy Zahn"
   },
   "models": {
    "model_drnatl_all": {
@@ -2331,7 +2371,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Strom Peterson",
      "party": "D"
@@ -2339,11 +2379,12 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Strom Peterson"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Lillian Ortiz-Self",
      "party": "D"
@@ -2351,7 +2392,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Lillian Ortiz-Self"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -2447,19 +2489,20 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Beth Doglio",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Don Hewett",
      "dem": "Beth Doglio"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Lisa Parshley",
      "party": "D"
@@ -2467,7 +2510,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Lisa Parshley"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -2517,7 +2561,7 @@
    "ussen_2022": 68765
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Don Hewett",
    "dem": "Beth Doglio"
   },
   "models": {
@@ -2563,7 +2607,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Tarra Simmons",
      "party": "D"
@@ -2571,19 +2615,21 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Tarra Simmons"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Greg Nance",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Lance Byrd",
      "dem": "Greg Nance"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -2679,30 +2725,32 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Adam Bernbaum",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Eric Pratt",
      "dem": "Adam Bernbaum"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Steve Tharinger",
      "party": "D"
     },
     "candidates": {
      "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "dem": "Kaylee Kuehn"
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 1,
+  "candidate_seats_up": 2,
   "next_election": 2026,
   "demographics": {
    "population": 129771,
@@ -2749,7 +2797,7 @@
    "ussen_2022": 81051
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Eric Pratt",
    "dem": "Adam Bernbaum"
   },
   "models": {
@@ -2795,27 +2843,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Michael Keaton",
      "party": "R"
     },
     "candidates": {
      "rep": "Michael Keaton",
-     "dem": "No candidate"
-    }
+     "dem": "David Berg"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Cyndy Jacobsen",
      "party": "R"
     },
     "candidates": {
      "rep": "Cyndy Jacobsen",
-     "dem": "No candidate"
-    }
+     "dem": "Jenn Strickling"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -2866,7 +2916,7 @@
   },
   "candidates_2026": {
    "rep": "Michael Keaton",
-   "dem": "No candidate"
+   "dem": "David Berg"
   },
   "models": {
    "model_drnatl_all": {
@@ -2911,30 +2961,32 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Adison Richards",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "David Olson",
      "dem": "Adison Richards"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Michelle Caldier",
      "party": "R"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "rep": "Katy Cornell",
+     "dem": "Renee Hernandez Greenfield"
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 1,
+  "candidate_seats_up": 2,
   "next_election": 2026,
   "demographics": {
    "population": 126193,
@@ -2981,7 +3033,7 @@
    "ussen_2022": 75652
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "David Olson",
    "dem": "Adison Richards"
   },
   "models": {
@@ -3027,19 +3079,20 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Laurie Jinkins",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Carole Braaten",
      "dem": "Laurie Jinkins"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Jake Fey",
      "party": "D"
@@ -3047,7 +3100,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Jake Fey"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -3097,7 +3151,7 @@
    "ussen_2022": 59043
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Carole Braaten",
    "dem": "Laurie Jinkins"
   },
   "models": {
@@ -3143,19 +3197,20 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Mari Leavitt",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Kathy Richardson",
      "dem": "Mari Leavitt"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Dan Bronoske",
      "party": "D"
@@ -3163,7 +3218,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Dan Bronoske"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -3213,7 +3269,7 @@
    "ussen_2022": 47183
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Kathy Richardson",
    "dem": "Mari Leavitt"
   },
   "models": {
@@ -3259,7 +3315,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Melanie Morgan",
      "party": "D"
@@ -3267,22 +3323,24 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Melanie Morgan"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Sharlett Mena",
      "party": "D"
     },
     "candidates": {
      "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "dem": "Joe Bushnell"
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 1,
+  "candidate_seats_up": 2,
   "next_election": 2026,
   "demographics": {
    "population": 95041,
@@ -3375,19 +3433,20 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Jamila Taylor",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Tiffany Bowyer",
      "dem": "Jamila Taylor"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Kristine Reeves",
      "party": "D"
@@ -3395,7 +3454,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Kristine Reeves"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -3445,7 +3505,7 @@
    "ussen_2022": 42708
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Tiffany Bowyer",
    "dem": "Jamila Taylor"
   },
   "models": {
@@ -3491,27 +3551,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Drew Stokesbary",
      "party": "R"
     },
     "candidates": {
      "rep": "Drew Stokesbary",
-     "dem": "No candidate"
-    }
+     "dem": "Stephen Szczurko-Walton"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Josh Penner",
      "party": "R"
     },
     "candidates": {
      "rep": "Josh Penner",
-     "dem": "No candidate"
-    }
+     "dem": "John Bielka"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -3562,7 +3624,7 @@
   },
   "candidates_2026": {
    "rep": "Drew Stokesbary",
-   "dem": "No candidate"
+   "dem": "Stephen Szczurko-Walton"
   },
   "models": {
    "model_drnatl_all": {
@@ -3607,19 +3669,20 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Cindy Ryu",
      "party": "D"
     },
     "candidates": {
      "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "dem": "Danica Noble"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Lauren Davis",
      "party": "D"
@@ -3627,10 +3690,11 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Lauren Davis"
-    }
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 1,
+  "candidate_seats_up": 2,
   "next_election": 2026,
   "demographics": {
    "population": 112838,
@@ -3678,7 +3742,7 @@
   },
   "candidates_2026": {
    "rep": "No candidate",
-   "dem": "No candidate"
+   "dem": "Danica Noble"
   },
   "models": {
    "model_drnatl_all": {
@@ -3723,27 +3787,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Edwin Obras",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Chris Martinez",
      "dem": "Edwin Obras"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Mia Gregerson",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Yuri Marinchik",
      "dem": "Mia Gregerson"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -3793,7 +3859,7 @@
    "ussen_2022": 45324
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Chris Martinez",
    "dem": "Edwin Obras"
   },
   "models": {
@@ -3839,7 +3905,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Brianna Thomas",
      "party": "D"
@@ -3847,11 +3913,12 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Brianna Thomas"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Joe Fitzgibbon",
      "party": "D"
@@ -3859,7 +3926,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Joe Fitzgibbon"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -3955,27 +4023,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Dan Griffey",
      "party": "R"
     },
     "candidates": {
      "rep": "Dan Griffey",
-     "dem": "No candidate"
-    }
+     "dem": "Jim Pierson"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Travis Couture",
      "party": "R"
     },
     "candidates": {
      "rep": "Travis Couture",
-     "dem": "No candidate"
-    }
+     "dem": "Maria Littlesun"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -4026,7 +4096,7 @@
   },
   "candidates_2026": {
    "rep": "Dan Griffey",
-   "dem": "No candidate"
+   "dem": "Jim Pierson"
   },
   "models": {
    "model_drnatl_all": {
@@ -4071,7 +4141,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Julia Reed",
      "party": "D"
@@ -4079,11 +4149,12 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Julia Reed"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Liz Berry",
      "party": "D"
@@ -4091,7 +4162,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Liz Berry"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -4187,7 +4259,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Sharon Tomiko Santos",
      "party": "D"
@@ -4195,22 +4267,24 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Sharon Tomiko Santos"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Chipalo Street",
      "party": "D"
     },
     "candidates": {
      "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "dem": "Jaelynn Scott"
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 1,
+  "candidate_seats_up": 2,
   "next_election": 2026,
   "demographics": {
    "population": 115936,
@@ -4303,7 +4377,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Julio Cortes",
      "party": "D"
@@ -4311,11 +4385,12 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Julio Cortes"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Mary Fosse",
      "party": "D"
@@ -4323,7 +4398,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Mary Fosse"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -4419,30 +4495,32 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Sam Low",
      "party": "R"
     },
     "candidates": {
      "rep": "Sam Low",
-     "dem": "No candidate"
-    }
+     "dem": "Kathryn Lewandowsky"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Carolyn Eslick",
      "party": "R"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "rep": "Steve Ewing",
+     "dem": "Ida Keeley"
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 1,
+  "candidate_seats_up": 2,
   "next_election": 2026,
   "demographics": {
    "population": 120797,
@@ -4490,7 +4568,7 @@
   },
   "candidates_2026": {
    "rep": "Sam Low",
-   "dem": "No candidate"
+   "dem": "Kathryn Lewandowsky"
   },
   "models": {
    "model_drnatl_all": {
@@ -4535,19 +4613,20 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Debra Lekanoff",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Cindy Carter",
      "dem": "Debra Lekanoff"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Alex Ramel",
      "party": "D"
@@ -4555,7 +4634,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Alex Ramel"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -4605,7 +4685,7 @@
    "ussen_2022": 76657
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Cindy Carter",
    "dem": "Debra Lekanoff"
   },
   "models": {
@@ -4651,19 +4731,20 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Janice Zahn",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Elle Nguyen",
      "dem": "Janice Zahn"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "My-Linh Thai",
      "party": "D"
@@ -4671,7 +4752,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "My-Linh Thai"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -4721,7 +4803,7 @@
    "ussen_2022": 65400
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Elle Nguyen",
    "dem": "Janice Zahn"
   },
   "models": {
@@ -4767,27 +4849,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Alicia Rule",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Misty Flowers",
      "dem": "Alicia Rule"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Joe Timmons",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Justin Pike",
      "dem": "Joe Timmons"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -4837,7 +4921,7 @@
    "ussen_2022": 76161
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Misty Flowers",
    "dem": "Alicia Rule"
   },
   "models": {
@@ -4883,7 +4967,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Nicole Macri",
      "party": "D"
@@ -4891,11 +4975,12 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Nicole Macri"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Shaun Scott",
      "party": "D"
@@ -4903,7 +4988,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Shaun Scott"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -4999,27 +5085,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Brandy Donaghy",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Chris Elder",
      "dem": "Brandy Donaghy"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "April Berg",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Tonya Stadlman",
      "dem": "April Berg"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -5069,7 +5157,7 @@
    "ussen_2022": 63832
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Chris Elder",
    "dem": "Brandy Donaghy"
   },
   "models": {
@@ -5115,27 +5203,29 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Roger Goodman",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "JoAnn Tolentino",
      "dem": "Roger Goodman"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Larry Springer",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "Larry Springer"
-    }
+     "rep": "John Gibbons",
+     "dem": "Vanessa Kritzer"
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -5185,7 +5275,7 @@
    "ussen_2022": 67733
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "JoAnn Tolentino",
    "dem": "Roger Goodman"
   },
   "models": {
@@ -5231,7 +5321,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Gerry Pollet",
      "party": "D"
@@ -5239,11 +5329,12 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Gerry Pollet"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Darya Farivar",
      "party": "D"
@@ -5251,7 +5342,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Darya Farivar"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -5347,7 +5439,7 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Debra Entenman",
      "party": "D"
@@ -5355,19 +5447,21 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Debra Entenman"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Chris Stearns",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Ted Cooke",
      "dem": "Chris Stearns"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -5463,19 +5557,20 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Osman Salahuddin",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Jeffery Poppe",
      "dem": "Osman Salahuddin"
-    }
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Amy Walen",
      "party": "D"
@@ -5483,7 +5578,8 @@
     "candidates": {
      "rep": "No candidate",
      "dem": "Amy Walen"
-    }
+    },
+    "up_2026": true
    }
   ],
   "candidate_seats_up": 2,
@@ -5533,7 +5629,7 @@
    "ussen_2022": 48193
   },
   "candidates_2026": {
-   "rep": "No candidate",
+   "rep": "Jeffery Poppe",
    "dem": "Osman Salahuddin"
   },
   "models": {
@@ -5579,30 +5675,32 @@
   "members": [
    {
     "seat": 1,
-    "seat_label": "Seat 1",
+    "seat_label": "Position 1",
     "incumbent": {
      "name": "Sharon Wylie",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
-     "dem": "No candidate"
-    }
+     "rep": "Sarah Mittelman",
+     "dem": "Kim Harless"
+    },
+    "up_2026": true
    },
    {
     "seat": 2,
-    "seat_label": "Seat 2",
+    "seat_label": "Position 2",
     "incumbent": {
      "name": "Monica Stonier",
      "party": "D"
     },
     "candidates": {
-     "rep": "No candidate",
+     "rep": "Derek Thompson",
      "dem": "Monica Stonier"
-    }
+    },
+    "up_2026": true
    }
   ],
-  "candidate_seats_up": 1,
+  "candidate_seats_up": 2,
   "next_election": 2026,
   "demographics": {
    "population": 110210,
@@ -5649,8 +5747,8 @@
    "ussen_2022": 50792
   },
   "candidates_2026": {
-   "rep": "No candidate",
-   "dem": "No candidate"
+   "rep": "Sarah Mittelman",
+   "dem": "Kim Harless"
   },
   "models": {
    "model_drnatl_all": {

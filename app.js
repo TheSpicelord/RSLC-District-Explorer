@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260917c";
+import { requireAuth } from "./modules/auth.js?v=20260917d";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -22,7 +22,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260917c";
+} from "./modules/config.js?v=20260917d";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -45,8 +45,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260917c";
-import { state } from "./modules/state.js?v=20260917c";
+} from "./modules/dom.js?v=20260917d";
+import { state } from "./modules/state.js?v=20260917d";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -198,7 +198,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260917c";
+const BUILD_VERSION = "20260917d";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -1917,9 +1917,9 @@ function chamberCompositionStatsForSelectedState() {
 
   for (const rec of records) {
     const members = recordMembers(rec);
-    const seatsUp = state.projectionMode && recordIsUpIn2026(rec)
-      ? Math.max(0, Math.min(candidateSeatCount(rec), members.length || 0))
-      : 0;
+    const upSeats = state.projectionMode && recordIsUpIn2026(rec)
+      ? new Set(membersForCandidateDisplay(rec).map((member) => member.seat))
+      : new Set();
 
     if (!members.length) {
       before.vacant += 1;
@@ -1927,10 +1927,10 @@ function chamberCompositionStatsForSelectedState() {
       continue;
     }
 
-    members.forEach((member, idx) => {
+    members.forEach((member) => {
       const currentCategory = memberSeatCategory(member);
       before[currentCategory] += 1;
-      if (state.projectionMode && idx < seatsUp) {
+      if (state.projectionMode && upSeats.has(member.seat)) {
         after[projectedSeatCategory(rec, member)] += 1;
       } else {
         after[currentCategory] += 1;
@@ -2733,6 +2733,7 @@ function normalizeMemberEntry(member, idx = 0) {
   return {
     seat,
     seat_label: String(member.seat_label || "").trim(),
+    up_2026: typeof member.up_2026 === "boolean" ? member.up_2026 : null,
     incumbent: {
       name: incumbentName,
       party: incumbentParty,
@@ -2746,7 +2747,7 @@ function normalizeMemberEntry(member, idx = 0) {
 
 function normalizeCandidateName(value) {
   const text = String(value || "").trim();
-  if (!text || /^tbd$/i.test(text) || /^unknown$/i.test(text) || /^no candidate$/i.test(text)) return "No candidate";
+  if (!text || /^(tbd|unknown|no candidate|vacant)$/i.test(text)) return "No candidate";
   return text;
 }
 
@@ -2755,19 +2756,55 @@ function hasNamedCandidate(name) {
   return !!text && !/^no candidate$/i.test(text);
 }
 
-function memberIsIncumbentNominee(member, party) {
-  if (!member || !party) return false;
-  const incumbentParty = String(member.incumbent?.party || "").toUpperCase();
-  if (incumbentParty !== party) return false;
-  const incumbentName = String(member.incumbent?.name || "").trim().toUpperCase();
-  if (!incumbentName || incumbentName === "VACANT") return false;
-  const key = party === "R" ? "rep" : "dem";
-  const candidateName = String(member.candidates?.[key] || "").trim().toUpperCase();
-  return !!candidateName && candidateName === incumbentName;
+// Comparison key for "is this candidate the incumbent?". Case, accents,
+// punctuation and spacing never make two spellings different people
+// ("Aaron Márquez" / "Aaron Marquez", "J. Sam Marty" / "J Sam Marty").
+function personNameKey(name) {
+  return String(name || "")
+    .normalize("NFKD")
+    .replace(/[̀-ͯ]/g, "")
+    .toUpperCase()
+    .replace(/[.,'’"-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
-function memberIncumbentRunningFor2026(member) {
-  return memberIsIncumbentNominee(member, "R") || memberIsIncumbentNominee(member, "D");
+function memberIncumbentKey(member, party) {
+  if (!member || !party) return "";
+  if (String(member.incumbent?.party || "").toUpperCase() !== party) return "";
+  if (!hasIncumbentForMember(member)) return "";
+  return personNameKey(member.incumbent?.name);
+}
+
+// Multi-member districts (AZ, ND, SD, VT, MD, NH houses) elect at large, so the
+// workbook's slot numbers are bookkeeping: the incumbent held in slot 1 may be
+// typed into candidate column 2. The incumbent test therefore looks across every
+// member of the district, not just the slot the candidate sits in. `members`
+// defaults to the single member for callers with no record in hand.
+function memberIsIncumbentNominee(member, party, members = [member]) {
+  if (!member || !party) return false;
+  const key = party === "R" ? "rep" : "dem";
+  const candidate = normalizeCandidateName(member.candidates?.[key]);
+  if (!hasNamedCandidate(candidate)) return false;
+  const candidateKey = personNameKey(candidate);
+  return (members || [member]).some((m) => {
+    const incKey = memberIncumbentKey(m, party);
+    return !!incKey && incKey === candidateKey;
+  });
+}
+
+// The mirror question: is this member's incumbent on the ballot anywhere in the
+// district under their own party?
+function memberIncumbentRunningFor2026(member, members = [member]) {
+  const party = String(member?.incumbent?.party || "").trim().toUpperCase();
+  if (party !== "R" && party !== "D") return false;
+  const incKey = memberIncumbentKey(member, party);
+  if (!incKey) return false;
+  const key = party === "R" ? "rep" : "dem";
+  return (members || [member]).some((m) => {
+    const candidate = normalizeCandidateName(m?.candidates?.[key]);
+    return hasNamedCandidate(candidate) && personNameKey(candidate) === incKey;
+  });
 }
 
 function candidateSeatCount(rec) {
@@ -2776,9 +2813,17 @@ function candidateSeatCount(rec) {
   return recordMembers(rec).length;
 }
 
+// Members whose seat is on the 2026 ballot. The generator flags each member
+// (`up_2026`) when it knows which seat is up -- a one-seat ND special in a
+// two-member district can be slot 2. Records without flags fall back to the
+// first `candidate_seats_up` slots.
 function membersForCandidateDisplay(rec) {
   const members = recordMembers(rec).sort((a, b) => Number(a.seat || 0) - Number(b.seat || 0));
   if (!members.length) return [];
+  if (members.some((member) => typeof member.up_2026 === "boolean")) {
+    const flagged = members.filter((member) => member.up_2026 !== false);
+    if (flagged.length) return flagged;
+  }
   const seatsUp = Math.min(candidateSeatCount(rec), members.length);
   return members.slice(0, seatsUp);
 }
@@ -2788,11 +2833,12 @@ function candidateDisplayLines(rec, party, options = {}) {
   const key = party === "R" ? "rep" : "dem";
   const members = membersForCandidateDisplay(rec);
   if (!members.length) return [includeParty ? `No candidate (${party})` : "No candidate"];
+  const allMembers = recordMembers(rec);
 
   const raw = members.map((member) => {
     const baseName = normalizeCandidateName(member.candidates?.[key]);
     const name = short && hasNamedCandidate(baseName) ? shortPersonName(baseName) : baseName;
-    const withInc = `${name}${memberIsIncumbentNominee(member, party) && hasNamedCandidate(baseName) ? "*" : ""}`;
+    const withInc = `${name}${memberIsIncumbentNominee(member, party, allMembers) && hasNamedCandidate(baseName) ? "*" : ""}`;
     const seatPrefix = includeSeatLabel && member.seat_label ? `${member.seat_label}: ` : "";
     const suffix = includeParty ? ` (${party})` : "";
     return `${seatPrefix}${withInc}${suffix}`;
@@ -2808,14 +2854,15 @@ function seatOrderedCandidateLines(rec) {
   if (!members.length) return [];
   const hasSeatLabels = members.some((member) => !!member?.seat_label);
   if (!hasSeatLabels) return [];
+  const allMembers = recordMembers(rec);
 
   const lines = [];
   members.forEach((member, idx) => {
     const seatLabel = member.seat_label ? `${member.seat_label}: ` : "";
     const repName = normalizeCandidateName(member.candidates?.rep);
     const demName = normalizeCandidateName(member.candidates?.dem);
-    const repInc = memberIsIncumbentNominee(member, "R") && hasNamedCandidate(repName) ? "*" : "";
-    const demInc = memberIsIncumbentNominee(member, "D") && hasNamedCandidate(demName) ? "*" : "";
+    const repInc = memberIsIncumbentNominee(member, "R", allMembers) && hasNamedCandidate(repName) ? "*" : "";
+    const demInc = memberIsIncumbentNominee(member, "D", allMembers) && hasNamedCandidate(demName) ? "*" : "";
     lines.push(`${seatLabel}${repName}${repInc} (R)`);
     lines.push(`${seatLabel}${demName}${demInc} (D)`);
     if (idx < members.length - 1) lines.push("");
@@ -4765,13 +4812,19 @@ function popupHtml(properties, joinInfo, rec) {
         });
       })();
 
-  const incumbentParty = String(rec?.incumbent?.party || "").trim().toUpperCase();
-  const incumbentPartyHtml = incumbentParty === "R"
-    ? '(<span class="party-letter-r">R</span>)'
-    : incumbentParty === "D"
-      ? '(<span class="party-letter-d">D</span>)'
-      : '';
-  const incumbentLine = `&nbsp;&nbsp;Inc: ${escapeHtml(String(rec?.incumbent?.name || "Vacant").trim() || "Vacant")} ${incumbentPartyHtml}`;
+  // One line per member so a two-seat district shows both incumbents.
+  const popupMembers = recordMembers(rec);
+  const incumbentLines = (popupMembers.length ? popupMembers : [null]).map((member) => {
+    const party = String(member?.incumbent?.party || "").trim().toUpperCase();
+    const partyHtml = party === "R"
+      ? '(<span class="party-letter-r">R</span>)'
+      : party === "D"
+        ? '(<span class="party-letter-d">D</span>)'
+        : '';
+    const name = member && hasIncumbentForMember(member) ? String(member.incumbent.name).trim() : "Vacant";
+    const seatPrefix = member?.seat_label ? `${member.seat_label} ` : "";
+    return `&nbsp;&nbsp;${escapeHtml(seatPrefix)}Inc: ${escapeHtml(name)} ${partyHtml}`;
+  });
   const tooltipViView  = modelViewKeyForVariant(rec, "vi");
   const tooltipHmView  = modelViewKeyForVariant(rec, "hm");
   const tooltipAllView = modelViewKeyForVariant(rec, "all");
@@ -4783,13 +4836,13 @@ function popupHtml(properties, joinInfo, rec) {
 
   const summaryLines = state.projectionMode
     ? [
-        incumbentLine,
+        ...incumbentLines,
         ...(hmModelLine ? [hmModelLine] : []),
         `&nbsp;&nbsp;${projectionBaseDisplayLabel(rec)}: ${formatMarginHtml(projectionBaseMarginForRecord(rec))}`,
         `&nbsp;&nbsp;Proj 2026: ${formatMarginHtml(projectedMarginForRecord(rec))}`,
       ]
     : [
-        incumbentLine,
+        ...incumbentLines,
         ...(hmModelLine ? [hmModelLine] : []),
         `&nbsp;&nbsp;${latestLegDisplayLabel(rec)}: ${formatMarginHtml(getMarginForView(rec, "latest_leg"))}`,
         `&nbsp;&nbsp;2024 Pres: ${formatMarginHtml(getMarginForView(rec, "pres_2024"))}`,
@@ -5134,13 +5187,20 @@ function incumbentRowsForDetail(rec) {
   if (!members.length) {
     return `<div class="detail-meta incumbent-detail-meta">Incumbent: Vacant</div>`;
   }
+  const districtUp = recordIsUpIn2026(rec);
+  const upSeats = new Set(membersForCandidateDisplay(rec).map((member) => member.seat));
   return members
-    .map((member, idx) => {
-      const fallbackSeat = members.length > 1 ? `Seat ${idx + 1}` : "";
-      const labelBase = member.seat_label || fallbackSeat;
-      const label = labelBase ? `${labelBase} Incumbent` : "Incumbent";
+    .map((member) => {
+      // At-large chambers have no seat numbers, so every line is just "Incumbent".
+      const label = member.seat_label ? `${member.seat_label} Incumbent` : "Incumbent";
+      // A seat that is not on this year's ballot (the other seat of an ND
+      // one-seat special) is neither faded nor starred; say so instead.
+      const seatUp = districtUp && upSeats.has(member.seat);
+      const notUpHtml = districtUp && !seatUp
+        ? ' <span class="detail-meta-muted incumbent-seat-note">(seat not up in 2026)</span>'
+        : "";
       if (!hasIncumbentForMember(member)) {
-        return `<div class="detail-meta detail-meta-muted incumbent-detail-meta">${escapeHtml(label)}: Vacant</div>`;
+        return `<div class="detail-meta detail-meta-muted incumbent-detail-meta">${escapeHtml(label)}: Vacant${notUpHtml}</div>`;
       }
       const name = String(member?.incumbent?.name || "").trim();
       const party = String(member?.incumbent?.party || "").trim().toUpperCase();
@@ -5149,8 +5209,8 @@ function incumbentRowsForDetail(rec) {
         : party === "D"
           ? '(<span class="party-letter-d">D</span>)'
           : "";
-      const fadedClass = recordIsUpIn2026(rec) && !memberIncumbentRunningFor2026(member) ? ' incumbent-detail-meta-faded' : '';
-      return `<div class="detail-meta incumbent-detail-meta${fadedClass}">${escapeHtml(label)}: ${escapeHtml(name)} ${partyHtml}</div>`;
+      const fadedClass = seatUp && !memberIncumbentRunningFor2026(member, members) ? ' incumbent-detail-meta-faded' : '';
+      return `<div class="detail-meta incumbent-detail-meta${fadedClass}">${escapeHtml(label)}: ${escapeHtml(name)} ${partyHtml}${notUpHtml}</div>`;
     })
     .join("");
 }
@@ -5170,16 +5230,50 @@ function candidateRowsForDetail(rec) {
   if (!members.length) {
     return '<div class="candidate-party-cell candidate-party-unavailable">No candidate</div>';
   }
+  const allMembers = recordMembers(rec);
+  const hasSeatLabels = members.some((m) => !!m?.seat_label);
 
-  const showSeatBlocks = members.length > 1 || members.some((m) => !!m?.seat_label);
+  // At-large multi-member districts have no seat 1 / seat 2: the voters pick
+  // the top N. Pool each party's candidates into one list, with the incumbent
+  // star decided against every incumbent in the district.
+  if (members.length > 1 && !hasSeatLabels) {
+    const partyList = (party) => {
+      const key = party === "R" ? "rep" : "dem";
+      const cls = party === "R" ? "candidate-party-r" : "candidate-party-d";
+      const named = members.filter((m) => hasNamedCandidate(normalizeCandidateName(m?.candidates?.[key])));
+      if (!named.length) {
+        return `<div class="candidate-party-cell ${cls} candidate-party-muted">No candidate</div>`;
+      }
+      const cells = named.map((m) => {
+        const name = normalizeCandidateName(m?.candidates?.[key]);
+        const inc = memberIsIncumbentNominee(m, party, allMembers) ? "*" : "";
+        return `<div class="candidate-party-cell ${cls}">${escapeHtml(name + inc)}</div>`;
+      });
+      return `<div class="candidate-party-list">${cells.join("")}</div>`;
+    };
+    return `
+      <div class="candidate-stack">
+        <div class="candidate-stack-row candidate-stack-row-list">
+          <div class="candidate-stack-label candidate-grid-head-r">Republican</div>
+          ${partyList("R")}
+        </div>
+        <div class="candidate-stack-row candidate-stack-row-list">
+          <div class="candidate-stack-label candidate-grid-head-d">Democrat</div>
+          ${partyList("D")}
+        </div>
+      </div>
+    ` + districtNoteHtml(rec);
+  }
+
+  const showSeatBlocks = members.length > 1 || hasSeatLabels;
 
   return members
     .map((member, idx) => {
       const seatLabel = member.seat_label || `Seat ${idx + 1}`;
       const rep = normalizeCandidateName(member?.candidates?.rep);
       const dem = normalizeCandidateName(member?.candidates?.dem);
-      const repInc = memberIsIncumbentNominee(member, "R") && hasNamedCandidate(rep) ? "*" : "";
-      const demInc = memberIsIncumbentNominee(member, "D") && hasNamedCandidate(dem) ? "*" : "";
+      const repInc = memberIsIncumbentNominee(member, "R", allMembers) && hasNamedCandidate(rep) ? "*" : "";
+      const demInc = memberIsIncumbentNominee(member, "D", allMembers) && hasNamedCandidate(dem) ? "*" : "";
       const repClass = hasNamedCandidate(rep) ? "candidate-party-cell candidate-party-r" : "candidate-party-cell candidate-party-r candidate-party-muted";
       const demClass = hasNamedCandidate(dem) ? "candidate-party-cell candidate-party-d" : "candidate-party-cell candidate-party-d candidate-party-muted";
       const seatHeader = showSeatBlocks ? `<div class="candidate-seat-header">${escapeHtml(seatLabel)}</div>` : "";
@@ -5232,7 +5326,7 @@ function incumbentDisplay(rec) {
 
 function isIncumbentNominee(rec) {
   const members = recordMembers(rec);
-  return members.some((member) => memberIsIncumbentNominee(member, "R") || memberIsIncumbentNominee(member, "D"));
+  return members.some((member) => memberIsIncumbentNominee(member, "R", members) || memberIsIncumbentNominee(member, "D", members));
 }
 
 function turnoutByYear(rec) {
