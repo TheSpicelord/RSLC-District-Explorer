@@ -5156,7 +5156,7 @@ function incumbentRowsForDetail(rec) {
 }
 
 function districtNoteHtml(rec) {
-  const note = DISTRICT_NOTES[`${rec?.state_fips}|${rec?.district_id}`];
+  const note = DISTRICT_NOTES[`${rec?.state_fips}|${rec?.district_id}|${state.chamber}`];
   if (!note) return "";
   return `<div class="district-note"><span class="district-note-icon" aria-hidden="true">i</span><span>${escapeHtml(note)}</span></div>`;
 }
