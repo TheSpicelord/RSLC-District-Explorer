@@ -116,6 +116,24 @@ export const DISTRICT_NOTES = {
   "41|038|house": "Nguyen holds both major-party nominations under Oregon's fusion voting; he faces no major-party opponent.",
   "41|039|house": "Dobson holds both major-party nominations under Oregon's fusion voting; she faces no major-party opponent.",
   "41|004|senate": "Prozanski holds both major-party nominations under Oregon's fusion voting; he faces no major-party opponent.",
+  // New York also permits fusion voting; Yeger is a Democrat cross-endorsed by
+  // the GOP and has no major-party opponent.
+  "36|041|house": "Yeger holds both major-party nominations under New York's fusion voting; he faces no major-party opponent.",
+  // California's top-two primary can send two candidates of the SAME party to
+  // the general, leaving the other party genuinely empty. The workbook has one
+  // slot per party, so the second same-party candidate lives in these notes.
+  "06|003|house": "California's top-two primary sent two Republicans to the general: Dom Belza and James Johansson.",
+  "06|006|house": "California's top-two primary sent two Democrats to the general: Maggy Krell and Jagtar Singh.",
+  "06|012|house": "California's top-two primary sent two Democrats to the general: Jackie Elward and Eric Lucan.",
+  "06|018|house": "California's top-two primary sent two Democrats to the general: Mia Bonta and Andre Sandford.",
+  "06|024|senate": "California's top-two primary sent two Democrats to the general: John Erickson and Brian Goldsmith.",
+  "06|026|senate": "California's top-two primary sent two Democrats to the general: Sara Hernandez and Sarah Rascón.",
+  "06|038|house": "California's top-two primary sent two Democrats to the general: Steve Bennett and Michael MacDonald.",
+  "06|051|house": "California's top-two primary sent two Democrats to the general: Rick Chavez Zbur and Colin Hernandez.",
+  "06|055|house": "California's top-two primary sent two Democrats to the general: Isaac Bryan and Ashley Brown.",
+  "06|066|house": "California's top-two primary sent two Democrats to the general: Sara Deen and Paul Seo.",
+  "06|068|house": "California's top-two primary sent two Democrats to the general: Jessie Lopez and David Penaloza.",
+  "06|069|house": "California's top-two primary sent two Democrats to the general: Josh Lowenthal and Carolyn Essex.",
 };
 
 export const OVERSEAS_TERRITORY_FIPS = new Set(["60", "66", "69", "72", "78"]);
