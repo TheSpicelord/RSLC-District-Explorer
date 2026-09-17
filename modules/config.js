@@ -119,6 +119,18 @@ export const DISTRICT_NOTES = {
   // New York also permits fusion voting; Yeger is a Democrat cross-endorsed by
   // the GOP and has no major-party opponent.
   "36|041|house": "Yeger holds both major-party nominations under New York's fusion voting; he faces no major-party opponent.",
+  "02|00C|senate": "AK's top-four primary and ranked-choice general left only Republicans on the ballot; also running: Heath Smith, Louise Stutes.",
+  "02|00E|senate": "AK's top-four primary and ranked-choice general left only Republicans on the ballot; also running: Gretchen Stoddard, Jason White.",
+  "02|024|house": "AK's top-four primary and ranked-choice general left only Republicans on the ballot; also running: Gina Wall.",
+  "02|025|house": "AK's top-four primary and ranked-choice general left only Republicans on the ballot; also running: Michael Bowles.",
+  "02|027|house": "AK's top-four primary and ranked-choice general left only Republicans on the ballot; also running: David Eastman.",
+  "02|033|house": "AK's top-four primary and ranked-choice general left only Republicans on the ballot; also running: Barbara Haney.",
+  "02|040|house": "AK's top-four primary and ranked-choice general left only Democrats on the ballot; also running: Saima Chase.",
+  "53|008|senate": "WA's top-two primary left only Republicans on the ballot; also running: Gabe Galbraith.",
+  "53|029|senate": "WA's top-two primary left only Democrats on the ballot; also running: Sharlett Mena.",
+  "53|032|senate": "WA's top-two primary left only Democrats on the ballot; also running: Cindy Ryu.",
+  "53|037|senate": "WA's top-two primary left only Democrats on the ballot; also running: Chipalo Street.",
+  "53|043|senate": "WA's top-two primary left only Democrats on the ballot; also running: Hannah Sabio-Howell.",
   // California's top-two primary can send two candidates of the SAME party to
   // the general, leaving the other party genuinely empty. The workbook has one
   // slot per party, so the second same-party candidate lives in these notes.
