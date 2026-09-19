@@ -66,8 +66,8 @@
    "gov_2022": 11.1,
    "ussen_2022": 13.0,
    "pres_2024": 7.8,
-   "model_lombardo_all": -9.9,
-   "model_lombardo_hm": -11.1
+   "model_lombardo_all": -4.8,
+   "model_lombardo_hm": -10.0
   },
   "pres_2024_margin": 7.8,
   "gov_2022_margin": 11.1,
@@ -91,47 +91,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 26.4
+       "value": 38.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.6
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.0
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 13.6
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 13.5
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.2
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.1
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.7
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.8
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.3
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 20.5
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 36.0
+       "value": 23.8
       }
      ],
-     "margin": -9.9,
-     "lombardo_base": 26.4,
-     "republicans_bring_home": 2.6,
-     "persuasion_trusts_reps": 13.6,
-     "conflicted_middle": 13.5,
-     "persuasion_trusts_dems": 5.1,
-     "likelier_democrat_voters": 2.8,
-     "ford_base": 36.0
+     "margin": -4.8,
+     "lombardo_base": 38.7,
+     "lombardo_soft_trump": 6.0,
+     "trump_vance_voters": 3.9,
+     "prime_message_targets": 1.2,
+     "stubborn_middle": 0.7,
+     "national_dems": 5.3,
+     "vulnerable_ford": 20.5,
+     "ford_base": 23.8
     }
    },
    "model_lombardo_hm": {
@@ -143,47 +149,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 35.1
+       "value": 36.6
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.9
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.3
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 4.1
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.3
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.9
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.7
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.7
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.5
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 20.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 46.5
+       "value": 26.2
       }
      ],
-     "margin": -11.1,
-     "lombardo_base": 35.1,
-     "republicans_bring_home": 1.9,
-     "persuasion_trusts_reps": 4.3,
-     "conflicted_middle": 6.7,
-     "persuasion_trusts_dems": 3.9,
-     "likelier_democrat_voters": 1.7,
-     "ford_base": 46.5
+     "margin": -10.0,
+     "lombardo_base": 36.6,
+     "lombardo_soft_trump": 5.3,
+     "trump_vance_voters": 4.1,
+     "prime_message_targets": 1.3,
+     "stubborn_middle": 0.7,
+     "national_dems": 5.5,
+     "vulnerable_ford": 20.3,
+     "ford_base": 26.2
     }
    }
   }
@@ -255,8 +267,8 @@
    "gov_2022": -3.8,
    "ussen_2022": -1.1,
    "pres_2024": -5.6,
-   "model_lombardo_all": 1.5,
-   "model_lombardo_hm": 4.2
+   "model_lombardo_all": 7.0,
+   "model_lombardo_hm": 5.8
   },
   "pres_2024_margin": -5.6,
   "gov_2022_margin": -3.8,
@@ -280,47 +292,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 32.5
+       "value": 44.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.5
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 10.9
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.7
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 14.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.4
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.7
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.9
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.3
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 9.0
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 15.0
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 30.2
+       "value": 20.0
       }
      ],
-     "margin": 1.5,
-     "lombardo_base": 32.5,
-     "republicans_bring_home": 2.5,
-     "persuasion_trusts_reps": 10.9,
-     "conflicted_middle": 14.8,
-     "persuasion_trusts_dems": 5.7,
-     "likelier_democrat_voters": 3.3,
-     "ford_base": 30.2
+     "margin": 7.0,
+     "lombardo_base": 44.7,
+     "lombardo_soft_trump": 6.4,
+     "trump_vance_voters": 1.7,
+     "prime_message_targets": 1.4,
+     "stubborn_middle": 1.9,
+     "national_dems": 9.0,
+     "vulnerable_ford": 15.0,
+     "ford_base": 20.0
     }
    },
    "model_lombardo_hm": {
@@ -332,47 +350,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 42.1
+       "value": 43.9
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.4
+      },
+      {
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
        "value": 1.8
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.6
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.6
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 7.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.0
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.4
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 8.8
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.1
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 14.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 37.6
+       "value": 20.9
       }
      ],
-     "margin": 4.2,
-     "lombardo_base": 42.1,
-     "republicans_bring_home": 1.8,
-     "persuasion_trusts_reps": 4.6,
-     "conflicted_middle": 7.4,
-     "persuasion_trusts_dems": 4.4,
-     "likelier_democrat_voters": 2.1,
-     "ford_base": 37.6
+     "margin": 5.8,
+     "lombardo_base": 43.9,
+     "lombardo_soft_trump": 6.4,
+     "trump_vance_voters": 1.8,
+     "prime_message_targets": 1.6,
+     "stubborn_middle": 2.0,
+     "national_dems": 8.8,
+     "vulnerable_ford": 14.7,
+     "ford_base": 20.9
     }
    }
   }
@@ -444,8 +468,8 @@
    "gov_2022": 9.4,
    "ussen_2022": 11.4,
    "pres_2024": 7.5,
-   "model_lombardo_all": -14.8,
-   "model_lombardo_hm": -13.1
+   "model_lombardo_all": -11.1,
+   "model_lombardo_hm": -13.6
   },
   "pres_2024_margin": 7.5,
   "gov_2022_margin": 9.4,
@@ -469,47 +493,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 23.2
+       "value": 38.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.9
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 12.1
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.2
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.0
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 7.7
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.5
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.1
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 26.8
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 37.5
+       "value": 23.3
       }
      ],
-     "margin": -14.8,
-     "lombardo_base": 23.2,
-     "republicans_bring_home": 1.9,
-     "persuasion_trusts_reps": 12.1,
-     "conflicted_middle": 15.0,
-     "persuasion_trusts_dems": 7.7,
-     "likelier_democrat_voters": 2.5,
-     "ford_base": 37.5
+     "margin": -11.1,
+     "lombardo_base": 38.7,
+     "lombardo_soft_trump": 4.4,
+     "trump_vance_voters": 1.2,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.6,
+     "national_dems": 4.1,
+     "vulnerable_ford": 26.8,
+     "ford_base": 23.3
     }
    },
    "model_lombardo_hm": {
@@ -521,47 +551,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 34.9
+       "value": 37.8
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.0
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 3.2
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.3
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.6
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.7
+      },
+      {
+       "key": "national_dems",
+       "label": "National Dems",
        "value": 4.7
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.6
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 26.0
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 48.2
+       "value": 24.7
       }
      ],
-     "margin": -13.1,
-     "lombardo_base": 34.9,
-     "republicans_bring_home": 1.7,
-     "persuasion_trusts_reps": 3.2,
-     "conflicted_middle": 5.6,
-     "persuasion_trusts_dems": 4.7,
-     "likelier_democrat_voters": 1.6,
-     "ford_base": 48.2
+     "margin": -13.6,
+     "lombardo_base": 37.8,
+     "lombardo_soft_trump": 4.0,
+     "trump_vance_voters": 1.3,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 0.7,
+     "national_dems": 4.7,
+     "vulnerable_ford": 26.0,
+     "ford_base": 24.7
     }
    }
   }
@@ -633,8 +669,8 @@
    "gov_2022": -6.2,
    "ussen_2022": -4.0,
    "pres_2024": -8.1,
-   "model_lombardo_all": 1.8,
-   "model_lombardo_hm": 6.5
+   "model_lombardo_all": 10.0,
+   "model_lombardo_hm": 6.8
   },
   "pres_2024_margin": -8.1,
   "gov_2022_margin": -6.2,
@@ -658,47 +694,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 32.7
+       "value": 47.9
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.6
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.5
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 12.2
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.7
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 13.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.2
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.7
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.9
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 20.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 30.4
+       "value": 16.1
       }
      ],
-     "margin": 1.8,
-     "lombardo_base": 32.7,
-     "republicans_bring_home": 2.6,
-     "persuasion_trusts_reps": 12.2,
-     "conflicted_middle": 13.8,
-     "persuasion_trusts_dems": 5.2,
-     "likelier_democrat_voters": 3.1,
-     "ford_base": 30.4
+     "margin": 10.0,
+     "lombardo_base": 47.9,
+     "lombardo_soft_trump": 4.5,
+     "trump_vance_voters": 3.7,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 0.7,
+     "national_dems": 5.9,
+     "vulnerable_ford": 20.3,
+     "ford_base": 16.1
     }
    },
    "model_lombardo_hm": {
@@ -710,47 +752,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 44.1
+       "value": 46.6
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.0
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.0
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.3
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.3
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.7
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.8
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.8
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.6
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 19.6
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 37.8
+       "value": 17.5
       }
      ],
-     "margin": 6.5,
-     "lombardo_base": 44.1,
-     "republicans_bring_home": 2.0,
-     "persuasion_trusts_reps": 4.3,
-     "conflicted_middle": 6.3,
-     "persuasion_trusts_dems": 3.7,
-     "likelier_democrat_voters": 1.8,
-     "ford_base": 37.8
+     "margin": 6.8,
+     "lombardo_base": 46.6,
+     "lombardo_soft_trump": 4.0,
+     "trump_vance_voters": 3.9,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 0.8,
+     "national_dems": 6.6,
+     "vulnerable_ford": 19.6,
+     "ford_base": 17.5
     }
    }
   }
@@ -822,8 +870,8 @@
    "gov_2022": 8.0,
    "ussen_2022": 9.9,
    "pres_2024": 2.1,
-   "model_lombardo_all": -5.7,
-   "model_lombardo_hm": -6.4
+   "model_lombardo_all": -1.7,
+   "model_lombardo_hm": -6.8
   },
   "pres_2024_margin": 2.1,
   "gov_2022_margin": 8.0,
@@ -847,47 +895,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 27.4
+       "value": 42.5
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.6
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.0
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 13.8
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.6
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.0
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.5
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.9
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.3
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.0
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 20.6
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 32.5
+       "value": 22.6
       }
      ],
-     "margin": -5.7,
-     "lombardo_base": 27.4,
-     "republicans_bring_home": 2.6,
-     "persuasion_trusts_reps": 13.8,
-     "conflicted_middle": 15.0,
-     "persuasion_trusts_dems": 5.5,
-     "likelier_democrat_voters": 3.3,
-     "ford_base": 32.5
+     "margin": -1.7,
+     "lombardo_base": 42.5,
+     "lombardo_soft_trump": 5.0,
+     "trump_vance_voters": 1.6,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.9,
+     "national_dems": 6.0,
+     "vulnerable_ford": 20.6,
+     "ford_base": 22.6
     }
    },
    "model_lombardo_hm": {
@@ -899,47 +953,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 37.2
+       "value": 40.0
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.1
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.7
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.5
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.8
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.1
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.4
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 21.2
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 43.6
+       "value": 23.9
       }
      ],
-     "margin": -6.4,
-     "lombardo_base": 37.2,
-     "republicans_bring_home": 2.1,
-     "persuasion_trusts_reps": 4.5,
-     "conflicted_middle": 6.7,
-     "persuasion_trusts_dems": 3.8,
-     "likelier_democrat_voters": 2.1,
-     "ford_base": 43.6
+     "margin": -6.8,
+     "lombardo_base": 40.0,
+     "lombardo_soft_trump": 4.7,
+     "trump_vance_voters": 1.8,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 1.1,
+     "national_dems": 6.4,
+     "vulnerable_ford": 21.2,
+     "ford_base": 23.9
     }
    }
   }
@@ -1011,8 +1071,8 @@
    "gov_2022": 60.3,
    "ussen_2022": 62.3,
    "pres_2024": 49.8,
-   "model_lombardo_all": -40.4,
-   "model_lombardo_hm": -62.4
+   "model_lombardo_all": -60.0,
+   "model_lombardo_hm": -66.4
   },
   "pres_2024_margin": 49.8,
   "gov_2022_margin": 60.3,
@@ -1036,47 +1096,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 9.2
+       "value": 14.8
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.5
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 3.7
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 10.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.1
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 16.6
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.7
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 11.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.6
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 10.6
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 35.6
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 47.6
+       "value": 32.2
       }
      ],
-     "margin": -40.4,
-     "lombardo_base": 9.2,
-     "republicans_bring_home": 1.5,
-     "persuasion_trusts_reps": 10.0,
-     "conflicted_middle": 16.6,
-     "persuasion_trusts_dems": 11.4,
-     "likelier_democrat_voters": 3.6,
-     "ford_base": 47.6
+     "margin": -60.0,
+     "lombardo_base": 14.8,
+     "lombardo_soft_trump": 3.7,
+     "trump_vance_voters": 2.1,
+     "prime_message_targets": 0.7,
+     "stubborn_middle": 0.2,
+     "national_dems": 10.6,
+     "vulnerable_ford": 35.6,
+     "ford_base": 32.2
     }
    },
    "model_lombardo_hm": {
@@ -1088,47 +1154,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 12.1
+       "value": 12.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.2
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 2.9
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 1.8
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 3.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.6
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.3
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.5
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 11.4
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 34.9
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 73.2
+       "value": 35.7
       }
      ],
-     "margin": -62.4,
-     "lombardo_base": 12.1,
-     "republicans_bring_home": 1.2,
-     "persuasion_trusts_reps": 1.8,
-     "conflicted_middle": 3.8,
-     "persuasion_trusts_dems": 5.4,
-     "likelier_democrat_voters": 2.5,
-     "ford_base": 73.2
+     "margin": -66.4,
+     "lombardo_base": 12.7,
+     "lombardo_soft_trump": 2.9,
+     "trump_vance_voters": 1.5,
+     "prime_message_targets": 0.6,
+     "stubborn_middle": 0.3,
+     "national_dems": 11.4,
+     "vulnerable_ford": 34.9,
+     "ford_base": 35.7
     }
    }
   }
@@ -1200,8 +1272,8 @@
    "gov_2022": 27.7,
    "ussen_2022": 29.6,
    "pres_2024": 23.6,
-   "model_lombardo_all": -25.0,
-   "model_lombardo_hm": -31.0
+   "model_lombardo_all": -25.6,
+   "model_lombardo_hm": -31.1
   },
   "pres_2024_margin": 23.6,
   "gov_2022_margin": 27.7,
@@ -1225,47 +1297,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 18.1
+       "value": 32.0
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.2
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.0
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 14.4
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 12.9
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.7
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 7.2
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.6
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 3.2
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 38.0
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 42.7
+       "value": 20.5
       }
      ],
-     "margin": -25.0,
-     "lombardo_base": 18.1,
-     "republicans_bring_home": 2.2,
-     "persuasion_trusts_reps": 14.4,
-     "conflicted_middle": 12.9,
-     "persuasion_trusts_dems": 7.2,
-     "likelier_democrat_voters": 2.6,
-     "ford_base": 42.7
+     "margin": -25.6,
+     "lombardo_base": 32.0,
+     "lombardo_soft_trump": 4.0,
+     "trump_vance_voters": 1.5,
+     "prime_message_targets": 0.7,
+     "stubborn_middle": 0.2,
+     "national_dems": 3.2,
+     "vulnerable_ford": 38.0,
+     "ford_base": 20.5
     }
    },
    "model_lombardo_hm": {
@@ -1277,47 +1355,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 26.4
+       "value": 29.5
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.8
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 3.8
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.5
+      },
+      {
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.2
+      },
+      {
+       "key": "national_dems",
+       "label": "National Dems",
        "value": 3.6
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.0
-      },
-      {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.9
-      },
-      {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.7
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 38.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 57.5
+       "value": 22.1
       }
      ],
-     "margin": -31.0,
-     "lombardo_base": 26.4,
-     "republicans_bring_home": 1.8,
-     "persuasion_trusts_reps": 3.6,
-     "conflicted_middle": 5.0,
-     "persuasion_trusts_dems": 3.9,
-     "likelier_democrat_voters": 1.7,
-     "ford_base": 57.5
+     "margin": -31.1,
+     "lombardo_base": 29.5,
+     "lombardo_soft_trump": 3.8,
+     "trump_vance_voters": 1.5,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.2,
+     "national_dems": 3.6,
+     "vulnerable_ford": 38.7,
+     "ford_base": 22.1
     }
    }
   }
@@ -1389,8 +1473,8 @@
    "gov_2022": 10.7,
    "ussen_2022": 12.4,
    "pres_2024": 2.5,
-   "model_lombardo_all": -8.0,
-   "model_lombardo_hm": -13.7
+   "model_lombardo_all": -2.7,
+   "model_lombardo_hm": -10.9
   },
   "pres_2024_margin": 2.5,
   "gov_2022_margin": 10.7,
@@ -1414,47 +1498,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 25.1
+       "value": 40.9
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.4
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 16.2
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.9
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.0
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.0
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 4.3
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.2
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 22.2
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 31.2
+       "value": 20.8
       }
      ],
-     "margin": -8.0,
-     "lombardo_base": 25.1,
-     "republicans_bring_home": 2.4,
-     "persuasion_trusts_reps": 16.2,
-     "conflicted_middle": 15.9,
-     "persuasion_trusts_dems": 5.0,
-     "likelier_democrat_voters": 4.3,
-     "ford_base": 31.2
+     "margin": -2.7,
+     "lombardo_base": 40.9,
+     "lombardo_soft_trump": 6.4,
+     "trump_vance_voters": 0.9,
+     "prime_message_targets": 1.0,
+     "stubborn_middle": 0.6,
+     "national_dems": 7.2,
+     "vulnerable_ford": 22.2,
+     "ford_base": 20.8
     }
    },
    "model_lombardo_hm": {
@@ -1466,47 +1556,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 33.0
+       "value": 37.0
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.6
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.2
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 5.2
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 7.9
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.9
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.7
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.9
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.7
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 22.6
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 45.5
+       "value": 23.9
       }
      ],
-     "margin": -13.7,
-     "lombardo_base": 33.0,
-     "republicans_bring_home": 1.6,
-     "persuasion_trusts_reps": 5.2,
-     "conflicted_middle": 7.9,
-     "persuasion_trusts_dems": 3.9,
-     "likelier_democrat_voters": 2.9,
-     "ford_base": 45.5
+     "margin": -10.9,
+     "lombardo_base": 37.0,
+     "lombardo_soft_trump": 6.2,
+     "trump_vance_voters": 0.9,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 0.7,
+     "national_dems": 7.7,
+     "vulnerable_ford": 22.6,
+     "ford_base": 23.9
     }
    }
   }
@@ -1578,8 +1674,8 @@
    "gov_2022": 6.5,
    "ussen_2022": 8.1,
    "pres_2024": 0.5,
-   "model_lombardo_all": -5.0,
-   "model_lombardo_hm": -5.8
+   "model_lombardo_all": -0.7,
+   "model_lombardo_hm": -4.2
   },
   "pres_2024_margin": 0.5,
   "gov_2022_margin": 6.5,
@@ -1603,47 +1699,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 27.1
+       "value": 40.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 7.5
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 14.2
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.1
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 4.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.4
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 19.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 30.7
+       "value": 21.7
       }
      ],
-     "margin": -5.0,
-     "lombardo_base": 27.1,
-     "republicans_bring_home": 2.7,
-     "persuasion_trusts_reps": 14.2,
-     "conflicted_middle": 15.7,
-     "persuasion_trusts_dems": 5.4,
-     "likelier_democrat_voters": 4.1,
-     "ford_base": 30.7
+     "margin": -0.7,
+     "lombardo_base": 40.7,
+     "lombardo_soft_trump": 7.5,
+     "trump_vance_voters": 0.9,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 1.1,
+     "national_dems": 7.4,
+     "vulnerable_ford": 19.7,
+     "ford_base": 21.7
     }
    },
    "model_lombardo_hm": {
@@ -1655,47 +1757,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 36.4
+       "value": 39.0
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.0
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 7.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 5.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 7.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.2
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.5
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.5
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 19.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 41.7
+       "value": 23.8
       }
      ],
-     "margin": -5.8,
-     "lombardo_base": 36.4,
-     "republicans_bring_home": 2.0,
-     "persuasion_trusts_reps": 5.0,
-     "conflicted_middle": 7.8,
-     "persuasion_trusts_dems": 4.4,
-     "likelier_democrat_voters": 2.5,
-     "ford_base": 41.7
+     "margin": -4.2,
+     "lombardo_base": 39.0,
+     "lombardo_soft_trump": 7.3,
+     "trump_vance_voters": 0.9,
+     "prime_message_targets": 1.2,
+     "stubborn_middle": 1.2,
+     "national_dems": 7.5,
+     "vulnerable_ford": 19.1,
+     "ford_base": 23.8
     }
    }
   }
@@ -1767,8 +1875,8 @@
    "gov_2022": 16.8,
    "ussen_2022": 19.3,
    "pres_2024": 12.6,
-   "model_lombardo_all": -18.9,
-   "model_lombardo_hm": -20.8
+   "model_lombardo_all": -19.5,
+   "model_lombardo_hm": -20.7
   },
   "pres_2024_margin": 12.6,
   "gov_2022_margin": 16.8,
@@ -1792,47 +1900,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 20.7
+       "value": 32.8
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.2
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 11.6
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.0
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 16.2
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.7
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 8.5
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.9
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.0
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.2
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 31.8
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 38.3
+       "value": 21.4
       }
      ],
-     "margin": -18.9,
-     "lombardo_base": 20.7,
-     "republicans_bring_home": 1.7,
-     "persuasion_trusts_reps": 11.6,
-     "conflicted_middle": 16.2,
-     "persuasion_trusts_dems": 8.5,
-     "likelier_democrat_voters": 3.0,
-     "ford_base": 38.3
+     "margin": -19.5,
+     "lombardo_base": 32.8,
+     "lombardo_soft_trump": 6.2,
+     "trump_vance_voters": 1.0,
+     "prime_message_targets": 0.7,
+     "stubborn_middle": 0.9,
+     "national_dems": 5.2,
+     "vulnerable_ford": 31.8,
+     "ford_base": 21.4
     }
    },
    "model_lombardo_hm": {
@@ -1844,47 +1958,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 31.1
+       "value": 32.5
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.5
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.9
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 3.2
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.6
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.9
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.0
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.0
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.6
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 30.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 51.4
+       "value": 22.9
       }
      ],
-     "margin": -20.8,
-     "lombardo_base": 31.1,
-     "republicans_bring_home": 1.5,
-     "persuasion_trusts_reps": 3.2,
-     "conflicted_middle": 5.8,
-     "persuasion_trusts_dems": 4.9,
-     "likelier_democrat_voters": 2.0,
-     "ford_base": 51.4
+     "margin": -20.7,
+     "lombardo_base": 32.5,
+     "lombardo_soft_trump": 5.9,
+     "trump_vance_voters": 0.9,
+     "prime_message_targets": 0.6,
+     "stubborn_middle": 1.0,
+     "national_dems": 5.6,
+     "vulnerable_ford": 30.7,
+     "ford_base": 22.9
     }
    }
   }
@@ -1956,8 +2076,8 @@
    "gov_2022": 44.1,
    "ussen_2022": 48.0,
    "pres_2024": 34.6,
-   "model_lombardo_all": -32.3,
-   "model_lombardo_hm": -49.2
+   "model_lombardo_all": -55.9,
+   "model_lombardo_hm": -57.1
   },
   "pres_2024_margin": 34.6,
   "gov_2022_margin": 44.1,
@@ -1984,44 +2104,50 @@
        "value": 11.6
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.2
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 8.2
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 9.3
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.0
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.4
+      },
+      {
+       "key": "national_dems",
+       "label": "National Dems",
        "value": 18.5
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 14.3
-      },
-      {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 4.1
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 30.9
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 41.0
+       "value": 26.3
       }
      ],
-     "margin": -32.3,
+     "margin": -55.9,
      "lombardo_base": 11.6,
-     "republicans_bring_home": 1.2,
-     "persuasion_trusts_reps": 9.3,
-     "conflicted_middle": 18.5,
-     "persuasion_trusts_dems": 14.3,
-     "likelier_democrat_voters": 4.1,
-     "ford_base": 41.0
+     "lombardo_soft_trump": 8.2,
+     "trump_vance_voters": 3.0,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 0.4,
+     "national_dems": 18.5,
+     "vulnerable_ford": 30.9,
+     "ford_base": 26.3
     }
    },
    "model_lombardo_hm": {
@@ -2033,47 +2159,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 16.5
+       "value": 11.9
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.3
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 7.5
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 2.8
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.7
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.6
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.0
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 6.8
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.5
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.8
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 19.4
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 29.5
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 64.2
+       "value": 27.5
       }
      ],
-     "margin": -49.2,
-     "lombardo_base": 16.5,
-     "republicans_bring_home": 1.3,
-     "persuasion_trusts_reps": 2.8,
-     "conflicted_middle": 5.6,
-     "persuasion_trusts_dems": 6.8,
-     "likelier_democrat_voters": 2.8,
-     "ford_base": 64.2
+     "margin": -57.1,
+     "lombardo_base": 11.9,
+     "lombardo_soft_trump": 7.5,
+     "trump_vance_voters": 2.7,
+     "prime_message_targets": 1.0,
+     "stubborn_middle": 0.5,
+     "national_dems": 19.4,
+     "vulnerable_ford": 29.5,
+     "ford_base": 27.5
     }
    }
   }
@@ -2145,8 +2277,8 @@
    "gov_2022": 4.3,
    "ussen_2022": 6.0,
    "pres_2024": 0.9,
-   "model_lombardo_all": -8.5,
-   "model_lombardo_hm": -4.6
+   "model_lombardo_all": -2.0,
+   "model_lombardo_hm": -2.8
   },
   "pres_2024_margin": 0.9,
   "gov_2022_margin": 4.3,
@@ -2170,47 +2302,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 26.2
+       "value": 41.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.5
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 14.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.3
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 14.1
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.9
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.8
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.0
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 3.8
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 26.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 35.3
+       "value": 18.9
       }
      ],
-     "margin": -8.5,
-     "lombardo_base": 26.2,
-     "republicans_bring_home": 2.5,
-     "persuasion_trusts_reps": 14.0,
-     "conflicted_middle": 14.1,
-     "persuasion_trusts_dems": 5.9,
-     "likelier_democrat_voters": 2.0,
-     "ford_base": 35.3
+     "margin": -2.0,
+     "lombardo_base": 41.7,
+     "lombardo_soft_trump": 5.3,
+     "trump_vance_voters": 2.3,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.8,
+     "national_dems": 3.8,
+     "vulnerable_ford": 26.3,
+     "ford_base": 18.9
     }
    },
    "model_lombardo_hm": {
@@ -2222,47 +2360,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 38.7
+       "value": 41.4
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.0
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.2
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.3
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.0
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.0
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.9
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.5
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.3
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 24.8
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 43.8
+       "value": 20.3
       }
      ],
-     "margin": -4.6,
-     "lombardo_base": 38.7,
-     "republicans_bring_home": 2.0,
-     "persuasion_trusts_reps": 4.0,
-     "conflicted_middle": 6.0,
-     "persuasion_trusts_dems": 4.0,
-     "likelier_democrat_voters": 1.5,
-     "ford_base": 43.8
+     "margin": -2.8,
+     "lombardo_base": 41.4,
+     "lombardo_soft_trump": 5.2,
+     "trump_vance_voters": 2.3,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 0.9,
+     "national_dems": 4.3,
+     "vulnerable_ford": 24.8,
+     "ford_base": 20.3
     }
    }
   }
@@ -2334,8 +2478,8 @@
    "gov_2022": -8.1,
    "ussen_2022": -5.7,
    "pres_2024": -8.5,
-   "model_lombardo_all": 3.9,
-   "model_lombardo_hm": 7.4
+   "model_lombardo_all": 10.4,
+   "model_lombardo_hm": 8.2
   },
   "pres_2024_margin": -8.5,
   "gov_2022_margin": -8.1,
@@ -2359,47 +2503,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 33.7
+       "value": 46.6
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.8
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 11.6
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.3
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 13.9
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.3
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.9
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.4
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.1
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 16.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 29.3
+       "value": 20.4
       }
      ],
-     "margin": 3.9,
-     "lombardo_base": 33.7,
-     "republicans_bring_home": 2.8,
-     "persuasion_trusts_reps": 11.6,
-     "conflicted_middle": 13.9,
-     "persuasion_trusts_dems": 5.3,
-     "likelier_democrat_voters": 3.4,
-     "ford_base": 29.3
+     "margin": 10.4,
+     "lombardo_base": 46.6,
+     "lombardo_soft_trump": 6.4,
+     "trump_vance_voters": 2.3,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 0.9,
+     "national_dems": 6.1,
+     "vulnerable_ford": 16.1,
+     "ford_base": 20.4
     }
    },
    "model_lombardo_hm": {
@@ -2411,47 +2561,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 44.3
+       "value": 46.1
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.0
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.7
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.3
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.2
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.8
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.9
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.3
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 15.2
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 36.8
+       "value": 22.0
       }
      ],
-     "margin": 7.4,
-     "lombardo_base": 44.3,
-     "republicans_bring_home": 2.0,
-     "persuasion_trusts_reps": 4.3,
-     "conflicted_middle": 6.7,
-     "persuasion_trusts_dems": 3.8,
-     "likelier_democrat_voters": 2.1,
-     "ford_base": 36.8
+     "margin": 8.2,
+     "lombardo_base": 46.1,
+     "lombardo_soft_trump": 5.7,
+     "trump_vance_voters": 2.5,
+     "prime_message_targets": 1.2,
+     "stubborn_middle": 0.9,
+     "national_dems": 6.3,
+     "vulnerable_ford": 15.2,
+     "ford_base": 22.0
     }
    }
   }
@@ -2523,8 +2679,8 @@
    "gov_2022": 30.3,
    "ussen_2022": 32.2,
    "pres_2024": 21.3,
-   "model_lombardo_all": -25.9,
-   "model_lombardo_hm": -36.1
+   "model_lombardo_all": -37.2,
+   "model_lombardo_hm": -40.6
   },
   "pres_2024_margin": 21.3,
   "gov_2022_margin": 30.3,
@@ -2548,47 +2704,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 15.5
+       "value": 23.6
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.5
+      },
+      {
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
        "value": 1.8
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 12.4
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 18.1
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.2
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 9.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.4
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.5
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 37.0
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 40.6
+       "value": 22.9
       }
      ],
-     "margin": -25.9,
-     "lombardo_base": 15.5,
-     "republicans_bring_home": 1.8,
-     "persuasion_trusts_reps": 12.4,
-     "conflicted_middle": 18.1,
-     "persuasion_trusts_dems": 9.1,
-     "likelier_democrat_voters": 2.5,
-     "ford_base": 40.6
+     "margin": -37.2,
+     "lombardo_base": 23.6,
+     "lombardo_soft_trump": 6.5,
+     "trump_vance_voters": 1.8,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.2,
+     "national_dems": 7.4,
+     "vulnerable_ford": 37.0,
+     "ford_base": 22.9
     }
    },
    "model_lombardo_hm": {
@@ -2600,47 +2762,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 23.4
+       "value": 22.8
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.7
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 3.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.4
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.0
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.9
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 35.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 59.2
+       "value": 25.5
       }
      ],
-     "margin": -36.1,
-     "lombardo_base": 23.4,
-     "republicans_bring_home": 1.7,
-     "persuasion_trusts_reps": 3.0,
-     "conflicted_middle": 5.4,
-     "persuasion_trusts_dems": 5.4,
-     "likelier_democrat_voters": 2.0,
-     "ford_base": 59.2
+     "margin": -40.6,
+     "lombardo_base": 22.8,
+     "lombardo_soft_trump": 5.7,
+     "trump_vance_voters": 1.5,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.2,
+     "national_dems": 7.9,
+     "vulnerable_ford": 35.7,
+     "ford_base": 25.5
     }
    }
   }
@@ -2712,8 +2880,8 @@
    "gov_2022": 24.7,
    "ussen_2022": 27.2,
    "pres_2024": 18.8,
-   "model_lombardo_all": -24.0,
-   "model_lombardo_hm": -30.2
+   "model_lombardo_all": -33.5,
+   "model_lombardo_hm": -34.0
   },
   "pres_2024_margin": 18.8,
   "gov_2022_margin": 24.7,
@@ -2737,47 +2905,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 16.2
+       "value": 22.4
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 9.3
+      },
+      {
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
        "value": 1.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 10.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 18.1
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 11.9
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 9.7
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 5.1
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 35.0
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 36.5
+       "value": 20.5
       }
      ],
-     "margin": -24.0,
-     "lombardo_base": 16.2,
-     "republicans_bring_home": 1.4,
-     "persuasion_trusts_reps": 10.8,
-     "conflicted_middle": 18.1,
-     "persuasion_trusts_dems": 11.9,
-     "likelier_democrat_voters": 5.1,
-     "ford_base": 36.5
+     "margin": -33.5,
+     "lombardo_base": 22.4,
+     "lombardo_soft_trump": 9.3,
+     "trump_vance_voters": 1.4,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 1.1,
+     "national_dems": 9.7,
+     "vulnerable_ford": 35.0,
+     "ford_base": 20.5
     }
    },
    "model_lombardo_hm": {
@@ -2789,47 +2963,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 25.6
+       "value": 22.5
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 8.8
+      },
+      {
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.3
+      },
+      {
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
        "value": 1.2
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 2.9
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 10.3
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.7
-      },
-      {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 6.6
-      },
-      {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.1
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 34.2
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 53.9
+       "value": 20.9
       }
      ],
-     "margin": -30.2,
-     "lombardo_base": 25.6,
-     "republicans_bring_home": 1.2,
-     "persuasion_trusts_reps": 2.9,
-     "conflicted_middle": 6.7,
-     "persuasion_trusts_dems": 6.6,
-     "likelier_democrat_voters": 3.1,
-     "ford_base": 53.9
+     "margin": -34.0,
+     "lombardo_base": 22.5,
+     "lombardo_soft_trump": 8.8,
+     "trump_vance_voters": 1.3,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 1.2,
+     "national_dems": 10.3,
+     "vulnerable_ford": 34.2,
+     "ford_base": 20.9
     }
    }
   }
@@ -2901,8 +3081,8 @@
    "gov_2022": 8.7,
    "ussen_2022": 10.5,
    "pres_2024": 4.3,
-   "model_lombardo_all": -11.3,
-   "model_lombardo_hm": -10.5
+   "model_lombardo_all": -7.9,
+   "model_lombardo_hm": -9.9
   },
   "pres_2024_margin": 4.3,
   "gov_2022_margin": 8.7,
@@ -2926,47 +3106,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 23.7
+       "value": 38.3
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.1
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.8
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 13.4
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 16.4
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.7
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 7.3
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.5
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.5
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.8
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 26.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 33.6
+       "value": 21.0
       }
      ],
-     "margin": -11.3,
-     "lombardo_base": 23.7,
-     "republicans_bring_home": 2.1,
-     "persuasion_trusts_reps": 13.4,
-     "conflicted_middle": 16.4,
-     "persuasion_trusts_dems": 7.3,
-     "likelier_democrat_voters": 3.5,
-     "ford_base": 33.6
+     "margin": -7.9,
+     "lombardo_base": 38.3,
+     "lombardo_soft_trump": 6.8,
+     "trump_vance_voters": 0.5,
+     "prime_message_targets": 0.7,
+     "stubborn_middle": 0.5,
+     "national_dems": 5.8,
+     "vulnerable_ford": 26.3,
+     "ford_base": 21.0
     }
    },
    "model_lombardo_hm": {
@@ -2978,47 +3164,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 35.5
+       "value": 37.4
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.9
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.6
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.2
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.2
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.7
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.9
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 26.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 45.7
+       "value": 21.7
       }
      ],
-     "margin": -10.5,
-     "lombardo_base": 35.5,
-     "republicans_bring_home": 1.9,
-     "persuasion_trusts_reps": 4.2,
-     "conflicted_middle": 6.2,
-     "persuasion_trusts_dems": 4.4,
-     "likelier_democrat_voters": 2.1,
-     "ford_base": 45.7
+     "margin": -9.9,
+     "lombardo_base": 37.4,
+     "lombardo_soft_trump": 6.6,
+     "trump_vance_voters": 0.5,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 0.7,
+     "national_dems": 5.9,
+     "vulnerable_ford": 26.3,
+     "ford_base": 21.7
     }
    }
   }
@@ -3090,8 +3282,8 @@
    "gov_2022": 30.4,
    "ussen_2022": 31.8,
    "pres_2024": 25.2,
-   "model_lombardo_all": -23.0,
-   "model_lombardo_hm": -33.2
+   "model_lombardo_all": -23.5,
+   "model_lombardo_hm": -32.3
   },
   "pres_2024_margin": 25.2,
   "gov_2022_margin": 30.4,
@@ -3115,47 +3307,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 18.0
+       "value": 32.5
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.2
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 3.6
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 16.3
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 14.3
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.9
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.4
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 4.4
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.6
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 29.9
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 38.9
+       "value": 25.1
       }
      ],
-     "margin": -23.0,
-     "lombardo_base": 18.0,
-     "republicans_bring_home": 2.2,
-     "persuasion_trusts_reps": 16.3,
-     "conflicted_middle": 14.3,
-     "persuasion_trusts_dems": 5.9,
-     "likelier_democrat_voters": 4.4,
-     "ford_base": 38.9
+     "margin": -23.5,
+     "lombardo_base": 32.5,
+     "lombardo_soft_trump": 3.6,
+     "trump_vance_voters": 2.9,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 0.4,
+     "national_dems": 4.6,
+     "vulnerable_ford": 29.9,
+     "ford_base": 25.1
     }
    },
    "model_lombardo_hm": {
@@ -3167,47 +3365,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 24.5
+       "value": 28.6
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.8
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 3.1
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.2
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.7
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.4
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.5
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.4
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 30.4
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 57.0
+       "value": 28.3
       }
      ],
-     "margin": -33.2,
-     "lombardo_base": 24.5,
-     "republicans_bring_home": 1.8,
-     "persuasion_trusts_reps": 4.2,
-     "conflicted_middle": 5.7,
-     "persuasion_trusts_dems": 4.4,
-     "likelier_democrat_voters": 2.5,
-     "ford_base": 57.0
+     "margin": -32.3,
+     "lombardo_base": 28.6,
+     "lombardo_soft_trump": 3.1,
+     "trump_vance_voters": 2.7,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 0.4,
+     "national_dems": 5.4,
+     "vulnerable_ford": 30.4,
+     "ford_base": 28.3
     }
    }
   }
@@ -3279,8 +3483,8 @@
    "gov_2022": 21.6,
    "ussen_2022": 23.6,
    "pres_2024": 14.9,
-   "model_lombardo_all": -17.1,
-   "model_lombardo_hm": -23.5
+   "model_lombardo_all": -17.4,
+   "model_lombardo_hm": -22.9
   },
   "pres_2024_margin": 14.9,
   "gov_2022_margin": 21.6,
@@ -3304,47 +3508,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 20.4
+       "value": 35.2
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.2
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.2
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 15.6
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.7
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.3
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 6.7
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.3
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.9
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 3.8
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 35.0
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 36.9
+       "value": 18.9
       }
      ],
-     "margin": -17.1,
-     "lombardo_base": 20.4,
-     "republicans_bring_home": 2.2,
-     "persuasion_trusts_reps": 15.6,
-     "conflicted_middle": 15.3,
-     "persuasion_trusts_dems": 6.7,
-     "likelier_democrat_voters": 2.9,
-     "ford_base": 36.9
+     "margin": -17.4,
+     "lombardo_base": 35.2,
+     "lombardo_soft_trump": 5.2,
+     "trump_vance_voters": 0.7,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.3,
+     "national_dems": 3.8,
+     "vulnerable_ford": 35.0,
+     "ford_base": 18.9
     }
    },
    "model_lombardo_hm": {
@@ -3356,47 +3566,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 29.3
+       "value": 33.0
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.8
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.6
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 3.9
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.6
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.7
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.4
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.8
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.4
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 35.0
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 52.7
+       "value": 21.1
       }
      ],
-     "margin": -23.5,
-     "lombardo_base": 29.3,
-     "republicans_bring_home": 1.8,
-     "persuasion_trusts_reps": 3.9,
-     "conflicted_middle": 5.7,
-     "persuasion_trusts_dems": 4.7,
-     "likelier_democrat_voters": 1.8,
-     "ford_base": 52.7
+     "margin": -22.9,
+     "lombardo_base": 33.0,
+     "lombardo_soft_trump": 4.6,
+     "trump_vance_voters": 0.6,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.4,
+     "national_dems": 4.4,
+     "vulnerable_ford": 35.0,
+     "ford_base": 21.1
     }
    }
   }
@@ -3468,8 +3684,8 @@
    "gov_2022": -29.7,
    "ussen_2022": -27.7,
    "pres_2024": -29.5,
-   "model_lombardo_all": 22.7,
-   "model_lombardo_hm": 31.1
+   "model_lombardo_all": 33.2,
+   "model_lombardo_hm": 32.5
   },
   "pres_2024_margin": -29.5,
   "gov_2022_margin": -29.7,
@@ -3493,47 +3709,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 43.5
+       "value": 57.6
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 3.1
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.0
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 11.6
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 4.1
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 13.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.0
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.8
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.0
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.6
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 13.2
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 21.8
+       "value": 12.6
       }
      ],
-     "margin": 22.7,
-     "lombardo_base": 43.5,
-     "republicans_bring_home": 3.1,
-     "persuasion_trusts_reps": 11.6,
-     "conflicted_middle": 13.7,
-     "persuasion_trusts_dems": 4.4,
-     "likelier_democrat_voters": 2.0,
-     "ford_base": 21.8
+     "margin": 33.2,
+     "lombardo_base": 57.6,
+     "lombardo_soft_trump": 6.0,
+     "trump_vance_voters": 4.1,
+     "prime_message_targets": 1.0,
+     "stubborn_middle": 0.8,
+     "national_dems": 4.6,
+     "vulnerable_ford": 13.2,
+     "ford_base": 12.6
     }
    },
    "model_lombardo_hm": {
@@ -3545,47 +3767,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 56.1
+       "value": 57.4
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.4
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.6
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
        "value": 4.4
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 2.8
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.9
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.2
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.5
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 12.4
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 26.2
+       "value": 13.6
       }
      ],
-     "margin": 31.1,
-     "lombardo_base": 56.1,
-     "republicans_bring_home": 2.4,
-     "persuasion_trusts_reps": 4.4,
-     "conflicted_middle": 6.8,
-     "persuasion_trusts_dems": 2.8,
-     "likelier_democrat_voters": 1.2,
-     "ford_base": 26.2
+     "margin": 32.5,
+     "lombardo_base": 57.4,
+     "lombardo_soft_trump": 5.6,
+     "trump_vance_voters": 4.4,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 0.9,
+     "national_dems": 4.5,
+     "vulnerable_ford": 12.4,
+     "ford_base": 13.6
     }
    }
   }
@@ -3657,8 +3885,8 @@
    "gov_2022": 22.6,
    "ussen_2022": 24.5,
    "pres_2024": 15.3,
-   "model_lombardo_all": -18.0,
-   "model_lombardo_hm": -23.5
+   "model_lombardo_all": -20.1,
+   "model_lombardo_hm": -23.7
   },
   "pres_2024_margin": 15.3,
   "gov_2022_margin": 22.6,
@@ -3682,47 +3910,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 20.5
+       "value": 33.0
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.9
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.2
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 13.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 16.4
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.5
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 7.8
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.8
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.2
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 33.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 37.6
+       "value": 20.9
       }
      ],
-     "margin": -18.0,
-     "lombardo_base": 20.5,
-     "republicans_bring_home": 1.9,
-     "persuasion_trusts_reps": 13.0,
-     "conflicted_middle": 16.4,
-     "persuasion_trusts_dems": 7.8,
-     "likelier_democrat_voters": 2.8,
-     "ford_base": 37.6
+     "margin": -20.1,
+     "lombardo_base": 33.0,
+     "lombardo_soft_trump": 6.2,
+     "trump_vance_voters": 0.5,
+     "prime_message_targets": 0.5,
+     "stubborn_middle": 0.6,
+     "national_dems": 5.2,
+     "vulnerable_ford": 33.1,
+     "ford_base": 20.9
     }
    },
    "model_lombardo_hm": {
@@ -3734,47 +3968,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 29.5
+       "value": 31.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.6
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 3.5
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.6
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.7
+      },
+      {
+       "key": "national_dems",
+       "label": "National Dems",
        "value": 5.7
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.8
-      },
-      {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.0
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 33.4
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 52.8
+       "value": 21.9
       }
      ],
-     "margin": -23.5,
-     "lombardo_base": 29.5,
-     "republicans_bring_home": 1.7,
-     "persuasion_trusts_reps": 3.5,
-     "conflicted_middle": 5.7,
-     "persuasion_trusts_dems": 4.8,
-     "likelier_democrat_voters": 2.0,
-     "ford_base": 52.8
+     "margin": -23.7,
+     "lombardo_base": 31.7,
+     "lombardo_soft_trump": 5.6,
+     "trump_vance_voters": 0.5,
+     "prime_message_targets": 0.6,
+     "stubborn_middle": 0.7,
+     "national_dems": 5.7,
+     "vulnerable_ford": 33.4,
+     "ford_base": 21.9
     }
    }
   }
@@ -3846,8 +4086,8 @@
    "gov_2022": 4.8,
    "ussen_2022": 7.7,
    "pres_2024": 1.7,
-   "model_lombardo_all": -2.5,
-   "model_lombardo_hm": -3.0
+   "model_lombardo_all": 2.2,
+   "model_lombardo_hm": -2.6
   },
   "pres_2024_margin": 1.7,
   "gov_2022_margin": 4.8,
@@ -3871,47 +4111,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 29.8
+       "value": 43.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.6
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 13.4
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 14.4
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.0
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.9
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.8
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.3
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.7
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 18.0
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 31.6
+       "value": 21.4
       }
      ],
-     "margin": -2.5,
-     "lombardo_base": 29.8,
-     "republicans_bring_home": 2.7,
-     "persuasion_trusts_reps": 13.4,
-     "conflicted_middle": 14.4,
-     "persuasion_trusts_dems": 4.9,
-     "likelier_democrat_voters": 3.3,
-     "ford_base": 31.6
+     "margin": 2.2,
+     "lombardo_base": 43.7,
+     "lombardo_soft_trump": 4.6,
+     "trump_vance_voters": 3.8,
+     "prime_message_targets": 1.0,
+     "stubborn_middle": 0.8,
+     "national_dems": 6.7,
+     "vulnerable_ford": 18.0,
+     "ford_base": 21.4
     }
    },
    "model_lombardo_hm": {
@@ -3923,47 +4169,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 39.0
+       "value": 41.3
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.9
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.8
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.5
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.0
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.0
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.1
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 18.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 41.9
+       "value": 23.1
       }
      ],
-     "margin": -3.0,
-     "lombardo_base": 39.0,
-     "republicans_bring_home": 1.9,
-     "persuasion_trusts_reps": 4.8,
-     "conflicted_middle": 6.7,
-     "persuasion_trusts_dems": 3.5,
-     "likelier_democrat_voters": 2.0,
-     "ford_base": 41.9
+     "margin": -2.6,
+     "lombardo_base": 41.3,
+     "lombardo_soft_trump": 4.4,
+     "trump_vance_voters": 3.9,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 1.0,
+     "national_dems": 7.1,
+     "vulnerable_ford": 18.1,
+     "ford_base": 23.1
     }
    }
   }
@@ -4035,8 +4287,8 @@
    "gov_2022": -9.3,
    "ussen_2022": -7.0,
    "pres_2024": -11.1,
-   "model_lombardo_all": 6.6,
-   "model_lombardo_hm": 10.0
+   "model_lombardo_all": 14.1,
+   "model_lombardo_hm": 11.3
   },
   "pres_2024_margin": -11.1,
   "gov_2022_margin": -9.3,
@@ -4060,47 +4312,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 34.6
+       "value": 46.1
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 7.6
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 12.5
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 4.2
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 14.1
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.5
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.0
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.4
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.0
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 14.2
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 28.3
+       "value": 19.4
       }
      ],
-     "margin": 6.6,
-     "lombardo_base": 34.6,
-     "republicans_bring_home": 2.7,
-     "persuasion_trusts_reps": 12.5,
-     "conflicted_middle": 14.1,
-     "persuasion_trusts_dems": 5.4,
-     "likelier_democrat_voters": 2.4,
-     "ford_base": 28.3
+     "margin": 14.1,
+     "lombardo_base": 46.1,
+     "lombardo_soft_trump": 7.6,
+     "trump_vance_voters": 4.2,
+     "prime_message_targets": 1.5,
+     "stubborn_middle": 1.0,
+     "national_dems": 6.0,
+     "vulnerable_ford": 14.2,
+     "ford_base": 19.4
     }
    },
    "model_lombardo_hm": {
@@ -4115,44 +4373,50 @@
        "value": 45.3
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.1
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 7.1
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.7
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 4.0
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.5
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.8
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.1
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.7
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.3
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 13.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 35.6
+       "value": 21.0
       }
      ],
-     "margin": 10.0,
+     "margin": 11.3,
      "lombardo_base": 45.3,
-     "republicans_bring_home": 2.1,
-     "persuasion_trusts_reps": 4.7,
-     "conflicted_middle": 6.8,
-     "persuasion_trusts_dems": 3.8,
-     "likelier_democrat_voters": 1.7,
-     "ford_base": 35.6
+     "lombardo_soft_trump": 7.1,
+     "trump_vance_voters": 4.0,
+     "prime_message_targets": 1.5,
+     "stubborn_middle": 1.1,
+     "national_dems": 6.3,
+     "vulnerable_ford": 13.7,
+     "ford_base": 21.0
     }
    }
   }
@@ -4224,8 +4488,8 @@
    "gov_2022": -16.3,
    "ussen_2022": -14.7,
    "pres_2024": -16.7,
-   "model_lombardo_all": 16.3,
-   "model_lombardo_hm": 18.7
+   "model_lombardo_all": 22.5,
+   "model_lombardo_hm": 20.5
   },
   "pres_2024_margin": -16.7,
   "gov_2022_margin": -16.3,
@@ -4249,47 +4513,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 41.4
+       "value": 45.9
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 11.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 10.6
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 4.4
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 12.9
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.6
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.7
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.0
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.3
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 8.5
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 11.2
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 25.6
+       "value": 15.1
       }
      ],
-     "margin": 16.3,
-     "lombardo_base": 41.4,
-     "republicans_bring_home": 2.7,
-     "persuasion_trusts_reps": 10.6,
-     "conflicted_middle": 12.9,
-     "persuasion_trusts_dems": 4.7,
-     "likelier_democrat_voters": 2.3,
-     "ford_base": 25.6
+     "margin": 22.5,
+     "lombardo_base": 45.9,
+     "lombardo_soft_trump": 11.4,
+     "trump_vance_voters": 4.4,
+     "prime_message_targets": 1.6,
+     "stubborn_middle": 2.0,
+     "national_dems": 8.5,
+     "vulnerable_ford": 11.2,
+     "ford_base": 15.1
     }
    },
    "model_lombardo_hm": {
@@ -4301,47 +4571,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 49.5
+       "value": 46.4
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 9.9
+      },
+      {
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 4.4
+      },
+      {
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.6
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
        "value": 2.0
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.6
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 8.2
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 7.2
-      },
-      {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.8
-      },
-      {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.7
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 11.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 31.1
+       "value": 16.2
       }
      ],
-     "margin": 18.7,
-     "lombardo_base": 49.5,
-     "republicans_bring_home": 2.0,
-     "persuasion_trusts_reps": 4.6,
-     "conflicted_middle": 7.2,
-     "persuasion_trusts_dems": 3.8,
-     "likelier_democrat_voters": 1.7,
-     "ford_base": 31.1
+     "margin": 20.5,
+     "lombardo_base": 46.4,
+     "lombardo_soft_trump": 9.9,
+     "trump_vance_voters": 4.4,
+     "prime_message_targets": 1.6,
+     "stubborn_middle": 2.0,
+     "national_dems": 8.2,
+     "vulnerable_ford": 11.3,
+     "ford_base": 16.2
     }
    }
   }
@@ -4413,8 +4689,8 @@
    "gov_2022": 31.2,
    "ussen_2022": 34.6,
    "pres_2024": 27.4,
-   "model_lombardo_all": -20.2,
-   "model_lombardo_hm": -27.7
+   "model_lombardo_all": -35.0,
+   "model_lombardo_hm": -34.2
   },
   "pres_2024_margin": 27.4,
   "gov_2022_margin": 31.2,
@@ -4438,47 +4714,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 20.3
+       "value": 23.4
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 7.6
+      },
+      {
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.7
+      },
+      {
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.0
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
        "value": 1.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 9.2
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 11.2
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 16.4
-      },
-      {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 10.8
-      },
-      {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.8
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 31.0
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 38.1
+       "value": 23.9
       }
      ],
-     "margin": -20.2,
-     "lombardo_base": 20.3,
-     "republicans_bring_home": 1.3,
-     "persuasion_trusts_reps": 9.2,
-     "conflicted_middle": 16.4,
-     "persuasion_trusts_dems": 10.8,
-     "likelier_democrat_voters": 3.8,
-     "ford_base": 38.1
+     "margin": -35.0,
+     "lombardo_base": 23.4,
+     "lombardo_soft_trump": 7.6,
+     "trump_vance_voters": 0.7,
+     "prime_message_targets": 1.0,
+     "stubborn_middle": 1.3,
+     "national_dems": 11.2,
+     "vulnerable_ford": 31.0,
+     "ford_base": 23.9
     }
    },
    "model_lombardo_hm": {
@@ -4490,47 +4772,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 27.1
+       "value": 24.1
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 0.9
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 7.2
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 3.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 7.6
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.0
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.6
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.5
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.2
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 12.0
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 28.5
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 53.6
+       "value": 24.9
       }
      ],
-     "margin": -27.7,
-     "lombardo_base": 27.1,
-     "republicans_bring_home": 0.9,
-     "persuasion_trusts_reps": 3.0,
-     "conflicted_middle": 7.6,
-     "persuasion_trusts_dems": 5.6,
-     "likelier_democrat_voters": 2.2,
-     "ford_base": 53.6
+     "margin": -34.2,
+     "lombardo_base": 24.1,
+     "lombardo_soft_trump": 7.2,
+     "trump_vance_voters": 0.8,
+     "prime_message_targets": 1.0,
+     "stubborn_middle": 1.5,
+     "national_dems": 12.0,
+     "vulnerable_ford": 28.5,
+     "ford_base": 24.9
     }
    }
   }
@@ -4602,8 +4890,8 @@
    "gov_2022": 12.2,
    "ussen_2022": 16.1,
    "pres_2024": 12.6,
-   "model_lombardo_all": -5.2,
-   "model_lombardo_hm": -4.8
+   "model_lombardo_all": -7.9,
+   "model_lombardo_hm": -6.8
   },
   "pres_2024_margin": 12.6,
   "gov_2022_margin": 12.2,
@@ -4627,47 +4915,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 31.5
+       "value": 36.4
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.5
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 7.2
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.2
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 14.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.5
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 6.3
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.9
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 10.9
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 17.6
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 35.5
+       "value": 22.4
       }
      ],
-     "margin": -5.2,
-     "lombardo_base": 31.5,
-     "republicans_bring_home": 1.7,
-     "persuasion_trusts_reps": 7.2,
-     "conflicted_middle": 14.8,
-     "persuasion_trusts_dems": 6.3,
-     "likelier_democrat_voters": 2.9,
-     "ford_base": 35.5
+     "margin": -7.9,
+     "lombardo_base": 36.4,
+     "lombardo_soft_trump": 6.5,
+     "trump_vance_voters": 2.2,
+     "prime_message_targets": 1.5,
+     "stubborn_middle": 2.6,
+     "national_dems": 10.9,
+     "vulnerable_ford": 17.6,
+     "ford_base": 22.4
     }
    },
    "model_lombardo_hm": {
@@ -4679,47 +4973,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 38.7
+       "value": 36.9
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.2
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 3.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.3
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 8.0
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.6
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 2.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.8
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 11.0
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 16.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 42.9
+       "value": 23.0
       }
      ],
-     "margin": -4.8,
-     "lombardo_base": 38.7,
-     "republicans_bring_home": 1.2,
-     "persuasion_trusts_reps": 3.0,
-     "conflicted_middle": 8.0,
-     "persuasion_trusts_dems": 4.4,
-     "likelier_democrat_voters": 1.8,
-     "ford_base": 42.9
+     "margin": -6.8,
+     "lombardo_base": 36.9,
+     "lombardo_soft_trump": 6.4,
+     "trump_vance_voters": 2.3,
+     "prime_message_targets": 1.6,
+     "stubborn_middle": 2.6,
+     "national_dems": 11.0,
+     "vulnerable_ford": 16.1,
+     "ford_base": 23.0
     }
    }
   }
@@ -4791,8 +5091,8 @@
    "gov_2022": -9.2,
    "ussen_2022": -6.0,
    "pres_2024": -6.7,
-   "model_lombardo_all": 11.0,
-   "model_lombardo_hm": 15.1
+   "model_lombardo_all": 11.2,
+   "model_lombardo_hm": 13.4
   },
   "pres_2024_margin": -6.7,
   "gov_2022_margin": -9.2,
@@ -4816,47 +5116,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 38.9
+       "value": 43.2
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.3
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 8.7
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 7.8
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.0
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.1
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 2.2
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.6
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 3.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.6
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 11.1
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 12.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 27.6
+       "value": 16.9
       }
      ],
-     "margin": 11.0,
-     "lombardo_base": 38.9,
-     "republicans_bring_home": 2.3,
-     "persuasion_trusts_reps": 7.8,
-     "conflicted_middle": 15.1,
-     "persuasion_trusts_dems": 5.6,
-     "likelier_democrat_voters": 2.6,
-     "ford_base": 27.6
+     "margin": 11.2,
+     "lombardo_base": 43.2,
+     "lombardo_soft_trump": 8.7,
+     "trump_vance_voters": 2.0,
+     "prime_message_targets": 2.2,
+     "stubborn_middle": 3.2,
+     "national_dems": 11.1,
+     "vulnerable_ford": 12.7,
+     "ford_base": 16.9
     }
    },
    "model_lombardo_hm": {
@@ -4868,47 +5174,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 47.4
+       "value": 44.5
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.6
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 8.5
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 3.4
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.1
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 9.1
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 2.3
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 3.0
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.5
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 10.5
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 11.5
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 32.5
+       "value": 17.6
       }
      ],
-     "margin": 15.1,
-     "lombardo_base": 47.4,
-     "republicans_bring_home": 1.6,
-     "persuasion_trusts_reps": 3.4,
-     "conflicted_middle": 9.1,
-     "persuasion_trusts_dems": 4.4,
-     "likelier_democrat_voters": 1.5,
-     "ford_base": 32.5
+     "margin": 13.4,
+     "lombardo_base": 44.5,
+     "lombardo_soft_trump": 8.5,
+     "trump_vance_voters": 2.1,
+     "prime_message_targets": 2.3,
+     "stubborn_middle": 3.0,
+     "national_dems": 10.5,
+     "vulnerable_ford": 11.5,
+     "ford_base": 17.6
     }
    }
   }
@@ -4980,8 +5292,8 @@
    "gov_2022": 17.8,
    "ussen_2022": 20.1,
    "pres_2024": 11.9,
-   "model_lombardo_all": -8.4,
-   "model_lombardo_hm": -11.9
+   "model_lombardo_all": -14.7,
+   "model_lombardo_hm": -16.0
   },
   "pres_2024_margin": 11.9,
   "gov_2022_margin": 17.8,
@@ -5005,47 +5317,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 26.2
+       "value": 34.9
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.3
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.5
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 12.5
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 6.2
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.9
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.6
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.6
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 27.4
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 34.4
+       "value": 22.0
       }
      ],
-     "margin": -8.4,
-     "lombardo_base": 26.2,
-     "republicans_bring_home": 2.3,
-     "persuasion_trusts_reps": 12.5,
-     "conflicted_middle": 15.8,
-     "persuasion_trusts_dems": 6.2,
-     "likelier_democrat_voters": 2.6,
-     "ford_base": 34.4
+     "margin": -14.7,
+     "lombardo_base": 34.9,
+     "lombardo_soft_trump": 6.5,
+     "trump_vance_voters": 0.8,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 0.9,
+     "national_dems": 6.6,
+     "vulnerable_ford": 27.4,
+     "ford_base": 22.0
     }
    },
    "model_lombardo_hm": {
@@ -5060,44 +5378,50 @@
        "value": 34.2
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.6
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 7.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.2
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.0
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.6
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.1
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 25.9
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 46.2
+       "value": 23.5
       }
      ],
-     "margin": -11.9,
+     "margin": -16.0,
      "lombardo_base": 34.2,
-     "republicans_bring_home": 1.7,
-     "persuasion_trusts_reps": 4.6,
-     "conflicted_middle": 7.7,
-     "persuasion_trusts_dems": 4.2,
-     "likelier_democrat_voters": 1.6,
-     "ford_base": 46.2
+     "lombardo_soft_trump": 6.4,
+     "trump_vance_voters": 0.8,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 1.0,
+     "national_dems": 7.1,
+     "vulnerable_ford": 25.9,
+     "ford_base": 23.5
     }
    }
   }
@@ -5169,8 +5493,8 @@
    "gov_2022": 32.5,
    "ussen_2022": 36.1,
    "pres_2024": 26.8,
-   "model_lombardo_all": -28.8,
-   "model_lombardo_hm": -36.8
+   "model_lombardo_all": -43.3,
+   "model_lombardo_hm": -43.9
   },
   "pres_2024_margin": 26.8,
   "gov_2022_margin": 32.5,
@@ -5194,47 +5518,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 13.4
+       "value": 22.6
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 3.7
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 12.3
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 18.6
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.0
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 10.2
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.6
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 11.1
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 29.9
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 42.2
+       "value": 28.7
       }
      ],
-     "margin": -28.8,
-     "lombardo_base": 13.4,
-     "republicans_bring_home": 1.7,
-     "persuasion_trusts_reps": 12.3,
-     "conflicted_middle": 18.6,
-     "persuasion_trusts_dems": 10.2,
-     "likelier_democrat_voters": 1.6,
-     "ford_base": 42.2
+     "margin": -43.3,
+     "lombardo_base": 22.6,
+     "lombardo_soft_trump": 3.7,
+     "trump_vance_voters": 2.8,
+     "prime_message_targets": 1.0,
+     "stubborn_middle": 0.2,
+     "national_dems": 11.1,
+     "vulnerable_ford": 29.9,
+     "ford_base": 28.7
     }
    },
    "model_lombardo_hm": {
@@ -5246,47 +5576,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 22.4
+       "value": 23.2
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.6
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 3.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 3.8
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.2
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.3
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 6.0
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 12.3
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 27.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 59.8
+       "value": 30.9
       }
      ],
-     "margin": -36.8,
-     "lombardo_base": 22.4,
-     "republicans_bring_home": 1.6,
-     "persuasion_trusts_reps": 3.8,
-     "conflicted_middle": 5.3,
-     "persuasion_trusts_dems": 6.0,
-     "likelier_democrat_voters": 1.1,
-     "ford_base": 59.8
+     "margin": -43.9,
+     "lombardo_base": 23.2,
+     "lombardo_soft_trump": 3.3,
+     "trump_vance_voters": 2.2,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.2,
+     "national_dems": 12.3,
+     "vulnerable_ford": 27.1,
+     "ford_base": 30.9
     }
    }
   }
@@ -5358,7 +5694,7 @@
    "gov_2022": 7.1,
    "ussen_2022": 9.1,
    "pres_2024": 3.3,
-   "model_lombardo_all": -5.0,
+   "model_lombardo_all": -0.0,
    "model_lombardo_hm": -5.3
   },
   "pres_2024_margin": 3.3,
@@ -5383,47 +5719,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 27.6
+       "value": 42.1
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.6
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.9
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 14.1
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 4.7
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.3
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.2
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.2
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.3
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 18.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 32.0
+       "value": 23.3
       }
      ],
-     "margin": -5.0,
-     "lombardo_base": 27.6,
-     "republicans_bring_home": 2.6,
-     "persuasion_trusts_reps": 14.1,
-     "conflicted_middle": 15.3,
-     "persuasion_trusts_dems": 5.2,
-     "likelier_democrat_voters": 3.2,
-     "ford_base": 32.0
+     "margin": -0.0,
+     "lombardo_base": 42.1,
+     "lombardo_soft_trump": 4.9,
+     "trump_vance_voters": 4.7,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.6,
+     "national_dems": 5.3,
+     "vulnerable_ford": 18.3,
+     "ford_base": 23.3
     }
    },
    "model_lombardo_hm": {
@@ -5435,47 +5777,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 38.0
+       "value": 39.5
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.9
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.5
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
        "value": 5.0
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.6
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.0
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.3
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.7
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.9
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.8
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 17.9
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 43.4
+       "value": 25.7
       }
      ],
      "margin": -5.3,
-     "lombardo_base": 38.0,
-     "republicans_bring_home": 1.9,
-     "persuasion_trusts_reps": 5.0,
-     "conflicted_middle": 6.6,
-     "persuasion_trusts_dems": 3.3,
-     "likelier_democrat_voters": 1.9,
-     "ford_base": 43.4
+     "lombardo_base": 39.5,
+     "lombardo_soft_trump": 4.5,
+     "trump_vance_voters": 5.0,
+     "prime_message_targets": 1.0,
+     "stubborn_middle": 0.7,
+     "national_dems": 5.8,
+     "vulnerable_ford": 17.9,
+     "ford_base": 25.7
     }
    }
   }
@@ -5547,8 +5895,8 @@
    "gov_2022": 14.8,
    "ussen_2022": 17.1,
    "pres_2024": 10.6,
-   "model_lombardo_all": -9.7,
-   "model_lombardo_hm": -12.0
+   "model_lombardo_all": -16.1,
+   "model_lombardo_hm": -15.6
   },
   "pres_2024_margin": 10.6,
   "gov_2022_margin": 14.8,
@@ -5572,47 +5920,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 25.6
+       "value": 36.2
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.9
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 11.4
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 16.0
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.7
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 8.2
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.2
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.9
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 29.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 34.9
+       "value": 22.2
       }
      ],
-     "margin": -9.7,
-     "lombardo_base": 25.6,
-     "republicans_bring_home": 1.7,
-     "persuasion_trusts_reps": 11.4,
-     "conflicted_middle": 16.0,
-     "persuasion_trusts_dems": 8.2,
-     "likelier_democrat_voters": 2.2,
-     "ford_base": 34.9
+     "margin": -16.1,
+     "lombardo_base": 36.2,
+     "lombardo_soft_trump": 4.9,
+     "trump_vance_voters": 0.5,
+     "prime_message_targets": 0.7,
+     "stubborn_middle": 0.6,
+     "national_dems": 5.9,
+     "vulnerable_ford": 29.1,
+     "ford_base": 22.2
     }
    },
    "model_lombardo_hm": {
@@ -5624,47 +5978,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 35.0
+       "value": 36.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.3
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.5
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 3.8
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.9
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.7
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.8
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.3
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.5
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 27.2
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 46.9
+       "value": 23.2
       }
      ],
-     "margin": -12.0,
-     "lombardo_base": 35.0,
-     "republicans_bring_home": 1.3,
-     "persuasion_trusts_reps": 3.8,
-     "conflicted_middle": 6.9,
-     "persuasion_trusts_dems": 4.8,
-     "likelier_democrat_voters": 1.3,
-     "ford_base": 46.9
+     "margin": -15.6,
+     "lombardo_base": 36.7,
+     "lombardo_soft_trump": 4.5,
+     "trump_vance_voters": 0.5,
+     "prime_message_targets": 0.7,
+     "stubborn_middle": 0.6,
+     "national_dems": 6.5,
+     "vulnerable_ford": 27.2,
+     "ford_base": 23.2
     }
    }
   }
@@ -5736,8 +6096,8 @@
    "gov_2022": -15.8,
    "ussen_2022": -13.0,
    "pres_2024": -15.8,
-   "model_lombardo_all": 15.0,
-   "model_lombardo_hm": 20.3
+   "model_lombardo_all": 17.4,
+   "model_lombardo_hm": 19.0
   },
   "pres_2024_margin": -15.8,
   "gov_2022_margin": -15.8,
@@ -5761,47 +6121,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 41.0
+       "value": 51.4
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.4
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 9.9
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.3
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 14.0
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.5
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.9
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.0
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 16.8
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 26.3
+       "value": 15.6
       }
      ],
-     "margin": 15.0,
-     "lombardo_base": 41.0,
-     "republicans_bring_home": 2.4,
-     "persuasion_trusts_reps": 9.9,
-     "conflicted_middle": 14.0,
-     "persuasion_trusts_dems": 4.4,
-     "likelier_democrat_voters": 2.1,
-     "ford_base": 26.3
+     "margin": 17.4,
+     "lombardo_base": 51.4,
+     "lombardo_soft_trump": 5.4,
+     "trump_vance_voters": 1.3,
+     "prime_message_targets": 1.5,
+     "stubborn_middle": 0.9,
+     "national_dems": 7.0,
+     "vulnerable_ford": 16.8,
+     "ford_base": 15.6
     }
    },
    "model_lombardo_hm": {
@@ -5813,47 +6179,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 51.5
+       "value": 52.1
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.8
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.4
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.4
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.6
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.0
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.0
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.3
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.8
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 14.9
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 31.7
+       "value": 16.8
       }
      ],
-     "margin": 20.3,
-     "lombardo_base": 51.5,
-     "republicans_bring_home": 1.8,
-     "persuasion_trusts_reps": 4.0,
-     "conflicted_middle": 6.7,
-     "persuasion_trusts_dems": 3.0,
-     "likelier_democrat_voters": 1.3,
-     "ford_base": 31.7
+     "margin": 19.0,
+     "lombardo_base": 52.1,
+     "lombardo_soft_trump": 5.4,
+     "trump_vance_voters": 1.4,
+     "prime_message_targets": 1.6,
+     "stubborn_middle": 1.0,
+     "national_dems": 6.8,
+     "vulnerable_ford": 14.9,
+     "ford_base": 16.8
     }
    }
   }
@@ -5925,8 +6297,8 @@
    "gov_2022": -32.4,
    "ussen_2022": -29.8,
    "pres_2024": -32.1,
-   "model_lombardo_all": 29.2,
-   "model_lombardo_hm": 38.5
+   "model_lombardo_all": 36.7,
+   "model_lombardo_hm": 38.1
   },
   "pres_2024_margin": -32.1,
   "gov_2022_margin": -32.4,
@@ -5950,47 +6322,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 47.0
+       "value": 59.3
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 3.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.5
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 10.6
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 13.4
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.8
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.3
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.0
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 14.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 20.2
+       "value": 10.8
       }
      ],
-     "margin": 29.2,
-     "lombardo_base": 47.0,
-     "republicans_bring_home": 3.7,
-     "persuasion_trusts_reps": 10.6,
-     "conflicted_middle": 13.4,
-     "persuasion_trusts_dems": 3.8,
-     "likelier_democrat_voters": 1.3,
-     "ford_base": 20.2
+     "margin": 36.7,
+     "lombardo_base": 59.3,
+     "lombardo_soft_trump": 6.5,
+     "trump_vance_voters": 2.8,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 1.2,
+     "national_dems": 4.0,
+     "vulnerable_ford": 14.3,
+     "ford_base": 10.8
     }
    },
    "model_lombardo_hm": {
@@ -6002,47 +6380,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 60.4
+       "value": 60.2
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.9
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.2
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.1
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.0
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.5
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 2.3
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 0.9
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 3.7
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 13.0
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 23.9
+       "value": 11.6
       }
      ],
-     "margin": 38.5,
-     "lombardo_base": 60.4,
-     "republicans_bring_home": 2.9,
-     "persuasion_trusts_reps": 4.1,
-     "conflicted_middle": 5.5,
-     "persuasion_trusts_dems": 2.3,
-     "likelier_democrat_voters": 0.9,
-     "ford_base": 23.9
+     "margin": 38.1,
+     "lombardo_base": 60.2,
+     "lombardo_soft_trump": 6.2,
+     "trump_vance_voters": 3.0,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 1.2,
+     "national_dems": 3.7,
+     "vulnerable_ford": 13.0,
+     "ford_base": 11.6
     }
    }
   }
@@ -6114,8 +6498,8 @@
    "gov_2022": -56.7,
    "ussen_2022": -54.9,
    "pres_2024": -57.2,
-   "model_lombardo_all": 45.4,
-   "model_lombardo_hm": 61.1
+   "model_lombardo_all": 57.1,
+   "model_lombardo_hm": 60.4
   },
   "pres_2024_margin": -57.2,
   "gov_2022_margin": -56.7,
@@ -6139,47 +6523,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 53.9
+       "value": 69.2
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 3.6
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 7.6
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 11.5
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.1
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.4
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.5
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.5
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.7
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 9.6
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 10.9
+       "value": 5.5
       }
      ],
-     "margin": 45.4,
-     "lombardo_base": 53.9,
-     "republicans_bring_home": 3.6,
-     "persuasion_trusts_reps": 11.5,
-     "conflicted_middle": 15.4,
-     "persuasion_trusts_dems": 3.5,
-     "likelier_democrat_voters": 1.1,
-     "ford_base": 10.9
+     "margin": 57.1,
+     "lombardo_base": 69.2,
+     "lombardo_soft_trump": 7.6,
+     "trump_vance_voters": 2.1,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 0.5,
+     "national_dems": 4.7,
+     "vulnerable_ford": 9.6,
+     "ford_base": 5.5
     }
    },
    "model_lombardo_hm": {
@@ -6191,47 +6581,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 71.4
+       "value": 71.1
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 3.0
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 7.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 5.3
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.1
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.4
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 1.6
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.5
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 0.6
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 3.9
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 8.5
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 12.7
+       "value": 5.7
       }
      ],
-     "margin": 61.1,
-     "lombardo_base": 71.4,
-     "republicans_bring_home": 3.0,
-     "persuasion_trusts_reps": 5.3,
-     "conflicted_middle": 5.4,
-     "persuasion_trusts_dems": 1.6,
-     "likelier_democrat_voters": 0.6,
-     "ford_base": 12.7
+     "margin": 60.4,
+     "lombardo_base": 71.1,
+     "lombardo_soft_trump": 7.3,
+     "trump_vance_voters": 2.1,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 0.5,
+     "national_dems": 3.9,
+     "vulnerable_ford": 8.5,
+     "ford_base": 5.7
     }
    }
   }
@@ -6303,8 +6699,8 @@
    "gov_2022": 12.7,
    "ussen_2022": 15.5,
    "pres_2024": 8.4,
-   "model_lombardo_all": -13.0,
-   "model_lombardo_hm": -13.9
+   "model_lombardo_all": -9.3,
+   "model_lombardo_hm": -13.2
   },
   "pres_2024_margin": 8.4,
   "gov_2022_margin": 12.7,
@@ -6328,47 +6724,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 24.4
+       "value": 38.8
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.0
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.0
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 13.8
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.2
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 13.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.8
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 6.5
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.0
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.8
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.7
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 23.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 36.7
+       "value": 23.7
       }
      ],
-     "margin": -13.0,
-     "lombardo_base": 24.4,
-     "republicans_bring_home": 2.0,
-     "persuasion_trusts_reps": 13.8,
-     "conflicted_middle": 13.8,
-     "persuasion_trusts_dems": 6.5,
-     "likelier_democrat_voters": 2.8,
-     "ford_base": 36.7
+     "margin": -9.3,
+     "lombardo_base": 38.8,
+     "lombardo_soft_trump": 5.0,
+     "trump_vance_voters": 1.2,
+     "prime_message_targets": 0.8,
+     "stubborn_middle": 1.0,
+     "national_dems": 5.7,
+     "vulnerable_ford": 23.7,
+     "ford_base": 23.7
     }
    },
    "model_lombardo_hm": {
@@ -6380,47 +6782,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 34.1
+       "value": 37.0
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.6
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.7
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.2
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.3
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 5.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.5
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.4
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 23.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 47.7
+       "value": 25.5
       }
      ],
-     "margin": -13.9,
-     "lombardo_base": 34.1,
-     "republicans_bring_home": 1.6,
-     "persuasion_trusts_reps": 4.2,
-     "conflicted_middle": 5.8,
-     "persuasion_trusts_dems": 4.5,
-     "likelier_democrat_voters": 2.1,
-     "ford_base": 47.7
+     "margin": -13.2,
+     "lombardo_base": 37.0,
+     "lombardo_soft_trump": 4.7,
+     "trump_vance_voters": 1.3,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 1.2,
+     "national_dems": 6.4,
+     "vulnerable_ford": 23.1,
+     "ford_base": 25.5
     }
    }
   }
@@ -6492,8 +6900,8 @@
    "gov_2022": 2.3,
    "ussen_2022": 4.3,
    "pres_2024": -3.1,
-   "model_lombardo_all": 0.2,
-   "model_lombardo_hm": -1.5
+   "model_lombardo_all": 5.0,
+   "model_lombardo_hm": -0.0
   },
   "pres_2024_margin": -3.1,
   "gov_2022_margin": 2.3,
@@ -6517,47 +6925,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 30.1
+       "value": 43.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.5
+      },
+      {
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
        "value": 2.8
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 14.2
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.0
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.5
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.6
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.8
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.0
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.0
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 20.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 29.6
+       "value": 18.1
       }
      ],
-     "margin": 0.2,
-     "lombardo_base": 30.1,
-     "republicans_bring_home": 2.8,
-     "persuasion_trusts_reps": 14.2,
-     "conflicted_middle": 15.5,
-     "persuasion_trusts_dems": 4.8,
-     "likelier_democrat_voters": 3.0,
-     "ford_base": 29.6
+     "margin": 5.0,
+     "lombardo_base": 43.7,
+     "lombardo_soft_trump": 6.5,
+     "trump_vance_voters": 2.8,
+     "prime_message_targets": 1.0,
+     "stubborn_middle": 0.6,
+     "national_dems": 7.0,
+     "vulnerable_ford": 20.1,
+     "ford_base": 18.1
     }
    },
    "model_lombardo_hm": {
@@ -6569,47 +6983,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 38.6
+       "value": 41.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.9
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.9
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 5.7
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 7.8
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.2
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.0
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.7
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.0
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.4
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 20.6
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 40.0
+       "value": 19.8
       }
      ],
-     "margin": -1.5,
-     "lombardo_base": 38.6,
-     "republicans_bring_home": 1.9,
-     "persuasion_trusts_reps": 5.7,
-     "conflicted_middle": 7.8,
-     "persuasion_trusts_dems": 4.0,
-     "likelier_democrat_voters": 2.0,
-     "ford_base": 40.0
+     "margin": -0.0,
+     "lombardo_base": 41.7,
+     "lombardo_soft_trump": 5.9,
+     "trump_vance_voters": 2.9,
+     "prime_message_targets": 1.2,
+     "stubborn_middle": 0.7,
+     "national_dems": 7.4,
+     "vulnerable_ford": 20.6,
+     "ford_base": 19.8
     }
    }
   }
@@ -6681,8 +7101,8 @@
    "gov_2022": -24.7,
    "ussen_2022": -22.9,
    "pres_2024": -23.7,
-   "model_lombardo_all": 19.6,
-   "model_lombardo_hm": 26.8
+   "model_lombardo_all": 27.0,
+   "model_lombardo_hm": 29.0
   },
   "pres_2024_margin": -23.7,
   "gov_2022_margin": -24.7,
@@ -6706,47 +7126,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 39.5
+       "value": 48.9
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 3.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 12.0
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 12.9
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.3
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.2
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.1
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.5
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 8.8
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 10.9
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 21.1
+       "value": 14.1
       }
      ],
-     "margin": 19.6,
-     "lombardo_base": 39.5,
-     "republicans_bring_home": 3.7,
-     "persuasion_trusts_reps": 12.9,
-     "conflicted_middle": 15.3,
-     "persuasion_trusts_dems": 5.1,
-     "likelier_democrat_voters": 2.5,
-     "ford_base": 21.1
+     "margin": 27.0,
+     "lombardo_base": 48.9,
+     "lombardo_soft_trump": 12.0,
+     "trump_vance_voters": 2.8,
+     "prime_message_targets": 1.2,
+     "stubborn_middle": 1.2,
+     "national_dems": 8.8,
+     "vulnerable_ford": 10.9,
+     "ford_base": 14.1
     }
    },
    "model_lombardo_hm": {
@@ -6758,47 +7184,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 52.3
+       "value": 51.0
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 3.2
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 10.9
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 5.4
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.9
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.2
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.5
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.1
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.7
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.7
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 10.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 27.0
+       "value": 15.1
       }
      ],
-     "margin": 26.8,
-     "lombardo_base": 52.3,
-     "republicans_bring_home": 3.2,
-     "persuasion_trusts_reps": 5.4,
-     "conflicted_middle": 6.9,
-     "persuasion_trusts_dems": 3.5,
-     "likelier_democrat_voters": 1.7,
-     "ford_base": 27.0
+     "margin": 29.0,
+     "lombardo_base": 51.0,
+     "lombardo_soft_trump": 10.9,
+     "trump_vance_voters": 2.9,
+     "prime_message_targets": 1.2,
+     "stubborn_middle": 1.1,
+     "national_dems": 7.7,
+     "vulnerable_ford": 10.1,
+     "ford_base": 15.1
     }
    }
   }
@@ -6870,8 +7302,8 @@
    "gov_2022": 1.5,
    "ussen_2022": 3.6,
    "pres_2024": 0.1,
-   "model_lombardo_all": -2.0,
-   "model_lombardo_hm": -0.4
+   "model_lombardo_all": 1.7,
+   "model_lombardo_hm": -0.8
   },
   "pres_2024_margin": 0.1,
   "gov_2022_margin": 1.5,
@@ -6895,47 +7327,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 31.5
+       "value": 43.0
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.4
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.7
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 11.6
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.4
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 13.5
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.2
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.1
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 8.0
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 17.2
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 32.8
+       "value": 20.8
       }
      ],
-     "margin": -2.0,
-     "lombardo_base": 31.5,
-     "republicans_bring_home": 2.4,
-     "persuasion_trusts_reps": 11.6,
-     "conflicted_middle": 13.5,
-     "persuasion_trusts_dems": 5.1,
-     "likelier_democrat_voters": 3.1,
-     "ford_base": 32.8
+     "margin": 1.7,
+     "lombardo_base": 43.0,
+     "lombardo_soft_trump": 4.7,
+     "trump_vance_voters": 3.4,
+     "prime_message_targets": 1.2,
+     "stubborn_middle": 1.6,
+     "national_dems": 8.0,
+     "vulnerable_ford": 17.2,
+     "ford_base": 20.8
     }
    },
    "model_lombardo_hm": {
@@ -6947,47 +7385,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 40.4
+       "value": 41.9
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 4.3
+      },
+      {
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.7
+      },
+      {
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.3
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
        "value": 1.8
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.2
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 8.5
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.8
-      },
-      {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.1
-      },
-      {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.0
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 16.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 40.6
+       "value": 22.2
       }
      ],
-     "margin": -0.4,
-     "lombardo_base": 40.4,
-     "republicans_bring_home": 1.8,
-     "persuasion_trusts_reps": 4.2,
-     "conflicted_middle": 6.8,
-     "persuasion_trusts_dems": 4.1,
-     "likelier_democrat_voters": 2.0,
-     "ford_base": 40.6
+     "margin": -0.8,
+     "lombardo_base": 41.9,
+     "lombardo_soft_trump": 4.3,
+     "trump_vance_voters": 3.7,
+     "prime_message_targets": 1.3,
+     "stubborn_middle": 1.8,
+     "national_dems": 8.5,
+     "vulnerable_ford": 16.3,
+     "ford_base": 22.2
     }
    }
   }
@@ -7059,8 +7503,8 @@
    "gov_2022": -45.7,
    "ussen_2022": -44.1,
    "pres_2024": -47.5,
-   "model_lombardo_all": 37.5,
-   "model_lombardo_hm": 51.4
+   "model_lombardo_all": 48.9,
+   "model_lombardo_hm": 51.7
   },
   "pres_2024_margin": -47.5,
   "gov_2022_margin": -45.7,
@@ -7084,47 +7528,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 48.8
+       "value": 66.0
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 3.6
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 12.4
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 16.2
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.2
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.4
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.0
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.1
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 10.6
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 13.9
+       "value": 8.8
       }
      ],
-     "margin": 37.5,
-     "lombardo_base": 48.8,
-     "republicans_bring_home": 3.6,
-     "persuasion_trusts_reps": 12.4,
-     "conflicted_middle": 16.2,
-     "persuasion_trusts_dems": 4.2,
-     "likelier_democrat_voters": 1.0,
-     "ford_base": 13.9
+     "margin": 48.9,
+     "lombardo_base": 66.0,
+     "lombardo_soft_trump": 6.3,
+     "trump_vance_voters": 2.9,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 0.4,
+     "national_dems": 4.1,
+     "vulnerable_ford": 10.6,
+     "ford_base": 8.8
     }
    },
    "model_lombardo_hm": {
@@ -7136,47 +7586,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 65.6
+       "value": 67.6
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 3.1
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 6.1
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 5.7
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.0
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.3
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 2.1
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.4
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 0.7
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 3.6
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 9.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 16.6
+       "value": 9.1
       }
      ],
-     "margin": 51.4,
-     "lombardo_base": 65.6,
-     "republicans_bring_home": 3.1,
-     "persuasion_trusts_reps": 5.7,
-     "conflicted_middle": 6.3,
-     "persuasion_trusts_dems": 2.1,
-     "likelier_democrat_voters": 0.7,
-     "ford_base": 16.6
+     "margin": 51.7,
+     "lombardo_base": 67.6,
+     "lombardo_soft_trump": 6.1,
+     "trump_vance_voters": 3.0,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 0.4,
+     "national_dems": 3.6,
+     "vulnerable_ford": 9.3,
+     "ford_base": 9.1
     }
    }
   }
@@ -7248,8 +7704,8 @@
    "gov_2022": -36.9,
    "ussen_2022": -34.8,
    "pres_2024": -36.0,
-   "model_lombardo_all": 36.6,
-   "model_lombardo_hm": 45.2
+   "model_lombardo_all": 41.9,
+   "model_lombardo_hm": 43.9
   },
   "pres_2024_margin": -36.0,
   "gov_2022_margin": -36.9,
@@ -7273,47 +7729,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 51.9
+       "value": 62.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 3.2
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 10.1
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.7
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 13.1
-      },
-      {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.0
-      },
-      {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
        "value": 1.2
+      },
+      {
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.0
+      },
+      {
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.7
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 11.4
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 17.4
+       "value": 10.0
       }
      ],
-     "margin": 36.6,
-     "lombardo_base": 51.9,
-     "republicans_bring_home": 3.2,
-     "persuasion_trusts_reps": 10.1,
-     "conflicted_middle": 13.1,
-     "persuasion_trusts_dems": 3.0,
-     "likelier_democrat_voters": 1.2,
-     "ford_base": 17.4
+     "margin": 41.9,
+     "lombardo_base": 62.7,
+     "lombardo_soft_trump": 5.3,
+     "trump_vance_voters": 3.7,
+     "prime_message_targets": 1.2,
+     "stubborn_middle": 1.0,
+     "national_dems": 4.7,
+     "vulnerable_ford": 11.4,
+     "ford_base": 10.0
     }
    },
    "model_lombardo_hm": {
@@ -7328,44 +7790,50 @@
        "value": 63.8
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.8
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.1
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 3.8
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.1
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.3
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 2.0
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.9
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 0.8
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 4.5
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 10.1
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 20.5
+       "value": 10.5
       }
      ],
-     "margin": 45.2,
+     "margin": 43.9,
      "lombardo_base": 63.8,
-     "republicans_bring_home": 2.8,
-     "persuasion_trusts_reps": 4.0,
-     "conflicted_middle": 6.1,
-     "persuasion_trusts_dems": 2.0,
-     "likelier_democrat_voters": 0.8,
-     "ford_base": 20.5
+     "lombardo_soft_trump": 5.1,
+     "trump_vance_voters": 3.8,
+     "prime_message_targets": 1.3,
+     "stubborn_middle": 0.9,
+     "national_dems": 4.5,
+     "vulnerable_ford": 10.1,
+     "ford_base": 10.5
     }
    }
   }
@@ -7437,8 +7905,8 @@
    "gov_2022": -15.8,
    "ussen_2022": -12.6,
    "pres_2024": -14.9,
-   "model_lombardo_all": 17.0,
-   "model_lombardo_hm": 22.0
+   "model_lombardo_all": 17.9,
+   "model_lombardo_hm": 20.0
   },
   "pres_2024_margin": -14.9,
   "gov_2022_margin": -15.8,
@@ -7462,47 +7930,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 40.7
+       "value": 51.3
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.4
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 9.9
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.1
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 16.0
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.2
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 5.1
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.5
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.3
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 15.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 24.5
+       "value": 16.8
       }
      ],
-     "margin": 17.0,
-     "lombardo_base": 40.7,
-     "republicans_bring_home": 2.4,
-     "persuasion_trusts_reps": 9.9,
-     "conflicted_middle": 16.0,
-     "persuasion_trusts_dems": 5.1,
-     "likelier_democrat_voters": 1.5,
-     "ford_base": 24.5
+     "margin": 17.9,
+     "lombardo_base": 51.3,
+     "lombardo_soft_trump": 5.3,
+     "trump_vance_voters": 2.1,
+     "prime_message_targets": 1.2,
+     "stubborn_middle": 1.2,
+     "national_dems": 6.3,
+     "vulnerable_ford": 15.7,
+     "ford_base": 16.8
     }
    },
    "model_lombardo_hm": {
@@ -7514,47 +7988,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 51.5
+       "value": 52.2
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.0
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 2.3
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 7.7
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.3
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.4
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 1.2
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 1.0
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.3
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 13.9
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 30.5
+       "value": 17.4
       }
      ],
-     "margin": 22.0,
-     "lombardo_base": 51.5,
-     "republicans_bring_home": 2.0,
-     "persuasion_trusts_reps": 4.0,
-     "conflicted_middle": 7.7,
-     "persuasion_trusts_dems": 3.4,
-     "likelier_democrat_voters": 1.0,
-     "ford_base": 30.5
+     "margin": 20.0,
+     "lombardo_base": 52.2,
+     "lombardo_soft_trump": 5.3,
+     "trump_vance_voters": 2.3,
+     "prime_message_targets": 1.3,
+     "stubborn_middle": 1.2,
+     "national_dems": 6.3,
+     "vulnerable_ford": 13.9,
+     "ford_base": 17.4
     }
    }
   }
@@ -7626,7 +8106,7 @@
    "gov_2022": 5.4,
    "ussen_2022": 7.2,
    "pres_2024": -0.8,
-   "model_lombardo_all": -3.9,
+   "model_lombardo_all": 0.7,
    "model_lombardo_hm": -4.7
   },
   "pres_2024_margin": -0.8,
@@ -7651,47 +8131,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 28.1
+       "value": 42.9
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.7
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.8
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 14.3
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.7
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.4
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.9
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.9
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.7
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 6.7
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 20.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 31.0
+       "value": 20.6
       }
      ],
-     "margin": -3.9,
-     "lombardo_base": 28.1,
-     "republicans_bring_home": 2.7,
-     "persuasion_trusts_reps": 14.3,
-     "conflicted_middle": 15.4,
-     "persuasion_trusts_dems": 4.9,
-     "likelier_democrat_voters": 3.7,
-     "ford_base": 31.0
+     "margin": 0.7,
+     "lombardo_base": 42.9,
+     "lombardo_soft_trump": 5.8,
+     "trump_vance_voters": 1.7,
+     "prime_message_targets": 0.9,
+     "stubborn_middle": 0.6,
+     "national_dems": 6.7,
+     "vulnerable_ford": 20.7,
+     "ford_base": 20.6
     }
    },
    "model_lombardo_hm": {
@@ -7703,47 +8189,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 37.9
+       "value": 40.3
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.0
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.5
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.9
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 1.9
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 7.0
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 1.1
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 3.7
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.7
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.2
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 7.2
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 21.3
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 42.4
+       "value": 22.0
       }
      ],
      "margin": -4.7,
-     "lombardo_base": 37.9,
-     "republicans_bring_home": 2.0,
-     "persuasion_trusts_reps": 4.9,
-     "conflicted_middle": 7.0,
-     "persuasion_trusts_dems": 3.7,
-     "likelier_democrat_voters": 2.2,
-     "ford_base": 42.4
+     "lombardo_base": 40.3,
+     "lombardo_soft_trump": 5.5,
+     "trump_vance_voters": 1.9,
+     "prime_message_targets": 1.1,
+     "stubborn_middle": 0.7,
+     "national_dems": 7.2,
+     "vulnerable_ford": 21.3,
+     "ford_base": 22.0
     }
    }
   }
@@ -7815,8 +8307,8 @@
    "gov_2022": 13.2,
    "ussen_2022": 14.6,
    "pres_2024": 5.1,
-   "model_lombardo_all": -10.3,
-   "model_lombardo_hm": -14.5
+   "model_lombardo_all": -7.3,
+   "model_lombardo_hm": -12.5
   },
   "pres_2024_margin": 5.1,
   "gov_2022_margin": 13.2,
@@ -7840,47 +8332,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 24.5
+       "value": 40.5
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 2.0
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.2
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 15.0
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.3
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 15.4
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.4
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 6.2
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.5
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 3.2
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.3
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 27.9
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 33.6
+       "value": 19.9
       }
      ],
-     "margin": -10.3,
-     "lombardo_base": 24.5,
-     "republicans_bring_home": 2.0,
-     "persuasion_trusts_reps": 15.0,
-     "conflicted_middle": 15.4,
-     "persuasion_trusts_dems": 6.2,
-     "likelier_democrat_voters": 3.2,
-     "ford_base": 33.6
+     "margin": -7.3,
+     "lombardo_base": 40.5,
+     "lombardo_soft_trump": 5.2,
+     "trump_vance_voters": 0.3,
+     "prime_message_targets": 0.4,
+     "stubborn_middle": 0.5,
+     "national_dems": 5.3,
+     "vulnerable_ford": 27.9,
+     "ford_base": 19.9
     }
    },
    "model_lombardo_hm": {
@@ -7892,47 +8390,53 @@
       {
        "key": "lombardo_base",
        "label": "Lombardo Base",
-       "value": 33.2
+       "value": 37.7
       },
       {
-       "key": "republicans_bring_home",
-       "label": "Republicans Bring Home",
-       "value": 1.5
+       "key": "lombardo_soft_trump",
+       "label": "Lombardo Soft Trump",
+       "value": 5.3
       },
       {
-       "key": "persuasion_trusts_reps",
-       "label": "Persuasion Trusts Reps",
-       "value": 4.3
+       "key": "trump_vance_voters",
+       "label": "Trump/Vance Voters",
+       "value": 0.4
       },
       {
-       "key": "conflicted_middle",
-       "label": "Conflicted Middle",
-       "value": 6.9
+       "key": "prime_message_targets",
+       "label": "Prime Message Targets",
+       "value": 0.5
       },
       {
-       "key": "persuasion_trusts_dems",
-       "label": "Persuasion Trusts Dems",
-       "value": 4.8
+       "key": "stubborn_middle",
+       "label": "Stubborn Middle",
+       "value": 0.6
       },
       {
-       "key": "likelier_democrat_voters",
-       "label": "Likelier Democrat Voters",
-       "value": 2.1
+       "key": "national_dems",
+       "label": "National Dems",
+       "value": 5.6
+      },
+      {
+       "key": "vulnerable_ford",
+       "label": "Vulnerable Ford",
+       "value": 28.7
       },
       {
        "key": "ford_base",
        "label": "Ford Base",
-       "value": 47.1
+       "value": 21.2
       }
      ],
-     "margin": -14.5,
-     "lombardo_base": 33.2,
-     "republicans_bring_home": 1.5,
-     "persuasion_trusts_reps": 4.3,
-     "conflicted_middle": 6.9,
-     "persuasion_trusts_dems": 4.8,
-     "likelier_democrat_voters": 2.1,
-     "ford_base": 47.1
+     "margin": -12.5,
+     "lombardo_base": 37.7,
+     "lombardo_soft_trump": 5.3,
+     "trump_vance_voters": 0.4,
+     "prime_message_targets": 0.5,
+     "stubborn_middle": 0.6,
+     "national_dems": 5.6,
+     "vulnerable_ford": 28.7,
+     "ford_base": 21.2
     }
    }
   }

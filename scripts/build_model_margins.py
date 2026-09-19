@@ -65,12 +65,44 @@ def seg_key(label):
 # the Dem base is 6-7. Using 6-7 reproduces the prior HRCC values almost exactly.
 # ---------------------------------------------------------------------------
 MODELS = {
+    # Nevada moved to the R2 refresh on 2026-09-18, replacing
+    # NV_GOV_IE_R1_Exchange_20260105 (7 universes, 1-2 / 6-7). Still published as
+    # "Lom", so it keeps the lombardo family and its view keys. The R2 ladder has
+    # 8 universes: GOP 1-2 (Lombardo Base, Lombardo Soft Trump), Dem 6-8
+    # (National Dems, Vulnerable Ford, Ford Base).
+    #
+    # The bases are asymmetric as specified by the model's owner: universe 3
+    # "Trump/Vance Voters" (90k) counts toward NEITHER base, exactly as Kansas
+    # treats its own universe 3. Do not fold it into the GOP base to "balance"
+    # the ladder -- that is a deliberate spec, not a gap.
+    #
+    # "All" is H+M+L only. bin_turnout also carries 'A' (926k voters) and 'N'
+    # (76k), which are left out of the denominator, as Georgia does with its 'A'.
+    # Note the capitalised UniverseNumber / UniverseName in this table.
     "NV": dict(
-        mode="universe", table="NV_GOV_IE_R1_Exchange_20260105",
+        mode="universe", table="NV_R2_Exchange_20260708",
         family="lombardo", family_label="Lombardo",
+        univ_col="UniverseNumber", name_col="UniverseName",
+        gop=[1, 2], dem=[6, 7, 8],
+        turnout_col="bin_turnout", all_values=["H", "M", "L"], hm_values=["H", "M"],
+    ),
+    # Minnesota's first dedicated model (2026-09-18), published as "ROU"; it was
+    # on the national fallback before, so drop_families clears model_drnatl_*.
+    # 8 universes: GOP 1-3 (Demuth Base, Republican Voters, 2024 Trump Voters),
+    # Dem 7-8 (Vulnerable Dems, Klobuchar Base). 4-6 are persuasion (Prime
+    # Persuasion, Stubborn Middle, Reach Persuasion).
+    #
+    # "All" is H+M+L only; the 'U' bin (512k voters) is left out.
+    # resolve_names: house districts are "01A"-style, which the integer path
+    # cannot produce; district_ids.py already resolves MN district + subdistrict.
+    "MN": dict(
+        mode="universe", table="MN_Exchange_20260831",
+        family="rou", family_label="ROU",
         univ_col="universenumber", name_col="universename",
-        gop=[1, 2], dem=[6, 7],
-        turnout_col="bin_turnout", hm_values=["H", "M"],
+        gop=[1, 2, 3], dem=[7, 8],
+        turnout_col="bin_turnout", all_values=["H", "M", "L"], hm_values=["H", "M"],
+        resolve_names=True,
+        drop_families=["drnatl"],
     ),
     "PA": dict(
         mode="universe", table="PA_RSLC_R1_Exchange_20260418",

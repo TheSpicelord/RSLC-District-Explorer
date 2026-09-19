@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260918c";
+import { requireAuth } from "./modules/auth.js?v=20260919a";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -22,7 +22,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260918c";
+} from "./modules/config.js?v=20260919a";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -45,8 +45,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260918c";
-import { state } from "./modules/state.js?v=20260918c";
+} from "./modules/dom.js?v=20260919a";
+import { state } from "./modules/state.js?v=20260919a";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -91,11 +91,14 @@ const MODEL_VIEW_META = {
   model_rga_all:      { label: "RGA (All)",  order: 15, tableTop: "RGA",  tableBottom: "All" },
   model_lombardo_hm:  { label: "Lom (H+M)",  order: 16, tableTop: "Lom",  tableBottom: "H+M" },
   model_lombardo_all: { label: "Lom (All)",  order: 17, tableTop: "Lom",  tableBottom: "All" },
-  model_raga_hm:      { label: "RAGA (H+M)", order: 18, tableTop: "RAGA", tableBottom: "H+M" },
-  model_raga_all:     { label: "RAGA (All)", order: 19, tableTop: "RAGA", tableBottom: "All" },
+  // Minnesota's dedicated model (MN_Exchange_20260831).
+  model_rou_hm:       { label: "ROU (H+M)",  order: 18, tableTop: "ROU",  tableBottom: "H+M" },
+  model_rou_all:      { label: "ROU (All)",  order: 19, tableTop: "ROU",  tableBottom: "All" },
+  model_raga_hm:      { label: "RAGA (H+M)", order: 20, tableTop: "RAGA", tableBottom: "H+M" },
+  model_raga_all:     { label: "RAGA (All)", order: 21, tableTop: "RAGA", tableBottom: "All" },
   // National fallback for states with no state-specific model. Ordered last so a
   // dedicated model always wins when a state somehow has both.
-  model_drnatl_all:   { label: "DR Natl",    order: 20, tableTop: "DR",   tableBottom: "Natl" },
+  model_drnatl_all:   { label: "DR Natl",    order: 22, tableTop: "DR",   tableBottom: "Natl" },
 };
 
 const MODEL_SEGMENT_COLOR_CLASSES = {
@@ -151,14 +154,33 @@ const MODEL_SEGMENT_COLOR_CLASSES = {
     "color-model-rslc-8",
     "color-model-rslc-9",
   ],
+  // Nevada's R2 ladder has eight universes: GOP base 1-2, Dem base 6-8, with
+  // universe 3 ("Trump/Vance Voters") in neither base but still a Republican
+  // segment, so it keeps a red step -- the same treatment Kansas gives its own
+  // universe 3. It borrows the nine-step RSLC ramp and skips step 6, so the
+  // three Dem universes land on the three blues.
   LOMBARDO: [
-    "color-model-gop-base",
-    "color-model-gop-target",
-    "color-model-rga-trust",
-    "color-model-rga-middle",
-    "color-model-rga-vulnerable",
-    "color-model-dem-soft",
-    "color-model-dem-base",
+    "color-model-rslc-1",
+    "color-model-rslc-2",
+    "color-model-rslc-3",
+    "color-model-rslc-4",
+    "color-model-rslc-5",
+    "color-model-rslc-7",
+    "color-model-rslc-8",
+    "color-model-rslc-9",
+  ],
+  // Minnesota's ladder is also eight universes but splits differently: GOP 1-3,
+  // persuasion 4-6 (6 is "Reach Persuasion", the purple step), Dem 7-8. Skipping
+  // step 8 puts "Vulnerable Dems" on the light blue and the base on the darkest.
+  ROU: [
+    "color-model-rslc-1",
+    "color-model-rslc-2",
+    "color-model-rslc-3",
+    "color-model-rslc-4",
+    "color-model-rslc-5",
+    "color-model-rslc-6",
+    "color-model-rslc-7",
+    "color-model-rslc-9",
   ],
 };
 
@@ -195,10 +217,11 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_rga_",
   "model_raga_",
   "model_lombardo_",
+  "model_rou_",
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260918c";
+const BUILD_VERSION = "20260919a";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();

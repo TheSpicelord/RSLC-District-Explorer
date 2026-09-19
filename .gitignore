@@ -1,6 +1,11 @@
 # Credentials — never commit
 scripts/db_config.ini
 
+# Internal source workbook — deliberately untracked (see CLAUDE.md > Polling).
+# This repo is public via GitHub Pages; only the published MI toplines in
+# data/polling.json belong here, never the full multi-state tracker.
+data/2025-26 Polling Tracker.xlsx
+
 # Python
 __pycache__/
 *.pyc

@@ -222,17 +222,25 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
 
 | Mode | Margin from | Used by |
 |---|---|---|
-| `universe` | universe ranges (`gop=[..]`, `dem=[..]`) — or `framework_col` when set | NV, PA, AZ, GA, **KS**, **WI**, **MI**, NJ, **AK**, **IA** |
+| `universe` | universe ranges (`gop=[..]`, `dem=[..]`) — or `framework_col` when set | NV, PA, AZ, GA, **KS**, **WI**, **MI**, NJ, **AK**, **IA**, **MN** |
 | `flags` | 0/1 audience columns | VA, TX, OR, **NH** |
 | `score` | continuous support scores | (none currently) |
 
 - **Bucket ranges are per-model, not conventional.** Most run 1–2 rep / 6–7 dem, but GA
   and **IA** run to 9 universes (Dem base 8–9) and NJ/MI use three-deep bases (1–3 / 7–9).
-  **KS is the one asymmetric ladder**: 1–2 GOP against 7–9 Dem, as specified by the model's
-  owner. Universe 7 "Available Democrats" counts as Dem while its mirror, universe 3
+  **KS and NV are asymmetric ladders**: both run a two-deep GOP base against a three-deep
+  Dem base (KS 1–2 / 7–9, NV 1–2 / 6–8), as specified by each model's owner. In KS,
+  universe 7 "Available Democrats" counts as Dem while its mirror, universe 3
   "Trump 2024 Overperform", counts as neither — worth roughly 1.6 points of margin toward
-  the Dem side against a symmetric split. Deliberate, not a typo; see the IA note above for
+  the Dem side against a symmetric split. NV's R2 ladder does the same with its own
+  universe 3, "Trump/Vance Voters". Deliberate, not a typo; see the IA note above for
   the version of this that *was* a bug.
+  - **This is the easiest thing to get wrong on these two**, and it is silent: folding
+    universe 3 into the GOP base looks like tidying up an off-by-one and produces perfectly
+    plausible numbers. It was caught on NV on 2026-09-19 *before* the values shipped —
+    re-deriving HD-1 straight from SQL gave −4.8 against the −0.9 the wrong split
+    produced, a 2–4 point GOP overstatement across every district. Verify a new asymmetric
+    ladder by recomputing one district outside the builder, not by eyeballing the config.
 - **IA moved from `flags` to `universe` on 2026-09-05** with the `_V2` refresh
   (`vs.IA_scores_audiences_20260731_V2`), and from the `rga` family to `rslc`. V1 was a
   persuasion subset — 354,382 rows to V2's 2,148,056, one per `dt_regid`, against roughly
@@ -244,6 +252,18 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
   names mirror cleanly (1 Lahn Base / 2 Republican Targets … 8 Democrat Targets / 9 Sand
   Base), so IA takes GA's 1–2 / 8–9 split. `drop_families=["rga"]` clears the stale V1
   `model_rga_*` keys. Shared with the ABEV Tracker's `STATE_MODELS["IA"]`.
+- **MN and NV, added 2026-09-19.** Minnesota gets its **first dedicated model**
+  (`MN_Exchange_20260831`, published as the **ROU** column): 8 universes, GOP base 1–3
+  (Demuth Base, Republican Voters, 2024 Trump Voters) against Dem base 7–8 (Vulnerable
+  Dems, Klobuchar Base), with 4–6 persuasion. It was on the national fallback, so
+  `drop_families=["drnatl"]` clears the stale `model_drnatl_all`, and `resolve_names=True`
+  routes it through `district_ids.py` — MN house ids are lettered (`01A`), which the
+  integer path cannot produce. Nevada moved to `NV_R2_Exchange_20260708`, replacing the
+  7-universe R1 table; it keeps the `lombardo` family and both view keys, so nothing in
+  `app.js` changed but the segment ladder. **Note the capitalised `UniverseNumber` /
+  `UniverseName` in the NV table** — the R1 table was lowercase.
+  Both share their bucket definitions with the ABEV Tracker's `STATE_MODELS`.
+
 - **`framework_col` beats a universe range.** The Aug 2026 WI/MI/**AZ** refreshes and the AK
   model carry an explicit framework column beside the ladder. **Arizona is the sharpest
   example of why it matters**: it moved to `RSLC_AZ_Exchange_20260819` on 2026-09-09 from a
