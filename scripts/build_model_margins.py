@@ -104,6 +104,32 @@ MODELS = {
         resolve_names=True,
         drop_families=["drnatl"],
     ),
+    # Colorado's first dedicated model (2026-09-21), published as RSLC; it was on
+    # the national fallback, so drop_families clears model_drnatl_all.
+    #
+    # The ladder is four text tags in MODEL_GENERIC_BALLOT_TAG rather than a
+    # numbered universe column, which is what mode="tags" exists for. There is no
+    # persuasion rung: every tagged voter is in one of the two bases, so the
+    # margin spans the whole ladder and "Unaligned" never appears.
+    #
+    # Turnout is also a word rather than a letter: H+M is High+Medium, All is
+    # High+Medium+Low. "Disengaged" (398,615 voters) is left out of the
+    # denominator, the same treatment Georgia gives its 'A' bin.
+    #
+    # 8,730 rows carry a blank DT_REGID (and blank tags). They cannot join -
+    # TRY_CONVERT('') is NULL - and the blank tag is outside the ladder, so they
+    # are dropped twice over. Every joinable regid in the table is unique.
+    "CO": dict(
+        mode="tags", table="RSLC_CY_CO_Data", regid_col="DT_REGID",
+        family="rslc", family_label="RSLC",
+        tag_col="MODEL_GENERIC_BALLOT_TAG",
+        order=["GOP - Strong", "GOP - Soft", "Dem - Soft", "Dem - Strong"],
+        gop_tags=["GOP - Strong", "GOP - Soft"],
+        dem_tags=["Dem - Soft", "Dem - Strong"],
+        turnout_col="MODEL_TURNOUT_TAG",
+        hm_values=["High", "Medium"], all_values=["High", "Medium", "Low"],
+        drop_families=["drnatl"],
+    ),
     "PA": dict(
         mode="universe", table="PA_RSLC_R1_Exchange_20260418",
         family="rslc", family_label="RSLC",
@@ -484,7 +510,30 @@ def fetch_score(cur, state, cfg):
     return cur.fetchall()
 
 
-FETCHERS = {"universe": fetch_universe, "flags": fetch_flags, "score": fetch_score}
+def fetch_tags(cur, state, cfg):
+    """One row per district x ballot tag x turnout tag.
+
+    Like universe mode, but the ladder is carried as text ("GOP - Strong")
+    rather than a numbered universe, so there is nothing to cast to int and the
+    rung order has to be declared in the config rather than sorted.
+    """
+    sql = f"""
+        SELECT v.StateLegUpperDistrict, v.StateLegLowerDistrict,
+               m.[{cfg['tag_col']}] AS tag, m.[{cfg['turnout_col']}] AS tb,
+               COUNT(*) AS cnt
+        FROM voterfile_2026 v
+        JOIN {table_ref(cfg)} m ON {JOIN.format(col=cfg.get('regid_col', 'dt_regid'))}
+        WHERE v.State = ?
+        GROUP BY v.StateLegUpperDistrict, v.StateLegLowerDistrict,
+                 m.[{cfg['tag_col']}], m.[{cfg['turnout_col']}]
+    """
+    cur.execute(sql, state)
+    return [{"upper_n": r[0], "lower_n": r[1], "tag": r[2], "tb": r[3], "cnt": r[4]}
+            for r in cur.fetchall()]
+
+
+FETCHERS = {"universe": fetch_universe, "flags": fetch_flags, "score": fetch_score,
+            "tags": fetch_tags}
 
 
 # ---------------------------------------------------------------------------
@@ -661,7 +710,42 @@ def agg_score(rows, chamber, variant, cfg, resolve=None):
     return out
 
 
-AGGREGATORS = {"universe": agg_universe, "flags": agg_flags, "score": agg_score}
+def agg_tags(rows, chamber, variant, cfg, resolve=None):
+    """district -> (segments, margin, n) for a text-tag ladder.
+
+    Every rung is emitted in the configured order even when a district has none
+    of it, so the segment list is the same shape in every district. Rows whose
+    tag is blank or outside the ladder are dropped entirely rather than counted
+    in the denominator: an untagged voter is missing data, not a middle rung.
+    """
+    order = list(cfg["order"])
+    known = set(order)
+    gop, dem = set(cfg["gop_tags"]), set(cfg["dem_tags"])
+    allowed = variant_bins(cfg, variant)
+    counts = {}
+    for row in rows:
+        d = resolve_district(row, chamber, resolve)
+        tag = str(row["tag"] or "").strip()
+        if d is None or tag not in known:
+            continue
+        if allowed is not None and str(row["tb"] or "").strip() not in allowed:
+            continue
+        counts.setdefault(d, {})[tag] = counts.setdefault(d, {}).get(tag, 0) + int(row["cnt"])
+    out = {}
+    for d, c in counts.items():
+        total = sum(c.values())
+        if not total:
+            continue
+        segments = [{"key": seg_key(t), "label": t, "value": round(100.0 * c.get(t, 0) / total, 1)}
+                    for t in order]
+        g = sum(100.0 * c.get(t, 0) / total for t in order if t in gop)
+        dm = sum(100.0 * c.get(t, 0) / total for t in order if t in dem)
+        out[d] = (segments, round(g - dm, 1), total)
+    return out
+
+
+AGGREGATORS = {"universe": agg_universe, "flags": agg_flags, "score": agg_score,
+               "tags": agg_tags}
 
 
 # ---------------------------------------------------------------------------

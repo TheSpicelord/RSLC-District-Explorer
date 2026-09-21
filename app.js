@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260919a";
+import { requireAuth } from "./modules/auth.js?v=20260921a";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -22,7 +22,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260919a";
+} from "./modules/config.js?v=20260921a";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -45,8 +45,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260919a";
-import { state } from "./modules/state.js?v=20260919a";
+} from "./modules/dom.js?v=20260921a";
+import { state } from "./modules/state.js?v=20260921a";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -194,6 +194,16 @@ const RGA_SEVEN_BUCKET_COLOR_CLASSES = [
   "color-model-dem-base",
 ];
 
+// Colorado's ladder is four tags with no persuasion rung (GOP Strong/Soft,
+// Dem Soft/Strong), so it needs a diverging four-step ramp. Taking the first
+// four steps of the nine-step RSLC palette would render all four as reds.
+const FOUR_BUCKET_COLOR_CLASSES = [
+  "color-model-rslc-1",
+  "color-model-rslc-3",
+  "color-model-rslc-7",
+  "color-model-rslc-9",
+];
+
 // Used by any model whose affinity collapses to GOP / Unaligned / Dem.
 const THREE_BUCKET_COLOR_CLASSES = [
   "color-model-gop-base",
@@ -221,7 +231,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260919a";
+const BUILD_VERSION = "20260921a";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -4949,6 +4959,8 @@ function affinitySegmentsForModel(model) {
     // shades of the same colour.
     const palette = affinity.segments.length === 3
       ? THREE_BUCKET_COLOR_CLASSES
+      : affinity.segments.length === 4
+      ? FOUR_BUCKET_COLOR_CLASSES
       : familyKey === "RGA" && affinity.segments.length === 7
         ? RGA_SEVEN_BUCKET_COLOR_CLASSES
         : (MODEL_SEGMENT_COLOR_CLASSES[familyKey] || []);
