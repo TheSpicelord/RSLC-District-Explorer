@@ -263,7 +263,7 @@ MODELS = {
         dict(
             mode="flags", schema="VS", table="OH_Audiences_20260812",
             regid_col="rnc_reg_id",
-            family="ohsen", family_label="OH US Sen",
+            family="ohsen", family_label="HUS US Sen",
             gop_cols=["sen_ballot_named_husted_audience"],
             dem_cols=["sen_ballot_named_brown_audience"],
             flag_true="1", flag_quoted=False,
@@ -272,7 +272,7 @@ MODELS = {
         dict(
             mode="flags", schema="VS", table="OH_Audiences_20260812",
             regid_col="rnc_reg_id",
-            family="ohgov", family_label="OH Gov",
+            family="ohgov", family_label="HUS Gov",
             gop_cols=["gov_ballot_ramaswamy_audience"],
             dem_cols=["gov_ballot_acton_audience"],
             flag_true="1", flag_quoted=False,
@@ -281,7 +281,7 @@ MODELS = {
         dict(
             mode="flags", schema="VS", table="OH_Audiences_20260812",
             regid_col="rnc_reg_id",
-            family="ohcon", family_label="OH Con",
+            family="ohcon", family_label="HUS Con",
             gop_cols=["cong_ballot_generic_rep_audience"],
             dem_cols=["cong_ballot_generic_dem_audience"],
             flag_true="1", flag_quoted=False,
@@ -321,14 +321,18 @@ MODELS = {
     # 2 "Republican Targets" (262,135 voters) into persuasion while keeping the
     # mirror-image Dem universe - worth 7.9 points of margin on the 2024 absentee
     # feed. Shared with the ABEV Tracker's STATE_MODELS["IA"]; keep the two in step.
+    # Renamed from the shared RSLC family to "Lahn" on 2026-09-21 so Iowa's column
+    # carries the model's own name. Nine states share model_rslc_*, so this state
+    # needed its own family to be renamed at all; drop_families clears the keys it
+    # used to write under.
     "IA": dict(
         mode="universe", table="IA_scores_audiences_20260731_V2", schema="vs",
-        family="rslc", family_label="RSLC",
+        family="lahn", family_label="Lahn",
         univ_col="universenumber", name_col="universename",
         gop=[1, 2], dem=[8, 9],
         turnout_cols=["turnout_high", "turnout_mid"], turnout_quoted=False,
         all_cols=["turnout_high", "turnout_mid", "turnout_low"],
-        drop_families=["rga"],
+        drop_families=["rga", "rslc"],
     ),
     # Alaska's DSP model for the 2026 U.S. Senate race, shared with the ABEV Tracker.
     # Same nine-universe ladder as WI/MI but with a framework column named for the
@@ -337,7 +341,8 @@ MODELS = {
     # integer district path cannot produce.
     "AK": dict(
         mode="universe", table="ak_scores_audiences_20260721", schema="vs",
-        family="rslcak", family_label="RSLC AK",
+        family="ds", family_label="DS",
+        drop_families=["rslcak"],   # renamed 2026-09-21; clears the old keys
         univ_col="universenumber", name_col="universename",
         framework_col="framework", framework_gop=["Sullivan"], framework_dem=["Peltola"],
         turnout_cols=["flag_turnout_high", "flag_turnout_mid"],

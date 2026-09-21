@@ -64,8 +64,8 @@
    "leg_2024": -4.1,
    "latest_leg": -4.1,
    "pres_2024": -17.4,
-   "model_rslcak_all": 12.2,
-   "model_rslcak_hm": 15.3
+   "model_ds_all": 12.2,
+   "model_ds_hm": 15.3
   },
   "pres_2024_margin": -17.4,
   "gov_2022_margin": null,
@@ -80,9 +80,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -129,7 +129,7 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 33.9
+       "value": 33.8
       }
      ],
      "margin": 12.2,
@@ -141,12 +141,12 @@
      "vulnerable_middle": 0.1,
      "available_democrats": 3.7,
      "democrat_targets": 1.4,
-     "peltola_base": 33.9
+     "peltola_base": 33.8
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -269,8 +269,8 @@
    "leg_2024": 100.0,
    "latest_leg": 100.0,
    "pres_2024": 0.4,
-   "model_rslcak_all": -4.9,
-   "model_rslcak_hm": -11.7
+   "model_ds_all": -4.7,
+   "model_ds_hm": -11.7
   },
   "pres_2024_margin": 0.4,
   "gov_2022_margin": null,
@@ -285,9 +285,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -334,10 +334,10 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 46.8
+       "value": 46.7
       }
      ],
-     "margin": -4.9,
+     "margin": -4.7,
      "sullivan_base": 43.8,
      "republican_targets": 3.6,
      "trump_2024_overperform": 1.4,
@@ -346,12 +346,12 @@
      "vulnerable_middle": 0.1,
      "available_democrats": 0.9,
      "democrat_targets": 1.0,
-     "peltola_base": 46.8
+     "peltola_base": 46.7
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -480,8 +480,8 @@
    "leg_2024": 96.0,
    "latest_leg": 96.0,
    "pres_2024": 14.7,
-   "model_rslcak_all": -21.2,
-   "model_rslcak_hm": -26.1
+   "model_ds_all": -21.3,
+   "model_ds_hm": -26.4
   },
   "pres_2024_margin": 14.7,
   "gov_2022_margin": null,
@@ -496,16 +496,16 @@
    "dem": "Andi Story"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 34.6
+       "value": 34.5
       },
       {
        "key": "republican_targets",
@@ -515,12 +515,12 @@
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 2.3
+       "value": 2.4
       },
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 2.7
+       "value": 2.6
       },
       {
        "key": "core_persuasion",
@@ -545,31 +545,31 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 53.7
+       "value": 53.8
       }
      ],
-     "margin": -21.2,
-     "sullivan_base": 34.6,
+     "margin": -21.3,
+     "sullivan_base": 34.5,
      "republican_targets": 3.7,
-     "trump_2024_overperform": 2.3,
-     "message_targets": 2.7,
+     "trump_2024_overperform": 2.4,
+     "message_targets": 2.6,
      "core_persuasion": 0.5,
      "vulnerable_middle": 0.4,
      "available_democrats": 0.8,
      "democrat_targets": 1.2,
-     "peltola_base": 53.7
+     "peltola_base": 53.8
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 31.9
+       "value": 31.7
       },
       {
        "key": "republican_targets",
@@ -604,24 +604,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.4
+       "value": 1.5
       },
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 55.6
+       "value": 55.7
       }
      ],
-     "margin": -26.1,
-     "sullivan_base": 31.9,
+     "margin": -26.4,
+     "sullivan_base": 31.7,
      "republican_targets": 3.8,
      "trump_2024_overperform": 2.1,
      "message_targets": 3.2,
      "core_persuasion": 0.6,
      "vulnerable_middle": 0.5,
      "available_democrats": 0.9,
-     "democrat_targets": 1.4,
-     "peltola_base": 55.6
+     "democrat_targets": 1.5,
+     "peltola_base": 55.7
     }
    }
   }
@@ -691,8 +691,8 @@
    "leg_2024": 96.6,
    "latest_leg": 96.6,
    "pres_2024": 37.4,
-   "model_rslcak_all": -40.0,
-   "model_rslcak_hm": -46.6
+   "model_ds_all": -39.6,
+   "model_ds_hm": -46.3
   },
   "pres_2024_margin": 37.4,
   "gov_2022_margin": null,
@@ -707,16 +707,16 @@
    "dem": "Sara Hannan"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 26.1
+       "value": 26.2
       },
       {
        "key": "republican_targets",
@@ -756,11 +756,11 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 64.6
+       "value": 64.4
       }
      ],
-     "margin": -40.0,
-     "sullivan_base": 26.1,
+     "margin": -39.6,
+     "sullivan_base": 26.2,
      "republican_targets": 2.2,
      "trump_2024_overperform": 2.4,
      "message_targets": 2.2,
@@ -768,24 +768,24 @@
      "vulnerable_middle": 0.6,
      "available_democrats": 0.6,
      "democrat_targets": 0.8,
-     "peltola_base": 64.6
+     "peltola_base": 64.4
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 22.6
+       "value": 22.7
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 2.0
+       "value": 2.1
       },
       {
        "key": "trump_2024_overperform",
@@ -820,19 +820,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 67.5
+       "value": 67.3
       }
      ],
-     "margin": -46.6,
-     "sullivan_base": 22.6,
-     "republican_targets": 2.0,
+     "margin": -46.3,
+     "sullivan_base": 22.7,
+     "republican_targets": 2.1,
      "trump_2024_overperform": 2.4,
      "message_targets": 2.6,
      "core_persuasion": 0.5,
      "vulnerable_middle": 0.7,
      "available_democrats": 0.7,
      "democrat_targets": 1.0,
-     "peltola_base": 67.5
+     "peltola_base": 67.3
     }
    }
   }
@@ -902,8 +902,8 @@
    "leg_2024": -54.7,
    "latest_leg": -54.7,
    "pres_2024": -12.8,
-   "model_rslcak_all": 8.0,
-   "model_rslcak_hm": 3.5
+   "model_ds_all": 8.2,
+   "model_ds_hm": 3.6
   },
   "pres_2024_margin": -12.8,
   "gov_2022_margin": null,
@@ -918,16 +918,16 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 50.4
+       "value": 50.5
       },
       {
        "key": "republican_targets",
@@ -962,29 +962,29 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.1
+       "value": 1.2
       },
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 39.9
+       "value": 39.7
       }
      ],
-     "margin": 8.0,
-     "sullivan_base": 50.4,
+     "margin": 8.2,
+     "sullivan_base": 50.5,
      "republican_targets": 3.5,
      "trump_2024_overperform": 1.0,
      "message_targets": 2.3,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.2,
      "available_democrats": 1.4,
-     "democrat_targets": 1.1,
-     "peltola_base": 39.9
+     "democrat_targets": 1.2,
+     "peltola_base": 39.7
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -1006,7 +1006,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 2.4
+       "value": 2.5
       },
       {
        "key": "core_persuasion",
@@ -1031,19 +1031,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 41.4
+       "value": 41.3
       }
      ],
-     "margin": 3.5,
+     "margin": 3.6,
      "sullivan_base": 47.7,
      "republican_targets": 4.4,
      "trump_2024_overperform": 1.0,
-     "message_targets": 2.4,
+     "message_targets": 2.5,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.1,
      "available_democrats": 1.2,
      "democrat_targets": 1.6,
-     "peltola_base": 41.4
+     "peltola_base": 41.3
     }
    }
   }
@@ -1113,8 +1113,8 @@
    "leg_2024": -4.5,
    "latest_leg": -4.5,
    "pres_2024": -16.1,
-   "model_rslcak_all": 13.1,
-   "model_rslcak_hm": 10.0
+   "model_ds_all": 13.1,
+   "model_ds_hm": 10.1
   },
   "pres_2024_margin": -16.1,
   "gov_2022_margin": null,
@@ -1129,9 +1129,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -1193,16 +1193,16 @@
      "peltola_base": 35.7
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 51.1
+       "value": 51.2
       },
       {
        "key": "republican_targets",
@@ -1217,7 +1217,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 3.1
+       "value": 3.2
       },
       {
        "key": "core_persuasion",
@@ -1245,11 +1245,11 @@
        "value": 37.4
       }
      ],
-     "margin": 10.0,
-     "sullivan_base": 51.1,
+     "margin": 10.1,
+     "sullivan_base": 51.2,
      "republican_targets": 3.7,
      "trump_2024_overperform": 0.7,
-     "message_targets": 3.1,
+     "message_targets": 3.2,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.1,
      "available_democrats": 2.0,
@@ -1324,8 +1324,8 @@
    "leg_2024": -98.2,
    "latest_leg": -98.2,
    "pres_2024": -44.4,
-   "model_rslcak_all": 39.6,
-   "model_rslcak_hm": 41.5
+   "model_ds_all": 39.7,
+   "model_ds_hm": 41.4
   },
   "pres_2024_margin": -44.4,
   "gov_2022_margin": null,
@@ -1340,16 +1340,16 @@
    "dem": "Kate Veh"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 66.0
+       "value": 66.1
       },
       {
        "key": "republican_targets",
@@ -1359,7 +1359,7 @@
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.9
+       "value": 1.8
       },
       {
        "key": "message_targets",
@@ -1379,7 +1379,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 3.5
+       "value": 3.4
       },
       {
        "key": "democrat_targets",
@@ -1389,24 +1389,24 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 21.7
+       "value": 21.8
       }
      ],
-     "margin": 39.6,
-     "sullivan_base": 66.0,
+     "margin": 39.7,
+     "sullivan_base": 66.1,
      "republican_targets": 2.8,
-     "trump_2024_overperform": 1.9,
+     "trump_2024_overperform": 1.8,
      "message_targets": 2.7,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.0,
-     "available_democrats": 3.5,
+     "available_democrats": 3.4,
      "democrat_targets": 1.2,
-     "peltola_base": 21.7
+     "peltola_base": 21.8
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -1453,10 +1453,10 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 21.8
+       "value": 21.9
       }
      ],
-     "margin": 41.5,
+     "margin": 41.4,
      "sullivan_base": 67.2,
      "republican_targets": 3.1,
      "trump_2024_overperform": 0.8,
@@ -1465,7 +1465,7 @@
      "vulnerable_middle": 0.1,
      "available_democrats": 2.4,
      "democrat_targets": 1.5,
-     "peltola_base": 21.8
+     "peltola_base": 21.9
     }
    }
   }
@@ -1535,8 +1535,8 @@
    "leg_2024": -97.1,
    "latest_leg": -97.1,
    "pres_2024": -49.7,
-   "model_rslcak_all": 45.6,
-   "model_rslcak_hm": 47.5
+   "model_ds_all": 45.5,
+   "model_ds_hm": 47.5
   },
   "pres_2024_margin": -49.7,
   "gov_2022_margin": null,
@@ -1551,9 +1551,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -1600,10 +1600,10 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 18.1
+       "value": 18.2
       }
      ],
-     "margin": 45.6,
+     "margin": 45.5,
      "sullivan_base": 68.9,
      "republican_targets": 3.9,
      "trump_2024_overperform": 1.2,
@@ -1612,12 +1612,12 @@
      "vulnerable_middle": 0.0,
      "available_democrats": 4.5,
      "democrat_targets": 0.7,
-     "peltola_base": 18.1
+     "peltola_base": 18.2
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -1746,8 +1746,8 @@
    "leg_2024": 8.9,
    "latest_leg": 8.9,
    "pres_2024": 2.3,
-   "model_rslcak_all": -11.2,
-   "model_rslcak_hm": -12.4
+   "model_ds_all": -11.0,
+   "model_ds_hm": -12.2
   },
   "pres_2024_margin": 2.3,
   "gov_2022_margin": null,
@@ -1762,16 +1762,16 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 38.2
+       "value": 38.3
       },
       {
        "key": "republican_targets",
@@ -1786,7 +1786,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 3.5
+       "value": 3.6
       },
       {
        "key": "core_persuasion",
@@ -1811,24 +1811,24 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 44.4
+       "value": 44.3
       }
      ],
-     "margin": -11.2,
-     "sullivan_base": 38.2,
+     "margin": -11.0,
+     "sullivan_base": 38.3,
      "republican_targets": 4.9,
      "trump_2024_overperform": 1.9,
-     "message_targets": 3.5,
+     "message_targets": 3.6,
      "core_persuasion": 1.0,
      "vulnerable_middle": 1.1,
      "available_democrats": 3.5,
      "democrat_targets": 1.5,
-     "peltola_base": 44.4
+     "peltola_base": 44.3
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -1875,10 +1875,10 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 44.6
+       "value": 44.5
       }
      ],
-     "margin": -12.4,
+     "margin": -12.2,
      "sullivan_base": 37.4,
      "republican_targets": 4.9,
      "trump_2024_overperform": 2.0,
@@ -1887,7 +1887,7 @@
      "vulnerable_middle": 1.2,
      "available_democrats": 3.6,
      "democrat_targets": 1.6,
-     "peltola_base": 44.6
+     "peltola_base": 44.5
     }
    }
   }
@@ -1957,8 +1957,8 @@
    "leg_2024": -97.3,
    "latest_leg": -97.3,
    "pres_2024": -3.3,
-   "model_rslcak_all": -1.1,
-   "model_rslcak_hm": -5.4
+   "model_ds_all": -1.3,
+   "model_ds_hm": -5.7
   },
   "pres_2024_margin": -3.3,
   "gov_2022_margin": null,
@@ -1973,21 +1973,21 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 45.4
+       "value": 45.3
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 4.1
+       "value": 4.2
       },
       {
        "key": "trump_2024_overperform",
@@ -1997,7 +1997,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 1.6
+       "value": 1.7
       },
       {
        "key": "core_persuasion",
@@ -2007,7 +2007,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "available_democrats",
@@ -2025,28 +2025,28 @@
        "value": 44.6
       }
      ],
-     "margin": -1.1,
-     "sullivan_base": 45.4,
-     "republican_targets": 4.1,
+     "margin": -1.3,
+     "sullivan_base": 45.3,
+     "republican_targets": 4.2,
      "trump_2024_overperform": 1.2,
-     "message_targets": 1.6,
+     "message_targets": 1.7,
      "core_persuasion": 0.5,
-     "vulnerable_middle": 0.6,
+     "vulnerable_middle": 0.5,
      "available_democrats": 1.0,
      "democrat_targets": 1.0,
      "peltola_base": 44.6
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 43.3
+       "value": 43.1
       },
       {
        "key": "republican_targets",
@@ -2076,7 +2076,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.0
+       "value": 0.9
       },
       {
        "key": "democrat_targets",
@@ -2086,19 +2086,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 46.6
+       "value": 46.7
       }
      ],
-     "margin": -5.4,
-     "sullivan_base": 43.3,
+     "margin": -5.7,
+     "sullivan_base": 43.1,
      "republican_targets": 3.7,
      "trump_2024_overperform": 1.2,
      "message_targets": 1.9,
      "core_persuasion": 0.6,
      "vulnerable_middle": 0.5,
-     "available_democrats": 1.0,
+     "available_democrats": 0.9,
      "democrat_targets": 1.2,
-     "peltola_base": 46.6
+     "peltola_base": 46.7
     }
    }
   }
@@ -2168,8 +2168,8 @@
    "leg_2024": -5.4,
    "latest_leg": -5.4,
    "pres_2024": -2.3,
-   "model_rslcak_all": -6.5,
-   "model_rslcak_hm": -9.8
+   "model_ds_all": -6.5,
+   "model_ds_hm": -9.8
   },
   "pres_2024_margin": -2.3,
   "gov_2022_margin": null,
@@ -2184,9 +2184,9 @@
    "dem": "Danni Hall"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -2203,7 +2203,7 @@
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.8
+       "value": 1.7
       },
       {
        "key": "message_targets",
@@ -2228,7 +2228,7 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.4
+       "value": 1.5
       },
       {
        "key": "peltola_base",
@@ -2239,18 +2239,18 @@
      "margin": -6.5,
      "sullivan_base": 41.1,
      "republican_targets": 4.6,
-     "trump_2024_overperform": 1.8,
+     "trump_2024_overperform": 1.7,
      "message_targets": 3.2,
      "core_persuasion": 0.8,
      "vulnerable_middle": 1.0,
      "available_democrats": 3.0,
-     "democrat_targets": 1.4,
+     "democrat_targets": 1.5,
      "peltola_base": 43.1
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -2379,8 +2379,8 @@
    "leg_2024": 22.0,
    "latest_leg": 22.0,
    "pres_2024": 1.3,
-   "model_rslcak_all": -5.8,
-   "model_rslcak_hm": -10.4
+   "model_ds_all": -5.6,
+   "model_ds_hm": -10.3
   },
   "pres_2024_margin": 1.3,
   "gov_2022_margin": null,
@@ -2395,16 +2395,16 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 43.2
+       "value": 43.3
       },
       {
        "key": "republican_targets",
@@ -2419,7 +2419,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 1.7
+       "value": 1.8
       },
       {
        "key": "core_persuasion",
@@ -2444,31 +2444,31 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 46.8
+       "value": 46.7
       }
      ],
-     "margin": -5.8,
-     "sullivan_base": 43.2,
+     "margin": -5.6,
+     "sullivan_base": 43.3,
      "republican_targets": 4.2,
      "trump_2024_overperform": 1.0,
-     "message_targets": 1.7,
+     "message_targets": 1.8,
      "core_persuasion": 0.7,
      "vulnerable_middle": 0.3,
      "available_democrats": 1.0,
      "democrat_targets": 1.1,
-     "peltola_base": 46.8
+     "peltola_base": 46.7
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 40.8
+       "value": 40.9
       },
       {
        "key": "republican_targets",
@@ -2511,8 +2511,8 @@
        "value": 48.8
       }
      ],
-     "margin": -10.4,
-     "sullivan_base": 40.8,
+     "margin": -10.3,
+     "sullivan_base": 40.9,
      "republican_targets": 4.1,
      "trump_2024_overperform": 0.9,
      "message_targets": 1.9,
@@ -2590,8 +2590,8 @@
    "leg_2024": 6.8,
    "latest_leg": 6.8,
    "pres_2024": 1.2,
-   "model_rslcak_all": -3.0,
-   "model_rslcak_hm": -9.9
+   "model_ds_all": -3.0,
+   "model_ds_hm": -10.0
   },
   "pres_2024_margin": 1.2,
   "gov_2022_margin": null,
@@ -2606,16 +2606,16 @@
    "dem": "Lisa Keller"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 45.2
+       "value": 45.1
       },
       {
        "key": "republican_targets",
@@ -2650,7 +2650,7 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.0
+       "value": 0.9
       },
       {
        "key": "peltola_base",
@@ -2659,27 +2659,27 @@
       }
      ],
      "margin": -3.0,
-     "sullivan_base": 45.2,
+     "sullivan_base": 45.1,
      "republican_targets": 3.8,
      "trump_2024_overperform": 1.1,
      "message_targets": 0.9,
      "core_persuasion": 0.4,
      "vulnerable_middle": 0.5,
      "available_democrats": 0.4,
-     "democrat_targets": 1.0,
+     "democrat_targets": 0.9,
      "peltola_base": 46.8
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 41.6
+       "value": 41.5
       },
       {
        "key": "republican_targets",
@@ -2694,7 +2694,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 1.1
+       "value": 1.0
       },
       {
        "key": "core_persuasion",
@@ -2719,19 +2719,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 49.8
+       "value": 49.9
       }
      ],
-     "margin": -9.9,
-     "sullivan_base": 41.6,
+     "margin": -10.0,
+     "sullivan_base": 41.5,
      "republican_targets": 3.9,
      "trump_2024_overperform": 1.0,
-     "message_targets": 1.1,
+     "message_targets": 1.0,
      "core_persuasion": 0.5,
      "vulnerable_middle": 0.6,
      "available_democrats": 0.4,
      "democrat_targets": 1.2,
-     "peltola_base": 49.8
+     "peltola_base": 49.9
     }
    }
   }
@@ -2801,8 +2801,8 @@
    "leg_2024": 79.6,
    "latest_leg": 79.6,
    "pres_2024": 21.2,
-   "model_rslcak_all": -24.0,
-   "model_rslcak_hm": -34.1
+   "model_ds_all": -23.9,
+   "model_ds_hm": -34.1
   },
   "pres_2024_margin": 21.2,
   "gov_2022_margin": null,
@@ -2817,16 +2817,16 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 33.4
+       "value": 33.5
       },
       {
        "key": "republican_targets",
@@ -2861,29 +2861,29 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 0.7
+       "value": 0.8
       },
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 56.6
+       "value": 56.5
       }
      ],
-     "margin": -24.0,
-     "sullivan_base": 33.4,
+     "margin": -23.9,
+     "sullivan_base": 33.5,
      "republican_targets": 4.5,
      "trump_2024_overperform": 1.2,
      "message_targets": 1.0,
      "core_persuasion": 0.7,
      "vulnerable_middle": 1.7,
      "available_democrats": 0.2,
-     "democrat_targets": 0.7,
-     "peltola_base": 56.6
+     "democrat_targets": 0.8,
+     "peltola_base": 56.5
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -2930,7 +2930,7 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 61.4
+       "value": 61.2
       }
      ],
      "margin": -34.1,
@@ -2942,7 +2942,7 @@
      "vulnerable_middle": 1.9,
      "available_democrats": 0.2,
      "democrat_targets": 0.9,
-     "peltola_base": 61.4
+     "peltola_base": 61.2
     }
    }
   }
@@ -3012,8 +3012,8 @@
    "leg_2024": -3.3,
    "latest_leg": -3.3,
    "pres_2024": -2.5,
-   "model_rslcak_all": -4.2,
-   "model_rslcak_hm": -7.1
+   "model_ds_all": -4.4,
+   "model_ds_hm": -7.4
   },
   "pres_2024_margin": -2.5,
   "gov_2022_margin": null,
@@ -3028,16 +3028,16 @@
    "dem": "Denny Wells"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 42.6
+       "value": 42.5
       },
       {
        "key": "republican_targets",
@@ -3047,7 +3047,7 @@
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.2
+       "value": 1.3
       },
       {
        "key": "message_targets",
@@ -3077,36 +3077,36 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 44.6
+       "value": 44.7
       }
      ],
-     "margin": -4.2,
-     "sullivan_base": 42.6,
+     "margin": -4.4,
+     "sullivan_base": 42.5,
      "republican_targets": 4.8,
-     "trump_2024_overperform": 1.2,
+     "trump_2024_overperform": 1.3,
      "message_targets": 2.1,
      "core_persuasion": 1.0,
      "vulnerable_middle": 1.4,
      "available_democrats": 0.8,
      "democrat_targets": 1.4,
-     "peltola_base": 44.6
+     "peltola_base": 44.7
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 41.2
+       "value": 41.0
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 4.4
+       "value": 4.5
       },
       {
        "key": "trump_2024_overperform",
@@ -3141,19 +3141,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 45.8
+       "value": 45.9
       }
      ],
-     "margin": -7.1,
-     "sullivan_base": 41.2,
-     "republican_targets": 4.4,
+     "margin": -7.4,
+     "sullivan_base": 41.0,
+     "republican_targets": 4.5,
      "trump_2024_overperform": 1.1,
      "message_targets": 2.3,
      "core_persuasion": 1.2,
      "vulnerable_middle": 1.6,
      "available_democrats": 0.9,
      "democrat_targets": 1.6,
-     "peltola_base": 45.8
+     "peltola_base": 45.9
     }
    }
   }
@@ -3223,8 +3223,8 @@
    "leg_2024": 56.6,
    "latest_leg": 56.6,
    "pres_2024": 14.6,
-   "model_rslcak_all": -20.7,
-   "model_rslcak_hm": -26.1
+   "model_ds_all": -20.6,
+   "model_ds_hm": -25.9
   },
   "pres_2024_margin": 14.6,
   "gov_2022_margin": null,
@@ -3239,26 +3239,26 @@
    "dem": "Carolyn Hall"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 34.4
+       "value": 34.5
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 4.7
+       "value": 4.6
       },
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.4
+       "value": 1.5
       },
       {
        "key": "message_targets",
@@ -3288,31 +3288,31 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 54.1
+       "value": 54.0
       }
      ],
-     "margin": -20.7,
-     "sullivan_base": 34.4,
-     "republican_targets": 4.7,
-     "trump_2024_overperform": 1.4,
+     "margin": -20.6,
+     "sullivan_base": 34.5,
+     "republican_targets": 4.6,
+     "trump_2024_overperform": 1.5,
      "message_targets": 1.7,
      "core_persuasion": 0.9,
      "vulnerable_middle": 1.7,
      "available_democrats": 0.3,
      "democrat_targets": 0.8,
-     "peltola_base": 54.1
+     "peltola_base": 54.0
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 31.9
+       "value": 32.0
       },
       {
        "key": "republican_targets",
@@ -3352,11 +3352,11 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 56.7
+       "value": 56.6
       }
      ],
-     "margin": -26.1,
-     "sullivan_base": 31.9,
+     "margin": -25.9,
+     "sullivan_base": 32.0,
      "republican_targets": 4.2,
      "trump_2024_overperform": 1.1,
      "message_targets": 1.9,
@@ -3364,7 +3364,7 @@
      "vulnerable_middle": 1.8,
      "available_democrats": 0.3,
      "democrat_targets": 1.0,
-     "peltola_base": 56.7
+     "peltola_base": 56.6
     }
    }
   }
@@ -3434,8 +3434,8 @@
    "leg_2024": 93.6,
    "latest_leg": 93.6,
    "pres_2024": 33.5,
-   "model_rslcak_all": -34.7,
-   "model_rslcak_hm": -45.6
+   "model_ds_all": -34.8,
+   "model_ds_hm": -45.8
   },
   "pres_2024_margin": 33.5,
   "gov_2022_margin": null,
@@ -3450,16 +3450,16 @@
    "dem": "Zack Fields"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 28.1
+       "value": 28.0
       },
       {
        "key": "republican_targets",
@@ -3502,8 +3502,8 @@
        "value": 61.4
       }
      ],
-     "margin": -34.7,
-     "sullivan_base": 28.1,
+     "margin": -34.8,
+     "sullivan_base": 28.0,
      "republican_targets": 2.9,
      "trump_2024_overperform": 1.6,
      "message_targets": 1.1,
@@ -3514,16 +3514,16 @@
      "peltola_base": 61.4
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 22.3
+       "value": 22.2
       },
       {
        "key": "republican_targets",
@@ -3548,7 +3548,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 2.7
+       "value": 2.8
       },
       {
        "key": "available_democrats",
@@ -3563,19 +3563,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 66.3
+       "value": 66.4
       }
      ],
-     "margin": -45.6,
-     "sullivan_base": 22.3,
+     "margin": -45.8,
+     "sullivan_base": 22.2,
      "republican_targets": 3.3,
      "trump_2024_overperform": 1.4,
      "message_targets": 1.3,
      "core_persuasion": 1.0,
-     "vulnerable_middle": 2.7,
+     "vulnerable_middle": 2.8,
      "available_democrats": 0.5,
      "democrat_targets": 1.1,
-     "peltola_base": 66.3
+     "peltola_base": 66.4
     }
    }
   }
@@ -3645,8 +3645,8 @@
    "leg_2024": -0.6,
    "latest_leg": -0.6,
    "pres_2024": -15.7,
-   "model_rslcak_all": 16.3,
-   "model_rslcak_hm": -13.4
+   "model_ds_all": 16.3,
+   "model_ds_hm": -13.5
   },
   "pres_2024_margin": -15.7,
   "gov_2022_margin": null,
@@ -3661,9 +3661,9 @@
    "dem": "Cliff Groh"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -3725,9 +3725,9 @@
      "peltola_base": 36.4
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -3774,10 +3774,10 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 51.6
+       "value": 51.7
       }
      ],
-     "margin": -13.4,
+     "margin": -13.5,
      "sullivan_base": 40.4,
      "republican_targets": 3.5,
      "trump_2024_overperform": 0.9,
@@ -3786,7 +3786,7 @@
      "vulnerable_middle": 0.1,
      "available_democrats": 0.8,
      "democrat_targets": 1.4,
-     "peltola_base": 51.6
+     "peltola_base": 51.7
     }
    }
   }
@@ -3856,8 +3856,8 @@
    "leg_2024": 29.8,
    "latest_leg": 29.8,
    "pres_2024": 17.0,
-   "model_rslcak_all": -15.4,
-   "model_rslcak_hm": -30.3
+   "model_ds_all": -15.4,
+   "model_ds_hm": -30.6
   },
   "pres_2024_margin": 17.0,
   "gov_2022_margin": null,
@@ -3872,9 +3872,9 @@
    "dem": "Genevieve Mina"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -3896,7 +3896,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 0.7
+       "value": 0.8
       },
       {
        "key": "core_persuasion",
@@ -3906,7 +3906,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 1.2
+       "value": 1.3
       },
       {
        "key": "available_democrats",
@@ -3928,24 +3928,24 @@
      "sullivan_base": 38.0,
      "republican_targets": 4.4,
      "trump_2024_overperform": 1.8,
-     "message_targets": 0.7,
+     "message_targets": 0.8,
      "core_persuasion": 0.4,
-     "vulnerable_middle": 1.2,
+     "vulnerable_middle": 1.3,
      "available_democrats": 0.4,
      "democrat_targets": 0.6,
      "peltola_base": 52.4
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 30.6
+       "value": 30.5
       },
       {
        "key": "republican_targets",
@@ -3955,7 +3955,7 @@
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.4
+       "value": 1.3
       },
       {
        "key": "message_targets",
@@ -3980,24 +3980,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 0.8
+       "value": 0.9
       },
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 59.6
+       "value": 59.7
       }
      ],
-     "margin": -30.3,
-     "sullivan_base": 30.6,
+     "margin": -30.6,
+     "sullivan_base": 30.5,
      "republican_targets": 4.6,
-     "trump_2024_overperform": 1.4,
+     "trump_2024_overperform": 1.3,
      "message_targets": 1.0,
      "core_persuasion": 0.4,
      "vulnerable_middle": 1.2,
      "available_democrats": 0.5,
-     "democrat_targets": 0.8,
-     "peltola_base": 59.6
+     "democrat_targets": 0.9,
+     "peltola_base": 59.7
     }
    }
   }
@@ -4067,8 +4067,8 @@
    "leg_2024": 63.8,
    "latest_leg": 63.8,
    "pres_2024": 12.2,
-   "model_rslcak_all": -13.9,
-   "model_rslcak_hm": -23.0
+   "model_ds_all": -13.9,
+   "model_ds_hm": -22.9
   },
   "pres_2024_margin": 12.2,
   "gov_2022_margin": null,
@@ -4083,9 +4083,9 @@
    "dem": "Andrew Gray"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -4112,7 +4112,7 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "vulnerable_middle",
@@ -4140,23 +4140,23 @@
      "republican_targets": 4.3,
      "trump_2024_overperform": 1.1,
      "message_targets": 1.3,
-     "core_persuasion": 0.6,
+     "core_persuasion": 0.5,
      "vulnerable_middle": 0.7,
      "available_democrats": 0.4,
      "democrat_targets": 0.9,
      "peltola_base": 51.7
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 34.3
+       "value": 34.4
       },
       {
        "key": "republican_targets",
@@ -4196,11 +4196,11 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 55.7
+       "value": 55.6
       }
      ],
-     "margin": -23.0,
-     "sullivan_base": 34.3,
+     "margin": -22.9,
+     "sullivan_base": 34.4,
      "republican_targets": 4.2,
      "trump_2024_overperform": 0.9,
      "message_targets": 1.7,
@@ -4208,7 +4208,7 @@
      "vulnerable_middle": 0.9,
      "available_democrats": 0.4,
      "democrat_targets": 1.2,
-     "peltola_base": 55.7
+     "peltola_base": 55.6
     }
    }
   }
@@ -4278,8 +4278,8 @@
    "leg_2024": 10.9,
    "latest_leg": 10.9,
    "pres_2024": 8.0,
-   "model_rslcak_all": -13.1,
-   "model_rslcak_hm": -17.7
+   "model_ds_all": -13.0,
+   "model_ds_hm": -17.7
   },
   "pres_2024_margin": 8.0,
   "gov_2022_margin": null,
@@ -4294,9 +4294,9 @@
    "dem": "Donna Mears"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -4318,7 +4318,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 1.3
+       "value": 1.4
       },
       {
        "key": "core_persuasion",
@@ -4346,11 +4346,11 @@
        "value": 50.4
       }
      ],
-     "margin": -13.1,
+     "margin": -13.0,
      "sullivan_base": 38.9,
      "republican_targets": 5.6,
      "trump_2024_overperform": 1.0,
-     "message_targets": 1.3,
+     "message_targets": 1.4,
      "core_persuasion": 0.6,
      "vulnerable_middle": 0.6,
      "available_democrats": 0.3,
@@ -4358,9 +4358,9 @@
      "peltola_base": 50.4
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -4407,7 +4407,7 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 52.5
+       "value": 52.6
       }
      ],
      "margin": -17.7,
@@ -4419,7 +4419,7 @@
      "vulnerable_middle": 0.7,
      "available_democrats": 0.3,
      "democrat_targets": 1.6,
-     "peltola_base": 52.5
+     "peltola_base": 52.6
     }
    }
   }
@@ -4489,8 +4489,8 @@
    "leg_2024": 5.0,
    "latest_leg": 5.0,
    "pres_2024": 1.2,
-   "model_rslcak_all": 1.3,
-   "model_rslcak_hm": -8.6
+   "model_ds_all": 1.3,
+   "model_ds_hm": -8.7
   },
   "pres_2024_margin": 1.2,
   "gov_2022_margin": null,
@@ -4505,9 +4505,9 @@
    "dem": "Ted Eischeid"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -4569,9 +4569,9 @@
      "peltola_base": 45.0
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -4593,7 +4593,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 1.2
+       "value": 1.1
       },
       {
        "key": "core_persuasion",
@@ -4621,11 +4621,11 @@
        "value": 49.4
       }
      ],
-     "margin": -8.6,
+     "margin": -8.7,
      "sullivan_base": 42.6,
      "republican_targets": 3.7,
      "trump_2024_overperform": 0.9,
-     "message_targets": 1.2,
+     "message_targets": 1.1,
      "core_persuasion": 0.1,
      "vulnerable_middle": 0.2,
      "available_democrats": 0.6,
@@ -4700,8 +4700,8 @@
    "leg_2024": -24.1,
    "latest_leg": -24.1,
    "pres_2024": -18.6,
-   "model_rslcak_all": 14.1,
-   "model_rslcak_hm": 7.7
+   "model_ds_all": 14.1,
+   "model_ds_hm": 7.6
   },
   "pres_2024_margin": -18.6,
   "gov_2022_margin": null,
@@ -4716,16 +4716,16 @@
    "dem": "Jim Arlington"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 53.1
+       "value": 53.0
       },
       {
        "key": "republican_targets",
@@ -4745,7 +4745,7 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.6
+       "value": 0.7
       },
       {
        "key": "vulnerable_middle",
@@ -4769,20 +4769,20 @@
       }
      ],
      "margin": 14.1,
-     "sullivan_base": 53.1,
+     "sullivan_base": 53.0,
      "republican_targets": 3.7,
      "trump_2024_overperform": 1.3,
      "message_targets": 1.8,
-     "core_persuasion": 0.6,
+     "core_persuasion": 0.7,
      "vulnerable_middle": 0.6,
      "available_democrats": 2.3,
      "democrat_targets": 1.1,
      "peltola_base": 35.6
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -4794,7 +4794,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 3.5
+       "value": 3.6
       },
       {
        "key": "trump_2024_overperform",
@@ -4804,12 +4804,12 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 2.0
+       "value": 1.9
       },
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.8
+       "value": 0.9
       },
       {
        "key": "vulnerable_middle",
@@ -4829,19 +4829,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 38.3
+       "value": 38.4
       }
      ],
-     "margin": 7.7,
+     "margin": 7.6,
      "sullivan_base": 49.8,
-     "republican_targets": 3.5,
+     "republican_targets": 3.6,
      "trump_2024_overperform": 1.1,
-     "message_targets": 2.0,
-     "core_persuasion": 0.8,
+     "message_targets": 1.9,
+     "core_persuasion": 0.9,
      "vulnerable_middle": 0.6,
      "available_democrats": 2.3,
      "democrat_targets": 1.4,
-     "peltola_base": 38.3
+     "peltola_base": 38.4
     }
    }
   }
@@ -4911,8 +4911,8 @@
    "leg_2024": -100.0,
    "latest_leg": -100.0,
    "pres_2024": -32.1,
-   "model_rslcak_all": 24.9,
-   "model_rslcak_hm": 24.8
+   "model_ds_all": 24.8,
+   "model_ds_hm": 24.7
   },
   "pres_2024_margin": -32.1,
   "gov_2022_margin": null,
@@ -4927,16 +4927,16 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 57.6
+       "value": 57.5
       },
       {
        "key": "republican_targets",
@@ -4951,7 +4951,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 3.5
+       "value": 3.6
       },
       {
        "key": "core_persuasion",
@@ -4979,11 +4979,11 @@
        "value": 28.4
       }
      ],
-     "margin": 24.9,
-     "sullivan_base": 57.6,
+     "margin": 24.8,
+     "sullivan_base": 57.5,
      "republican_targets": 4.3,
      "trump_2024_overperform": 1.3,
-     "message_targets": 3.5,
+     "message_targets": 3.6,
      "core_persuasion": 0.5,
      "vulnerable_middle": 0.2,
      "available_democrats": 3.6,
@@ -4991,16 +4991,16 @@
      "peltola_base": 28.4
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 57.5
+       "value": 57.4
       },
       {
        "key": "republican_targets",
@@ -5040,11 +5040,11 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 28.8
+       "value": 28.9
       }
      ],
-     "margin": 24.8,
-     "sullivan_base": 57.5,
+     "margin": 24.7,
+     "sullivan_base": 57.4,
      "republican_targets": 4.5,
      "trump_2024_overperform": 1.3,
      "message_targets": 3.3,
@@ -5052,7 +5052,7 @@
      "vulnerable_middle": 0.2,
      "available_democrats": 2.9,
      "democrat_targets": 1.0,
-     "peltola_base": 28.8
+     "peltola_base": 28.9
     }
    }
   }
@@ -5122,8 +5122,8 @@
    "leg_2024": -91.7,
    "latest_leg": -91.7,
    "pres_2024": -35.6,
-   "model_rslcak_all": 31.9,
-   "model_rslcak_hm": 34.1
+   "model_ds_all": 31.9,
+   "model_ds_hm": 34.1
   },
   "pres_2024_margin": -35.6,
   "gov_2022_margin": null,
@@ -5138,16 +5138,16 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 60.6
+       "value": 60.5
       },
       {
        "key": "republican_targets",
@@ -5177,7 +5177,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 5.6
+       "value": 5.5
       },
       {
        "key": "democrat_targets",
@@ -5187,24 +5187,24 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 22.0
+       "value": 21.9
       }
      ],
      "margin": 31.9,
-     "sullivan_base": 60.6,
+     "sullivan_base": 60.5,
      "republican_targets": 4.0,
      "trump_2024_overperform": 1.7,
      "message_targets": 4.9,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.0,
-     "available_democrats": 5.6,
+     "available_democrats": 5.5,
      "democrat_targets": 1.1,
-     "peltola_base": 22.0
+     "peltola_base": 21.9
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -5251,7 +5251,7 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 22.5
+       "value": 22.4
       }
      ],
      "margin": 34.1,
@@ -5263,7 +5263,7 @@
      "vulnerable_middle": 0.0,
      "available_democrats": 4.1,
      "democrat_targets": 1.4,
-     "peltola_base": 22.5
+     "peltola_base": 22.4
     }
    }
   }
@@ -5333,8 +5333,8 @@
    "leg_2024": -93.3,
    "latest_leg": -93.3,
    "pres_2024": -54.3,
-   "model_rslcak_all": 49.0,
-   "model_rslcak_hm": 51.9
+   "model_ds_all": 48.7,
+   "model_ds_hm": 51.7
   },
   "pres_2024_margin": -54.3,
   "gov_2022_margin": null,
@@ -5349,16 +5349,16 @@
    "dem": "Jeanne Troshynski"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 70.1
+       "value": 70.0
       },
       {
        "key": "republican_targets",
@@ -5388,7 +5388,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 6.5
+       "value": 6.6
       },
       {
        "key": "democrat_targets",
@@ -5398,31 +5398,31 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 14.3
+       "value": 14.4
       }
      ],
-     "margin": 49.0,
-     "sullivan_base": 70.1,
+     "margin": 48.7,
+     "sullivan_base": 70.0,
      "republican_targets": 3.6,
      "trump_2024_overperform": 1.4,
      "message_targets": 3.5,
      "core_persuasion": 0.1,
      "vulnerable_middle": 0.0,
-     "available_democrats": 6.5,
+     "available_democrats": 6.6,
      "democrat_targets": 0.4,
-     "peltola_base": 14.3
+     "peltola_base": 14.4
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 72.1
+       "value": 72.0
       },
       {
        "key": "republican_targets",
@@ -5462,11 +5462,11 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 13.9
+       "value": 14.0
       }
      ],
-     "margin": 51.9,
-     "sullivan_base": 72.1,
+     "margin": 51.7,
+     "sullivan_base": 72.0,
      "republican_targets": 3.5,
      "trump_2024_overperform": 1.0,
      "message_targets": 3.1,
@@ -5474,7 +5474,7 @@
      "vulnerable_middle": 0.0,
      "available_democrats": 5.8,
      "democrat_targets": 0.5,
-     "peltola_base": 13.9
+     "peltola_base": 14.0
     }
    }
   }
@@ -5544,8 +5544,8 @@
    "leg_2024": -97.4,
    "latest_leg": -97.4,
    "pres_2024": -56.2,
-   "model_rslcak_all": 49.4,
-   "model_rslcak_hm": 50.3
+   "model_ds_all": 49.5,
+   "model_ds_hm": 50.4
   },
   "pres_2024_margin": -56.2,
   "gov_2022_margin": null,
@@ -5560,9 +5560,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -5599,7 +5599,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 4.7
+       "value": 4.6
       },
       {
        "key": "democrat_targets",
@@ -5612,21 +5612,21 @@
        "value": 16.5
       }
      ],
-     "margin": 49.4,
+     "margin": 49.5,
      "sullivan_base": 71.3,
      "republican_targets": 3.7,
      "trump_2024_overperform": 1.4,
      "message_targets": 1.6,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.0,
-     "available_democrats": 4.7,
+     "available_democrats": 4.6,
      "democrat_targets": 0.7,
      "peltola_base": 16.5
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -5648,7 +5648,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 1.7
+       "value": 1.6
       },
       {
        "key": "core_persuasion",
@@ -5673,19 +5673,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 16.2
+       "value": 16.3
       }
      ],
-     "margin": 50.3,
+     "margin": 50.4,
      "sullivan_base": 71.7,
      "republican_targets": 4.0,
      "trump_2024_overperform": 0.9,
-     "message_targets": 1.7,
+     "message_targets": 1.6,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.0,
      "available_democrats": 4.2,
      "democrat_targets": 0.9,
-     "peltola_base": 16.2
+     "peltola_base": 16.3
     }
    }
   }
@@ -5755,8 +5755,8 @@
    "leg_2024": -100.0,
    "latest_leg": -100.0,
    "pres_2024": -48.5,
-   "model_rslcak_all": 43.2,
-   "model_rslcak_hm": 46.1
+   "model_ds_all": 43.4,
+   "model_ds_hm": 46.3
   },
   "pres_2024_margin": -48.5,
   "gov_2022_margin": null,
@@ -5771,21 +5771,21 @@
    "dem": "Kathleen Kennedy"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 67.4
+       "value": 67.5
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 3.3
+       "value": 3.4
       },
       {
        "key": "trump_2024_overperform",
@@ -5810,7 +5810,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 5.9
+       "value": 5.8
       },
       {
        "key": "democrat_targets",
@@ -5820,31 +5820,31 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 17.7
+       "value": 17.6
       }
      ],
-     "margin": 43.2,
-     "sullivan_base": 67.4,
-     "republican_targets": 3.3,
+     "margin": 43.4,
+     "sullivan_base": 67.5,
+     "republican_targets": 3.4,
      "trump_2024_overperform": 1.1,
      "message_targets": 3.6,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.0,
-     "available_democrats": 5.9,
+     "available_democrats": 5.8,
      "democrat_targets": 0.7,
-     "peltola_base": 17.7
+     "peltola_base": 17.6
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 69.1
+       "value": 69.2
       },
       {
        "key": "republican_targets",
@@ -5884,11 +5884,11 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 17.7
+       "value": 17.6
       }
      ],
-     "margin": 46.1,
-     "sullivan_base": 69.1,
+     "margin": 46.3,
+     "sullivan_base": 69.2,
      "republican_targets": 3.5,
      "trump_2024_overperform": 1.0,
      "message_targets": 3.1,
@@ -5896,7 +5896,7 @@
      "vulnerable_middle": 0.0,
      "available_democrats": 4.4,
      "democrat_targets": 0.9,
-     "peltola_base": 17.7
+     "peltola_base": 17.6
     }
    }
   }
@@ -5966,8 +5966,8 @@
    "leg_2024": -91.1,
    "latest_leg": -91.1,
    "pres_2024": -44.9,
-   "model_rslcak_all": 37.5,
-   "model_rslcak_hm": 41.0
+   "model_ds_all": 37.2,
+   "model_ds_hm": 40.7
   },
   "pres_2024_margin": -44.9,
   "gov_2022_margin": null,
@@ -5982,16 +5982,16 @@
    "dem": "Kimberly Slone"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 63.7
+       "value": 63.5
       },
       {
        "key": "republican_targets",
@@ -6001,7 +6001,7 @@
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 1.6
+       "value": 1.7
       },
       {
        "key": "message_targets",
@@ -6031,31 +6031,31 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 19.7
+       "value": 19.8
       }
      ],
-     "margin": 37.5,
-     "sullivan_base": 63.7,
+     "margin": 37.2,
+     "sullivan_base": 63.5,
      "republican_targets": 4.0,
-     "trump_2024_overperform": 1.6,
+     "trump_2024_overperform": 1.7,
      "message_targets": 4.2,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.1,
      "available_democrats": 5.7,
      "democrat_targets": 0.8,
-     "peltola_base": 19.7
+     "peltola_base": 19.8
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 65.3
+       "value": 65.2
       },
       {
        "key": "republican_targets",
@@ -6095,11 +6095,11 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 19.2
+       "value": 19.3
       }
      ],
-     "margin": 41.0,
-     "sullivan_base": 65.3,
+     "margin": 40.7,
+     "sullivan_base": 65.2,
      "republican_targets": 4.4,
      "trump_2024_overperform": 1.6,
      "message_targets": 4.0,
@@ -6107,7 +6107,7 @@
      "vulnerable_middle": 0.1,
      "available_democrats": 4.1,
      "democrat_targets": 1.1,
-     "peltola_base": 19.2
+     "peltola_base": 19.3
     }
    }
   }
@@ -6177,8 +6177,8 @@
    "leg_2024": -96.3,
    "latest_leg": -96.3,
    "pres_2024": -44.7,
-   "model_rslcak_all": 37.6,
-   "model_rslcak_hm": 36.7
+   "model_ds_all": 37.6,
+   "model_ds_hm": 36.6
   },
   "pres_2024_margin": -44.7,
   "gov_2022_margin": null,
@@ -6193,9 +6193,9 @@
    "dem": "Sandra Loomis"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -6222,7 +6222,7 @@
       {
        "key": "core_persuasion",
        "label": "Core Persuasion",
-       "value": 0.2
+       "value": 0.1
       },
       {
        "key": "vulnerable_middle",
@@ -6242,7 +6242,7 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 22.0
+       "value": 22.1
       }
      ],
      "margin": 37.6,
@@ -6250,28 +6250,28 @@
      "republican_targets": 5.1,
      "trump_2024_overperform": 1.5,
      "message_targets": 3.0,
-     "core_persuasion": 0.2,
+     "core_persuasion": 0.1,
      "vulnerable_middle": 0.0,
      "available_democrats": 3.5,
      "democrat_targets": 0.8,
-     "peltola_base": 22.0
+     "peltola_base": 22.1
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 63.2
+       "value": 63.1
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 5.6
+       "value": 5.5
       },
       {
        "key": "trump_2024_overperform",
@@ -6296,7 +6296,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 3.5
+       "value": 3.6
       },
       {
        "key": "democrat_targets",
@@ -6309,14 +6309,14 @@
        "value": 22.0
       }
      ],
-     "margin": 36.7,
-     "sullivan_base": 63.2,
-     "republican_targets": 5.6,
+     "margin": 36.6,
+     "sullivan_base": 63.1,
+     "republican_targets": 5.5,
      "trump_2024_overperform": 1.6,
      "message_targets": 3.0,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.0,
-     "available_democrats": 3.5,
+     "available_democrats": 3.6,
      "democrat_targets": 1.0,
      "peltola_base": 22.0
     }
@@ -6388,8 +6388,8 @@
    "leg_2024": 8.8,
    "latest_leg": 8.8,
    "pres_2024": -3.4,
-   "model_rslcak_all": 1.1,
-   "model_rslcak_hm": -2.5
+   "model_ds_all": 0.9,
+   "model_ds_hm": -2.7
   },
   "pres_2024_margin": -3.4,
   "gov_2022_margin": null,
@@ -6404,16 +6404,16 @@
    "dem": "Maxine Dibert"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 47.1
+       "value": 47.0
       },
       {
        "key": "republican_targets",
@@ -6453,11 +6453,11 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 43.4
+       "value": 43.5
       }
      ],
-     "margin": 1.1,
-     "sullivan_base": 47.1,
+     "margin": 0.9,
+     "sullivan_base": 47.0,
      "republican_targets": 4.6,
      "trump_2024_overperform": 0.7,
      "message_targets": 1.2,
@@ -6465,19 +6465,19 @@
      "vulnerable_middle": 0.2,
      "available_democrats": 0.9,
      "democrat_targets": 1.7,
-     "peltola_base": 43.4
+     "peltola_base": 43.5
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 44.7
+       "value": 44.6
       },
       {
        "key": "republican_targets",
@@ -6507,7 +6507,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 0.6
+       "value": 0.5
       },
       {
        "key": "democrat_targets",
@@ -6517,19 +6517,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 44.4
+       "value": 44.5
       }
      ],
-     "margin": -2.5,
-     "sullivan_base": 44.7,
+     "margin": -2.7,
+     "sullivan_base": 44.6,
      "republican_targets": 5.4,
      "trump_2024_overperform": 0.7,
      "message_targets": 1.3,
      "core_persuasion": 0.4,
      "vulnerable_middle": 0.2,
-     "available_democrats": 0.6,
+     "available_democrats": 0.5,
      "democrat_targets": 2.3,
-     "peltola_base": 44.4
+     "peltola_base": 44.5
     }
    }
   }
@@ -6599,8 +6599,8 @@
    "leg_2024": -35.0,
    "latest_leg": -35.0,
    "pres_2024": -31.7,
-   "model_rslcak_all": 27.9,
-   "model_rslcak_hm": 24.2
+   "model_ds_all": 28.1,
+   "model_ds_hm": 24.4
   },
   "pres_2024_margin": -31.7,
   "gov_2022_margin": null,
@@ -6615,16 +6615,16 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 61.3
+       "value": 61.4
       },
       {
        "key": "republican_targets",
@@ -6664,11 +6664,11 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 28.2
+       "value": 28.1
       }
      ],
-     "margin": 27.9,
-     "sullivan_base": 61.3,
+     "margin": 28.1,
+     "sullivan_base": 61.4,
      "republican_targets": 2.8,
      "trump_2024_overperform": 0.7,
      "message_targets": 1.4,
@@ -6676,19 +6676,19 @@
      "vulnerable_middle": 0.2,
      "available_democrats": 4.5,
      "democrat_targets": 0.7,
-     "peltola_base": 28.2
+     "peltola_base": 28.1
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 59.1
+       "value": 59.2
       },
       {
        "key": "republican_targets",
@@ -6698,12 +6698,12 @@
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 0.5
+       "value": 0.4
       },
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 1.6
+       "value": 1.5
       },
       {
        "key": "core_persuasion",
@@ -6723,24 +6723,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.3
+       "value": 1.4
       },
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 32.1
+       "value": 31.9
       }
      ],
-     "margin": 24.2,
-     "sullivan_base": 59.1,
+     "margin": 24.4,
+     "sullivan_base": 59.2,
      "republican_targets": 3.7,
-     "trump_2024_overperform": 0.5,
-     "message_targets": 1.6,
+     "trump_2024_overperform": 0.4,
+     "message_targets": 1.5,
      "core_persuasion": 0.3,
      "vulnerable_middle": 0.1,
      "available_democrats": 1.4,
-     "democrat_targets": 1.3,
-     "peltola_base": 32.1
+     "democrat_targets": 1.4,
+     "peltola_base": 31.9
     }
    }
   }
@@ -6810,8 +6810,8 @@
    "leg_2024": -93.5,
    "latest_leg": -93.5,
    "pres_2024": -51.2,
-   "model_rslcak_all": 44.2,
-   "model_rslcak_hm": 49.9
+   "model_ds_all": 44.1,
+   "model_ds_hm": 49.7
   },
   "pres_2024_margin": -51.2,
   "gov_2022_margin": null,
@@ -6826,21 +6826,21 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 68.2
+       "value": 68.1
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 3.3
+       "value": 3.4
       },
       {
        "key": "trump_2024_overperform",
@@ -6865,7 +6865,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 8.2
+       "value": 8.1
       },
       {
        "key": "democrat_targets",
@@ -6875,31 +6875,31 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 15.4
+       "value": 15.5
       }
      ],
-     "margin": 44.2,
-     "sullivan_base": 68.2,
-     "republican_targets": 3.3,
+     "margin": 44.1,
+     "sullivan_base": 68.1,
+     "republican_targets": 3.4,
      "trump_2024_overperform": 1.7,
      "message_targets": 2.7,
      "core_persuasion": 0.1,
      "vulnerable_middle": 0.0,
-     "available_democrats": 8.2,
+     "available_democrats": 8.1,
      "democrat_targets": 0.3,
-     "peltola_base": 15.4
+     "peltola_base": 15.5
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 71.0
+       "value": 70.9
       },
       {
        "key": "republican_targets",
@@ -6909,7 +6909,7 @@
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 0.9
+       "value": 0.8
       },
       {
        "key": "message_targets",
@@ -6929,7 +6929,7 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 5.4
+       "value": 5.5
       },
       {
        "key": "democrat_targets",
@@ -6939,19 +6939,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 15.2
+       "value": 15.3
       }
      ],
-     "margin": 49.9,
-     "sullivan_base": 71.0,
+     "margin": 49.7,
+     "sullivan_base": 70.9,
      "republican_targets": 3.9,
-     "trump_2024_overperform": 0.9,
+     "trump_2024_overperform": 0.8,
      "message_targets": 3.1,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.0,
-     "available_democrats": 5.4,
+     "available_democrats": 5.5,
      "democrat_targets": 0.4,
-     "peltola_base": 15.2
+     "peltola_base": 15.3
     }
    }
   }
@@ -7021,8 +7021,8 @@
    "leg_2024": -98.1,
    "latest_leg": -98.1,
    "pres_2024": -20.7,
-   "model_rslcak_all": 16.3,
-   "model_rslcak_hm": 12.6
+   "model_ds_all": 16.3,
+   "model_ds_hm": 12.5
   },
   "pres_2024_margin": -20.7,
   "gov_2022_margin": null,
@@ -7037,9 +7037,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -7086,7 +7086,7 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 31.4
+       "value": 31.5
       }
      ],
      "margin": 16.3,
@@ -7098,12 +7098,12 @@
      "vulnerable_middle": 0.1,
      "available_democrats": 5.8,
      "democrat_targets": 0.9,
-     "peltola_base": 31.4
+     "peltola_base": 31.5
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -7150,10 +7150,10 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 34.7
+       "value": 34.8
       }
      ],
-     "margin": 12.6,
+     "margin": 12.5,
      "sullivan_base": 51.9,
      "republican_targets": 4.2,
      "trump_2024_overperform": 0.8,
@@ -7162,7 +7162,7 @@
      "vulnerable_middle": 0.1,
      "available_democrats": 3.4,
      "democrat_targets": 1.2,
-     "peltola_base": 34.7
+     "peltola_base": 34.8
     }
    }
   }
@@ -7232,8 +7232,8 @@
    "leg_2024": 10.7,
    "latest_leg": 10.7,
    "pres_2024": 5.0,
-   "model_rslcak_all": -9.5,
-   "model_rslcak_hm": -13.3
+   "model_ds_all": -9.6,
+   "model_ds_hm": -13.3
   },
   "pres_2024_margin": 5.0,
   "gov_2022_margin": null,
@@ -7248,9 +7248,9 @@
    "dem": "Ashley Carrick"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -7262,7 +7262,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 4.3
+       "value": 4.2
       },
       {
        "key": "trump_2024_overperform",
@@ -7272,7 +7272,7 @@
       {
        "key": "message_targets",
        "label": "Message Targets",
-       "value": 2.1
+       "value": 2.2
       },
       {
        "key": "core_persuasion",
@@ -7300,11 +7300,11 @@
        "value": 47.7
       }
      ],
-     "margin": -9.5,
+     "margin": -9.6,
      "sullivan_base": 41.1,
-     "republican_targets": 4.3,
+     "republican_targets": 4.2,
      "trump_2024_overperform": 1.1,
-     "message_targets": 2.1,
+     "message_targets": 2.2,
      "core_persuasion": 0.3,
      "vulnerable_middle": 0.4,
      "available_democrats": 1.4,
@@ -7312,9 +7312,9 @@
      "peltola_base": 47.7
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -7326,7 +7326,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 4.8
+       "value": 4.7
       },
       {
        "key": "trump_2024_overperform",
@@ -7351,29 +7351,29 @@
       {
        "key": "available_democrats",
        "label": "Available Democrats",
-       "value": 1.2
+       "value": 1.3
       },
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.0
+       "value": 1.9
       },
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 49.1
+       "value": 49.2
       }
      ],
      "margin": -13.3,
      "sullivan_base": 39.0,
-     "republican_targets": 4.8,
+     "republican_targets": 4.7,
      "trump_2024_overperform": 0.9,
      "message_targets": 2.3,
      "core_persuasion": 0.4,
      "vulnerable_middle": 0.3,
-     "available_democrats": 1.2,
-     "democrat_targets": 2.0,
-     "peltola_base": 49.1
+     "available_democrats": 1.3,
+     "democrat_targets": 1.9,
+     "peltola_base": 49.2
     }
    }
   }
@@ -7443,8 +7443,8 @@
    "leg_2024": -12.7,
    "latest_leg": -12.7,
    "pres_2024": -21.8,
-   "model_rslcak_all": 17.2,
-   "model_rslcak_hm": 14.7
+   "model_ds_all": 17.6,
+   "model_ds_hm": 15.0
   },
   "pres_2024_margin": -21.8,
   "gov_2022_margin": null,
@@ -7459,16 +7459,16 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 54.1
+       "value": 54.3
       },
       {
        "key": "republican_targets",
@@ -7508,11 +7508,11 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 32.6
+       "value": 32.4
       }
      ],
-     "margin": 17.2,
-     "sullivan_base": 54.1,
+     "margin": 17.6,
+     "sullivan_base": 54.3,
      "republican_targets": 4.3,
      "trump_2024_overperform": 1.4,
      "message_targets": 3.1,
@@ -7520,19 +7520,19 @@
      "vulnerable_middle": 0.1,
      "available_democrats": 2.9,
      "democrat_targets": 1.4,
-     "peltola_base": 32.6
+     "peltola_base": 32.4
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 52.7
+       "value": 52.8
       },
       {
        "key": "republican_targets",
@@ -7557,7 +7557,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.0
+       "value": 0.1
       },
       {
        "key": "available_democrats",
@@ -7567,24 +7567,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 1.8
+       "value": 1.7
       },
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 33.2
+       "value": 33.1
       }
      ],
-     "margin": 14.7,
-     "sullivan_base": 52.7,
+     "margin": 15.0,
+     "sullivan_base": 52.8,
      "republican_targets": 5.0,
      "trump_2024_overperform": 1.0,
      "message_targets": 3.1,
      "core_persuasion": 0.2,
-     "vulnerable_middle": 0.0,
+     "vulnerable_middle": 0.1,
      "available_democrats": 3.0,
-     "democrat_targets": 1.8,
-     "peltola_base": 33.2
+     "democrat_targets": 1.7,
+     "peltola_base": 33.1
     }
    }
   }
@@ -7641,8 +7641,8 @@
    "leg_2024": 100.0,
    "latest_leg": 100.0,
    "pres_2024": -6.6,
-   "model_rslcak_all": 0.1,
-   "model_rslcak_hm": -3.5
+   "model_ds_all": 0.0,
+   "model_ds_hm": -3.4
   },
   "pres_2024_margin": -6.6,
   "gov_2022_margin": null,
@@ -7657,9 +7657,9 @@
    "dem": "Evelynn Trefon"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -7671,7 +7671,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 6.7
+       "value": 6.6
       },
       {
        "key": "trump_2024_overperform",
@@ -7691,7 +7691,7 @@
       {
        "key": "vulnerable_middle",
        "label": "Vulnerable Middle",
-       "value": 0.1
+       "value": 0.2
       },
       {
        "key": "available_democrats",
@@ -7709,33 +7709,33 @@
        "value": 41.5
       }
      ],
-     "margin": 0.1,
+     "margin": 0.0,
      "sullivan_base": 44.2,
-     "republican_targets": 6.7,
+     "republican_targets": 6.6,
      "trump_2024_overperform": 1.4,
      "message_targets": 3.3,
      "core_persuasion": 0.1,
-     "vulnerable_middle": 0.1,
+     "vulnerable_middle": 0.2,
      "available_democrats": 1.8,
      "democrat_targets": 0.8,
      "peltola_base": 41.5
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 41.1
+       "value": 41.2
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 8.8
+       "value": 8.7
       },
       {
        "key": "trump_2024_overperform",
@@ -7773,9 +7773,9 @@
        "value": 42.1
       }
      ],
-     "margin": -3.5,
-     "sullivan_base": 41.1,
-     "republican_targets": 8.8,
+     "margin": -3.4,
+     "sullivan_base": 41.2,
+     "republican_targets": 8.7,
      "trump_2024_overperform": 1.6,
      "message_targets": 3.6,
      "core_persuasion": 0.2,
@@ -7852,8 +7852,8 @@
    "leg_2024": 100.0,
    "latest_leg": 100.0,
    "pres_2024": 11.8,
-   "model_rslcak_all": -13.6,
-   "model_rslcak_hm": -27.9
+   "model_ds_all": -13.5,
+   "model_ds_hm": -27.8
   },
   "pres_2024_margin": 11.8,
   "gov_2022_margin": null,
@@ -7868,16 +7868,16 @@
    "dem": "Nellie Jimmie"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 37.3
+       "value": 37.4
       },
       {
        "key": "republican_targets",
@@ -7912,7 +7912,7 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 0.4
+       "value": 0.5
       },
       {
        "key": "peltola_base",
@@ -7920,21 +7920,21 @@
        "value": 49.8
       }
      ],
-     "margin": -13.6,
-     "sullivan_base": 37.3,
+     "margin": -13.5,
+     "sullivan_base": 37.4,
      "republican_targets": 5.5,
      "trump_2024_overperform": 2.4,
      "message_targets": 3.5,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.1,
      "available_democrats": 0.7,
-     "democrat_targets": 0.4,
+     "democrat_targets": 0.5,
      "peltola_base": 49.8
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -7981,10 +7981,10 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 55.7
+       "value": 55.6
       }
      ],
-     "margin": -27.9,
+     "margin": -27.8,
      "sullivan_base": 29.2,
      "republican_targets": 6.2,
      "trump_2024_overperform": 2.7,
@@ -7993,7 +7993,7 @@
      "vulnerable_middle": 0.2,
      "available_democrats": 0.8,
      "democrat_targets": 0.6,
-     "peltola_base": 55.7
+     "peltola_base": 55.6
     }
    }
   }
@@ -8063,8 +8063,8 @@
    "leg_2024": 58.1,
    "latest_leg": 58.1,
    "pres_2024": 11.7,
-   "model_rslcak_all": -16.2,
-   "model_rslcak_hm": -26.3
+   "model_ds_all": -16.2,
+   "model_ds_hm": -26.4
   },
   "pres_2024_margin": 11.7,
   "gov_2022_margin": null,
@@ -8079,9 +8079,9 @@
    "dem": "Neal Foster"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -8093,7 +8093,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 5.8
+       "value": 5.7
       },
       {
        "key": "trump_2024_overperform",
@@ -8133,7 +8133,7 @@
      ],
      "margin": -16.2,
      "sullivan_base": 36.0,
-     "republican_targets": 5.8,
+     "republican_targets": 5.7,
      "trump_2024_overperform": 2.3,
      "message_targets": 3.2,
      "core_persuasion": 0.2,
@@ -8143,9 +8143,9 @@
      "peltola_base": 48.4
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -8157,7 +8157,7 @@
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 6.6
+       "value": 6.5
       },
       {
        "key": "trump_2024_overperform",
@@ -8187,24 +8187,24 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 2.6
+       "value": 2.5
       },
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 51.7
+       "value": 51.8
       }
      ],
-     "margin": -26.3,
+     "margin": -26.4,
      "sullivan_base": 30.0,
-     "republican_targets": 6.6,
+     "republican_targets": 6.5,
      "trump_2024_overperform": 2.8,
      "message_targets": 3.8,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.3,
      "available_democrats": 2.1,
-     "democrat_targets": 2.6,
-     "peltola_base": 51.7
+     "democrat_targets": 2.5,
+     "peltola_base": 51.8
     }
    }
   }
@@ -8274,8 +8274,8 @@
    "leg_2024": 100.0,
    "latest_leg": 100.0,
    "pres_2024": -9.9,
-   "model_rslcak_all": 3.0,
-   "model_rslcak_hm": -9.5
+   "model_ds_all": 3.3,
+   "model_ds_hm": -9.5
   },
   "pres_2024_margin": -9.9,
   "gov_2022_margin": null,
@@ -8290,21 +8290,21 @@
    "dem": "Robyn Frier"
   },
   "models": {
-   "model_rslcak_all": {
-    "label": "RSLC AK (All)",
-    "family": "RSLC AK",
+   "model_ds_all": {
+    "label": "DS (All)",
+    "family": "DS",
     "variant": "All",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 44.5
+       "value": 44.7
       },
       {
        "key": "republican_targets",
        "label": "Republican Targets",
-       "value": 8.2
+       "value": 8.1
       },
       {
        "key": "trump_2024_overperform",
@@ -8334,36 +8334,36 @@
       {
        "key": "democrat_targets",
        "label": "Democrat Targets",
-       "value": 0.8
+       "value": 0.9
       },
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 39.9
+       "value": 39.7
       }
      ],
-     "margin": 3.0,
-     "sullivan_base": 44.5,
-     "republican_targets": 8.2,
+     "margin": 3.3,
+     "sullivan_base": 44.7,
+     "republican_targets": 8.1,
      "trump_2024_overperform": 2.8,
      "message_targets": 2.6,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.2,
      "available_democrats": 0.8,
-     "democrat_targets": 0.8,
-     "peltola_base": 39.9
+     "democrat_targets": 0.9,
+     "peltola_base": 39.7
     }
    },
-   "model_rslcak_hm": {
-    "label": "RSLC AK (H+M)",
-    "family": "RSLC AK",
+   "model_ds_hm": {
+    "label": "DS (H+M)",
+    "family": "DS",
     "variant": "H+M",
     "affinity": {
      "segments": [
       {
        "key": "sullivan_base",
        "label": "Sullivan Base",
-       "value": 37.0
+       "value": 36.9
       },
       {
        "key": "republican_targets",
@@ -8373,7 +8373,7 @@
       {
        "key": "trump_2024_overperform",
        "label": "Trump 2024 Overperform",
-       "value": 3.7
+       "value": 3.8
       },
       {
        "key": "message_targets",
@@ -8403,19 +8403,19 @@
       {
        "key": "peltola_base",
        "label": "Peltola Base",
-       "value": 44.7
+       "value": 44.6
       }
      ],
      "margin": -9.5,
-     "sullivan_base": 37.0,
+     "sullivan_base": 36.9,
      "republican_targets": 9.0,
-     "trump_2024_overperform": 3.7,
+     "trump_2024_overperform": 3.8,
      "message_targets": 3.4,
      "core_persuasion": 0.2,
      "vulnerable_middle": 0.2,
      "available_democrats": 0.8,
      "democrat_targets": 1.0,
-     "peltola_base": 44.7
+     "peltola_base": 44.6
     }
    }
   }

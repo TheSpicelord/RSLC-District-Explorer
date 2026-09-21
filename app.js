@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260921a";
+import { requireAuth } from "./modules/auth.js?v=20260921b";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -22,7 +22,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260921a";
+} from "./modules/config.js?v=20260921b";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -45,8 +45,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260921a";
-import { state } from "./modules/state.js?v=20260921a";
+} from "./modules/dom.js?v=20260921b";
+import { state } from "./modules/state.js?v=20260921b";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -73,32 +73,36 @@ const MODEL_VIEW_META = {
   // Alaska's model frames the 2026 U.S. Senate race (Sullivan vs Peltola) rather than a
   // legislative ballot, so it is kept as its own family instead of being folded into
   // RSLC — the header has to say which question the margin answers.
-  model_rslcak_hm:    { label: "RSLC AK (H+M)", order: 5, tableTop: "AK", tableBottom: "H+M" },
-  model_rslcak_all:   { label: "RSLC AK (All)", order: 6, tableTop: "AK", tableBottom: "All" },
+  model_ds_hm:        { label: "DS (H+M)",   order: 5,  tableTop: "DS",   tableBottom: "H+M" },
+  model_ds_all:       { label: "DS (All)",   order: 6,  tableTop: "DS",   tableBottom: "All" },
+  // Iowa, likewise its own family so it can carry its own name rather than the
+  // shared RSLC header.
+  model_lahn_hm:      { label: "Lahn (H+M)", order: 7,  tableTop: "Lahn", tableBottom: "H+M" },
+  model_lahn_all:     { label: "Lahn (All)", order: 8,  tableTop: "Lahn", tableBottom: "All" },
   // Oregon runs two models side by side rather than two variants of one, so these are
   // distinct families whose "variant" slot names the ballot question instead.
-  model_rslcleg_all:  { label: "RSLC Leg",   order: 7,  tableTop: "RSLC", tableBottom: "Leg" },
-  model_rslcgov_all:  { label: "RSLC Gov",   order: 8,  tableTop: "RSLC", tableBottom: "Gov" },
+  model_rslcleg_all:  { label: "RSLC Leg",   order: 9,  tableTop: "RSLC", tableBottom: "Leg" },
+  model_rslcgov_all:  { label: "RSLC Gov",   order: 10,  tableTop: "RSLC", tableBottom: "Gov" },
   // New Hampshire, same shape as Oregon: one audience file, two races, so each is
   // its own family and the "variant" slot names the race rather than a turnout cut.
-  model_sunsen_all:   { label: "SUN US Sen", order: 9,  tableTop: "SUN",  tableBottom: "US Sen" },
-  model_sungov_all:   { label: "SUN Gov",    order: 10, tableTop: "SUN",  tableBottom: "Gov" },
+  model_sunsen_all:   { label: "SUN US Sen", order: 11,  tableTop: "SUN",  tableBottom: "US Sen" },
+  model_sungov_all:   { label: "SUN Gov",    order: 12, tableTop: "SUN",  tableBottom: "Gov" },
   // Ohio, same shape again: one audience file, three races.
-  model_ohsen_all:    { label: "OH US Sen",  order: 11, tableTop: "OH",   tableBottom: "US Sen" },
-  model_ohgov_all:    { label: "OH Gov",     order: 12, tableTop: "OH",   tableBottom: "Gov" },
-  model_ohcon_all:    { label: "OH Con",     order: 13, tableTop: "OH",   tableBottom: "Con" },
-  model_rga_hm:       { label: "RGA (H+M)",  order: 14,  tableTop: "RGA",  tableBottom: "H+M" },
-  model_rga_all:      { label: "RGA (All)",  order: 15, tableTop: "RGA",  tableBottom: "All" },
-  model_lombardo_hm:  { label: "Lom (H+M)",  order: 16, tableTop: "Lom",  tableBottom: "H+M" },
-  model_lombardo_all: { label: "Lom (All)",  order: 17, tableTop: "Lom",  tableBottom: "All" },
+  model_ohsen_all:    { label: "HUS US Sen",  order: 13, tableTop: "HUS",   tableBottom: "US Sen" },
+  model_ohgov_all:    { label: "HUS Gov",     order: 14, tableTop: "HUS",   tableBottom: "Gov" },
+  model_ohcon_all:    { label: "HUS Con",     order: 15, tableTop: "HUS",   tableBottom: "Con" },
+  model_rga_hm:       { label: "RGA (H+M)",  order: 16,  tableTop: "RGA",  tableBottom: "H+M" },
+  model_rga_all:      { label: "RGA (All)",  order: 17, tableTop: "RGA",  tableBottom: "All" },
+  model_lombardo_hm:  { label: "Lom (H+M)",  order: 18, tableTop: "Lom",  tableBottom: "H+M" },
+  model_lombardo_all: { label: "Lom (All)",  order: 19, tableTop: "Lom",  tableBottom: "All" },
   // Minnesota's dedicated model (MN_Exchange_20260831).
-  model_rou_hm:       { label: "ROU (H+M)",  order: 18, tableTop: "ROU",  tableBottom: "H+M" },
-  model_rou_all:      { label: "ROU (All)",  order: 19, tableTop: "ROU",  tableBottom: "All" },
-  model_raga_hm:      { label: "RAGA (H+M)", order: 20, tableTop: "RAGA", tableBottom: "H+M" },
-  model_raga_all:     { label: "RAGA (All)", order: 21, tableTop: "RAGA", tableBottom: "All" },
+  model_rou_hm:       { label: "ROU (H+M)",  order: 20, tableTop: "ROU",  tableBottom: "H+M" },
+  model_rou_all:      { label: "ROU (All)",  order: 21, tableTop: "ROU",  tableBottom: "All" },
+  model_raga_hm:      { label: "RAGA (H+M)", order: 22, tableTop: "RAGA", tableBottom: "H+M" },
+  model_raga_all:     { label: "RAGA (All)", order: 23, tableTop: "RAGA", tableBottom: "All" },
   // National fallback for states with no state-specific model. Ordered last so a
   // dedicated model always wins when a state somehow has both.
-  model_drnatl_all:   { label: "DR Natl",    order: 22, tableTop: "DR",   tableBottom: "Natl" },
+  model_drnatl_all:   { label: "DR Natl",    order: 24, tableTop: "DR",   tableBottom: "Natl" },
 };
 
 const MODEL_SEGMENT_COLOR_CLASSES = {
@@ -142,8 +146,19 @@ const MODEL_SEGMENT_COLOR_CLASSES = {
     "color-model-rslc-8",
     "color-model-rslc-9",
   ],
-  // Alaska ships the same nine-universe ladder as the RSLC models.
-  "RSLC AK": [
+  // Alaska and Iowa ship the same nine-universe ladder as the RSLC models.
+  DS: [
+    "color-model-rslc-1",
+    "color-model-rslc-2",
+    "color-model-rslc-3",
+    "color-model-rslc-4",
+    "color-model-rslc-5",
+    "color-model-rslc-6",
+    "color-model-rslc-7",
+    "color-model-rslc-8",
+    "color-model-rslc-9",
+  ],
+  LAHN: [
     "color-model-rslc-1",
     "color-model-rslc-2",
     "color-model-rslc-3",
@@ -216,7 +231,8 @@ const THREE_BUCKET_COLOR_CLASSES = [
 // stored Dem-positive — so adding a family here without checking its sign will invert it.
 const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_rslc_",
-  "model_rslcak_",
+  "model_ds_",
+  "model_lahn_",
   "model_rslcleg_",
   "model_rslcgov_",
   "model_sunsen_",
@@ -231,7 +247,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260921a";
+const BUILD_VERSION = "20260921b";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -5010,7 +5026,7 @@ function modelingPanelHtml(rec) {
             normalizeTo100: true,
             // Alaska ships the same nine-universe ladder as RSLC and needs the same
             // three-column legend; the other families keep two.
-            legendColumns: ["RSLC", "RSLC AK"].includes(
+            legendColumns: ["RSLC", "DS", "LAHN"].includes(
               String(model?.family || "").trim().toUpperCase()) ? 3 : 2,
           }
         )

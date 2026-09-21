@@ -59,8 +59,8 @@
    "gov_2022": -22.5,
    "ussen_2022": -14.9,
    "pres_2024": -11.4,
-   "model_rslc_all": 6.9,
-   "model_rslc_hm": 6.1
+   "model_lahn_all": 6.9,
+   "model_lahn_hm": 6.1
   },
   "pres_2024_margin": -11.4,
   "gov_2022_margin": -22.5,
@@ -75,9 +75,9 @@
    "dem": "Catelin Drey"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -139,9 +139,9 @@
      "sand_base": 36.2
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -265,8 +265,8 @@
    "gov_2022": -76.2,
    "ussen_2022": -70.5,
    "pres_2024": -65.4,
-   "model_rslc_all": 66.8,
-   "model_rslc_hm": 70.6
+   "model_lahn_all": 66.8,
+   "model_lahn_hm": 70.6
   },
   "pres_2024_margin": -65.4,
   "gov_2022_margin": -76.2,
@@ -281,9 +281,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -345,9 +345,9 @@
      "sand_base": 10.7
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -471,8 +471,8 @@
    "gov_2022": -57.6,
    "ussen_2022": -50.1,
    "pres_2024": -47.3,
-   "model_rslc_all": 48.1,
-   "model_rslc_hm": 50.7
+   "model_lahn_all": 48.1,
+   "model_lahn_hm": 50.7
   },
   "pres_2024_margin": -47.3,
   "gov_2022_margin": -57.6,
@@ -487,9 +487,9 @@
    "dem": "Mike Frantz"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -551,9 +551,9 @@
      "sand_base": 18.0
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -677,8 +677,8 @@
    "gov_2022": -46.1,
    "ussen_2022": -39.3,
    "pres_2024": -39.9,
-   "model_rslc_all": 37.8,
-   "model_rslc_hm": 35.6
+   "model_lahn_all": 37.8,
+   "model_lahn_hm": 35.6
   },
   "pres_2024_margin": -39.9,
   "gov_2022_margin": -46.1,
@@ -693,9 +693,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -757,9 +757,9 @@
      "sand_base": 23.3
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -883,8 +883,8 @@
    "gov_2022": -48.5,
    "ussen_2022": -41.0,
    "pres_2024": -41.0,
-   "model_rslc_all": 38.5,
-   "model_rslc_hm": 35.9
+   "model_lahn_all": 38.5,
+   "model_lahn_hm": 35.9
   },
   "pres_2024_margin": -41.0,
   "gov_2022_margin": -48.5,
@@ -899,9 +899,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -963,9 +963,9 @@
      "sand_base": 23.1
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -1089,8 +1089,8 @@
    "gov_2022": -54.5,
    "ussen_2022": -45.7,
    "pres_2024": -43.0,
-   "model_rslc_all": 43.2,
-   "model_rslc_hm": 41.8
+   "model_lahn_all": 43.2,
+   "model_lahn_hm": 41.8
   },
   "pres_2024_margin": -43.0,
   "gov_2022_margin": -54.5,
@@ -1105,9 +1105,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -1169,9 +1169,9 @@
      "sand_base": 21.0
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -1295,8 +1295,8 @@
    "gov_2022": -52.9,
    "ussen_2022": -45.2,
    "pres_2024": -41.2,
-   "model_rslc_all": 38.3,
-   "model_rslc_hm": 38.3
+   "model_lahn_all": 38.3,
+   "model_lahn_hm": 38.3
   },
   "pres_2024_margin": -41.2,
   "gov_2022_margin": -52.9,
@@ -1311,9 +1311,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -1375,9 +1375,9 @@
      "sand_base": 23.1
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -1501,8 +1501,8 @@
    "gov_2022": -45.6,
    "ussen_2022": -40.4,
    "pres_2024": -38.6,
-   "model_rslc_all": 41.1,
-   "model_rslc_hm": 41.0
+   "model_lahn_all": 41.1,
+   "model_lahn_hm": 41.0
   },
   "pres_2024_margin": -38.6,
   "gov_2022_margin": -45.6,
@@ -1517,9 +1517,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -1581,9 +1581,9 @@
      "sand_base": 21.5
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -1707,8 +1707,8 @@
    "gov_2022": -50.2,
    "ussen_2022": -43.8,
    "pres_2024": -42.1,
-   "model_rslc_all": 47.6,
-   "model_rslc_hm": 48.5
+   "model_lahn_all": 47.6,
+   "model_lahn_hm": 48.5
   },
   "pres_2024_margin": -42.1,
   "gov_2022_margin": -50.2,
@@ -1723,9 +1723,9 @@
    "dem": "James Uhlenkamp"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -1787,9 +1787,9 @@
      "sand_base": 18.0
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -1913,8 +1913,8 @@
    "gov_2022": -13.9,
    "ussen_2022": -9.7,
    "pres_2024": -8.4,
-   "model_rslc_all": 8.5,
-   "model_rslc_hm": 4.4
+   "model_lahn_all": 8.5,
+   "model_lahn_hm": 4.4
   },
   "pres_2024_margin": -8.4,
   "gov_2022_margin": -13.9,
@@ -1929,9 +1929,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -1993,9 +1993,9 @@
      "sand_base": 35.3
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -2119,8 +2119,8 @@
    "gov_2022": -26.5,
    "ussen_2022": -19.3,
    "pres_2024": -21.9,
-   "model_rslc_all": 18.2,
-   "model_rslc_hm": 14.3
+   "model_lahn_all": 18.2,
+   "model_lahn_hm": 14.3
   },
   "pres_2024_margin": -21.9,
   "gov_2022_margin": -26.5,
@@ -2135,9 +2135,9 @@
    "dem": "Sinikka Waugh"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -2199,9 +2199,9 @@
      "sand_base": 33.1
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -2325,8 +2325,8 @@
    "gov_2022": -48.5,
    "ussen_2022": -41.0,
    "pres_2024": -43.9,
-   "model_rslc_all": 41.8,
-   "model_rslc_hm": 39.1
+   "model_lahn_all": 41.8,
+   "model_lahn_hm": 39.1
   },
   "pres_2024_margin": -43.9,
   "gov_2022_margin": -48.5,
@@ -2341,9 +2341,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -2405,9 +2405,9 @@
      "sand_base": 21.7
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -2531,8 +2531,8 @@
    "gov_2022": -42.5,
    "ussen_2022": -35.8,
    "pres_2024": -40.5,
-   "model_rslc_all": 34.4,
-   "model_rslc_hm": 28.8
+   "model_lahn_all": 34.4,
+   "model_lahn_hm": 28.8
   },
   "pres_2024_margin": -40.5,
   "gov_2022_margin": -42.5,
@@ -2547,9 +2547,9 @@
    "dem": "Brenda Case"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -2611,9 +2611,9 @@
      "sand_base": 26.0
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -2737,8 +2737,8 @@
    "gov_2022": -6.6,
    "ussen_2022": -0.8,
    "pres_2024": -0.3,
-   "model_rslc_all": -7.9,
-   "model_rslc_hm": -8.6
+   "model_lahn_all": -7.9,
+   "model_lahn_hm": -8.6
   },
   "pres_2024_margin": -0.3,
   "gov_2022_margin": -6.6,
@@ -2753,9 +2753,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -2817,9 +2817,9 @@
      "sand_base": 44.3
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -2943,8 +2943,8 @@
    "gov_2022": 16.2,
    "ussen_2022": 21.5,
    "pres_2024": 16.8,
-   "model_rslc_all": -23.2,
-   "model_rslc_hm": -31.6
+   "model_lahn_all": -23.2,
+   "model_lahn_hm": -31.6
   },
   "pres_2024_margin": 16.8,
   "gov_2022_margin": 16.2,
@@ -2959,9 +2959,9 @@
    "dem": "Tony Bisignano"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -3023,9 +3023,9 @@
      "sand_base": 52.0
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -3149,8 +3149,8 @@
    "gov_2022": 9.9,
    "ussen_2022": 14.3,
    "pres_2024": 17.3,
-   "model_rslc_all": -22.8,
-   "model_rslc_hm": -24.7
+   "model_lahn_all": -22.8,
+   "model_lahn_hm": -24.7
   },
   "pres_2024_margin": 17.3,
   "gov_2022_margin": 9.9,
@@ -3165,9 +3165,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -3229,9 +3229,9 @@
      "sand_base": 54.0
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -3355,8 +3355,8 @@
    "gov_2022": 43.5,
    "ussen_2022": 46.3,
    "pres_2024": 37.1,
-   "model_rslc_all": -39.9,
-   "model_rslc_hm": -50.5
+   "model_lahn_all": -39.9,
+   "model_lahn_hm": -50.5
   },
   "pres_2024_margin": 37.1,
   "gov_2022_margin": 43.5,
@@ -3371,9 +3371,9 @@
    "dem": "Samy El-Baroudi"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -3435,9 +3435,9 @@
      "sand_base": 60.1
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -3561,8 +3561,8 @@
    "gov_2022": 45.3,
    "ussen_2022": 48.9,
    "pres_2024": 45.0,
-   "model_rslc_all": -48.7,
-   "model_rslc_hm": -54.7
+   "model_lahn_all": -48.7,
+   "model_lahn_hm": -54.7
   },
   "pres_2024_margin": 45.0,
   "gov_2022_margin": 45.3,
@@ -3577,9 +3577,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -3641,9 +3641,9 @@
      "sand_base": 67.7
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -3767,8 +3767,8 @@
    "gov_2022": -40.5,
    "ussen_2022": -34.8,
    "pres_2024": -35.2,
-   "model_rslc_all": 32.9,
-   "model_rslc_hm": 31.1
+   "model_lahn_all": 32.9,
+   "model_lahn_hm": 31.1
   },
   "pres_2024_margin": -35.2,
   "gov_2022_margin": -40.5,
@@ -3783,9 +3783,9 @@
    "dem": "Zachary Mecham"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -3847,9 +3847,9 @@
      "sand_base": 26.7
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -3973,8 +3973,8 @@
    "gov_2022": -7.7,
    "ussen_2022": -1.2,
    "pres_2024": -4.5,
-   "model_rslc_all": -1.7,
-   "model_rslc_hm": -7.4
+   "model_lahn_all": -1.7,
+   "model_lahn_hm": -7.4
   },
   "pres_2024_margin": -4.5,
   "gov_2022_margin": -7.7,
@@ -3989,9 +3989,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -4053,9 +4053,9 @@
      "sand_base": 42.3
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -4179,8 +4179,8 @@
    "gov_2022": -6.0,
    "ussen_2022": -1.0,
    "pres_2024": -2.3,
-   "model_rslc_all": -5.3,
-   "model_rslc_hm": -8.4
+   "model_lahn_all": -5.3,
+   "model_lahn_hm": -8.4
   },
   "pres_2024_margin": -2.3,
   "gov_2022_margin": -6.0,
@@ -4195,9 +4195,9 @@
    "dem": "Heather Matson"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -4259,9 +4259,9 @@
      "sand_base": 43.8
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -4385,8 +4385,8 @@
    "gov_2022": -1.3,
    "ussen_2022": 4.2,
    "pres_2024": 7.0,
-   "model_rslc_all": -12.8,
-   "model_rslc_hm": -14.7
+   "model_lahn_all": -12.8,
+   "model_lahn_hm": -14.7
   },
   "pres_2024_margin": 7.0,
   "gov_2022_margin": -1.3,
@@ -4401,9 +4401,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -4465,9 +4465,9 @@
      "sand_base": 48.4
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -4591,8 +4591,8 @@
    "gov_2022": -21.5,
    "ussen_2022": -16.2,
    "pres_2024": -15.9,
-   "model_rslc_all": 6.9,
-   "model_rslc_hm": 5.1
+   "model_lahn_all": 6.9,
+   "model_lahn_hm": 5.1
   },
   "pres_2024_margin": -15.9,
   "gov_2022_margin": -21.5,
@@ -4607,9 +4607,9 @@
    "dem": "Anthony Thompson"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -4671,9 +4671,9 @@
      "sand_base": 37.0
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -4797,8 +4797,8 @@
    "gov_2022": -27.6,
    "ussen_2022": -20.2,
    "pres_2024": -22.9,
-   "model_rslc_all": 21.5,
-   "model_rslc_hm": 17.1
+   "model_lahn_all": 21.5,
+   "model_lahn_hm": 17.1
   },
   "pres_2024_margin": -22.9,
   "gov_2022_margin": -27.6,
@@ -4813,9 +4813,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -4877,9 +4877,9 @@
      "sand_base": 30.3
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -5003,8 +5003,8 @@
    "gov_2022": 31.4,
    "ussen_2022": 34.5,
    "pres_2024": 27.3,
-   "model_rslc_all": -34.7,
-   "model_rslc_hm": -39.5
+   "model_lahn_all": -34.7,
+   "model_lahn_hm": -39.5
   },
   "pres_2024_margin": 27.3,
   "gov_2022_margin": 31.4,
@@ -5019,9 +5019,9 @@
    "dem": "Herman Quirmbach"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -5083,9 +5083,9 @@
      "sand_base": 57.9
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -5209,8 +5209,8 @@
    "gov_2022": -22.9,
    "ussen_2022": -17.1,
    "pres_2024": -15.6,
-   "model_rslc_all": 12.3,
-   "model_rslc_hm": 10.5
+   "model_lahn_all": 12.3,
+   "model_lahn_hm": 10.5
   },
   "pres_2024_margin": -15.6,
   "gov_2022_margin": -22.9,
@@ -5225,9 +5225,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -5289,9 +5289,9 @@
      "sand_base": 34.2
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -5415,8 +5415,8 @@
    "gov_2022": -36.1,
    "ussen_2022": -30.4,
    "pres_2024": -29.5,
-   "model_rslc_all": 31.0,
-   "model_rslc_hm": 29.5
+   "model_lahn_all": 31.0,
+   "model_lahn_hm": 29.5
   },
   "pres_2024_margin": -29.5,
   "gov_2022_margin": -36.1,
@@ -5431,9 +5431,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -5495,9 +5495,9 @@
      "sand_base": 26.4
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -5621,8 +5621,8 @@
    "gov_2022": -45.0,
    "ussen_2022": -38.6,
    "pres_2024": -38.3,
-   "model_rslc_all": 39.3,
-   "model_rslc_hm": 38.4
+   "model_lahn_all": 39.3,
+   "model_lahn_hm": 38.4
   },
   "pres_2024_margin": -38.3,
   "gov_2022_margin": -45.0,
@@ -5637,9 +5637,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -5701,9 +5701,9 @@
      "sand_base": 21.7
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -5827,8 +5827,8 @@
    "gov_2022": -37.1,
    "ussen_2022": -28.5,
    "pres_2024": -30.4,
-   "model_rslc_all": 28.7,
-   "model_rslc_hm": 23.9
+   "model_lahn_all": 28.7,
+   "model_lahn_hm": 23.9
   },
   "pres_2024_margin": -30.4,
   "gov_2022_margin": -37.1,
@@ -5843,9 +5843,9 @@
    "dem": "Jim Vowels"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -5907,9 +5907,9 @@
      "sand_base": 27.5
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -6033,8 +6033,8 @@
    "gov_2022": -21.5,
    "ussen_2022": -15.5,
    "pres_2024": -17.8,
-   "model_rslc_all": 17.3,
-   "model_rslc_hm": 14.3
+   "model_lahn_all": 17.3,
+   "model_lahn_hm": 14.3
   },
   "pres_2024_margin": -17.8,
   "gov_2022_margin": -21.5,
@@ -6049,9 +6049,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -6113,9 +6113,9 @@
      "sand_base": 31.8
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -6239,8 +6239,8 @@
    "gov_2022": 6.5,
    "ussen_2022": 14.2,
    "pres_2024": 12.3,
-   "model_rslc_all": -18.2,
-   "model_rslc_hm": -24.1
+   "model_lahn_all": -18.2,
+   "model_lahn_hm": -24.1
   },
   "pres_2024_margin": 12.3,
   "gov_2022_margin": 6.5,
@@ -6255,9 +6255,9 @@
    "dem": "Timi Brown-Powers"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -6319,9 +6319,9 @@
      "sand_base": 49.5
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -6445,8 +6445,8 @@
    "gov_2022": -33.2,
    "ussen_2022": -23.2,
    "pres_2024": -26.1,
-   "model_rslc_all": 26.4,
-   "model_rslc_hm": 21.4
+   "model_lahn_all": 26.4,
+   "model_lahn_hm": 21.4
   },
   "pres_2024_margin": -26.1,
   "gov_2022_margin": -33.2,
@@ -6461,9 +6461,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -6525,9 +6525,9 @@
      "sand_base": 28.0
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -6651,8 +6651,8 @@
    "gov_2022": -35.9,
    "ussen_2022": -26.3,
    "pres_2024": -28.2,
-   "model_rslc_all": 23.6,
-   "model_rslc_hm": 17.0
+   "model_lahn_all": 23.6,
+   "model_lahn_hm": 17.0
   },
   "pres_2024_margin": -28.2,
   "gov_2022_margin": -35.9,
@@ -6667,9 +6667,9 @@
    "dem": "Mary Ungs-Sogaard"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -6731,9 +6731,9 @@
      "sand_base": 31.1
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -6857,8 +6857,8 @@
    "gov_2022": -38.5,
    "ussen_2022": -30.3,
    "pres_2024": -31.7,
-   "model_rslc_all": 30.3,
-   "model_rslc_hm": 24.5
+   "model_lahn_all": 30.3,
+   "model_lahn_hm": 24.5
   },
   "pres_2024_margin": -31.7,
   "gov_2022_margin": -38.5,
@@ -6873,9 +6873,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -6937,9 +6937,9 @@
      "sand_base": 26.2
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -7063,8 +7063,8 @@
    "gov_2022": -25.1,
    "ussen_2022": -16.8,
    "pres_2024": -21.1,
-   "model_rslc_all": 18.9,
-   "model_rslc_hm": 12.1
+   "model_lahn_all": 18.9,
+   "model_lahn_hm": 12.1
   },
   "pres_2024_margin": -21.1,
   "gov_2022_margin": -25.1,
@@ -7079,9 +7079,9 @@
    "dem": "Mike Zimmer"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -7143,9 +7143,9 @@
      "sand_base": 32.0
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -7269,8 +7269,8 @@
    "gov_2022": -3.0,
    "ussen_2022": 5.2,
    "pres_2024": 3.0,
-   "model_rslc_all": -8.6,
-   "model_rslc_hm": -16.5
+   "model_lahn_all": -8.6,
+   "model_lahn_hm": -16.5
   },
   "pres_2024_margin": 3.0,
   "gov_2022_margin": -3.0,
@@ -7285,9 +7285,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -7349,9 +7349,9 @@
      "sand_base": 46.5
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -7475,8 +7475,8 @@
    "gov_2022": 5.9,
    "ussen_2022": 9.7,
    "pres_2024": 11.3,
-   "model_rslc_all": -14.1,
-   "model_rslc_hm": -18.0
+   "model_lahn_all": -14.1,
+   "model_lahn_hm": -18.0
   },
   "pres_2024_margin": 11.3,
   "gov_2022_margin": 5.9,
@@ -7491,9 +7491,9 @@
    "dem": "Molly Donahue"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -7555,9 +7555,9 @@
      "sand_base": 48.7
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -7681,8 +7681,8 @@
    "gov_2022": -12.2,
    "ussen_2022": -5.0,
    "pres_2024": -5.2,
-   "model_rslc_all": -0.7,
-   "model_rslc_hm": -2.9
+   "model_lahn_all": -0.7,
+   "model_lahn_hm": -2.9
   },
   "pres_2024_margin": -5.2,
   "gov_2022_margin": -12.2,
@@ -7697,9 +7697,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -7761,9 +7761,9 @@
      "sand_base": 42.1
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -7887,8 +7887,8 @@
    "gov_2022": 23.1,
    "ussen_2022": 27.3,
    "pres_2024": 22.8,
-   "model_rslc_all": -24.9,
-   "model_rslc_hm": -32.5
+   "model_lahn_all": -24.9,
+   "model_lahn_hm": -32.5
   },
   "pres_2024_margin": 22.8,
   "gov_2022_margin": 23.1,
@@ -7903,9 +7903,9 @@
    "dem": "Liz Bennett"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -7967,9 +7967,9 @@
      "sand_base": 52.9
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -8093,8 +8093,8 @@
    "gov_2022": 6.8,
    "ussen_2022": 10.8,
    "pres_2024": 13.0,
-   "model_rslc_all": -16.0,
-   "model_rslc_hm": -20.7
+   "model_lahn_all": -16.0,
+   "model_lahn_hm": -20.7
   },
   "pres_2024_margin": 13.0,
   "gov_2022_margin": 6.8,
@@ -8109,9 +8109,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -8173,9 +8173,9 @@
      "sand_base": 49.5
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -8299,8 +8299,8 @@
    "gov_2022": -18.8,
    "ussen_2022": -11.0,
    "pres_2024": -11.3,
-   "model_rslc_all": 11.8,
-   "model_rslc_hm": 7.2
+   "model_lahn_all": 11.8,
+   "model_lahn_hm": 7.2
   },
   "pres_2024_margin": -11.3,
   "gov_2022_margin": -18.8,
@@ -8315,9 +8315,9 @@
    "dem": "Tom Wieck"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -8379,9 +8379,9 @@
      "sand_base": 34.9
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -8505,8 +8505,8 @@
    "gov_2022": -22.1,
    "ussen_2022": -17.0,
    "pres_2024": -16.1,
-   "model_rslc_all": 16.4,
-   "model_rslc_hm": 12.5
+   "model_lahn_all": 16.4,
+   "model_lahn_hm": 12.5
   },
   "pres_2024_margin": -16.1,
   "gov_2022_margin": -22.1,
@@ -8521,9 +8521,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -8585,9 +8585,9 @@
      "sand_base": 33.6
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -8711,8 +8711,8 @@
    "gov_2022": 37.3,
    "ussen_2022": 40.5,
    "pres_2024": 38.3,
-   "model_rslc_all": -45.1,
-   "model_rslc_hm": -49.9
+   "model_lahn_all": -45.1,
+   "model_lahn_hm": -49.9
   },
   "pres_2024_margin": 38.3,
   "gov_2022_margin": 37.3,
@@ -8727,9 +8727,9 @@
    "dem": "Meghann Foster"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -8791,9 +8791,9 @@
      "sand_base": 63.9
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -8917,8 +8917,8 @@
    "gov_2022": -37.6,
    "ussen_2022": -32.0,
    "pres_2024": -35.3,
-   "model_rslc_all": 33.4,
-   "model_rslc_hm": 30.8
+   "model_lahn_all": 33.4,
+   "model_lahn_hm": 30.8
   },
   "pres_2024_margin": -35.3,
   "gov_2022_margin": -37.6,
@@ -8933,9 +8933,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -8997,9 +8997,9 @@
      "sand_base": 26.3
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -9123,8 +9123,8 @@
    "gov_2022": 61.7,
    "ussen_2022": 63.8,
    "pres_2024": 52.4,
-   "model_rslc_all": -58.4,
-   "model_rslc_hm": -68.5
+   "model_lahn_all": -58.4,
+   "model_lahn_hm": -68.5
   },
   "pres_2024_margin": 52.4,
   "gov_2022_margin": 61.7,
@@ -9139,9 +9139,9 @@
    "dem": "Janice Weiner"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -9203,9 +9203,9 @@
      "sand_base": 71.4
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -9329,8 +9329,8 @@
    "gov_2022": -16.7,
    "ussen_2022": -11.7,
    "pres_2024": -10.4,
-   "model_rslc_all": 13.2,
-   "model_rslc_hm": 9.6
+   "model_lahn_all": 13.2,
+   "model_lahn_hm": 9.6
   },
   "pres_2024_margin": -10.4,
   "gov_2022_margin": -16.7,
@@ -9345,9 +9345,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -9409,9 +9409,9 @@
      "sand_base": 35.0
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -9535,8 +9535,8 @@
    "gov_2022": -17.4,
    "ussen_2022": -10.1,
    "pres_2024": -8.0,
-   "model_rslc_all": 1.0,
-   "model_rslc_hm": -0.8
+   "model_lahn_all": 1.0,
+   "model_lahn_hm": -0.8
   },
   "pres_2024_margin": -8.0,
   "gov_2022_margin": -17.4,
@@ -9551,9 +9551,9 @@
    "dem": "Nikhil Wagle"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -9615,9 +9615,9 @@
      "sand_base": 39.9
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -9741,8 +9741,8 @@
    "gov_2022": -35.2,
    "ussen_2022": -27.7,
    "pres_2024": -28.0,
-   "model_rslc_all": 26.0,
-   "model_rslc_hm": 23.2
+   "model_lahn_all": 26.0,
+   "model_lahn_hm": 23.2
   },
   "pres_2024_margin": -28.0,
   "gov_2022_margin": -35.2,
@@ -9757,9 +9757,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -9821,9 +9821,9 @@
      "sand_base": 27.8
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -9947,8 +9947,8 @@
    "gov_2022": 6.0,
    "ussen_2022": 13.1,
    "pres_2024": 8.7,
-   "model_rslc_all": -11.7,
-   "model_rslc_hm": -19.8
+   "model_lahn_all": -11.7,
+   "model_lahn_hm": -19.8
   },
   "pres_2024_margin": 8.7,
   "gov_2022_margin": 6.0,
@@ -9963,9 +9963,9 @@
    "dem": "Cindy Winckler"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -10027,9 +10027,9 @@
      "sand_base": 44.9
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
@@ -10153,8 +10153,8 @@
    "gov_2022": -19.3,
    "ussen_2022": -12.2,
    "pres_2024": -17.5,
-   "model_rslc_all": 11.4,
-   "model_rslc_hm": 2.2
+   "model_lahn_all": 11.4,
+   "model_lahn_hm": 2.2
   },
   "pres_2024_margin": -17.5,
   "gov_2022_margin": -19.3,
@@ -10169,9 +10169,9 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_rslc_all": {
-    "label": "RSLC (All)",
-    "family": "RSLC",
+   "model_lahn_all": {
+    "label": "Lahn (All)",
+    "family": "Lahn",
     "variant": "All",
     "affinity": {
      "segments": [
@@ -10233,9 +10233,9 @@
      "sand_base": 36.4
     }
    },
-   "model_rslc_hm": {
-    "label": "RSLC (H+M)",
-    "family": "RSLC",
+   "model_lahn_hm": {
+    "label": "Lahn (H+M)",
+    "family": "Lahn",
     "variant": "H+M",
     "affinity": {
      "segments": [
