@@ -130,6 +130,37 @@ MODELS = {
         hm_values=["High", "Medium"], all_values=["High", "Medium", "Low"],
         drop_families=["drnatl"],
     ),
+    # North Carolina's first dedicated model (2026-10-06), published as RSLC; it
+    # was on the national fallback, so drop_families clears model_drnatl_all.
+    #
+    # The ladder is five '1'/'0' audience flags rather than one column, verified
+    # mutually exclusive and exhaustive across all 7,823,167 rows: Strong GOP /
+    # Soft GOP / Swing / Soft DEM / Strong DEM. tag_sql folds them into one text
+    # tag so tags mode can carry the full five-rung ladder; margin is
+    # (Strong + Soft GOP) - (Strong + Soft DEM), with Swing in the denominator.
+    #
+    # Variants are "High" and "All" rather than H+M / All, as specified: High is
+    # [High Interest in Election] = 1 (5.17M); All adds the Mid to Low group
+    # (2.66M). The two interest flags partition the table exactly, so All is
+    # every row and needs no all_values.
+    #
+    # Shared with the ABEV Tracker's STATE_MODELS["NC"] (which uses the plain
+    # ladder - a turnout cut means nothing for ballots already cast).
+    "NC": dict(
+        mode="tags", table="NC_Models_Audiences_Sept2026",
+        family="rslc", family_label="RSLC",
+        tag_sql=("CASE WHEN m.[Strong GOP Voters] = '1' THEN 'Strong GOP' "
+                 "WHEN m.[Soft GOP Voters] = '1' THEN 'Soft GOP' "
+                 "WHEN m.[Swing Voters] = '1' THEN 'Swing' "
+                 "WHEN m.[Soft DEM Voters] = '1' THEN 'Soft Dem' "
+                 "WHEN m.[Strong DEM Voters] = '1' THEN 'Strong Dem' END"),
+        order=["Strong GOP", "Soft GOP", "Swing", "Soft Dem", "Strong Dem"],
+        gop_tags=["Strong GOP", "Soft GOP"],
+        dem_tags=["Soft Dem", "Strong Dem"],
+        turnout_col="High Interest in Election", hm_values=["1"],
+        variants=["all", "high"],
+        drop_families=["drnatl"],
+    ),
     "PA": dict(
         mode="universe", table="PA_RSLC_R1_Exchange_20260418",
         family="rslc", family_label="RSLC",
@@ -382,7 +413,9 @@ ON_HOLD = set()
 # overwriting it.
 EXTERNAL_MODELS = set()
 
-VARIANT_LABEL = {"all": "All", "hm": "H+M"}
+# "high" is NC's turnout cut (High Interest in Election). It fills the same
+# turnout-restricted slot H+M does elsewhere and reads its bins from hm_values.
+VARIANT_LABEL = {"all": "All", "hm": "H+M", "high": "High"}
 
 
 # ---------------------------------------------------------------------------
@@ -521,16 +554,20 @@ def fetch_tags(cur, state, cfg):
     Like universe mode, but the ladder is carried as text ("GOP - Strong")
     rather than a numbered universe, so there is nothing to cast to int and the
     rung order has to be declared in the config rather than sorted.
+
+    `tag_sql` replaces the tag column with an expression, for a ladder carried
+    as one flag column per rung (NC) rather than a single tag column (CO).
     """
+    tag = cfg.get("tag_sql") or f"m.[{cfg['tag_col']}]"
+    tb = f"m.[{cfg['turnout_col']}]"
     sql = f"""
         SELECT v.StateLegUpperDistrict, v.StateLegLowerDistrict,
-               m.[{cfg['tag_col']}] AS tag, m.[{cfg['turnout_col']}] AS tb,
+               {tag} AS tag, {tb} AS tb,
                COUNT(*) AS cnt
         FROM voterfile_2026 v
         JOIN {table_ref(cfg)} m ON {JOIN.format(col=cfg.get('regid_col', 'dt_regid'))}
         WHERE v.State = ?
-        GROUP BY v.StateLegUpperDistrict, v.StateLegLowerDistrict,
-                 m.[{cfg['tag_col']}], m.[{cfg['turnout_col']}]
+        GROUP BY v.StateLegUpperDistrict, v.StateLegLowerDistrict, {tag}, {tb}
     """
     cur.execute(sql, state)
     return [{"upper_n": r[0], "lower_n": r[1], "tag": r[2], "tb": r[3], "cnt": r[4]}
@@ -576,7 +613,7 @@ def variant_bins(cfg, variant):
     "All" is not always the whole file: Georgia's All is L+M+H only (its 'A' bin, and the
     residual I/N bins, are excluded), so all_values narrows the denominator.
     """
-    key = "hm_values" if variant == "hm" else "all_values"
+    key = "hm_values" if variant in ("hm", "high") else "all_values"
     vals = cfg.get(key)
     return set(str(v) for v in vals) if vals else None
 

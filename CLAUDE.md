@@ -225,6 +225,7 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
 | `universe` | universe ranges (`gop=[..]`, `dem=[..]`) — or `framework_col` when set | NV, PA, AZ, GA, **KS**, **WI**, **MI**, NJ, **AK**, **IA**, **MN** |
 | `flags` | 0/1 audience columns | VA, TX, OR, **NH** |
 | `score` | continuous support scores | (none currently) |
+| `tags` | a text ladder declared in `order` — a tag column, or a `tag_sql` expression | **CO**, **NC** |
 
 - **Bucket ranges are per-model, not conventional.** Most run 1–2 rep / 6–7 dem, but GA
   and **IA** run to 9 universes (Dem base 8–9) and NJ/MI use three-deep bases (1–3 / 7–9).
@@ -263,6 +264,24 @@ Dedicated models live in `MODELS` in `build_model_margins.py`, in three modes:
   `app.js` changed but the segment ladder. **Note the capitalised `UniverseNumber` /
   `UniverseName` in the NV table** — the R1 table was lowercase.
   Both share their bucket definitions with the ABEV Tracker's `STATE_MODELS`.
+
+- **NC, added 2026-10-06** (`NC_Models_Audiences_Sept2026`, published as **RSLC**). Its
+  ladder is five '1'/'0' audience *columns* — Strong GOP / Soft GOP / Swing / Soft DEM /
+  Strong DEM Voters, verified mutually exclusive and exhaustive over 7,823,167 rows — so it
+  runs in `tags` mode with a `tag_sql` CASE folding them into one tag. Margin is
+  (Strong+Soft GOP) − (Strong+Soft Dem) over all five; the affinity bar uses the five-step
+  `FIVE_BUCKET_COLOR_CLASSES` ramp. **Variants are High and All, not H+M / All**:
+  `model_rslc_high` is `[High Interest in Election] = 1` (5.17M), All adds the Mid to Low
+  group (2.66M) — the two flags partition the table, so All is every row. `"high"` is a
+  first-class variant in `VARIANT_LABEL` / `variant_bins`, and in `app.js` it fills the
+  turnout-restricted ("hm") slot of the modeling switch: `modelViewKeyForVariant(rec, "hm")`
+  matches `_hm` or `_high`, and `turnoutVariantLabel()` relabels the button and tooltip.
+  **High reads more Democratic than All** (district means D+12.5 vs D+8.7 house) — high-interest
+  voters lean Dem in this model. `drop_families=["drnatl"]` clears the national fallback.
+  120/120 house, 50/50 senate; SD-1 recomputed straight from SQL matched (+3.1 All / +0.3
+  High). **The table has no index** (ABEV Tracker's `create_model_indexes.sql` carries
+  `IX_dtregid_NC`); unindexed, a build takes ~10 min. Shared with the ABEV Tracker's
+  `STATE_MODELS["NC"]`, which uses the plain ladder with no turnout cut.
 
 - **`framework_col` beats a universe range.** The Aug 2026 WI/MI/**AZ** refreshes and the AK
   model carry an explicit framework column beside the ladder. **Arizona is the sharpest

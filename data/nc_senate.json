@@ -58,7 +58,8 @@
    "latest_leg": -14.4,
    "ussen_2022": -19.1,
    "pres_2024": -14.8,
-   "model_drnatl_all": 4.2
+   "model_rslc_all": 3.1,
+   "model_rslc_high": 0.3
   },
   "pres_2024_margin": -14.8,
   "gov_2022_margin": null,
@@ -73,32 +74,84 @@
    "dem": "Melissa Zehner"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 48.2
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 33.6
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.8
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 44.0
+       "key": "swing",
+       "label": "Swing",
+       "value": 14.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 26.9
       }
      ],
-     "margin": 4.2,
-     "gop_legislative": 48.2,
-     "unaligned": 7.8,
-     "dem_legislative": 44.0
+     "margin": 3.1,
+     "strong_gop": 33.6,
+     "soft_gop": 10.9,
+     "swing": 14.2,
+     "soft_dem": 14.5,
+     "strong_dem": 26.9
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 36.3
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.8
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.8
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 32.0
+      }
+     ],
+     "margin": 0.3,
+     "strong_gop": 36.3,
+     "soft_gop": 8.8,
+     "swing": 10.0,
+     "soft_dem": 12.8,
+     "strong_dem": 32.0
     }
    }
   }
@@ -162,7 +215,8 @@
    "latest_leg": -14.2,
    "ussen_2022": -26.7,
    "pres_2024": -16.1,
-   "model_drnatl_all": 4.3
+   "model_rslc_all": 4.0,
+   "model_rslc_high": 5.7
   },
   "pres_2024_margin": -16.1,
   "gov_2022_margin": null,
@@ -177,32 +231,84 @@
    "dem": "Roy Surrett"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 49.2
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 36.0
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 5.8
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 44.9
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.7
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 28.2
       }
      ],
-     "margin": 4.3,
-     "gop_legislative": 49.2,
-     "unaligned": 5.8,
-     "dem_legislative": 44.9
+     "margin": 4.0,
+     "strong_gop": 36.0,
+     "soft_gop": 9.9,
+     "swing": 12.2,
+     "soft_dem": 13.7,
+     "strong_dem": 28.2
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 40.1
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.0
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.5
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.9
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 30.5
+      }
+     ],
+     "margin": 5.7,
+     "strong_gop": 40.1,
+     "soft_gop": 8.0,
+     "swing": 9.5,
+     "soft_dem": 11.9,
+     "strong_dem": 30.5
     }
    }
   }
@@ -266,7 +372,8 @@
    "latest_leg": -100.0,
    "ussen_2022": -22.3,
    "pres_2024": -19.6,
-   "model_drnatl_all": 15.9
+   "model_rslc_all": 12.8,
+   "model_rslc_high": 9.9
   },
   "pres_2024_margin": -19.6,
   "gov_2022_margin": null,
@@ -281,32 +388,84 @@
    "dem": "Charles Dudley"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 55.1
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 39.9
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 5.7
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 39.2
+       "key": "swing",
+       "label": "Swing",
+       "value": 13.1
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.1
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 23.9
       }
      ],
-     "margin": 15.9,
-     "gop_legislative": 55.1,
-     "unaligned": 5.7,
-     "dem_legislative": 39.2
+     "margin": 12.8,
+     "strong_gop": 39.9,
+     "soft_gop": 9.9,
+     "swing": 13.1,
+     "soft_dem": 13.1,
+     "strong_dem": 23.9
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 41.0
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.6
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 28.3
+      }
+     ],
+     "margin": 9.9,
+     "strong_gop": 41.0,
+     "soft_gop": 8.6,
+     "swing": 10.7,
+     "soft_dem": 11.4,
+     "strong_dem": 28.3
     }
    }
   }
@@ -370,7 +529,8 @@
    "latest_leg": -10.2,
    "ussen_2022": -12.8,
    "pres_2024": -10.0,
-   "model_drnatl_all": -6.8
+   "model_rslc_all": -4.0,
+   "model_rslc_high": -15.8
   },
   "pres_2024_margin": -10.0,
   "gov_2022_margin": null,
@@ -385,32 +545,84 @@
    "dem": "Jess Rivera"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 43.9
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 33.4
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 5.5
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.1
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 50.7
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 33.2
       }
      ],
-     "margin": -6.8,
-     "gop_legislative": 43.9,
-     "unaligned": 5.5,
-     "dem_legislative": 50.7
+     "margin": -4.0,
+     "strong_gop": 33.4,
+     "soft_gop": 9.1,
+     "swing": 11.0,
+     "soft_dem": 13.4,
+     "strong_dem": 33.2
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 32.6
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 6.1
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 6.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 10.8
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 43.7
+      }
+     ],
+     "margin": -15.8,
+     "strong_gop": 32.6,
+     "soft_gop": 6.1,
+     "swing": 6.7,
+     "soft_dem": 10.8,
+     "strong_dem": 43.7
     }
    }
   }
@@ -474,7 +686,8 @@
    "latest_leg": 10.2,
    "ussen_2022": -11.4,
    "pres_2024": 9.6,
-   "model_drnatl_all": -28.1
+   "model_rslc_all": -26.9,
+   "model_rslc_high": -33.9
   },
   "pres_2024_margin": 9.6,
   "gov_2022_margin": null,
@@ -489,32 +702,84 @@
    "dem": "Kandie Smith"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 32.6
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 21.3
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.7
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.3
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 60.7
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.9
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.3
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 42.2
       }
      ],
-     "margin": -28.1,
-     "gop_legislative": 32.6,
-     "unaligned": 6.7,
-     "dem_legislative": 60.7
+     "margin": -26.9,
+     "strong_gop": 21.3,
+     "soft_gop": 9.3,
+     "swing": 11.9,
+     "soft_dem": 15.3,
+     "strong_dem": 42.2
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 22.1
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 7.1
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 7.8
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 51.0
+      }
+     ],
+     "margin": -33.9,
+     "strong_gop": 22.1,
+     "soft_gop": 7.1,
+     "swing": 7.8,
+     "soft_dem": 12.0,
+     "strong_dem": 51.0
     }
    }
   }
@@ -578,7 +843,8 @@
    "latest_leg": -39.3,
    "ussen_2022": -35.4,
    "pres_2024": -35.8,
-   "model_drnatl_all": 35.0
+   "model_rslc_all": 31.1,
+   "model_rslc_high": 35.0
   },
   "pres_2024_margin": -35.8,
   "gov_2022_margin": null,
@@ -593,32 +859,84 @@
    "dem": "Andi Morrow"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 63.5
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 41.3
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 8.1
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 14.7
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 28.4
+       "key": "swing",
+       "label": "Swing",
+       "value": 19.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 11.4
+      }
+     ],
+     "margin": 31.1,
+     "strong_gop": 41.3,
+     "soft_gop": 14.7,
+     "swing": 19.0,
+     "soft_dem": 13.6,
+     "strong_dem": 11.4
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 45.7
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 14.0
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 15.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.9
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 12.7
       }
      ],
      "margin": 35.0,
-     "gop_legislative": 63.5,
-     "unaligned": 8.1,
-     "dem_legislative": 28.4
+     "strong_gop": 45.7,
+     "soft_gop": 14.0,
+     "swing": 15.7,
+     "soft_dem": 11.9,
+     "strong_dem": 12.7
     }
    }
   }
@@ -682,7 +1000,8 @@
    "latest_leg": -8.5,
    "ussen_2022": -11.2,
    "pres_2024": -5.6,
-   "model_drnatl_all": 6.8
+   "model_rslc_all": -5.5,
+   "model_rslc_high": -8.9
   },
   "pres_2024_margin": -5.6,
   "gov_2022_margin": null,
@@ -697,32 +1016,84 @@
    "dem": "Jessica Bichler"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 47.4
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 26.8
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 12.0
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 13.3
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 40.6
+       "key": "swing",
+       "label": "Swing",
+       "value": 14.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 17.1
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 28.4
       }
      ],
-     "margin": 6.8,
-     "gop_legislative": 47.4,
-     "unaligned": 12.0,
-     "dem_legislative": 40.6
+     "margin": -5.5,
+     "strong_gop": 26.8,
+     "soft_gop": 13.3,
+     "swing": 14.4,
+     "soft_dem": 17.1,
+     "strong_dem": 28.4
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 29.1
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.5
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.8
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 36.6
+      }
+     ],
+     "margin": -8.9,
+     "strong_gop": 29.1,
+     "soft_gop": 11.5,
+     "swing": 9.8,
+     "soft_dem": 13.0,
+     "strong_dem": 36.6
     }
    }
   }
@@ -786,7 +1157,8 @@
    "latest_leg": -19.8,
    "ussen_2022": -21.5,
    "pres_2024": -18.9,
-   "model_drnatl_all": 21.2
+   "model_rslc_all": 15.1,
+   "model_rslc_high": 12.2
   },
   "pres_2024_margin": -18.9,
   "gov_2022_margin": null,
@@ -801,32 +1173,84 @@
    "dem": "Richard Combes"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 55.9
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 38.1
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 9.5
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.6
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 34.7
+       "key": "swing",
+       "label": "Swing",
+       "value": 15.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 20.2
       }
      ],
-     "margin": 21.2,
-     "gop_legislative": 55.9,
-     "unaligned": 9.5,
-     "dem_legislative": 34.7
+     "margin": 15.1,
+     "strong_gop": 38.1,
+     "soft_gop": 11.6,
+     "swing": 15.7,
+     "soft_dem": 14.4,
+     "strong_dem": 20.2
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 39.7
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.1
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.6
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.7
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 24.9
+      }
+     ],
+     "margin": 12.2,
+     "strong_gop": 39.7,
+     "soft_gop": 10.1,
+     "swing": 12.6,
+     "soft_dem": 12.7,
+     "strong_dem": 24.9
     }
    }
   }
@@ -890,7 +1314,8 @@
    "latest_leg": -30.1,
    "ussen_2022": -31.7,
    "pres_2024": -29.3,
-   "model_drnatl_all": 18.2
+   "model_rslc_all": 20.5,
+   "model_rslc_high": 15.7
   },
   "pres_2024_margin": -29.3,
   "gov_2022_margin": null,
@@ -905,32 +1330,84 @@
    "dem": "No candidate"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 55.4
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 42.2
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.5
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.1
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 37.1
+       "key": "swing",
+       "label": "Swing",
+       "value": 14.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.1
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 19.6
       }
      ],
-     "margin": 18.2,
-     "gop_legislative": 55.4,
-     "unaligned": 7.5,
-     "dem_legislative": 37.1
+     "margin": 20.5,
+     "strong_gop": 42.2,
+     "soft_gop": 11.1,
+     "swing": 14.0,
+     "soft_dem": 13.1,
+     "strong_dem": 19.6
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 44.0
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.6
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 25.5
+      }
+     ],
+     "margin": 15.7,
+     "strong_gop": 44.0,
+     "soft_gop": 8.6,
+     "swing": 10.4,
+     "soft_dem": 11.4,
+     "strong_dem": 25.5
     }
    }
   }
@@ -994,7 +1471,8 @@
    "latest_leg": -21.1,
    "ussen_2022": -42.1,
    "pres_2024": -21.5,
-   "model_drnatl_all": 16.9
+   "model_rslc_all": 13.4,
+   "model_rslc_high": 9.6
   },
   "pres_2024_margin": -21.5,
   "gov_2022_margin": null,
@@ -1009,32 +1487,84 @@
    "dem": "Pat LeGrand"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 54.9
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 38.9
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.0
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.0
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 38.1
+       "key": "swing",
+       "label": "Swing",
+       "value": 13.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.1
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 21.3
       }
      ],
-     "margin": 16.9,
-     "gop_legislative": 54.9,
-     "unaligned": 7.0,
-     "dem_legislative": 38.1
+     "margin": 13.4,
+     "strong_gop": 38.9,
+     "soft_gop": 11.0,
+     "swing": 13.7,
+     "soft_dem": 15.1,
+     "strong_dem": 21.3
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 39.9
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.5
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.8
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 25.8
+      }
+     ],
+     "margin": 9.6,
+     "strong_gop": 39.9,
+     "soft_gop": 9.5,
+     "swing": 10.8,
+     "soft_dem": 14.0,
+     "strong_dem": 25.8
     }
    }
   }
@@ -1098,7 +1628,8 @@
    "latest_leg": -2.6,
    "ussen_2022": -9.3,
    "pres_2024": -3.5,
-   "model_drnatl_all": -10.7
+   "model_rslc_all": -9.4,
+   "model_rslc_high": -17.1
   },
   "pres_2024_margin": -3.5,
   "gov_2022_margin": null,
@@ -1113,32 +1644,84 @@
    "dem": "James Gailliard"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 41.9
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 30.9
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 5.5
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.1
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 52.6
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.9
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 35.4
       }
      ],
-     "margin": -10.7,
-     "gop_legislative": 41.9,
-     "unaligned": 5.5,
-     "dem_legislative": 52.6
+     "margin": -9.4,
+     "strong_gop": 30.9,
+     "soft_gop": 9.1,
+     "swing": 10.7,
+     "soft_dem": 13.9,
+     "strong_dem": 35.4
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 30.8
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 6.9
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 7.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 43.3
+      }
+     ],
+     "margin": -17.1,
+     "strong_gop": 30.8,
+     "soft_gop": 6.9,
+     "swing": 7.4,
+     "soft_dem": 11.5,
+     "strong_dem": 43.3
     }
    }
   }
@@ -1202,7 +1785,8 @@
    "latest_leg": -23.3,
    "ussen_2022": -28.8,
    "pres_2024": -23.6,
-   "model_drnatl_all": 14.7
+   "model_rslc_all": 13.5,
+   "model_rslc_high": 11.8
   },
   "pres_2024_margin": -23.6,
   "gov_2022_margin": null,
@@ -1217,32 +1801,84 @@
    "dem": "Tanya White Anderson"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 54.0
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 37.7
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.7
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 12.1
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 39.3
+       "key": "swing",
+       "label": "Swing",
+       "value": 14.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 16.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 20.3
       }
      ],
-     "margin": 14.7,
-     "gop_legislative": 54.0,
-     "unaligned": 6.7,
-     "dem_legislative": 39.3
+     "margin": 13.5,
+     "strong_gop": 37.7,
+     "soft_gop": 12.1,
+     "swing": 14.0,
+     "soft_dem": 16.0,
+     "strong_dem": 20.3
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 40.2
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.4
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 24.1
+      }
+     ],
+     "margin": 11.8,
+     "strong_gop": 40.2,
+     "soft_gop": 10.4,
+     "swing": 10.7,
+     "soft_dem": 14.6,
+     "strong_dem": 24.1
     }
    }
   }
@@ -1306,7 +1942,8 @@
    "latest_leg": 4.1,
    "ussen_2022": -14.6,
    "pres_2024": 4.5,
-   "model_drnatl_all": 3.0
+   "model_rslc_all": -11.4,
+   "model_rslc_high": -13.7
   },
   "pres_2024_margin": 4.5,
   "gov_2022_margin": null,
@@ -1321,32 +1958,84 @@
    "dem": "Lisa Grafstein"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 47.1
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 26.0
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 8.8
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 44.1
+       "key": "swing",
+       "label": "Swing",
+       "value": 14.9
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 16.3
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 31.9
       }
      ],
-     "margin": 3.0,
-     "gop_legislative": 47.1,
-     "unaligned": 8.8,
-     "dem_legislative": 44.1
+     "margin": -11.4,
+     "strong_gop": 26.0,
+     "soft_gop": 10.9,
+     "swing": 14.9,
+     "soft_dem": 16.3,
+     "strong_dem": 31.9
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 26.8
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.1
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.5
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 36.0
+      }
+     ],
+     "margin": -13.7,
+     "strong_gop": 26.8,
+     "soft_gop": 10.1,
+     "swing": 12.5,
+     "soft_dem": 14.6,
+     "strong_dem": 36.0
     }
    }
   }
@@ -1410,7 +2099,8 @@
    "latest_leg": 49.8,
    "ussen_2022": 35.5,
    "pres_2024": 45.4,
-   "model_drnatl_all": -55.3
+   "model_rslc_all": -62.5,
+   "model_rslc_high": -64.5
   },
   "pres_2024_margin": 45.4,
   "gov_2022_margin": null,
@@ -1425,32 +2115,84 @@
    "dem": "Dan Blue"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 18.9
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 9.0
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.9
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 5.8
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 74.2
+       "key": "swing",
+       "label": "Swing",
+       "value": 8.1
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.9
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 64.3
       }
      ],
-     "margin": -55.3,
-     "gop_legislative": 18.9,
-     "unaligned": 6.9,
-     "dem_legislative": 74.2
+     "margin": -62.5,
+     "strong_gop": 9.0,
+     "soft_gop": 5.8,
+     "swing": 8.1,
+     "soft_dem": 12.9,
+     "strong_dem": 64.3
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 10.0
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 4.8
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 6.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 9.8
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 69.5
+      }
+     ],
+     "margin": -64.5,
+     "strong_gop": 10.0,
+     "soft_gop": 4.8,
+     "swing": 6.0,
+     "soft_dem": 9.8,
+     "strong_dem": 69.5
     }
    }
   }
@@ -1514,7 +2256,8 @@
    "latest_leg": 35.7,
    "ussen_2022": 25.5,
    "pres_2024": 36.9,
-   "model_drnatl_all": -40.2
+   "model_rslc_all": -53.9,
+   "model_rslc_high": -65.5
   },
   "pres_2024_margin": 36.9,
   "gov_2022_margin": null,
@@ -1529,32 +2272,84 @@
    "dem": "Jay Chaudhuri"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 25.1
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 9.9
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 9.6
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.5
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 65.3
+       "key": "swing",
+       "label": "Swing",
+       "value": 7.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.2
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 59.0
       }
      ],
-     "margin": -40.2,
-     "gop_legislative": 25.1,
-     "unaligned": 9.6,
-     "dem_legislative": 65.3
+     "margin": -53.9,
+     "strong_gop": 9.9,
+     "soft_gop": 9.5,
+     "swing": 7.4,
+     "soft_dem": 14.2,
+     "strong_dem": 59.0
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 8.2
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 7.0
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 4.3
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 9.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 71.6
+      }
+     ],
+     "margin": -65.5,
+     "strong_gop": 8.2,
+     "soft_gop": 7.0,
+     "swing": 4.3,
+     "soft_dem": 9.0,
+     "strong_dem": 71.6
     }
    }
   }
@@ -1618,7 +2413,8 @@
    "latest_leg": 100.0,
    "ussen_2022": 22.4,
    "pres_2024": 35.0,
-   "model_drnatl_all": -32.4
+   "model_rslc_all": -49.1,
+   "model_rslc_high": -60.8
   },
   "pres_2024_margin": 35.0,
   "gov_2022_margin": null,
@@ -1633,32 +2429,84 @@
    "dem": "Gale Adcock"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 28.6
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 11.4
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 10.4
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 61.0
+       "key": "swing",
+       "label": "Swing",
+       "value": 8.3
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 55.0
       }
      ],
-     "margin": -32.4,
-     "gop_legislative": 28.6,
-     "unaligned": 10.4,
-     "dem_legislative": 61.0
+     "margin": -49.1,
+     "strong_gop": 11.4,
+     "soft_gop": 9.9,
+     "swing": 8.3,
+     "soft_dem": 15.4,
+     "strong_dem": 55.0
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 9.6
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 7.4
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 5.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 9.7
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 68.1
+      }
+     ],
+     "margin": -60.8,
+     "strong_gop": 9.6,
+     "soft_gop": 7.4,
+     "swing": 5.2,
+     "soft_dem": 9.7,
+     "strong_dem": 68.1
     }
    }
   }
@@ -1722,7 +2570,8 @@
    "latest_leg": 74.4,
    "ussen_2022": 15.6,
    "pres_2024": 28.6,
-   "model_drnatl_all": -19.2
+   "model_rslc_all": -41.2,
+   "model_rslc_high": -43.9
   },
   "pres_2024_margin": 28.6,
   "gov_2022_margin": null,
@@ -1737,32 +2586,84 @@
    "dem": "Sydney Batch"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 34.1
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 14.6
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 12.6
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.7
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 53.3
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.1
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 20.8
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 43.7
       }
      ],
-     "margin": -19.2,
-     "gop_legislative": 34.1,
-     "unaligned": 12.6,
-     "dem_legislative": 53.3
+     "margin": -41.2,
+     "strong_gop": 14.6,
+     "soft_gop": 8.7,
+     "swing": 12.1,
+     "soft_dem": 20.8,
+     "strong_dem": 43.7
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 14.7
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.5
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 16.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 50.7
+      }
+     ],
+     "margin": -43.9,
+     "strong_gop": 14.7,
+     "soft_gop": 8.5,
+     "swing": 9.7,
+     "soft_dem": 16.5,
+     "strong_dem": 50.7
     }
    }
   }
@@ -1826,7 +2727,8 @@
    "latest_leg": 0.1,
    "ussen_2022": -13.0,
    "pres_2024": -0.5,
-   "model_drnatl_all": -1.5
+   "model_rslc_all": -12.0,
+   "model_rslc_high": -17.1
   },
   "pres_2024_margin": -0.5,
   "gov_2022_margin": null,
@@ -1841,32 +2743,84 @@
    "dem": "Haseeb Fatmi"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 45.2
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 27.2
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 8.1
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.7
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 46.7
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.1
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 34.8
       }
      ],
-     "margin": -1.5,
-     "gop_legislative": 45.2,
-     "unaligned": 8.1,
-     "dem_legislative": 46.7
+     "margin": -12.0,
+     "strong_gop": 27.2,
+     "soft_gop": 10.7,
+     "swing": 12.2,
+     "soft_dem": 15.1,
+     "strong_dem": 34.8
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 27.5
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.0
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.9
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.1
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 40.5
+      }
+     ],
+     "margin": -17.1,
+     "strong_gop": 27.5,
+     "soft_gop": 9.0,
+     "swing": 9.9,
+     "soft_dem": 13.1,
+     "strong_dem": 40.5
     }
    }
   }
@@ -1930,7 +2884,8 @@
    "latest_leg": 29.0,
    "ussen_2022": 27.8,
    "pres_2024": 28.3,
-   "model_drnatl_all": -42.6
+   "model_rslc_all": -40.9,
+   "model_rslc_high": -39.4
   },
   "pres_2024_margin": 28.3,
   "gov_2022_margin": null,
@@ -1945,32 +2900,84 @@
    "dem": "Val Applewhite"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 25.5
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 16.2
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.4
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 6.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 68.1
+       "key": "swing",
+       "label": "Swing",
+       "value": 13.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 17.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 46.4
       }
      ],
-     "margin": -42.6,
-     "gop_legislative": 25.5,
-     "unaligned": 6.4,
-     "dem_legislative": 68.1
+     "margin": -40.9,
+     "strong_gop": 16.2,
+     "soft_gop": 6.9,
+     "swing": 13.0,
+     "soft_dem": 17.6,
+     "strong_dem": 46.4
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 18.8
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 6.5
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 52.2
+      }
+     ],
+     "margin": -39.4,
+     "strong_gop": 18.8,
+     "soft_gop": 6.5,
+     "swing": 10.0,
+     "soft_dem": 12.5,
+     "strong_dem": 52.2
     }
    }
   }
@@ -2034,7 +3041,8 @@
    "latest_leg": 44.6,
    "ussen_2022": 26.5,
    "pres_2024": 43.9,
-   "model_drnatl_all": -44.3
+   "model_rslc_all": -56.6,
+   "model_rslc_high": -63.4
   },
   "pres_2024_margin": 43.9,
   "gov_2022_margin": null,
@@ -2049,32 +3057,84 @@
    "dem": "Natalie Murdock"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 24.1
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 11.0
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.5
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 7.0
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 68.4
+       "key": "swing",
+       "label": "Swing",
+       "value": 7.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 62.1
       }
      ],
-     "margin": -44.3,
-     "gop_legislative": 24.1,
-     "unaligned": 7.5,
-     "dem_legislative": 68.4
+     "margin": -56.6,
+     "strong_gop": 11.0,
+     "soft_gop": 7.0,
+     "swing": 7.4,
+     "soft_dem": 12.5,
+     "strong_dem": 62.1
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 9.8
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 5.9
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 5.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 9.8
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 69.3
+      }
+     ],
+     "margin": -63.4,
+     "strong_gop": 9.8,
+     "soft_gop": 5.9,
+     "swing": 5.2,
+     "soft_dem": 9.8,
+     "strong_dem": 69.3
     }
    }
   }
@@ -2138,7 +3198,8 @@
    "latest_leg": -25.5,
    "ussen_2022": -25.5,
    "pres_2024": -22.6,
-   "model_drnatl_all": 16.1
+   "model_rslc_all": 12.2,
+   "model_rslc_high": 12.8
   },
   "pres_2024_margin": -22.6,
   "gov_2022_margin": null,
@@ -2153,32 +3214,84 @@
    "dem": "Paul Taylor"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 53.7
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 37.2
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 8.8
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.6
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 37.5
+       "key": "swing",
+       "label": "Swing",
+       "value": 14.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 22.1
       }
      ],
-     "margin": 16.1,
-     "gop_legislative": 53.7,
-     "unaligned": 8.8,
-     "dem_legislative": 37.5
+     "margin": 12.2,
+     "strong_gop": 37.2,
+     "soft_gop": 11.6,
+     "swing": 14.7,
+     "soft_dem": 14.5,
+     "strong_dem": 22.1
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 39.5
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.8
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.1
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 25.2
+      }
+     ],
+     "margin": 12.8,
+     "strong_gop": 39.5,
+     "soft_gop": 10.8,
+     "swing": 12.1,
+     "soft_dem": 12.4,
+     "strong_dem": 25.2
     }
    }
   }
@@ -2242,7 +3355,8 @@
    "latest_leg": 86.0,
    "ussen_2022": 51.3,
    "pres_2024": 58.8,
-   "model_drnatl_all": -67.6
+   "model_rslc_all": -75.3,
+   "model_rslc_high": -77.5
   },
   "pres_2024_margin": 58.8,
   "gov_2022_margin": null,
@@ -2257,32 +3371,84 @@
    "dem": "Sophia Chitlik"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 13.3
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 5.2
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 5.8
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 5.0
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 80.9
+       "key": "swing",
+       "label": "Swing",
+       "value": 4.3
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 8.7
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 76.8
       }
      ],
-     "margin": -67.6,
-     "gop_legislative": 13.3,
-     "unaligned": 5.8,
-     "dem_legislative": 80.9
+     "margin": -75.3,
+     "strong_gop": 5.2,
+     "soft_gop": 5.0,
+     "swing": 4.3,
+     "soft_dem": 8.7,
+     "strong_dem": 76.8
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 5.1
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 4.6
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 3.1
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 6.7
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 80.5
+      }
+     ],
+     "margin": -77.5,
+     "strong_gop": 5.1,
+     "soft_gop": 4.6,
+     "swing": 3.1,
+     "soft_dem": 6.7,
+     "strong_dem": 80.5
     }
    }
   }
@@ -2346,7 +3512,8 @@
    "latest_leg": 31.7,
    "ussen_2022": 3.3,
    "pres_2024": 29.9,
-   "model_drnatl_all": -34.4
+   "model_rslc_all": -42.8,
+   "model_rslc_high": -50.2
   },
   "pres_2024_margin": 29.9,
   "gov_2022_margin": null,
@@ -2361,32 +3528,84 @@
    "dem": "Jonah Garson"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 29.0
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 16.8
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.5
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 7.8
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 63.5
+       "key": "swing",
+       "label": "Swing",
+       "value": 8.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.3
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 53.1
       }
      ],
-     "margin": -34.4,
-     "gop_legislative": 29.0,
-     "unaligned": 7.5,
-     "dem_legislative": 63.5
+     "margin": -42.8,
+     "strong_gop": 16.8,
+     "soft_gop": 7.8,
+     "swing": 8.0,
+     "soft_dem": 14.3,
+     "strong_dem": 53.1
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 16.1
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 6.0
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 5.6
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 60.8
+      }
+     ],
+     "margin": -50.2,
+     "strong_gop": 16.1,
+     "soft_gop": 6.0,
+     "swing": 5.6,
+     "soft_dem": 11.6,
+     "strong_dem": 60.8
     }
    }
   }
@@ -2450,7 +3669,8 @@
    "latest_leg": -17.5,
    "ussen_2022": -17.8,
    "pres_2024": -15.0,
-   "model_drnatl_all": -26.4
+   "model_rslc_all": -13.0,
+   "model_rslc_high": -21.8
   },
   "pres_2024_margin": -15.0,
   "gov_2022_margin": null,
@@ -2465,32 +3685,84 @@
    "dem": "Catina Hamm"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 31.1
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 23.1
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 11.4
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.7
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 57.5
+       "key": "swing",
+       "label": "Swing",
+       "value": 19.3
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 21.2
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 25.7
       }
      ],
-     "margin": -26.4,
-     "gop_legislative": 31.1,
-     "unaligned": 11.4,
-     "dem_legislative": 57.5
+     "margin": -13.0,
+     "strong_gop": 23.1,
+     "soft_gop": 10.7,
+     "swing": 19.3,
+     "soft_dem": 21.2,
+     "strong_dem": 25.7
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 24.8
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.1
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 16.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 38.2
+      }
+     ],
+     "margin": -21.8,
+     "strong_gop": 24.8,
+     "soft_gop": 8.1,
+     "swing": 12.4,
+     "soft_dem": 16.5,
+     "strong_dem": 38.2
     }
    }
   }
@@ -2554,7 +3826,8 @@
    "latest_leg": -20.5,
    "ussen_2022": -21.9,
    "pres_2024": -19.4,
-   "model_drnatl_all": 12.0
+   "model_rslc_all": 4.6,
+   "model_rslc_high": -0.7
   },
   "pres_2024_margin": -19.4,
   "gov_2022_margin": null,
@@ -2569,32 +3842,84 @@
    "dem": "Southey Blanton"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 52.9
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 35.5
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.3
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 40.9
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.8
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 26.3
       }
      ],
-     "margin": 12.0,
-     "gop_legislative": 52.9,
-     "unaligned": 6.3,
-     "dem_legislative": 40.9
+     "margin": 4.6,
+     "strong_gop": 35.5,
+     "soft_gop": 10.9,
+     "swing": 11.8,
+     "soft_dem": 15.5,
+     "strong_dem": 26.3
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 36.7
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.8
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 8.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 32.2
+      }
+     ],
+     "margin": -0.7,
+     "strong_gop": 36.7,
+     "soft_gop": 8.8,
+     "swing": 8.2,
+     "soft_dem": 14.0,
+     "strong_dem": 32.2
     }
    }
   }
@@ -2658,7 +3983,8 @@
    "latest_leg": -13.0,
    "ussen_2022": -32.0,
    "pres_2024": -21.8,
-   "model_drnatl_all": 15.5
+   "model_rslc_all": 9.6,
+   "model_rslc_high": 2.4
   },
   "pres_2024_margin": -21.8,
   "gov_2022_margin": null,
@@ -2673,32 +3999,84 @@
    "dem": "Steve Luking"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 54.6
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 38.2
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.2
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.8
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 39.2
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.8
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 26.5
       }
      ],
-     "margin": 15.5,
-     "gop_legislative": 54.6,
-     "unaligned": 6.2,
-     "dem_legislative": 39.2
+     "margin": 9.6,
+     "strong_gop": 38.2,
+     "soft_gop": 10.8,
+     "swing": 11.7,
+     "soft_dem": 12.8,
+     "strong_dem": 26.5
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 38.2
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.6
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 8.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.7
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 32.7
+      }
+     ],
+     "margin": 2.4,
+     "strong_gop": 38.2,
+     "soft_gop": 8.6,
+     "swing": 8.7,
+     "soft_dem": 11.7,
+     "strong_dem": 32.7
     }
    }
   }
@@ -2762,7 +4140,8 @@
    "latest_leg": 21.6,
    "ussen_2022": 11.4,
    "pres_2024": 20.0,
-   "model_drnatl_all": -25.6
+   "model_rslc_all": -32.8,
+   "model_rslc_high": -37.2
   },
   "pres_2024_margin": 20.0,
   "gov_2022_margin": null,
@@ -2777,32 +4156,84 @@
    "dem": "Michael Garrett"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 33.5
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 19.1
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.5
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.4
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 59.1
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.2
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 47.2
       }
      ],
-     "margin": -25.6,
-     "gop_legislative": 33.5,
-     "unaligned": 7.5,
-     "dem_legislative": 59.1
+     "margin": -32.8,
+     "strong_gop": 19.1,
+     "soft_gop": 9.4,
+     "swing": 10.0,
+     "soft_dem": 14.2,
+     "strong_dem": 47.2
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 19.9
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.0
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 7.1
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 10.3
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 54.7
+      }
+     ],
+     "margin": -37.2,
+     "strong_gop": 19.9,
+     "soft_gop": 8.0,
+     "swing": 7.1,
+     "soft_dem": 10.3,
+     "strong_dem": 54.7
     }
    }
   }
@@ -2866,7 +4297,8 @@
    "latest_leg": 100.0,
    "ussen_2022": 45.3,
    "pres_2024": 51.8,
-   "model_drnatl_all": -62.4
+   "model_rslc_all": -65.7,
+   "model_rslc_high": -70.3
   },
   "pres_2024_margin": 51.8,
   "gov_2022_margin": null,
@@ -2881,32 +4313,84 @@
    "dem": "Gladys Robinson"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 16.0
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 8.1
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 5.7
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 5.5
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 78.3
+       "key": "swing",
+       "label": "Swing",
+       "value": 7.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 66.7
       }
      ],
-     "margin": -62.4,
-     "gop_legislative": 16.0,
-     "unaligned": 5.7,
-     "dem_legislative": 78.3
+     "margin": -65.7,
+     "strong_gop": 8.1,
+     "soft_gop": 5.5,
+     "swing": 7.2,
+     "soft_dem": 12.6,
+     "strong_dem": 66.7
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 8.6
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 4.3
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 4.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 6.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 76.5
+      }
+     ],
+     "margin": -70.3,
+     "strong_gop": 8.6,
+     "soft_gop": 4.3,
+     "swing": 4.0,
+     "soft_dem": 6.6,
+     "strong_dem": 76.5
     }
    }
   }
@@ -2970,7 +4454,8 @@
    "latest_leg": -37.1,
    "ussen_2022": -42.4,
    "pres_2024": -37.8,
-   "model_drnatl_all": 26.6
+   "model_rslc_all": 24.2,
+   "model_rslc_high": 18.7
   },
   "pres_2024_margin": -37.8,
   "gov_2022_margin": null,
@@ -2985,32 +4470,84 @@
    "dem": "Judy H. Little"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 61.1
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 44.6
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 4.5
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.7
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 34.4
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 18.6
       }
      ],
-     "margin": 26.6,
-     "gop_legislative": 61.1,
-     "unaligned": 4.5,
-     "dem_legislative": 34.4
+     "margin": 24.2,
+     "strong_gop": 44.6,
+     "soft_gop": 11.7,
+     "swing": 11.7,
+     "soft_dem": 13.4,
+     "strong_dem": 18.6
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 46.6
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.9
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 7.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.3
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 24.5
+      }
+     ],
+     "margin": 18.7,
+     "strong_gop": 46.6,
+     "soft_gop": 8.9,
+     "swing": 7.7,
+     "soft_dem": 12.3,
+     "strong_dem": 24.5
     }
    }
   }
@@ -3074,7 +4611,8 @@
    "latest_leg": -48.0,
    "ussen_2022": -50.9,
    "pres_2024": -46.7,
-   "model_drnatl_all": 48.5
+   "model_rslc_all": 42.2,
+   "model_rslc_high": 41.2
   },
   "pres_2024_margin": -46.7,
   "gov_2022_margin": null,
@@ -3089,32 +4627,84 @@
    "dem": "Pamela D. McAfee"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 71.9
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 53.0
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 4.7
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 12.4
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 23.4
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.3
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 11.7
       }
      ],
-     "margin": 48.5,
-     "gop_legislative": 71.9,
-     "unaligned": 4.7,
-     "dem_legislative": 23.4
+     "margin": 42.2,
+     "strong_gop": 53.0,
+     "soft_gop": 12.4,
+     "swing": 11.3,
+     "soft_dem": 11.6,
+     "strong_dem": 11.7
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 56.5
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.4
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 7.6
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.1
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 14.5
+      }
+     ],
+     "margin": 41.2,
+     "strong_gop": 56.5,
+     "soft_gop": 10.4,
+     "swing": 7.6,
+     "soft_dem": 11.1,
+     "strong_dem": 14.5
     }
    }
   }
@@ -3178,7 +4768,8 @@
    "latest_leg": -25.0,
    "ussen_2022": -20.4,
    "pres_2024": -21.9,
-   "model_drnatl_all": 20.2
+   "model_rslc_all": 12.0,
+   "model_rslc_high": 9.6
   },
   "pres_2024_margin": -21.9,
   "gov_2022_margin": null,
@@ -3193,32 +4784,84 @@
    "dem": "Andy Bowline"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 56.2
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 37.7
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.7
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.7
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 36.0
+       "key": "swing",
+       "label": "Swing",
+       "value": 13.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 24.0
       }
      ],
-     "margin": 20.2,
-     "gop_legislative": 56.2,
-     "unaligned": 7.7,
-     "dem_legislative": 36.0
+     "margin": 12.0,
+     "strong_gop": 37.7,
+     "soft_gop": 11.7,
+     "swing": 13.2,
+     "soft_dem": 13.4,
+     "strong_dem": 24.0
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 39.1
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.5
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.1
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 27.9
+      }
+     ],
+     "margin": 9.6,
+     "strong_gop": 39.1,
+     "soft_gop": 10.5,
+     "swing": 10.4,
+     "soft_dem": 12.1,
+     "strong_dem": 27.9
     }
    }
   }
@@ -3282,7 +4925,8 @@
    "latest_leg": 40.8,
    "ussen_2022": 38.9,
    "pres_2024": 39.5,
-   "model_drnatl_all": -44.0
+   "model_rslc_all": -50.0,
+   "model_rslc_high": -54.4
   },
   "pres_2024_margin": 39.5,
   "gov_2022_margin": null,
@@ -3297,32 +4941,84 @@
    "dem": "Paul Lowe Jr."
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 24.8
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 12.5
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.5
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 7.9
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 68.7
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.1
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 54.8
       }
      ],
-     "margin": -44.0,
-     "gop_legislative": 24.8,
-     "unaligned": 6.5,
-     "dem_legislative": 68.7
+     "margin": -50.0,
+     "strong_gop": 12.5,
+     "soft_gop": 7.9,
+     "swing": 9.1,
+     "soft_dem": 15.6,
+     "strong_dem": 54.8
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 13.4
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 6.8
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 5.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 63.6
+      }
+     ],
+     "margin": -54.4,
+     "strong_gop": 13.4,
+     "soft_gop": 6.8,
+     "swing": 5.2,
+     "soft_dem": 11.0,
+     "strong_dem": 63.6
     }
    }
   }
@@ -3386,7 +5082,8 @@
    "latest_leg": -42.0,
    "ussen_2022": -43.5,
    "pres_2024": -40.8,
-   "model_drnatl_all": 41.8
+   "model_rslc_all": 38.1,
+   "model_rslc_high": 35.5
   },
   "pres_2024_margin": -40.8,
   "gov_2022_margin": null,
@@ -3401,32 +5098,84 @@
    "dem": "Gary Weart"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 68.9
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 52.0
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 4.0
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.4
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 27.1
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.7
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 13.6
       }
      ],
-     "margin": 41.8,
-     "gop_legislative": 68.9,
-     "unaligned": 4.0,
-     "dem_legislative": 27.1
+     "margin": 38.1,
+     "strong_gop": 52.0,
+     "soft_gop": 11.4,
+     "swing": 11.2,
+     "soft_dem": 11.7,
+     "strong_dem": 13.6
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 54.3
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.5
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 7.8
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.2
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 17.1
+      }
+     ],
+     "margin": 35.5,
+     "strong_gop": 54.3,
+     "soft_gop": 9.5,
+     "swing": 7.8,
+     "soft_dem": 11.2,
+     "strong_dem": 17.1
     }
    }
   }
@@ -3490,7 +5239,8 @@
    "latest_leg": -8.7,
    "ussen_2022": -26.6,
    "pres_2024": -8.5,
-   "model_drnatl_all": 6.6
+   "model_rslc_all": -1.5,
+   "model_rslc_high": -2.3
   },
   "pres_2024_margin": -8.5,
   "gov_2022_margin": null,
@@ -3505,32 +5255,84 @@
    "dem": "April Cook"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 49.2
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 31.8
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 8.2
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.8
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 42.6
+       "key": "swing",
+       "label": "Swing",
+       "value": 15.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 16.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 26.6
       }
      ],
-     "margin": 6.6,
-     "gop_legislative": 49.2,
-     "unaligned": 8.2,
-     "dem_legislative": 42.6
+     "margin": -1.5,
+     "strong_gop": 31.8,
+     "soft_gop": 9.8,
+     "swing": 15.2,
+     "soft_dem": 16.5,
+     "strong_dem": 26.6
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 33.3
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.2
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.2
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 29.6
+      }
+     ],
+     "margin": -2.3,
+     "strong_gop": 33.3,
+     "soft_gop": 9.2,
+     "swing": 12.7,
+     "soft_dem": 15.2,
+     "strong_dem": 29.6
     }
    }
   }
@@ -3594,7 +5396,8 @@
    "latest_leg": -26.7,
    "ussen_2022": -27.9,
    "pres_2024": -24.0,
-   "model_drnatl_all": 27.9
+   "model_rslc_all": 16.0,
+   "model_rslc_high": 16.8
   },
   "pres_2024_margin": -24.0,
   "gov_2022_margin": null,
@@ -3609,32 +5412,84 @@
    "dem": "Christine Winward"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 59.4
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 38.9
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 9.2
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.2
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 31.5
+       "key": "swing",
+       "label": "Swing",
+       "value": 15.9
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.9
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 19.2
       }
      ],
-     "margin": 27.9,
-     "gop_legislative": 59.4,
-     "unaligned": 9.2,
-     "dem_legislative": 31.5
+     "margin": 16.0,
+     "strong_gop": 38.9,
+     "soft_gop": 11.2,
+     "swing": 15.9,
+     "soft_dem": 14.9,
+     "strong_dem": 19.2
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 40.1
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.9
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 14.8
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.2
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 20.0
+      }
+     ],
+     "margin": 16.8,
+     "strong_gop": 40.1,
+     "soft_gop": 10.9,
+     "swing": 14.8,
+     "soft_dem": 14.2,
+     "strong_dem": 20.0
     }
    }
   }
@@ -3698,7 +5553,8 @@
    "latest_leg": -58.0,
    "ussen_2022": -63.6,
    "pres_2024": -58.0,
-   "model_drnatl_all": 60.9
+   "model_rslc_all": 56.3,
+   "model_rslc_high": 55.3
   },
   "pres_2024_margin": -58.0,
   "gov_2022_margin": null,
@@ -3713,32 +5569,84 @@
    "dem": "Trevor Hardwick"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 79.0
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 59.9
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 3.0
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 13.2
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 18.0
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.1
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 10.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 6.2
       }
      ],
-     "margin": 60.9,
-     "gop_legislative": 79.0,
-     "unaligned": 3.0,
-     "dem_legislative": 18.0
+     "margin": 56.3,
+     "strong_gop": 59.9,
+     "soft_gop": 13.2,
+     "swing": 10.1,
+     "soft_dem": 10.6,
+     "strong_dem": 6.2
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 63.7
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.8
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 6.3
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 10.9
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 8.3
+      }
+     ],
+     "margin": 55.3,
+     "strong_gop": 63.7,
+     "soft_gop": 10.8,
+     "swing": 6.3,
+     "soft_dem": 10.9,
+     "strong_dem": 8.3
     }
    }
   }
@@ -3802,7 +5710,8 @@
    "latest_leg": -29.5,
    "ussen_2022": -29.5,
    "pres_2024": -26.2,
-   "model_drnatl_all": 30.2
+   "model_rslc_all": 19.7,
+   "model_rslc_high": 19.8
   },
   "pres_2024_margin": -26.2,
   "gov_2022_margin": null,
@@ -3817,32 +5726,84 @@
    "dem": "Raygan Angel"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 61.0
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 39.4
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 8.2
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 13.3
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 30.8
+       "key": "swing",
+       "label": "Swing",
+       "value": 14.5
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.3
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 18.6
       }
      ],
-     "margin": 30.2,
-     "gop_legislative": 61.0,
-     "unaligned": 8.2,
-     "dem_legislative": 30.8
+     "margin": 19.7,
+     "strong_gop": 39.4,
+     "soft_gop": 13.3,
+     "swing": 14.5,
+     "soft_dem": 14.3,
+     "strong_dem": 18.6
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 41.6
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 12.6
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 21.4
+      }
+     ],
+     "margin": 19.8,
+     "strong_gop": 41.6,
+     "soft_gop": 12.6,
+     "swing": 11.4,
+     "soft_dem": 13.0,
+     "strong_dem": 21.4
     }
    }
   }
@@ -3906,7 +5867,8 @@
    "latest_leg": 100.0,
    "ussen_2022": 33.9,
    "pres_2024": 36.8,
-   "model_drnatl_all": -34.0
+   "model_rslc_all": -48.7,
+   "model_rslc_high": -46.3
   },
   "pres_2024_margin": 36.8,
   "gov_2022_margin": null,
@@ -3921,32 +5883,84 @@
    "dem": "Mujtaba Mohammed"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 29.6
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 13.2
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
+       "key": "soft_gop",
+       "label": "Soft GOP",
        "value": 6.8
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 63.6
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.3
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 53.3
       }
      ],
-     "margin": -34.0,
-     "gop_legislative": 29.6,
-     "unaligned": 6.8,
-     "dem_legislative": 63.6
+     "margin": -48.7,
+     "strong_gop": 13.2,
+     "soft_gop": 6.8,
+     "swing": 11.3,
+     "soft_dem": 15.5,
+     "strong_dem": 53.3
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 14.8
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 6.9
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.2
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 55.7
+      }
+     ],
+     "margin": -46.3,
+     "strong_gop": 14.8,
+     "soft_gop": 6.9,
+     "swing": 10.4,
+     "soft_dem": 12.2,
+     "strong_dem": 55.7
     }
    }
   }
@@ -4010,7 +6024,8 @@
    "latest_leg": 100.0,
    "ussen_2022": 33.9,
    "pres_2024": 33.2,
-   "model_drnatl_all": -28.0
+   "model_rslc_all": -43.3,
+   "model_rslc_high": -43.4
   },
   "pres_2024_margin": 33.2,
   "gov_2022_margin": null,
@@ -4025,32 +6040,84 @@
    "dem": "DeAndrea Salvador"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 31.8
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 13.3
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 8.3
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.3
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 59.8
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 17.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 48.8
       }
      ],
-     "margin": -28.0,
-     "gop_legislative": 31.8,
-     "unaligned": 8.3,
-     "dem_legislative": 59.8
+     "margin": -43.3,
+     "strong_gop": 13.3,
+     "soft_gop": 9.3,
+     "swing": 11.7,
+     "soft_dem": 17.0,
+     "strong_dem": 48.8
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 14.2
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.9
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 10.3
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 52.6
+      }
+     ],
+     "margin": -43.4,
+     "strong_gop": 14.2,
+     "soft_gop": 8.9,
+     "swing": 10.3,
+     "soft_dem": 14.0,
+     "strong_dem": 52.6
     }
    }
   }
@@ -4114,7 +6181,8 @@
    "latest_leg": 100.0,
    "ussen_2022": 52.4,
    "pres_2024": 48.7,
-   "model_drnatl_all": -57.0
+   "model_rslc_all": -65.5,
+   "model_rslc_high": -66.3
   },
   "pres_2024_margin": 48.7,
   "gov_2022_margin": null,
@@ -4129,32 +6197,84 @@
    "dem": "Joyce Waddell"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 18.4
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 6.9
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.2
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 6.1
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 75.4
+       "key": "swing",
+       "label": "Swing",
+       "value": 8.6
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 64.0
       }
      ],
-     "margin": -57.0,
-     "gop_legislative": 18.4,
-     "unaligned": 6.2,
-     "dem_legislative": 75.4
+     "margin": -65.5,
+     "strong_gop": 6.9,
+     "soft_gop": 6.1,
+     "swing": 8.6,
+     "soft_dem": 14.4,
+     "strong_dem": 64.0
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 7.9
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 5.8
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 6.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 9.9
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 70.1
+      }
+     ],
+     "margin": -66.3,
+     "strong_gop": 7.9,
+     "soft_gop": 5.8,
+     "swing": 6.4,
+     "soft_dem": 9.9,
+     "strong_dem": 70.1
     }
    }
   }
@@ -4218,7 +6338,8 @@
    "latest_leg": 100.0,
    "ussen_2022": 56.7,
    "pres_2024": 51.3,
-   "model_drnatl_all": -51.0
+   "model_rslc_all": -62.5,
+   "model_rslc_high": -63.7
   },
   "pres_2024_margin": 51.3,
   "gov_2022_margin": null,
@@ -4233,32 +6354,84 @@
    "dem": "Caleb Theodros"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 20.9
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 6.3
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.2
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 7.7
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 71.9
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.5
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.1
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 61.5
       }
      ],
-     "margin": -51.0,
-     "gop_legislative": 20.9,
-     "unaligned": 7.2,
-     "dem_legislative": 71.9
+     "margin": -62.5,
+     "strong_gop": 6.3,
+     "soft_gop": 7.7,
+     "swing": 9.5,
+     "soft_dem": 15.1,
+     "strong_dem": 61.5
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 6.5
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 7.8
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 7.8
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.9
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 66.0
+      }
+     ],
+     "margin": -63.7,
+     "strong_gop": 6.5,
+     "soft_gop": 7.8,
+     "swing": 7.8,
+     "soft_dem": 11.9,
+     "strong_dem": 66.0
     }
    }
   }
@@ -4322,7 +6495,8 @@
    "latest_leg": 0.2,
    "ussen_2022": 1.9,
    "pres_2024": 6.5,
-   "model_drnatl_all": 6.9
+   "model_rslc_all": -14.2,
+   "model_rslc_high": -14.7
   },
   "pres_2024_margin": 6.5,
   "gov_2022_margin": null,
@@ -4337,32 +6511,84 @@
    "dem": "Woodson Bradley"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 49.3
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 25.3
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 8.2
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.4
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 42.5
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.3
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 16.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 34.5
       }
      ],
-     "margin": 6.9,
-     "gop_legislative": 49.3,
-     "unaligned": 8.2,
-     "dem_legislative": 42.5
+     "margin": -14.2,
+     "strong_gop": 25.3,
+     "soft_gop": 11.4,
+     "swing": 12.3,
+     "soft_dem": 16.5,
+     "strong_dem": 34.5
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 26.0
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.1
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 11.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.7
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 37.0
+      }
+     ],
+     "margin": -14.7,
+     "strong_gop": 26.0,
+     "soft_gop": 11.1,
+     "swing": 11.2,
+     "soft_dem": 14.7,
+     "strong_dem": 37.0
     }
    }
   }
@@ -4426,7 +6652,8 @@
    "latest_leg": -23.6,
    "ussen_2022": -25.4,
    "pres_2024": -22.1,
-   "model_drnatl_all": 18.9
+   "model_rslc_all": 15.9,
+   "model_rslc_high": 14.0
   },
   "pres_2024_margin": -22.1,
   "gov_2022_margin": null,
@@ -4441,32 +6668,84 @@
    "dem": "Steve Rutherford"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 56.0
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 39.8
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.9
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.5
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 37.1
+       "key": "swing",
+       "label": "Swing",
+       "value": 13.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 20.9
       }
      ],
-     "margin": 18.9,
-     "gop_legislative": 56.0,
-     "unaligned": 6.9,
-     "dem_legislative": 37.1
+     "margin": 15.9,
+     "strong_gop": 39.8,
+     "soft_gop": 11.5,
+     "swing": 13.4,
+     "soft_dem": 14.4,
+     "strong_dem": 20.9
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 42.3
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.9
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.6
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 25.3
+      }
+     ],
+     "margin": 14.0,
+     "strong_gop": 42.3,
+     "soft_gop": 9.9,
+     "swing": 9.6,
+     "soft_dem": 13.0,
+     "strong_dem": 25.3
     }
    }
   }
@@ -4530,7 +6809,8 @@
    "latest_leg": -45.0,
    "ussen_2022": -41.7,
    "pres_2024": -42.0,
-   "model_drnatl_all": 43.1
+   "model_rslc_all": 40.5,
+   "model_rslc_high": 36.0
   },
   "pres_2024_margin": -42.0,
   "gov_2022_margin": null,
@@ -4545,32 +6825,84 @@
    "dem": "Rod Powell"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 69.5
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 51.8
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 4.1
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 12.4
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 26.4
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 12.2
       }
      ],
-     "margin": 43.1,
-     "gop_legislative": 69.5,
-     "unaligned": 4.1,
-     "dem_legislative": 26.4
+     "margin": 40.5,
+     "strong_gop": 51.8,
+     "soft_gop": 12.4,
+     "swing": 12.0,
+     "soft_dem": 11.5,
+     "strong_dem": 12.2
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 53.2
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.3
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.1
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 12.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 15.5
+      }
+     ],
+     "margin": 36.0,
+     "strong_gop": 53.2,
+     "soft_gop": 10.3,
+     "swing": 9.1,
+     "soft_dem": 12.0,
+     "strong_dem": 15.5
     }
    }
   }
@@ -4634,7 +6966,8 @@
    "latest_leg": -40.6,
    "ussen_2022": -42.3,
    "pres_2024": -42.5,
-   "model_drnatl_all": 43.7
+   "model_rslc_all": 28.7,
+   "model_rslc_high": 30.6
   },
   "pres_2024_margin": -42.5,
   "gov_2022_margin": null,
@@ -4649,32 +6982,84 @@
    "dem": "Greg Cranford"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 68.4
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 40.7
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.9
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 16.4
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 24.7
+       "key": "swing",
+       "label": "Swing",
+       "value": 14.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.8
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 14.6
       }
      ],
-     "margin": 43.7,
-     "gop_legislative": 68.4,
-     "unaligned": 6.9,
-     "dem_legislative": 24.7
+     "margin": 28.7,
+     "strong_gop": 40.7,
+     "soft_gop": 16.4,
+     "swing": 14.4,
+     "soft_dem": 13.8,
+     "strong_dem": 14.6
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 46.7
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 14.2
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 8.8
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 18.9
+      }
+     ],
+     "margin": 30.6,
+     "strong_gop": 46.7,
+     "soft_gop": 14.2,
+     "swing": 8.8,
+     "soft_dem": 11.5,
+     "strong_dem": 18.9
     }
    }
   }
@@ -4738,7 +7123,8 @@
    "latest_leg": -30.5,
    "ussen_2022": -38.9,
    "pres_2024": -31.8,
-   "model_drnatl_all": 33.7
+   "model_rslc_all": 16.0,
+   "model_rslc_high": 10.5
   },
   "pres_2024_margin": -31.8,
   "gov_2022_margin": null,
@@ -4753,32 +7139,84 @@
    "dem": "Kyle Whisnant"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 63.3
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 36.8
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.1
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 13.7
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 29.6
+       "key": "swing",
+       "label": "Swing",
+       "value": 14.9
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.3
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 19.3
       }
      ],
-     "margin": 33.7,
-     "gop_legislative": 63.3,
-     "unaligned": 7.1,
-     "dem_legislative": 29.6
+     "margin": 16.0,
+     "strong_gop": 36.8,
+     "soft_gop": 13.7,
+     "swing": 14.9,
+     "soft_dem": 15.3,
+     "strong_dem": 19.3
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 40.1
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.7
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 8.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 26.8
+      }
+     ],
+     "margin": 10.5,
+     "strong_gop": 40.1,
+     "soft_gop": 10.7,
+     "swing": 8.7,
+     "soft_dem": 13.6,
+     "strong_dem": 26.8
     }
    }
   }
@@ -4842,7 +7280,8 @@
    "latest_leg": -28.3,
    "ussen_2022": -36.7,
    "pres_2024": -28.5,
-   "model_drnatl_all": 35.5
+   "model_rslc_all": 18.9,
+   "model_rslc_high": 16.1
   },
   "pres_2024_margin": -28.5,
   "gov_2022_margin": null,
@@ -4857,32 +7296,84 @@
    "dem": "Frank Patton Hughes III"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 64.7
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 38.7
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 6.2
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 13.3
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 29.2
+       "key": "swing",
+       "label": "Swing",
+       "value": 15.0
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.6
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 17.5
       }
      ],
-     "margin": 35.5,
-     "gop_legislative": 64.7,
-     "unaligned": 6.2,
-     "dem_legislative": 29.2
+     "margin": 18.9,
+     "strong_gop": 38.7,
+     "soft_gop": 13.3,
+     "swing": 15.0,
+     "soft_dem": 15.6,
+     "strong_dem": 17.5
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 43.6
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.2
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 8.6
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 14.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 23.3
+      }
+     ],
+     "margin": 16.1,
+     "strong_gop": 43.6,
+     "soft_gop": 10.2,
+     "swing": 8.6,
+     "soft_dem": 14.4,
+     "strong_dem": 23.3
     }
    }
   }
@@ -4946,7 +7437,8 @@
    "latest_leg": -27.9,
    "ussen_2022": -32.7,
    "pres_2024": -25.5,
-   "model_drnatl_all": 35.3
+   "model_rslc_all": 15.3,
+   "model_rslc_high": 10.3
   },
   "pres_2024_margin": -25.5,
   "gov_2022_margin": null,
@@ -4961,32 +7453,84 @@
    "dem": "Doyle Brown Jr."
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 63.1
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 38.5
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 9.1
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 13.1
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 27.8
+       "key": "swing",
+       "label": "Swing",
+       "value": 12.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.8
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 20.4
       }
      ],
-     "margin": 35.3,
-     "gop_legislative": 63.1,
-     "unaligned": 9.1,
-     "dem_legislative": 27.8
+     "margin": 15.3,
+     "strong_gop": 38.5,
+     "soft_gop": 13.1,
+     "swing": 12.2,
+     "soft_dem": 15.8,
+     "strong_dem": 20.4
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 38.7
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 11.8
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.3
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.3
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 26.9
+      }
+     ],
+     "margin": 10.3,
+     "strong_gop": 38.7,
+     "soft_gop": 11.8,
+     "swing": 9.3,
+     "soft_dem": 13.3,
+     "strong_dem": 26.9
     }
    }
   }
@@ -5050,7 +7594,8 @@
    "latest_leg": 38.1,
    "ussen_2022": 25.4,
    "pres_2024": 36.1,
-   "model_drnatl_all": -32.2
+   "model_rslc_all": -49.4,
+   "model_rslc_high": -52.9
   },
   "pres_2024_margin": 36.1,
   "gov_2022_margin": null,
@@ -5065,32 +7610,84 @@
    "dem": "Julie Mayfield"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 28.1
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 11.4
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 11.7
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 9.3
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 60.3
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.2
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 17.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 52.6
       }
      ],
-     "margin": -32.2,
-     "gop_legislative": 28.1,
-     "unaligned": 11.7,
-     "dem_legislative": 60.3
+     "margin": -49.4,
+     "strong_gop": 11.4,
+     "soft_gop": 9.3,
+     "swing": 9.2,
+     "soft_dem": 17.5,
+     "strong_dem": 52.6
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 12.3
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 8.6
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 5.4
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 11.4
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 62.4
+      }
+     ],
+     "margin": -52.9,
+     "strong_gop": 12.3,
+     "soft_gop": 8.6,
+     "swing": 5.4,
+     "soft_dem": 11.4,
+     "strong_dem": 62.4
     }
    }
   }
@@ -5154,7 +7751,8 @@
    "latest_leg": -33.1,
    "ussen_2022": -28.6,
    "pres_2024": -29.2,
-   "model_drnatl_all": 39.2
+   "model_rslc_all": 20.0,
+   "model_rslc_high": 21.7
   },
   "pres_2024_margin": -29.2,
   "gov_2022_margin": null,
@@ -5169,32 +7767,84 @@
    "dem": "Tom Downing"
   },
   "models": {
-   "model_drnatl_all": {
-    "label": "DR Natl (All)",
-    "family": "DR Natl",
+   "model_rslc_all": {
+    "label": "RSLC (All)",
+    "family": "RSLC",
     "variant": "All",
     "affinity": {
      "segments": [
       {
-       "key": "gop_legislative",
-       "label": "GOP Legislative",
-       "value": 65.7
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 39.6
       },
       {
-       "key": "unaligned",
-       "label": "Unaligned",
-       "value": 7.9
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 12.6
       },
       {
-       "key": "dem_legislative",
-       "label": "Dem Legislative",
-       "value": 26.5
+       "key": "swing",
+       "label": "Swing",
+       "value": 15.7
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 15.5
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 16.6
       }
      ],
-     "margin": 39.2,
-     "gop_legislative": 65.7,
-     "unaligned": 7.9,
-     "dem_legislative": 26.5
+     "margin": 20.0,
+     "strong_gop": 39.6,
+     "soft_gop": 12.6,
+     "swing": 15.7,
+     "soft_dem": 15.5,
+     "strong_dem": 16.6
+    }
+   },
+   "model_rslc_high": {
+    "label": "RSLC (High)",
+    "family": "RSLC",
+    "variant": "High",
+    "affinity": {
+     "segments": [
+      {
+       "key": "strong_gop",
+       "label": "Strong GOP",
+       "value": 45.9
+      },
+      {
+       "key": "soft_gop",
+       "label": "Soft GOP",
+       "value": 10.0
+      },
+      {
+       "key": "swing",
+       "label": "Swing",
+       "value": 9.8
+      },
+      {
+       "key": "soft_dem",
+       "label": "Soft Dem",
+       "value": 13.0
+      },
+      {
+       "key": "strong_dem",
+       "label": "Strong Dem",
+       "value": 21.2
+      }
+     ],
+     "margin": 21.7,
+     "strong_gop": 45.9,
+     "soft_gop": 10.0,
+     "swing": 9.8,
+     "soft_dem": 13.0,
+     "strong_dem": 21.2
     }
    }
   }

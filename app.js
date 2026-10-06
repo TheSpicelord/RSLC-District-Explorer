@@ -1,4 +1,4 @@
-import { requireAuth } from "./modules/auth.js?v=20260921b";
+import { requireAuth } from "./modules/auth.js?v=20261006a";
 await requireAuth("https://districts.rslc.gop/auth");
 
 import {
@@ -22,7 +22,7 @@ import {
   TARGET_DISTRICTS_JSON_URLS,
   WORKBOOK_URLS,
   XLSX_CDN_URL,
-} from "./modules/config.js?v=20260921b";
+} from "./modules/config.js?v=20261006a";
 import {
   cdFilterToggle,
   congressionalOverlayToggle,
@@ -45,8 +45,8 @@ import {
   statusText,
   targetDistrictsToggle,
   upIn2026Toggle,
-} from "./modules/dom.js?v=20260921b";
-import { state } from "./modules/state.js?v=20260921b";
+} from "./modules/dom.js?v=20261006a";
+import { state } from "./modules/state.js?v=20261006a";
 
 const projectionRangeDem = document.getElementById("projectionRangeDem");
 const projectionRangeRep = document.getElementById("projectionRangeRep");
@@ -68,41 +68,44 @@ const MODEL_VIEW_META = {
   // Both the key order (which drives table columns) and `order` (which drives the
   // map-view list) have to agree, or the two read differently.
   model_rslc_hm:      { label: "RSLC (H+M)", order: 2,  tableTop: "RSLC", tableBottom: "H+M" },
-  model_rslc_all:     { label: "RSLC (All)", order: 3,  tableTop: "RSLC", tableBottom: "All" },
-  model_rslc_vi:      { label: "RSLC (VI)",  order: 4,  tableTop: "RSLC", tableBottom: "VI"  },
+  // North Carolina's turnout cut is "High Interest in Election" rather than H+M. It
+  // fills the same turnout-restricted slot in the modeling switch (modelViewKeyForVariant).
+  model_rslc_high:    { label: "RSLC (High)", order: 3, tableTop: "RSLC", tableBottom: "High" },
+  model_rslc_all:     { label: "RSLC (All)", order: 4,  tableTop: "RSLC", tableBottom: "All" },
+  model_rslc_vi:      { label: "RSLC (VI)",  order: 5,  tableTop: "RSLC", tableBottom: "VI"  },
   // Alaska's model frames the 2026 U.S. Senate race (Sullivan vs Peltola) rather than a
   // legislative ballot, so it is kept as its own family instead of being folded into
   // RSLC — the header has to say which question the margin answers.
-  model_ds_hm:        { label: "DS (H+M)",   order: 5,  tableTop: "DS",   tableBottom: "H+M" },
-  model_ds_all:       { label: "DS (All)",   order: 6,  tableTop: "DS",   tableBottom: "All" },
+  model_ds_hm:        { label: "DS (H+M)",   order: 6,  tableTop: "DS",   tableBottom: "H+M" },
+  model_ds_all:       { label: "DS (All)",   order: 7,  tableTop: "DS",   tableBottom: "All" },
   // Iowa, likewise its own family so it can carry its own name rather than the
   // shared RSLC header.
-  model_lahn_hm:      { label: "Lahn (H+M)", order: 7,  tableTop: "Lahn", tableBottom: "H+M" },
-  model_lahn_all:     { label: "Lahn (All)", order: 8,  tableTop: "Lahn", tableBottom: "All" },
+  model_lahn_hm:      { label: "Lahn (H+M)", order: 8,  tableTop: "Lahn", tableBottom: "H+M" },
+  model_lahn_all:     { label: "Lahn (All)", order: 9,  tableTop: "Lahn", tableBottom: "All" },
   // Oregon runs two models side by side rather than two variants of one, so these are
   // distinct families whose "variant" slot names the ballot question instead.
-  model_rslcleg_all:  { label: "RSLC Leg",   order: 9,  tableTop: "RSLC", tableBottom: "Leg" },
-  model_rslcgov_all:  { label: "RSLC Gov",   order: 10,  tableTop: "RSLC", tableBottom: "Gov" },
+  model_rslcleg_all:  { label: "RSLC Leg",   order: 10,  tableTop: "RSLC", tableBottom: "Leg" },
+  model_rslcgov_all:  { label: "RSLC Gov",   order: 11,  tableTop: "RSLC", tableBottom: "Gov" },
   // New Hampshire, same shape as Oregon: one audience file, two races, so each is
   // its own family and the "variant" slot names the race rather than a turnout cut.
-  model_sunsen_all:   { label: "SUN US Sen", order: 11,  tableTop: "SUN",  tableBottom: "US Sen" },
-  model_sungov_all:   { label: "SUN Gov",    order: 12, tableTop: "SUN",  tableBottom: "Gov" },
+  model_sunsen_all:   { label: "SUN US Sen", order: 12,  tableTop: "SUN",  tableBottom: "US Sen" },
+  model_sungov_all:   { label: "SUN Gov",    order: 13, tableTop: "SUN",  tableBottom: "Gov" },
   // Ohio, same shape again: one audience file, three races.
-  model_ohsen_all:    { label: "HUS US Sen",  order: 13, tableTop: "HUS",   tableBottom: "US Sen" },
-  model_ohgov_all:    { label: "HUS Gov",     order: 14, tableTop: "HUS",   tableBottom: "Gov" },
-  model_ohcon_all:    { label: "HUS Con",     order: 15, tableTop: "HUS",   tableBottom: "Con" },
-  model_rga_hm:       { label: "RGA (H+M)",  order: 16,  tableTop: "RGA",  tableBottom: "H+M" },
-  model_rga_all:      { label: "RGA (All)",  order: 17, tableTop: "RGA",  tableBottom: "All" },
-  model_lombardo_hm:  { label: "Lom (H+M)",  order: 18, tableTop: "Lom",  tableBottom: "H+M" },
-  model_lombardo_all: { label: "Lom (All)",  order: 19, tableTop: "Lom",  tableBottom: "All" },
+  model_ohsen_all:    { label: "HUS US Sen",  order: 14, tableTop: "HUS",   tableBottom: "US Sen" },
+  model_ohgov_all:    { label: "HUS Gov",     order: 15, tableTop: "HUS",   tableBottom: "Gov" },
+  model_ohcon_all:    { label: "HUS Con",     order: 16, tableTop: "HUS",   tableBottom: "Con" },
+  model_rga_hm:       { label: "RGA (H+M)",  order: 17,  tableTop: "RGA",  tableBottom: "H+M" },
+  model_rga_all:      { label: "RGA (All)",  order: 18, tableTop: "RGA",  tableBottom: "All" },
+  model_lombardo_hm:  { label: "Lom (H+M)",  order: 19, tableTop: "Lom",  tableBottom: "H+M" },
+  model_lombardo_all: { label: "Lom (All)",  order: 20, tableTop: "Lom",  tableBottom: "All" },
   // Minnesota's dedicated model (MN_Exchange_20260831).
-  model_rou_hm:       { label: "ROU (H+M)",  order: 20, tableTop: "ROU",  tableBottom: "H+M" },
-  model_rou_all:      { label: "ROU (All)",  order: 21, tableTop: "ROU",  tableBottom: "All" },
-  model_raga_hm:      { label: "RAGA (H+M)", order: 22, tableTop: "RAGA", tableBottom: "H+M" },
-  model_raga_all:     { label: "RAGA (All)", order: 23, tableTop: "RAGA", tableBottom: "All" },
+  model_rou_hm:       { label: "ROU (H+M)",  order: 21, tableTop: "ROU",  tableBottom: "H+M" },
+  model_rou_all:      { label: "ROU (All)",  order: 22, tableTop: "ROU",  tableBottom: "All" },
+  model_raga_hm:      { label: "RAGA (H+M)", order: 23, tableTop: "RAGA", tableBottom: "H+M" },
+  model_raga_all:     { label: "RAGA (All)", order: 24, tableTop: "RAGA", tableBottom: "All" },
   // National fallback for states with no state-specific model. Ordered last so a
   // dedicated model always wins when a state somehow has both.
-  model_drnatl_all:   { label: "DR Natl",    order: 24, tableTop: "DR",   tableBottom: "Natl" },
+  model_drnatl_all:   { label: "DR Natl",    order: 25, tableTop: "DR",   tableBottom: "Natl" },
 };
 
 const MODEL_SEGMENT_COLOR_CLASSES = {
@@ -219,6 +222,16 @@ const FOUR_BUCKET_COLOR_CLASSES = [
   "color-model-rslc-9",
 ];
 
+// North Carolina's five-rung ladder (Strong GOP / Soft GOP / Swing / Soft Dem /
+// Strong Dem): a diverging ramp with a neutral middle, the same steps HRCC uses.
+const FIVE_BUCKET_COLOR_CLASSES = [
+  "color-model-gop-base",
+  "color-model-gop-target",
+  "color-model-swing",
+  "color-model-dem-likely",
+  "color-model-dem-base",
+];
+
 // Used by any model whose affinity collapses to GOP / Unaligned / Dem.
 const THREE_BUCKET_COLOR_CLASSES = [
   "color-model-gop-base",
@@ -247,7 +260,7 @@ const MODEL_GOP_POSITIVE_PREFIXES = [
   "model_drnatl_",
 ];
 
-const BUILD_VERSION = "20260921b";
+const BUILD_VERSION = "20261006a";
 
 function withCacheBust(url) {
   const text = String(url || "").trim();
@@ -1224,7 +1237,7 @@ function parseModelViewKey(view) {
 function modelVariantFromViewKey(view) {
   const key = String(view || "").trim();
   if (!parseModelViewKey(key)) return null;
-  if (key.endsWith("_hm")) return "hm";
+  if (key.endsWith("_hm") || key.endsWith("_high")) return "hm";
   if (key.endsWith("_vi")) return "vi";
   if (key.endsWith("_all")) return "all";
   return null;
@@ -4884,7 +4897,7 @@ function popupHtml(properties, joinInfo, rec) {
   const tooltipHmView  = modelViewKeyForVariant(rec, "hm");
   const tooltipAllView = modelViewKeyForVariant(rec, "all");
   const tooltipModelView  = tooltipViView || tooltipHmView || tooltipAllView;
-  const tooltipModelLabel = tooltipViView ? "Model (VI)" : tooltipHmView ? "Model (H+M)" : "Model";
+  const tooltipModelLabel = tooltipViView ? "Model (VI)" : tooltipHmView ? `Model (${turnoutVariantLabel(tooltipHmView)})` : "Model";
   const hmModelLine = tooltipModelView
     ? `&nbsp;&nbsp;${tooltipModelLabel}: ${formatMarginHtml(getMarginForView(rec, tooltipModelView))}`
     : null;
@@ -4924,8 +4937,14 @@ function latestLegDisplayLabel(rec) {
 function modelViewKeyForVariant(rec, variant) {
   const models = rec?.models;
   if (!models || typeof models !== "object") return null;
-  const suffix = variant === "hm" ? "_hm" : variant === "vi" ? "_vi" : "_all";
-  return Object.keys(models).find((key) => !!parseModelViewKey(key) && key.endsWith(suffix)) || null;
+  // The "hm" slot is the turnout-restricted variant: H+M for most models, High for NC.
+  const suffixes = variant === "hm" ? ["_hm", "_high"] : variant === "vi" ? ["_vi"] : ["_all"];
+  return Object.keys(models).find((key) => !!parseModelViewKey(key) && suffixes.some((sfx) => key.endsWith(sfx))) || null;
+}
+
+// Button/tooltip text for the turnout-restricted variant a record carries.
+function turnoutVariantLabel(view) {
+  return String(view || "").endsWith("_high") ? "High" : "H+M";
 }
 
 function activeModelViewForRecord(rec) {
@@ -4977,6 +4996,8 @@ function affinitySegmentsForModel(model) {
       ? THREE_BUCKET_COLOR_CLASSES
       : affinity.segments.length === 4
       ? FOUR_BUCKET_COLOR_CLASSES
+      : affinity.segments.length === 5
+      ? FIVE_BUCKET_COLOR_CLASSES
       : familyKey === "RGA" && affinity.segments.length === 7
         ? RGA_SEVEN_BUCKET_COLOR_CLASSES
         : (MODEL_SEGMENT_COLOR_CLASSES[familyKey] || []);
@@ -5053,7 +5074,7 @@ function modelingPanelHtml(rec) {
       <div class="detail-row modeling-variant-note">${escapeHtml(model.family || "Model")}</div>
       <div class="modeling-switch" role="group" aria-label="Modeling variant">
         ${viView ? `<button type="button" class="modeling-switch-btn ${activeVariant === "vi" ? "active" : ""}" data-modeling-variant="vi">VI</button>` : ""}
-        <button type="button" class="modeling-switch-btn ${activeVariant === "hm" ? "active" : ""}" data-modeling-variant="hm" ${hmView ? "" : "disabled"}>H+M</button>
+        <button type="button" class="modeling-switch-btn ${activeVariant === "hm" ? "active" : ""}" data-modeling-variant="hm" ${hmView ? "" : "disabled"}>${turnoutVariantLabel(hmView)}</button>
         <button type="button" class="modeling-switch-btn ${activeVariant === "all" ? "active" : ""}" data-modeling-variant="all" ${allView ? "" : "disabled"}>All</button>
       </div>
     </div>
